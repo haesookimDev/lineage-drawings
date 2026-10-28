@@ -83,3 +83,9 @@ OPEN1006–11 회귀의 연결 재현율은26.89%→39.98%, F1 37.07%→52.19%�
 [v6 운영 검증](DEPLOYED_V6_VERIFICATION.ko.md)을 완료했습니다. 실행 앱 `844bf3b03ce34de575509bf66b531aca83ffba0d`, 전체 테스트40개·CI 빌드·외부 API137개 항목과 브라우저 저장 보존을 확인했습니다. 기존 도면·사전·검토 결과는 유지하며 새 분석에 신경망 검출기를 적용합니다. 원본 PDF·페이지·타일·학습 도구는 운영 이미지에서 제외합니다.
 
 이전 [v5 평가](evaluation/v5/REPORT.ko.md), [v4 평가](evaluation/v4/REPORT.ko.md), [v3 평가](evaluation/v3/REPORT.ko.md), [v2 평가](evaluation/REPORT.ko.md)를 보존했습니다.
+
+## 선·포트·접속점 인식 v7
+
+새 업로드에서 **선·포트·접점** 토글로 실선/점선·포트·접속/교차 후보를 확인할 수 있습니다. 관찰 경로가 있는 연결은 실제 선 경로를 표시하며, 포트 근거는 요소 속성 및 JSON 내보내기에 보존됩니다. 기존 파일을 자동 재분석하지 않습니다.
+
+검증에서 새 경로 추적기가 기존 연결 판정을 넘지 못해 배포에서는 v6 연결을 유지합니다. 모든 인식은 검토 후보이며, 요소 승인이 포트·접점을 승인하지 않습니다. [평가와 한계](evaluation/v7/REPORT.ko.md), [모델 카드](evaluation/v7/MODEL-CARD.ko.md), [재현](evaluation/v7/README.md), [운영 검증](DEPLOYED_V7_VERIFICATION.ko.md)을 참고하세요.

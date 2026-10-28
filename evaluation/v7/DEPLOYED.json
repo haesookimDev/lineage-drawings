@@ -1,0 +1,82 @@
+{
+  "release": {
+    "commit": "43041df641c860e064815845df54ea9be12e6270",
+    "ci_run": "40668686309",
+    "ci_url": "https://github.com/haesookimDev/lineage-drawings/actions/runs/40668686309",
+    "artifact_sha256": "682154c26620d7721ad439a10b190de72d47eaf38a435522c86561db08ff7ad0",
+    "evaluated_backend_and_model_match_image": true,
+    "checked_backend_files": 21,
+    "architecture": "amd64",
+    "runtime_user": "1000:1000",
+    "deployment_status": "deployed; external API, UI and cluster checks passed",
+    "checked_frontend_files": 3
+  },
+  "api_checks": 170,
+  "new_test_documents": 8,
+  "new_test_concepts": 1,
+  "preservation": {
+    "browser_label_confirmed_on_server": true,
+    "meaning_and_approval_preserved": true,
+    "port_junction_path_evidence_preserved": true,
+    "learned_source_preserved": true,
+    "existing_documents_concepts_pages_still_unchanged": true,
+    "documents": 48,
+    "concepts": 8,
+    "before_documents": 40,
+    "before_concepts": 7,
+    "before_pages": 42,
+    "new_test_documents": 8,
+    "new_test_concepts": 1
+  },
+  "cluster": {
+    "image": "docker.io/library/lineage-drawings:43041df641c860e064815845df54ea9be12e6270",
+    "pod": "lineage-774cd6db69-72dhh",
+    "image_id": "sha256:080a0c365f0515169d8ff9a87a01c24ee4227eadab29cf3f2dd7a0d8a588b7be",
+    "ready_replicas": 1,
+    "restart_count": 0,
+    "pvc_phase": "Bound",
+    "route_conditions": [
+      {
+        "lastTransitionTime": "2026-10-28T02:09:00Z",
+        "message": "",
+        "observedGeneration": 1,
+        "reason": "Accepted",
+        "status": "True",
+        "type": "Accepted"
+      },
+      {
+        "lastTransitionTime": "2026-10-28T02:09:00Z",
+        "message": "",
+        "observedGeneration": 1,
+        "reason": "ResolvedRefs",
+        "status": "True",
+        "type": "ResolvedRefs"
+      }
+    ],
+    "evaluated_code_and_model_hashes_match": true,
+    "evaluated_ocr_fingerprints_match": true,
+    "live_engine_junction_checks": {
+      "plain_crossing_pairs": 2,
+      "dotted_junction_pairs": 6,
+      "tee_pairs": 3
+    },
+    "recent_error_lines": 0,
+    "pod_metrics": "lineage-774cd6db69-72dhh   462m   479Mi"
+  },
+  "ui": {
+    "outcome": "passed",
+    "actualLogin": true,
+    "saveThenReloadConfirmed": true,
+    "topologyToggleHidesPorts": true,
+    "junctions": 151,
+    "observedPolylines": 25,
+    "portDetailsVisible": true,
+    "ports": 116,
+    "savedLabel": "V7-VERIFY UI 저장 확인 요소",
+    "screenshot": "test-results/v7-live/production-review.png"
+  },
+  "model_sha256": "8bf87022618182573b2c5aef79d62df83b6c619cf28217bccd07048979ed3a8c",
+  "unchanged_symbol_model_sha256": "b1242af58625dc24482829fadb3386768c6aaa6ae185babf20f1650d507306fe",
+  "benchmark_sheets": 22,
+  "benchmark_repetitions": 132
+}

@@ -1,0 +1,324 @@
+{
+  "note": "Post-test audit only; no label or inference changes. TP=green, FP=red,FN=blue in ignored local visualization. Raw engineering crop images never committed.",
+  "rows": [
+    {
+      "id": "virden-p11",
+      "kind": "ports",
+      "tp": 4,
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "id": "virden-p11",
+      "kind": "junctions",
+      "tp": 4,
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "id": "virden-p9",
+      "kind": "ports",
+      "tp": 4,
+      "false_positives": [
+        {
+          "point": [
+            0.6622917,
+            0.7455418
+          ],
+          "side": "bottom",
+          "score": 0.9922,
+          "visible_support": 0.5625,
+          "source": "learned_heatmap_and_visible_stem",
+          "status": "needs_review",
+          "element_id": "ec80dd624d0a4713ab15f5284096ca51"
+        },
+        {
+          "point": [
+            0.6529167,
+            0.7277092
+          ],
+          "side": "left",
+          "score": 0.9804,
+          "visible_support": 0.7292,
+          "source": "learned_heatmap_and_visible_stem",
+          "status": "needs_review",
+          "element_id": "ec80dd624d0a4713ab15f5284096ca51"
+        },
+        {
+          "point": [
+            0.6625,
+            0.7242798
+          ],
+          "side": "top",
+          "score": 0.9765,
+          "visible_support": 0.375,
+          "source": "learned_heatmap_and_visible_stem",
+          "status": "needs_review",
+          "element_id": "ec80dd624d0a4713ab15f5284096ca51"
+        },
+        {
+          "point": [
+            0.6564583,
+            0.7242798
+          ],
+          "side": "top",
+          "score": 0.9451,
+          "visible_support": 0.375,
+          "source": "learned_heatmap_and_visible_stem",
+          "status": "needs_review",
+          "element_id": "ec80dd624d0a4713ab15f5284096ca51"
+        },
+        {
+          "point": [
+            0.66,
+            0.7503429
+          ],
+          "side": "top",
+          "score": 0.9961,
+          "visible_support": 0.6875,
+          "source": "learned_heatmap_and_visible_stem",
+          "status": "needs_review",
+          "element_id": "d553f9bc763e445c9ddab0de366769d3"
+        },
+        {
+          "point": [
+            0.6566667,
+            0.7503429
+          ],
+          "side": "top",
+          "score": 0.9804,
+          "visible_support": 0.375,
+          "source": "learned_heatmap_and_visible_stem",
+          "status": "needs_review",
+          "element_id": "d553f9bc763e445c9ddab0de366769d3"
+        }
+      ],
+      "false_negatives": []
+    },
+    {
+      "id": "virden-p9",
+      "kind": "junctions",
+      "tp": 0,
+      "false_positives": [
+        {
+          "point": [
+            0.6504167,
+            0.7285237
+          ],
+          "type": "tee",
+          "score": 0.6314,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        }
+      ],
+      "false_negatives": []
+    },
+    {
+      "id": "pahala-p19",
+      "kind": "ports",
+      "tp": 4,
+      "false_positives": [
+        {
+          "point": [
+            0.07375,
+            0.5843529
+          ],
+          "side": "right",
+          "score": 0.9882,
+          "visible_support": 0.8438,
+          "source": "learned_heatmap_and_visible_stem",
+          "status": "needs_review",
+          "element_id": "f42a0d5d1d6c43d3be56d0123f0dbf82"
+        },
+        {
+          "point": [
+            0.07375,
+            0.605924
+          ],
+          "side": "right",
+          "score": 0.9882,
+          "visible_support": 1.0,
+          "source": "learned_heatmap_and_visible_stem",
+          "status": "needs_review",
+          "element_id": "f42a0d5d1d6c43d3be56d0123f0dbf82"
+        }
+      ],
+      "false_negatives": [
+        {
+          "element_id": "air",
+          "point": [
+            0.12208333333333334,
+            0.5473277527366388
+          ]
+        },
+        {
+          "element_id": "water",
+          "point": [
+            0.12208333333333334,
+            0.5956213779781069
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pahala-p19",
+      "kind": "junctions",
+      "tp": 0,
+      "false_positives": [
+        {
+          "point": [
+            0.0579167,
+            0.5357373
+          ],
+          "type": "tee",
+          "score": 0.6392,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.0720833,
+            0.5357373
+          ],
+          "type": "tee",
+          "score": 0.5843,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.0579167,
+            0.5576304
+          ],
+          "type": "tee",
+          "score": 0.7961,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.0720833,
+            0.5576304
+          ],
+          "type": "tee",
+          "score": 0.7255,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.1125,
+            0.5357373
+          ],
+          "type": "tee",
+          "score": 0.2392,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.1204167,
+            0.5447521
+          ],
+          "type": "tee",
+          "score": 0.5098,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.1191667,
+            0.5428203
+          ],
+          "type": "tee",
+          "score": 0.4863,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.1186111,
+            0.5426057
+          ],
+          "type": "plain_cross",
+          "score": 0.1255,
+          "connected": false,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.1141667,
+            0.5357373
+          ],
+          "type": "tee",
+          "score": 0.2902,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.1217448,
+            0.5466838
+          ],
+          "type": "tee",
+          "score": 0.5098,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.11375,
+            0.5842724
+          ],
+          "type": "tee",
+          "score": 0.3686,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.12125,
+            0.5949775
+          ],
+          "type": "tee",
+          "score": 0.5294,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        },
+        {
+          "point": [
+            0.2995833,
+            0.5949775
+          ],
+          "type": "tee",
+          "score": 0.2,
+          "connected": true,
+          "status": "needs_review",
+          "source": "heatmap_and_visible_line_geometry"
+        }
+      ],
+      "false_negatives": [
+        {
+          "point": [
+            0.35833333333333334,
+            0.5473277527366388
+          ],
+          "type": "plain_cross"
+        }
+      ]
+    }
+  ]
+}

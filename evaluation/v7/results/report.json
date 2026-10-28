@@ -1,0 +1,2617 @@
+{
+  "baseline": "844bf3b03ce34de575509bf66b531aca83ffba0d",
+  "frozen_sha256": "eb3cf940258f0697034f550ebd4a7924d1141513c4697c63d13926074d859baf",
+  "evaluated_at": "2026-10-28T09:58:02.831394+00:00",
+  "runs": 3,
+  "timing_scope": "Paired in-memory OCR + high-res symbol inference + line/edge recognition, max4800 symbol/max2400 view, three repeats reversed variant order; RGB decode/render and upload excluded. Sequential local CPU, not Pod SLA or throughput. Recognition v7 is advisory, so adjacency equality is a required invariant.",
+  "sheets": [
+    {
+      "group": "new-page",
+      "id": "virden-p11",
+      "roi_only": true,
+      "role": "new-pages-known-projects",
+      "source_sha256": "e6c847a12fb7800542d4d7a805ac2c3a3c3bfbacc51f76c4e0f9d30fc1eb4521",
+      "source_size": [
+        4800,
+        2915
+      ],
+      "rendered_size": [
+        2400,
+        1458
+      ],
+      "gt_symbols": 4,
+      "gt_edges": 6,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 6
+          },
+          "full_page_symbols": 69,
+          "full_page_connections": 111,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "timing": {
+            "seconds": [
+              5.0171,
+              5.0213,
+              4.9152
+            ],
+            "median": 5.0171
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 6
+          },
+          "full_page_symbols": 69,
+          "full_page_connections": 111,
+          "ports": 116,
+          "junctions": 151,
+          "observed_paths": 31,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "junctions": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "timing": {
+            "seconds": [
+              6.5618,
+              6.5934,
+              6.1529
+            ],
+            "median": 6.5618
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "new-page",
+      "id": "virden-p9",
+      "roi_only": true,
+      "role": "new-pages-known-projects",
+      "source_sha256": "e4053b54f4dabd6ea6d11711e2f63963418ca3f02b71fdf78299af0f1f0e1f73",
+      "source_size": [
+        4800,
+        2915
+      ],
+      "rendered_size": [
+        2400,
+        1458
+      ],
+      "gt_symbols": 2,
+      "gt_edges": 1,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 1
+          },
+          "full_page_symbols": 92,
+          "full_page_connections": 159,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "timing": {
+            "seconds": [
+              5.1117,
+              5.1228,
+              5.0876
+            ],
+            "median": 5.1117
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 1
+          },
+          "full_page_symbols": 92,
+          "full_page_connections": 159,
+          "ports": 252,
+          "junctions": 212,
+          "observed_paths": 15,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 4,
+              "fp": 6,
+              "fn": 0,
+              "precision": 0.4,
+              "recall": 1.0,
+              "f1": 0.5714285714285714
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "timing": {
+            "seconds": [
+              6.4007,
+              6.3755,
+              6.3468
+            ],
+            "median": 6.3755
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "new-page",
+      "id": "pahala-p19",
+      "roi_only": true,
+      "role": "new-pages-known-projects",
+      "source_sha256": "0a4eb0e88a72f002cee202be8a74650439ff90ea036065e42f626e16164e0125",
+      "source_size": [
+        4800,
+        3106
+      ],
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "gt_symbols": 4,
+      "gt_edges": 1,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 1
+          },
+          "full_page_symbols": 32,
+          "full_page_connections": 45,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "timing": {
+            "seconds": [
+              3.6587,
+              4.0338,
+              3.9442
+            ],
+            "median": 3.9442
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 1
+          },
+          "full_page_symbols": 32,
+          "full_page_connections": 45,
+          "ports": 89,
+          "junctions": 66,
+          "observed_paths": 8,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 4,
+              "fp": 2,
+              "fn": 2,
+              "precision": 0.6666666666666666,
+              "recall": 0.6666666666666666,
+              "f1": 0.6666666666666666
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 13,
+              "fn": 1,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "timing": {
+            "seconds": [
+              4.8818,
+              5.0531,
+              5.0945
+            ],
+            "median": 5.0531
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "v6-roi-regression",
+      "id": "virden-p6",
+      "roi_only": true,
+      "role": "historical-regression",
+      "source_sha256": "8618dc074d17f366c41a6f2dbd29b220b360e92663cf89cd3fb186ab101b5d99",
+      "source_size": [
+        4800,
+        2915
+      ],
+      "rendered_size": [
+        2400,
+        1458
+      ],
+      "gt_symbols": 9,
+      "gt_edges": 10,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 4,
+              "fn": 2,
+              "precision": 0.6363636363636364,
+              "recall": 0.7777777777777778,
+              "f1": 0.7
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 10,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 7,
+            "routing": 3
+          },
+          "full_page_symbols": 70,
+          "full_page_connections": 57,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.9252,
+              4.9268,
+              4.9123
+            ],
+            "median": 4.9252
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 4,
+              "fn": 2,
+              "precision": 0.6363636363636364,
+              "recall": 0.7777777777777778,
+              "f1": 0.7
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 10,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 7,
+            "routing": 3
+          },
+          "full_page_symbols": 70,
+          "full_page_connections": 57,
+          "ports": 102,
+          "junctions": 123,
+          "observed_paths": 2,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.1348,
+              6.1622,
+              6.1444
+            ],
+            "median": 6.1444
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "v6-roi-regression",
+      "id": "virden-p8",
+      "roi_only": true,
+      "role": "historical-regression",
+      "source_sha256": "60f7fd7ac7d02cc3aa94bf73a83ab3646b9618642522cb23a5fca08b65f32db3",
+      "source_size": [
+        4800,
+        2915
+      ],
+      "rendered_size": [
+        2400,
+        1458
+      ],
+      "gt_symbols": 6,
+      "gt_edges": 6,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 3,
+              "fp": 3,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 3,
+              "fn": 4,
+              "precision": 0.4,
+              "recall": 0.3333333333333333,
+              "f1": 0.36363636363636365
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 2,
+            "missing_symbol": 4
+          },
+          "full_page_symbols": 65,
+          "full_page_connections": 134,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.3529,
+              4.224,
+              4.2446
+            ],
+            "median": 4.2446
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 3,
+              "fp": 3,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 3,
+              "fn": 4,
+              "precision": 0.4,
+              "recall": 0.3333333333333333,
+              "f1": 0.36363636363636365
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 2,
+            "missing_symbol": 4
+          },
+          "full_page_symbols": 65,
+          "full_page_connections": 134,
+          "ports": 218,
+          "junctions": 108,
+          "observed_paths": 5,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.4632,
+              5.432,
+              5.4359
+            ],
+            "median": 5.4359
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "v6-roi-regression",
+      "id": "pahala-p22",
+      "roi_only": true,
+      "role": "historical-regression",
+      "source_sha256": "cbcc347ee70cf46a2a70763acc541ac9411a7579ffdceb7c16954601c509bcaa",
+      "source_size": [
+        4800,
+        3106
+      ],
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "gt_symbols": 9,
+      "gt_edges": 14,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 4,
+              "fp": 1,
+              "fn": 5,
+              "precision": 0.8,
+              "recall": 0.4444444444444444,
+              "f1": 0.5714285714285714
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 14,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 14
+          },
+          "full_page_symbols": 34,
+          "full_page_connections": 13,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.248,
+              6.2173,
+              6.2544
+            ],
+            "median": 6.248
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 4,
+              "fp": 1,
+              "fn": 5,
+              "precision": 0.8,
+              "recall": 0.4444444444444444,
+              "f1": 0.5714285714285714
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 14,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 14
+          },
+          "full_page_symbols": 34,
+          "full_page_connections": 13,
+          "ports": 52,
+          "junctions": 29,
+          "observed_paths": 9,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              7.411,
+              7.4335,
+              7.4344
+            ],
+            "median": 7.4335
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "v6-roi-regression",
+      "id": "ruttan-p51",
+      "roi_only": true,
+      "role": "historical-regression",
+      "source_sha256": "6605a79eac67c58ec4e259245585062788c80b6c5aa5e762bace8d03b40d69f4",
+      "source_size": [
+        4800,
+        3106
+      ],
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "gt_symbols": 8,
+      "gt_edges": 6,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 6,
+              "precision": 1.0,
+              "recall": 0.25,
+              "f1": 0.4
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 6
+          },
+          "full_page_symbols": 44,
+          "full_page_connections": 8,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.7,
+              5.6956,
+              5.6935
+            ],
+            "median": 5.6956
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 6,
+              "precision": 1.0,
+              "recall": 0.25,
+              "f1": 0.4
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 6
+          },
+          "full_page_symbols": 44,
+          "full_page_connections": 8,
+          "ports": 77,
+          "junctions": 297,
+          "observed_paths": 2,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.9193,
+              6.8962,
+              6.887
+            ],
+            "median": 6.8962
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "open100-regression",
+      "id": "6",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "44a67176c8265ca5b7a2ae9833932a1797564bb35ce030d3d29e920ddf1fc9c1",
+      "source_size": [
+        3196,
+        2128
+      ],
+      "rendered_size": [
+        2400,
+        1598
+      ],
+      "gt_symbols": 70,
+      "gt_edges": 158,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 69,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9857142857142858,
+              "f1": 0.9928057553956835
+            },
+            "connections": {
+              "tp": 40,
+              "fp": 17,
+              "fn": 118,
+              "precision": 0.7017543859649122,
+              "recall": 0.25316455696202533,
+              "f1": 0.37209302325581395
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 108,
+            "recovered": 40,
+            "missing_symbol": 10
+          },
+          "full_page_symbols": 69,
+          "full_page_connections": 57,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.6943,
+              5.6612,
+              5.6567
+            ],
+            "median": 5.6612
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 69,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9857142857142858,
+              "f1": 0.9928057553956835
+            },
+            "connections": {
+              "tp": 40,
+              "fp": 17,
+              "fn": 118,
+              "precision": 0.7017543859649122,
+              "recall": 0.25316455696202533,
+              "f1": 0.37209302325581395
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 108,
+            "recovered": 40,
+            "missing_symbol": 10
+          },
+          "full_page_symbols": 69,
+          "full_page_connections": 57,
+          "ports": 133,
+          "junctions": 226,
+          "observed_paths": 32,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.924,
+              6.9949,
+              6.932
+            ],
+            "median": 6.932
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "open100-regression",
+      "id": "7",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "071e7dc66c07b7b9fb752de7c91ed2fb7c65cce1135bac43291723980e32fdd0",
+      "source_size": [
+        3194,
+        2130
+      ],
+      "rendered_size": [
+        2400,
+        1601
+      ],
+      "gt_symbols": 61,
+      "gt_edges": 158,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 57,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.9827586206896551,
+              "recall": 0.9344262295081968,
+              "f1": 0.957983193277311
+            },
+            "connections": {
+              "tp": 64,
+              "fp": 13,
+              "fn": 94,
+              "precision": 0.8311688311688312,
+              "recall": 0.4050632911392405,
+              "f1": 0.5446808510638298
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 10,
+            "recovered": 64,
+            "routing": 84
+          },
+          "full_page_symbols": 58,
+          "full_page_connections": 77,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.5357,
+              5.5436,
+              5.5292
+            ],
+            "median": 5.5357
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 57,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.9827586206896551,
+              "recall": 0.9344262295081968,
+              "f1": 0.957983193277311
+            },
+            "connections": {
+              "tp": 64,
+              "fp": 13,
+              "fn": 94,
+              "precision": 0.8311688311688312,
+              "recall": 0.4050632911392405,
+              "f1": 0.5446808510638298
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 10,
+            "recovered": 64,
+            "routing": 84
+          },
+          "full_page_symbols": 58,
+          "full_page_connections": 77,
+          "ports": 137,
+          "junctions": 150,
+          "observed_paths": 42,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.8207,
+              6.7566,
+              6.8099
+            ],
+            "median": 6.8099
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "open100-regression",
+      "id": "8",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "d0e38b31ec1d30189bb9ee32cbf07387a3e033439ec69d62b7cd8578975e729e",
+      "source_size": [
+        3342,
+        2222
+      ],
+      "rendered_size": [
+        2400,
+        1596
+      ],
+      "gt_symbols": 36,
+      "gt_edges": 53,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 38,
+              "fp": 11,
+              "fn": 15,
+              "precision": 0.7755102040816326,
+              "recall": 0.7169811320754716,
+              "f1": 0.7450980392156863
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 38,
+            "routing": 15
+          },
+          "full_page_symbols": 37,
+          "full_page_connections": 49,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.9382,
+              4.9271,
+              4.9439
+            ],
+            "median": 4.9382
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 38,
+              "fp": 11,
+              "fn": 15,
+              "precision": 0.7755102040816326,
+              "recall": 0.7169811320754716,
+              "f1": 0.7450980392156863
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 38,
+            "routing": 15
+          },
+          "full_page_symbols": 37,
+          "full_page_connections": 49,
+          "ports": 77,
+          "junctions": 59,
+          "observed_paths": 7,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.1774,
+              6.1349,
+              6.1312
+            ],
+            "median": 6.1349
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "open100-regression",
+      "id": "9",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "c620ed2ad097e10c3249050266595d303750453154fc51449c1e1e4196d43321",
+      "source_size": [
+        3198,
+        2128
+      ],
+      "rendered_size": [
+        2400,
+        1597
+      ],
+      "gt_symbols": 42,
+      "gt_edges": 156,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 6,
+              "precision": 0.972972972972973,
+              "recall": 0.8571428571428571,
+              "f1": 0.9113924050632911
+            },
+            "connections": {
+              "tp": 129,
+              "fp": 0,
+              "fn": 27,
+              "precision": 1.0,
+              "recall": 0.8269230769230769,
+              "f1": 0.9052631578947369
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 25,
+            "recovered": 129,
+            "missing_symbol": 2
+          },
+          "full_page_symbols": 37,
+          "full_page_connections": 129,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.9364,
+              5.0205,
+              4.9905
+            ],
+            "median": 4.9905
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 6,
+              "precision": 0.972972972972973,
+              "recall": 0.8571428571428571,
+              "f1": 0.9113924050632911
+            },
+            "connections": {
+              "tp": 129,
+              "fp": 0,
+              "fn": 27,
+              "precision": 1.0,
+              "recall": 0.8269230769230769,
+              "f1": 0.9052631578947369
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 25,
+            "recovered": 129,
+            "missing_symbol": 2
+          },
+          "full_page_symbols": 37,
+          "full_page_connections": 129,
+          "ports": 51,
+          "junctions": 236,
+          "observed_paths": 66,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.1287,
+              6.1235,
+              6.1501
+            ],
+            "median": 6.1287
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "open100-regression",
+      "id": "10",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "246841b69ea44b8b881429b801ff66ca16637832b95a1ce09632c5538842ee1b",
+      "source_size": [
+        2792,
+        1860
+      ],
+      "rendered_size": [
+        2400,
+        1599
+      ],
+      "gt_symbols": 89,
+      "gt_edges": 167,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 77,
+              "fp": 3,
+              "fn": 12,
+              "precision": 0.9625,
+              "recall": 0.8651685393258427,
+              "f1": 0.9112426035502958
+            },
+            "connections": {
+              "tp": 40,
+              "fp": 37,
+              "fn": 127,
+              "precision": 0.5194805194805194,
+              "recall": 0.23952095808383234,
+              "f1": 0.32786885245901637
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 40,
+            "missing_symbol": 45,
+            "routing": 82
+          },
+          "full_page_symbols": 80,
+          "full_page_connections": 77,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.5444,
+              6.4969,
+              6.4879
+            ],
+            "median": 6.4969
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 77,
+              "fp": 3,
+              "fn": 12,
+              "precision": 0.9625,
+              "recall": 0.8651685393258427,
+              "f1": 0.9112426035502958
+            },
+            "connections": {
+              "tp": 40,
+              "fp": 37,
+              "fn": 127,
+              "precision": 0.5194805194805194,
+              "recall": 0.23952095808383234,
+              "f1": 0.32786885245901637
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 40,
+            "missing_symbol": 45,
+            "routing": 82
+          },
+          "full_page_symbols": 80,
+          "full_page_connections": 77,
+          "ports": 191,
+          "junctions": 168,
+          "observed_paths": 12,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              7.735,
+              7.6711,
+              7.7567
+            ],
+            "median": 7.735
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "open100-regression",
+      "id": "11",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "363bf989089abe8e235862729392633a99b4e879b1adbd407fcce7f90eb26d94",
+      "source_size": [
+        2786,
+        1862
+      ],
+      "rendered_size": [
+        2400,
+        1604
+      ],
+      "gt_symbols": 82,
+      "gt_edges": 156,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 1,
+              "fn": 18,
+              "precision": 0.9846153846153847,
+              "recall": 0.7804878048780488,
+              "f1": 0.8707482993197279
+            },
+            "connections": {
+              "tp": 28,
+              "fp": 34,
+              "fn": 128,
+              "precision": 0.45161290322580644,
+              "recall": 0.1794871794871795,
+              "f1": 0.25688073394495414
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 38,
+            "missing_symbol": 90,
+            "recovered": 28
+          },
+          "full_page_symbols": 65,
+          "full_page_connections": 62,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.3336,
+              5.3565,
+              5.4064
+            ],
+            "median": 5.3565
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 1,
+              "fn": 18,
+              "precision": 0.9846153846153847,
+              "recall": 0.7804878048780488,
+              "f1": 0.8707482993197279
+            },
+            "connections": {
+              "tp": 28,
+              "fp": 34,
+              "fn": 128,
+              "precision": 0.45161290322580644,
+              "recall": 0.1794871794871795,
+              "f1": 0.25688073394495414
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 38,
+            "missing_symbol": 90,
+            "recovered": 28
+          },
+          "full_page_symbols": 65,
+          "full_page_connections": 62,
+          "ports": 153,
+          "junctions": 120,
+          "observed_paths": 12,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.6097,
+              6.6027,
+              6.5996
+            ],
+            "median": 6.6027
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "pahala-p21-regression",
+      "id": "p21",
+      "roi_only": true,
+      "role": "historical-regression",
+      "source_sha256": "ad11d5eec96eb51afda62d04cd39ba911ce2de10957a8e85ccc047a96877498e",
+      "source_size": [
+        4800,
+        3106
+      ],
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "gt_symbols": 9,
+      "gt_edges": 10,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.875,
+              "recall": 0.7777777777777778,
+              "f1": 0.8235294117647058
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 4,
+              "fn": 9,
+              "precision": 0.2,
+              "recall": 0.1,
+              "f1": 0.13333333333333333
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 7,
+            "recovered": 1,
+            "routing": 2
+          },
+          "full_page_symbols": 33,
+          "full_page_connections": 40,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.1423,
+              6.1289,
+              6.1211
+            ],
+            "median": 6.1289
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.875,
+              "recall": 0.7777777777777778,
+              "f1": 0.8235294117647058
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 4,
+              "fn": 9,
+              "precision": 0.2,
+              "recall": 0.1,
+              "f1": 0.13333333333333333
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 7,
+            "recovered": 1,
+            "routing": 2
+          },
+          "full_page_symbols": 33,
+          "full_page_connections": 40,
+          "ports": 89,
+          "junctions": 71,
+          "observed_paths": 9,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              7.284,
+              7.4152,
+              7.2202
+            ],
+            "median": 7.284
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "9",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "782d49193ee26b41226940213b7453e83fe9554eed8299453f6de1cdcc80fa7b",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 66,
+      "gt_edges": 763,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 13,
+              "fn": 0,
+              "precision": 0.8354430379746836,
+              "recall": 1.0,
+              "f1": 0.9103448275862069
+            },
+            "connections": {
+              "tp": 137,
+              "fp": 59,
+              "fn": 626,
+              "precision": 0.6989795918367347,
+              "recall": 0.17955439056356487,
+              "f1": 0.2857142857142857
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 626,
+            "recovered": 137
+          },
+          "full_page_symbols": 79,
+          "full_page_connections": 196,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.2818,
+              5.2949,
+              5.2619
+            ],
+            "median": 5.2818
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 13,
+              "fn": 0,
+              "precision": 0.8354430379746836,
+              "recall": 1.0,
+              "f1": 0.9103448275862069
+            },
+            "connections": {
+              "tp": 137,
+              "fp": 59,
+              "fn": 626,
+              "precision": 0.6989795918367347,
+              "recall": 0.17955439056356487,
+              "f1": 0.2857142857142857
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 626,
+            "recovered": 137
+          },
+          "full_page_symbols": 79,
+          "full_page_connections": 196,
+          "ports": 172,
+          "junctions": 122,
+          "observed_paths": 42,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.5182,
+              6.5716,
+              6.5169
+            ],
+            "median": 6.5182
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "34",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "d576093c78e7ea564bf8a513f66d2a4f9fcc6c4055b0774c860039f6a30a84c5",
+      "source_size": [
+        7168,
+        4562
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 72,
+      "gt_edges": 547,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 72,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 167,
+              "fp": 9,
+              "fn": 380,
+              "precision": 0.9488636363636364,
+              "recall": 0.3053016453382084,
+              "f1": 0.46196403872752423
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 167,
+            "routing": 380
+          },
+          "full_page_symbols": 74,
+          "full_page_connections": 176,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.5947,
+              5.5483,
+              5.5674
+            ],
+            "median": 5.5674
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 72,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 167,
+              "fp": 9,
+              "fn": 380,
+              "precision": 0.9488636363636364,
+              "recall": 0.3053016453382084,
+              "f1": 0.46196403872752423
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 167,
+            "routing": 380
+          },
+          "full_page_symbols": 74,
+          "full_page_connections": 176,
+          "ports": 211,
+          "junctions": 145,
+          "observed_paths": 40,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.7924,
+              6.8117,
+              6.8134
+            ],
+            "median": 6.8117
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "385",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "795416befd7828eda31c88e4348e7a5d32996406fbc6a8ffd4837b3b06e691e8",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 64,
+      "gt_edges": 724,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 15,
+              "fn": 0,
+              "precision": 0.810126582278481,
+              "recall": 1.0,
+              "f1": 0.8951048951048951
+            },
+            "connections": {
+              "tp": 194,
+              "fp": 64,
+              "fn": 530,
+              "precision": 0.751937984496124,
+              "recall": 0.26795580110497236,
+              "f1": 0.395112016293279
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 530,
+            "recovered": 194
+          },
+          "full_page_symbols": 79,
+          "full_page_connections": 258,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.2212,
+              5.2985,
+              5.2617
+            ],
+            "median": 5.2617
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 15,
+              "fn": 0,
+              "precision": 0.810126582278481,
+              "recall": 1.0,
+              "f1": 0.8951048951048951
+            },
+            "connections": {
+              "tp": 194,
+              "fp": 64,
+              "fn": 530,
+              "precision": 0.751937984496124,
+              "recall": 0.26795580110497236,
+              "f1": 0.395112016293279
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 530,
+            "recovered": 194
+          },
+          "full_page_symbols": 79,
+          "full_page_connections": 258,
+          "ports": 178,
+          "junctions": 148,
+          "observed_paths": 37,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.5146,
+              6.5367,
+              6.5179
+            ],
+            "median": 6.5179
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "285",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "eddbe6d1b92e76f94fb9633cb57ff1cba0c55a514035439cfa0e914f7829c278",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 68,
+      "gt_edges": 1189,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 68,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.9714285714285714,
+              "recall": 1.0,
+              "f1": 0.9855072463768116
+            },
+            "connections": {
+              "tp": 139,
+              "fp": 12,
+              "fn": 1050,
+              "precision": 0.9205298013245033,
+              "recall": 0.11690496215306981,
+              "f1": 0.20746268656716418
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 1050,
+            "recovered": 139
+          },
+          "full_page_symbols": 70,
+          "full_page_connections": 151,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.8299,
+              5.7515,
+              5.7758
+            ],
+            "median": 5.7758
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 68,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.9714285714285714,
+              "recall": 1.0,
+              "f1": 0.9855072463768116
+            },
+            "connections": {
+              "tp": 139,
+              "fp": 12,
+              "fn": 1050,
+              "precision": 0.9205298013245033,
+              "recall": 0.11690496215306981,
+              "f1": 0.20746268656716418
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 1050,
+            "recovered": 139
+          },
+          "full_page_symbols": 70,
+          "full_page_connections": 151,
+          "ports": 158,
+          "junctions": 167,
+          "observed_paths": 34,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.9815,
+              6.9122,
+              6.9732
+            ],
+            "median": 6.9732
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "317",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "0b65775ed999f61ad7127f53badd919723f79ee303049cf4b8735584d3bf746e",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 78,
+      "gt_edges": 726,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 78,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.975,
+              "recall": 1.0,
+              "f1": 0.9873417721518988
+            },
+            "connections": {
+              "tp": 314,
+              "fp": 24,
+              "fn": 412,
+              "precision": 0.9289940828402367,
+              "recall": 0.4325068870523416,
+              "f1": 0.5902255639097744
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 412,
+            "recovered": 314
+          },
+          "full_page_symbols": 80,
+          "full_page_connections": 338,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.6049,
+              5.6393,
+              5.5954
+            ],
+            "median": 5.6049
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 78,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.975,
+              "recall": 1.0,
+              "f1": 0.9873417721518988
+            },
+            "connections": {
+              "tp": 314,
+              "fp": 24,
+              "fn": 412,
+              "precision": 0.9289940828402367,
+              "recall": 0.4325068870523416,
+              "f1": 0.5902255639097744
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 412,
+            "recovered": 314
+          },
+          "full_page_symbols": 80,
+          "full_page_connections": 338,
+          "ports": 180,
+          "junctions": 197,
+          "observed_paths": 52,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.8459,
+              6.8468,
+              6.8055
+            ],
+            "median": 6.8459
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "281",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "e1512dc259a492aed45d6bb6ea8045ade03623f72aff70b23e93df9941bc21a3",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 65,
+      "gt_edges": 580,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 65,
+              "fp": 6,
+              "fn": 0,
+              "precision": 0.9154929577464789,
+              "recall": 1.0,
+              "f1": 0.9558823529411765
+            },
+            "connections": {
+              "tp": 216,
+              "fp": 23,
+              "fn": 364,
+              "precision": 0.9037656903765691,
+              "recall": 0.3724137931034483,
+              "f1": 0.5274725274725275
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 364,
+            "recovered": 216
+          },
+          "full_page_symbols": 71,
+          "full_page_connections": 239,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.5872,
+              5.5616,
+              5.5598
+            ],
+            "median": 5.5616
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 65,
+              "fp": 6,
+              "fn": 0,
+              "precision": 0.9154929577464789,
+              "recall": 1.0,
+              "f1": 0.9558823529411765
+            },
+            "connections": {
+              "tp": 216,
+              "fp": 23,
+              "fn": 364,
+              "precision": 0.9037656903765691,
+              "recall": 0.3724137931034483,
+              "f1": 0.5274725274725275
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 364,
+            "recovered": 216
+          },
+          "full_page_symbols": 71,
+          "full_page_connections": 239,
+          "ports": 159,
+          "junctions": 143,
+          "observed_paths": 34,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.8033,
+              6.7919,
+              6.8171
+            ],
+            "median": 6.8033
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "82",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "d94e6e63eef205dd26248d9935f4bad316f3763a7c8d7b18ac1f93b845f87a3e",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 66,
+      "gt_edges": 1138,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 7,
+              "fn": 0,
+              "precision": 0.9041095890410958,
+              "recall": 1.0,
+              "f1": 0.9496402877697842
+            },
+            "connections": {
+              "tp": 134,
+              "fp": 20,
+              "fn": 1004,
+              "precision": 0.8701298701298701,
+              "recall": 0.11775043936731107,
+              "f1": 0.20743034055727555
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 1004,
+            "recovered": 134
+          },
+          "full_page_symbols": 73,
+          "full_page_connections": 154,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.3343,
+              5.3546,
+              5.3614
+            ],
+            "median": 5.3546
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 7,
+              "fn": 0,
+              "precision": 0.9041095890410958,
+              "recall": 1.0,
+              "f1": 0.9496402877697842
+            },
+            "connections": {
+              "tp": 134,
+              "fp": 20,
+              "fn": 1004,
+              "precision": 0.8701298701298701,
+              "recall": 0.11775043936731107,
+              "f1": 0.20743034055727555
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 1004,
+            "recovered": 134
+          },
+          "full_page_symbols": 73,
+          "full_page_connections": 154,
+          "ports": 165,
+          "junctions": 157,
+          "observed_paths": 33,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.6052,
+              6.5413,
+              6.4985
+            ],
+            "median": 6.5413
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "382",
+      "roi_only": false,
+      "role": "historical-regression",
+      "source_sha256": "f14bc0299dab1ee0d7b36f5f0b0c24c3e18dea5857d66ff14963056b6ffd479b",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 98,
+      "gt_edges": 919,
+      "variants": {
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 96,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.9795918367346939,
+              "f1": 0.9896907216494846
+            },
+            "connections": {
+              "tp": 373,
+              "fp": 0,
+              "fn": 546,
+              "precision": 1.0,
+              "recall": 0.4058759521218716,
+              "f1": 0.5773993808049536
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 537,
+            "recovered": 373,
+            "missing_symbol": 9
+          },
+          "full_page_symbols": 96,
+          "full_page_connections": 373,
+          "ports": 0,
+          "junctions": 0,
+          "observed_paths": 0,
+          "recognition_tiles": 0,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.8993,
+              5.8877,
+              5.9286
+            ],
+            "median": 5.8993
+          }
+        },
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 96,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.9795918367346939,
+              "f1": 0.9896907216494846
+            },
+            "connections": {
+              "tp": 373,
+              "fp": 0,
+              "fn": 546,
+              "precision": 1.0,
+              "recall": 0.4058759521218716,
+              "f1": 0.5773993808049536
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 537,
+            "recovered": 373,
+            "missing_symbol": 9
+          },
+          "full_page_symbols": 96,
+          "full_page_connections": 373,
+          "ports": 220,
+          "junctions": 177,
+          "observed_paths": 60,
+          "recognition_tiles": 40,
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              7.1698,
+              7.1809,
+              7.1933
+            ],
+            "median": 7.1809
+          }
+        }
+      },
+      "symbols_and_adjacency_unchanged": true
+    }
+  ],
+  "aggregate": {
+    "new-page": {
+      "v6": {
+        "localization": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.8888888888888888,
+          "recall": 0.8,
+          "f1": 0.8421052631578947
+        },
+        "connections": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875
+        },
+        "mean_sheet_median_seconds": 4.691,
+        "observed_paths": 0,
+        "miss_attribution": {
+          "recovered": 7,
+          "missing_symbol": 1
+        },
+        "recognition": {
+          "ports": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 14,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "junctions": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        }
+      },
+      "v7": {
+        "localization": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.8888888888888888,
+          "recall": 0.8,
+          "f1": 0.8421052631578947
+        },
+        "connections": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875
+        },
+        "mean_sheet_median_seconds": 5.9967999999999995,
+        "observed_paths": 54,
+        "miss_attribution": {
+          "recovered": 7,
+          "missing_symbol": 1
+        },
+        "recognition": {
+          "ports": {
+            "tp": 12,
+            "fp": 8,
+            "fn": 2,
+            "precision": 0.6,
+            "recall": 0.8571428571428571,
+            "f1": 0.7058823529411765
+          },
+          "junctions": {
+            "tp": 4,
+            "fp": 14,
+            "fn": 1,
+            "precision": 0.2222222222222222,
+            "recall": 0.8,
+            "f1": 0.34782608695652173
+          }
+        }
+      }
+    },
+    "open100-regression": {
+      "v6": {
+        "localization": {
+          "tp": 339,
+          "fp": 7,
+          "fn": 41,
+          "precision": 0.9797687861271677,
+          "recall": 0.8921052631578947,
+          "f1": 0.9338842975206612
+        },
+        "connections": {
+          "tp": 339,
+          "fp": 112,
+          "fn": 509,
+          "precision": 0.7516629711751663,
+          "recall": 0.39976415094339623,
+          "f1": 0.5219399538106235
+        },
+        "mean_sheet_median_seconds": 5.4965,
+        "observed_paths": 0,
+        "miss_attribution": {
+          "routing": 352,
+          "recovered": 339,
+          "missing_symbol": 157
+        }
+      },
+      "v7": {
+        "localization": {
+          "tp": 339,
+          "fp": 7,
+          "fn": 41,
+          "precision": 0.9797687861271677,
+          "recall": 0.8921052631578947,
+          "f1": 0.9338842975206612
+        },
+        "connections": {
+          "tp": 339,
+          "fp": 112,
+          "fn": 509,
+          "precision": 0.7516629711751663,
+          "recall": 0.39976415094339623,
+          "f1": 0.5219399538106235
+        },
+        "mean_sheet_median_seconds": 6.723866666666667,
+        "observed_paths": 171,
+        "miss_attribution": {
+          "routing": 352,
+          "recovered": 339,
+          "missing_symbol": 157
+        }
+      }
+    },
+    "pahala-p21-regression": {
+      "v6": {
+        "localization": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.875,
+          "recall": 0.7777777777777778,
+          "f1": 0.8235294117647058
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 4,
+          "fn": 9,
+          "precision": 0.2,
+          "recall": 0.1,
+          "f1": 0.13333333333333333
+        },
+        "mean_sheet_median_seconds": 6.1289,
+        "observed_paths": 0,
+        "miss_attribution": {
+          "missing_symbol": 7,
+          "recovered": 1,
+          "routing": 2
+        }
+      },
+      "v7": {
+        "localization": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.875,
+          "recall": 0.7777777777777778,
+          "f1": 0.8235294117647058
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 4,
+          "fn": 9,
+          "precision": 0.2,
+          "recall": 0.1,
+          "f1": 0.13333333333333333
+        },
+        "mean_sheet_median_seconds": 7.284,
+        "observed_paths": 9,
+        "miss_attribution": {
+          "missing_symbol": 7,
+          "recovered": 1,
+          "routing": 2
+        }
+      }
+    },
+    "synthetic-regression": {
+      "v6": {
+        "localization": {
+          "tp": 575,
+          "fp": 47,
+          "fn": 2,
+          "precision": 0.9244372990353698,
+          "recall": 0.9965337954939342,
+          "f1": 0.9591326105087573
+        },
+        "connections": {
+          "tp": 1674,
+          "fp": 211,
+          "fn": 4912,
+          "precision": 0.8880636604774536,
+          "recall": 0.25417552383844516,
+          "f1": 0.3952307873922795
+        },
+        "mean_sheet_median_seconds": 5.5383875,
+        "observed_paths": 0,
+        "miss_attribution": {
+          "routing": 4903,
+          "recovered": 1674,
+          "missing_symbol": 9
+        }
+      },
+      "v7": {
+        "localization": {
+          "tp": 575,
+          "fp": 47,
+          "fn": 2,
+          "precision": 0.9244372990353698,
+          "recall": 0.9965337954939342,
+          "f1": 0.9591326105087573
+        },
+        "connections": {
+          "tp": 1674,
+          "fp": 211,
+          "fn": 4912,
+          "precision": 0.8880636604774536,
+          "recall": 0.25417552383844516,
+          "f1": 0.3952307873922795
+        },
+        "mean_sheet_median_seconds": 6.77405,
+        "observed_paths": 332,
+        "miss_attribution": {
+          "routing": 4903,
+          "recovered": 1674,
+          "missing_symbol": 9
+        }
+      }
+    },
+    "v6-roi-regression": {
+      "v6": {
+        "localization": {
+          "tp": 16,
+          "fp": 8,
+          "fn": 16,
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285714
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 4,
+          "fn": 34,
+          "precision": 0.3333333333333333,
+          "recall": 0.05555555555555555,
+          "f1": 0.09523809523809523
+        },
+        "mean_sheet_median_seconds": 5.27835,
+        "observed_paths": 0,
+        "miss_attribution": {
+          "missing_symbol": 31,
+          "routing": 3,
+          "recovered": 2
+        }
+      },
+      "v7": {
+        "localization": {
+          "tp": 16,
+          "fp": 8,
+          "fn": 16,
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285714
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 4,
+          "fn": 34,
+          "precision": 0.3333333333333333,
+          "recall": 0.05555555555555555,
+          "f1": 0.09523809523809523
+        },
+        "mean_sheet_median_seconds": 6.4775,
+        "observed_paths": 18,
+        "miss_attribution": {
+          "missing_symbol": 31,
+          "routing": 3,
+          "recovered": 2
+        }
+      }
+    }
+  }
+}
