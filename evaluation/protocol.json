@@ -1,0 +1,11 @@
+{
+  "dataset": "PID2Graph v1 / Complete / PID2Graph OPEN100",
+  "development_ids": ["0", "1", "2", "3"],
+  "holdout_ids": ["4", "5", "6", "7", "8", "9", "10", "11"],
+  "primary_iou": 0.5,
+  "secondary_iou": 0.25,
+  "matching": "maximum-cardinality one-to-one bipartite matching, class agnostic",
+  "semantic_labels": ["valve", "instrumentation", "tank", "pump", "inlet/outlet"],
+  "edges": "undirected equipment adjacency; paths stop at intermediate equipment; transparent topology nodes; no transitive equipment closure",
+  "notes": "Fixed before inspecting development predictions; no holdout-based parameter selection. Unknown candidates count for localization but do not count as correctly classified semantics. Full uncropped sheets at production MAX_SIDE=2400."
+}

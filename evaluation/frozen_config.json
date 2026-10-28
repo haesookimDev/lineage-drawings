@@ -1,0 +1,10 @@
+{
+  "frozen_before_holdout": true,
+  "production_source_sha256": {
+    "backend/extract.py": "e42151db9a0f5667a64d0137c8ee198eae5be84df3f4e33156d4aa56bc37f846",
+    "backend/geometry.py": "0e795703da4909cca03153107e08e6beee6c7054077c41e4447b984fcae15c45"
+  },
+  "configuration": "CPU geometry v2: perimeter-supported circles, closed loops with line ports, axis runs, symbol-barrier adjacency; no learned weights or GT-derived templates",
+  "ocr": "Tesseract 5.3.0 and eng/kor traineddata extracted from the verified production image; host shared libraries may differ",
+  "development_only_tuning": "IDs 0-3; preliminary trials used Tesseract 5.5.0. Final paired runs use 5.3.0 for both versions."
+}

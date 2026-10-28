@@ -1,21 +1,19 @@
 """Deterministic extraction baselines. No semantic class or standard ID is invented."""
-import io
 import math
-import os
 import shutil
 import subprocess
 import tempfile
 import uuid
 from pathlib import Path
 
-import cv2
 import ezdxf
 import fitz
-import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from ezdxf import bbox as dxf_bbox
 from ezdxf.disassemble import recursive_decompose
 from ezdxf.path import make_path
+
+from backend.geometry import geometric_candidates, trace_adjacency
 
 MAX_PAGES = 25
 MAX_SIDE = 2400
@@ -28,7 +26,7 @@ def uid():
 
 
 def normalized(box, w, h):
-    x1, y1, x2, y2 = box
+    x1, y1, x2, y2 = map(float, box)
     return [max(0., min(1., x1/w)), max(0., min(1., y1/h)),
             max(0., min(1., x2/w)), max(0., min(1., y2/h))]
 
@@ -74,49 +72,19 @@ def ocr(image, warnings):
 
 
 def raster_candidates(image, warnings, with_ocr=True):
-    w,h = image.size
-    gray = cv2.cvtColor(np.asarray(image), cv2.COLOR_RGB2GRAY)
-    bw = cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,31,12)
     texts = ocr(image,warnings) if with_ocr else []
-    mask = bw.copy()
-    for item in texts:
-        x1,y1,x2,y2=item['bbox']; mask[max(0,int(y1*h)-2):min(h,int(y2*h)+2),max(0,int(x1*w)-2):min(w,int(x2*w)+2)] = 0
-    horizontal=cv2.morphologyEx(mask,cv2.MORPH_OPEN,cv2.getStructuringElement(cv2.MORPH_RECT,(max(25,w//35),1)))
-    vertical=cv2.morphologyEx(mask,cv2.MORPH_OPEN,cv2.getStructuringElement(cv2.MORPH_RECT,(1,max(25,h//35))))
-    line_mask=cv2.bitwise_or(horizontal,vertical)
-    symbols=cv2.subtract(mask,line_mask)
-    symbols=cv2.morphologyEx(symbols,cv2.MORPH_CLOSE,np.ones((3,3),np.uint8))
-    count,_,stats,_=cv2.connectedComponentsWithStats(symbols)
-    candidates=[]
-    for x,y,cw,ch,area in stats[1:]:
-        if area<30 or cw<8 or ch<8 or cw>w*.7 or ch>h*.7 or cw*ch>w*h*.25:
-            continue
-        candidates.append(element(f'요소 {len(candidates)+1}', 'unknown',
-                                  normalized((int(x),int(y),int(x+cw),int(y+ch)),w,h),'image_candidate'))
-        if len(candidates)>=200:
-            warnings.append('이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다.');break
-    lines=cv2.HoughLinesP(line_mask,1,np.pi/180,threshold=35,minLineLength=30,maxLineGap=7)
-    segments=[] if lines is None else [list(map(int,line[0])) for line in lines[:2000]]
-    return (texts+candidates)[:MAX_ELEMENTS],segments
+    shapes,segments,limited = geometric_candidates(image,texts)
+    candidates = [element(f'요소 {i+1}','unknown',box,'image_candidate',properties)
+                  for i,(box,properties) in enumerate(shapes)]
+    if limited:
+        warnings.append('이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다.')
+    # Do not let dense OCR text consume the entire non-text proposal budget.
+    return texts[:MAX_ELEMENTS-len(candidates)]+candidates,segments
 
 
 def infer_connections(elements, segments, w, h):
-    """A line endpoint near two different symbol boxes creates an undirected candidate."""
-    symbols=[e for e in elements if e['kind']!='text']
-    if len(symbols)>200:return []
-    def nearest(x,y):
-        best=None;distance=max(10,min(w,h)*.018)
-        for e in symbols:
-            a,b,c,d=e['bbox'];a*=w;c*=w;b*=h;d*=h
-            dx=max(a-x,0,x-c);dy=max(b-y,0,y-d);dist=math.hypot(dx,dy)
-            if dist<distance:distance=dist;best=e['id']
-        return best
-    seen=set();out=[]
-    for x1,y1,x2,y2 in segments:
-        a,b=nearest(x1,y1),nearest(x2,y2)
-        if a and b and a!=b and tuple(sorted((a,b))) not in seen:
-            seen.add(tuple(sorted((a,b))));out.append(dict(id=uid(),from_id=a,to_id=b,kind='connectedTo',source='line_candidate',status='needs_review'))
-    return out[:500]
+    return [dict(id=uid(),from_id=a,to_id=b,kind='connectedTo',source='line_trace_candidate',status='needs_review')
+            for a,b in trace_adjacency(elements,segments,w,h)]
 
 
 def finish(image, elements, segments, coordinate, transform, folder, number, warnings):
@@ -224,7 +192,7 @@ def extract(path,extension,folder):
             image=ImageOps.exif_transpose(raw).convert('RGB');original=list(image.size)
             image.thumbnail((MAX_SIDE,MAX_SIDE))
         elements,segments=raster_candidates(image,warnings)
-        warnings.append('이미지 요소와 연결은 기초 추출 후보입니다. 물리 단위·의미·접속을 원본과 대조해 주세요.')
+        warnings.append('이미지 요소와 연결은 기하 기반 후보입니다. 작은 기호·점선·교차 접속·물리 단위·의미는 원본과 대조해 주세요.')
         pages=[finish(image,elements,segments,'image_pixel',{'original_size':original,'rendered_size':list(image.size),'physical_scale':None},folder,1,warnings)]
     return pages,list(dict.fromkeys(warnings))
 
