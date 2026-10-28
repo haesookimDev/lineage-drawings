@@ -84,7 +84,7 @@ def main():
     fig.savefig(out/'remaining-errors.png',dpi=150,bbox_inches='tight');plt.close(fig)
     with (ROOT/'evaluation/results/per-sheet.csv').open('w') as f:
         columns=['version','split','sheet','gt_symbols','pred_symbols','localization_precision','localization_recall','localization_f1','gt_connections','pred_connections','connection_precision','connection_recall','connection_f1','seconds']
-        writer=csv.DictWriter(f,columns);writer.writeheader()
+        writer=csv.DictWriter(f,columns,lineterminator="\n");writer.writeheader()
         for split in ['development','holdout']:
             for version in ['baseline','improved']:
                 for s in load(version,split)['sheets']:

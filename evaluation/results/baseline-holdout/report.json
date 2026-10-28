@@ -1,5 +1,5 @@
 {
-  "evaluated_at": "2026-10-28T02:38:24.541016+00:00",
+  "evaluated_at": "2026-10-28T02:47:51.909714+00:00",
   "opencv": "4.12.0",
   "pillow": "12.0.0",
   "extractor_sources": {
@@ -64,26 +64,24 @@
       },
       "gt_symbols": 73,
       "gt_connections": 106,
-      "pred_symbols": 200,
-      "pred_connections": 63,
-      "ocr_words": 0,
-      "elapsed_seconds": 1.163,
-      "warnings": [
-        "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
-      ],
+      "pred_symbols": 135,
+      "pred_connections": 50,
+      "ocr_words": 123,
+      "elapsed_seconds": 1.157,
+      "warnings": [],
       "scores": {
         "0.5": {
           "localization": {
             "tp": 8,
-            "fp": 192,
+            "fp": 127,
             "fn": 65,
-            "precision": 0.04,
+            "precision": 0.05925925925925926,
             "recall": 0.1095890410958904,
-            "f1": 0.05860805860805861
+            "f1": 0.07692307692307693
           },
           "connections": {
             "tp": 0,
-            "fp": 63,
+            "fp": 50,
             "fn": 106,
             "precision": 0.0,
             "recall": 0.0,
@@ -91,36 +89,36 @@
           },
           "classified_correct": 0,
           "matched_ids": {
-            "ecdd374ffddd465fa4461580bb41c679": "instrumentation4",
-            "ba321e1cfbf1476b888177f870677166": "instrumentation2",
-            "5a4d78c5f9594a07a26a3a36b5206049": "instrumentation112",
-            "0a006e67e27f4a229fc6bd2d12ad21de": "instrumentation106",
-            "ade2605a209640ba9e81f565e1ad2153": "instrumentation17",
-            "a3c2e19f12f24abab6051cb9e1224b48": "instrumentation101",
-            "4bf7452555af4496b7be2e4b03d7077d": "instrumentation9",
-            "d254294734c447a09295a21dd17a6a1e": "instrumentation10"
+            "1078c67bacfc42cda893dac1afbc15be": "valve54",
+            "8eb7e87e14574e0881444eb6ff6c16d5": "valve71",
+            "bc51ec40f17f41488dcd17b91f0bcddc": "instrumentation19",
+            "9084f5b56a5349759ba6f925af3c7e70": "instrumentation106",
+            "07e35d4535b24898818b89702aac53ae": "instrumentation101",
+            "3ae5b03818e145fe8714f387910c89bf": "instrumentation9",
+            "cdf076915db14519ad38534cf36284df": "instrumentation10",
+            "a7e17185c6234609a1e25f357cc06226": "instrumentation62"
           },
           "oracle_boxes": {
-            "tp": 11,
-            "fp": 7,
-            "fn": 95,
-            "precision": 0.6111111111111112,
-            "recall": 0.10377358490566038,
-            "f1": 0.1774193548387097
+            "tp": 12,
+            "fp": 6,
+            "fn": 94,
+            "precision": 0.6666666666666666,
+            "recall": 0.11320754716981132,
+            "f1": 0.1935483870967742
           }
         },
         "0.25": {
           "localization": {
-            "tp": 15,
-            "fp": 185,
-            "fn": 58,
-            "precision": 0.075,
-            "recall": 0.2054794520547945,
-            "f1": 0.10989010989010989
+            "tp": 19,
+            "fp": 116,
+            "fn": 54,
+            "precision": 0.14074074074074075,
+            "recall": 0.2602739726027397,
+            "f1": 0.18269230769230768
           },
           "connections": {
             "tp": 0,
-            "fp": 63,
+            "fp": 50,
             "fn": 106,
             "precision": 0.0,
             "recall": 0.0,
@@ -128,29 +126,33 @@
           },
           "classified_correct": 0,
           "matched_ids": {
-            "ecdd374ffddd465fa4461580bb41c679": "instrumentation4",
-            "ba321e1cfbf1476b888177f870677166": "instrumentation2",
-            "2d9eff5eadc940549af55e72b5b19dfa": "instrumentation109",
-            "5a4d78c5f9594a07a26a3a36b5206049": "instrumentation112",
-            "86cabfb61aab4a289e8b2dd9664dc15c": "instrumentation121",
-            "4f4b18d699b14bbab8f6446663359316": "instrumentation123",
-            "4d507abf24424604b5bc6aa4f058fbc1": "instrumentation102",
-            "0a006e67e27f4a229fc6bd2d12ad21de": "instrumentation106",
-            "ade2605a209640ba9e81f565e1ad2153": "instrumentation17",
-            "3b60ce9642ce44e3b904ffc5feb6a59e": "instrumentation97",
-            "a3c2e19f12f24abab6051cb9e1224b48": "instrumentation101",
-            "2a1e958720864c7098a92bb6c86d75a8": "instrumentation11",
-            "4bf7452555af4496b7be2e4b03d7077d": "instrumentation9",
-            "d254294734c447a09295a21dd17a6a1e": "instrumentation10",
-            "ab13c3875e03436389fd3687fbb9b532": "instrumentation62"
+            "358939376ca44acc85667e7c65bfc4b8": "instrumentation110",
+            "1078c67bacfc42cda893dac1afbc15be": "valve54",
+            "ea833947eca6431da1091da88930f265": "instrumentation109",
+            "50cbc284d61148a381307d59ce6aac66": "valve34",
+            "ea030f40db22404caa884301701c60f3": "instrumentation121",
+            "8eb7e87e14574e0881444eb6ff6c16d5": "valve71",
+            "4b49925c7f7e45c18e5323c5f78ed9da": "instrumentation123",
+            "bc51ec40f17f41488dcd17b91f0bcddc": "instrumentation19",
+            "81b16ad3aa18437387a352ba8d984c39": "valve26",
+            "f99e1083dcc54d40a64825b558d0be7c": "instrumentation102",
+            "05c36c850da1435485742a9d11b20697": "inlet/outlet39",
+            "9084f5b56a5349759ba6f925af3c7e70": "instrumentation106",
+            "f41747269e7f41a285adb027a13035da": "instrumentation97",
+            "07e35d4535b24898818b89702aac53ae": "instrumentation101",
+            "9ea362529c2b47ed81ce5ea0e47b7a61": "valve40",
+            "d09decc39a6c401ebd89bc684038f154": "instrumentation11",
+            "3ae5b03818e145fe8714f387910c89bf": "instrumentation9",
+            "cdf076915db14519ad38534cf36284df": "instrumentation10",
+            "a7e17185c6234609a1e25f357cc06226": "instrumentation62"
           },
           "oracle_boxes": {
-            "tp": 11,
-            "fp": 7,
-            "fn": 95,
-            "precision": 0.6111111111111112,
-            "recall": 0.10377358490566038,
-            "f1": 0.1774193548387097
+            "tp": 12,
+            "fp": 6,
+            "fn": 94,
+            "precision": 0.6666666666666666,
+            "recall": 0.11320754716981132,
+            "f1": 0.1935483870967742
           }
         }
       }
@@ -181,84 +183,88 @@
       "gt_symbols": 74,
       "gt_connections": 439,
       "pred_symbols": 200,
-      "pred_connections": 43,
-      "ocr_words": 0,
-      "elapsed_seconds": 1.473,
+      "pred_connections": 38,
+      "ocr_words": 171,
+      "elapsed_seconds": 1.48,
       "warnings": [
         "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
       ],
       "scores": {
         "0.5": {
           "localization": {
-            "tp": 4,
-            "fp": 196,
-            "fn": 70,
-            "precision": 0.02,
-            "recall": 0.05405405405405406,
-            "f1": 0.029197080291970802
+            "tp": 3,
+            "fp": 197,
+            "fn": 71,
+            "precision": 0.015,
+            "recall": 0.04054054054054054,
+            "f1": 0.021897810218978103
           },
           "connections": {
-            "tp": 1,
-            "fp": 42,
-            "fn": 438,
-            "precision": 0.023255813953488372,
-            "recall": 0.002277904328018223,
-            "f1": 0.004149377593360996
+            "tp": 0,
+            "fp": 38,
+            "fn": 439,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
           },
           "classified_correct": 0,
           "matched_ids": {
-            "e31ca237d05d458fb07cc7ccdc0c8123": "instrumentation14",
-            "c3417135728b4603a071a50e9a61e78c": "instrumentation27",
-            "0570b6475db2462aaa50a3704c020729": "instrumentation127",
-            "836276b32bd54724b1c008ab8d63f5f5": "instrumentation13"
+            "1a3d0d3aa16d464e84aa35327856b70d": "instrumentation127",
+            "c18e9628090644c1a2af7034b4e5d0be": "pump37",
+            "5564ca70c157404c919d3c117c9fb652": "instrumentation24"
           },
           "oracle_boxes": {
-            "tp": 11,
+            "tp": 9,
             "fp": 0,
-            "fn": 428,
+            "fn": 430,
             "precision": 1.0,
-            "recall": 0.025056947608200455,
-            "f1": 0.04888888888888889
+            "recall": 0.02050113895216401,
+            "f1": 0.04017857142857143
           }
         },
         "0.25": {
           "localization": {
-            "tp": 11,
-            "fp": 189,
-            "fn": 63,
-            "precision": 0.055,
-            "recall": 0.14864864864864866,
-            "f1": 0.08029197080291971
+            "tp": 16,
+            "fp": 184,
+            "fn": 58,
+            "precision": 0.08,
+            "recall": 0.21621621621621623,
+            "f1": 0.11678832116788321
           },
           "connections": {
-            "tp": 1,
-            "fp": 42,
-            "fn": 438,
-            "precision": 0.023255813953488372,
-            "recall": 0.002277904328018223,
-            "f1": 0.004149377593360996
+            "tp": 0,
+            "fp": 38,
+            "fn": 439,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
           },
           "classified_correct": 0,
           "matched_ids": {
-            "25f9070723424b18b46d606bfbe83c93": "instrumentation88",
-            "4f772fe53da94258bcafeb2853654573": "inlet/outlet124",
-            "483ce6d7e0424b5cbac4965652947bea": "valve48",
-            "e31ca237d05d458fb07cc7ccdc0c8123": "instrumentation14",
-            "c3417135728b4603a071a50e9a61e78c": "instrumentation27",
-            "cfb5f5798c1d4779a18d4485052db25e": "instrumentation15",
-            "0570b6475db2462aaa50a3704c020729": "instrumentation127",
-            "aab492a2667247c4bcac947d93c45fdb": "instrumentation7",
-            "836276b32bd54724b1c008ab8d63f5f5": "instrumentation13",
-            "8599e1a2d83a44c0919a8b6bd888821b": "pump29",
-            "891d2d57101440568ba7ffb19932f89d": "instrumentation84"
+            "70eec968a0c74b4185d349f3d5290871": "inlet/outlet86",
+            "bf3c993c204a4288a1c84a5fc45b1e7b": "instrumentation16",
+            "fc13675218404d0aa6071e1b7d4992b6": "inlet/outlet124",
+            "ebf818f56dcf49739afac336d0c64d3b": "valve48",
+            "38c6ea4c69df42cf814cd14d25fb2bba": "instrumentation14",
+            "1a3d0d3aa16d464e84aa35327856b70d": "instrumentation127",
+            "ec241663457a42c882326bb11960ad5c": "pump29",
+            "c18e9628090644c1a2af7034b4e5d0be": "pump37",
+            "d38debe77cc74e38825761b308a22fe7": "pump39",
+            "0ec2d1da438142ba8cbd1a1c3fca4816": "instrumentation11",
+            "4de9139388d04f678a69c8f1dd0b1e1f": "instrumentation84",
+            "61dee9d3bca6402981ae53bf1cb975cd": "instrumentation8",
+            "bdd8f53ef5224bbf862f997847195a51": "inlet/outlet12",
+            "7c16085ad24e49078376f23362610fc2": "instrumentation10",
+            "f98792d4c8624470b3c9eaab73522ae4": "instrumentation17",
+            "5564ca70c157404c919d3c117c9fb652": "instrumentation24"
           },
           "oracle_boxes": {
-            "tp": 11,
+            "tp": 9,
             "fp": 0,
-            "fn": 428,
+            "fn": 430,
             "precision": 1.0,
-            "recall": 0.025056947608200455,
-            "f1": 0.04888888888888889
+            "recall": 0.02050113895216401,
+            "f1": 0.04017857142857143
           }
         }
       }
@@ -288,106 +294,122 @@
       "gt_symbols": 70,
       "gt_connections": 158,
       "pred_symbols": 200,
-      "pred_connections": 51,
-      "ocr_words": 0,
-      "elapsed_seconds": 1.561,
+      "pred_connections": 58,
+      "ocr_words": 197,
+      "elapsed_seconds": 1.584,
       "warnings": [
         "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
       ],
       "scores": {
         "0.5": {
           "localization": {
-            "tp": 11,
-            "fp": 189,
-            "fn": 59,
-            "precision": 0.055,
-            "recall": 0.15714285714285714,
-            "f1": 0.08148148148148149
+            "tp": 16,
+            "fp": 184,
+            "fn": 54,
+            "precision": 0.08,
+            "recall": 0.22857142857142856,
+            "f1": 0.11851851851851852
           },
           "connections": {
-            "tp": 0,
-            "fp": 51,
-            "fn": 158,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0
+            "tp": 1,
+            "fp": 57,
+            "fn": 157,
+            "precision": 0.017241379310344827,
+            "recall": 0.006329113924050633,
+            "f1": 0.009259259259259259
           },
           "classified_correct": 0,
           "matched_ids": {
-            "c97af0a7f0f543ad8ec4d97c3392a52f": "instrumentation130",
-            "4d5794d1659145e79e38d538f9113f1c": "instrumentation103",
-            "7e1c97fa81de4a1381cb90ab73eb0bc7": "instrumentation133",
-            "f4e2e29937e143e1a800744a828fd07f": "instrumentation96",
-            "79eab880917647c48093c6287048a23c": "instrumentation93",
-            "89f038325e3946dea61727ec6e21b804": "instrumentation12",
-            "2f56e55bc6bd4ea2805f39ebd81ed28b": "instrumentation13",
-            "270c4b0016704b3cb2c92907167d6165": "instrumentation38",
-            "7d7d73992a92457e89ad9e10a793ff27": "instrumentation97",
-            "5daba137c048404885a93a7312cb64b0": "instrumentation90",
-            "b8fa9c9d086646dab740f4c357c1430a": "instrumentation89"
+            "187bcb7d12ab4c2981f986f11e781848": "instrumentation130",
+            "733b72fe78d54edcb1d3a9e6e2b30319": "instrumentation57",
+            "3db56a4b701f42b2a0e9ac3c1ae27a1a": "instrumentation103",
+            "5af00a35994c41f9bca5fa0f07f712ea": "valve58",
+            "712c893745f3403faf2a2a695c86d4fb": "instrumentation10",
+            "af4ccec147ad4c7d8b6bf4f30e3cf517": "instrumentation96",
+            "8a1d2a8aa9b84b8c9cd3c8d7449b2300": "instrumentation93",
+            "39d3383e97e94b1a8fa0dcbc3a4577b1": "instrumentation12",
+            "af4c1a133a1c49aa82f208b2a18a3e95": "instrumentation13",
+            "12432908cc5a4a6e9d67e32fae0faa31": "instrumentation97",
+            "9a4a9419b86c4a0780793c0ca8d8b899": "instrumentation90",
+            "8cba417435cf4e3b86cf766913d29dc1": "instrumentation89",
+            "f647a4d588764320b711d22f517d8b98": "instrumentation23",
+            "be5454f353684985bf0af4b3d4b76609": "instrumentation18",
+            "5b1a32d1a19f47b09539972d66162b14": "instrumentation87",
+            "f4f68794015146f1b85e12bfe1059f91": "instrumentation128"
           },
           "oracle_boxes": {
             "tp": 8,
-            "fp": 2,
+            "fp": 4,
             "fn": 150,
-            "precision": 0.8,
+            "precision": 0.6666666666666666,
             "recall": 0.05063291139240506,
-            "f1": 0.09523809523809523
+            "f1": 0.09411764705882353
           }
         },
         "0.25": {
           "localization": {
-            "tp": 26,
-            "fp": 174,
-            "fn": 44,
-            "precision": 0.13,
-            "recall": 0.37142857142857144,
-            "f1": 0.1925925925925926
+            "tp": 37,
+            "fp": 163,
+            "fn": 33,
+            "precision": 0.185,
+            "recall": 0.5285714285714286,
+            "f1": 0.2740740740740741
           },
           "connections": {
-            "tp": 0,
-            "fp": 51,
-            "fn": 158,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0
+            "tp": 3,
+            "fp": 55,
+            "fn": 155,
+            "precision": 0.05172413793103448,
+            "recall": 0.0189873417721519,
+            "f1": 0.027777777777777776
           },
           "classified_correct": 0,
           "matched_ids": {
-            "c97af0a7f0f543ad8ec4d97c3392a52f": "instrumentation130",
-            "74310f8d059e41aa8fb9ab8bf1211180": "instrumentation131",
-            "d00cfdd05b9d473785b6dae54f80878e": "instrumentation57",
-            "b5f9953cf6764ff9a75657be87225d62": "instrumentation117",
-            "3a3d99bf41d5488a80c5b7fc0b19c41d": "instrumentation107",
-            "4cf44529f0964ef1a359ca01d113bd3c": "instrumentation132",
-            "4d5794d1659145e79e38d538f9113f1c": "instrumentation103",
-            "149e430edd4a40c48ae888c3c9c1573e": "instrumentation47",
-            "7e1c97fa81de4a1381cb90ab73eb0bc7": "instrumentation133",
-            "f220a1da77ab452998a00b38416cce21": "instrumentation134",
-            "9d32dde55aae4dc88edee411ca35b1cf": "inlet/outlet71",
-            "1c176fbd985d4b5dbee7e83eccf42d33": "instrumentation9",
-            "2ff0695789524faeabde8a05ce6966af": "instrumentation136",
-            "537e95035d884b44ab7eab639c831110": "instrumentation94",
-            "f4e2e29937e143e1a800744a828fd07f": "instrumentation96",
-            "79eab880917647c48093c6287048a23c": "instrumentation93",
-            "89f038325e3946dea61727ec6e21b804": "instrumentation12",
-            "8bbd799ef19b4a5ba51defacc3694599": "instrumentation92",
-            "2f56e55bc6bd4ea2805f39ebd81ed28b": "instrumentation13",
-            "270c4b0016704b3cb2c92907167d6165": "instrumentation38",
-            "6b46936c5d694b3d9baa0a80898f25e6": "instrumentation91",
-            "87b4fbf42a2542bf81dc257f5530abe2": "instrumentation14",
-            "7d7d73992a92457e89ad9e10a793ff27": "instrumentation97",
-            "5daba137c048404885a93a7312cb64b0": "instrumentation90",
-            "f3b4a4235c924c5bb6a26dfaf68d71cb": "instrumentation22",
-            "b8fa9c9d086646dab740f4c357c1430a": "instrumentation89"
+            "b7ea29cd92204e5590adb092a92e397e": "instrumentation55",
+            "187bcb7d12ab4c2981f986f11e781848": "instrumentation130",
+            "733b72fe78d54edcb1d3a9e6e2b30319": "instrumentation57",
+            "cbb5187b0a634e70b3de7562b45c1048": "instrumentation117",
+            "5926e326fdde4b72a5b2de547ab7fb28": "instrumentation107",
+            "3db56a4b701f42b2a0e9ac3c1ae27a1a": "instrumentation103",
+            "11f7c85e447b4a949ac7fb8b03200db6": "instrumentation47",
+            "5af00a35994c41f9bca5fa0f07f712ea": "valve58",
+            "e10c2ed1bd9d4ea2b05a4b681b8e3b5d": "instrumentation11",
+            "735a4ab929c6427196ac042c0a33553b": "instrumentation133",
+            "07db0c391cf1482eab26fa997ca61588": "instrumentation134",
+            "712c893745f3403faf2a2a695c86d4fb": "instrumentation10",
+            "71ddc5c407be4b8d8560ff2abff73159": "inlet/outlet71",
+            "f423c13c84ce42d8837c12ee995e96f2": "instrumentation9",
+            "a10cb879a4cd412a97e8cd74dfd1b15a": "instrumentation94",
+            "af4ccec147ad4c7d8b6bf4f30e3cf517": "instrumentation96",
+            "8a1d2a8aa9b84b8c9cd3c8d7449b2300": "instrumentation93",
+            "39d3383e97e94b1a8fa0dcbc3a4577b1": "instrumentation12",
+            "3f61fcc7a4714134b365f33f944a26b2": "instrumentation92",
+            "af4c1a133a1c49aa82f208b2a18a3e95": "instrumentation13",
+            "e0c490f5216b442fb82f12fbeeb12d92": "instrumentation38",
+            "9ccf0c0795f3469e9a77de707c524e59": "instrumentation91",
+            "98085baeadff4009a57e3ca94faac523": "instrumentation14",
+            "12432908cc5a4a6e9d67e32fae0faa31": "instrumentation97",
+            "9a4a9419b86c4a0780793c0ca8d8b899": "instrumentation90",
+            "57eb65424a1b4fe9a5d95b2f66856c36": "instrumentation22",
+            "8cba417435cf4e3b86cf766913d29dc1": "instrumentation89",
+            "cc38662107204b0da8f7daeb2f8fe499": "instrumentation110",
+            "f647a4d588764320b711d22f517d8b98": "instrumentation23",
+            "3afaa4c10b294f49bcdb32d4c22dc2d6": "instrumentation88",
+            "dfcd5641b37b4bf7b95e4218688660e5": "instrumentation17",
+            "d354469afadc4c3ebdca717b08f01fda": "instrumentation24",
+            "be5454f353684985bf0af4b3d4b76609": "instrumentation18",
+            "60ea7f4eb3284465acc5f9cb946aaf25": "instrumentation84",
+            "81835787fde348e1ad7c0a110a993c28": "instrumentation19",
+            "5b1a32d1a19f47b09539972d66162b14": "instrumentation87",
+            "f4f68794015146f1b85e12bfe1059f91": "instrumentation128"
           },
           "oracle_boxes": {
             "tp": 8,
-            "fp": 2,
+            "fp": 4,
             "fn": 150,
-            "precision": 0.8,
+            "precision": 0.6666666666666666,
             "recall": 0.05063291139240506,
-            "f1": 0.09523809523809523
+            "f1": 0.09411764705882353
           }
         }
       }
@@ -419,52 +441,51 @@
       "gt_connections": 158,
       "pred_symbols": 200,
       "pred_connections": 28,
-      "ocr_words": 0,
-      "elapsed_seconds": 1.434,
+      "ocr_words": 192,
+      "elapsed_seconds": 1.427,
       "warnings": [
         "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
       ],
       "scores": {
         "0.5": {
           "localization": {
-            "tp": 13,
-            "fp": 187,
-            "fn": 48,
-            "precision": 0.065,
-            "recall": 0.21311475409836064,
-            "f1": 0.09961685823754789
+            "tp": 12,
+            "fp": 188,
+            "fn": 49,
+            "precision": 0.06,
+            "recall": 0.19672131147540983,
+            "f1": 0.09195402298850575
           },
           "connections": {
-            "tp": 3,
-            "fp": 25,
-            "fn": 155,
-            "precision": 0.10714285714285714,
-            "recall": 0.0189873417721519,
-            "f1": 0.03225806451612903
+            "tp": 1,
+            "fp": 27,
+            "fn": 157,
+            "precision": 0.03571428571428571,
+            "recall": 0.006329113924050633,
+            "f1": 0.010752688172043012
           },
           "classified_correct": 0,
           "matched_ids": {
-            "9001682af3a14869bc47b0f167b46573": "instrumentation13",
-            "fd0598279ae24d3e838971dc2f1c0655": "instrumentation14",
-            "53d09de622fe42419f8428ebc928cd10": "instrumentation15",
-            "50dfa1e13f994c0cbab0e37faadf8c2a": "instrumentation80",
-            "dceadf21773042c5a4b778dbd3a77e53": "instrumentation79",
-            "aa4aaab7214a48e1a86c54d233de2dec": "valve40",
-            "340c0f4ef93f4bd89c4ddf8e9e85540f": "pump27",
-            "dd6a413fbe7f43a8a54c834a4583a2e9": "valve73",
-            "fe190b5cb65a48eba0e48bbb897697c1": "valve43",
-            "2b454b9cd95445e4b713c8187e0c854f": "instrumentation17",
-            "909a2b4f493244479fd5fb7aa999914d": "pump12",
-            "b78394306ef148f0a8f4457cefba51da": "instrumentation18",
-            "aa862fd8b20d41cead7390b27110aaec": "pump44"
+            "aa8902bd4f914163bdda4172825e2f3e": "instrumentation13",
+            "9e7d9209f1a1424dafa580bca4367013": "instrumentation14",
+            "53599f94350a433a85622ba21a124702": "instrumentation15",
+            "a0fc1333925e492ab06ba9853e59da7e": "valve40",
+            "9c9879c5d86d44c1a1b62bdb5933adc8": "valve73",
+            "f8850eb9a7a94f1c988998a3024bde97": "valve43",
+            "dbe7e2d0618b438b9c75407e911d844c": "instrumentation91",
+            "8c867647868f4cc8b2ff004c23f7ba1b": "instrumentation24",
+            "635b58f44694471c9a5cda607d0de41a": "instrumentation18",
+            "eb19c307953a470ab3897332959f7d71": "instrumentation19",
+            "1da3db88a5ed4b90aa3010f14f676dbd": "instrumentation94",
+            "e47a498e435e408fb7e74f21b85ab6ce": "instrumentation22"
           },
           "oracle_boxes": {
-            "tp": 14,
-            "fp": 6,
-            "fn": 144,
-            "precision": 0.7,
-            "recall": 0.08860759493670886,
-            "f1": 0.15730337078651685
+            "tp": 8,
+            "fp": 5,
+            "fn": 150,
+            "precision": 0.6153846153846154,
+            "recall": 0.05063291139240506,
+            "f1": 0.0935672514619883
           }
         },
         "0.25": {
@@ -477,39 +498,39 @@
             "f1": 0.12260536398467432
           },
           "connections": {
-            "tp": 3,
-            "fp": 25,
-            "fn": 155,
-            "precision": 0.10714285714285714,
-            "recall": 0.0189873417721519,
-            "f1": 0.03225806451612903
+            "tp": 1,
+            "fp": 27,
+            "fn": 157,
+            "precision": 0.03571428571428571,
+            "recall": 0.006329113924050633,
+            "f1": 0.010752688172043012
           },
           "classified_correct": 0,
           "matched_ids": {
-            "9001682af3a14869bc47b0f167b46573": "instrumentation13",
-            "fd0598279ae24d3e838971dc2f1c0655": "instrumentation14",
-            "53d09de622fe42419f8428ebc928cd10": "instrumentation15",
-            "50dfa1e13f994c0cbab0e37faadf8c2a": "instrumentation80",
-            "dceadf21773042c5a4b778dbd3a77e53": "instrumentation79",
-            "aa4aaab7214a48e1a86c54d233de2dec": "valve40",
-            "483fdf51f3294d78ac7d0518b864fd62": "valve72",
-            "340c0f4ef93f4bd89c4ddf8e9e85540f": "pump27",
-            "dd6a413fbe7f43a8a54c834a4583a2e9": "valve73",
-            "50c34d2172954c9193bc77b41aa340e0": "instrumentation25",
-            "fe190b5cb65a48eba0e48bbb897697c1": "valve43",
-            "411fce0aac9d45cd8e1761a66c6093f9": "instrumentation92",
-            "2b454b9cd95445e4b713c8187e0c854f": "instrumentation17",
-            "909a2b4f493244479fd5fb7aa999914d": "pump12",
-            "b78394306ef148f0a8f4457cefba51da": "instrumentation18",
-            "aa862fd8b20d41cead7390b27110aaec": "pump44"
+            "aa8902bd4f914163bdda4172825e2f3e": "instrumentation13",
+            "9e7d9209f1a1424dafa580bca4367013": "instrumentation14",
+            "53599f94350a433a85622ba21a124702": "instrumentation15",
+            "a0fc1333925e492ab06ba9853e59da7e": "valve40",
+            "71330f4790754ff395f06c17f84c7391": "valve72",
+            "9c9879c5d86d44c1a1b62bdb5933adc8": "valve73",
+            "f8850eb9a7a94f1c988998a3024bde97": "valve43",
+            "dbe7e2d0618b438b9c75407e911d844c": "instrumentation91",
+            "49ad0f4c795e4edab763d25e07756efc": "instrumentation17",
+            "8c867647868f4cc8b2ff004c23f7ba1b": "instrumentation24",
+            "8cc7b97cc5c04a9eb7d7c5c1fd24161f": "pump12",
+            "635b58f44694471c9a5cda607d0de41a": "instrumentation18",
+            "e1b1a899b4464c4d882aee24d0998e35": "instrumentation16",
+            "eb19c307953a470ab3897332959f7d71": "instrumentation19",
+            "1da3db88a5ed4b90aa3010f14f676dbd": "instrumentation94",
+            "e47a498e435e408fb7e74f21b85ab6ce": "instrumentation22"
           },
           "oracle_boxes": {
-            "tp": 14,
-            "fp": 6,
-            "fn": 144,
-            "precision": 0.7,
-            "recall": 0.08860759493670886,
-            "f1": 0.15730337078651685
+            "tp": 8,
+            "fp": 5,
+            "fn": 150,
+            "precision": 0.6153846153846154,
+            "recall": 0.05063291139240506,
+            "f1": 0.0935672514619883
           }
         }
       }
@@ -537,26 +558,24 @@
       },
       "gt_symbols": 36,
       "gt_connections": 53,
-      "pred_symbols": 200,
-      "pred_connections": 35,
-      "ocr_words": 0,
-      "elapsed_seconds": 1.099,
-      "warnings": [
-        "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
-      ],
+      "pred_symbols": 162,
+      "pred_connections": 29,
+      "ocr_words": 126,
+      "elapsed_seconds": 1.088,
+      "warnings": [],
       "scores": {
         "0.5": {
           "localization": {
             "tp": 2,
-            "fp": 198,
+            "fp": 160,
             "fn": 34,
-            "precision": 0.01,
+            "precision": 0.012345679012345678,
             "recall": 0.05555555555555555,
-            "f1": 0.01694915254237288
+            "f1": 0.020202020202020204
           },
           "connections": {
             "tp": 0,
-            "fp": 35,
+            "fp": 29,
             "fn": 53,
             "precision": 0.0,
             "recall": 0.0,
@@ -564,30 +583,30 @@
           },
           "classified_correct": 0,
           "matched_ids": {
-            "719b6fb8f7b24cfea766bf72313055e1": "instrumentation18",
-            "8d9e08a976fd49c78815db4ddc000ff8": "instrumentation19"
+            "fb52bc58471946abb8f39d164409d2e0": "instrumentation18",
+            "0ae8d8fe35764498a2d73c07d16faf95": "instrumentation19"
           },
           "oracle_boxes": {
             "tp": 11,
-            "fp": 0,
+            "fp": 2,
             "fn": 42,
-            "precision": 1.0,
+            "precision": 0.8461538461538461,
             "recall": 0.20754716981132076,
-            "f1": 0.34375
+            "f1": 0.3333333333333333
           }
         },
         "0.25": {
           "localization": {
-            "tp": 12,
-            "fp": 188,
-            "fn": 24,
-            "precision": 0.06,
-            "recall": 0.3333333333333333,
-            "f1": 0.1016949152542373
+            "tp": 11,
+            "fp": 151,
+            "fn": 25,
+            "precision": 0.06790123456790123,
+            "recall": 0.3055555555555556,
+            "f1": 0.1111111111111111
           },
           "connections": {
             "tp": 0,
-            "fp": 35,
+            "fp": 29,
             "fn": 53,
             "precision": 0.0,
             "recall": 0.0,
@@ -595,26 +614,25 @@
           },
           "classified_correct": 0,
           "matched_ids": {
-            "993caa6da87047c39c11259f91c08f65": "instrumentation25",
-            "74b355f9c53b48d687a750a940a367ef": "instrumentation24",
-            "d923fbf63c4743f6af3b46aba3549318": "instrumentation4",
-            "0c3f5f259cca4d928685556b091ed823": "instrumentation3",
-            "490ac0941f424f93aa0a0813569c3ec5": "instrumentation30",
-            "8a860b3d68384616a96c0201d57c75e5": "instrumentation28",
-            "92a8db7ad3544ce29fffdfbfab632201": "instrumentation39",
-            "719b6fb8f7b24cfea766bf72313055e1": "instrumentation18",
-            "8d9e08a976fd49c78815db4ddc000ff8": "instrumentation19",
-            "2896252484f84546ac0d2427735764b3": "instrumentation27",
-            "88232b6e7fd14674b1f6102aa3945498": "instrumentation2",
-            "a2123d416324465285f660e2cfeea873": "valve26"
+            "d5e50619a6ad421e8495cc357dc89629": "instrumentation25",
+            "6ef9c5ed9a014fa0b1978ec233b5d199": "valve21",
+            "6268846dd55948c4a1eb41cd31ac027c": "instrumentation4",
+            "3ed4376c99b04df08744ec272dda5dff": "inlet/outlet5",
+            "153dd7e17a9a43fb967dea8b0c8af045": "valve23",
+            "c2f62bdc7e7b405f84097b8955cb40e0": "instrumentation28",
+            "fb52bc58471946abb8f39d164409d2e0": "instrumentation18",
+            "0ae8d8fe35764498a2d73c07d16faf95": "instrumentation19",
+            "604c950cfcdc4bf99f860984f07dc0bd": "instrumentation27",
+            "0a59c4dffcd6466ea352cba3954f48f5": "valve14",
+            "dc5e3dd1fb974bfaa17a1d4d67e3bbd1": "valve26"
           },
           "oracle_boxes": {
             "tp": 11,
-            "fp": 0,
+            "fp": 2,
             "fn": 42,
-            "precision": 1.0,
+            "precision": 0.8461538461538461,
             "recall": 0.20754716981132076,
-            "f1": 0.34375
+            "f1": 0.3333333333333333
           }
         }
       }
@@ -643,18 +661,16 @@
       },
       "gt_symbols": 42,
       "gt_connections": 156,
-      "pred_symbols": 200,
-      "pred_connections": 19,
-      "ocr_words": 0,
-      "elapsed_seconds": 0.98,
-      "warnings": [
-        "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
-      ],
+      "pred_symbols": 172,
+      "pred_connections": 29,
+      "ocr_words": 123,
+      "elapsed_seconds": 0.986,
+      "warnings": [],
       "scores": {
         "0.5": {
           "localization": {
             "tp": 0,
-            "fp": 200,
+            "fp": 172,
             "fn": 42,
             "precision": 0.0,
             "recall": 0.0,
@@ -662,7 +678,7 @@
           },
           "connections": {
             "tp": 0,
-            "fp": 19,
+            "fp": 29,
             "fn": 156,
             "precision": 0.0,
             "recall": 0.0,
@@ -681,41 +697,40 @@
         },
         "0.25": {
           "localization": {
-            "tp": 18,
-            "fp": 182,
-            "fn": 24,
-            "precision": 0.09,
-            "recall": 0.42857142857142855,
-            "f1": 0.1487603305785124
+            "tp": 17,
+            "fp": 155,
+            "fn": 25,
+            "precision": 0.09883720930232558,
+            "recall": 0.40476190476190477,
+            "f1": 0.1588785046728972
           },
           "connections": {
-            "tp": 2,
-            "fp": 17,
-            "fn": 154,
-            "precision": 0.10526315789473684,
-            "recall": 0.01282051282051282,
-            "f1": 0.022857142857142857
+            "tp": 1,
+            "fp": 28,
+            "fn": 155,
+            "precision": 0.034482758620689655,
+            "recall": 0.00641025641025641,
+            "f1": 0.010810810810810811
           },
           "classified_correct": 0,
           "matched_ids": {
-            "6d438863c9eb4c12be859266ac3f000b": "instrumentation4",
-            "bd7c194a5c4a44bdab8d72851413ba9f": "instrumentation24",
-            "900802292a60411589f2aff928d36919": "instrumentation30",
-            "b5e85b6648b7451dadbbe01a13d61815": "instrumentation46",
-            "025ebcecdc9b46da8ebbd8c657cca4c5": "instrumentation32",
-            "1ddedfafe7524c0ca93422001f5da37b": "instrumentation34",
-            "86b37d2cb3c84848b43ed9bd73a24d8a": "instrumentation35",
-            "a1993d50b85f4664a28aec2900a2e06c": "valve18",
-            "4c587b1d04e54821869334436e200471": "valve79",
-            "5ea2f6d386ac44a09701099d652ce8fd": "valve80",
-            "e337c939b180497aa4f7137b5d17fdfd": "valve69",
-            "8d3c4a65ad3b46e094a339118c295205": "valve50",
-            "9a8f324ab49c4881b215b3f29368b350": "valve37",
-            "560eae2e6e3345548bdfee8ec7a63fe6": "valve73",
-            "5809efca75a949d1b19607be224ca7f7": "valve44",
-            "83cc87e4e633422580375f98b79719ef": "valve22",
-            "e7e798b0e4d94ff1b514dfb9408a4668": "valve54",
-            "bef1c3db046c4b6394d3354cd3a9064e": "instrumentation23"
+            "0095072d9b7b42929f9908ee37417aa5": "instrumentation24",
+            "29e00c7b025a49168fafafc2294bb0d2": "instrumentation30",
+            "7e9d4134ed194e24baea268e13dea472": "instrumentation32",
+            "53f675fa52f84d72a24b9087c8125f5b": "instrumentation35",
+            "79a880fdcb964d9784e72412d0ce184c": "valve18",
+            "7d0976cd328e486d827b7adbb6bac242": "valve79",
+            "0e8ce16ac36b4a4286b79aa017a1d055": "valve80",
+            "9801c0fc91cd43668e7ef6e0e2e81e34": "valve69",
+            "3314e6a9f19f4214a97b5c7344732e35": "valve50",
+            "ac59389780f34969a67abf400de563ef": "valve37",
+            "ab46b67f941045bdad5e9b79bcd0ea8c": "valve73",
+            "603d9f9598104bb089019b2eba3f7338": "valve44",
+            "4b39e308464049b3b71491704059117b": "valve22",
+            "470a2bd5d0614718b495dd6d2cae8e49": "valve54",
+            "49d2b0ce3a9244078cc8c5485b3fd6ef": "instrumentation23",
+            "a9ec4b62596c4624a0b9c873b1d453dd": "instrumentation31",
+            "03ff138e6c8341a7984a78fc38e5063f": "valve20"
           },
           "oracle_boxes": {
             "tp": 1,
@@ -753,25 +768,25 @@
       "gt_symbols": 89,
       "gt_connections": 167,
       "pred_symbols": 200,
-      "pred_connections": 52,
-      "ocr_words": 0,
-      "elapsed_seconds": 2.164,
+      "pred_connections": 41,
+      "ocr_words": 230,
+      "elapsed_seconds": 2.239,
       "warnings": [
         "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
       ],
       "scores": {
         "0.5": {
           "localization": {
-            "tp": 5,
-            "fp": 195,
-            "fn": 84,
-            "precision": 0.025,
-            "recall": 0.056179775280898875,
-            "f1": 0.03460207612456748
+            "tp": 13,
+            "fp": 187,
+            "fn": 76,
+            "precision": 0.065,
+            "recall": 0.14606741573033707,
+            "f1": 0.08996539792387544
           },
           "connections": {
             "tp": 0,
-            "fp": 52,
+            "fp": 41,
             "fn": 167,
             "precision": 0.0,
             "recall": 0.0,
@@ -779,65 +794,82 @@
           },
           "classified_correct": 0,
           "matched_ids": {
-            "f6227067ed31453ba55e6b57bf1944a4": "instrumentation60",
-            "8f1268d523504b4581440d1a8aeeea2d": "instrumentation27",
-            "5c4dc174542947baa53f4728968b265d": "instrumentation58",
-            "b9a1a2cdc00745c3833bd4e0b22e2556": "instrumentation57",
-            "82681324561a444399870f52e8d29717": "instrumentation89"
+            "b4c38faf973e47e3a5da86fbbd9914a6": "instrumentation60",
+            "0a0fa35bfc4946e58bfeee004881935e": "instrumentation53",
+            "f94a58a2945d4c4ea7ebb48440215d30": "instrumentation27",
+            "bda38705e35742eebe82687417fe4512": "instrumentation58",
+            "ddbbdbc23acd4e0fa1c5a5d7288eaabf": "instrumentation57",
+            "f8cbadd29e9c45fbabf921acafafc9be": "instrumentation21",
+            "59e490de12c94f4796f3bdd06d73ecfb": "valve19",
+            "d59b480ebffb4c34a1a29dcf39e6dc07": "instrumentation89",
+            "73cb4c9015a644cd8dab4fc37e796adc": "instrumentation77",
+            "c8bb4ac4a5ec478a8ea2f24f1bf2263c": "instrumentation78",
+            "73163bd957d647a6af7cc0ed871cef87": "instrumentation81",
+            "3efd260f0f3e4bdbb00d41d751490301": "instrumentation61",
+            "e6d14b2949dc47b5b0ea5f86b70caf40": "instrumentation84"
           },
           "oracle_boxes": {
-            "tp": 10,
-            "fp": 6,
-            "fn": 157,
-            "precision": 0.625,
-            "recall": 0.059880239520958084,
-            "f1": 0.1092896174863388
+            "tp": 13,
+            "fp": 5,
+            "fn": 154,
+            "precision": 0.7222222222222222,
+            "recall": 0.07784431137724551,
+            "f1": 0.14054054054054055
           }
         },
         "0.25": {
           "localization": {
-            "tp": 17,
-            "fp": 183,
-            "fn": 72,
-            "precision": 0.085,
-            "recall": 0.19101123595505617,
-            "f1": 0.11764705882352941
+            "tp": 26,
+            "fp": 174,
+            "fn": 63,
+            "precision": 0.13,
+            "recall": 0.29213483146067415,
+            "f1": 0.17993079584775087
           },
           "connections": {
-            "tp": 2,
-            "fp": 50,
-            "fn": 165,
-            "precision": 0.038461538461538464,
-            "recall": 0.011976047904191617,
-            "f1": 0.0182648401826484
+            "tp": 1,
+            "fp": 40,
+            "fn": 166,
+            "precision": 0.024390243902439025,
+            "recall": 0.005988023952095809,
+            "f1": 0.009615384615384616
           },
           "classified_correct": 0,
           "matched_ids": {
-            "9fc065b02bed4783bb8d14f7a7199780": "instrumentation59",
-            "f6227067ed31453ba55e6b57bf1944a4": "instrumentation60",
-            "d8483eaa9f7d49f9ae359eed32589dd1": "instrumentation53",
-            "8f1268d523504b4581440d1a8aeeea2d": "instrumentation27",
-            "5c4dc174542947baa53f4728968b265d": "instrumentation58",
-            "b065f7acdc234fe3befcd7e071b8e7c6": "instrumentation101",
-            "88fce353e3b84ee0b101244c91c6628e": "instrumentation29",
-            "b9a1a2cdc00745c3833bd4e0b22e2556": "instrumentation57",
-            "ca10613bc69f4972b6961c16ab728bf3": "inlet/outlet14",
-            "8a0a0551059b44fdacb1619cb4b54080": "instrumentation20",
-            "2c57ac3f2e52464f981fee8cbdc77631": "valve23",
-            "21b9d91f98f84b66849ac421e5705c74": "instrumentation211",
-            "dfb9f9dee5b6430799b2188c62010ec2": "instrumentation21",
-            "fcf7c6ae360d425cba7c336800022c30": "inlet/outlet16",
-            "1f296f11d28f470085d7b5b6de002294": "instrumentation75",
-            "5e27d8de22af4c70b32f3370c2613859": "instrumentation64",
-            "82681324561a444399870f52e8d29717": "instrumentation89"
+            "0ae96658b51049a089c8db10337cfdf3": "instrumentation59",
+            "b4c38faf973e47e3a5da86fbbd9914a6": "instrumentation60",
+            "0a0fa35bfc4946e58bfeee004881935e": "instrumentation53",
+            "f94a58a2945d4c4ea7ebb48440215d30": "instrumentation27",
+            "bda38705e35742eebe82687417fe4512": "instrumentation58",
+            "c0eb9203784b4cfb8158465a7be6db8e": "instrumentation101",
+            "c18d6915b629404b9531d51ff4382e82": "instrumentation29",
+            "ddbbdbc23acd4e0fa1c5a5d7288eaabf": "instrumentation57",
+            "2276551350c74c55914c3e20ac2588f3": "inlet/outlet14",
+            "273fc8239be94cf5bcbe28c3e57f68b7": "instrumentation102",
+            "94bab2b71e7144d489fa8dc4a1d3d686": "instrumentation20",
+            "082860744a8b4fe39df7e3d4b5f1b26b": "valve23",
+            "eaa3897634bc48a09b523e94bddc259f": "instrumentation211",
+            "33ebfa3cfa5e4420bd03338ce362fb34": "instrumentation103",
+            "f8cbadd29e9c45fbabf921acafafc9be": "instrumentation21",
+            "59e490de12c94f4796f3bdd06d73ecfb": "valve19",
+            "39d9e4bc7290448583286e87ddf4218c": "inlet/outlet16",
+            "5b422305020242419a6629542913cc0f": "instrumentation75",
+            "0e85c4e165564ff3b0d40ca827b38cf4": "instrumentation64",
+            "d59b480ebffb4c34a1a29dcf39e6dc07": "instrumentation89",
+            "73cb4c9015a644cd8dab4fc37e796adc": "instrumentation77",
+            "c8bb4ac4a5ec478a8ea2f24f1bf2263c": "instrumentation78",
+            "73163bd957d647a6af7cc0ed871cef87": "instrumentation81",
+            "3efd260f0f3e4bdbb00d41d751490301": "instrumentation61",
+            "43ece588b8f14ff19100c67469cb8242": "valve124",
+            "e6d14b2949dc47b5b0ea5f86b70caf40": "instrumentation84"
           },
           "oracle_boxes": {
-            "tp": 10,
-            "fp": 6,
-            "fn": 157,
-            "precision": 0.625,
-            "recall": 0.059880239520958084,
-            "f1": 0.1092896174863388
+            "tp": 13,
+            "fp": 5,
+            "fn": 154,
+            "precision": 0.7222222222222222,
+            "recall": 0.07784431137724551,
+            "f1": 0.14054054054054055
           }
         }
       }
@@ -867,53 +899,25 @@
       "gt_symbols": 82,
       "gt_connections": 156,
       "pred_symbols": 200,
-      "pred_connections": 60,
-      "ocr_words": 0,
-      "elapsed_seconds": 1.25,
+      "pred_connections": 63,
+      "ocr_words": 136,
+      "elapsed_seconds": 1.255,
       "warnings": [
         "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
       ],
       "scores": {
         "0.5": {
           "localization": {
-            "tp": 0,
-            "fp": 200,
-            "fn": 82,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0
+            "tp": 6,
+            "fp": 194,
+            "fn": 76,
+            "precision": 0.03,
+            "recall": 0.07317073170731707,
+            "f1": 0.0425531914893617
           },
           "connections": {
             "tp": 0,
-            "fp": 60,
-            "fn": 156,
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1": 0.0
-          },
-          "classified_correct": 0,
-          "matched_ids": {},
-          "oracle_boxes": {
-            "tp": 15,
-            "fp": 8,
-            "fn": 141,
-            "precision": 0.6521739130434783,
-            "recall": 0.09615384615384616,
-            "f1": 0.16759776536312848
-          }
-        },
-        "0.25": {
-          "localization": {
-            "tp": 16,
-            "fp": 184,
-            "fn": 66,
-            "precision": 0.08,
-            "recall": 0.1951219512195122,
-            "f1": 0.11347517730496454
-          },
-          "connections": {
-            "tp": 0,
-            "fp": 60,
+            "fp": 63,
             "fn": 156,
             "precision": 0.0,
             "recall": 0.0,
@@ -921,30 +925,68 @@
           },
           "classified_correct": 0,
           "matched_ids": {
-            "64d09541557d4b93a77f535307abb1bd": "instrumentation34",
-            "b8086e00aea94a428a3d44360e01adf9": "tank131",
-            "a2162958a4f648aab9ec2d1e7eca0ecb": "instrumentation54",
-            "ec27aad67de24d6cab59b0ceefcf8a99": "instrumentation55",
-            "d896a74a733247b19af6f566601c5e4e": "instrumentation115",
-            "d46a473fcd494d668cac8c0467ff0078": "instrumentation68",
-            "ade52297d3e24757ad337865ff5f9ad7": "instrumentation32",
-            "285df314d7a54fb5b627765b8b33489d": "instrumentation66",
-            "d9f10d07e97d49ab997d1212e5c39bbb": "instrumentation38",
-            "7c516c8c06cd4e09918ec192bcc5d92b": "instrumentation72",
-            "409db0f7f0f54210a1e7fac4ede60e22": "instrumentation75",
-            "216b711bf4164c53afb96547eca5c2ba": "valve24",
-            "c5f300240e3b4c6f9589e7ce1a5cfff2": "instrumentation74",
-            "e03ab632c5d14ac1ae4e7e89b908caea": "instrumentation42",
-            "ea2f453a1fff4534a18f990c864f6ebc": "inlet/outlet128",
-            "1b57cce5075e43b19545dc968cc20afb": "instrumentation79"
+            "71176c8fab184d66a124d01675e1994f": "valve1",
+            "92ddac52507d4c7f81dfcbb1481d2377": "instrumentation115",
+            "9a7e6f6d35714689ba0e792a57c9dfa9": "instrumentation38",
+            "2f88c4a366594c3a93355695464bdd19": "instrumentation73",
+            "a967e8984fd449b2935b180357538dd4": "instrumentation42",
+            "953738c688d742f69d8258bf309cc223": "instrumentation78"
           },
           "oracle_boxes": {
-            "tp": 15,
-            "fp": 8,
-            "fn": 141,
-            "precision": 0.6521739130434783,
-            "recall": 0.09615384615384616,
-            "f1": 0.16759776536312848
+            "tp": 12,
+            "fp": 10,
+            "fn": 144,
+            "precision": 0.5454545454545454,
+            "recall": 0.07692307692307693,
+            "f1": 0.1348314606741573
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 19,
+            "fp": 181,
+            "fn": 63,
+            "precision": 0.095,
+            "recall": 0.23170731707317074,
+            "f1": 0.1347517730496454
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 63,
+            "fn": 156,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "71fb1eecb0184fbd94ec14daa2857255": "valve130",
+            "3839739df0944e9091b92eff52ad42ce": "tank131",
+            "71176c8fab184d66a124d01675e1994f": "valve1",
+            "d36c0bd332564cc3a547154a52698e1d": "valve25",
+            "92ddac52507d4c7f81dfcbb1481d2377": "instrumentation115",
+            "fc6cdf62e284472989b53dda2959d636": "instrumentation68",
+            "7d758830d3564e258af82981357094e2": "instrumentation32",
+            "9a7e6f6d35714689ba0e792a57c9dfa9": "instrumentation38",
+            "2f88c4a366594c3a93355695464bdd19": "instrumentation73",
+            "a284831f0242486bbdd0e736e78e6a8e": "valve106",
+            "4543b50b2c994212b52267c7e8c8f7f8": "valve92",
+            "351921dc7d1247b7ad53b8746c2435b5": "instrumentation75",
+            "085b85cbe8b54bd1aa101dc41f51c70e": "valve24",
+            "fbb067bb4d6145c2b8b0f597098520ea": "instrumentation74",
+            "a967e8984fd449b2935b180357538dd4": "instrumentation42",
+            "f17b4307e2ef45f4a197219bf6334a4e": "inlet/outlet128",
+            "953738c688d742f69d8258bf309cc223": "instrumentation78",
+            "da51e347dba84c88a434adfc579f9364": "valve105",
+            "0a9605fd706349aa9d3795976055389c": "valve97"
+          },
+          "oracle_boxes": {
+            "tp": 12,
+            "fp": 10,
+            "fn": 144,
+            "precision": 0.5454545454545454,
+            "recall": 0.07692307692307693,
+            "f1": 0.1348314606741573
           }
         }
       }
@@ -953,55 +995,55 @@
   "aggregate": {
     "0.5": {
       "localization": {
-        "tp": 43,
-        "fp": 1557,
-        "fn": 484,
-        "precision": 0.026875,
-        "recall": 0.08159392789373814,
-        "f1": 0.040432534085566525
+        "tp": 60,
+        "fp": 1409,
+        "fn": 467,
+        "precision": 0.04084411164057182,
+        "recall": 0.11385199240986717,
+        "f1": 0.06012024048096192
       },
       "connections": {
-        "tp": 4,
-        "fp": 347,
-        "fn": 1389,
-        "precision": 0.011396011396011397,
-        "recall": 0.002871500358937545,
-        "f1": 0.0045871559633027525
+        "tp": 2,
+        "fp": 334,
+        "fn": 1391,
+        "precision": 0.005952380952380952,
+        "recall": 0.0014357501794687725,
+        "f1": 0.002313475997686524
       },
       "oracle_boxes": {
-        "tp": 81,
-        "fp": 29,
-        "fn": 1312,
-        "precision": 0.7363636363636363,
-        "recall": 0.05814788226848528,
-        "f1": 0.10778443113772455
+        "tp": 74,
+        "fp": 32,
+        "fn": 1319,
+        "precision": 0.6981132075471698,
+        "recall": 0.05312275664034458,
+        "f1": 0.09873248832555037
       },
       "classified_correct": 0
     },
     "0.25": {
       "localization": {
-        "tp": 131,
-        "fp": 1469,
-        "fn": 396,
-        "precision": 0.081875,
-        "recall": 0.24857685009487665,
-        "f1": 0.1231781852374236
+        "tp": 161,
+        "fp": 1308,
+        "fn": 366,
+        "precision": 0.10959836623553437,
+        "recall": 0.3055028462998102,
+        "f1": 0.16132264529058116
       },
       "connections": {
-        "tp": 8,
-        "fp": 343,
-        "fn": 1385,
-        "precision": 0.022792022792022793,
-        "recall": 0.00574300071787509,
-        "f1": 0.009174311926605505
+        "tp": 6,
+        "fp": 330,
+        "fn": 1387,
+        "precision": 0.017857142857142856,
+        "recall": 0.004307250538406317,
+        "f1": 0.006940427993059572
       },
       "oracle_boxes": {
-        "tp": 81,
-        "fp": 29,
-        "fn": 1312,
-        "precision": 0.7363636363636363,
-        "recall": 0.05814788226848528,
-        "f1": 0.10778443113772455
+        "tp": 74,
+        "fp": 32,
+        "fn": 1319,
+        "precision": 0.6981132075471698,
+        "recall": 0.05312275664034458,
+        "f1": 0.09873248832555037
       },
       "classified_correct": 0
     }

@@ -135,6 +135,10 @@ def main():
         warnings=[];start=time.perf_counter()
         elements,segments=extractor.raster_candidates(im,warnings)
         elements=elements[:extractor.MAX_ELEMENTS]
+        # Every OPEN100 sheet has text: an empty OCR result here indicates an
+        # invalid evaluation environment (e.g. a missing tessdata/configs/tsv).
+        if not any(e['kind']=='text' for e in elements):
+            raise RuntimeError(f'OPEN100 sheet {ident}: zero OCR words. Check Tesseract, eng/kor traineddata and configs/tsv; refusing an invalid OCR comparison.')
         edges=extractor.infer_connections(elements,segments,*im.size)
         elapsed=time.perf_counter()-start
         symbols=[e for e in elements if e['kind']!='text']

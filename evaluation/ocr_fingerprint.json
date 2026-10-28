@@ -1,0 +1,17 @@
+{
+  "source_image_commit": "6847bdf9b929965aae0328101b42f3c0ea9d4e1e",
+  "version": "Tesseract 5.3.0",
+  "files": {
+    "usr/bin/tesseract": "1e8c7ce7f27d2d1c902fb648efed443483f2a8fc7b60c48a5d3b61d647a2649e",
+    "usr/lib/x86_64-linux-gnu/libtesseract.so.5.0.3": "caf99587c86adceb8e082fabb99c6da69439c6e618a7f762107db1cb060ac901",
+    "usr/lib/x86_64-linux-gnu/liblept.so.5.0.4": "8bc9d7fc7246b0d38de2fd99ff0273bfce35158f83279bbd03464c40736d3501",
+    "usr/share/tesseract-ocr/5/tessdata/eng.traineddata": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+    "usr/share/tesseract-ocr/5/tessdata/kor.traineddata": "6b85e11d9bbf07863b97b3523b1b112844c43e713df8b66418a081fd1060b3b2",
+    "usr/share/tesseract-ocr/5/tessdata/configs/tsv": "59d079bb75d8b3d7c839a3564580cb559e362c93a9d70f234e421c0c3e767e04"
+  },
+  "final_ocr_word_counts": {
+    "development_each_version": 692,
+    "holdout_each_version": 1298
+  },
+  "host_libraries_note": "Core binary, OCR libraries, language data and TSV config came from the original production image; remaining host shared libraries can differ."
+}

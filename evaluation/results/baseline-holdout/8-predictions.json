@@ -1,38 +1,2276 @@
 {
   "elements": [
     {
-      "id": "ec33290a08824b18ba5b012baede3e7d",
-      "label": "요소 1",
-      "kind": "unknown",
+      "id": "8b8243d863d54834ba6d3f5a11098e64",
+      "label": "12",
+      "kind": "text",
       "bbox": [
-        0.05,
-        0.005012531328320802,
-        0.055,
+        0.04541666666666667,
+        0.005639097744360902,
+        0.05458333333333333,
         0.016290726817042606
       ],
-      "source": "image_candidate",
+      "source": "ocr",
       "status": "needs_review",
-      "properties": {},
+      "properties": {
+        "ocr_score": 96.936058,
+        "language": "eng+kor"
+      },
       "concept_id": null
     },
     {
-      "id": "cb9d095657be472093f1666fd49cd8af",
-      "label": "요소 2",
-      "kind": "unknown",
+      "id": "4d594010c6df4dd0b0c469a4c7b9d111",
+      "label": "11",
+      "kind": "text",
       "bbox": [
-        0.18958333333333333,
-        0.005012531328320802,
+        0.115,
+        0.005639097744360902,
+        0.12291666666666666,
+        0.016290726817042606
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.001549,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1d8086ed89374c03bd5f3cfda60442a3",
+      "label": "10",
+      "kind": "text",
+      "bbox": [
+        0.185,
+        0.005639097744360902,
         0.19458333333333333,
         0.016290726817042606
       ],
-      "source": "image_candidate",
+      "source": "ocr",
       "status": "needs_review",
-      "properties": {},
+      "properties": {
+        "ocr_score": 96.760605,
+        "language": "eng+kor"
+      },
       "concept_id": null
     },
     {
-      "id": "0997ba9a6a5847fb92b9d15b39a02e1e",
-      "label": "요소 3",
+      "id": "f663464bd8a44b07bd457f1bb0dab286",
+      "label": "SIZE-ACW-102160-SPEC-HC-X",
+      "kind": "text",
+      "bbox": [
+        0.3125,
+        0.10150375939849623,
+        0.3770833333333333,
+        0.10588972431077694
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 43.311729,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "472be3ca7657427098514346d0bed1e7",
+      "label": "ROS",
+      "kind": "text",
+      "bbox": [
+        0.7779166666666667,
+        0.10213032581453634,
+        0.785,
+        0.10651629072681704
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 67.654633,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f832dd7264484350b078695c534709f8",
+      "label": "PD",
+      "kind": "text",
+      "bbox": [
+        0.7879166666666667,
+        0.10213032581453634,
+        0.79375,
+        0.10651629072681704
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 68.512108,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "9dd56db3ac244183a8157243f8307de1",
+      "label": "ss",
+      "kind": "text",
+      "bbox": [
+        0.1375,
+        0.09962406015037593,
+        0.18416666666666667,
+        0.11716791979949874
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 40.304161,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "dc6430d08f54419490a37544f7ccff34",
+      "label": "WATER",
+      "kind": "text",
+      "bbox": [
+        0.8083333333333333,
+        0.11278195488721804,
+        0.82,
+        0.11716791979949874
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 91.78093,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d72909b1fd914eabb6ae066d5b75e619",
+      "label": "SIZE-ACW~102161-SPEC-HC-X",
+      "kind": "text",
+      "bbox": [
+        0.3125,
+        0.18107769423558898,
+        0.37666666666666665,
+        0.18609022556390978
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 37.764477,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "abb7363633294ca09319801828e14f5f",
+      "label": "oF",
+      "kind": "text",
+      "bbox": [
+        0.6783333333333333,
+        0.16228070175438597,
+        0.6979166666666666,
+        0.18233082706766918
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 79.098473,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c5deed9e525449108a81cda1e829d824",
+      "label": "RES",
+      "kind": "text",
+      "bbox": [
+        0.7766666666666666,
+        0.18045112781954886,
+        0.7841666666666667,
+        0.18483709273182958
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 89.141296,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ad7d4a38220b454da7b424c2cf66e269",
+      "label": "00",
+      "kind": "text",
+      "bbox": [
+        0.7870833333333334,
+        0.18045112781954886,
+        0.7929166666666667,
+        0.18483709273182958
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 92.159439,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1daccedd0ded4f0f8f695f752f81694e",
+      "label": "100-2",
+      "kind": "text",
+      "bbox": [
+        0.79625,
+        0.18045112781954886,
+        0.8083333333333333,
+        0.18483709273182958
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 68.159943,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "64bea16b776c455094cf62a84e19a6f8",
+      "label": "WATER",
+      "kind": "text",
+      "bbox": [
+        0.8083333333333333,
+        0.19110275689223058,
+        0.82,
+        0.19548872180451127
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 89.725471,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "99a643eee6f9466488eaf6d9c52d5c06",
+      "label": "|",
+      "kind": "text",
+      "bbox": [
+        0.7633333333333333,
+        0.2593984962406015,
+        0.7675,
+        0.29135338345864664
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 84.709854,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "5aa28aa9ff2144ba8b5b2eefc84543a0",
+      "label": "sence",
+      "kind": "text",
+      "bbox": [
+        0.7720833333333333,
+        0.2593984962406015,
+        0.7883333333333333,
+        0.29135338345864664
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 36.257877,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "77264b826166456fb18b62208606b736",
+      "label": "we",
+      "kind": "text",
+      "bbox": [
+        0.7916666666666666,
+        0.2593984962406015,
+        0.8025,
+        0.29135338345864664
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 45.322319,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e485c0c512e8469bab859923c4e3b6ca",
+      "label": "a>",
+      "kind": "text",
+      "bbox": [
+        0.8045833333333333,
+        0.2619047619047619,
+        0.8325,
+        0.2819548872180451
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 40.993382,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d13f9b21472c4831ab2f88e776174eeb",
+      "label": "Ce",
+      "kind": "text",
+      "bbox": [
+        0.4870833333333333,
+        0.32456140350877194,
+        0.51,
+        0.34774436090225563
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 65.569321,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1b9aa755ad80489b892c4c6ef5155c3c",
+      "label": "ae)",
+      "kind": "text",
+      "bbox": [
+        0.565,
+        0.32456140350877194,
+        0.5841666666666666,
+        0.34774436090225563
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 56.84613,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "6891b6eca14d4492b6d627d8060734cf",
+      "label": "Sy",
+      "kind": "text",
+      "bbox": [
+        0.5045833333333334,
+        0.3533834586466165,
+        0.51125,
+        0.35714285714285715
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 38.920017,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "3648201152fa43a99ecff88b824e1192",
+      "label": "<u:",
+      "kind": "text",
+      "bbox": [
+        0.0275,
+        0.34273182957393483,
+        0.041666666666666664,
+        0.37468671679197996
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 41.228195,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "eab948ea3d6a413a97d70371e57d08d6",
+      "label": "cae",
+      "kind": "text",
+      "bbox": [
+        0.045,
+        0.34273182957393483,
+        0.06125,
+        0.37468671679197996
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 57.125076,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "204c865fc4bb4de385a1e30aae4c2e59",
+      "label": "we",
+      "kind": "text",
+      "bbox": [
+        0.06458333333333334,
+        0.34273182957393483,
+        0.07541666666666667,
+        0.37468671679197996
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 48.634888,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "7506fa9d29494c0bac5592cd4ee68e49",
+      "label": "se",
+      "kind": "text",
+      "bbox": [
+        0.07875,
+        0.34523809523809523,
+        0.09125,
+        0.36528822055137844
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 46.509174,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "86b07765c474413eb511cdda44fd1cc4",
+      "label": "|",
+      "kind": "text",
+      "bbox": [
+        0.09625,
+        0.34273182957393483,
+        0.09958333333333333,
+        0.37468671679197996
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.645119,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "48d5805bc9fc45469852c93b76d2aa03",
+      "label": "|",
+      "kind": "text",
+      "bbox": [
+        0.7633333333333333,
+        0.34273182957393483,
+        0.76875,
+        0.37468671679197996
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 88.603638,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "735fca00832549a0ba01bc4ba14867cc",
+      "label": "a",
+      "kind": "text",
+      "bbox": [
+        0.795,
+        0.34523809523809523,
+        0.8025,
+        0.36528822055137844
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 53.404465,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "b3a2d33dbae14ebaa960a61ad7698431",
+      "label": "3",
+      "kind": "text",
+      "bbox": [
+        0.55125,
+        0.5056390977443609,
+        0.555,
+        0.5100250626566416
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 71.757362,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "0be1ab689cde4b0db0f48902c1ae7cc7",
+      "label": "6363",
+      "kind": "text",
+      "bbox": [
+        0.32083333333333336,
+        0.4968671679197995,
+        0.34791666666666665,
+        0.5169172932330827
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 75.955765,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ac5f0476da3e46258485d37d3ada1052",
+      "label": "쇼",
+      "kind": "text",
+      "bbox": [
+        0.34,
+        0.5288220551378446,
+        0.3425,
+        0.531328320802005
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 86.242508,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "8a8e38eb87d04d52a17f1163c75103e5",
+      "label": "Ly",
+      "kind": "text",
+      "bbox": [
+        0.4708333333333333,
+        0.5294486215538847,
+        0.47583333333333333,
+        0.5357142857142857
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 92.106644,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a785ddcea97644948e44f1f91eb1bf76",
+      "label": "“GW",
+      "kind": "text",
+      "bbox": [
+        0.037083333333333336,
+        0.6553884711779449,
+        0.045,
+        0.6604010025062657
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 49.645824,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "18dbc9a9c5aa434f834b63d757578e0f",
+      "label": "PD",
+      "kind": "text",
+      "bbox": [
+        0.04791666666666667,
+        0.6553884711779449,
+        0.05375,
+        0.6604010025062657
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 75.036011,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ec9b6ac08c924ab4b30449b12f5a5ced",
+      "label": "210-1",
+      "kind": "text",
+      "bbox": [
+        0.056666666666666664,
+        0.6553884711779449,
+        0.06875,
+        0.6604010025062657
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 75.036011,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "62cc924355e3431187acffd2f52c4272",
+      "label": "(1)",
+      "kind": "text",
+      "bbox": [
+        0.0725,
+        0.6547619047619048,
+        0.08333333333333333,
+        0.6610275689223057
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 51.226822,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ef830f5324884fa6aa7885dd0daac9bb",
+      "label": "g",
+      "kind": "text",
+      "bbox": [
+        0.315,
+        0.6453634085213033,
+        0.31875,
+        0.6560150375939849
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 39.537857,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d354bbc7e29a421ab99894c2142c0c43",
+      "label": "fe)",
+      "kind": "text",
+      "bbox": [
+        0.32375,
+        0.6322055137844611,
+        0.3375,
+        0.6560150375939849
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 41.023769,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "5d321894ca5840a094385f6483897a38",
+      "label": "WATER",
+      "kind": "text",
+      "bbox": [
+        0.06041666666666667,
+        0.6660401002506265,
+        0.0725,
+        0.6710526315789473
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 85.751381,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f1fec649bc0841808f21a3602dc06516",
+      "label": "SYSTEM",
+      "kind": "text",
+      "bbox": [
+        0.07541666666666667,
+        0.6660401002506265,
+        0.08916666666666667,
+        0.6710526315789473
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 85.751381,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c02b93667aa84e1fae33c400d8e6190d",
+      "label": "soc",
+      "kind": "text",
+      "bbox": [
+        0.7654166666666666,
+        0.6528822055137845,
+        0.8341666666666666,
+        0.6735588972431078
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 42.13237,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "99f18aa7437a4ff180dc2f146f311f35",
+      "label": "ae",
+      "kind": "text",
+      "bbox": [
+        0.7979166666666667,
+        0.650375939849624,
+        0.8070833333333334,
+        0.6829573934837093
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 37.352715,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d6460a81ccac4706ba7c821f23169090",
+      "label": "c",
+      "kind": "text",
+      "bbox": [
+        0.8595833333333334,
+        0.6785714285714286,
+        0.8658333333333333,
+        0.6898496240601504
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 79.898209,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "83b687cb7751450b929a14e850c6b824",
+      "label": "INFORMATION",
+      "kind": "text",
+      "bbox": [
+        0.8741666666666666,
+        0.6923558897243107,
+        0.9,
+        0.6979949874686717
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 71.738525,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "bd2a66bfaabd44bfaf20cb5e47122b3e",
+      "label": "ONLY",
+      "kind": "text",
+      "bbox": [
+        0.90125,
+        0.6923558897243107,
+        0.91125,
+        0.6979949874686717
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.12561,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d08de049c3a2476e9d0e6d2c3ef076d5",
+      "label": "-",
+      "kind": "text",
+      "bbox": [
+        0.9120833333333334,
+        0.6860902255639098,
+        0.9145833333333333,
+        0.7036340852130326
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 44.348572,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "3029a69a6c3b4a44a9b0468c5d384e65",
+      "label": "NOT",
+      "kind": "text",
+      "bbox": [
+        0.9158333333333334,
+        0.6923558897243107,
+        0.92375,
+        0.6979949874686717
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.651291,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "47293e1fdc7444c7b68fab4a199a7e22",
+      "label": "FOR",
+      "kind": "text",
+      "bbox": [
+        0.925,
+        0.6923558897243107,
+        0.9325,
+        0.6979949874686717
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.771873,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "af3669c638c142bf80e7feebba28ecd0",
+      "label": "CONSTRUCTION",
+      "kind": "text",
+      "bbox": [
+        0.93375,
+        0.6923558897243107,
+        0.96375,
+        0.6979949874686717
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 92.391357,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c8b9e084ec34401cae01b69c62b65fc2",
+      "label": "‘THIS",
+      "kind": "text",
+      "bbox": [
+        0.8720833333333333,
+        0.7036340852130326,
+        0.8804166666666666,
+        0.7092731829573935
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 80.960526,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "791d3991eeb8424194d17a3100bc8cdf",
+      "label": "PRELIMINARY",
+      "kind": "text",
+      "bbox": [
+        0.8820833333333333,
+        0.7036340852130326,
+        0.9070833333333334,
+        0.7092731829573935
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.876869,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "47cff5c0111f45a199ddd50f23729614",
+      "label": "DESIGN",
+      "kind": "text",
+      "bbox": [
+        0.9083333333333333,
+        0.7036340852130326,
+        0.9225,
+        0.7092731829573935
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.119156,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "371db727af7c4bbca4b35fcc6d2902f1",
+      "label": "HAS",
+      "kind": "text",
+      "bbox": [
+        0.92375,
+        0.7036340852130326,
+        0.93125,
+        0.7092731829573935
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.119156,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1c858c8668e4434b868e25ad9f9fd52a",
+      "label": "BEEN",
+      "kind": "text",
+      "bbox": [
+        0.9325,
+        0.7036340852130326,
+        0.9425,
+        0.7092731829573935
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 88.536781,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e505ba4225bd4808bc2aae3ff8bffd5e",
+      "label": "PREPARED",
+      "kind": "text",
+      "bbox": [
+        0.94375,
+        0.7036340852130326,
+        0.9641666666666666,
+        0.7092731829573935
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 89.742317,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c60e36da3ebe43bea165f07c877bb565",
+      "label": "‘AND",
+      "kind": "text",
+      "bbox": [
+        0.8720833333333333,
+        0.7124060150375939,
+        0.88,
+        0.7180451127819549
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 48.265987,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "389452e422e342248c5a591df1e18957",
+      "label": "DISTRIBUTED",
+      "kind": "text",
+      "bbox": [
+        0.88125,
+        0.7124060150375939,
+        0.90625,
+        0.7180451127819549
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 94.563774,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f7c8ff4c61ae49f9bd3cb62cc3f960af",
+      "label": "BY",
+      "kind": "text",
+      "bbox": [
+        0.9075,
+        0.7124060150375939,
+        0.9120833333333334,
+        0.7180451127819549
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.916519,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "235042c3f15a4e20a87a13cd25f5be23",
+      "label": "ENERGY",
+      "kind": "text",
+      "bbox": [
+        0.9133333333333333,
+        0.7124060150375939,
+        0.9291666666666667,
+        0.7180451127819549
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 92.747253,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "db0dd0d36f18430293ac014631c3cae7",
+      "label": "IMPACT",
+      "kind": "text",
+      "bbox": [
+        0.9304166666666667,
+        0.7124060150375939,
+        0.9441666666666667,
+        0.7180451127819549
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 92.747253,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "6f9c19aa6d1348cbaa60cb6984597fe7",
+      "label": "CENTER",
+      "kind": "text",
+      "bbox": [
+        0.9454166666666667,
+        0.7124060150375939,
+        0.9608333333333333,
+        0.7180451127819549
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.886536,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1bee94f7bc57465f8da454fdd7445a1a",
+      "label": "FOR",
+      "kind": "text",
+      "bbox": [
+        0.9620833333333333,
+        0.7124060150375939,
+        0.9695833333333334,
+        0.7180451127819549
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.745735,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "44efa5a014ff4c3d97811dde36490458",
+      "label": "‘THE",
+      "kind": "text",
+      "bbox": [
+        0.8720833333333333,
+        0.7211779448621554,
+        0.8791666666666667,
+        0.7268170426065163
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 81.51088,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1dcd891a6eac4c3086ac1c9aee0a86d8",
+      "label": "PURPOSE",
+      "kind": "text",
+      "bbox": [
+        0.8808333333333334,
+        0.7211779448621554,
+        0.89875,
+        0.7274436090225563
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.567383,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "7208e90be1f345e0956d23c383d1957a",
+      "label": "OF",
+      "kind": "text",
+      "bbox": [
+        0.9,
+        0.7211779448621554,
+        0.905,
+        0.7274436090225563
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.267433,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "7d58ff92741d437fa0ddc636eeebd034",
+      "label": "RESEARCH",
+      "kind": "text",
+      "bbox": [
+        0.9066666666666666,
+        0.7211779448621554,
+        0.9358333333333333,
+        0.7274436090225563
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.518021,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "48c94df30ea44f94a03e1c6e04da77e4",
+      "label": "AND",
+      "kind": "text",
+      "bbox": [
+        0.92875,
+        0.7155388471177945,
+        0.9345833333333333,
+        0.7330827067669173
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.471931,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "339c1f81a6b34464aa753e8c68df0ba8",
+      "label": "DESIGN",
+      "kind": "text",
+      "bbox": [
+        0.9375,
+        0.7211779448621554,
+        0.95125,
+        0.7274436090225563
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.543472,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "fff59d616c1c426ea56b2571e1d76d60",
+      "label": "DEVELOPMENT.",
+      "kind": "text",
+      "bbox": [
+        0.9529166666666666,
+        0.7211779448621554,
+        0.9808333333333333,
+        0.7274436090225563
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.018303,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "adf3fc2f27d245ec8af6ad4ab068e0fa",
+      "label": "RCS",
+      "kind": "text",
+      "bbox": [
+        0.7804166666666666,
+        0.7286967418546366,
+        0.7875,
+        0.7337092731829574
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 77.6119,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1c20594e12064c6d8a585c5ec0cbf632",
+      "label": "PID",
+      "kind": "text",
+      "bbox": [
+        0.7904166666666667,
+        0.7286967418546366,
+        0.7966666666666666,
+        0.7337092731829574
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 77.752304,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "648739343235432a8462d21eb6c3081a",
+      "label": "100-2",
+      "kind": "text",
+      "bbox": [
+        0.8,
+        0.7286967418546366,
+        0.8120833333333334,
+        0.7337092731829574
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 77.752304,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "8a1bbb69783f482695ae645c60eb62a8",
+      "label": "USE",
+      "kind": "text",
+      "bbox": [
+        0.8720833333333333,
+        0.7305764411027569,
+        0.8791666666666667,
+        0.7362155388471178
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 88.32399,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "0c52b7549ee94db2b43c90a5a8f0c2be",
+      "label": "OF",
+      "kind": "text",
+      "bbox": [
+        0.8808333333333334,
+        0.7305764411027569,
+        0.8858333333333334,
+        0.7362155388471178
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 94.019402,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "401781b577994a0f885835f368e3a034",
+      "label": "THIS",
+      "kind": "text",
+      "bbox": [
+        0.8870833333333333,
+        0.7305764411027569,
+        0.8954166666666666,
+        0.7362155388471178
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 93.646896,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "447048a4ee5a4676911434f311d2347c",
+      "label": "INFORMATION",
+      "kind": "text",
+      "bbox": [
+        0.8966666666666666,
+        0.7305764411027569,
+        0.9225,
+        0.7362155388471178
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.451759,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d10a6067f3e941a98955af93b258d985",
+      "label": "FOR",
+      "kind": "text",
+      "bbox": [
+        0.9241666666666667,
+        0.7305764411027569,
+        0.9316666666666666,
+        0.7362155388471178
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.716064,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "6fdf88d2743e41159c1ef335b07a471a",
+      "label": "ANY",
+      "kind": "text",
+      "bbox": [
+        0.9329166666666666,
+        0.7305764411027569,
+        0.9404166666666667,
+        0.7355889724310777
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.953842,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "cc0a2d9b5ab14a49a139b2d65430733a",
+      "label": "OTHER",
+      "kind": "text",
+      "bbox": [
+        0.9416666666666667,
+        0.7305764411027569,
+        0.9545833333333333,
+        0.7362155388471178
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 91.78801,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "5db37a5bf8ed47b9bf23c0ee03e44e7c",
+      "label": "PURPOSE",
+      "kind": "text",
+      "bbox": [
+        0.9558333333333333,
+        0.7305764411027569,
+        0.97375,
+        0.7362155388471178
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 92.62233,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c2adb6f5ed9d4cd68803ff3ed2ad9b36",
+      "label": "[AUX",
+      "kind": "text",
+      "bbox": [
+        0.7758333333333334,
+        0.7393483709273183,
+        0.7829166666666667,
+        0.743734335839599
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 38.189949,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "082babce588044119a2a9de8c5bd739b",
+      "label": "COOUNG",
+      "kind": "text",
+      "bbox": [
+        0.7858333333333334,
+        0.7393483709273183,
+        0.8020833333333334,
+        0.743734335839599
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 64.532402,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ac61bd97725c4962816bcdd23eb60225",
+      "label": "WATER",
+      "kind": "text",
+      "bbox": [
+        0.805,
+        0.7393483709273183,
+        0.8170833333333334,
+        0.743734335839599
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 55.048519,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "bcdec68bc3bf46baafacfc87c9fef15c",
+      "label": "ISAT",
+      "kind": "text",
+      "bbox": [
+        0.8720833333333333,
+        0.7393483709273183,
+        0.88125,
+        0.7449874686716792
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.009064,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "0259fd4c47bb44baaf578dc082a5f990",
+      "label": "THE",
+      "kind": "text",
+      "bbox": [
+        0.8825,
+        0.7393483709273183,
+        0.8895833333333333,
+        0.7449874686716792
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.009064,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "87dfb9d49a4d41c39e54e3fdc9b01419",
+      "label": "SOLE",
+      "kind": "text",
+      "bbox": [
+        0.8908333333333334,
+        0.7393483709273183,
+        0.9008333333333334,
+        0.7449874686716792
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.791641,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "205e80e9bbb3492491e82b5668b6e960",
+      "label": "RISK",
+      "kind": "text",
+      "bbox": [
+        0.9020833333333333,
+        0.7393483709273183,
+        0.9254166666666667,
+        0.7449874686716792
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.913124,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "4d80f401159b4f4290072574c81e8588",
+      "label": "OF",
+      "kind": "text",
+      "bbox": [
+        0.9120833333333334,
+        0.7330827067669173,
+        0.91625,
+        0.7506265664160401
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.904976,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "bf055d1c104244b1a5d3864ff0caa169",
+      "label": "THE",
+      "kind": "text",
+      "bbox": [
+        0.91875,
+        0.7393483709273183,
+        0.925,
+        0.7449874686716792
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.72213,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "942fa488ff324de6a7c6b55cedb94278",
+      "label": "USER.",
+      "kind": "text",
+      "bbox": [
+        0.9266666666666666,
+        0.7393483709273183,
+        0.9370833333333334,
+        0.7449874686716792
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 93.258499,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "0af9723edbec488d81094fab0d2d92f5",
+      "label": "ENERGY",
+      "kind": "text",
+      "bbox": [
+        0.9216666666666666,
+        0.7625313283208021,
+        0.9845833333333334,
+        0.7850877192982456
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.443291,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "9ba1c9da1e61442ab31cf67ebb33ba93",
+      "label": "IMPACT",
+      "kind": "text",
+      "bbox": [
+        0.9220833333333334,
+        0.7907268170426065,
+        0.9845833333333334,
+        0.8132832080200502
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.671867,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c722d10f84954ad7be4d546557a450f4",
+      "label": "wx",
+      "kind": "text",
+      "bbox": [
+        0.7741666666666667,
+        0.8070175438596491,
+        0.78125,
+        0.8220551378446115
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 47.704662,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "b94ddead6d414c708d9fd17307e733ed",
+      "label": "wien",
+      "kind": "text",
+      "bbox": [
+        0.80375,
+        0.8045112781954887,
+        0.8154166666666667,
+        0.8302005012531328
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 41.0541,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "6ec3c3e5f4464b739362a3638f2dd4ec",
+      "label": "2",
+      "kind": "text",
+      "bbox": [
+        0.83,
+        0.8082706766917294,
+        0.8345833333333333,
+        0.8214285714285714
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 54.248772,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f63308041029429ea9f22ad468f61f24",
+      "label": "CENTER",
+      "kind": "text",
+      "bbox": [
+        0.92125,
+        0.818922305764411,
+        0.9841666666666666,
+        0.8421052631578947
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.73555,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "90ac5a232bf44f2c8c8782edf715670b",
+      "label": "vw",
+      "kind": "text",
+      "bbox": [
+        0.8720833333333333,
+        0.849624060150376,
+        0.88,
+        0.8540100250626567
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 55.625549,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "b95bc80de8ce4c24b0fb14d3b4ea19e8",
+      "label": "eneryimpactcente",
+      "kind": "text",
+      "bbox": [
+        0.88125,
+        0.8489974937343359,
+        0.91375,
+        0.8558897243107769
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 47.138409,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "fe7db29b6e2c425eb0710d6d272886a4",
+      "label": "rg",
+      "kind": "text",
+      "bbox": [
+        0.915,
+        0.849624060150376,
+        0.9204166666666667,
+        0.8558897243107769
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 54.172482,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "383ff646f1ea41d7a898f16629e8b62d",
+      "label": "ww",
+      "kind": "text",
+      "bbox": [
+        0.8704166666666666,
+        0.8515037593984962,
+        0.8783333333333333,
+        0.8690476190476191
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 58.327637,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f416734ed60b411c81c93731a393b9a0",
+      "label": "OPEN",
+      "kind": "text",
+      "bbox": [
+        0.9191666666666667,
+        0.87468671679198,
+        0.9304166666666667,
+        0.8809523809523809
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 79.460129,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1a28718353664e27a974eee4c59c734f",
+      "label": "100",
+      "kind": "text",
+      "bbox": [
+        0.9320833333333334,
+        0.87531328320802,
+        0.9379166666666666,
+        0.8809523809523809
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.545883,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e07d7f4b55fa4c9db75c10f9f90efd60",
+      "label": "CVCS—HX—111",
+      "kind": "text",
+      "bbox": [
+        0.17916666666666667,
+        0.8878446115288221,
+        0.23458333333333334,
+        0.8966165413533834
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 37.377319,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "482f8cf922d649b1968dc5370967be30",
+      "label": "‘SWS",
+      "kind": "text",
+      "bbox": [
+        0.78375,
+        0.8909774436090225,
+        0.79125,
+        0.8953634085213033
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 66.420822,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "5125faf8267c4b129951ecdcc39e3638",
+      "label": "PID",
+      "kind": "text",
+      "bbox": [
+        0.7945833333333333,
+        0.8909774436090225,
+        0.8004166666666667,
+        0.8953634085213033
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 66.420822,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "6680f8dbb8fb4d669e21b692ef963308",
+      "label": "130-1",
+      "kind": "text",
+      "bbox": [
+        0.80375,
+        0.8903508771929824,
+        0.8154166666666667,
+        0.8953634085213033
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 68.033485,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f224c7a08c0742cea25427f81402e2b2",
+      "label": "‘SYSTEM",
+      "kind": "text",
+      "bbox": [
+        0.9204166666666667,
+        0.8847117794486216,
+        0.9366666666666666,
+        0.8909774436090225
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 72.758217,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "2b6c6e932dec494d93de1f29d3249f14",
+      "label": "Le",
+      "kind": "text",
+      "bbox": [
+        0.57,
+        0.8095238095238095,
+        0.6470833333333333,
+        0.9016290726817042
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 76.023804,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c1fe0b5d5b6045cb9537a035cb4c9545",
+      "label": "SERVE:",
+      "kind": "text",
+      "bbox": [
+        0.17875,
+        0.899749373433584,
+        0.19416666666666665,
+        0.9104010025062657
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 40.021461,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "3deaf1e5ab3944a7bc73d313ccfe193c",
+      "label": "LETDOWN",
+      "kind": "text",
+      "bbox": [
+        0.2,
+        0.899749373433584,
+        0.21666666666666667,
+        0.9047619047619048
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 64.84726,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c16fa8d4d0ee4073a19bf71ab7d891f1",
+      "label": "HEAT",
+      "kind": "text",
+      "bbox": [
+        0.22,
+        0.899749373433584,
+        0.22875,
+        0.9047619047619048
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 75.855362,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "12a10fc43b064583b69bd06f63e145dd",
+      "label": "EXCHANGER",
+      "kind": "text",
+      "bbox": [
+        0.23166666666666666,
+        0.899749373433584,
+        0.25416666666666665,
+        0.9047619047619048
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 35.604645,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "413da1fc40f340aea981134d7bbe394a",
+      "label": "SERVICE",
+      "kind": "text",
+      "bbox": [
+        0.7845833333333333,
+        0.9010025062656641,
+        0.7995833333333333,
+        0.9060150375939849
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 47.627998,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e33359e9a02542bfa01d0e51f0177b8c",
+      "label": "WATER",
+      "kind": "text",
+      "bbox": [
+        0.8029166666666666,
+        0.9010025062656641,
+        0.8145833333333333,
+        0.9060150375939849
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 47.627998,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "7c30782d5f72491c8710ca549602fda9",
+      "label": "003",
+      "kind": "text",
+      "bbox": [
+        0.87125,
+        0.9035087719298246,
+        0.8795833333333334,
+        0.9085213032581454
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 62.667015,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a3cd02752bbf47d498f3155a04ba6bb8",
+      "label": "tenon",
+      "kind": "text",
+      "bbox": [
+        0.17875,
+        0.9116541353383458,
+        0.19291666666666665,
+        0.9160401002506265
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 39.93771,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e5b4d27b9aad42beb67d673a98c3806f",
+      "label": "‘AUX.",
+      "kind": "text",
+      "bbox": [
+        0.8975,
+        0.906641604010025,
+        0.9058333333333334,
+        0.9122807017543859
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 80.955826,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "cd5a23da871a404daf2ee802586d602f",
+      "label": "COOLING",
+      "kind": "text",
+      "bbox": [
+        0.9083333333333333,
+        0.9060150375939849,
+        0.92625,
+        0.9122807017543859
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 83.427925,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "19a69b6719b4427a9be7952ac16a8414",
+      "label": "WATER",
+      "kind": "text",
+      "bbox": [
+        0.9275,
+        0.906641604010025,
+        0.9420833333333334,
+        0.9122807017543859
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.286133,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "36e2e8b9ca3046d0b20fc17a66ac8dac",
+      "label": "SYSTEM",
+      "kind": "text",
+      "bbox": [
+        0.9433333333333334,
+        0.906641604010025,
+        0.9595833333333333,
+        0.9122807017543859
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 96.041138,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f379deeb37d24a8396c2aaef26095d0f",
+      "label": "00200",
+      "kind": "text",
+      "bbox": [
+        0.9216666666666666,
+        0.9166666666666666,
+        0.9358333333333333,
+        0.9229323308270677
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 84.544006,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "2aa2299b9ab3447fabfd648751b25a9e",
+      "label": "시",
+      "kind": "text",
+      "bbox": [
+        0.8708333333333333,
+        0.9348370927318296,
+        0.8879166666666667,
+        0.949874686716792
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 45.146439,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "659d5c7a716c4a1c9913711507de2434",
+      "label": "6006",
+      "kind": "text",
+      "bbox": [
+        0.8704166666666666,
+        0.9592731829573935,
+        0.9058333333333334,
+        0.9824561403508771
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 56.197227,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "49043d71fe35496c8435e418ee5fcd57",
+      "label": "12",
+      "kind": "text",
+      "bbox": [
+        0.04541666666666667,
+        0.9868421052631579,
+        0.05458333333333333,
+        0.9974937343358395
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 94.297859,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e7dafa3fa2944ccab273b57edb40df08",
+      "label": "11",
+      "kind": "text",
+      "bbox": [
+        0.115,
+        0.9868421052631579,
+        0.12291666666666666,
+        0.9974937343358395
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 94.588875,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "b3df6f29920d46c5bba988f8e5d48ed9",
+      "label": "10",
+      "kind": "text",
+      "bbox": [
+        0.185,
+        0.9868421052631579,
+        0.19458333333333333,
+        0.9981203007518797
+      ],
+      "source": "ocr",
+      "status": "needs_review",
+      "properties": {
+        "ocr_score": 95.610657,
+        "language": "eng+kor"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c9d552920ee44c6d87cb3d868c8a6154",
+      "label": "요소 1",
       "kind": "unknown",
       "bbox": [
         0.2579166666666667,
@@ -46,8 +2284,8 @@
       "concept_id": null
     },
     {
-      "id": "df066cc08a194c7e95e8949604b4b01f",
-      "label": "요소 4",
+      "id": "5088a80faeef4fa384f02e98854c458b",
+      "label": "요소 2",
       "kind": "unknown",
       "bbox": [
         0.3275,
@@ -61,8 +2299,8 @@
       "concept_id": null
     },
     {
-      "id": "4a3deb8f73084ffeaab9078c4ffd838b",
-      "label": "요소 5",
+      "id": "29c70a84f4e64a6783d3ac604b38381e",
+      "label": "요소 3",
       "kind": "unknown",
       "bbox": [
         0.40708333333333335,
@@ -76,8 +2314,8 @@
       "concept_id": null
     },
     {
-      "id": "008e8a0cd34945338d8df4d42a978268",
-      "label": "요소 6",
+      "id": "d427040bb33140a48e4771dfd05744df",
+      "label": "요소 4",
       "kind": "unknown",
       "bbox": [
         0.46791666666666665,
@@ -91,8 +2329,8 @@
       "concept_id": null
     },
     {
-      "id": "5f8a1221c2984742beb5cf1c091a1a1b",
-      "label": "요소 7",
+      "id": "ccfb257708d749d3a22c6f15f8f5056a",
+      "label": "요소 5",
       "kind": "unknown",
       "bbox": [
         0.5375,
@@ -106,8 +2344,8 @@
       "concept_id": null
     },
     {
-      "id": "d5d2e2a8731e4a139719002981d9e0b8",
-      "label": "요소 8",
+      "id": "97ef82a55b8e4ff6b738dd269974d048",
+      "label": "요소 6",
       "kind": "unknown",
       "bbox": [
         0.6070833333333333,
@@ -121,8 +2359,8 @@
       "concept_id": null
     },
     {
-      "id": "74aad351efc74277b486c3a1296cb0d7",
-      "label": "요소 9",
+      "id": "f03c2b22079c48c5872c19f158a14935",
+      "label": "요소 7",
       "kind": "unknown",
       "bbox": [
         0.6783333333333333,
@@ -136,8 +2374,8 @@
       "concept_id": null
     },
     {
-      "id": "d48e8cbc0fa6423fabac5d357f52b87d",
-      "label": "요소 10",
+      "id": "66ba5064c19446909e75b01cf1fce194",
+      "label": "요소 8",
       "kind": "unknown",
       "bbox": [
         0.7483333333333333,
@@ -151,8 +2389,8 @@
       "concept_id": null
     },
     {
-      "id": "02b70f2b6bfb41e9b9c5cc9f5fe47cc3",
-      "label": "요소 11",
+      "id": "a00fa96004bb4c6b8048b44fb1823322",
+      "label": "요소 9",
       "kind": "unknown",
       "bbox": [
         0.395,
@@ -166,8 +2404,8 @@
       "concept_id": null
     },
     {
-      "id": "af87af23831449f38ca4838138953ea0",
-      "label": "요소 12",
+      "id": "131cf92ea71e4e52abc195cc97df12d8",
+      "label": "요소 10",
       "kind": "unknown",
       "bbox": [
         0.005,
@@ -181,8 +2419,8 @@
       "concept_id": null
     },
     {
-      "id": "fe97c176d62347b29883dc0b85dd904d",
-      "label": "요소 13",
+      "id": "cc23b92ede734c65a1214f9da5285953",
+      "label": "요소 11",
       "kind": "unknown",
       "bbox": [
         0.86,
@@ -196,8 +2434,8 @@
       "concept_id": null
     },
     {
-      "id": "993caa6da87047c39c11259f91c08f65",
-      "label": "요소 14",
+      "id": "d5e50619a6ad421e8495cc357dc89629",
+      "label": "요소 12",
       "kind": "unknown",
       "bbox": [
         0.6395833333333333,
@@ -211,8 +2449,8 @@
       "concept_id": null
     },
     {
-      "id": "df37af34b6bd41f5bb2226f7c97bba5b",
-      "label": "요소 15",
+      "id": "3a6a4435b5d74ca18849193278234449",
+      "label": "요소 13",
       "kind": "unknown",
       "bbox": [
         0.765,
@@ -226,68 +2464,8 @@
       "concept_id": null
     },
     {
-      "id": "4e9880e4f343479181a0f4597d8026e9",
-      "label": "요소 16",
-      "kind": "unknown",
-      "bbox": [
-        0.3120833333333333,
-        0.10150375939849623,
-        0.33458333333333334,
-        0.10651629072681704
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "e442942e065344d48dfb88c4fb4f087c",
-      "label": "요소 17",
-      "kind": "unknown",
-      "bbox": [
-        0.33541666666666664,
-        0.10150375939849623,
-        0.3770833333333333,
-        0.10651629072681704
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "271451ca5aa141f78edfa593d2e6d22f",
-      "label": "요소 18",
-      "kind": "unknown",
-      "bbox": [
-        0.7775,
-        0.10213032581453634,
-        0.7854166666666667,
-        0.10714285714285714
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "8ffaf3b2e88e45c2975641231da23702",
-      "label": "요소 19",
-      "kind": "unknown",
-      "bbox": [
-        0.7879166666666667,
-        0.10213032581453634,
-        0.7941666666666667,
-        0.10714285714285714
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "ca0e1c51bad649ceacab5da066bc9ec8",
-      "label": "요소 20",
+      "id": "e73644ace1c7479482f0d3526af558c3",
+      "label": "요소 14",
       "kind": "unknown",
       "bbox": [
         0.7970833333333334,
@@ -301,8 +2479,8 @@
       "concept_id": null
     },
     {
-      "id": "eaf3a759b8004b9387606c83e06513fc",
-      "label": "요소 21",
+      "id": "1b2cbaec69104d4da8b8e5fd44f08eac",
+      "label": "요소 15",
       "kind": "unknown",
       "bbox": [
         0.8075,
@@ -316,8 +2494,8 @@
       "concept_id": null
     },
     {
-      "id": "0218c01ca9cb4577b5a193b81eb3a0ee",
-      "label": "요소 22",
+      "id": "9c69a05ccc514098b9b478881c5d0c1d",
+      "label": "요소 16",
       "kind": "unknown",
       "bbox": [
         0.8179166666666666,
@@ -331,8 +2509,8 @@
       "concept_id": null
     },
     {
-      "id": "5bf29606dffd49cbaf7313c054051c9a",
-      "label": "요소 23",
+      "id": "6a947420dabe4549afb987480bed33f7",
+      "label": "요소 17",
       "kind": "unknown",
       "bbox": [
         0.67125,
@@ -346,8 +2524,8 @@
       "concept_id": null
     },
     {
-      "id": "8e041b90d643428594eec10f0ddd2a5e",
-      "label": "요소 24",
+      "id": "18caada2fe7e43a985ab06013cfadba8",
+      "label": "요소 18",
       "kind": "unknown",
       "bbox": [
         0.68,
@@ -361,8 +2539,8 @@
       "concept_id": null
     },
     {
-      "id": "6fa1f3909b4048a2ae6e396dfa603dec",
-      "label": "요소 25",
+      "id": "93cadbdf38344e4db3b9885bfac155d0",
+      "label": "요소 19",
       "kind": "unknown",
       "bbox": [
         0.6941666666666667,
@@ -376,8 +2554,8 @@
       "concept_id": null
     },
     {
-      "id": "21d06140e69d454fb0b0683ddd7c6364",
-      "label": "요소 26",
+      "id": "870de493ff034813af3ef97a02471bdb",
+      "label": "요소 20",
       "kind": "unknown",
       "bbox": [
         0.7220833333333333,
@@ -391,8 +2569,8 @@
       "concept_id": null
     },
     {
-      "id": "7fa1d6c887a240fc834fa83d559cdb7c",
-      "label": "요소 27",
+      "id": "7fbbb8614274473da302435ad9b05706",
+      "label": "요소 21",
       "kind": "unknown",
       "bbox": [
         0.7654166666666666,
@@ -406,8 +2584,8 @@
       "concept_id": null
     },
     {
-      "id": "d8033e77a4a749eb86c38151bafc808b",
-      "label": "요소 28",
+      "id": "948286d305c1401d94959474657446a4",
+      "label": "요소 22",
       "kind": "unknown",
       "bbox": [
         0.77875,
@@ -421,8 +2599,8 @@
       "concept_id": null
     },
     {
-      "id": "d07994881a1b433ab352fb1fd8b00dbe",
-      "label": "요소 29",
+      "id": "90e282fdd3e14a63b957eea646799caa",
+      "label": "요소 23",
       "kind": "unknown",
       "bbox": [
         0.7891666666666667,
@@ -436,38 +2614,8 @@
       "concept_id": null
     },
     {
-      "id": "813ac7c855bd4ac7ba02f917f0111d6e",
-      "label": "요소 30",
-      "kind": "unknown",
-      "bbox": [
-        0.8083333333333333,
-        0.11278195488721804,
-        0.8204166666666667,
-        0.11779448621553884
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "74b355f9c53b48d687a750a940a367ef",
-      "label": "요소 31",
-      "kind": "unknown",
-      "bbox": [
-        0.6775,
-        0.16165413533834586,
-        0.6991666666666667,
-        0.2098997493734336
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "6093c3cb66654c65bd5267d5a9be846d",
-      "label": "요소 32",
+      "id": "06eb321cc9874be0b1de6956a231a3ba",
+      "label": "요소 24",
       "kind": "unknown",
       "bbox": [
         0.7241666666666666,
@@ -481,8 +2629,8 @@
       "concept_id": null
     },
     {
-      "id": "58febfe272434899aba76b87c62f7a30",
-      "label": "요소 33",
+      "id": "7d9498737557435ca0045be6f4828783",
+      "label": "요소 25",
       "kind": "unknown",
       "bbox": [
         0.81125,
@@ -496,68 +2644,8 @@
       "concept_id": null
     },
     {
-      "id": "0304a0896cae447ba595d3e31dd7d30c",
-      "label": "요소 34",
-      "kind": "unknown",
-      "bbox": [
-        0.3120833333333333,
-        0.18107769423558898,
-        0.3204166666666667,
-        0.18609022556390978
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "967931783ae34532a608a9ee0e160351",
-      "label": "요소 35",
-      "kind": "unknown",
-      "bbox": [
-        0.32083333333333336,
-        0.18107769423558898,
-        0.33458333333333334,
-        0.18609022556390978
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "4e3bd7075e424f9ba913a342b21de6d9",
-      "label": "요소 36",
-      "kind": "unknown",
-      "bbox": [
-        0.33541666666666664,
-        0.18107769423558898,
-        0.34875,
-        0.18609022556390978
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "e098324d3e7b4ee6862117685bc744fc",
-      "label": "요소 37",
-      "kind": "unknown",
-      "bbox": [
-        0.35,
-        0.18107769423558898,
-        0.3770833333333333,
-        0.18609022556390978
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "17f8222382814d72be4b28019928db94",
-      "label": "요소 38",
+      "id": "3dac17e473b24ae5ba27d9b5ece36ef3",
+      "label": "요소 26",
       "kind": "unknown",
       "bbox": [
         0.70125,
@@ -571,8 +2659,8 @@
       "concept_id": null
     },
     {
-      "id": "482f5363b61c46318d2e386d44c4eddc",
-      "label": "요소 39",
+      "id": "db8013e2d83c4bef993da571e0cb7094",
+      "label": "요소 27",
       "kind": "unknown",
       "bbox": [
         0.71,
@@ -586,14 +2674,14 @@
       "concept_id": null
     },
     {
-      "id": "025c8cd7be9d475f86e7771e09e4196c",
-      "label": "요소 40",
+      "id": "6ef9c5ed9a014fa0b1978ec233b5d199",
+      "label": "요소 28",
       "kind": "unknown",
       "bbox": [
-        0.7766666666666666,
-        0.18045112781954886,
-        0.7841666666666667,
-        0.18546365914786966
+        0.6916666666666667,
+        0.18358395989974938,
+        0.6991666666666667,
+        0.2098997493734336
       ],
       "source": "image_candidate",
       "status": "needs_review",
@@ -601,38 +2689,8 @@
       "concept_id": null
     },
     {
-      "id": "af94da4712c54415ae4331da7d06fc67",
-      "label": "요소 41",
-      "kind": "unknown",
-      "bbox": [
-        0.7866666666666666,
-        0.18045112781954886,
-        0.7929166666666667,
-        0.18546365914786966
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "8145415ca8564e489fa9b32480675af5",
-      "label": "요소 42",
-      "kind": "unknown",
-      "bbox": [
-        0.79625,
-        0.18045112781954886,
-        0.8058333333333333,
-        0.18546365914786966
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "43a9be8077d14f5a81cfd64180c8e781",
-      "label": "요소 43",
+      "id": "f8c741d9a7e84bc09f07a1d54307f872",
+      "label": "요소 29",
       "kind": "unknown",
       "bbox": [
         0.7654166666666666,
@@ -646,8 +2704,8 @@
       "concept_id": null
     },
     {
-      "id": "f19c96dd561e4f7c9d671b0a405d4626",
-      "label": "요소 44",
+      "id": "c1ae6e781a384445beb9319b0167a947",
+      "label": "요소 30",
       "kind": "unknown",
       "bbox": [
         0.77875,
@@ -661,8 +2719,8 @@
       "concept_id": null
     },
     {
-      "id": "9897b4526c3447ef84e2b28763f48177",
-      "label": "요소 45",
+      "id": "7fc1a69f9fcf499c88476fff2dad31d4",
+      "label": "요소 31",
       "kind": "unknown",
       "bbox": [
         0.7891666666666667,
@@ -676,23 +2734,8 @@
       "concept_id": null
     },
     {
-      "id": "f28f638d2f6d4dac8540e6f162e8c2d0",
-      "label": "요소 46",
-      "kind": "unknown",
-      "bbox": [
-        0.8083333333333333,
-        0.19110275689223058,
-        0.8204166666666667,
-        0.19611528822055138
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "71d3bc1865d84f868d4baa480b0e3d41",
-      "label": "요소 47",
+      "id": "943c8ddd20494f089d05848ff9f03747",
+      "label": "요소 32",
       "kind": "unknown",
       "bbox": [
         0.004583333333333333,
@@ -706,8 +2749,8 @@
       "concept_id": null
     },
     {
-      "id": "e4faae0b88d2475ba89043db3e1f2694",
-      "label": "요소 48",
+      "id": "a0b0b296916d47099b1ba4ebaa2f0de8",
+      "label": "요소 33",
       "kind": "unknown",
       "bbox": [
         0.8595833333333334,
@@ -721,8 +2764,8 @@
       "concept_id": null
     },
     {
-      "id": "1b29ea6f530d4141b25cb20386cf2fc5",
-      "label": "요소 49",
+      "id": "89abd25a44024d51a6d56210d5ba97bf",
+      "label": "요소 34",
       "kind": "unknown",
       "bbox": [
         0.72,
@@ -736,8 +2779,8 @@
       "concept_id": null
     },
     {
-      "id": "9a0334f0f83443ee8de6099f3cc6be04",
-      "label": "요소 50",
+      "id": "cbc54e3f944a4b8ea38a7bbef62c8bb9",
+      "label": "요소 35",
       "kind": "unknown",
       "bbox": [
         0.72875,
@@ -751,8 +2794,8 @@
       "concept_id": null
     },
     {
-      "id": "e0757c07cbda40a78690199d93c74d6e",
-      "label": "요소 51",
+      "id": "c78ef3bb492e454f9e2e4631aea573f1",
+      "label": "요소 36",
       "kind": "unknown",
       "bbox": [
         0.7425,
@@ -766,8 +2809,8 @@
       "concept_id": null
     },
     {
-      "id": "788e74a81c2440648a74a66594b7de30",
-      "label": "요소 52",
+      "id": "4feb3063aa394fcfb59edf674b7ea458",
+      "label": "요소 37",
       "kind": "unknown",
       "bbox": [
         0.7704166666666666,
@@ -781,8 +2824,8 @@
       "concept_id": null
     },
     {
-      "id": "7cd9f2ffb1494d738f589a9150288318",
-      "label": "요소 53",
+      "id": "3270b7f9fc344e63affc2982b60fb488",
+      "label": "요소 38",
       "kind": "unknown",
       "bbox": [
         0.6958333333333333,
@@ -796,8 +2839,8 @@
       "concept_id": null
     },
     {
-      "id": "2fccdc06787b45ab8b6063da3659f5d1",
-      "label": "요소 54",
+      "id": "c871b3bdbfd845318f3cc07c99f9b42e",
+      "label": "요소 39",
       "kind": "unknown",
       "bbox": [
         0.13458333333333333,
@@ -811,23 +2854,8 @@
       "concept_id": null
     },
     {
-      "id": "971a7cf97be84da2a5acfb2f1edb2a42",
-      "label": "요소 55",
-      "kind": "unknown",
-      "bbox": [
-        0.8275,
-        0.2619047619047619,
-        0.8345833333333333,
-        0.28132832080200504
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "72a1fa2fb2d64ef981c9395a5b69402c",
-      "label": "요소 56",
+      "id": "fce0e042ac4e49f384e05cd9a97b1fd8",
+      "label": "요소 40",
       "kind": "unknown",
       "bbox": [
         0.13458333333333333,
@@ -841,8 +2869,8 @@
       "concept_id": null
     },
     {
-      "id": "9bae3f3837c7498b939003457e61eed3",
-      "label": "요소 57",
+      "id": "c40375451ede40efb14a88f620134f2a",
+      "label": "요소 41",
       "kind": "unknown",
       "bbox": [
         0.69375,
@@ -856,53 +2884,8 @@
       "concept_id": null
     },
     {
-      "id": "90c72dd9947a46e5b02621c2bb8ea262",
-      "label": "요소 58",
-      "kind": "unknown",
-      "bbox": [
-        0.7804166666666666,
-        0.26378446115288223,
-        0.7883333333333333,
-        0.26879699248120303
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "0f105fa1c63242d6990f33151d91427b",
-      "label": "요소 59",
-      "kind": "unknown",
-      "bbox": [
-        0.79125,
-        0.26378446115288223,
-        0.7970833333333334,
-        0.26879699248120303
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "b305a4a4fd274d13afdcca25e3f1b833",
-      "label": "요소 60",
-      "kind": "unknown",
-      "bbox": [
-        0.8004166666666667,
-        0.26378446115288223,
-        0.81,
-        0.26879699248120303
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "0f3b93d0879b4dadb1069ca0deaa3de8",
-      "label": "요소 61",
+      "id": "f6d335dd17db4a47b72dc4c4e136cba1",
+      "label": "요소 42",
       "kind": "unknown",
       "bbox": [
         0.67625,
@@ -916,8 +2899,8 @@
       "concept_id": null
     },
     {
-      "id": "ff8a4ff8cae04bd8bb8c6e4fde4e3581",
-      "label": "요소 62",
+      "id": "123166e2bc774167a13f85772376923a",
+      "label": "요소 43",
       "kind": "unknown",
       "bbox": [
         0.69875,
@@ -931,8 +2914,8 @@
       "concept_id": null
     },
     {
-      "id": "7cdbaf3c53b0457e904b66eb2900fcb5",
-      "label": "요소 63",
+      "id": "e674619943e241c8b3ffc846d1471dd9",
+      "label": "요소 44",
       "kind": "unknown",
       "bbox": [
         0.7083333333333334,
@@ -946,8 +2929,8 @@
       "concept_id": null
     },
     {
-      "id": "6eff895d7711470f85e627669616a8a4",
-      "label": "요소 64",
+      "id": "c063271e200e4c9c81e543dd4fe808eb",
+      "label": "요소 45",
       "kind": "unknown",
       "bbox": [
         0.7266666666666667,
@@ -961,53 +2944,8 @@
       "concept_id": null
     },
     {
-      "id": "c03f9cb7612242139540675c07183315",
-      "label": "요소 65",
-      "kind": "unknown",
-      "bbox": [
-        0.7725,
-        0.2744360902255639,
-        0.7883333333333333,
-        0.2794486215538847
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "6c14bb14007e4126badcb13b40de6335",
-      "label": "요소 66",
-      "kind": "unknown",
-      "bbox": [
-        0.7908333333333334,
-        0.2744360902255639,
-        0.8029166666666666,
-        0.2794486215538847
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "9250f12c2b56405e8bacc14fe7803152",
-      "label": "요소 67",
-      "kind": "unknown",
-      "bbox": [
-        0.8058333333333333,
-        0.2744360902255639,
-        0.82,
-        0.2794486215538847
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "b93d9b72555c4fbc90b6d39b703183a6",
-      "label": "요소 68",
+      "id": "8223e851aa56413ea93b89a5f138a494",
+      "label": "요소 46",
       "kind": "unknown",
       "bbox": [
         0.13458333333333333,
@@ -1021,8 +2959,8 @@
       "concept_id": null
     },
     {
-      "id": "d923fbf63c4743f6af3b46aba3549318",
-      "label": "요소 69",
+      "id": "6268846dd55948c4a1eb41cd31ac027c",
+      "label": "요소 47",
       "kind": "unknown",
       "bbox": [
         0.4583333333333333,
@@ -1036,8 +2974,8 @@
       "concept_id": null
     },
     {
-      "id": "94b3284009e04613a48060b187074e0e",
-      "label": "요소 70",
+      "id": "817c404af13241539ec1ca7a6180fd24",
+      "label": "요소 48",
       "kind": "unknown",
       "bbox": [
         0.46375,
@@ -1051,8 +2989,8 @@
       "concept_id": null
     },
     {
-      "id": "80b9a70da5414f8ab4915cee102c7822",
-      "label": "요소 71",
+      "id": "a6883c8d8c474470bd23a60ae8e0f273",
+      "label": "요소 49",
       "kind": "unknown",
       "bbox": [
         0.005416666666666667,
@@ -1066,8 +3004,8 @@
       "concept_id": null
     },
     {
-      "id": "d94b246b42954da693b90fdd7a41b5b6",
-      "label": "요소 72",
+      "id": "292a09578f1448a3a0386b04086aed85",
+      "label": "요소 50",
       "kind": "unknown",
       "bbox": [
         0.8604166666666667,
@@ -1081,43 +3019,13 @@
       "concept_id": null
     },
     {
-      "id": "0c3f5f259cca4d928685556b091ed823",
-      "label": "요소 73",
+      "id": "3ed4376c99b04df08744ec272dda5dff",
+      "label": "요소 51",
       "kind": "unknown",
       "bbox": [
-        0.4866666666666667,
-        0.3233082706766917,
-        0.5116666666666667,
-        0.35902255639097747
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "490ac0941f424f93aa0a0813569c3ec5",
-      "label": "요소 74",
-      "kind": "unknown",
-      "bbox": [
-        0.5629166666666666,
-        0.3233082706766917,
-        0.5845833333333333,
-        0.35902255639097747
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "18a933cc02364ccb977f874f7e16eaf0",
-      "label": "요소 75",
-      "kind": "unknown",
-      "bbox": [
-        0.028333333333333332,
+        0.8033333333333333,
         0.34398496240601506,
-        0.041666666666666664,
+        0.8345833333333333,
         0.36654135338345867
       ],
       "source": "image_candidate",
@@ -1126,68 +3034,8 @@
       "concept_id": null
     },
     {
-      "id": "73dbf6a972af4838906b626bf63539c8",
-      "label": "요소 76",
-      "kind": "unknown",
-      "bbox": [
-        0.8270833333333333,
-        0.34523809523809523,
-        0.8345833333333333,
-        0.36528822055137844
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "0226292c19494c78859e62038e416b7a",
-      "label": "요소 77",
-      "kind": "unknown",
-      "bbox": [
-        0.0475,
-        0.34774436090225563,
-        0.05541666666666667,
-        0.35275689223057644
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "a4476eb378684a5db95126f25753d9fe",
-      "label": "요소 78",
-      "kind": "unknown",
-      "bbox": [
-        0.058333333333333334,
-        0.34774436090225563,
-        0.06416666666666666,
-        0.35275689223057644
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "6e029a7a5fce409c8f7f5f9a2fb93976",
-      "label": "요소 79",
-      "kind": "unknown",
-      "bbox": [
-        0.06708333333333333,
-        0.34774436090225563,
-        0.0775,
-        0.35275689223057644
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "ffde0bbb830a4ceab28d42a92d822e66",
-      "label": "요소 80",
+      "id": "6992fe7e736643819a229a1d6b5c6e6a",
+      "label": "요소 52",
       "kind": "unknown",
       "bbox": [
         0.2575,
@@ -1201,8 +3049,8 @@
       "concept_id": null
     },
     {
-      "id": "382052c1c8994419932ba7eed308b5ed",
-      "label": "요소 81",
+      "id": "f1d8bb0a3a9c47f2be14bce9185fa758",
+      "label": "요소 53",
       "kind": "unknown",
       "bbox": [
         0.26625,
@@ -1216,8 +3064,8 @@
       "concept_id": null
     },
     {
-      "id": "4e27e10342c143d6888ee0893ab3da65",
-      "label": "요소 82",
+      "id": "ecb5deccf98a4d3ab571c4081c3d119d",
+      "label": "요소 54",
       "kind": "unknown",
       "bbox": [
         0.28791666666666665,
@@ -1231,8 +3079,8 @@
       "concept_id": null
     },
     {
-      "id": "fb11aab5645c476fb76dad4113b82041",
-      "label": "요소 83",
+      "id": "fdaa709c14dc4c83946231b3c64ee0ec",
+      "label": "요소 55",
       "kind": "unknown",
       "bbox": [
         0.30833333333333335,
@@ -1246,8 +3094,8 @@
       "concept_id": null
     },
     {
-      "id": "7ec5653f4fd741c8af64df9ab0a6ee08",
-      "label": "요소 84",
+      "id": "9d000dbd5e3f4497aab788857834e57d",
+      "label": "요소 56",
       "kind": "unknown",
       "bbox": [
         0.6375,
@@ -1261,8 +3109,8 @@
       "concept_id": null
     },
     {
-      "id": "77c241ae85554c9a80e1a5b9d3183e49",
-      "label": "요소 85",
+      "id": "109c95248bb84963aaf1449fba8df86d",
+      "label": "요소 57",
       "kind": "unknown",
       "bbox": [
         0.6679166666666667,
@@ -1276,8 +3124,8 @@
       "concept_id": null
     },
     {
-      "id": "5eb13837cc9e45f88e38cda40eb4e739",
-      "label": "요소 86",
+      "id": "7bd095996fd3487b98541898d23406c8",
+      "label": "요소 58",
       "kind": "unknown",
       "bbox": [
         0.6883333333333334,
@@ -1291,8 +3139,8 @@
       "concept_id": null
     },
     {
-      "id": "7a36c87b6d1744e4a4b5fa0bb3f3fc9f",
-      "label": "요소 87",
+      "id": "c8f06896210d4c6c95aafe462e17e727",
+      "label": "요소 59",
       "kind": "unknown",
       "bbox": [
         0.6970833333333334,
@@ -1306,8 +3154,8 @@
       "concept_id": null
     },
     {
-      "id": "e7fdaee24a3f40a4a71c48558b7b1ec5",
-      "label": "요소 88",
+      "id": "8b5afc9400c64361b4dc38d9f3802edc",
+      "label": "요소 60",
       "kind": "unknown",
       "bbox": [
         0.7804166666666666,
@@ -1321,26 +3169,11 @@
       "concept_id": null
     },
     {
-      "id": "8797b24fcde64e7796f82e2d721b8c62",
-      "label": "요소 89",
+      "id": "f8be18a9f5944122a585d3d6db430928",
+      "label": "요소 61",
       "kind": "unknown",
       "bbox": [
-        0.79125,
-        0.34774436090225563,
-        0.7970833333333334,
-        0.35275689223057644
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "787242ae8d8b43df8805bc55aa54cc71",
-      "label": "요소 90",
-      "kind": "unknown",
-      "bbox": [
-        0.8004166666666667,
+        0.8033333333333333,
         0.34774436090225563,
         0.81,
         0.35275689223057644
@@ -1351,14 +3184,14 @@
       "concept_id": null
     },
     {
-      "id": "1792976d64bb4d34a37f52f43a1661e8",
-      "label": "요소 91",
+      "id": "153dd7e17a9a43fb967dea8b0c8af045",
+      "label": "요소 62",
       "kind": "unknown",
       "bbox": [
-        0.044583333333333336,
-        0.35776942355889724,
-        0.060833333333333336,
-        0.36278195488721804
+        0.5629166666666666,
+        0.34899749373433586,
+        0.5708333333333333,
+        0.35902255639097747
       ],
       "source": "image_candidate",
       "status": "needs_review",
@@ -1366,38 +3199,8 @@
       "concept_id": null
     },
     {
-      "id": "76347d4d3c154734a7169352cc768824",
-      "label": "요소 92",
-      "kind": "unknown",
-      "bbox": [
-        0.06375,
-        0.35776942355889724,
-        0.07583333333333334,
-        0.36278195488721804
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "9981847b79a34d60bbf36be6be0fc151",
-      "label": "요소 93",
-      "kind": "unknown",
-      "bbox": [
-        0.07833333333333334,
-        0.35776942355889724,
-        0.09291666666666666,
-        0.36278195488721804
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "16ca97134f7e494189b5b9611b07582b",
-      "label": "요소 94",
+      "id": "cf2bcc3d7bc54358b2126e499f380ced",
+      "label": "요소 63",
       "kind": "unknown",
       "bbox": [
         0.4583333333333333,
@@ -1411,8 +3214,8 @@
       "concept_id": null
     },
     {
-      "id": "de5b1d3a8cce4dc48fae448b7196877e",
-      "label": "요소 95",
+      "id": "61d678dd68b84c9ca9a8ae98f2fbc8ea",
+      "label": "요소 64",
       "kind": "unknown",
       "bbox": [
         0.7725,
@@ -1426,23 +3229,8 @@
       "concept_id": null
     },
     {
-      "id": "feb7720ea9d44479a67358593aa19366",
-      "label": "요소 96",
-      "kind": "unknown",
-      "bbox": [
-        0.7908333333333334,
-        0.35776942355889724,
-        0.8029166666666666,
-        0.36278195488721804
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "54517be696f542ac8f173c803c0f0a2b",
-      "label": "요소 97",
+      "id": "3fa908a512cb4416bd1db9154e3eab29",
+      "label": "요소 65",
       "kind": "unknown",
       "bbox": [
         0.8054166666666667,
@@ -1456,8 +3244,8 @@
       "concept_id": null
     },
     {
-      "id": "f56ef0a6009a42b294d3b0545a706c9d",
-      "label": "요소 98",
+      "id": "13948e469c504b16944f3e00706f12af",
+      "label": "요소 66",
       "kind": "unknown",
       "bbox": [
         0.5383333333333333,
@@ -1471,8 +3259,8 @@
       "concept_id": null
     },
     {
-      "id": "fc02b895e67b415690b8dc8ad47589a0",
-      "label": "요소 99",
+      "id": "58976a2fad33438f9ebd961eb75797f7",
+      "label": "요소 67",
       "kind": "unknown",
       "bbox": [
         0.5383333333333333,
@@ -1486,8 +3274,8 @@
       "concept_id": null
     },
     {
-      "id": "d4968e3596ed4146940be3d14c1fd840",
-      "label": "요소 100",
+      "id": "0bb01a5f91774321a145adfa6c3954b5",
+      "label": "요소 68",
       "kind": "unknown",
       "bbox": [
         0.5383333333333333,
@@ -1501,8 +3289,8 @@
       "concept_id": null
     },
     {
-      "id": "e8fdcbc090054759a89086eb589ed1e0",
-      "label": "요소 101",
+      "id": "a017d1060ae14e45a24c3e4b8b5ab1ec",
+      "label": "요소 69",
       "kind": "unknown",
       "bbox": [
         0.005,
@@ -1516,8 +3304,8 @@
       "concept_id": null
     },
     {
-      "id": "9829a3c32ea046cfa5515fd190146bc5",
-      "label": "요소 102",
+      "id": "780ad3f6f3e34dcd87036ddc7c64f860",
+      "label": "요소 70",
       "kind": "unknown",
       "bbox": [
         0.86,
@@ -1531,8 +3319,8 @@
       "concept_id": null
     },
     {
-      "id": "8a860b3d68384616a96c0201d57c75e5",
-      "label": "요소 103",
+      "id": "c2f62bdc7e7b405f84097b8955cb40e0",
+      "label": "요소 71",
       "kind": "unknown",
       "bbox": [
         0.5179166666666667,
@@ -1546,8 +3334,8 @@
       "concept_id": null
     },
     {
-      "id": "58c7a41b929744ed96c718d69c6486bb",
-      "label": "요소 104",
+      "id": "55efb47f028340eebbba44f0d6c04f3f",
+      "label": "요소 72",
       "kind": "unknown",
       "bbox": [
         0.5216666666666666,
@@ -1561,8 +3349,8 @@
       "concept_id": null
     },
     {
-      "id": "92385108908b40d190fb9bad4f0f7dd3",
-      "label": "요소 105",
+      "id": "9acdff77eb214ffab4c7281d0cf99883",
+      "label": "요소 73",
       "kind": "unknown",
       "bbox": [
         0.4891666666666667,
@@ -1576,8 +3364,8 @@
       "concept_id": null
     },
     {
-      "id": "391c9857ddad4121bc1d91f46fe1e15f",
-      "label": "요소 106",
+      "id": "8783494bdd1e4d5ba453fc9b24aa54ba",
+      "label": "요소 74",
       "kind": "unknown",
       "bbox": [
         0.00125,
@@ -1591,8 +3379,8 @@
       "concept_id": null
     },
     {
-      "id": "29a09b39319743bc8bf7e725d54455d9",
-      "label": "요소 107",
+      "id": "77f7c17979584eb9aee164cbcc85d6a6",
+      "label": "요소 75",
       "kind": "unknown",
       "bbox": [
         0.8566666666666667,
@@ -1606,53 +3394,8 @@
       "concept_id": null
     },
     {
-      "id": "92a8db7ad3544ce29fffdfbfab632201",
-      "label": "요소 108",
-      "kind": "unknown",
-      "bbox": [
-        0.32,
-        0.4956140350877193,
-        0.34875,
-        0.5319548872180451
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "69346c64de7944349090678bd2a23554",
-      "label": "요소 109",
-      "kind": "unknown",
-      "bbox": [
-        0.325,
-        0.5,
-        0.32958333333333334,
-        0.5050125313283208
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "0101f3d306624cf6b0a21c40b509e4d6",
-      "label": "요소 110",
-      "kind": "unknown",
-      "bbox": [
-        0.33916666666666667,
-        0.5,
-        0.3433333333333333,
-        0.5050125313283208
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "719b6fb8f7b24cfea766bf72313055e1",
-      "label": "요소 111",
+      "id": "fb52bc58471946abb8f39d164409d2e0",
+      "label": "요소 76",
       "kind": "unknown",
       "bbox": [
         0.53625,
@@ -1666,8 +3409,8 @@
       "concept_id": null
     },
     {
-      "id": "8d9e08a976fd49c78815db4ddc000ff8",
-      "label": "요소 112",
+      "id": "0ae8d8fe35764498a2d73c07d16faf95",
+      "label": "요소 77",
       "kind": "unknown",
       "bbox": [
         0.5633333333333334,
@@ -1681,23 +3424,8 @@
       "concept_id": null
     },
     {
-      "id": "6ac6ac9932f445fb98cde3c8a3b69fe8",
-      "label": "요소 113",
-      "kind": "unknown",
-      "bbox": [
-        0.5508333333333333,
-        0.5050125313283208,
-        0.5554166666666667,
-        0.5100250626566416
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "5664110f43b046708e7f81bfcb1aeb04",
-      "label": "요소 114",
+      "id": "8e440a533b1a45178ff22f7d0fa110fb",
+      "label": "요소 78",
       "kind": "unknown",
       "bbox": [
         0.5695833333333333,
@@ -1711,11 +3439,26 @@
       "concept_id": null
     },
     {
-      "id": "69bd14f5a8dd4bb3b0d312ab9963f250",
-      "label": "요소 115",
+      "id": "ab7b638f0f574f399d7b6a8550e7bece",
+      "label": "요소 79",
       "kind": "unknown",
       "bbox": [
-        0.34625,
+        0.4608333333333333,
+        0.5112781954887218,
+        0.4708333333333333,
+        0.5281954887218046
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "eea4d29d5175408c8859be33d6cfc0bd",
+      "label": "요소 80",
+      "kind": "unknown",
+      "bbox": [
+        0.3433333333333333,
         0.5294486215538847,
         0.3645833333333333,
         0.5363408521303258
@@ -1726,8 +3469,8 @@
       "concept_id": null
     },
     {
-      "id": "c148273b75184288b7bc8ac4ebfa4794",
-      "label": "요소 116",
+      "id": "c7ec467320e0442fbe10fc3caee1cf45",
+      "label": "요소 81",
       "kind": "unknown",
       "bbox": [
         0.38958333333333334,
@@ -1741,8 +3484,8 @@
       "concept_id": null
     },
     {
-      "id": "5fc5241e0d884119a9467dc1391b57aa",
-      "label": "요소 117",
+      "id": "486e678abe97473ba40dd76596fdcdaf",
+      "label": "요소 82",
       "kind": "unknown",
       "bbox": [
         0.4216666666666667,
@@ -1756,23 +3499,8 @@
       "concept_id": null
     },
     {
-      "id": "824432b5063c4e5c9de1cd08d343d2b4",
-      "label": "요소 118",
-      "kind": "unknown",
-      "bbox": [
-        0.4708333333333333,
-        0.5294486215538847,
-        0.47583333333333333,
-        0.5363408521303258
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "c19160e48abc43b6a23d0bf0dce59bed",
-      "label": "요소 119",
+      "id": "0eeca6a73ec44a60b0e851d127d5b82c",
+      "label": "요소 83",
       "kind": "unknown",
       "bbox": [
         0.41625,
@@ -1786,8 +3514,8 @@
       "concept_id": null
     },
     {
-      "id": "3c563c8f29954bc1b3744c59aff2d0e8",
-      "label": "요소 120",
+      "id": "8d06abae0fee4681b9b7be81951b55cb",
+      "label": "요소 84",
       "kind": "unknown",
       "bbox": [
         0.004583333333333333,
@@ -1801,8 +3529,8 @@
       "concept_id": null
     },
     {
-      "id": "6bc56aefe83f4ce4bfc3f72e98184404",
-      "label": "요소 121",
+      "id": "854fe98d6d4c4e89b1876f8f2b066604",
+      "label": "요소 85",
       "kind": "unknown",
       "bbox": [
         0.8595833333333334,
@@ -1816,8 +3544,23 @@
       "concept_id": null
     },
     {
-      "id": "b0f95e990a4143428e2de578460fbc14",
-      "label": "요소 122",
+      "id": "1fa970bcb6bb4da7a02e6530f7a81bd9",
+      "label": "요소 86",
+      "kind": "unknown",
+      "bbox": [
+        0.4608333333333333,
+        0.5369674185463659,
+        0.4708333333333333,
+        0.5538847117794486
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "75c6a755260d47fb8f863869da5a9aa5",
+      "label": "요소 87",
       "kind": "unknown",
       "bbox": [
         0.28708333333333336,
@@ -1831,8 +3574,8 @@
       "concept_id": null
     },
     {
-      "id": "074b5278dd1f4728815b56aa9b01b686",
-      "label": "요소 123",
+      "id": "ac076abd023b4861a1045f92ea82c49a",
+      "label": "요소 88",
       "kind": "unknown",
       "bbox": [
         0.28708333333333336,
@@ -1846,8 +3589,8 @@
       "concept_id": null
     },
     {
-      "id": "7fdfc17968d24d418534ae28f6cc7dfa",
-      "label": "요소 124",
+      "id": "11c2205ddbe7403aaef442da9f8caaa5",
+      "label": "요소 89",
       "kind": "unknown",
       "bbox": [
         0.8275,
@@ -1861,8 +3604,8 @@
       "concept_id": null
     },
     {
-      "id": "7c95099fcfcb4c45b01b1a0c64c82fb9",
-      "label": "요소 125",
+      "id": "4c227fab28f249199b4c12025e8dfb4e",
+      "label": "요소 90",
       "kind": "unknown",
       "bbox": [
         0.6279166666666667,
@@ -1876,8 +3619,8 @@
       "concept_id": null
     },
     {
-      "id": "1a534ab59f3841d693010703dc196e84",
-      "label": "요소 126",
+      "id": "39f20638537a49ba85081ebdf0f4c360",
+      "label": "요소 91",
       "kind": "unknown",
       "bbox": [
         0.63625,
@@ -1891,8 +3634,8 @@
       "concept_id": null
     },
     {
-      "id": "4bb3422f94314e0188e4cec3dee6e084",
-      "label": "요소 127",
+      "id": "2ed971829ec34a23bc036ead9a559be8",
+      "label": "요소 92",
       "kind": "unknown",
       "bbox": [
         0.6583333333333333,
@@ -1906,8 +3649,8 @@
       "concept_id": null
     },
     {
-      "id": "19da0bcd3e9346d2bdfe63e0d17bcda9",
-      "label": "요소 128",
+      "id": "1722eba9b1f04451813e03b0281f6e63",
+      "label": "요소 93",
       "kind": "unknown",
       "bbox": [
         0.7804166666666666,
@@ -1921,8 +3664,8 @@
       "concept_id": null
     },
     {
-      "id": "9fdd635ecce84cc68966d7d6271ed188",
-      "label": "요소 129",
+      "id": "a116d1dec2db4be4be664e24da92213e",
+      "label": "요소 94",
       "kind": "unknown",
       "bbox": [
         0.79125,
@@ -1936,8 +3679,8 @@
       "concept_id": null
     },
     {
-      "id": "c34a69521f314a71bd69b76c2b92ef0f",
-      "label": "요소 130",
+      "id": "25792a7f8f3840c6a2ba952242bb12b8",
+      "label": "요소 95",
       "kind": "unknown",
       "bbox": [
         0.8,
@@ -1951,8 +3694,8 @@
       "concept_id": null
     },
     {
-      "id": "7fbc6c07ffed4a4ea114ff548ddbb456",
-      "label": "요소 131",
+      "id": "450863b6c8774831915992691f0aa756",
+      "label": "요소 96",
       "kind": "unknown",
       "bbox": [
         0.28708333333333336,
@@ -1966,8 +3709,8 @@
       "concept_id": null
     },
     {
-      "id": "3a985e96eb1c45f1a1416ec2bf5d1429",
-      "label": "요소 132",
+      "id": "21b0b0f05a974f1085a1a5abc7d25146",
+      "label": "요소 97",
       "kind": "unknown",
       "bbox": [
         0.78,
@@ -1981,8 +3724,8 @@
       "concept_id": null
     },
     {
-      "id": "5e17768acc624872b96cdf005c075369",
-      "label": "요소 133",
+      "id": "d10f092ae340424199717de6b584a108",
+      "label": "요소 98",
       "kind": "unknown",
       "bbox": [
         0.795,
@@ -1996,8 +3739,8 @@
       "concept_id": null
     },
     {
-      "id": "7abe0e167a42471e8eaed957414a812d",
-      "label": "요소 134",
+      "id": "9e837ac8076e4e478597140a0359aff5",
+      "label": "요소 99",
       "kind": "unknown",
       "bbox": [
         0.28708333333333336,
@@ -2011,8 +3754,8 @@
       "concept_id": null
     },
     {
-      "id": "e1e87df09975495eabd9a67e02a814d3",
-      "label": "요소 135",
+      "id": "cc13a476c3294001a756fcea38fcbd6f",
+      "label": "요소 100",
       "kind": "unknown",
       "bbox": [
         0.28708333333333336,
@@ -2026,8 +3769,8 @@
       "concept_id": null
     },
     {
-      "id": "2896252484f84546ac0d2427735764b3",
-      "label": "요소 136",
+      "id": "604c950cfcdc4bf99f860984f07dc0bd",
+      "label": "요소 101",
       "kind": "unknown",
       "bbox": [
         0.24708333333333332,
@@ -2041,38 +3784,8 @@
       "concept_id": null
     },
     {
-      "id": "88232b6e7fd14674b1f6102aa3945498",
-      "label": "요소 137",
-      "kind": "unknown",
-      "bbox": [
-        0.3129166666666667,
-        0.631578947368421,
-        0.3383333333333333,
-        0.6666666666666666
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "0ef06c00307046b78f8ad9b9083180c9",
-      "label": "요소 138",
-      "kind": "unknown",
-      "bbox": [
-        0.7654166666666666,
-        0.6522556390977443,
-        0.7716666666666666,
-        0.6622807017543859
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "9d2e7fa49ecc4ad8ad86a09e1063bb82",
-      "label": "요소 139",
+      "id": "272301fb96b14bd39871a11ba361ca14",
+      "label": "요소 102",
       "kind": "unknown",
       "bbox": [
         0.09125,
@@ -2086,14 +3799,14 @@
       "concept_id": null
     },
     {
-      "id": "e570fed394da4795988007afdfb4c42f",
-      "label": "요소 140",
+      "id": "0a59c4dffcd6466ea352cba3954f48f5",
+      "label": "요소 103",
       "kind": "unknown",
       "bbox": [
-        0.07208333333333333,
-        0.6547619047619048,
-        0.07916666666666666,
-        0.6616541353383458
+        0.3129166666666667,
+        0.6535087719298246,
+        0.3229166666666667,
+        0.6666666666666666
       ],
       "source": "image_candidate",
       "status": "needs_review",
@@ -2101,53 +3814,8 @@
       "concept_id": null
     },
     {
-      "id": "9d8d166a25d644a39a50ec18e28c4cff",
-      "label": "요소 141",
-      "kind": "unknown",
-      "bbox": [
-        0.037083333333333336,
-        0.6553884711779449,
-        0.045,
-        0.6604010025062657
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "64df412e94be479aa4bf19f7892a253c",
-      "label": "요소 142",
-      "kind": "unknown",
-      "bbox": [
-        0.04791666666666667,
-        0.6553884711779449,
-        0.05375,
-        0.6604010025062657
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "928dae654ef9485f9f6f3d1d6e8de750",
-      "label": "요소 143",
-      "kind": "unknown",
-      "bbox": [
-        0.056666666666666664,
-        0.6553884711779449,
-        0.06666666666666667,
-        0.6604010025062657
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "f0454bfb9b1245169c45fb2cc678015f",
-      "label": "요소 144",
+      "id": "f18b571c64ac4ab9ac15ee7c5a41836c",
+      "label": "요소 104",
       "kind": "unknown",
       "bbox": [
         0.5954166666666667,
@@ -2161,8 +3829,8 @@
       "concept_id": null
     },
     {
-      "id": "9b546e8faece4d858ef6bdef5c7ca3dc",
-      "label": "요소 145",
+      "id": "f6bf5fc76b4943d6aca4e8f8858f71c8",
+      "label": "요소 105",
       "kind": "unknown",
       "bbox": [
         0.6041666666666666,
@@ -2176,8 +3844,8 @@
       "concept_id": null
     },
     {
-      "id": "cef050f6487749a0acfd661c4650eb05",
-      "label": "요소 146",
+      "id": "ef6ea94488fb4c2cb3dce416656e89ea",
+      "label": "요소 106",
       "kind": "unknown",
       "bbox": [
         0.61875,
@@ -2191,8 +3859,8 @@
       "concept_id": null
     },
     {
-      "id": "452100bed7ec45d099c3f4271cdf69c2",
-      "label": "요소 147",
+      "id": "01467cb4297340b3ae1467454e298d46",
+      "label": "요소 107",
       "kind": "unknown",
       "bbox": [
         0.6333333333333333,
@@ -2206,8 +3874,8 @@
       "concept_id": null
     },
     {
-      "id": "96578e8658d74743ab9bbf319880471e",
-      "label": "요소 148",
+      "id": "bcaf032b6490489ea40ed273f0f6230b",
+      "label": "요소 108",
       "kind": "unknown",
       "bbox": [
         0.6466666666666666,
@@ -2221,53 +3889,8 @@
       "concept_id": null
     },
     {
-      "id": "600e425904e24493a0783caa98c142f1",
-      "label": "요소 149",
-      "kind": "unknown",
-      "bbox": [
-        0.78375,
-        0.6553884711779449,
-        0.7916666666666666,
-        0.6604010025062657
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "28c1da8e589240499c5ec9259206fb4d",
-      "label": "요소 150",
-      "kind": "unknown",
-      "bbox": [
-        0.7941666666666667,
-        0.6553884711779449,
-        0.8004166666666667,
-        0.6604010025062657
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "522764f4dc24491a924a02344cc2aea5",
-      "label": "요소 151",
-      "kind": "unknown",
-      "bbox": [
-        0.80375,
-        0.6553884711779449,
-        0.8133333333333334,
-        0.6604010025062657
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "a2123d416324465285f660e2cfeea873",
-      "label": "요소 152",
+      "id": "dc5e3dd1fb974bfaa17a1d4d67e3bbd1",
+      "label": "요소 109",
       "kind": "unknown",
       "bbox": [
         0.20541666666666666,
@@ -2281,23 +3904,8 @@
       "concept_id": null
     },
     {
-      "id": "7fbde2bdf16448a2b0545365ce42db8c",
-      "label": "요소 153",
-      "kind": "unknown",
-      "bbox": [
-        0.765,
-        0.6641604010025063,
-        0.7716666666666666,
-        0.6741854636591479
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "9734be427e124bd4bb63fe7107e086c8",
-      "label": "요소 154",
+      "id": "33e7169726164a1e9f4c4d29967b3876",
+      "label": "요소 110",
       "kind": "unknown",
       "bbox": [
         0.030833333333333334,
@@ -2311,8 +3919,8 @@
       "concept_id": null
     },
     {
-      "id": "da38829de5b64f6e87fadd07b9020688",
-      "label": "요소 155",
+      "id": "c0bcd22b5a8d4282a88cc3f7e232df8b",
+      "label": "요소 111",
       "kind": "unknown",
       "bbox": [
         0.04125,
@@ -2326,83 +3934,8 @@
       "concept_id": null
     },
     {
-      "id": "a006e234dbb44bdc81ec974824a80c81",
-      "label": "요소 156",
-      "kind": "unknown",
-      "bbox": [
-        0.06041666666666667,
-        0.6660401002506265,
-        0.0725,
-        0.6710526315789473
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "682597afd2ca4855bc160d737f006d76",
-      "label": "요소 157",
-      "kind": "unknown",
-      "bbox": [
-        0.075,
-        0.6660401002506265,
-        0.08958333333333333,
-        0.6710526315789473
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "6d803ab8f2be453cb2431fa5a5df9a3b",
-      "label": "요소 158",
-      "kind": "unknown",
-      "bbox": [
-        0.7758333333333334,
-        0.6660401002506265,
-        0.7916666666666666,
-        0.6710526315789473
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "c33b3cc5b8bc41559a4a78e8011ea5ed",
-      "label": "요소 159",
-      "kind": "unknown",
-      "bbox": [
-        0.7941666666666667,
-        0.6660401002506265,
-        0.80625,
-        0.6710526315789473
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "84db334617e04992886ef4bf24f4ec38",
-      "label": "요소 160",
-      "kind": "unknown",
-      "bbox": [
-        0.80875,
-        0.6660401002506265,
-        0.8233333333333334,
-        0.6710526315789473
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "474418b7d5224304a0dfeee58ae51947",
-      "label": "요소 161",
+      "id": "5b9c5902b11a4246bc4863098e03fc0f",
+      "label": "요소 112",
       "kind": "unknown",
       "bbox": [
         0.004583333333333333,
@@ -2416,368 +3949,8 @@
       "concept_id": null
     },
     {
-      "id": "96e3a0981e00400fb1307c26a4bed66e",
-      "label": "요소 162",
-      "kind": "unknown",
-      "bbox": [
-        0.8595833333333334,
-        0.6785714285714286,
-        0.8658333333333333,
-        0.6898496240601504
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "381b66b3fd0241a983401f23a73dc836",
-      "label": "요소 163",
-      "kind": "unknown",
-      "bbox": [
-        0.8741666666666666,
-        0.6923558897243107,
-        0.9,
-        0.6979949874686717
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "c1461dc39c574303bf014da0947d4159",
-      "label": "요소 164",
-      "kind": "unknown",
-      "bbox": [
-        0.90125,
-        0.6923558897243107,
-        0.9116666666666666,
-        0.6979949874686717
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "022fe2760be44483a773596b1989b882",
-      "label": "요소 165",
-      "kind": "unknown",
-      "bbox": [
-        0.9158333333333334,
-        0.6923558897243107,
-        0.92375,
-        0.6979949874686717
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "f416ff29c403448daa3877570f61cb48",
-      "label": "요소 166",
-      "kind": "unknown",
-      "bbox": [
-        0.9245833333333333,
-        0.6923558897243107,
-        0.9325,
-        0.6979949874686717
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "bc25a6fc55dd46f0a58f8f577bbadf56",
-      "label": "요소 167",
-      "kind": "unknown",
-      "bbox": [
-        0.93375,
-        0.6923558897243107,
-        0.96375,
-        0.6979949874686717
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "ee91558b044440c4a5a00e7e35971c32",
-      "label": "요소 168",
-      "kind": "unknown",
-      "bbox": [
-        0.8720833333333333,
-        0.7030075187969925,
-        0.8804166666666666,
-        0.7092731829573935
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "195dab290bda4cb6bc7a0ad9602f9c33",
-      "label": "요소 169",
-      "kind": "unknown",
-      "bbox": [
-        0.8816666666666667,
-        0.7036340852130326,
-        0.9070833333333334,
-        0.7092731829573935
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "24b81b7dde5448708638d6e81e38746a",
-      "label": "요소 170",
-      "kind": "unknown",
-      "bbox": [
-        0.9083333333333333,
-        0.7030075187969925,
-        0.9225,
-        0.7092731829573935
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "f99fe20456df4c22b9cfa2e36d4bf1c2",
-      "label": "요소 171",
-      "kind": "unknown",
-      "bbox": [
-        0.92375,
-        0.7030075187969925,
-        0.93125,
-        0.7092731829573935
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "3956b9abb72042b88181c55142849343",
-      "label": "요소 172",
-      "kind": "unknown",
-      "bbox": [
-        0.9325,
-        0.7036340852130326,
-        0.9425,
-        0.7092731829573935
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "309fd55703a74240b470a14b73ca90cb",
-      "label": "요소 173",
-      "kind": "unknown",
-      "bbox": [
-        0.94375,
-        0.7036340852130326,
-        0.9641666666666666,
-        0.7092731829573935
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "e8cca4aed6654d4786d22ce332f834b8",
-      "label": "요소 174",
-      "kind": "unknown",
-      "bbox": [
-        0.8720833333333333,
-        0.7124060150375939,
-        0.88,
-        0.7180451127819549
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "38d05653ff1342b089448c9a4b587e9d",
-      "label": "요소 175",
-      "kind": "unknown",
-      "bbox": [
-        0.88125,
-        0.7124060150375939,
-        0.90625,
-        0.718671679197995
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "b7a86d2352374a9a9c593b1c91c63be7",
-      "label": "요소 176",
-      "kind": "unknown",
-      "bbox": [
-        0.9075,
-        0.7124060150375939,
-        0.9120833333333334,
-        0.7180451127819549
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "5b520c769cdc44c5b5510c1ed2b78476",
-      "label": "요소 177",
-      "kind": "unknown",
-      "bbox": [
-        0.9133333333333333,
-        0.7124060150375939,
-        0.9291666666666667,
-        0.718671679197995
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "1103e8d69c7240b8a3a4e37827f320ef",
-      "label": "요소 178",
-      "kind": "unknown",
-      "bbox": [
-        0.9304166666666667,
-        0.7124060150375939,
-        0.9445833333333333,
-        0.718671679197995
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "77a2f58e356346c4999a2c04e8d7a7ab",
-      "label": "요소 179",
-      "kind": "unknown",
-      "bbox": [
-        0.9454166666666667,
-        0.7124060150375939,
-        0.9608333333333333,
-        0.718671679197995
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "321346f0c6fd41939f577b8114093fd8",
-      "label": "요소 180",
-      "kind": "unknown",
-      "bbox": [
-        0.9620833333333333,
-        0.7124060150375939,
-        0.97,
-        0.718671679197995
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "455dfdd800e74a31a530f66fcbd867d8",
-      "label": "요소 181",
-      "kind": "unknown",
-      "bbox": [
-        0.8720833333333333,
-        0.7211779448621554,
-        0.8795833333333334,
-        0.7274436090225563
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "0d7f51efcb534905907d8bbb402e6b95",
-      "label": "요소 182",
-      "kind": "unknown",
-      "bbox": [
-        0.8808333333333334,
-        0.7211779448621554,
-        0.89875,
-        0.7274436090225563
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "33a01cf3bc144c18948fd2b419a68ef5",
-      "label": "요소 183",
-      "kind": "unknown",
-      "bbox": [
-        0.9,
-        0.7211779448621554,
-        0.905,
-        0.7274436090225563
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "557c9c39511d4db88602446eec68f1ee",
-      "label": "요소 184",
-      "kind": "unknown",
-      "bbox": [
-        0.90625,
-        0.7211779448621554,
-        0.95125,
-        0.7274436090225563
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "2978b4772c324b8a86d876bb795e590b",
-      "label": "요소 185",
-      "kind": "unknown",
-      "bbox": [
-        0.9525,
-        0.7211779448621554,
-        0.9820833333333333,
-        0.7274436090225563
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "49a5cd3a5f8d47fe92068d20b9d97d88",
-      "label": "요소 186",
+      "id": "5cbe48b33a7d4eb5bc5f184686e45e09",
+      "label": "요소 113",
       "kind": "unknown",
       "bbox": [
         0.8275,
@@ -2791,53 +3964,8 @@
       "concept_id": null
     },
     {
-      "id": "4770bdafc4be4d8ab23d6bfcf8b86983",
-      "label": "요소 187",
-      "kind": "unknown",
-      "bbox": [
-        0.7804166666666666,
-        0.7286967418546366,
-        0.7879166666666667,
-        0.7337092731829574
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "70b3c051ccbc4628b3f1f2692a323e9d",
-      "label": "요소 188",
-      "kind": "unknown",
-      "bbox": [
-        0.7904166666666667,
-        0.7286967418546366,
-        0.7966666666666666,
-        0.7337092731829574
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "3fee0a977d3a4cd08cbef84404725518",
-      "label": "요소 189",
-      "kind": "unknown",
-      "bbox": [
-        0.8,
-        0.7286967418546366,
-        0.8125,
-        0.7337092731829574
-      ],
-      "source": "image_candidate",
-      "status": "needs_review",
-      "properties": {},
-      "concept_id": null
-    },
-    {
-      "id": "162f6f3469e3418cab430eb9834ed160",
-      "label": "요소 190",
+      "id": "e9f6c18d422640218c800d4033ded95c",
+      "label": "요소 114",
       "kind": "unknown",
       "bbox": [
         0.6704166666666667,
@@ -2851,8 +3979,8 @@
       "concept_id": null
     },
     {
-      "id": "cc4986cb211e499f87bcb42c936f753d",
-      "label": "요소 191",
+      "id": "dc01720e6fb6466c8046804db4f366df",
+      "label": "요소 115",
       "kind": "unknown",
       "bbox": [
         0.6791666666666667,
@@ -2866,8 +3994,8 @@
       "concept_id": null
     },
     {
-      "id": "cb62bff8d55046d99cfe47709a40aa81",
-      "label": "요소 192",
+      "id": "2c61509023ec479b8b291b577e31c10c",
+      "label": "요소 116",
       "kind": "unknown",
       "bbox": [
         0.6933333333333334,
@@ -2881,8 +4009,8 @@
       "concept_id": null
     },
     {
-      "id": "b91cbf63c25649b8922b8becf1088d5e",
-      "label": "요소 193",
+      "id": "0f1a31ab79014614aef43b1fae1faa87",
+      "label": "요소 117",
       "kind": "unknown",
       "bbox": [
         0.7008333333333333,
@@ -2896,8 +4024,8 @@
       "concept_id": null
     },
     {
-      "id": "c1b155c05622462bb791565c31707721",
-      "label": "요소 194",
+      "id": "32af07d180de4db388254707c4bcae7e",
+      "label": "요소 118",
       "kind": "unknown",
       "bbox": [
         0.7083333333333334,
@@ -2911,8 +4039,8 @@
       "concept_id": null
     },
     {
-      "id": "a903071104de4253bcd9946ff398d546",
-      "label": "요소 195",
+      "id": "472bd05bcf3e476487c97febe54ba7d9",
+      "label": "요소 119",
       "kind": "unknown",
       "bbox": [
         0.73,
@@ -2926,14 +4054,14 @@
       "concept_id": null
     },
     {
-      "id": "a7011f3ad4204486b20804c3851347d0",
-      "label": "요소 196",
+      "id": "0a8253482bdd4987a59c75b0a7927657",
+      "label": "요소 120",
       "kind": "unknown",
       "bbox": [
-        0.8720833333333333,
-        0.7299498746867168,
-        0.8795833333333334,
-        0.7362155388471178
+        0.6416666666666667,
+        0.7380952380952381,
+        0.645,
+        0.7443609022556391
       ],
       "source": "image_candidate",
       "status": "needs_review",
@@ -2941,14 +4069,14 @@
       "concept_id": null
     },
     {
-      "id": "77061cd06c4a4a1fa3590d13fe8b7b38",
-      "label": "요소 197",
+      "id": "0eaa46e6331a4f5388f896bdf70b22d4",
+      "label": "요소 121",
       "kind": "unknown",
       "bbox": [
-        0.8804166666666666,
-        0.7299498746867168,
-        0.8954166666666666,
-        0.7362155388471178
+        0.8745833333333334,
+        0.7619047619047619,
+        0.9,
+        0.8377192982456141
       ],
       "source": "image_candidate",
       "status": "needs_review",
@@ -2956,14 +4084,14 @@
       "concept_id": null
     },
     {
-      "id": "e7ab3cd37d674d70a251a286d6d1f048",
-      "label": "요소 198",
+      "id": "15fc656dd69343979f7dc43eefa97749",
+      "label": "요소 122",
       "kind": "unknown",
       "bbox": [
-        0.8966666666666666,
-        0.7299498746867168,
-        0.9225,
-        0.7362155388471178
+        0.8920833333333333,
+        0.7656641604010025,
+        0.91375,
+        0.8233082706766918
       ],
       "source": "image_candidate",
       "status": "needs_review",
@@ -2971,14 +4099,14 @@
       "concept_id": null
     },
     {
-      "id": "0d8386ec21524fb1853d6b1e170114a6",
-      "label": "요소 199",
+      "id": "079d11f25d6248709538496c6098c1d4",
+      "label": "요소 123",
       "kind": "unknown",
       "bbox": [
-        0.92375,
-        0.7299498746867168,
-        0.9316666666666666,
-        0.7362155388471178
+        0.005,
+        0.7982456140350878,
+        0.010416666666666666,
+        0.8095238095238095
       ],
       "source": "image_candidate",
       "status": "needs_review",
@@ -2986,14 +4114,584 @@
       "concept_id": null
     },
     {
-      "id": "932112dfbdb643b38b23b990025c5853",
-      "label": "요소 200",
+      "id": "8ed615f2d6bb4e6084a99065cdc9a303",
+      "label": "요소 124",
       "kind": "unknown",
       "bbox": [
-        0.9416666666666667,
-        0.7299498746867168,
-        0.9545833333333333,
-        0.7362155388471178
+        0.86,
+        0.7988721804511278,
+        0.8654166666666666,
+        0.8095238095238095
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "72e3bada5b8344ba8dda17cd845f09b6",
+      "label": "요소 125",
+      "kind": "unknown",
+      "bbox": [
+        0.7820833333333334,
+        0.8070175438596491,
+        0.7879166666666667,
+        0.8120300751879699
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "e987db3aa3c94891a96f82759c8e5fcd",
+      "label": "요소 126",
+      "kind": "unknown",
+      "bbox": [
+        0.7904166666666667,
+        0.8070175438596491,
+        0.7966666666666666,
+        0.8120300751879699
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "141bce4c23d24092aa021015f9fe2c1d",
+      "label": "요소 127",
+      "kind": "unknown",
+      "bbox": [
+        0.7995833333333333,
+        0.8070175438596491,
+        0.8029166666666666,
+        0.8120300751879699
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "5541fce7423c4bfa81174052530cc932",
+      "label": "요소 128",
+      "kind": "unknown",
+      "bbox": [
+        0.29625,
+        0.8082706766917294,
+        0.3045833333333333,
+        0.8132832080200502
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "0508ed48d18f4717a7903ade895bf9f6",
+      "label": "요소 129",
+      "kind": "unknown",
+      "bbox": [
+        0.305,
+        0.8082706766917294,
+        0.3229166666666667,
+        0.8132832080200502
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "bf2cf76e3d364fd5863e7e26afdbfcb2",
+      "label": "요소 130",
+      "kind": "unknown",
+      "bbox": [
+        0.32666666666666666,
+        0.8082706766917294,
+        0.36125,
+        0.8132832080200502
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "9bfb3c7ff0ed433d9b8ca358d4ec11f9",
+      "label": "요소 131",
+      "kind": "unknown",
+      "bbox": [
+        0.6704166666666667,
+        0.8082706766917294,
+        0.67875,
+        0.8132832080200502
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "07a51fd0ac98422085c55f40c112c68c",
+      "label": "요소 132",
+      "kind": "unknown",
+      "bbox": [
+        0.6791666666666667,
+        0.8082706766917294,
+        0.6975,
+        0.8132832080200502
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "df77b7962b8b4c4bb8ce52571069e8ed",
+      "label": "요소 133",
+      "kind": "unknown",
+      "bbox": [
+        0.7033333333333334,
+        0.8082706766917294,
+        0.7354166666666667,
+        0.8132832080200502
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "35d5a5be76cf41cdb8155e5845b7726d",
+      "label": "요소 134",
+      "kind": "unknown",
+      "bbox": [
+        0.8920833333333333,
+        0.8164160401002506,
+        0.91375,
+        0.8408521303258145
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "b9903e43df1f43e881f23d4b97b2b22a",
+      "label": "요소 135",
+      "kind": "unknown",
+      "bbox": [
+        0.7845833333333333,
+        0.8176691729323309,
+        0.8008333333333333,
+        0.8226817042606517
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "106963e66890471bb5f7850a295a1691",
+      "label": "요소 136",
+      "kind": "unknown",
+      "bbox": [
+        0.8908333333333334,
+        0.8571428571428571,
+        0.905,
+        0.8634085213032582
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "0e7fd4030b034181a3433395a5724674",
+      "label": "요소 137",
+      "kind": "unknown",
+      "bbox": [
+        0.8791666666666667,
+        0.8590225563909775,
+        0.8904166666666666,
+        0.8652882205513784
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "968f947308ef4e90b364da1550f9e4ac",
+      "label": "요소 138",
+      "kind": "unknown",
+      "bbox": [
+        0.8691666666666666,
+        0.8703007518796992,
+        0.88625,
+        0.8972431077694235
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "89e76761b73248a885a73e0810659221",
+      "label": "요소 139",
+      "kind": "unknown",
+      "bbox": [
+        0.7654166666666666,
+        0.8872180451127819,
+        0.7716666666666666,
+        0.8972431077694235
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "51e858f3851b4cb4b05f670b6a80db5e",
+      "label": "요소 140",
+      "kind": "unknown",
+      "bbox": [
+        0.6566666666666666,
+        0.8916040100250626,
+        0.665,
+        0.8966165413533834
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "144587d56d25491980583d76791d338d",
+      "label": "요소 141",
+      "kind": "unknown",
+      "bbox": [
+        0.6654166666666667,
+        0.8916040100250626,
+        0.67875,
+        0.8966165413533834
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "95a96177a65546479d883e74e89efdf3",
+      "label": "요소 142",
+      "kind": "unknown",
+      "bbox": [
+        0.6820833333333334,
+        0.8916040100250626,
+        0.7075,
+        0.8966165413533834
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "06455f79ed304793bbefe27b47061536",
+      "label": "요소 143",
+      "kind": "unknown",
+      "bbox": [
+        0.7079166666666666,
+        0.8916040100250626,
+        0.7158333333333333,
+        0.8966165413533834
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "805ff3a71a7144218caf1e4a89d3725c",
+      "label": "요소 144",
+      "kind": "unknown",
+      "bbox": [
+        0.765,
+        0.8991228070175439,
+        0.7716666666666666,
+        0.9091478696741855
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "0f8c446474cf49f7bf4b1b3f819e5167",
+      "label": "요소 145",
+      "kind": "unknown",
+      "bbox": [
+        0.004583333333333333,
+        0.9135338345864662,
+        0.01125,
+        0.924812030075188
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "0c5a7278ecb548e6902411f35b47c75d",
+      "label": "요소 146",
+      "kind": "unknown",
+      "bbox": [
+        0.8595833333333334,
+        0.9135338345864662,
+        0.86625,
+        0.924812030075188
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "853cea4306494fc482ee1e5e467d4635",
+      "label": "요소 147",
+      "kind": "unknown",
+      "bbox": [
+        0.17875,
+        0.9172932330827067,
+        0.1975,
+        0.9223057644110275
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "341077cb642b498fb380e99cfac15854",
+      "label": "요소 148",
+      "kind": "unknown",
+      "bbox": [
+        0.8691666666666666,
+        0.9323308270676691,
+        0.87375,
+        0.956140350877193
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "d2ab18fdd4f34ff990f16db96e2fd8e1",
+      "label": "요소 149",
+      "kind": "unknown",
+      "bbox": [
+        0.9291666666666667,
+        0.9323308270676691,
+        0.94,
+        0.956140350877193
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "598feb24b4ff4ca18522937aaa235923",
+      "label": "요소 150",
+      "kind": "unknown",
+      "bbox": [
+        0.9475,
+        0.943609022556391,
+        0.9675,
+        0.949874686716792
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "77989f1b82864ac9992249e939328d0e",
+      "label": "요소 151",
+      "kind": "unknown",
+      "bbox": [
+        0.9079166666666667,
+        0.9592731829573935,
+        0.9445833333333333,
+        0.9824561403508771
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "48338eb1123c4f4bb78cd93f439f626d",
+      "label": "요소 152",
+      "kind": "unknown",
+      "bbox": [
+        0.9470833333333334,
+        0.9592731829573935,
+        0.9591666666666666,
+        0.9824561403508771
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "98761b9f9c194b8daf541d2341c277d9",
+      "label": "요소 153",
+      "kind": "unknown",
+      "bbox": [
+        0.96625,
+        0.9699248120300752,
+        0.9716666666666667,
+        0.9768170426065163
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "d3ada202a98a4132852094d28cde98de",
+      "label": "요소 154",
+      "kind": "unknown",
+      "bbox": [
+        0.395,
+        0.9830827067669173,
+        0.40541666666666665,
+        1.0
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "f5bd26aaec5c477bbf5b025fd5628207",
+      "label": "요소 155",
+      "kind": "unknown",
+      "bbox": [
+        0.2579166666666667,
+        0.9868421052631579,
+        0.2629166666666667,
+        0.9981203007518797
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "14a7786a683142479e21671340c65e46",
+      "label": "요소 156",
+      "kind": "unknown",
+      "bbox": [
+        0.3275,
+        0.9868421052631579,
+        0.3325,
+        0.9981203007518797
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "fc1b125029a14604b2ace9f80c36eace",
+      "label": "요소 157",
+      "kind": "unknown",
+      "bbox": [
+        0.40708333333333335,
+        0.9868421052631579,
+        0.41208333333333336,
+        0.9981203007518797
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "dd7c488396c3415ea8cf423253fd83bb",
+      "label": "요소 158",
+      "kind": "unknown",
+      "bbox": [
+        0.46791666666666665,
+        0.9868421052631579,
+        0.4725,
+        0.9981203007518797
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "1f2a0a98afe94bbcac2bc21621741982",
+      "label": "요소 159",
+      "kind": "unknown",
+      "bbox": [
+        0.5375,
+        0.9868421052631579,
+        0.5425,
+        0.9981203007518797
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "a892b4e941104cfba97444db00c2714b",
+      "label": "요소 160",
+      "kind": "unknown",
+      "bbox": [
+        0.6070833333333333,
+        0.9868421052631579,
+        0.6125,
+        0.9974937343358395
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "96613b7dec7142afaa1cfffd54ca1cfc",
+      "label": "요소 161",
+      "kind": "unknown",
+      "bbox": [
+        0.6783333333333333,
+        0.9868421052631579,
+        0.6833333333333333,
+        0.9981203007518797
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {},
+      "concept_id": null
+    },
+    {
+      "id": "52de89614cc4420d9c64a1c716a5e776",
+      "label": "요소 162",
+      "kind": "unknown",
+      "bbox": [
+        0.7483333333333333,
+        0.9868421052631579,
+        0.7533333333333333,
+        0.9981203007518797
       ],
       "source": "image_candidate",
       "status": "needs_review",
@@ -3003,281 +4701,233 @@
   ],
   "connections": [
     {
-      "id": "72a29cc676624b31ac06a9fc0afdc353",
-      "from_id": "88232b6e7fd14674b1f6102aa3945498",
-      "to_id": "0ef06c00307046b78f8ad9b9083180c9",
+      "id": "95321ae1d3da43c9bdb2b9474791c7fd",
+      "from_id": "c9d552920ee44c6d87cb3d868c8a6154",
+      "to_id": "5088a80faeef4fa384f02e98854c458b",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "bac893b2a38747adaf39f3d957b10d6f",
-      "from_id": "2896252484f84546ac0d2427735764b3",
-      "to_id": "88232b6e7fd14674b1f6102aa3945498",
+      "id": "cf4901a2701444ac9d7865dfee8846a9",
+      "from_id": "153dd7e17a9a43fb967dea8b0c8af045",
+      "to_id": "61d678dd68b84c9ca9a8ae98f2fbc8ea",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "497b754d8eeb4898b1f02bcc22cd668c",
-      "from_id": "993caa6da87047c39c11259f91c08f65",
-      "to_id": "df37af34b6bd41f5bb2226f7c97bba5b",
+      "id": "ed789aed3853469086b3d9748bbf732f",
+      "from_id": "ccfb257708d749d3a22c6f15f8f5056a",
+      "to_id": "f03c2b22079c48c5872c19f158a14935",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "7fb633ddddb542cebf441822d2a83c0d",
-      "from_id": "490ac0941f424f93aa0a0813569c3ec5",
-      "to_id": "de5b1d3a8cce4dc48fae448b7196877e",
+      "id": "8e04d33e85d74882b0fec8a095c0453f",
+      "from_id": "ab7b638f0f574f399d7b6a8550e7bece",
+      "to_id": "fb52bc58471946abb8f39d164409d2e0",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "2f5e2f7c15fb44febb78e504a3239cc5",
-      "from_id": "9981847b79a34d60bbf36be6be0fc151",
-      "to_id": "0c3f5f259cca4d928685556b091ed823",
+      "id": "4ac8a5017e8346b380d2d28f049861d2",
+      "from_id": "51e858f3851b4cb4b05f670b6a80db5e",
+      "to_id": "89e76761b73248a885a73e0810659221",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "a39496adecd84f4e8aeaf010248be862",
-      "from_id": "9d2e7fa49ecc4ad8ad86a09e1063bb82",
-      "to_id": "a2123d416324465285f660e2cfeea873",
+      "id": "cd493d61ce6b40f5b44af15bbbe90f64",
+      "from_id": "75c6a755260d47fb8f863869da5a9aa5",
+      "to_id": "eea4d29d5175408c8859be33d6cfc0bd",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "ac3629da68f849e4ba73b790ef9de744",
-      "from_id": "18a933cc02364ccb977f874f7e16eaf0",
-      "to_id": "9981847b79a34d60bbf36be6be0fc151",
+      "id": "7dff5f75204440d99cbcc59911f298ce",
+      "from_id": "968f947308ef4e90b364da1550f9e4ac",
+      "to_id": "0eaa46e6331a4f5388f896bdf70b22d4",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "c78bb53935694ebfbf9878bc0b433180",
-      "from_id": "b0f95e990a4143428e2de578460fbc14",
-      "to_id": "69bd14f5a8dd4bb3b0d312ab9963f250",
+      "id": "9c8de0a293884b0896720628589dbc70",
+      "from_id": "341077cb642b498fb380e99cfac15854",
+      "to_id": "77989f1b82864ac9992249e939328d0e",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "584226e198d44df094fd850717fde64b",
-      "from_id": "de5b1d3a8cce4dc48fae448b7196877e",
-      "to_id": "73dbf6a972af4838906b626bf63539c8",
+      "id": "3c09c175fc244ddca547a4148a5f6d07",
+      "from_id": "51e858f3851b4cb4b05f670b6a80db5e",
+      "to_id": "805ff3a71a7144218caf1e4a89d3725c",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "9ef14bc6dc0a43bba281775e01eb7757",
-      "from_id": "7fbde2bdf16448a2b0545365ce42db8c",
-      "to_id": "84db334617e04992886ef4bf24f4ec38",
+      "id": "b19dbeb967514a7ea5801ae6691b86fd",
+      "from_id": "0eaa46e6331a4f5388f896bdf70b22d4",
+      "to_id": "15fc656dd69343979f7dc43eefa97749",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "9b3ab30bd416469d9063bfe577010046",
-      "from_id": "9734be427e124bd4bb63fe7107e086c8",
-      "to_id": "9d2e7fa49ecc4ad8ad86a09e1063bb82",
+      "id": "bfc9051c5049452493ca1aff34380c81",
+      "from_id": "604c950cfcdc4bf99f860984f07dc0bd",
+      "to_id": "0a59c4dffcd6466ea352cba3954f48f5",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "720af2bf138847a188236bb2afae5ba8",
-      "from_id": "9d8d166a25d644a39a50ec18e28c4cff",
-      "to_id": "9d2e7fa49ecc4ad8ad86a09e1063bb82",
+      "id": "df8b215913bb4a3391758d3691f57627",
+      "from_id": "c2f62bdc7e7b405f84097b8955cb40e0",
+      "to_id": "13948e469c504b16944f3e00706f12af",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "4c1d004ae55946fbb1e6569d780d663a",
-      "from_id": "824432b5063c4e5c9de1cd08d343d2b4",
-      "to_id": "719b6fb8f7b24cfea766bf72313055e1",
+      "id": "1c847144f30e47709f2076fb9108b78d",
+      "from_id": "341077cb642b498fb380e99cfac15854",
+      "to_id": "d2ab18fdd4f34ff990f16db96e2fd8e1",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "56847419e3d648cb88e3ab46b817a20f",
-      "from_id": "8a860b3d68384616a96c0201d57c75e5",
-      "to_id": "f56ef0a6009a42b294d3b0545a706c9d",
+      "id": "5d6aed16472f48f887ed07a0747b6b49",
+      "from_id": "3dac17e473b24ae5ba27d9b5ece36ef3",
+      "to_id": "f8c741d9a7e84bc09f07a1d54307f872",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "2d96f12e615942a69fe1a0d3c43b471c",
-      "from_id": "0c3f5f259cca4d928685556b091ed823",
-      "to_id": "490ac0941f424f93aa0a0813569c3ec5",
+      "id": "4c995d786dd44dd3ad3e51878bfb70d8",
+      "from_id": "18caada2fe7e43a985ab06013cfadba8",
+      "to_id": "3a6a4435b5d74ca18849193278234449",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "63258615c0244f00b7243fe0de07addf",
-      "from_id": "74b355f9c53b48d687a750a940a367ef",
-      "to_id": "6093c3cb66654c65bd5267d5a9be846d",
+      "id": "7f6f505e851a44c4b3b5f6122ba285bc",
+      "from_id": "dc5e3dd1fb974bfaa17a1d4d67e3bbd1",
+      "to_id": "604c950cfcdc4bf99f860984f07dc0bd",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "9a68b4e0b92046dbae7fe17dc9220233",
-      "from_id": "c03f9cb7612242139540675c07183315",
-      "to_id": "971a7cf97be84da2a5acfb2f1edb2a42",
+      "id": "ae40788650ea4c6090cd5db985ce76d3",
+      "from_id": "d5e50619a6ad421e8495cc357dc89629",
+      "to_id": "870de493ff034813af3ef97a02471bdb",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "934c97fa1eb046f29d9a21a10cc6fcba",
-      "from_id": "ff8a4ff8cae04bd8bb8c6e4fde4e3581",
-      "to_id": "c03f9cb7612242139540675c07183315",
+      "id": "2ec70c3af8834a6eaacb7b5677749b82",
+      "from_id": "33e7169726164a1e9f4c4d29967b3876",
+      "to_id": "272301fb96b14bd39871a11ba361ca14",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "b8d719fec18f4c96b55ff2a45b71c59f",
-      "from_id": "a2123d416324465285f660e2cfeea873",
-      "to_id": "2896252484f84546ac0d2427735764b3",
+      "id": "455032d176de4912977c0ae6e00fd437",
+      "from_id": "272301fb96b14bd39871a11ba361ca14",
+      "to_id": "dc5e3dd1fb974bfaa17a1d4d67e3bbd1",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "853471e625a44639b749da5a6b4202cc",
-      "from_id": "02b70f2b6bfb41e9b9c5cc9f5fe47cc3",
-      "to_id": "008e8a0cd34945338d8df4d42a978268",
+      "id": "7f3bf0db51cb40d4881cda207bd8a632",
+      "from_id": "c40375451ede40efb14a88f620134f2a",
+      "to_id": "6ef9c5ed9a014fa0b1978ec233b5d199",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "a1a5e9169e4242ad990250c9a35484f9",
-      "from_id": "88232b6e7fd14674b1f6102aa3945498",
-      "to_id": "7fbde2bdf16448a2b0545365ce42db8c",
+      "id": "b0191a547adf4ffeb47419d8955999ac",
+      "from_id": "06455f79ed304793bbefe27b47061536",
+      "to_id": "89e76761b73248a885a73e0810659221",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "6e184bc930244888848a3cc60b87b101",
-      "from_id": "76347d4d3c154734a7169352cc768824",
-      "to_id": "9981847b79a34d60bbf36be6be0fc151",
+      "id": "d2a12534710b4086a04a779a2a456cd5",
+      "from_id": "870de493ff034813af3ef97a02471bdb",
+      "to_id": "3a6a4435b5d74ca18849193278234449",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "d5a7dfa479074b58907ffb0952627932",
-      "from_id": "a7011f3ad4204486b20804c3851347d0",
-      "to_id": "96e3a0981e00400fb1307c26a4bed66e",
+      "id": "879d8dacf7b94bf7bfcffe3575b37696",
+      "from_id": "6ef9c5ed9a014fa0b1978ec233b5d199",
+      "to_id": "06eb321cc9874be0b1de6956a231a3ba",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "74e0db7394374db8be8884677da7d963",
-      "from_id": "cb9d095657be472093f1666fd49cd8af",
-      "to_id": "0997ba9a6a5847fb92b9d15b39a02e1e",
+      "id": "1b21a0097bb94f0aa5e687c9f832479f",
+      "from_id": "c2f62bdc7e7b405f84097b8955cb40e0",
+      "to_id": "fb52bc58471946abb8f39d164409d2e0",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "4d1f248504cb44058f308791afa5b0d1",
-      "from_id": "9bae3f3837c7498b939003457e61eed3",
-      "to_id": "74b355f9c53b48d687a750a940a367ef",
+      "id": "9ceffaa0182a4261bc22d1cdee98f0f3",
+      "from_id": "d5e50619a6ad421e8495cc357dc89629",
+      "to_id": "93cadbdf38344e4db3b9885bfac155d0",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "52305135b4494c6b862448fa9d753ab3",
-      "from_id": "490ac0941f424f93aa0a0813569c3ec5",
-      "to_id": "7ec5653f4fd741c8af64df9ab0a6ee08",
+      "id": "8ec19825238543f4bf8031294640a742",
+      "from_id": "1fa970bcb6bb4da7a02e6530f7a81bd9",
+      "to_id": "ab7b638f0f574f399d7b6a8550e7bece",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "449452966d144042b2b7267a1df022c5",
-      "from_id": "482f5363b61c46318d2e386d44c4eddc",
-      "to_id": "6093c3cb66654c65bd5267d5a9be846d",
+      "id": "ba8b2ea48cf2467db6cd9ad110a4d2d9",
+      "from_id": "5088a80faeef4fa384f02e98854c458b",
+      "to_id": "a00fa96004bb4c6b8048b44fb1823322",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "f53ad22ff4f44dc2a1b5983b62ed60f2",
-      "from_id": "21d06140e69d454fb0b0683ddd7c6364",
-      "to_id": "df37af34b6bd41f5bb2226f7c97bba5b",
+      "id": "2ca30eec088448a7a58b369e56bf21f5",
+      "from_id": "77989f1b82864ac9992249e939328d0e",
+      "to_id": "d2ab18fdd4f34ff990f16db96e2fd8e1",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
     },
     {
-      "id": "6b41538636174c2e851fffc47e7703ff",
-      "from_id": "0997ba9a6a5847fb92b9d15b39a02e1e",
-      "to_id": "df066cc08a194c7e95e8949604b4b01f",
-      "kind": "connectedTo",
-      "source": "line_candidate",
-      "status": "needs_review"
-    },
-    {
-      "id": "5df72c1fdfe14652820de57b42874602",
-      "from_id": "18a933cc02364ccb977f874f7e16eaf0",
-      "to_id": "76347d4d3c154734a7169352cc768824",
-      "kind": "connectedTo",
-      "source": "line_candidate",
-      "status": "needs_review"
-    },
-    {
-      "id": "0b5b87b3efaf4ba5b7fcd865bcb289ae",
-      "from_id": "993caa6da87047c39c11259f91c08f65",
-      "to_id": "6fa1f3909b4048a2ae6e396dfa603dec",
-      "kind": "connectedTo",
-      "source": "line_candidate",
-      "status": "needs_review"
-    },
-    {
-      "id": "05439073ac464aa4a312fcd18b5d592c",
-      "from_id": "5f8a1221c2984742beb5cf1c091a1a1b",
-      "to_id": "74aad351efc74277b486c3a1296cb0d7",
-      "kind": "connectedTo",
-      "source": "line_candidate",
-      "status": "needs_review"
-    },
-    {
-      "id": "7da06e291db348699dd5586aadb42994",
-      "from_id": "18a933cc02364ccb977f874f7e16eaf0",
-      "to_id": "a4476eb378684a5db95126f25753d9fe",
-      "kind": "connectedTo",
-      "source": "line_candidate",
-      "status": "needs_review"
-    },
-    {
-      "id": "8ee4c07072604b928c5117953d768ad5",
-      "from_id": "0ef06c00307046b78f8ad9b9083180c9",
-      "to_id": "28c1da8e589240499c5ec9259206fb4d",
-      "kind": "connectedTo",
-      "source": "line_candidate",
-      "status": "needs_review"
-    },
-    {
-      "id": "d8171d4497da4babb67713f3fc5e65a5",
-      "from_id": "9734be427e124bd4bb63fe7107e086c8",
-      "to_id": "a006e234dbb44bdc81ec974824a80c81",
+      "id": "3b3fdb12e20447bd84d6b589fa16a40f",
+      "from_id": "3dac17e473b24ae5ba27d9b5ece36ef3",
+      "to_id": "06eb321cc9874be0b1de6956a231a3ba",
       "kind": "connectedTo",
       "source": "line_candidate",
       "status": "needs_review"
