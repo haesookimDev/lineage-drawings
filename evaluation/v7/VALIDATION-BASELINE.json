@@ -1,0 +1,191 @@
+{
+  "rows": [
+    {
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 56,
+          "fp": 2,
+          "fn": 17,
+          "precision": 0.9655172413793104,
+          "recall": 0.7671232876712328,
+          "f1": 0.8549618320610687
+        },
+        "connections": {
+          "tp": 32,
+          "fp": 6,
+          "fn": 74,
+          "precision": 0.8421052631578947,
+          "recall": 0.3018867924528302,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 70,
+          "precision": 1.0,
+          "recall": 0.05405405405405406,
+          "f1": 0.10256410256410256
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 439,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 6,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.75
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 13,
+          "fn": 0,
+          "precision": 0.8088235294117647,
+          "recall": 1.0,
+          "f1": 0.8943089430894309
+        },
+        "connections": {
+          "tp": 18,
+          "fp": 14,
+          "fn": 1125,
+          "precision": 0.5625,
+          "recall": 0.015748031496062992,
+          "f1": 0.030638297872340424
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 265,
+          "fp": 0,
+          "fn": 410,
+          "precision": 1.0,
+          "recall": 0.3925925925925926,
+          "f1": 0.5638297872340425
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 3,
+          "fn": 0,
+          "precision": 0.9620253164556962,
+          "recall": 1.0,
+          "f1": 0.9806451612903225
+        },
+        "connections": {
+          "tp": 245,
+          "fp": 17,
+          "fn": 556,
+          "precision": 0.9351145038167938,
+          "recall": 0.30586766541822724,
+          "f1": 0.4609595484477893
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 343,
+          "fp": 0,
+          "fn": 259,
+          "precision": 1.0,
+          "recall": 0.5697674418604651,
+          "f1": 0.725925925925926
+        },
+        "classified_correct": 0
+      }
+    }
+  ],
+  "aggregate": {
+    "pahala": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 2,
+      "precision": 1.0,
+      "recall": 0.6,
+      "f1": 0.75
+    },
+    "v5-synthetic": {
+      "tp": 871,
+      "fp": 31,
+      "fn": 2350,
+      "precision": 0.9656319290465631,
+      "recall": 0.27041291524371314,
+      "f1": 0.4225078826097502
+    },
+    "open100": {
+      "tp": 32,
+      "fp": 6,
+      "fn": 513,
+      "precision": 0.8421052631578947,
+      "recall": 0.05871559633027523,
+      "f1": 0.1097770154373928
+    }
+  }
+}

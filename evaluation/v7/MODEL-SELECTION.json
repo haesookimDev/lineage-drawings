@@ -1,0 +1,735 @@
+{
+  "checkpoint": 16,
+  "weights_sha256": "8bf87022618182573b2c5aef79d62df83b6c619cf28217bccd07048979ed3a8c",
+  "recognition_objective": "Maximum mean IoU on160 exact procedural validation scenes across epochs4,8,16 (0.2081/0.2748/0.3373). Diagnostic mask IoU, not real port AP.",
+  "routing_selection": "Keep validated v6 adjacency. Every proposed new or union router is worse than baseline mean validation connection F1. No learned pair added by default. Recognition paths restricted to existing pairs.",
+  "baseline_mean_connection_f1": 0.4274282993490477,
+  "thresholds": {
+    "model": "tiny-unet-line-port-v1",
+    "channels": [
+      "solid",
+      "dashed",
+      "port",
+      "tee",
+      "dot",
+      "plain_cross"
+    ],
+    "epoch": 16,
+    "weights_sha256": "8bf87022618182573b2c5aef79d62df83b6c619cf28217bccd07048979ed3a8c",
+    "line_threshold": 0.35,
+    "port_threshold": 0.4,
+    "junction_threshold": 0.35,
+    "dash_threshold": 0.6,
+    "port_snap": 4,
+    "route_mode": "evidence",
+    "opencv_torch_max_abs_difference": 6.890296936035156e-05,
+    "score_note": "Heatmap scores uncalibrated; ports/junctions/paths require review. GraphML line projections are weak supervision.",
+    "inferred_junction_threshold": 1.1
+  },
+  "limitations": "Plain-cross heatmap pixel F1=0 at0.5 on procedural validation; geometric visible endpoint/dot policy retained. Port heatmap F1=0.641 on procedural masks is not real drawing performance. Thresholds precision preset, selected before new-page inference.",
+  "validation_grid": {
+    "4": {
+      "balanced/new": {
+        "groups": {
+          "open100": {
+            "tp": 20,
+            "fp": 4,
+            "fn": 525,
+            "precision": 0.8333333333333334,
+            "recall": 0.03669724770642202,
+            "f1": 0.070298769771529
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 6,
+            "fn": 2,
+            "precision": 0.3333333333333333,
+            "recall": 0.6,
+            "f1": 0.42857142857142855
+          },
+          "v5-synthetic": {
+            "tp": 272,
+            "fp": 32,
+            "fn": 2949,
+            "precision": 0.8947368421052632,
+            "recall": 0.08444582427817449,
+            "f1": 0.15432624113475177
+          }
+        },
+        "objective": 0.21773214649256978
+      },
+      "balanced/union": {
+        "groups": {
+          "open100": {
+            "tp": 32,
+            "fp": 7,
+            "fn": 513,
+            "precision": 0.8205128205128205,
+            "recall": 0.05871559633027523,
+            "f1": 0.1095890410958904
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 6,
+            "fn": 2,
+            "precision": 0.3333333333333333,
+            "recall": 0.6,
+            "f1": 0.42857142857142855
+          },
+          "v5-synthetic": {
+            "tp": 934,
+            "fp": 50,
+            "fn": 2287,
+            "precision": 0.9491869918699187,
+            "recall": 0.28997205836696677,
+            "f1": 0.44423305588585016
+          }
+        },
+        "objective": 0.3274645085177231
+      },
+      "learned_cross/new": {
+        "groups": {
+          "open100": {
+            "tp": 20,
+            "fp": 4,
+            "fn": 525,
+            "precision": 0.8333333333333334,
+            "recall": 0.03669724770642202,
+            "f1": 0.070298769771529
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 6,
+            "fn": 2,
+            "precision": 0.3333333333333333,
+            "recall": 0.6,
+            "f1": 0.42857142857142855
+          },
+          "v5-synthetic": {
+            "tp": 272,
+            "fp": 32,
+            "fn": 2949,
+            "precision": 0.8947368421052632,
+            "recall": 0.08444582427817449,
+            "f1": 0.15432624113475177
+          }
+        },
+        "objective": 0.21773214649256978
+      },
+      "learned_cross/union": {
+        "groups": {
+          "open100": {
+            "tp": 32,
+            "fp": 7,
+            "fn": 513,
+            "precision": 0.8205128205128205,
+            "recall": 0.05871559633027523,
+            "f1": 0.1095890410958904
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 6,
+            "fn": 2,
+            "precision": 0.3333333333333333,
+            "recall": 0.6,
+            "f1": 0.42857142857142855
+          },
+          "v5-synthetic": {
+            "tp": 934,
+            "fp": 50,
+            "fn": 2287,
+            "precision": 0.9491869918699187,
+            "recall": 0.28997205836696677,
+            "f1": 0.44423305588585016
+          }
+        },
+        "objective": 0.3274645085177231
+      },
+      "precision/new": {
+        "groups": {
+          "open100": {
+            "tp": 18,
+            "fp": 4,
+            "fn": 527,
+            "precision": 0.8181818181818182,
+            "recall": 0.03302752293577982,
+            "f1": 0.06349206349206349
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 2,
+            "precision": 0.42857142857142855,
+            "recall": 0.6,
+            "f1": 0.5
+          },
+          "v5-synthetic": {
+            "tp": 250,
+            "fp": 22,
+            "fn": 2971,
+            "precision": 0.9191176470588235,
+            "recall": 0.0776156473144986,
+            "f1": 0.143143429716576
+          }
+        },
+        "objective": 0.23554516440287984
+      },
+      "precision/union": {
+        "groups": {
+          "open100": {
+            "tp": 32,
+            "fp": 8,
+            "fn": 513,
+            "precision": 0.8,
+            "recall": 0.05871559633027523,
+            "f1": 0.1094017094017094
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 2,
+            "precision": 0.42857142857142855,
+            "recall": 0.6,
+            "f1": 0.5
+          },
+          "v5-synthetic": {
+            "tp": 953,
+            "fp": 41,
+            "fn": 2268,
+            "precision": 0.9587525150905433,
+            "recall": 0.2958708475628687,
+            "f1": 0.45219454329774617
+          }
+        },
+        "objective": 0.3538654175664852
+      },
+      "recall/new": {
+        "groups": {
+          "open100": {
+            "tp": 15,
+            "fp": 4,
+            "fn": 530,
+            "precision": 0.7894736842105263,
+            "recall": 0.027522935779816515,
+            "f1": 0.05319148936170213
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 6,
+            "fn": 2,
+            "precision": 0.3333333333333333,
+            "recall": 0.6,
+            "f1": 0.42857142857142855
+          },
+          "v5-synthetic": {
+            "tp": 268,
+            "fp": 24,
+            "fn": 2953,
+            "precision": 0.9178082191780822,
+            "recall": 0.0832039739211425,
+            "f1": 0.15257614574437803
+          }
+        },
+        "objective": 0.21144635455916957
+      },
+      "recall/union": {
+        "groups": {
+          "open100": {
+            "tp": 32,
+            "fp": 8,
+            "fn": 513,
+            "precision": 0.8,
+            "recall": 0.05871559633027523,
+            "f1": 0.1094017094017094
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 6,
+            "fn": 2,
+            "precision": 0.3333333333333333,
+            "recall": 0.6,
+            "f1": 0.42857142857142855
+          },
+          "v5-synthetic": {
+            "tp": 949,
+            "fp": 40,
+            "fn": 2272,
+            "precision": 0.9595551061678463,
+            "recall": 0.2946289972058367,
+            "f1": 0.4508313539192399
+          }
+        },
+        "objective": 0.3296014972974593
+      }
+    },
+    "8": {
+      "balanced/new": {
+        "groups": {
+          "open100": {
+            "tp": 23,
+            "fp": 18,
+            "fn": 522,
+            "precision": 0.5609756097560976,
+            "recall": 0.04220183486238532,
+            "f1": 0.07849829351535836
+          },
+          "pahala": {
+            "tp": 4,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.4444444444444444,
+            "recall": 0.8,
+            "f1": 0.5714285714285714
+          },
+          "v5-synthetic": {
+            "tp": 338,
+            "fp": 35,
+            "fn": 2883,
+            "precision": 0.9061662198391421,
+            "recall": 0.1049363551692021,
+            "f1": 0.1880912632164719
+          }
+        },
+        "objective": 0.27933937605346726
+      },
+      "balanced/union": {
+        "groups": {
+          "open100": {
+            "tp": 36,
+            "fp": 19,
+            "fn": 509,
+            "precision": 0.6545454545454545,
+            "recall": 0.06605504587155964,
+            "f1": 0.12
+          },
+          "pahala": {
+            "tp": 4,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.4444444444444444,
+            "recall": 0.8,
+            "f1": 0.5714285714285714
+          },
+          "v5-synthetic": {
+            "tp": 970,
+            "fp": 51,
+            "fn": 2251,
+            "precision": 0.9500489715964741,
+            "recall": 0.3011487115802546,
+            "f1": 0.45733144743045734
+          }
+        },
+        "objective": 0.38292000628634293
+      },
+      "learned_cross/new": {
+        "groups": {
+          "open100": {
+            "tp": 23,
+            "fp": 18,
+            "fn": 522,
+            "precision": 0.5609756097560976,
+            "recall": 0.04220183486238532,
+            "f1": 0.07849829351535836
+          },
+          "pahala": {
+            "tp": 4,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.4444444444444444,
+            "recall": 0.8,
+            "f1": 0.5714285714285714
+          },
+          "v5-synthetic": {
+            "tp": 338,
+            "fp": 35,
+            "fn": 2883,
+            "precision": 0.9061662198391421,
+            "recall": 0.1049363551692021,
+            "f1": 0.1880912632164719
+          }
+        },
+        "objective": 0.27933937605346726
+      },
+      "learned_cross/union": {
+        "groups": {
+          "open100": {
+            "tp": 36,
+            "fp": 19,
+            "fn": 509,
+            "precision": 0.6545454545454545,
+            "recall": 0.06605504587155964,
+            "f1": 0.12
+          },
+          "pahala": {
+            "tp": 4,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.4444444444444444,
+            "recall": 0.8,
+            "f1": 0.5714285714285714
+          },
+          "v5-synthetic": {
+            "tp": 970,
+            "fp": 51,
+            "fn": 2251,
+            "precision": 0.9500489715964741,
+            "recall": 0.3011487115802546,
+            "f1": 0.45733144743045734
+          }
+        },
+        "objective": 0.38292000628634293
+      },
+      "precision/new": {
+        "groups": {
+          "open100": {
+            "tp": 22,
+            "fp": 12,
+            "fn": 523,
+            "precision": 0.6470588235294118,
+            "recall": 0.04036697247706422,
+            "f1": 0.07599309153713299
+          },
+          "pahala": {
+            "tp": 2,
+            "fp": 3,
+            "fn": 3,
+            "precision": 0.4,
+            "recall": 0.4,
+            "f1": 0.4
+          },
+          "v5-synthetic": {
+            "tp": 340,
+            "fp": 36,
+            "fn": 2881,
+            "precision": 0.9042553191489362,
+            "recall": 0.1055572803477181,
+            "f1": 0.18904642757853768
+          }
+        },
+        "objective": 0.22167983970522354
+      },
+      "precision/union": {
+        "groups": {
+          "open100": {
+            "tp": 36,
+            "fp": 15,
+            "fn": 509,
+            "precision": 0.7058823529411765,
+            "recall": 0.06605504587155964,
+            "f1": 0.12080536912751678
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 3,
+            "fn": 2,
+            "precision": 0.5,
+            "recall": 0.6,
+            "f1": 0.5454545454545454
+          },
+          "v5-synthetic": {
+            "tp": 993,
+            "fp": 54,
+            "fn": 2228,
+            "precision": 0.9484240687679083,
+            "recall": 0.30828935113318845,
+            "f1": 0.4653233364573571
+          }
+        },
+        "objective": 0.37719441701313977
+      },
+      "recall/new": {
+        "groups": {
+          "open100": {
+            "tp": 22,
+            "fp": 14,
+            "fn": 523,
+            "precision": 0.6111111111111112,
+            "recall": 0.04036697247706422,
+            "f1": 0.0757314974182444
+          },
+          "pahala": {
+            "tp": 4,
+            "fp": 4,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.8,
+            "f1": 0.6153846153846154
+          },
+          "v5-synthetic": {
+            "tp": 385,
+            "fp": 52,
+            "fn": 2836,
+            "precision": 0.8810068649885584,
+            "recall": 0.11952809686432785,
+            "f1": 0.21049753963914708
+          }
+        },
+        "objective": 0.3005378841473356
+      },
+      "recall/union": {
+        "groups": {
+          "open100": {
+            "tp": 36,
+            "fp": 18,
+            "fn": 509,
+            "precision": 0.6666666666666666,
+            "recall": 0.06605504587155964,
+            "f1": 0.12020033388981637
+          },
+          "pahala": {
+            "tp": 4,
+            "fp": 4,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.8,
+            "f1": 0.6153846153846154
+          },
+          "v5-synthetic": {
+            "tp": 1032,
+            "fp": 67,
+            "fn": 2189,
+            "precision": 0.9390354868061874,
+            "recall": 0.3203973921142502,
+            "f1": 0.4777777777777778
+          }
+        },
+        "objective": 0.4044542423507365
+      }
+    },
+    "16": {
+      "balanced/new": {
+        "groups": {
+          "open100": {
+            "tp": 20,
+            "fp": 1,
+            "fn": 525,
+            "precision": 0.9523809523809523,
+            "recall": 0.03669724770642202,
+            "f1": 0.0706713780918728
+          },
+          "pahala": {
+            "tp": 2,
+            "fp": 4,
+            "fn": 3,
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.36363636363636365
+          },
+          "v5-synthetic": {
+            "tp": 200,
+            "fp": 24,
+            "fn": 3021,
+            "precision": 0.8928571428571429,
+            "recall": 0.06209251785159888,
+            "f1": 0.11611030478955008
+          }
+        },
+        "objective": 0.1834726821725955
+      },
+      "balanced/union": {
+        "groups": {
+          "open100": {
+            "tp": 32,
+            "fp": 7,
+            "fn": 513,
+            "precision": 0.8205128205128205,
+            "recall": 0.05871559633027523,
+            "f1": 0.1095890410958904
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 2,
+            "precision": 0.42857142857142855,
+            "recall": 0.6,
+            "f1": 0.5
+          },
+          "v5-synthetic": {
+            "tp": 919,
+            "fp": 41,
+            "fn": 2302,
+            "precision": 0.9572916666666667,
+            "recall": 0.28531511952809685,
+            "f1": 0.4396077493422626
+          }
+        },
+        "objective": 0.3497322634793843
+      },
+      "learned_cross/new": {
+        "groups": {
+          "open100": {
+            "tp": 20,
+            "fp": 1,
+            "fn": 525,
+            "precision": 0.9523809523809523,
+            "recall": 0.03669724770642202,
+            "f1": 0.0706713780918728
+          },
+          "pahala": {
+            "tp": 2,
+            "fp": 4,
+            "fn": 3,
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.36363636363636365
+          },
+          "v5-synthetic": {
+            "tp": 201,
+            "fp": 25,
+            "fn": 3020,
+            "precision": 0.8893805309734514,
+            "recall": 0.062402980440856876,
+            "f1": 0.11662315056570931
+          }
+        },
+        "objective": 0.1836436307646486
+      },
+      "learned_cross/union": {
+        "groups": {
+          "open100": {
+            "tp": 32,
+            "fp": 7,
+            "fn": 513,
+            "precision": 0.8205128205128205,
+            "recall": 0.05871559633027523,
+            "f1": 0.1095890410958904
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 2,
+            "precision": 0.42857142857142855,
+            "recall": 0.6,
+            "f1": 0.5
+          },
+          "v5-synthetic": {
+            "tp": 919,
+            "fp": 42,
+            "fn": 2302,
+            "precision": 0.9562955254942768,
+            "recall": 0.28531511952809685,
+            "f1": 0.43950263032042086
+          }
+        },
+        "objective": 0.34969722380543705
+      },
+      "precision/new": {
+        "groups": {
+          "open100": {
+            "tp": 14,
+            "fp": 1,
+            "fn": 531,
+            "precision": 0.9333333333333333,
+            "recall": 0.025688073394495414,
+            "f1": 0.05
+          },
+          "pahala": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 3,
+            "precision": 0.5,
+            "recall": 0.4,
+            "f1": 0.4444444444444444
+          },
+          "v5-synthetic": {
+            "tp": 212,
+            "fp": 16,
+            "fn": 3009,
+            "precision": 0.9298245614035088,
+            "recall": 0.06581806892269482,
+            "f1": 0.12293418382139751
+          }
+        },
+        "objective": 0.20579287608861396
+      },
+      "precision/union": {
+        "groups": {
+          "open100": {
+            "tp": 32,
+            "fp": 7,
+            "fn": 513,
+            "precision": 0.8205128205128205,
+            "recall": 0.05871559633027523,
+            "f1": 0.1095890410958904
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.6,
+            "recall": 0.6,
+            "f1": 0.6
+          },
+          "v5-synthetic": {
+            "tp": 933,
+            "fp": 39,
+            "fn": 2288,
+            "precision": 0.9598765432098766,
+            "recall": 0.2896615957777088,
+            "f1": 0.44502742666348677
+          }
+        },
+        "objective": 0.38487215591979235
+      },
+      "recall/new": {
+        "groups": {
+          "open100": {
+            "tp": 19,
+            "fp": 1,
+            "fn": 526,
+            "precision": 0.95,
+            "recall": 0.03486238532110092,
+            "f1": 0.06725663716814159
+          },
+          "pahala": {
+            "tp": 2,
+            "fp": 4,
+            "fn": 3,
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.36363636363636365
+          },
+          "v5-synthetic": {
+            "tp": 263,
+            "fp": 35,
+            "fn": 2958,
+            "precision": 0.8825503355704698,
+            "recall": 0.08165166097485253,
+            "f1": 0.14947428246660982
+          }
+        },
+        "objective": 0.1934557610903717
+      },
+      "recall/union": {
+        "groups": {
+          "open100": {
+            "tp": 32,
+            "fp": 7,
+            "fn": 513,
+            "precision": 0.8205128205128205,
+            "recall": 0.05871559633027523,
+            "f1": 0.1095890410958904
+          },
+          "pahala": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 2,
+            "precision": 0.42857142857142855,
+            "recall": 0.6,
+            "f1": 0.5
+          },
+          "v5-synthetic": {
+            "tp": 937,
+            "fp": 51,
+            "fn": 2284,
+            "precision": 0.9483805668016194,
+            "recall": 0.2909034461347408,
+            "f1": 0.44523639819434546
+          }
+        },
+        "objective": 0.351608479763412
+      }
+    }
+  },
+  "head_validation_sha256": "ad640835755cc56699cca5b14d8473f7940235eb2a41e82b37a9a6af6a266430"
+}

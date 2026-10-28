@@ -1,0 +1,107 @@
+{
+  "architecture": "Tiny U-Net3-input/6-logit-heads, from scratch, no pretrained topology weights",
+  "channels": [
+    "solid",
+    "dashed",
+    "port",
+    "tee",
+    "dot",
+    "plain_cross"
+  ],
+  "seed": 20261029,
+  "epochs": 16,
+  "steps_per_epoch": 100,
+  "batch": 8,
+  "optimizer": "AdamW lr0.001 wd0.0001",
+  "training": "50% exact procedural/50% training-only weak GraphML patches; per-sample BCE weights0.9/0.45; solid/dash Dice0.35; positive BCE weights8/12/20/35/35/35",
+  "history": [
+    {
+      "epoch": 1,
+      "mean_loss": 0.7940078359842301,
+      "seconds": 39.421
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 0.6462503689527511,
+      "seconds": 38.685
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 0.4913730049133301,
+      "seconds": 37.531
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 0.3852677601575851,
+      "seconds": 37.39
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 0.3082823920249939,
+      "seconds": 38.274
+    },
+    {
+      "epoch": 6,
+      "mean_loss": 0.26169756218791007,
+      "seconds": 37.923
+    },
+    {
+      "epoch": 7,
+      "mean_loss": 0.24049057111144065,
+      "seconds": 38.205
+    },
+    {
+      "epoch": 8,
+      "mean_loss": 0.2258059237897396,
+      "seconds": 37.668
+    },
+    {
+      "epoch": 9,
+      "mean_loss": 0.21478760465979577,
+      "seconds": 37.594
+    },
+    {
+      "epoch": 10,
+      "mean_loss": 0.21017421424388885,
+      "seconds": 37.558
+    },
+    {
+      "epoch": 11,
+      "mean_loss": 0.203313427567482,
+      "seconds": 37.756
+    },
+    {
+      "epoch": 12,
+      "mean_loss": 0.1943161390721798,
+      "seconds": 38.271
+    },
+    {
+      "epoch": 13,
+      "mean_loss": 0.1962667815387249,
+      "seconds": 38.179
+    },
+    {
+      "epoch": 14,
+      "mean_loss": 0.19081509560346605,
+      "seconds": 38.213
+    },
+    {
+      "epoch": 15,
+      "mean_loss": 0.185156981498003,
+      "seconds": 37.935
+    },
+    {
+      "epoch": 16,
+      "mean_loss": 0.18499310821294784,
+      "seconds": 37.683
+    }
+  ],
+  "seconds_so_far": 608.31,
+  "torch": "2.9.0+cpu",
+  "training_sources": {
+    "evaluation/v7/train.py": "790ae908fa82d0d84350eb423ac3054ad340ff072971d075791453a2b6ddc912",
+    "evaluation/v7/procedural.py": "3edbc9a4420cc3c7061a17b85cac481cf8afda514deb2fbe45f6226b0970ce2f",
+    "evaluation/v7/graph_data.py": "f2267a8e4b85144687950342b7d1076f88dc4fc2845b9884540db08f586b0045",
+    "evaluation/v7/TRAINING-DATA.json": "348c22011a1c0097fc3fd8f7a0f13f5976deb09fd19ca159ba93fa76741a7687"
+  }
+}

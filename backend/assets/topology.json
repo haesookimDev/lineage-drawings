@@ -1,0 +1,22 @@
+{
+  "model": "tiny-unet-line-port-v1",
+  "channels": [
+    "solid",
+    "dashed",
+    "port",
+    "tee",
+    "dot",
+    "plain_cross"
+  ],
+  "epoch": 16,
+  "weights_sha256": "8bf87022618182573b2c5aef79d62df83b6c619cf28217bccd07048979ed3a8c",
+  "line_threshold": 0.35,
+  "port_threshold": 0.4,
+  "junction_threshold": 0.35,
+  "dash_threshold": 0.6,
+  "port_snap": 4,
+  "route_mode": "evidence",
+  "opencv_torch_max_abs_difference": 6.890296936035156e-05,
+  "score_note": "Heatmap scores uncalibrated; ports/junctions/paths require review. GraphML line projections are weak supervision.",
+  "inferred_junction_threshold": 1.1
+}

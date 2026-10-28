@@ -1,0 +1,37 @@
+{
+  "baseline": "844bf3b03ce34de575509bf66b531aca83ffba0d",
+  "scope": "Keep v6 symbol detector unchanged; add learned solid/dashed line maps, symbol port heatmaps, tee/dotted/plain-crossing heatmaps and explicit-port graph routing with visible path evidence. CPU/OpenCV ONNX runtime.",
+  "training": {
+    "graphml_open100": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "graphml_synthetic": "v6 twelve training sheets only",
+    "procedural_seeds": "2026102900\u20132026104099, 1200 scenes",
+    "supervision": "GraphML geometry rasterization is weak line/port supervision, not independently annotated pixel ground truth; procedural renderer has exact masks. No production uploads."
+  },
+  "validation": {
+    "graphml_open100": [
+      "4",
+      "5"
+    ],
+    "graphml_synthetic": "v6 four validation sheets",
+    "pahala": [
+      "p20"
+    ],
+    "procedural_seed": "20271029, 160 scenes"
+  },
+  "new_real_test": {
+    "virden": [
+      "p9",
+      "p11"
+    ],
+    "pahala": [
+      "p19"
+    ]
+  },
+  "historical_regression": "v6 nineteen evaluated sheets; explicitly historical, no claim blind after prior inspection",
+  "policy": "Create manual port/junction/edge labels before new parser inference. New pages belong to known projects, not unseen projects. Select thresholds only on declared validation. Record rejected variants. End-to-end symbol/edge metrics plus port localization and junction type diagnostics. No hidden semantic or physical flow inference."
+}

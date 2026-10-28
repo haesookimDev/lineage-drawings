@@ -57,3 +57,21 @@ PID2Graph-derived fine-tuned weights/provenance retain CC BY-SA4.0 attribution
 above. Manitoba-hosted third-party engineering PDFs are not assumed to have an
 open redistribution license; source PDFs, page images and crops are excluded
 from Git. This notice does not relicense unrelated application code.
+
+## Line, port and junction recognition (v7)
+
+`topology.onnx` is a small six-head U-Net trained from scratch on CPU, exported
+with OpenCV/PyTorch parity checks. Weak GraphML line/port projections use only
+PID2Graph OPEN100 sheets0–3 and the twelve synthetic training sheets listed in
+evaluation/v7/TRAINING-DATA.json. In addition,1,200 procedurally generated scenes
+supply exact masks. Graph topology labels are weak supervision; a degree-four
+node does not certify a visible junction dot. Derived weights/provenance retain
+the CC BY-SA4.0 PID2Graph attribution above. No third-party source page images or
+production uploads are included in these topology weights' training set.
+
+Six heads: solid/dashed strokes, port, T, connected-four-way, plain crossing.
+Scores are uncalibrated and all observations need review. Plain-cross heatmap
+F1 at0.5 is zero on procedural validation; geometric crossing rules remain
+necessary. New learned routing did not beat the existing router on validation,
+so deployed v7 retains v6 adjacency and supplies recognition evidence only.
+See evaluation/v7 for rejected routing variants, frozen artifacts and limits.

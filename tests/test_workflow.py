@@ -147,3 +147,22 @@ def test_restart_preserves_review_and_dictionary(tmp_path,monkeypatch):
         persisted=c.get('/api/pages/'+pid).json()['elements'][0]
         assert persisted['concept_id']==cid and persisted['status']=='approved'
         assert c.get('/api/concepts').json()[0]['id']==cid
+
+
+def test_recognition_evidence_survives_review_and_export(client,tmp_path,monkeypatch):
+    from backend import topology
+    def recognized(elements,*args):
+        symbols=[e for e in elements if e['kind']!='text'];a,b=symbols[:2];port={'point':[.3,.4],'pixel':[30,40],'side':'right','score':.8,'status':'needs_review'}
+        return [],{'paths':[{'from_id':a['id'],'to_id':b['id'],'points':[[.3,.4],[.6,.4]],'status':'needs_review'}],'ports':{a['id']:[{k:v for k,v in port.items() if k!='pixel'}]},'port_count':1,'junctions':[{'point':[.4,.4],'type':'tee','status':'needs_review'}]},{a['id']:[port]}
+    monkeypatch.setattr(topology,'route',recognized)
+    path=tmp_path/'ports.dxf';make_sample(path)
+    doc=wait_ready(client,client.post('/api/documents',files={'file':('ports.dxf',path.read_bytes())}).json()['id']);pid=doc['pages'][0]['id'];page=client.get('/api/pages/'+pid).json()
+    target=next(e for e in page['elements'] if e['properties'].get('ports'))
+    original=target['properties'];evidence=page['transform']['connection_inference']
+    assert client.put('/api/elements/'+target['id'],json={**target,'status':'approved','properties':{}}).status_code==200
+    fresh=client.get('/api/pages/'+pid).json();stored=next(e for e in fresh['elements'] if e['id']==target['id'])
+    assert stored['properties']==original and stored['properties']['ports'][0]['status']=='needs_review'
+    assert fresh['transform']['connection_inference']==evidence
+    exported=client.get('/api/documents/'+doc['id']+'/export').json()['pages'][0]
+    assert exported['transform']['connection_inference']==evidence
+    assert any(e['properties']==original for e in exported['elements'])

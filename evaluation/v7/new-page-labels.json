@@ -1,0 +1,339 @@
+{
+  "annotation": "Single-annotator visual transcription before v7 inference; very small diagnostic ROIs from known training projects. Symbols10, edges8, ports14, junctions5. Inlet marker includes tag/letter assembly. Pahala air/level crossing is visibly unmarked; visible continuous water path is one scored edge. Not independent engineering-certified or full-sheet GT. Ports evaluated at6px / junctions6px in2400 view.",
+  "sheets": {
+    "virden-p11": {
+      "roi": [
+        0.4125,
+        0.38751714677640603,
+        0.5041666666666667,
+        0.46296296296296297
+      ],
+      "nodes": [
+        {
+          "id": "pi",
+          "kind": "instrumentation",
+          "bbox": [
+            0.42375,
+            0.40054869684499317,
+            0.4375,
+            0.4231824417009602
+          ]
+        },
+        {
+          "id": "ti",
+          "kind": "instrumentation",
+          "bbox": [
+            0.44333333333333336,
+            0.40054869684499317,
+            0.4575,
+            0.4231824417009602
+          ]
+        },
+        {
+          "id": "ps",
+          "kind": "instrumentation",
+          "bbox": [
+            0.46291666666666664,
+            0.40054869684499317,
+            0.47708333333333336,
+            0.4231824417009602
+          ]
+        },
+        {
+          "id": "ts",
+          "kind": "instrumentation",
+          "bbox": [
+            0.48291666666666666,
+            0.40054869684499317,
+            0.4970833333333333,
+            0.4231824417009602
+          ]
+        }
+      ],
+      "ports": [
+        {
+          "element_id": "pi",
+          "point": [
+            0.43041666666666667,
+            0.4231824417009602
+          ]
+        },
+        {
+          "element_id": "ti",
+          "point": [
+            0.4504166666666667,
+            0.4231824417009602
+          ]
+        },
+        {
+          "element_id": "ps",
+          "point": [
+            0.47,
+            0.4231824417009602
+          ]
+        },
+        {
+          "element_id": "ts",
+          "point": [
+            0.4895833333333333,
+            0.4231824417009602
+          ]
+        }
+      ],
+      "junctions": [
+        {
+          "point": [
+            0.43041666666666667,
+            0.4458161865569273
+          ],
+          "type": "tee"
+        },
+        {
+          "point": [
+            0.4504166666666667,
+            0.4458161865569273
+          ],
+          "type": "tee"
+        },
+        {
+          "point": [
+            0.47,
+            0.4458161865569273
+          ],
+          "type": "tee"
+        },
+        {
+          "point": [
+            0.4895833333333333,
+            0.4458161865569273
+          ],
+          "type": "tee"
+        }
+      ],
+      "ignore": [],
+      "group": "virden",
+      "id": "p11",
+      "role": "new-page-known-project",
+      "edges": [
+        [
+          "pi",
+          "ps"
+        ],
+        [
+          "pi",
+          "ti"
+        ],
+        [
+          "pi",
+          "ts"
+        ],
+        [
+          "ps",
+          "ti"
+        ],
+        [
+          "ps",
+          "ts"
+        ],
+        [
+          "ti",
+          "ts"
+        ]
+      ],
+      "image_sha256": "902e4fb43abdd3f876e23540bfcd8f12ebdff3d3aa96075f2ab3d097be6a20ec"
+    },
+    "virden-p9": {
+      "roi": [
+        0.65,
+        0.6927297668038409,
+        0.6708333333333333,
+        0.7510288065843621
+      ],
+      "nodes": [
+        {
+          "id": "fit",
+          "kind": "instrumentation",
+          "bbox": [
+            0.6529166666666667,
+            0.6975308641975309,
+            0.6679166666666667,
+            0.7222222222222222
+          ]
+        },
+        {
+          "id": "fe",
+          "kind": "instrumentation",
+          "bbox": [
+            0.6529166666666667,
+            0.7235939643347051,
+            0.6679166666666667,
+            0.7482853223593965
+          ]
+        }
+      ],
+      "ports": [
+        {
+          "element_id": "fit",
+          "point": [
+            0.6604166666666667,
+            0.6975308641975309
+          ]
+        },
+        {
+          "element_id": "fit",
+          "point": [
+            0.6604166666666667,
+            0.7222222222222222
+          ]
+        },
+        {
+          "element_id": "fe",
+          "point": [
+            0.6604166666666667,
+            0.7235939643347051
+          ]
+        },
+        {
+          "element_id": "fe",
+          "point": [
+            0.6604166666666667,
+            0.7482853223593965
+          ]
+        }
+      ],
+      "junctions": [],
+      "ignore": [],
+      "group": "virden",
+      "id": "p9",
+      "role": "new-page-known-project",
+      "edges": [
+        [
+          "fe",
+          "fit"
+        ]
+      ],
+      "image_sha256": "42c1b767bb280922ee474a51d00d6c9709dcb958b31ef9888d68f332f6fb1ee4"
+    },
+    "pahala-p19": {
+      "roi": [
+        0.04583333333333333,
+        0.5280103026400516,
+        0.48333333333333334,
+        0.6696716033483581
+      ],
+      "nodes": [
+        {
+          "id": "air",
+          "kind": "inlet/outlet",
+          "bbox": [
+            0.057916666666666665,
+            0.5357372826786864,
+            0.12208333333333334,
+            0.5595621377978107
+          ]
+        },
+        {
+          "id": "water",
+          "kind": "inlet/outlet",
+          "bbox": [
+            0.057916666666666665,
+            0.5840309079201546,
+            0.12208333333333334,
+            0.6072118480360592
+          ]
+        },
+        {
+          "id": "valve",
+          "kind": "valve",
+          "bbox": [
+            0.29625,
+            0.6297488731487444,
+            0.30375,
+            0.6419832582099163
+          ]
+        },
+        {
+          "id": "lt",
+          "kind": "instrumentation",
+          "bbox": [
+            0.35083333333333333,
+            0.6258853831294269,
+            0.36583333333333334,
+            0.6497102382485512
+          ]
+        }
+      ],
+      "ports": [
+        {
+          "element_id": "air",
+          "point": [
+            0.12208333333333334,
+            0.5473277527366388
+          ]
+        },
+        {
+          "element_id": "water",
+          "point": [
+            0.12208333333333334,
+            0.5956213779781069
+          ]
+        },
+        {
+          "element_id": "valve",
+          "point": [
+            0.2995833333333333,
+            0.6297488731487444
+          ]
+        },
+        {
+          "element_id": "valve",
+          "point": [
+            0.2995833333333333,
+            0.6419832582099163
+          ]
+        },
+        {
+          "element_id": "lt",
+          "point": [
+            0.35833333333333334,
+            0.6258853831294269
+          ]
+        },
+        {
+          "element_id": "lt",
+          "point": [
+            0.35833333333333334,
+            0.6497102382485512
+          ]
+        }
+      ],
+      "junctions": [
+        {
+          "point": [
+            0.35833333333333334,
+            0.5473277527366388
+          ],
+          "type": "plain_cross"
+        }
+      ],
+      "ignore": [
+        [
+          0.46041666666666664,
+          0.5589182227945911,
+          0.475,
+          0.5859626529298133
+        ]
+      ],
+      "group": "pahala",
+      "id": "p19",
+      "role": "new-page-known-project",
+      "edges": [
+        [
+          "valve",
+          "water"
+        ]
+      ],
+      "image_sha256": "ab71365b78ed450a5fc177ad907a72c838cce7cf00b844b67e7dbaf6b9018ee3"
+    }
+  }
+}

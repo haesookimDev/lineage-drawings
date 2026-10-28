@@ -97,7 +97,8 @@ def infer_connections(elements, segments, w, h, image=None, diagnostics=None):
             details['neural_source_size']=neural[0]['properties']['source_size']
             details['neural_tile_count']=neural[0]['properties']['tile_count']
     source='line_trace_candidate' if details.get('algorithm') in ('legacy-components-v2','visible-components-v4') else 'port_graph_candidate'
-    return [dict(id=uid(),from_id=a,to_id=b,kind='connectedTo',source=source,status='needs_review') for a,b in pairs]
+    observed={tuple(sorted((p['from_id'],p['to_id']))) for p in details.get('paths',[])}
+    return [dict(id=uid(),from_id=a,to_id=b,kind='connectedTo',source='recognized_path_candidate' if source!='line_trace_candidate' and tuple(sorted((a,b))) in observed else source,status='needs_review') for a,b in pairs]
 
 
 def finish(image, elements, segments, coordinate, transform, folder, number, warnings):

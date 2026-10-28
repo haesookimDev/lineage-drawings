@@ -197,6 +197,34 @@ def geometric_candidates(image,texts,high_resolution=None):
 
 
 def trace_adjacency(elements,segments,w,h,image=None,diagnostics=None):
+    """Retain validated adjacency; attach separately reviewable recognition evidence.
+
+    The experimental learned router did not beat v6 on held-out validation.
+    Its paths may explain an existing candidate, but cannot add/approve edges.
+    """
+    details={}
+    pairs=_trace_validated(elements,segments,w,h,image,details)
+    if image is not None:
+        from .topology_features import model
+        if model()[0] is not None:
+            from .topology import route
+            _,recognized,ports=route(elements,segments,w,h,image)
+            allowed={tuple(sorted(pair)) for pair in pairs}
+            boxes={e['id']:e['bbox'] for e in elements}
+            paths=[{**p,'from_bbox':boxes[p['from_id']],'to_bbox':boxes[p['to_id']]} for p in recognized.pop('paths',[]) if tuple(sorted((p['from_id'],p['to_id']))) in allowed]
+            details.update({k:v for k,v in recognized.items() if k not in ('algorithm','crossing_policy','connections_limited','pair_budget_reached')})
+            details.update(recognition_algorithm='line-port-junction-v7',routing_mode='validated_v6_with_recognition_evidence',
+                           recognition_is_advisory=True,paths=paths,
+                           recognition_pair_budget_reached=recognized.get('pair_budget_reached',False))
+            for element in elements:
+                if element['id'] in ports:
+                    element.setdefault('properties',{})['ports']=[{k:v for k,v in p.items() if k!='pixel'} for p in ports[element['id']]]
+                    element['properties']['topology_bbox']=list(element['bbox'])
+    if diagnostics is not None:diagnostics.update(details)
+    return pairs
+
+
+def _trace_validated(elements,segments,w,h,image=None,diagnostics=None):
     symbols=[e for e in elements if e['kind']!='text']
     if symbols and all(e.get('properties',{}).get('profile')=='generic_fallback' for e in symbols):
         from .legacy_network import trace_adjacency as legacy_trace
