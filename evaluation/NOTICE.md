@@ -34,3 +34,11 @@ Digitizing P&IDs with Transformers*, IEEE DSAA 2025,
 [author preprint](https://arxiv.org/abs/2411.13929).
 
 This data notice does not assign a new license to unrelated application code.
+
+
+The v3 extension also evaluates two disjoint eight-sheet selections from the
+public synthetic **Complete / Dataset PID** subset (Digitize-PID, Paliwal et al.,
+2021). These are synthetic, not real OPEN100 plans. Selection, hashes and roles
+are recorded under `v3/stress-*.json` and `v3/confirmation-*.json`. The v3
+prototypes use only OPEN100 development 0–3; see `../backend/assets/NOTICE.md`.
+All v3 dataset-derived result JSON/CSV and figures follow CC BY-SA 4.0 as above.

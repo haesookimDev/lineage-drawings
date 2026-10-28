@@ -1,0 +1,198 @@
+{
+  "source": "https://zenodo.org/records/14803338",
+  "archive_url": "https://zenodo.org/api/records/14803338/files/PID2Graph.zip/content",
+  "license": "CC-BY-SA-4.0",
+  "drawing_origin": "Digitize-PID / Dataset-P&ID (synthetic)",
+  "selection_plan": {
+    "dataset": "PID2Graph Complete / Dataset PID (Digitize-PID synthetic)",
+    "ids": [
+      "9",
+      "34",
+      "385",
+      "285",
+      "317",
+      "281",
+      "82",
+      "382"
+    ],
+    "members": [
+      "PID2Graph/Complete/Dataset PID/9.png",
+      "PID2Graph/Complete/Dataset PID/34.png",
+      "PID2Graph/Complete/Dataset PID/385.png",
+      "PID2Graph/Complete/Dataset PID/285.png",
+      "PID2Graph/Complete/Dataset PID/317.png",
+      "PID2Graph/Complete/Dataset PID/281.png",
+      "PID2Graph/Complete/Dataset PID/82.png",
+      "PID2Graph/Complete/Dataset PID/382.png"
+    ],
+    "selection": "next 8 SHA256-ranked members after excluding the first 8 now used as negative validation",
+    "usage": "additional untouched synthetic confirmation, not real engineering generalization",
+    "legacy_open100": "0-3 development; 4-11 historical regression only, no longer claimed unseen",
+    "labels": "same five semantic categories where present; equipment-adjacency contraction unchanged",
+    "excluded_negative_validation_ids": [
+      "48",
+      "303",
+      "277",
+      "24",
+      "173",
+      "95",
+      "313",
+      "320"
+    ],
+    "reason": "Initial unconditional v3 regressed on the first 8; supported-style gating and legacy fallback were added. New set selected before its predictions or annotations were inspected."
+  },
+  "files": [
+    {
+      "file": "9.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/9.png",
+      "bytes": 5901669,
+      "sha256": "782d49193ee26b41226940213b7453e83fe9554eed8299453f6de1cdcc80fa7b",
+      "crc32": "e3b126f4",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "9.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/9.graphml",
+      "bytes": 127902,
+      "sha256": "520796db79d02e7b0c2d2885ba9abd7e98855b48f160cfd510ee859659186bd5",
+      "crc32": "e674f11b"
+    },
+    {
+      "file": "34.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/34.png",
+      "bytes": 6225630,
+      "sha256": "d576093c78e7ea564bf8a513f66d2a4f9fcc6c4055b0774c860039f6a30a84c5",
+      "crc32": "89073be7",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "34.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/34.graphml",
+      "bytes": 141740,
+      "sha256": "5ba03ff7a60fc69f38133fec5162a1b8f0c7b963e09a3272dbcca30ed0097e0b",
+      "crc32": "96607b03"
+    },
+    {
+      "file": "385.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/385.png",
+      "bytes": 6168950,
+      "sha256": "795416befd7828eda31c88e4348e7a5d32996406fbc6a8ffd4837b3b06e691e8",
+      "crc32": "f0577424",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "385.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/385.graphml",
+      "bytes": 133267,
+      "sha256": "e06bc7f17420e55245447feb4f6de5b0cda6b10d3290f107cf3eb776e29d9e51",
+      "crc32": "0f447e3b"
+    },
+    {
+      "file": "285.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/285.png",
+      "bytes": 5439184,
+      "sha256": "eddbe6d1b92e76f94fb9633cb57ff1cba0c55a514035439cfa0e914f7829c278",
+      "crc32": "2c76e5cc",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "285.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/285.graphml",
+      "bytes": 130052,
+      "sha256": "1348a4fd5ce4aaaf2b4a7037fadf33c2eb7266e0b9b270ff15fd2ec1f2cf7cf1",
+      "crc32": "33bfd93e"
+    },
+    {
+      "file": "317.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/317.png",
+      "bytes": 6843742,
+      "sha256": "0b65775ed999f61ad7127f53badd919723f79ee303049cf4b8735584d3bf746e",
+      "crc32": "b0f41313",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "317.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/317.graphml",
+      "bytes": 157915,
+      "sha256": "a89eaa28c5326014d57d645099487a7325dc1e3482077e00dafa3e9bcf3d1b6d",
+      "crc32": "8dcc2c4c"
+    },
+    {
+      "file": "281.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/281.png",
+      "bytes": 7519220,
+      "sha256": "e1512dc259a492aed45d6bb6ea8045ade03623f72aff70b23e93df9941bc21a3",
+      "crc32": "49d822e3",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "281.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/281.graphml",
+      "bytes": 129446,
+      "sha256": "1b03a5be44d60dfbc324b8548d01afc35d558ab6d4c2cae100451267be64ba79",
+      "crc32": "dcfd180d"
+    },
+    {
+      "file": "82.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/82.png",
+      "bytes": 6795490,
+      "sha256": "d94e6e63eef205dd26248d9935f4bad316f3763a7c8d7b18ac1f93b845f87a3e",
+      "crc32": "9ae146d3",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "82.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/82.graphml",
+      "bytes": 124324,
+      "sha256": "56c087fae5e72236b7ac8e76df38a1252619c311a92957955dbd2c092bb5e5fc",
+      "crc32": "2a905cba"
+    },
+    {
+      "file": "382.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/382.png",
+      "bytes": 7465168,
+      "sha256": "f14bc0299dab1ee0d7b36f5f0b0c24c3e18dea5857d66ff14963056b6ffd479b",
+      "crc32": "bf6875df",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "382.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/382.graphml",
+      "bytes": 156342,
+      "sha256": "155ae552cc3c0b100a58966929a555141b760e6cd92092fbd2916d0a24cc6f9b",
+      "crc32": "04db6dff"
+    }
+  ]
+}
