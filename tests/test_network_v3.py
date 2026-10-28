@@ -84,7 +84,7 @@ def test_unsupported_style_uses_unchanged_legacy_tracing():
     for e in elements:e['properties']={'profile':'generic_fallback'}
     details={};edges=infer_connections(elements,lines,100,100,image=image,diagnostics=details)
     assert pairs(edges)=={frozenset(pair) for pair in legacy(elements,lines,100,100)}
-    assert details['algorithm']=='legacy-components-v2'
+    assert details['algorithm']=='visible-components-v4'
     assert all(e['source']=='line_trace_candidate' for e in edges)
 
 

@@ -1,0 +1,96 @@
+{
+  "baseline": "2e111c4",
+  "attribution_priority": [
+    "recovered",
+    "missing_symbol",
+    "disabled_symbol_port",
+    "line_or_port_routing"
+  ],
+  "counts": {
+    "missing_symbol": 797,
+    "disabled_symbol_port": 99,
+    "line_or_port_routing": 344,
+    "recovered": 153
+  },
+  "missing_endpoint_kinds": {
+    "tank": 119,
+    "valve": 788,
+    "instrumentation": 35,
+    "pump": 133,
+    "inlet/outlet": 10
+  },
+  "sheets": [
+    {
+      "id": "4",
+      "causes": {
+        "missing_symbol": 36,
+        "disabled_symbol_port": 4,
+        "line_or_port_routing": 35,
+        "recovered": 31
+      }
+    },
+    {
+      "id": "5",
+      "causes": {
+        "missing_symbol": 306,
+        "disabled_symbol_port": 5,
+        "line_or_port_routing": 118,
+        "recovered": 10
+      }
+    },
+    {
+      "id": "6",
+      "causes": {
+        "disabled_symbol_port": 35,
+        "recovered": 15,
+        "missing_symbol": 49,
+        "line_or_port_routing": 59
+      }
+    },
+    {
+      "id": "7",
+      "causes": {
+        "line_or_port_routing": 57,
+        "recovered": 59,
+        "missing_symbol": 33,
+        "disabled_symbol_port": 9
+      }
+    },
+    {
+      "id": "8",
+      "causes": {
+        "missing_symbol": 45,
+        "recovered": 4,
+        "line_or_port_routing": 2,
+        "disabled_symbol_port": 2
+      }
+    },
+    {
+      "id": "9",
+      "causes": {
+        "missing_symbol": 92,
+        "line_or_port_routing": 20,
+        "recovered": 15,
+        "disabled_symbol_port": 29
+      }
+    },
+    {
+      "id": "10",
+      "causes": {
+        "line_or_port_routing": 37,
+        "recovered": 12,
+        "missing_symbol": 117,
+        "disabled_symbol_port": 1
+      }
+    },
+    {
+      "id": "11",
+      "causes": {
+        "line_or_port_routing": 16,
+        "missing_symbol": 119,
+        "disabled_symbol_port": 14,
+        "recovered": 7
+      }
+    }
+  ]
+}

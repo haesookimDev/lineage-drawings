@@ -1,0 +1,41 @@
+{
+  "baseline": "2e111c42f33a02fb253b82a49e993c661e690ef3",
+  "historical_regression": "OPEN100 4-11; already inspected, not unseen",
+  "development": "OPEN100 0-3; templates remain development-only",
+  "new_real_source": "https://www.epa.gov/system/files/documents/2021-08/pahala-wwtp-design-build-drawings-2021-07-23.pdf",
+  "new_real_source_sha256": "6b61266b4fc32d6bd209648d8509d9e75be2d9bc584f499d855c2d4f16b8d0af",
+  "new_real_pages_one_based": [
+    23,
+    24
+  ],
+  "new_real_scope": "Two predeclared process-area ROIs on full-page raster input. Whole-page OCR/extraction, score only symbols with center within ROI and connections with both endpoints inside. Evaluate visible valves/pumps/tank/instrument/continuation markers; exclude ambiguous electronic control bus above. No crop is passed to model. Single-annotator manual labels, not certified engineering ground truth; concept design, not as-built.",
+  "new_real_policy": "Do not run candidate extraction/scoring on these new pages until runtime parameters are frozen. No shapes or annotations from these pages used for training. Seeing source image to annotate is disclosed; no claim of independently blinded human annotation.",
+  "latency": "Same CPU, OCR and rendering size; per-sheet paired three runs, p50 and range, no SLA claim",
+  "regression_guard": "Preserve synthetic confirmation baseline and crossing/T/gap correctness. Report all failures and per-sheet changes.",
+  "new_real_rois_display_coordinates": {
+    "p23": {
+      "canvas": [
+        1978,
+        1279
+      ],
+      "roi": [
+        88,
+        590,
+        1755,
+        914
+      ]
+    },
+    "p24": {
+      "canvas": [
+        1978,
+        1279
+      ],
+      "roi": [
+        88,
+        730,
+        1755,
+        1040
+      ]
+    }
+  }
+}

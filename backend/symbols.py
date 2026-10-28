@@ -26,22 +26,35 @@ def template_candidates(gray):
     h,w=gray.shape;binary=(gray<210).astype(np.float32);ink=(binary*255).astype(np.uint8)
     horizontal=cv2.morphologyEx(ink,cv2.MORPH_OPEN,np.ones((1,max(12,w//150)),np.uint8))
     vertical=cv2.morphologyEx(ink,cv2.MORPH_OPEN,np.ones((max(12,h//150),1),np.uint8))
+    # Search at half resolution, then verify full-resolution NCC only around
+    # coarse peaks. The full-resolution acceptance threshold is unchanged.
+    # This avoids 219 full-page FFTs and retains the original model assets.
+    coarse=cv2.resize(binary,None,fx=.5,fy=.5,interpolation=cv2.INTER_AREA)
     found=[]
     for index,(original,family) in enumerate(prototypes()):
         for scale in (.85,1.,1.15):
             th,tw=original.shape;tw,th=round(tw*scale),round(th*scale)
             if min(tw,th)<5 or max(tw,th)>min(w,h)/2:continue
-            similarity=cv2.matchTemplate(binary,cv2.resize(original,(tw,th)),cv2.TM_CCOEFF_NORMED)
-            peaks=(similarity>=.78)&(similarity>=cv2.dilate(similarity,np.ones((5,5),np.uint8)))
+            template=cv2.resize(original,(tw,th))
+            small=cv2.resize(template,(max(3,tw//2),max(3,th//2)),interpolation=cv2.INTER_AREA)
+            similarity=cv2.matchTemplate(coarse,small,cv2.TM_CCOEFF_NORMED)
+            peaks=(similarity>=.55)&(similarity>=cv2.dilate(similarity,np.ones((3,3),np.uint8)))
             yy,xx=np.where(peaks)
             if len(xx)>300:
                 best=np.argpartition(similarity[yy,xx],-300)[-300:];yy,xx=yy[best],xx[best]
-            for y,x in zip(yy,xx):
+            for sy,sx in zip(yy,xx):
+                x0,y0=max(0,int(sx)*2-3),max(0,int(sy)*2-3)
+                x1,y1=min(w,int(sx)*2+tw+5),min(h,int(sy)*2+th+5)
+                if x1-x0<tw or y1-y0<th:continue
+                fine=cv2.matchTemplate(binary[y0:y1,x0:x1],template,cv2.TM_CCOEFF_NORMED)
+                _,score,_,position=cv2.minMaxLoc(fine)
+                if score<.78:continue
+                x,y=x0+position[0],y0+position[1]
                 ports=(horizontal[y:y+th,max(0,x-4):x],horizontal[y:y+th,x+tw:min(w,x+tw+4)],
                        vertical[max(0,y-4):y,x:x+tw],vertical[y+th:min(h,y+th+4),x:x+tw])
                 if not any(np.count_nonzero(port)>=3 for port in ports):continue
                 found.append(([float(x/w),float(y/h),float((x+tw)/w),float((y+th)/h)],
-                              {'geometry':'shape_prototype','match_score':float(similarity[y,x]),
+                              {'geometry':'shape_prototype','match_score':float(score),
                                'prototype':index,'shape_hint':family,'model':'open100-dev-shapes-v1'}))
     found.sort(key=lambda p:p[1]['match_score'],reverse=True);kept=[]
     for item in found:

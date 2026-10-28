@@ -32,8 +32,8 @@ def axis_segments(image):
     gray=cv2.cvtColor(np.asarray(image),cv2.COLOR_RGB2GRAY);bw=(gray<210).astype(np.uint8)*255
     segments=[]
     for horizontal in (True,False):
-        mask=cv2.morphologyEx(bw,cv2.MORPH_OPEN,np.ones((1,12) if horizontal else (12,1),np.uint8))
-        lines=cv2.HoughLinesP(mask,1,np.pi/180,threshold=12,minLineLength=12,maxLineGap=3)
+        mask=cv2.morphologyEx(bw,cv2.MORPH_OPEN,np.ones((1,7) if horizontal else (7,1),np.uint8))
+        lines=cv2.HoughLinesP(mask,1,np.pi/180,threshold=7,minLineLength=7,maxLineGap=3)
         if lines is not None:
             for a,b,c,d in lines[:,0]:
                 if (horizontal and abs(b-d)<=2) or (not horizontal and abs(a-c)<=2):segments.append([float(a),float(b),float(c),float(d)])
@@ -75,11 +75,12 @@ def candidate_pairs(lines):
 
 
 def port_graph(elements,segments,w,h,image=None):
-    symbols=[e for e in elements if e['kind']!='text' and e.get('properties',{}).get('connection_eligible',True)][:500]
+    symbols=[e for e in elements if e['kind']!='text' and (e.get('properties',{}).get('connection_eligible',True)
+             or e.get('properties',{}).get('geometry')=='round_loop')][:500]
     lines=[np.asarray(s,dtype=float) for s in merge_segments(segments)]
     along=[{} for _ in lines];intervals=[[] for _ in lines]
     adjacent=defaultdict(set);owners=defaultdict(set);ports=defaultdict(set);serial=0
-    diagnostics={'algorithm':'port-graph-v3','crossing_policy':'endpoint_or_dot','junction_candidates':0,'unmarked_crossings':0,'pair_budget_reached':False}
+    diagnostics={'algorithm':'port-graph-v4','crossing_policy':'endpoint_or_dot','junction_candidates':0,'unmarked_crossings':0,'pair_budget_reached':False,'weak_leaf_ports':0}
     def node(index,t):
         nonlocal serial
         key=round(float(t),5)
@@ -92,7 +93,7 @@ def port_graph(elements,segments,w,h,image=None):
     for index,s in enumerate(lines):
         p=s[:2];v=s[2:]-p;length=float(np.linalg.norm(v));node(index,0);node(index,1)
         for element in symbols:
-            a,b,c,d=element['bbox'];box=(a*w,b*h,c*w,d*h);lo,hi=0.,1.
+            a,b,c,d=element['bbox'];box=(a*w-2,b*h-2,c*w+2,d*h+2);lo,hi=0.,1.
             for axis in (0,1):
                 if abs(v[axis])<1e-8:
                     if p[axis]<box[axis]-3 or p[axis]>box[axis+2]+3:lo,hi=1,0;break
@@ -100,11 +101,16 @@ def port_graph(elements,segments,w,h,image=None):
                     aa=(box[axis]-p[axis])/v[axis];bb=(box[axis+2]-p[axis])/v[axis]
                     lo=max(lo,min(aa,bb));hi=min(hi,max(aa,bb))
             if lo>hi:continue
+            weak=not element.get('properties',{}).get('connection_eligible',True)
+            # A weak circle may attach as a leaf only at an actual line end.
+            # It cannot obstruct or join a route passing through the circle.
+            if weak and lo>0 and hi<1:continue
             if lo*length>2:
                 at=node(index,lo);owners[at].add(element['id']);ports[element['id']].add(at)
             if (1-hi)*length>2:
                 at=node(index,hi);owners[at].add(element['id']);ports[element['id']].add(at)
-            intervals[index].append((lo,hi))
+            if weak:diagnostics['weak_leaf_ports']+=1
+            else:intervals[index].append((lo,hi))
     pair_count=0
     for i,j in candidate_pairs(lines):
         pair_count+=1

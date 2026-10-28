@@ -1,0 +1,21 @@
+{
+  "frozen_at": "2026-10-28T06:11:52.530618+00:00",
+  "baseline": "2e111c42f33a02fb253b82a49e993c661e690ef3",
+  "sources": {
+    "backend/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/assets/open100-dev-shapes.json": "cfb75898757040e9fe7867aff60a4ed995c63d2c3ea88efc650a2491c277e2fe",
+    "backend/assets/open100-dev-shapes.npz": "f840393429986e4465795f35ac5cad9b57a214099fa354fff4f6bbd5b52c31df",
+    "backend/db.py": "a2e9f8d9097b88613a7a73de67fe4516b75777d6c1adfb41681bba4d238f6d51",
+    "backend/extract.py": "5c3aa7865e0d5189fa277462947eb13b6d8f33019f8aec71fda50c8cbdc69fec",
+    "backend/geometry.py": "1285ad49847341a1ee35ada5a94fb0b7706bae1ab36674f9f69fe1efccd4ab00",
+    "backend/legacy_network.py": "bdd649018d7c5e51a653c2cfa1f38a35de8aa255e60a3ae3b14cb8ee562d001d",
+    "backend/main.py": "d91bd2d760321779cc4634acf05df1ce59c979f2b072361e289397bb911704ac",
+    "backend/network.py": "7e26bc5e2453bd3fce30ad649ec68e0a1962f449c45a6517e1bbaa6380f11e62",
+    "backend/symbols.py": "da50fcc2c6443cc781a974a7be1d4da88fc22f769edcd449c9f307b50c3cd7ef",
+    "evaluation/benchmark.py": "fd37039e35cab081cb5c73c59fd56066fc9427a70a1500bb90df6a5ea5de1983",
+    "evaluation/protocol.json": "61245c0e5561c53cdde1fbc6f4d3e5d3398fbc9064f0757785cfb5febf676a9a",
+    "evaluation/v4/evaluate.py": "7511aaff8d1d3d13740fa559495895129cafd666a6fb5328ab545a2767f36760"
+  },
+  "labels_sha256": "c27b0d340985c3f839be05e62f04aa396c630d3722209911ba0175abe9a087fe",
+  "new_real_policy": "Pahala p23/p24 ROI labels fixed by visual transcription before any extraction run on those sheets. No parameters or prototypes tuned using these new scores. Two ROIs from one new project, single annotator, not whole-sheet generalization."
+}

@@ -180,8 +180,21 @@ def trace_adjacency(elements,segments,w,h,image=None,diagnostics=None):
     symbols=[e for e in elements if e['kind']!='text']
     if symbols and all(e.get('properties',{}).get('profile')=='generic_fallback' for e in symbols):
         from .legacy_network import trace_adjacency as legacy_trace
-        if diagnostics is not None:diagnostics.update({'algorithm':'legacy-components-v2','crossing_policy':'unresolved-review-required'})
-        return legacy_trace(elements,segments,w,h)
+        base=legacy_trace(elements,segments,w,h)
+        if image is None:
+            if diagnostics is not None:diagnostics.update({'algorithm':'legacy-components-v2','crossing_policy':'unresolved-review-required'})
+            return base
+        # Generic drawings retain every existing candidate. A second line pass
+        # recovers short visible pipe stubs lost by component-based line masks.
+        # This is still an unresolved-crossing candidate path, never auto-approved.
+        from .network import axis_segments
+        extra=set(legacy_trace(elements,axis_segments(image),w,h))-set(base)
+        order={e['id']:i for i,e in enumerate(symbols)}
+        extra=sorted(extra,key=lambda pair:tuple(sorted((order[pair[0]],order[pair[1]]))))
+        budget=min(100,max(0,500-len(base)))
+        if diagnostics is not None:diagnostics.update({'algorithm':'visible-components-v4','crossing_policy':'unresolved-review-required',
+            'retained_legacy_connections':len(base),'supplemental_connections':min(len(extra),budget),'connections_limited':len(extra)>budget})
+        return base+extra[:budget]
     from .network import port_graph
     result,details=port_graph(elements,segments,w,h,image)
     if diagnostics is not None:diagnostics.update(details)
