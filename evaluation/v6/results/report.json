@@ -1,0 +1,2332 @@
+{
+  "baseline": "aef3ca96f8eb6d65ac7c3405b0be6c5da21ffa8b",
+  "evaluated_at": "2026-10-28T08:48:00.849198+00:00",
+  "runs": 3,
+  "frozen_sha256": "7003993d0e0e49fa80a5723f48ed2c7e17050445bf3fe5c5e9004f13eb5f26ee",
+  "timing_scope": "RGB decode/thumbnail and PDF render excluded. Timed OCR, symbol/line/edge inference. Same 2400px preview, v6 receives at most4800px original. Per-sheet three sequential paired repeats with reversed order. v6-preview ablation receives only2400px. Not throughput or SLA.",
+  "sheets": [
+    {
+      "group": "new-page",
+      "id": "virden-p6",
+      "role": "new-page-known-project",
+      "roi_only": true,
+      "source_sha256": "8618dc074d17f366c41a6f2dbd29b220b360e92663cf89cd3fb186ab101b5d99",
+      "source_size": [
+        4800,
+        2915
+      ],
+      "rendered_size": [
+        2400,
+        1458
+      ],
+      "gt_symbols": 9,
+      "gt_connections": 10,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 3,
+              "fp": 5,
+              "fn": 6,
+              "precision": 0.375,
+              "recall": 0.3333333333333333,
+              "f1": 0.35294117647058826
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 4,
+              "fn": 10,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 8,
+          "pred_connections": 4,
+          "full_page_symbols": 88,
+          "full_page_connections": 52,
+          "miss_attribution": {
+            "missing_symbol": 10
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              2.9924,
+              2.8207,
+              2.8146
+            ],
+            "median": 2.8207,
+            "min": 2.8146,
+            "max": 2.9924
+          }
+        },
+        "v6-preview": {
+          "scores": {
+            "localization": {
+              "tp": 6,
+              "fp": 2,
+              "fn": 3,
+              "precision": 0.75,
+              "recall": 0.6666666666666666,
+              "f1": 0.7058823529411765
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 10,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 8,
+          "pred_connections": 0,
+          "full_page_symbols": 66,
+          "full_page_connections": 47,
+          "miss_attribution": {
+            "missing_symbol": 8,
+            "line_or_port_routing": 2
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.0756,
+              3.1168,
+              3.0745
+            ],
+            "median": 3.0756,
+            "min": 3.0745,
+            "max": 3.1168
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 4,
+              "fn": 2,
+              "precision": 0.6363636363636364,
+              "recall": 0.7777777777777778,
+              "f1": 0.7
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 10,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 11,
+          "pred_connections": 0,
+          "full_page_symbols": 70,
+          "full_page_connections": 57,
+          "miss_attribution": {
+            "missing_symbol": 7,
+            "line_or_port_routing": 3
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.9618,
+              4.9641,
+              4.9796
+            ],
+            "median": 4.9641,
+            "min": 4.9618,
+            "max": 4.9796
+          }
+        }
+      }
+    },
+    {
+      "group": "new-page",
+      "id": "virden-p8",
+      "role": "new-page-known-project",
+      "roi_only": true,
+      "source_sha256": "60f7fd7ac7d02cc3aa94bf73a83ab3646b9618642522cb23a5fca08b65f32db3",
+      "source_size": [
+        4800,
+        2915
+      ],
+      "rendered_size": [
+        2400,
+        1458
+      ],
+      "gt_symbols": 6,
+      "gt_connections": 6,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 3,
+              "fn": 4,
+              "precision": 0.4,
+              "recall": 0.3333333333333333,
+              "f1": 0.36363636363636365
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 5,
+              "fn": 5,
+              "precision": 0.16666666666666666,
+              "recall": 0.16666666666666666,
+              "f1": 0.16666666666666666
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 5,
+          "pred_connections": 6,
+          "full_page_symbols": 67,
+          "full_page_connections": 117,
+          "miss_attribution": {
+            "missing_symbol": 5,
+            "recovered": 1
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              2.1476,
+              2.103,
+              2.1218
+            ],
+            "median": 2.1218,
+            "min": 2.103,
+            "max": 2.1476
+          }
+        },
+        "v6-preview": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.6666666666666666,
+              "recall": 0.3333333333333333,
+              "f1": 0.4444444444444444
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 5,
+              "precision": 0.5,
+              "recall": 0.16666666666666666,
+              "f1": 0.25
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 3,
+          "pred_connections": 2,
+          "full_page_symbols": 52,
+          "full_page_connections": 118,
+          "miss_attribution": {
+            "missing_symbol": 5,
+            "recovered": 1
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              2.3902,
+              2.3634,
+              2.3719
+            ],
+            "median": 2.3719,
+            "min": 2.3634,
+            "max": 2.3902
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 3,
+              "fp": 3,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.5,
+              "f1": 0.5
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 3,
+              "fn": 4,
+              "precision": 0.4,
+              "recall": 0.3333333333333333,
+              "f1": 0.36363636363636365
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 6,
+          "pred_connections": 5,
+          "full_page_symbols": 65,
+          "full_page_connections": 134,
+          "miss_attribution": {
+            "missing_symbol": 4,
+            "recovered": 2
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.2676,
+              4.3484,
+              4.2658
+            ],
+            "median": 4.2676,
+            "min": 4.2658,
+            "max": 4.3484
+          }
+        }
+      }
+    },
+    {
+      "group": "new-page",
+      "id": "pahala-p22",
+      "role": "new-page-known-project",
+      "roi_only": true,
+      "source_sha256": "cbcc347ee70cf46a2a70763acc541ac9411a7579ffdceb7c16954601c509bcaa",
+      "source_size": [
+        4800,
+        3106
+      ],
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "gt_symbols": 9,
+      "gt_connections": 14,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.5555555555555556,
+              "f1": 0.7142857142857143
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 14,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 5,
+          "pred_connections": 0,
+          "full_page_symbols": 76,
+          "full_page_connections": 10,
+          "miss_attribution": {
+            "missing_symbol": 14
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.0972,
+              4.065,
+              4.0805
+            ],
+            "median": 4.0805,
+            "min": 4.065,
+            "max": 4.0972
+          }
+        },
+        "v6-preview": {
+          "scores": {
+            "localization": {
+              "tp": 1,
+              "fp": 2,
+              "fn": 8,
+              "precision": 0.3333333333333333,
+              "recall": 0.1111111111111111,
+              "f1": 0.16666666666666666
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 14,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 3,
+          "pred_connections": 0,
+          "full_page_symbols": 27,
+          "full_page_connections": 11,
+          "miss_attribution": {
+            "missing_symbol": 14
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.3765,
+              4.3122,
+              4.3257
+            ],
+            "median": 4.3257,
+            "min": 4.3122,
+            "max": 4.3765
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 4,
+              "fp": 1,
+              "fn": 5,
+              "precision": 0.8,
+              "recall": 0.4444444444444444,
+              "f1": 0.5714285714285714
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 14,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 5,
+          "pred_connections": 1,
+          "full_page_symbols": 34,
+          "full_page_connections": 13,
+          "miss_attribution": {
+            "missing_symbol": 14
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.1844,
+              6.2489,
+              6.1661
+            ],
+            "median": 6.1844,
+            "min": 6.1661,
+            "max": 6.2489
+          }
+        }
+      }
+    },
+    {
+      "group": "new-page",
+      "id": "ruttan-p51",
+      "role": "new-page-known-project",
+      "roi_only": true,
+      "source_sha256": "6605a79eac67c58ec4e259245585062788c80b6c5aa5e762bace8d03b40d69f4",
+      "source_size": [
+        4800,
+        3106
+      ],
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "gt_symbols": 8,
+      "gt_connections": 6,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 1,
+              "fn": 6,
+              "precision": 0.6666666666666666,
+              "recall": 0.25,
+              "f1": 0.36363636363636365
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 3,
+          "pred_connections": 0,
+          "full_page_symbols": 25,
+          "full_page_connections": 8,
+          "miss_attribution": {
+            "missing_symbol": 6
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.5906,
+              3.5517,
+              3.5605
+            ],
+            "median": 3.5605,
+            "min": 3.5517,
+            "max": 3.5906
+          }
+        },
+        "v6-preview": {
+          "scores": {
+            "localization": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 8,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 0,
+          "pred_connections": 0,
+          "full_page_symbols": 4,
+          "full_page_connections": 1,
+          "miss_attribution": {
+            "missing_symbol": 6
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.8231,
+              3.8124,
+              3.8808
+            ],
+            "median": 3.8231,
+            "min": 3.8124,
+            "max": 3.8808
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 6,
+              "precision": 1.0,
+              "recall": 0.25,
+              "f1": 0.4
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 2,
+          "pred_connections": 0,
+          "full_page_symbols": 44,
+          "full_page_connections": 8,
+          "miss_attribution": {
+            "missing_symbol": 6
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.7174,
+              5.7551,
+              5.6748
+            ],
+            "median": 5.7174,
+            "min": 5.6748,
+            "max": 5.7551
+          }
+        }
+      }
+    },
+    {
+      "group": "open100-regression",
+      "id": "6",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "44a67176c8265ca5b7a2ae9833932a1797564bb35ce030d3d29e920ddf1fc9c1",
+      "source_size": [
+        3196,
+        2128
+      ],
+      "rendered_size": [
+        2400,
+        1598
+      ],
+      "gt_symbols": 70,
+      "gt_connections": 158,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 60,
+              "fp": 20,
+              "fn": 10,
+              "precision": 0.75,
+              "recall": 0.8571428571428571,
+              "f1": 0.8
+            },
+            "connections": {
+              "tp": 22,
+              "fp": 27,
+              "fn": 136,
+              "precision": 0.4489795918367347,
+              "recall": 0.13924050632911392,
+              "f1": 0.21256038647342995
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 80,
+          "pred_connections": 49,
+          "full_page_symbols": 80,
+          "full_page_connections": 49,
+          "miss_attribution": {
+            "line_or_port_routing": 96,
+            "missing_symbol": 40,
+            "recovered": 22
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.8563,
+              4.8793,
+              4.8704
+            ],
+            "median": 4.8704,
+            "min": 4.8563,
+            "max": 4.8793
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 69,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9857142857142858,
+              "f1": 0.9928057553956835
+            },
+            "connections": {
+              "tp": 40,
+              "fp": 17,
+              "fn": 118,
+              "precision": 0.7017543859649122,
+              "recall": 0.25316455696202533,
+              "f1": 0.37209302325581395
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 69,
+          "pred_connections": 57,
+          "full_page_symbols": 69,
+          "full_page_connections": 57,
+          "miss_attribution": {
+            "line_or_port_routing": 108,
+            "recovered": 40,
+            "missing_symbol": 10
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.7586,
+              5.7165,
+              5.7099
+            ],
+            "median": 5.7165,
+            "min": 5.7099,
+            "max": 5.7586
+          }
+        }
+      }
+    },
+    {
+      "group": "open100-regression",
+      "id": "7",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "071e7dc66c07b7b9fb752de7c91ed2fb7c65cce1135bac43291723980e32fdd0",
+      "source_size": [
+        3194,
+        2130
+      ],
+      "rendered_size": [
+        2400,
+        1601
+      ],
+      "gt_symbols": 61,
+      "gt_connections": 158,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 51,
+              "fp": 23,
+              "fn": 10,
+              "precision": 0.6891891891891891,
+              "recall": 0.8360655737704918,
+              "f1": 0.7555555555555555
+            },
+            "connections": {
+              "tp": 47,
+              "fp": 17,
+              "fn": 111,
+              "precision": 0.734375,
+              "recall": 0.2974683544303797,
+              "f1": 0.42342342342342343
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 74,
+          "pred_connections": 64,
+          "full_page_symbols": 74,
+          "full_page_connections": 64,
+          "miss_attribution": {
+            "missing_symbol": 32,
+            "recovered": 47,
+            "line_or_port_routing": 79
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.686,
+              4.6934,
+              4.6517
+            ],
+            "median": 4.686,
+            "min": 4.6517,
+            "max": 4.6934
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 57,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.9827586206896551,
+              "recall": 0.9344262295081968,
+              "f1": 0.957983193277311
+            },
+            "connections": {
+              "tp": 64,
+              "fp": 13,
+              "fn": 94,
+              "precision": 0.8311688311688312,
+              "recall": 0.4050632911392405,
+              "f1": 0.5446808510638298
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 58,
+          "pred_connections": 77,
+          "full_page_symbols": 58,
+          "full_page_connections": 77,
+          "miss_attribution": {
+            "recovered": 64,
+            "missing_symbol": 10,
+            "line_or_port_routing": 84
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.4786,
+              5.4856,
+              5.4858
+            ],
+            "median": 5.4856,
+            "min": 5.4786,
+            "max": 5.4858
+          }
+        }
+      }
+    },
+    {
+      "group": "open100-regression",
+      "id": "8",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "d0e38b31ec1d30189bb9ee32cbf07387a3e033439ec69d62b7cd8578975e729e",
+      "source_size": [
+        3342,
+        2222
+      ],
+      "rendered_size": [
+        2400,
+        1596
+      ],
+      "gt_symbols": 36,
+      "gt_connections": 53,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 25,
+              "fp": 12,
+              "fn": 11,
+              "precision": 0.6756756756756757,
+              "recall": 0.6944444444444444,
+              "f1": 0.684931506849315
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 25,
+              "fn": 47,
+              "precision": 0.1935483870967742,
+              "recall": 0.11320754716981132,
+              "f1": 0.14285714285714285
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 37,
+          "pred_connections": 31,
+          "full_page_symbols": 37,
+          "full_page_connections": 31,
+          "miss_attribution": {
+            "missing_symbol": 44,
+            "line_or_port_routing": 3,
+            "recovered": 6
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.0674,
+              4.0754,
+              4.0725
+            ],
+            "median": 4.0725,
+            "min": 4.0674,
+            "max": 4.0754
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 38,
+              "fp": 11,
+              "fn": 15,
+              "precision": 0.7755102040816326,
+              "recall": 0.7169811320754716,
+              "f1": 0.7450980392156863
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 37,
+          "pred_connections": 49,
+          "full_page_symbols": 37,
+          "full_page_connections": 49,
+          "miss_attribution": {
+            "recovered": 38,
+            "line_or_port_routing": 15
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.9566,
+              4.9602,
+              4.9459
+            ],
+            "median": 4.9566,
+            "min": 4.9459,
+            "max": 4.9602
+          }
+        }
+      }
+    },
+    {
+      "group": "open100-regression",
+      "id": "9",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "c620ed2ad097e10c3249050266595d303750453154fc51449c1e1e4196d43321",
+      "source_size": [
+        3198,
+        2128
+      ],
+      "rendered_size": [
+        2400,
+        1597
+      ],
+      "gt_symbols": 42,
+      "gt_connections": 156,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 35,
+              "fp": 19,
+              "fn": 7,
+              "precision": 0.6481481481481481,
+              "recall": 0.8333333333333334,
+              "f1": 0.7291666666666666
+            },
+            "connections": {
+              "tp": 114,
+              "fp": 5,
+              "fn": 42,
+              "precision": 0.957983193277311,
+              "recall": 0.7307692307692307,
+              "f1": 0.8290909090909091
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 54,
+          "pred_connections": 119,
+          "full_page_symbols": 54,
+          "full_page_connections": 119,
+          "miss_attribution": {
+            "recovered": 114,
+            "line_or_port_routing": 26,
+            "missing_symbol": 16
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.003,
+              3.9992,
+              3.9924
+            ],
+            "median": 3.9992,
+            "min": 3.9924,
+            "max": 4.003
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 6,
+              "precision": 0.972972972972973,
+              "recall": 0.8571428571428571,
+              "f1": 0.9113924050632911
+            },
+            "connections": {
+              "tp": 129,
+              "fp": 0,
+              "fn": 27,
+              "precision": 1.0,
+              "recall": 0.8269230769230769,
+              "f1": 0.9052631578947369
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 37,
+          "pred_connections": 129,
+          "full_page_symbols": 37,
+          "full_page_connections": 129,
+          "miss_attribution": {
+            "recovered": 129,
+            "line_or_port_routing": 25,
+            "missing_symbol": 2
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.8254,
+              4.8281,
+              4.8387
+            ],
+            "median": 4.8281,
+            "min": 4.8254,
+            "max": 4.8387
+          }
+        }
+      }
+    },
+    {
+      "group": "open100-regression",
+      "id": "10",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "246841b69ea44b8b881429b801ff66ca16637832b95a1ce09632c5538842ee1b",
+      "source_size": [
+        2792,
+        1860
+      ],
+      "rendered_size": [
+        2400,
+        1599
+      ],
+      "gt_symbols": 89,
+      "gt_connections": 167,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 62,
+              "fp": 30,
+              "fn": 27,
+              "precision": 0.6739130434782609,
+              "recall": 0.6966292134831461,
+              "f1": 0.6850828729281768
+            },
+            "connections": {
+              "tp": 21,
+              "fp": 20,
+              "fn": 146,
+              "precision": 0.5121951219512195,
+              "recall": 0.12574850299401197,
+              "f1": 0.20192307692307693
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 92,
+          "pred_connections": 41,
+          "full_page_symbols": 92,
+          "full_page_connections": 41,
+          "miss_attribution": {
+            "recovered": 21,
+            "missing_symbol": 118,
+            "line_or_port_routing": 28
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.5928,
+              5.5862,
+              5.6742
+            ],
+            "median": 5.5928,
+            "min": 5.5862,
+            "max": 5.6742
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 77,
+              "fp": 3,
+              "fn": 12,
+              "precision": 0.9625,
+              "recall": 0.8651685393258427,
+              "f1": 0.9112426035502958
+            },
+            "connections": {
+              "tp": 40,
+              "fp": 37,
+              "fn": 127,
+              "precision": 0.5194805194805194,
+              "recall": 0.23952095808383234,
+              "f1": 0.32786885245901637
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 80,
+          "pred_connections": 77,
+          "full_page_symbols": 80,
+          "full_page_connections": 77,
+          "miss_attribution": {
+            "recovered": 40,
+            "line_or_port_routing": 82,
+            "missing_symbol": 45
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.4029,
+              6.4177,
+              6.4264
+            ],
+            "median": 6.4177,
+            "min": 6.4029,
+            "max": 6.4264
+          }
+        }
+      }
+    },
+    {
+      "group": "open100-regression",
+      "id": "11",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "363bf989089abe8e235862729392633a99b4e879b1adbd407fcce7f90eb26d94",
+      "source_size": [
+        2786,
+        1862
+      ],
+      "rendered_size": [
+        2400,
+        1604
+      ],
+      "gt_symbols": 82,
+      "gt_connections": 156,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 58,
+              "fp": 24,
+              "fn": 24,
+              "precision": 0.7073170731707317,
+              "recall": 0.7073170731707317,
+              "f1": 0.7073170731707317
+            },
+            "connections": {
+              "tp": 18,
+              "fp": 60,
+              "fn": 138,
+              "precision": 0.23076923076923078,
+              "recall": 0.11538461538461539,
+              "f1": 0.15384615384615385
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 82,
+          "pred_connections": 78,
+          "full_page_symbols": 82,
+          "full_page_connections": 78,
+          "miss_attribution": {
+            "missing_symbol": 116,
+            "recovered": 18,
+            "line_or_port_routing": 22
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.4848,
+              4.482,
+              4.4291
+            ],
+            "median": 4.482,
+            "min": 4.4291,
+            "max": 4.4848
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 1,
+              "fn": 18,
+              "precision": 0.9846153846153847,
+              "recall": 0.7804878048780488,
+              "f1": 0.8707482993197279
+            },
+            "connections": {
+              "tp": 28,
+              "fp": 34,
+              "fn": 128,
+              "precision": 0.45161290322580644,
+              "recall": 0.1794871794871795,
+              "f1": 0.25688073394495414
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 65,
+          "pred_connections": 62,
+          "full_page_symbols": 65,
+          "full_page_connections": 62,
+          "miss_attribution": {
+            "missing_symbol": 90,
+            "recovered": 28,
+            "line_or_port_routing": 38
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.3267,
+              5.3127,
+              5.2938
+            ],
+            "median": 5.3127,
+            "min": 5.2938,
+            "max": 5.3267
+          }
+        }
+      }
+    },
+    {
+      "group": "pahala-p21-regression",
+      "id": "p21",
+      "role": "historical-regression",
+      "roi_only": true,
+      "source_sha256": "ad11d5eec96eb51afda62d04cd39ba911ce2de10957a8e85ccc047a96877498e",
+      "source_size": [
+        4800,
+        3106
+      ],
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "gt_symbols": 9,
+      "gt_connections": 10,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 2,
+              "fn": 2,
+              "precision": 0.7777777777777778,
+              "recall": 0.7777777777777778,
+              "f1": 0.7777777777777778
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 9,
+              "fn": 8,
+              "precision": 0.18181818181818182,
+              "recall": 0.2,
+              "f1": 0.19047619047619047
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 9,
+          "pred_connections": 11,
+          "full_page_symbols": 62,
+          "full_page_connections": 113,
+          "miss_attribution": {
+            "missing_symbol": 7,
+            "recovered": 2,
+            "line_or_port_routing": 1
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.8704,
+              3.907,
+              3.9048
+            ],
+            "median": 3.9048,
+            "min": 3.8704,
+            "max": 3.907
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.875,
+              "recall": 0.7777777777777778,
+              "f1": 0.8235294117647058
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 4,
+              "fn": 9,
+              "precision": 0.2,
+              "recall": 0.1,
+              "f1": 0.13333333333333333
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 8,
+          "pred_connections": 5,
+          "full_page_symbols": 33,
+          "full_page_connections": 40,
+          "miss_attribution": {
+            "missing_symbol": 7,
+            "line_or_port_routing": 2,
+            "recovered": 1
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.0147,
+              6.0285,
+              5.9843
+            ],
+            "median": 6.0147,
+            "min": 5.9843,
+            "max": 6.0285
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "9",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "782d49193ee26b41226940213b7453e83fe9554eed8299453f6de1cdcc80fa7b",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 66,
+      "gt_connections": 763,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 37,
+              "fp": 99,
+              "fn": 29,
+              "precision": 0.27205882352941174,
+              "recall": 0.5606060606060606,
+              "f1": 0.36633663366336633
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 141,
+              "fn": 757,
+              "precision": 0.04081632653061224,
+              "recall": 0.007863695937090432,
+              "f1": 0.013186813186813187
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 136,
+          "pred_connections": 147,
+          "full_page_symbols": 136,
+          "full_page_connections": 147,
+          "miss_attribution": {
+            "missing_symbol": 540,
+            "line_or_port_routing": 217,
+            "recovered": 6
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.2682,
+              3.2402,
+              3.2199
+            ],
+            "median": 3.2402,
+            "min": 3.2199,
+            "max": 3.2682
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 13,
+              "fn": 0,
+              "precision": 0.8354430379746836,
+              "recall": 1.0,
+              "f1": 0.9103448275862069
+            },
+            "connections": {
+              "tp": 137,
+              "fp": 59,
+              "fn": 626,
+              "precision": 0.6989795918367347,
+              "recall": 0.17955439056356487,
+              "f1": 0.2857142857142857
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 79,
+          "pred_connections": 196,
+          "full_page_symbols": 79,
+          "full_page_connections": 196,
+          "miss_attribution": {
+            "line_or_port_routing": 626,
+            "recovered": 137
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.3221,
+              5.3053,
+              5.293
+            ],
+            "median": 5.3053,
+            "min": 5.293,
+            "max": 5.3221
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "34",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "d576093c78e7ea564bf8a513f66d2a4f9fcc6c4055b0774c860039f6a30a84c5",
+      "source_size": [
+        7168,
+        4562
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 72,
+      "gt_connections": 547,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 46,
+              "fp": 103,
+              "fn": 26,
+              "precision": 0.3087248322147651,
+              "recall": 0.6388888888888888,
+              "f1": 0.416289592760181
+            },
+            "connections": {
+              "tp": 10,
+              "fp": 284,
+              "fn": 537,
+              "precision": 0.034013605442176874,
+              "recall": 0.018281535648994516,
+              "f1": 0.023781212841854936
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 149,
+          "pred_connections": 294,
+          "full_page_symbols": 149,
+          "full_page_connections": 294,
+          "miss_attribution": {
+            "line_or_port_routing": 188,
+            "missing_symbol": 349,
+            "recovered": 10
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.5061,
+              3.4815,
+              3.5153
+            ],
+            "median": 3.5061,
+            "min": 3.4815,
+            "max": 3.5153
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 72,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 167,
+              "fp": 9,
+              "fn": 380,
+              "precision": 0.9488636363636364,
+              "recall": 0.3053016453382084,
+              "f1": 0.46196403872752423
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 74,
+          "pred_connections": 176,
+          "full_page_symbols": 74,
+          "full_page_connections": 176,
+          "miss_attribution": {
+            "line_or_port_routing": 380,
+            "recovered": 167
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.5683,
+              5.5751,
+              5.6115
+            ],
+            "median": 5.5751,
+            "min": 5.5683,
+            "max": 5.6115
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "385",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "795416befd7828eda31c88e4348e7a5d32996406fbc6a8ffd4837b3b06e691e8",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 64,
+      "gt_connections": 724,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 33,
+              "fp": 116,
+              "fn": 31,
+              "precision": 0.2214765100671141,
+              "recall": 0.515625,
+              "f1": 0.30985915492957744
+            },
+            "connections": {
+              "tp": 7,
+              "fp": 191,
+              "fn": 717,
+              "precision": 0.03535353535353535,
+              "recall": 0.009668508287292817,
+              "f1": 0.015184381778741865
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 149,
+          "pred_connections": 198,
+          "full_page_symbols": 149,
+          "full_page_connections": 198,
+          "miss_attribution": {
+            "missing_symbol": 527,
+            "recovered": 7,
+            "line_or_port_routing": 190
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.2072,
+              3.1793,
+              3.2188
+            ],
+            "median": 3.2072,
+            "min": 3.1793,
+            "max": 3.2188
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 15,
+              "fn": 0,
+              "precision": 0.810126582278481,
+              "recall": 1.0,
+              "f1": 0.8951048951048951
+            },
+            "connections": {
+              "tp": 194,
+              "fp": 64,
+              "fn": 530,
+              "precision": 0.751937984496124,
+              "recall": 0.26795580110497236,
+              "f1": 0.395112016293279
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 79,
+          "pred_connections": 258,
+          "full_page_symbols": 79,
+          "full_page_connections": 258,
+          "miss_attribution": {
+            "recovered": 194,
+            "line_or_port_routing": 530
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.2935,
+              5.2958,
+              5.3219
+            ],
+            "median": 5.2958,
+            "min": 5.2935,
+            "max": 5.3219
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "285",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "eddbe6d1b92e76f94fb9633cb57ff1cba0c55a514035439cfa0e914f7829c278",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 68,
+      "gt_connections": 1189,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 45,
+              "fp": 89,
+              "fn": 23,
+              "precision": 0.3358208955223881,
+              "recall": 0.6617647058823529,
+              "f1": 0.44554455445544555
+            },
+            "connections": {
+              "tp": 17,
+              "fp": 264,
+              "fn": 1172,
+              "precision": 0.060498220640569395,
+              "recall": 0.014297729184188394,
+              "f1": 0.02312925170068027
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 134,
+          "pred_connections": 281,
+          "full_page_symbols": 134,
+          "full_page_connections": 281,
+          "miss_attribution": {
+            "line_or_port_routing": 450,
+            "missing_symbol": 722,
+            "recovered": 17
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.6907,
+              3.7143,
+              3.7665
+            ],
+            "median": 3.7143,
+            "min": 3.6907,
+            "max": 3.7665
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 68,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.9714285714285714,
+              "recall": 1.0,
+              "f1": 0.9855072463768116
+            },
+            "connections": {
+              "tp": 139,
+              "fp": 12,
+              "fn": 1050,
+              "precision": 0.9205298013245033,
+              "recall": 0.11690496215306981,
+              "f1": 0.20746268656716418
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 70,
+          "pred_connections": 151,
+          "full_page_symbols": 70,
+          "full_page_connections": 151,
+          "miss_attribution": {
+            "line_or_port_routing": 1050,
+            "recovered": 139
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.8315,
+              5.7869,
+              5.9014
+            ],
+            "median": 5.8315,
+            "min": 5.7869,
+            "max": 5.9014
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "317",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "0b65775ed999f61ad7127f53badd919723f79ee303049cf4b8735584d3bf746e",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 78,
+      "gt_connections": 726,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 47,
+              "fp": 89,
+              "fn": 31,
+              "precision": 0.34558823529411764,
+              "recall": 0.6025641025641025,
+              "f1": 0.4392523364485981
+            },
+            "connections": {
+              "tp": 35,
+              "fp": 126,
+              "fn": 691,
+              "precision": 0.21739130434782608,
+              "recall": 0.048209366391184574,
+              "f1": 0.07891770011273957
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 136,
+          "pred_connections": 161,
+          "full_page_symbols": 136,
+          "full_page_connections": 161,
+          "miss_attribution": {
+            "missing_symbol": 466,
+            "line_or_port_routing": 225,
+            "recovered": 35
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.6218,
+              3.5592,
+              3.5442
+            ],
+            "median": 3.5592,
+            "min": 3.5442,
+            "max": 3.6218
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 78,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.975,
+              "recall": 1.0,
+              "f1": 0.9873417721518988
+            },
+            "connections": {
+              "tp": 314,
+              "fp": 24,
+              "fn": 412,
+              "precision": 0.9289940828402367,
+              "recall": 0.4325068870523416,
+              "f1": 0.5902255639097744
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 80,
+          "pred_connections": 338,
+          "full_page_symbols": 80,
+          "full_page_connections": 338,
+          "miss_attribution": {
+            "line_or_port_routing": 412,
+            "recovered": 314
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.6687,
+              5.7303,
+              5.6493
+            ],
+            "median": 5.6687,
+            "min": 5.6493,
+            "max": 5.7303
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "281",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "e1512dc259a492aed45d6bb6ea8045ade03623f72aff70b23e93df9941bc21a3",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 65,
+      "gt_connections": 580,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 41,
+              "fp": 109,
+              "fn": 24,
+              "precision": 0.2733333333333333,
+              "recall": 0.6307692307692307,
+              "f1": 0.3813953488372093
+            },
+            "connections": {
+              "tp": 25,
+              "fp": 192,
+              "fn": 555,
+              "precision": 0.1152073732718894,
+              "recall": 0.04310344827586207,
+              "f1": 0.06273525721455459
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 150,
+          "pred_connections": 217,
+          "full_page_symbols": 150,
+          "full_page_connections": 217,
+          "miss_attribution": {
+            "missing_symbol": 359,
+            "line_or_port_routing": 196,
+            "recovered": 25
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.5518,
+              3.5191,
+              3.5253
+            ],
+            "median": 3.5253,
+            "min": 3.5191,
+            "max": 3.5518
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 65,
+              "fp": 6,
+              "fn": 0,
+              "precision": 0.9154929577464789,
+              "recall": 1.0,
+              "f1": 0.9558823529411765
+            },
+            "connections": {
+              "tp": 216,
+              "fp": 23,
+              "fn": 364,
+              "precision": 0.9037656903765691,
+              "recall": 0.3724137931034483,
+              "f1": 0.5274725274725275
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 71,
+          "pred_connections": 239,
+          "full_page_symbols": 71,
+          "full_page_connections": 239,
+          "miss_attribution": {
+            "line_or_port_routing": 364,
+            "recovered": 216
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.6309,
+              5.6058,
+              5.6794
+            ],
+            "median": 5.6309,
+            "min": 5.6058,
+            "max": 5.6794
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "82",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "d94e6e63eef205dd26248d9935f4bad316f3763a7c8d7b18ac1f93b845f87a3e",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 66,
+      "gt_connections": 1138,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 38,
+              "fp": 88,
+              "fn": 28,
+              "precision": 0.30158730158730157,
+              "recall": 0.5757575757575758,
+              "f1": 0.3958333333333333
+            },
+            "connections": {
+              "tp": 5,
+              "fp": 120,
+              "fn": 1133,
+              "precision": 0.04,
+              "recall": 0.004393673110720563,
+              "f1": 0.00791765637371338
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 126,
+          "pred_connections": 125,
+          "full_page_symbols": 126,
+          "full_page_connections": 125,
+          "miss_attribution": {
+            "missing_symbol": 744,
+            "line_or_port_routing": 389,
+            "recovered": 5
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.232,
+              3.2486,
+              3.2469
+            ],
+            "median": 3.2469,
+            "min": 3.232,
+            "max": 3.2486
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 7,
+              "fn": 0,
+              "precision": 0.9041095890410958,
+              "recall": 1.0,
+              "f1": 0.9496402877697842
+            },
+            "connections": {
+              "tp": 134,
+              "fp": 20,
+              "fn": 1004,
+              "precision": 0.8701298701298701,
+              "recall": 0.11775043936731107,
+              "f1": 0.20743034055727555
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 73,
+          "pred_connections": 154,
+          "full_page_symbols": 73,
+          "full_page_connections": 154,
+          "miss_attribution": {
+            "line_or_port_routing": 1004,
+            "recovered": 134
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.3357,
+              5.3591,
+              5.3563
+            ],
+            "median": 5.3563,
+            "min": 5.3357,
+            "max": 5.3591
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic-regression",
+      "id": "382",
+      "role": "historical-regression",
+      "roi_only": false,
+      "source_sha256": "f14bc0299dab1ee0d7b36f5f0b0c24c3e18dea5857d66ff14963056b6ffd479b",
+      "source_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_symbols": 98,
+      "gt_connections": 919,
+      "variants": {
+        "v5": {
+          "scores": {
+            "localization": {
+              "tp": 65,
+              "fp": 108,
+              "fn": 33,
+              "precision": 0.37572254335260113,
+              "recall": 0.6632653061224489,
+              "f1": 0.4797047970479705
+            },
+            "connections": {
+              "tp": 33,
+              "fp": 416,
+              "fn": 886,
+              "precision": 0.07349665924276169,
+              "recall": 0.035908596300326445,
+              "f1": 0.04824561403508772
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 173,
+          "pred_connections": 449,
+          "full_page_symbols": 173,
+          "full_page_connections": 449,
+          "miss_attribution": {
+            "missing_symbol": 500,
+            "line_or_port_routing": 386,
+            "recovered": 33
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              3.9222,
+              3.834,
+              3.8573
+            ],
+            "median": 3.8573,
+            "min": 3.834,
+            "max": 3.9222
+          }
+        },
+        "v6": {
+          "scores": {
+            "localization": {
+              "tp": 96,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.9795918367346939,
+              "f1": 0.9896907216494846
+            },
+            "connections": {
+              "tp": 373,
+              "fp": 0,
+              "fn": 546,
+              "precision": 1.0,
+              "recall": 0.4058759521218716,
+              "f1": 0.5773993808049536
+            },
+            "classified_correct": 0
+          },
+          "pred_symbols": 96,
+          "pred_connections": 373,
+          "full_page_symbols": 96,
+          "full_page_connections": 373,
+          "miss_attribution": {
+            "recovered": 373,
+            "line_or_port_routing": 537,
+            "missing_symbol": 9
+          },
+          "warnings": [],
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.9185,
+              5.9145,
+              5.899
+            ],
+            "median": 5.9145,
+            "min": 5.899,
+            "max": 5.9185
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "new-page": {
+      "v5": {
+        "localization": {
+          "tp": 12,
+          "fp": 9,
+          "fn": 20,
+          "precision": 0.5714285714285714,
+          "recall": 0.375,
+          "f1": 0.4528301886792453
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 9,
+          "fn": 35,
+          "precision": 0.1,
+          "recall": 0.027777777777777776,
+          "f1": 0.043478260869565216
+        },
+        "mean_sheet_median_seconds": 3.145875,
+        "miss_attribution": {
+          "missing_symbol": 35,
+          "recovered": 1
+        }
+      },
+      "v6-preview": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 23,
+          "precision": 0.6428571428571429,
+          "recall": 0.28125,
+          "f1": 0.391304347826087
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 35,
+          "precision": 0.5,
+          "recall": 0.027777777777777776,
+          "f1": 0.05263157894736842
+        },
+        "mean_sheet_median_seconds": 3.3990750000000003,
+        "miss_attribution": {
+          "missing_symbol": 33,
+          "line_or_port_routing": 2,
+          "recovered": 1
+        }
+      },
+      "v6": {
+        "localization": {
+          "tp": 16,
+          "fp": 8,
+          "fn": 16,
+          "precision": 0.6666666666666666,
+          "recall": 0.5,
+          "f1": 0.5714285714285714
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 4,
+          "fn": 34,
+          "precision": 0.3333333333333333,
+          "recall": 0.05555555555555555,
+          "f1": 0.09523809523809523
+        },
+        "mean_sheet_median_seconds": 5.2833749999999995,
+        "miss_attribution": {
+          "missing_symbol": 31,
+          "line_or_port_routing": 3,
+          "recovered": 2
+        }
+      }
+    },
+    "open100-regression": {
+      "v5": {
+        "localization": {
+          "tp": 291,
+          "fp": 128,
+          "fn": 89,
+          "precision": 0.6945107398568019,
+          "recall": 0.7657894736842106,
+          "f1": 0.7284105131414268
+        },
+        "connections": {
+          "tp": 228,
+          "fp": 154,
+          "fn": 620,
+          "precision": 0.5968586387434555,
+          "recall": 0.2688679245283019,
+          "f1": 0.37073170731707317
+        },
+        "mean_sheet_median_seconds": 4.6171500000000005,
+        "miss_attribution": {
+          "line_or_port_routing": 254,
+          "missing_symbol": 366,
+          "recovered": 228
+        }
+      },
+      "v6": {
+        "localization": {
+          "tp": 339,
+          "fp": 7,
+          "fn": 41,
+          "precision": 0.9797687861271677,
+          "recall": 0.8921052631578947,
+          "f1": 0.9338842975206612
+        },
+        "connections": {
+          "tp": 339,
+          "fp": 112,
+          "fn": 509,
+          "precision": 0.7516629711751663,
+          "recall": 0.39976415094339623,
+          "f1": 0.5219399538106235
+        },
+        "mean_sheet_median_seconds": 5.452866666666667,
+        "miss_attribution": {
+          "line_or_port_routing": 352,
+          "recovered": 339,
+          "missing_symbol": 157
+        }
+      }
+    },
+    "pahala-p21-regression": {
+      "v5": {
+        "localization": {
+          "tp": 7,
+          "fp": 2,
+          "fn": 2,
+          "precision": 0.7777777777777778,
+          "recall": 0.7777777777777778,
+          "f1": 0.7777777777777778
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 9,
+          "fn": 8,
+          "precision": 0.18181818181818182,
+          "recall": 0.2,
+          "f1": 0.19047619047619047
+        },
+        "mean_sheet_median_seconds": 3.9048,
+        "miss_attribution": {
+          "missing_symbol": 7,
+          "recovered": 2,
+          "line_or_port_routing": 1
+        }
+      },
+      "v6": {
+        "localization": {
+          "tp": 7,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.875,
+          "recall": 0.7777777777777778,
+          "f1": 0.8235294117647058
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 4,
+          "fn": 9,
+          "precision": 0.2,
+          "recall": 0.1,
+          "f1": 0.13333333333333333
+        },
+        "mean_sheet_median_seconds": 6.0147,
+        "miss_attribution": {
+          "missing_symbol": 7,
+          "line_or_port_routing": 2,
+          "recovered": 1
+        }
+      }
+    },
+    "synthetic-regression": {
+      "v5": {
+        "localization": {
+          "tp": 352,
+          "fp": 801,
+          "fn": 225,
+          "precision": 0.30529054640069386,
+          "recall": 0.610051993067591,
+          "f1": 0.4069364161849711
+        },
+        "connections": {
+          "tp": 138,
+          "fp": 1734,
+          "fn": 6448,
+          "precision": 0.07371794871794872,
+          "recall": 0.02095353780747039,
+          "f1": 0.032631827855284935
+        },
+        "mean_sheet_median_seconds": 3.4820625,
+        "miss_attribution": {
+          "missing_symbol": 4207,
+          "line_or_port_routing": 2241,
+          "recovered": 138
+        }
+      },
+      "v6": {
+        "localization": {
+          "tp": 575,
+          "fp": 47,
+          "fn": 2,
+          "precision": 0.9244372990353698,
+          "recall": 0.9965337954939342,
+          "f1": 0.9591326105087573
+        },
+        "connections": {
+          "tp": 1674,
+          "fp": 211,
+          "fn": 4912,
+          "precision": 0.8880636604774536,
+          "recall": 0.25417552383844516,
+          "f1": 0.3952307873922795
+        },
+        "mean_sheet_median_seconds": 5.5722625,
+        "miss_attribution": {
+          "line_or_port_routing": 4903,
+          "recovered": 1674,
+          "missing_symbol": 9
+        }
+      }
+    }
+  }
+}
