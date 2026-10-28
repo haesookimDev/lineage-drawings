@@ -44,6 +44,7 @@ def test_adaptive_ink_preserves_faint_lines_and_dark_background():
 
 
 def test_learned_candidates_require_human_semantic_review(monkeypatch):
+    monkeypatch.setattr('backend.neural_symbols.model',lambda:(None,None))
     image=Image.new('RGB',(220,150),'white');ImageDraw.Draw(image).rectangle((60,50,100,90),outline='black',width=2)
     monkeypatch.setattr('backend.geometry.legacy_candidates',lambda *args:([],[],False))
     monkeypatch.setattr('backend.symbols.refine_symbols',lambda *args:[])

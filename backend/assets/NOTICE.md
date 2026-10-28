@@ -33,3 +33,27 @@ features; exact/jittered training boxes and hard negatives; 128-tree binary
 objectness forest. Scores are vote fractions, not calibrated probabilities.
 It predicts candidate extents only; types, standard IDs and connection approval
 remain subject to human review. See evaluation/v5 for data roles and limitations.
+
+## Tiled neural symbol detector (v6)
+
+`symbol-neural.onnx` is a fine-tuned YOLOX-Nano detector with one generic symbol
+class. Official upstream implementation: https://github.com/Megvii-BaseDetection/YOLOX
+commit `6ddff4824372906469a7fae2dc3206c7aa4bbaee`, Apache License 2.0
+(copy at evaluation/v6/upstream/YOLOX-LICENSE.txt). Initial COCO weights:
+https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_nano.pth
+
+Changes: replace the 80-class head with one generic class; CPU fine-tuning on
+607 labeled tiles from 10 real sheets/ROIs and twelve synthetic sheets; select
+epoch16 using validation; export raw predictions to ONNX; bounded high-resolution
+tiles and overlap suppression in OpenCV. No semantic classes/standard IDs or
+approved connections are inferred. The upstream COCO scores do not describe
+this fine-tuned detector's diagram performance.
+
+Training sources add the v5 Virden5/7 and Ruttan50/62 regions to the previous
+OPEN1000–3 / Pahala23–24 / synthetic12 sources. Public source URLs and hashes
+are in evaluation/v5/real-sources.json and evaluation/v6. Former v5 test regions
+are explicitly training data for v6. No production user uploads were used.
+PID2Graph-derived fine-tuned weights/provenance retain CC BY-SA4.0 attribution
+above. Manitoba-hosted third-party engineering PDFs are not assumed to have an
+open redistribution license; source PDFs, page images and crops are excluded
+from Git. This notice does not relicense unrelated application code.

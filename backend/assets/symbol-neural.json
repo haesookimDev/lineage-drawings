@@ -1,0 +1,15 @@
+{
+  "model": "yolox-nano-symbol-v1",
+  "weights_sha256": "b1242af58625dc24482829fadb3386768c6aaa6ae185babf20f1650d507306fe",
+  "epoch": 16,
+  "threshold": 0.6,
+  "tile_size": 1024,
+  "overlap": 0.2,
+  "input_size": 640,
+  "merge_mode": "neural_only",
+  "max_source_side": 4800,
+  "max_tiles": 36,
+  "opencv_torch_max_abs_difference": 7.478892803192139e-05,
+  "score_note": "Objectness times single-class sigmoid; not calibrated probability. Generic candidate only, no class or standard approval.",
+  "selection": "Predeclared validation source-group mean(connection F1 +0.25 localization F1); selected from epochs8/16/24, four thresholds and three merge modes. No new-page predictions used."
+}

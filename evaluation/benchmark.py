@@ -112,7 +112,7 @@ def load_extractor(ref):
         from backend import extract
         sources={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
                  for p in sorted((ROOT/'backend').rglob('*')) if p.is_file()
-                 and (p.suffix in ('.py','.npz','.json') or p.name.endswith('.xml.gz')) and '__pycache__' not in p.parts}
+                 and (p.suffix in ('.py','.npz','.json','.onnx') or p.name.endswith('.xml.gz')) and '__pycache__' not in p.parts}
         return extract,sources['backend/extract.py'],sources
     revision=subprocess.check_output(['git','rev-parse','--verify',ref+'^{commit}'],cwd=ROOT,text=True).strip()
     package_name='lineage_frozen_'+revision
@@ -120,7 +120,7 @@ def load_extractor(ref):
     names=subprocess.check_output(['git','ls-tree','-r','--name-only',revision,'backend'],cwd=ROOT,text=True).splitlines()
     sources={}
     for name in names:
-        if Path(name).suffix not in ('.py','.npz','.json') and not name.endswith('.xml.gz'):continue
+        if Path(name).suffix not in ('.py','.npz','.json','.onnx') and not name.endswith('.xml.gz'):continue
         data=subprocess.check_output(['git','show',revision+':'+name],cwd=ROOT)
         sources[name]=hashlib.sha256(data).hexdigest()
         target=snapshot/name;target.parent.mkdir(parents=True,exist_ok=True)

@@ -1,0 +1,83 @@
+{
+  "baseline": "aef3ca96f8eb6d65ac7c3405b0be6c5da21ffa8b",
+  "scope": "High-resolution sliced neural symbol detection and public real-data expansion. Port/junction neural model and Relationformer are later independent comparisons, not claimed implemented here.",
+  "training": {
+    "open100": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "pahala": [
+      "p23",
+      "p24"
+    ],
+    "virden": [
+      "p5",
+      "p7"
+    ],
+    "ruttan": [
+      "p50",
+      "p62"
+    ],
+    "synthetic": "same 12 v5 training sheets"
+  },
+  "validation": {
+    "open100": [
+      "4",
+      "5"
+    ],
+    "pahala": [
+      "p20"
+    ],
+    "synthetic": "same 4 v5 validation sheets"
+  },
+  "new_page_test": {
+    "virden": [
+      "p6",
+      "p8"
+    ],
+    "pahala": [
+      "p22"
+    ],
+    "ruttan": [
+      "p51"
+    ]
+  },
+  "historical_regression": {
+    "open100": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "pahala": [
+      "p21"
+    ],
+    "synthetic": "same v5 historical 8"
+  },
+  "policy": "v5 Virden/Ruttan test pages are now explicitly training data and cannot be reported as unseen. New-page test belongs to known training projects, not independent unseen projects. Annotate ROIs and freeze labels before neural prediction. Single annotator, limited ROIs. Never use tested-page labels for training or threshold selection.",
+  "method": "YOLOX-Nano object detector, COCO pretrained weights, CPU fine-tuning, bounded overlap tiles preserving original detail; v5 remains baseline; select runtime variant on validation only.",
+  "checkpoint_selection": {
+    "epochs": [
+      8,
+      16,
+      24
+    ],
+    "thresholds": [
+      0.15,
+      0.3,
+      0.45,
+      0.6
+    ],
+    "merge_modes": [
+      "replace",
+      "add",
+      "neural_only"
+    ],
+    "objective": "mean over validation source groups(connection F1 +0.25 localization F1)",
+    "policy": "Select only after all7 validation sheets complete; no new-page predictions inspected. High-resolution tile1024 / overlap20% / model640 fixed."
+  }
+}

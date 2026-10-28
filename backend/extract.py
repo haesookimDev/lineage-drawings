@@ -71,10 +71,10 @@ def ocr(image, warnings):
             return []
 
 
-def raster_candidates(image, warnings, with_ocr=True):
+def raster_candidates(image, warnings, with_ocr=True, high_resolution=None):
     texts = ocr(image,warnings) if with_ocr else []
-    shapes,segments,limited = geometric_candidates(image,texts)
-    candidates = [element(f'요소 {i+1}','unknown',box,'learned_symbol_candidate' if properties.get('geometry')=='learned_symbol' else 'image_candidate',properties)
+    shapes,segments,limited = geometric_candidates(image,texts,high_resolution=high_resolution)
+    candidates = [element(f'요소 {i+1}','unknown',box,'neural_symbol_candidate' if properties.get('geometry')=='neural_symbol' else 'learned_symbol_candidate' if properties.get('geometry')=='learned_symbol' else 'image_candidate',properties)
                   for i,(box,properties) in enumerate(shapes)]
     if limited:
         warnings.append('이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다.')
@@ -89,6 +89,13 @@ def infer_connections(elements, segments, w, h, image=None, diagnostics=None):
         details['symbol_detector']='hog-rtrees-symbol-v1'
         details['learned_symbol_candidates']=sum(e.get('properties',{}).get('geometry')=='learned_symbol' for e in elements)
         details['symbol_model_sha256']=next((e['properties']['symbol_model_sha256'] for e in elements if e.get('properties',{}).get('symbol_model_sha256')),None)
+        neural=[e for e in elements if e.get('source')=='neural_symbol_candidate']
+        if neural:
+            details['symbol_detector']='yolox-nano-symbol-v1'
+            details['symbol_model_sha256']=neural[0]['properties']['symbol_model_sha256']
+            details['neural_symbol_candidates']=len(neural)
+            details['neural_source_size']=neural[0]['properties']['source_size']
+            details['neural_tile_count']=neural[0]['properties']['tile_count']
     source='line_trace_candidate' if details.get('algorithm') in ('legacy-components-v2','visible-components-v4') else 'port_graph_candidate'
     return [dict(id=uid(),from_id=a,to_id=b,kind='connectedTo',source=source,status='needs_review') for a,b in pairs]
 
@@ -119,6 +126,15 @@ def extract_pdf(path,folder,warnings):
             scale=min(2.,MAX_SIDE/max(page.rect.width,page.rect.height))
             pix=page.get_pixmap(matrix=fitz.Matrix(scale,scale),alpha=False,colorspace=fitz.csRGB)
             image=Image.frombytes('RGB',(pix.width,pix.height),pix.samples)
+            # Keep the 2400px viewer/OCR coordinates; only neural detection
+            # receives a bounded higher-resolution view of the original page.
+            high_resolution=None
+            from .neural_symbols import model as neural_model,MAX_SOURCE_SIDE
+            if neural_model()[0] is not None:
+                high_scale=MAX_SOURCE_SIDE/max(page.rect.width,page.rect.height)
+                high_pix=page.get_pixmap(matrix=fitz.Matrix(high_scale,high_scale),alpha=False,colorspace=fitz.csRGB)
+                high_resolution=Image.frombytes('RGB',(high_pix.width,high_pix.height),high_pix.samples)
+                del high_pix
             words=page.get_text('words');elements=[];segments=[]
             # Text/graphics return unrotated coordinates. Transform before normalizing.
             matrix=page.rotation_matrix
@@ -136,15 +152,25 @@ def extract_pdf(path,folder,warnings):
                 if drawing.get('closePath') and r.width>5 and r.height>5 and r.width<page.rect.width*.45 and r.height<page.rect.height*.45:
                     elements.append(element(f'벡터 요소 {len(elements)+1}','unknown',normalized((r.x0-page.rect.x0,r.y0-page.rect.y0,r.x1-page.rect.x0,r.y1-page.rect.y0),page.rect.width,page.rect.height),'pdf_path'))
             if not words:
-                extra,lines=raster_candidates(image,warnings);elements+=extra
+                extra,lines=raster_candidates(image,warnings,high_resolution=high_resolution);elements+=extra
                 if not segments:segments=lines
             elif page.get_images():
-                extra,lines=raster_candidates(image,warnings,with_ocr=True)
+                extra,lines=raster_candidates(image,warnings,with_ocr=True,high_resolution=high_resolution)
                 for e in extra:
                     if e['kind']=='text' and any(e['label']==t['label'] for t in elements if t['kind']=='text'):continue
                     elements.append(e)
                 segments+=lines
                 warnings.append(f'{n+1}페이지는 벡터·이미지 혼합 분석 결과입니다. 중복과 누락을 검토해 주세요.')
+            elif high_resolution is not None:
+                # Vector text can coexist with symbols made of open paths.
+                # Use direct neural candidates without duplicating OCR/text.
+                from .neural_symbols import detect as neural_detect
+                for box,props in neural_detect(high_resolution):
+                    elements.append(element(f'학습 요소 {len(elements)+1}','unknown',box,'neural_symbol_candidate',props))
+            if high_resolution is not None:
+                # Native PDF text must not consume every symbol slot.
+                symbols=[e for e in elements if e['kind']!='text'][:200]
+                elements=[e for e in elements if e['kind']=='text'][:MAX_ELEMENTS-len(symbols)]+symbols
             pages.append(finish(image,elements,segments,'pdf_page',{'scale':scale,'rotation':page.rotation,'page_rect':list(page.rect)},folder,n+1,warnings))
     return pages
 
@@ -203,9 +229,11 @@ def extract(path,extension,folder):
             img.verify()
         with Image.open(path) as raw:
             if raw.width*raw.height>50_000_000:raise ValueError('이미지는 최대 5천만 화소까지 지원합니다.')
-            image=ImageOps.exif_transpose(raw).convert('RGB');original=list(image.size)
-            image.thumbnail((MAX_SIDE,MAX_SIDE))
-        elements,segments=raster_candidates(image,warnings)
+            high_resolution=ImageOps.exif_transpose(raw).convert('RGB');original=list(high_resolution.size)
+            from .neural_symbols import MAX_SOURCE_SIDE
+            image=high_resolution.copy();image.thumbnail((MAX_SIDE,MAX_SIDE))
+            high_resolution.thumbnail((MAX_SOURCE_SIDE,MAX_SOURCE_SIDE))
+        elements,segments=raster_candidates(image,warnings,high_resolution=high_resolution)
         warnings.append('이미지 요소와 연결은 기하 기반 후보입니다. 작은 기호·점선·교차 접속·물리 단위·의미는 원본과 대조해 주세요.')
         pages=[finish(image,elements,segments,'image_pixel',{'original_size':original,'rendered_size':list(image.size),'physical_scale':None},folder,1,warnings)]
     return pages,list(dict.fromkeys(warnings))

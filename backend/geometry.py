@@ -165,27 +165,34 @@ def legacy_candidates(image, texts):
     return candidates[:200],segments[:5000],len(candidates)>200
 
 
-def geometric_candidates(image,texts):
+def geometric_candidates(image,texts,high_resolution=None):
     from .symbols import refine_symbols
     from .learned_symbols import detect,score_boxes,model
     from .network import axis_segments
+    from .neural_symbols import detect as neural_detect,merge,model as neural_model
     # The deployed worker has a 2-CPU limit. Bound CV's native thread pool too.
     cv2.setNumThreads(2)
     legacy,legacy_lines,limited=legacy_candidates(image,texts)
     candidates=refine_symbols(image,legacy)
     proposal_base=[box for box,_ in candidates]
     fallback=not candidates or all(p.get('profile')=='generic_fallback' for _,p in candidates)
-    classifier,metadata=model()
+    net,neural_meta=neural_model()
+    neural_only=net is not None and neural_meta.get('merge_mode')=='neural_only'
+    classifier,metadata=(None,None) if neural_only else model()
     if classifier is not None:
         scores=score_boxes(image,[box for box,_ in candidates])
         candidates=[(box,{**props,'objectness_score':float(score)}) for (box,props),score in zip(candidates,scores)
                     if score>=metadata.get('prune_threshold',0.)]
-    learned=detect(image,proposal_base)
+    learned=[] if neural_only else detect(image,proposal_base)
     for box,properties in learned:
         if any(_iou(box,prior)>.4 for prior,_ in candidates):continue
         candidates.append((box,{**properties,'profile':'generic_fallback' if fallback else 'shape_assisted'}))
     if classifier is not None:
         candidates=[(box,{**props,'symbol_detector':'hog-rtrees-symbol-v1','symbol_model_sha256':metadata['weights_sha256']}) for box,props in candidates]
+    if net is not None:
+        found=neural_detect(high_resolution if high_resolution is not None else image)
+        found=[(box,{**props,'profile':'generic_fallback' if fallback else 'shape_assisted'}) for box,props in found]
+        candidates=merge(candidates,found,neural_meta.get('merge_mode','replace'))
     return candidates[:200],legacy_lines if fallback else axis_segments(image),limited or len(candidates)>200
 
 
