@@ -13,12 +13,12 @@
 
 ## 아직 검증하지 않은 항목
 
-- 실제 Docker 이미지 빌드/실행은 GitHub CI 또는 Docker/BuildKit 환경에서 수행해야 합니다. 로컬 호스트에는 Docker가 없습니다.
-- GitHub 업로드는 요청한 저장소에 remote를 연결하고 시도했으나 현재 인증의 저장소 쓰기 권한 부족으로 HTTP 403이 발생했습니다. 소스와 커밋은 로컬에 보존되어 있습니다.
-- CI 실행·컨테이너 artifact 생성은 아직 수행되지 않았습니다.
+- Docker 컨테이너 빌드는 GitHub CI에서 성공했습니다. 컨테이너 자체의 실행·클러스터 rollout은 아직 확인하지 않았습니다. 로컬 호스트에는 Docker가 없습니다.
+- GitHub 업로드는 권한 갱신 후 성공했습니다. 저장소: https://github.com/haesookimDev/lineage-drawings · 검증한 앱 커밋: `6847bdf9b929965aae0328101b42f3c0ea9d4e1e`.
+- GitHub CI 테스트·프런트 빌드·컨테이너 artifact 생성이 모두 성공했습니다. 실행 기록: https://github.com/haesookimDev/lineage-drawings/actions/runs/40618535622 .
 - k3s kubeconfig가 관리자 전용이며 현재 sudo 인증이 없어 클러스터 적용·서비스 Ready·외부 HTTPS 응답은 아직 확인하지 못했습니다.
 - 대규모 실제 도면의 요소/연결 정확도는 측정하지 않았습니다. 정량 모델 성능을 주장하지 않습니다.
 
-권한이 준비되면 `bash scripts/release.sh --deploy`를 사용자 터미널에서 실행하여 GitHub push → 동일 SHA의 CI 성공 확인 → 이미지 다운로드 → k3s 배포·시작을 이어갈 수 있습니다. 기존 앱은 변경하지 않습니다.
+Kubernetes 관리자 접근이 준비되면 `deploy/README.md`의 서비스 전용 명령으로 검증한 이미지를 배포할 수 있습니다. 향후 갱신에는 `bash scripts/release.sh --deploy`가 GitHub push → 동일 SHA의 CI 성공 확인 → 이미지 다운로드 → k3s 배포·시작을 이어갑니다. 기존 앱은 변경하지 않습니다.
 
 브라우저 검증용 synthetic 예제 데이터와 화면 캡처는 `.gitignore` 대상이며 실제 사용자 도면은 저장소에 포함되지 않습니다.
