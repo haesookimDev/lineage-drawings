@@ -75,7 +75,7 @@ def worker(stop):
                     for e in page['elements']:
                         db.execute('INSERT INTO elements VALUES(?,?,?,?,?,?,?,?,?)',(e['id'],page['id'],e['label'],e['kind'],encode(e['bbox']),e['source'],e['status'],encode(e['properties']),None))
                     for edge in page['connections']:
-                        db.execute('INSERT INTO connections VALUES(?,?,?,?,?,?,?,?)',(edge['id'],page['id'],edge['from_id'],edge['to_id'],edge['kind'],edge['source'],edge['status']))
+                        db.execute('INSERT INTO connections VALUES(?,?,?,?,?,?,?)',(edge['id'],page['id'],edge['from_id'],edge['to_id'],edge['kind'],edge['source'],edge['status']))
                 db.execute("UPDATE documents SET status='ready',warnings=?,error=NULL,updated=? WHERE id=?",(encode(warnings),now(),doc['id']))
         except Exception as exc:
             log.warning('Extraction failed for %s (%s)',doc['id'],type(exc).__name__)
@@ -284,7 +284,7 @@ def create_connection(ident:str,body:ConnectionFields):
     cid=uid()
     with connect() as db:
         require_row(db,'pages',ident);validate_endpoints(db,ident,body)
-        db.execute('INSERT INTO connections VALUES(?,?,?,?,?,?,?,?)',(cid,ident,body.from_id,body.to_id,body.kind,'manual',body.status))
+        db.execute('INSERT INTO connections VALUES(?,?,?,?,?,?,?)',(cid,ident,body.from_id,body.to_id,body.kind,'manual',body.status))
         audit(db,cid,'create_connection',None,body.model_dump())
     return {'id':cid}
 @app.put('/api/connections/{ident}')

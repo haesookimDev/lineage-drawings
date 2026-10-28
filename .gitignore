@@ -13,3 +13,9 @@ __pycache__/
 playwright-report/
 test-results/
 .secrets/
+
+data-preview/
+*.tsbuildinfo
+
+.artifacts/
+deploy/rendered.json

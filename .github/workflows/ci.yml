@@ -1,0 +1,41 @@
+name: Test and build
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -q
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm install -g pnpm@11.25.0
+      - run: pnpm install --frozen-lockfile && pnpm build
+        working-directory: frontend
+  image:
+    if: github.event_name == 'push'
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64
+          tags: docker.io/library/lineage-drawings:${{ github.sha }}
+          outputs: type=docker,dest=/tmp/lineage-image.tar
+      - uses: actions/upload-artifact@v4
+        with:
+          name: container-image
+          path: /tmp/lineage-image.tar
+          retention-days: 7
