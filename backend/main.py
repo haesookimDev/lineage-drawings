@@ -114,7 +114,7 @@ async def session_guard(request:Request,call_next):
         return JSONResponse({'detail':'로그인이 필요합니다.'},status_code=401)
     if request.method in ('POST','PATCH','PUT','DELETE') and path.startswith('/api/'):
         origin=request.headers.get('origin')
-        allowed=[x.strip() for x in os.getenv('PUBLIC_ORIGIN','http://localhost:5173,http://127.0.0.1:8000').split(',')]
+        allowed=[x.strip() for x in os.getenv('PUBLIC_ORIGIN','http://localhost:5173,http://127.0.0.1:5173,http://localhost:8000,http://127.0.0.1:8000').split(',')]
         if origin and origin not in allowed:return JSONResponse({'detail':'허용되지 않은 요청 출처입니다.'},status_code=403)
         if not public and not local_mode() and not hmac.compare_digest(request.headers.get('x-csrf-token',''),request.state.csrf):
             return JSONResponse({'detail':'요청 검증에 실패했습니다. 화면을 새로고침해 주세요.'},status_code=403)

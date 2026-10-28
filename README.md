@@ -1,0 +1,73 @@
+# LINEAGE · 도면 검토 MVP
+
+PNG/JPG·PDF·DXF 원본을 올리고, 추출된 요소와 연결을 검토한 뒤 사내 의미 사전에 연결하는 웹 작업 공간입니다. 파일·검토 결과·정의는 서버에 영속 저장됩니다. 단순 화면 데모가 아니라 실제 업로드·파일 파싱·검토 API를 제공합니다.
+
+## 구현 범위
+
+- PNG/JPG: 이미지 정규화, 선·연결요소 기반 요소 후보, Tesseract가 설치된 환경의 한/영 OCR.
+- PDF: 최대 25페이지, 페이지별 미리보기, 회전 좌표 대응, 벡터 문자·경로 및 스캔/혼합 페이지 분석.
+- DXF: modelspace의 블록·문자·선 파싱과 2D 미리보기, 선 끝점 기반 연결 후보.
+- 검토: 확대/축소·페이지 전환·오버레이, 이름/종류 수정, 승인·보류·제외, 영역 드래그로 요소 추가, 요소 삭제.
+- 연결: 수동 추가·끝점 요소 수정·관계 종류 수정·승인·제외·삭제.
+- 사전: 명칭·정의·적용 범위·단위 등록/검색/수정, 버전 증가, 도면 요소에 연결.
+- 이력과 내보내기: 변경 이력 및 원본 근거를 포함한 JSON 다운로드.
+- 운영: 공유 비밀번호 로그인, HttpOnly 세션, CSRF·Origin 검사, SQLite WAL, 작업 상태 저장·중단 작업 재개.
+
+## 중요한 경계
+
+이 버전의 추출은 **도메인 학습 모델이 아닌 CPU 기반 기초 후보 추출**입니다. 밸브·펌프의 의미나 국제표준 기호 번호를 임의로 생성하지 않으며 사람이 검토합니다. 선 끝점 기반 관계는 접속/교차를 완벽히 구별하지 못합니다. PDF/DXF 원본 문자를 읽었다고 의미까지 승인되는 것은 아닙니다.
+
+DXF는 2D modelspace에 한정합니다. layout·XREF·레이어 색/선종·회전 문자·3D의 정밀 렌더링은 지원하지 않습니다. DWG·IFC·개정 영향·물리 시뮬레이션·자동 표준 검색은 이번 MVP 범위에 포함되지 않습니다.
+
+초기 운영은 **단일 사용자 팀 워크스페이스, 단일 API 프로세스·단일 추출 스레드·단일 replica**입니다. SQLite와 업로드 디렉터리를 하나의 PVC에 두어 복잡한 인프라 의존성을 줄였습니다. 다중 조직·다중 worker 운영은 인증 체계, PostgreSQL, 별도 파일 저장소와 큐로 확장해야 합니다. 백업 시 앱을 중지하고 데이터 디렉터리 전체를 복사하거나 SQLite backup API를 사용하세요. 실행 중 DB 파일 한 개만 복사하지 마세요.
+
+## 로컬 실행
+
+Python 3.12+, Node 24+, pnpm 11.25.0을 사용합니다.
+
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -r requirements-dev.txt
+cd frontend
+pnpm install --frozen-lockfile
+pnpm build
+cd ..
+bash scripts/run-local.sh
+```
+
+브라우저에서 `http://127.0.0.1:8000`을 엽니다. 로컬 스크립트는 loopback에서만 인증 없는 개발 모드로 실행합니다. 인터넷에 노출하지 마세요. 화면의 **예제 도면으로 시작**은 DXF 파일을 생성해 실제 추출 경로에 넣습니다.
+
+로컬 한/영 OCR을 사용하려면 OS의 `tesseract-ocr`, `tesseract-ocr-eng`, `tesseract-ocr-kor`를 설치합니다. 없으면 이미지 OCR을 생략했다는 안내가 표시됩니다. 컨테이너에는 모두 설치됩니다.
+
+프런트 개발은 `pnpm dev`로 실행하며 `/api`를 로컬 8000 포트로 프록시합니다. 원본·분석·API 작업은 서버에 저장됩니다.
+
+## 환경 설정
+
+| 환경 변수 | 의미 |
+|---|---|
+| `DATA_DIR` | SQLite DB와 원본/미리보기 저장 폴더; 운영 PVC `/data` |
+| `APP_PASSWORD_HASH` | `scripts/hash-password.py`로 만든 PBKDF2 해시; 운영 필수 |
+| `PUBLIC_ORIGIN` | 허용 웹 출처; 예: `https://lineage.haesoo.dev` |
+| `COOKIE_SECURE` | 운영 `1`, 로컬 HTTP 인증 시험 시에만 `0` |
+| `ALLOW_INSECURE_LOCAL` | `1`이면 해시가 없는 loopback 개발 모드 허용; 운영 사용 금지 |
+
+비밀번호·토큰·kubeconfig·사용자 도면은 Git에 넣지 않습니다. 앱의 기본 업로드 제한은 파일당 40MB, PDF 25페이지, 이미지 5천만 화소, DXF 원본 엔티티 2만 개입니다. 파생 미리보기는 최대 2400px이며 원본은 별도로 보존합니다.
+
+## 검증
+
+```bash
+.venv/bin/python -m pytest -q
+cd frontend && pnpm build
+```
+
+테스트는 실제 PNG·JPEG·회전된 다중 페이지 PDF·DXF를 생성해 업로드하고, 요소/연결 저장, 사전 중복 제어와 연결, 내보내기, 원본 반환, 잘못된 bbox/다른 페이지 연결 차단, 로그인·세션·CSRF를 확인합니다.
+
+## GitHub CI와 k3s 배포
+
+[배포 안내](deploy/README.md)를 참고하세요. CI는 테스트·프런트 빌드 후 linux/amd64 컨테이너를 `container-image` artifact로 보관합니다. 기존 홈 인프라의 **단일 노드 k3s**에 이미지를 import하는 방식이므로 새로운 레지스트리 자격 증명을 기존 서비스와 공유하지 않습니다. 빌드 산출물 보관은 7일입니다.
+
+초기 배포는 기존 `apps` namespace, `edge/home` Gateway, `haesoo-boot-gate`·`haesoo-runtime` ConfigMap과 `local-path` StorageClass를 전제로 합니다. 이 전제는 코드에서 확인하고, 기존 플랫폼 설정을 전체 재적용하지 않습니다. PVC 10Gi·전용 Secret·LINEAGE Deployment/Service/HTTPRoute만 추가합니다. 기존 앱을 중지하거나 변경하지 않습니다.
+
+배포 성공과 실행 승인은 구분됩니다. 기존 포털에서 시작하거나 배포 도구의 `--start`를 사용하면 현재 부팅 ID에 대해서만 실행을 승인합니다. PC 재부팅 뒤에는 기존 플랫폼의 수동 시작 정책을 따릅니다.
+
+초기 동작 검증: [검증 기록](VALIDATION.md).

@@ -134,3 +134,16 @@ def test_auth_csrf_and_cookie(tmp_path,monkeypatch):
         assert c.post('/api/concepts',json={'name':'a','definition':'b','scope':'c'},headers={'X-CSRF-Token':csrf}).status_code==201
         assert c.post('/api/logout',headers={'X-CSRF-Token':csrf}).status_code==200
         assert c.get('/api/documents').status_code==401
+
+
+def test_restart_preserves_review_and_dictionary(tmp_path,monkeypatch):
+    monkeypatch.setenv('DATA_DIR',str(tmp_path));monkeypatch.setenv('ALLOW_INSECURE_LOCAL','1');monkeypatch.delenv('APP_PASSWORD_HASH',raising=False)
+    with TestClient(app) as c:
+        doc=wait_ready(c,c.post('/api/examples').json()['id'])
+        pid=doc['pages'][0]['id'];e=c.get('/api/pages/'+pid).json()['elements'][0]
+        cid=c.post('/api/concepts',json={'name':'테스트 정의','definition':'재시작 보존 검증','scope':'테스트'}).json()['id']
+        assert c.put('/api/elements/'+e['id'],json={**e,'concept_id':cid,'status':'approved'}).status_code==200
+    with TestClient(app) as c:
+        persisted=c.get('/api/pages/'+pid).json()['elements'][0]
+        assert persisted['concept_id']==cid and persisted['status']=='approved'
+        assert c.get('/api/concepts').json()[0]['id']==cid
