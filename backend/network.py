@@ -28,8 +28,14 @@ def merge_segments(segments):
     return (result+diagonal)[:5000]
 
 
+def line_ink(gray):
+    border=np.concatenate((gray[0],gray[-1],gray[:,0],gray[:,-1]))
+    if np.median(border)<128:gray=255-gray
+    return cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,31,7)
+
+
 def axis_segments(image):
-    gray=cv2.cvtColor(np.asarray(image),cv2.COLOR_RGB2GRAY);bw=(gray<210).astype(np.uint8)*255
+    gray=cv2.cvtColor(np.asarray(image),cv2.COLOR_RGB2GRAY);bw=line_ink(gray)
     segments=[]
     for horizontal in (True,False):
         mask=cv2.morphologyEx(bw,cv2.MORPH_OPEN,np.ones((1,7) if horizontal else (7,1),np.uint8))
@@ -88,7 +94,7 @@ def port_graph(elements,segments,w,h,image=None):
         return along[index][key]
     def link(a,b):adjacent[a].add(b);adjacent[b].add(a)
     if image is not None:
-        gray=cv2.cvtColor(np.asarray(image),cv2.COLOR_RGB2GRAY);distance=cv2.distanceTransform((gray<210).astype(np.uint8),cv2.DIST_L2,3)
+        gray=cv2.cvtColor(np.asarray(image),cv2.COLOR_RGB2GRAY);distance=cv2.distanceTransform((line_ink(gray)>0).astype(np.uint8),cv2.DIST_L2,3)
     else:distance=None
     for index,s in enumerate(lines):
         p=s[:2];v=s[2:]-p;length=float(np.linalg.norm(v));node(index,0);node(index,1)

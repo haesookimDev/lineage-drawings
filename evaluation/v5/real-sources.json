@@ -1,0 +1,75 @@
+{
+  "virden": {
+    "url": "https://www.gov.mb.ca/sd/eal/registries/5697virden/2019-04-26_5697_00_phase_2_p_and_i_drwngs.pdf",
+    "creator": "Associated Engineering / Town of Virden / Manitoba Water Services Board",
+    "pages": [
+      5,
+      7
+    ],
+    "pdf_sha256": "41bdff902a2651f00869a1ed7e67ec16d6d027bda701210ee10486fd58160df0",
+    "bytes": 3285153,
+    "pages_metadata": [
+      {
+        "page_one_based": 5,
+        "png_sha256": "27356b778cb5c3007e82a06768e04392a901ead1002962e7c47d0945d79c2250",
+        "native_pdf_images": 1,
+        "native_pdf_words": 0,
+        "page_rect": [
+          0.0,
+          0.0,
+          1008.0,
+          612.0
+        ]
+      },
+      {
+        "page_one_based": 7,
+        "png_sha256": "6f1d3755feac8c12cc241d9bf06ad8fcf7301dc4a09b7b347d35b7a0524988dd",
+        "native_pdf_images": 1,
+        "native_pdf_words": 0,
+        "page_rect": [
+          0.0,
+          0.0,
+          1008.0,
+          612.0
+        ]
+      }
+    ]
+  },
+  "ruttan": {
+    "url": "https://gov.mb.ca/sd/eal/registries/294.30/20250618_letter.pdf",
+    "creator": "KGS Group / Manitoba Mines Branch",
+    "pages": [
+      50,
+      62
+    ],
+    "pdf_sha256": "fd2aa661cccfb92a05a82232f773f8d92be033e83e47e5bb6da14fa73a7a183c",
+    "bytes": 18874266,
+    "pages_metadata": [
+      {
+        "page_one_based": 50,
+        "png_sha256": "be3cdc1557d776df1f19049dc5ffd991ea09667cb56c378854b157a119e349f9",
+        "native_pdf_images": 1,
+        "native_pdf_words": 626,
+        "page_rect": [
+          0.0,
+          0.0,
+          2448.0,
+          1584.0
+        ]
+      },
+      {
+        "page_one_based": 62,
+        "png_sha256": "6d805d33da94f99d03d764d3685597097ffe36c3c126c6301030289b2c5160bc",
+        "native_pdf_images": 0,
+        "native_pdf_words": 0,
+        "page_rect": [
+          0.0,
+          0.0,
+          792.0,
+          612.0
+        ]
+      }
+    ]
+  },
+  "license_note": "Government-hosted third-party engineering documents; no open-data redistribution license assumed. PDFs, source page images and full OCR text excluded from Git and Docker context. New labels are manual geometric facts, not an official answer key. Ruttan selected pages are correlated revisions of one plant."
+}

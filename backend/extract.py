@@ -74,7 +74,7 @@ def ocr(image, warnings):
 def raster_candidates(image, warnings, with_ocr=True):
     texts = ocr(image,warnings) if with_ocr else []
     shapes,segments,limited = geometric_candidates(image,texts)
-    candidates = [element(f'요소 {i+1}','unknown',box,'image_candidate',properties)
+    candidates = [element(f'요소 {i+1}','unknown',box,'learned_symbol_candidate' if properties.get('geometry')=='learned_symbol' else 'image_candidate',properties)
                   for i,(box,properties) in enumerate(shapes)]
     if limited:
         warnings.append('이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다.')
@@ -85,6 +85,10 @@ def raster_candidates(image, warnings, with_ocr=True):
 def infer_connections(elements, segments, w, h, image=None, diagnostics=None):
     details={} if diagnostics is None else diagnostics
     pairs=trace_adjacency(elements,segments,w,h,image,details)
+    if any(e.get('properties',{}).get('symbol_detector') for e in elements):
+        details['symbol_detector']='hog-rtrees-symbol-v1'
+        details['learned_symbol_candidates']=sum(e.get('properties',{}).get('geometry')=='learned_symbol' for e in elements)
+        details['symbol_model_sha256']=next((e['properties']['symbol_model_sha256'] for e in elements if e.get('properties',{}).get('symbol_model_sha256')),None)
     source='line_trace_candidate' if details.get('algorithm') in ('legacy-components-v2','visible-components-v4') else 'port_graph_candidate'
     return [dict(id=uid(),from_id=a,to_id=b,kind='connectedTo',source=source,status='needs_review') for a,b in pairs]
 

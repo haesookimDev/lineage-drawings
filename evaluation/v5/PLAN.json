@@ -1,0 +1,75 @@
+{
+  "baseline": "ab04ed8e529d8c605995cd5e8fbaa87b2b4ffeaf",
+  "training": {
+    "open100": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "pahala": [
+      "p23",
+      "p24"
+    ],
+    "synthetic_members": [
+      "PID2Graph/Complete/Dataset PID/240.png",
+      "PID2Graph/Complete/Dataset PID/398.png",
+      "PID2Graph/Complete/Dataset PID/110.png",
+      "PID2Graph/Complete/Dataset PID/99.png",
+      "PID2Graph/Complete/Dataset PID/468.png",
+      "PID2Graph/Complete/Dataset PID/457.png",
+      "PID2Graph/Complete/Dataset PID/150.png",
+      "PID2Graph/Complete/Dataset PID/447.png",
+      "PID2Graph/Complete/Dataset PID/123.png",
+      "PID2Graph/Complete/Dataset PID/158.png",
+      "PID2Graph/Complete/Dataset PID/72.png",
+      "PID2Graph/Complete/Dataset PID/248.png"
+    ]
+  },
+  "threshold_validation": {
+    "open100": [
+      "4",
+      "5"
+    ],
+    "synthetic_members": [
+      "PID2Graph/Complete/Dataset PID/232.png",
+      "PID2Graph/Complete/Dataset PID/238.png",
+      "PID2Graph/Complete/Dataset PID/470.png",
+      "PID2Graph/Complete/Dataset PID/278.png"
+    ],
+    "pahala": [
+      "p20"
+    ]
+  },
+  "historical_regression": {
+    "open100": [
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "synthetic": "v3 confirmation eight; not unseen"
+  },
+  "new_real_test": {
+    "virden_pages_one_based": [
+      5,
+      7
+    ],
+    "ruttan_pages_one_based": [
+      50,
+      62
+    ],
+    "pahala_untrained_pages_one_based": [
+      21
+    ]
+  },
+  "evaluation_scope": "Predeclared process-area ROIs with manually transcribed symbols and adjacency; freeze geometry labels before evaluation; single annotator, not certified engineering GT. Salina project never used for training or threshold tuning. Pahala 23/24 are training diagnostics, not generalization evidence.",
+  "training_method": "HOG + foreground features, learned random forest objectness on multi-scale geometry proposals; trained on positives and hard negatives, CPU-only, no standard ID auto-approval.",
+  "source_access_changes": {
+    "salina": "HTTP 403, no pages or predictions used; replaced before any new-project extraction evaluation",
+    "haile": "HTTP 403, not used"
+  },
+  "new_real_policy": "Virden and Ruttan projects are never used in training or threshold tuning. Review input images to define and annotate fixed process ROIs, then freeze labels and runtime before inference."
+}

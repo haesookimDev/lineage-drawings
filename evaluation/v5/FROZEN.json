@@ -1,0 +1,29 @@
+{
+  "baseline": "ab04ed8e529d8c605995cd5e8fbaa87b2b4ffeaf",
+  "sources": {
+    "backend/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/assets/open100-dev-shapes.json": "cfb75898757040e9fe7867aff60a4ed995c63d2c3ea88efc650a2491c277e2fe",
+    "backend/assets/open100-dev-shapes.npz": "f840393429986e4465795f35ac5cad9b57a214099fa354fff4f6bbd5b52c31df",
+    "backend/assets/symbol-objectness.json": "6b0c086991c267c32f843e2c829a409a27e2b7c1d0846025b03be019d4b13c38",
+    "backend/assets/symbol-objectness.xml.gz": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21",
+    "backend/db.py": "a2e9f8d9097b88613a7a73de67fe4516b75777d6c1adfb41681bba4d238f6d51",
+    "backend/extract.py": "e44046b74a04035aa46ee3efb508b17ab79565472a4d7dbe869295602583e0ce",
+    "backend/geometry.py": "5d3fbf9c841fb61847332a579a994e062d3e3816e9ee0ba0f27dfbb34f7195bb",
+    "backend/learned_symbols.py": "ac62b711072d428beb51887d26e17863a64ef8ed8fb1ef0c72e6f4baa3db03c9",
+    "backend/legacy_network.py": "bdd649018d7c5e51a653c2cfa1f38a35de8aa255e60a3ae3b14cb8ee562d001d",
+    "backend/main.py": "d91bd2d760321779cc4634acf05df1ce59c979f2b072361e289397bb911704ac",
+    "backend/network.py": "9dc3e654a7e2dd06646fd72c39af00803073dab52948ca2b3eec026c1645fb1e",
+    "backend/symbols.py": "da50fcc2c6443cc781a974a7be1d4da88fc22f769edcd449c9f307b50c3cd7ef",
+    "evaluation/benchmark.py": "f3cdcfdbe60200348dc817397392894561c37573ba500b0275567bf432862d8e",
+    "evaluation/protocol.json": "61245c0e5561c53cdde1fbc6f4d3e5d3398fbc9064f0757785cfb5febf676a9a",
+    "evaluation/v5/MODEL-SELECTION.json": "cac0e3c03823fe940fe650bc3e86b1325f40f0462d39f7774aeb9aea1527f208",
+    "evaluation/v5/PLAN.json": "761b5c28a63eed57543a2da33d98633737e0aa2fc243d6b33a8279e4925cf316",
+    "evaluation/v5/TRAINING.json": "972193f4b47c466272052eb4c2afda496dab497e1df63996fcb45ebc39421990",
+    "evaluation/v5/evaluate.py": "4b5e4ce60bd775cd4d598c32cd21a4955963c90b8a47a9fc9a2971b5d6f1cd05",
+    "frontend/src/App.tsx": "d2a2450f42ea237fa1cd7933a9a025626149ec337ccbfce97ffcf4ae8781217b",
+    "requirements.txt": "248923601cb076d346ec57e58522fe701a1f21b3cade875d57fe2439d0e55f2b"
+  },
+  "labels_sha256": "18024884f8151eeda63e8a56c55d02f926479cc2f8ca0caf85f5f384171f8dad",
+  "old_pahala_labels_sha256": "c27b0d340985c3f839be05e62f04aa396c630d3722209911ba0175abe9a087fe",
+  "policy": "Runtime, selected weights, thresholds and labels fixed before first Virden/Ruttan extraction inference. New projects were visually inspected for annotation and general proposal design; not independent blinded annotation."
+}
