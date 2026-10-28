@@ -1,0 +1,332 @@
+{
+  "new-projects": {
+    "v4": {
+      "localization": {
+        "tp": 6,
+        "fp": 20,
+        "fn": 22,
+        "precision": 0.23076923076923078,
+        "recall": 0.21428571428571427,
+        "f1": 0.2222222222222222
+      },
+      "connections": {
+        "tp": 0,
+        "fp": 24,
+        "fn": 26,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "oracle_boxes": {
+        "tp": 15,
+        "fp": 5,
+        "fn": 11,
+        "precision": 0.75,
+        "recall": 0.5769230769230769,
+        "f1": 0.6521739130434783
+      },
+      "mean_sheet_median_seconds": 3.732175,
+      "miss_attribution": {
+        "missing_symbol": 24,
+        "line_or_port_routing": 2
+      }
+    },
+    "v5": {
+      "localization": {
+        "tp": 7,
+        "fp": 13,
+        "fn": 21,
+        "precision": 0.35,
+        "recall": 0.25,
+        "f1": 0.2916666666666667
+      },
+      "connections": {
+        "tp": 0,
+        "fp": 10,
+        "fn": 26,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "oracle_boxes": {
+        "tp": 17,
+        "fp": 2,
+        "fn": 9,
+        "precision": 0.8947368421052632,
+        "recall": 0.6538461538461539,
+        "f1": 0.7555555555555555
+      },
+      "mean_sheet_median_seconds": 4.212625,
+      "miss_attribution": {
+        "missing_symbol": 24,
+        "line_or_port_routing": 2
+      }
+    }
+  },
+  "pahala-unseen-page": {
+    "v4": {
+      "localization": {
+        "tp": 7,
+        "fp": 3,
+        "fn": 2,
+        "precision": 0.7,
+        "recall": 0.7777777777777778,
+        "f1": 0.7368421052631579
+      },
+      "connections": {
+        "tp": 1,
+        "fp": 7,
+        "fn": 9,
+        "precision": 0.125,
+        "recall": 0.1,
+        "f1": 0.1111111111111111
+      },
+      "oracle_boxes": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mean_sheet_median_seconds": 3.6253,
+      "miss_attribution": {
+        "missing_symbol": 7,
+        "line_or_port_routing": 2,
+        "recovered": 1
+      }
+    },
+    "v5": {
+      "localization": {
+        "tp": 7,
+        "fp": 3,
+        "fn": 2,
+        "precision": 0.7,
+        "recall": 0.7777777777777778,
+        "f1": 0.7368421052631579
+      },
+      "connections": {
+        "tp": 2,
+        "fp": 3,
+        "fn": 8,
+        "precision": 0.4,
+        "recall": 0.2,
+        "f1": 0.26666666666666666
+      },
+      "oracle_boxes": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888
+      },
+      "mean_sheet_median_seconds": 4.046,
+      "miss_attribution": {
+        "missing_symbol": 7,
+        "line_or_port_routing": 1,
+        "recovered": 2
+      }
+    }
+  },
+  "open100-historical": {
+    "v4": {
+      "localization": {
+        "tp": 276,
+        "fp": 102,
+        "fn": 104,
+        "precision": 0.7301587301587301,
+        "recall": 0.7263157894736842,
+        "f1": 0.7282321899736148
+      },
+      "connections": {
+        "tp": 179,
+        "fp": 144,
+        "fn": 669,
+        "precision": 0.5541795665634675,
+        "recall": 0.21108490566037735,
+        "f1": 0.30572160546541416
+      },
+      "oracle_boxes": {
+        "tp": 427,
+        "fp": 58,
+        "fn": 421,
+        "precision": 0.8804123711340206,
+        "recall": 0.5035377358490566,
+        "f1": 0.6406601650412603
+      },
+      "mean_sheet_median_seconds": 4.264316666666667,
+      "miss_attribution": {
+        "missing_symbol": 457,
+        "disabled_symbol_port": 51,
+        "recovered": 179,
+        "line_or_port_routing": 161
+      }
+    },
+    "v5": {
+      "localization": {
+        "tp": 291,
+        "fp": 128,
+        "fn": 89,
+        "precision": 0.6945107398568019,
+        "recall": 0.7657894736842106,
+        "f1": 0.7284105131414268
+      },
+      "connections": {
+        "tp": 228,
+        "fp": 154,
+        "fn": 620,
+        "precision": 0.5968586387434555,
+        "recall": 0.2688679245283019,
+        "f1": 0.37073170731707317
+      },
+      "oracle_boxes": {
+        "tp": 446,
+        "fp": 66,
+        "fn": 402,
+        "precision": 0.87109375,
+        "recall": 0.5259433962264151,
+        "f1": 0.6558823529411765
+      },
+      "mean_sheet_median_seconds": 4.717966666666666,
+      "miss_attribution": {
+        "missing_symbol": 366,
+        "disabled_symbol_port": 54,
+        "line_or_port_routing": 200,
+        "recovered": 228
+      }
+    }
+  },
+  "pahala-training": {
+    "v4": {
+      "localization": {
+        "tp": 26,
+        "fp": 37,
+        "fn": 22,
+        "precision": 0.4126984126984127,
+        "recall": 0.5416666666666666,
+        "f1": 0.46846846846846846
+      },
+      "connections": {
+        "tp": 12,
+        "fp": 131,
+        "fn": 42,
+        "precision": 0.08391608391608392,
+        "recall": 0.2222222222222222,
+        "f1": 0.1218274111675127
+      },
+      "oracle_boxes": {
+        "tp": 50,
+        "fp": 50,
+        "fn": 4,
+        "precision": 0.5,
+        "recall": 0.9259259259259259,
+        "f1": 0.6493506493506493
+      },
+      "mean_sheet_median_seconds": 1.4379,
+      "miss_attribution": {
+        "missing_symbol": 41,
+        "recovered": 12,
+        "line_or_port_routing": 1
+      }
+    },
+    "v5": {
+      "localization": {
+        "tp": 35,
+        "fp": 18,
+        "fn": 13,
+        "precision": 0.660377358490566,
+        "recall": 0.7291666666666666,
+        "f1": 0.693069306930693
+      },
+      "connections": {
+        "tp": 22,
+        "fp": 62,
+        "fn": 32,
+        "precision": 0.2619047619047619,
+        "recall": 0.4074074074074074,
+        "f1": 0.3188405797101449
+      },
+      "oracle_boxes": {
+        "tp": 50,
+        "fp": 50,
+        "fn": 4,
+        "precision": 0.5,
+        "recall": 0.9259259259259259,
+        "f1": 0.6493506493506493
+      },
+      "mean_sheet_median_seconds": 1.88145,
+      "miss_attribution": {
+        "recovered": 22,
+        "missing_symbol": 22,
+        "line_or_port_routing": 10
+      }
+    }
+  },
+  "synthetic-regression": {
+    "v4": {
+      "localization": {
+        "tp": 283,
+        "fp": 945,
+        "fn": 294,
+        "precision": 0.2304560260586319,
+        "recall": 0.4904679376083189,
+        "f1": 0.31357340720221605
+      },
+      "connections": {
+        "tp": 140,
+        "fp": 1673,
+        "fn": 6446,
+        "precision": 0.07722007722007722,
+        "recall": 0.021257212268448223,
+        "f1": 0.03333730205976902
+      },
+      "oracle_boxes": {
+        "tp": 1851,
+        "fp": 0,
+        "fn": 4735,
+        "precision": 1.0,
+        "recall": 0.2810507136349833,
+        "f1": 0.43878155742562525
+      },
+      "mean_sheet_median_seconds": 3.2435875,
+      "miss_attribution": {
+        "missing_symbol": 5059,
+        "line_or_port_routing": 1387,
+        "recovered": 140
+      }
+    },
+    "v5": {
+      "localization": {
+        "tp": 352,
+        "fp": 801,
+        "fn": 225,
+        "precision": 0.30529054640069386,
+        "recall": 0.610051993067591,
+        "f1": 0.4069364161849711
+      },
+      "connections": {
+        "tp": 138,
+        "fp": 1734,
+        "fn": 6448,
+        "precision": 0.07371794871794872,
+        "recall": 0.02095353780747039,
+        "f1": 0.032631827855284935
+      },
+      "oracle_boxes": {
+        "tp": 1800,
+        "fp": 0,
+        "fn": 4786,
+        "precision": 1.0,
+        "recall": 0.2733070148800486,
+        "f1": 0.42928690674934417
+      },
+      "mean_sheet_median_seconds": 3.48945,
+      "miss_attribution": {
+        "missing_symbol": 4207,
+        "line_or_port_routing": 2241,
+        "recovered": 138
+      }
+    }
+  }
+}

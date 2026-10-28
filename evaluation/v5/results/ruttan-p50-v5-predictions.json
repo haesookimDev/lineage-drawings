@@ -1,0 +1,1495 @@
+{
+  "elements": [
+    {
+      "id": "5bfecf052edd4b5f940324f6f92e5cad",
+      "kind": "unknown",
+      "bbox": [
+        0.877333402633667,
+        0.766001284122467,
+        0.8905833959579468,
+        0.78647780418396
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "round_loop",
+        "perimeter_support": 0.8125,
+        "profile": "generic_fallback",
+        "objectness_score": 0.5546875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a9b2a982b94740eb96ab0e57e9096bae",
+      "kind": "unknown",
+      "bbox": [
+        0.7472916841506958,
+        0.8831294178962708,
+        0.7606250047683716,
+        0.9037346839904785
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "round_loop",
+        "perimeter_support": 0.8229166666666666,
+        "profile": "generic_fallback",
+        "objectness_score": 0.7890625,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "3bb248f26aaf46349a57acb975e5ae10",
+      "kind": "unknown",
+      "bbox": [
+        0.8526250123977661,
+        0.9100450873374939,
+        0.8669583201408386,
+        0.932195782661438
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "round_loop",
+        "perimeter_support": 0.84375,
+        "profile": "generic_fallback",
+        "objectness_score": 0.7421875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "65e1bcd39d2148b29c4684f741b77324",
+      "kind": "unknown",
+      "bbox": [
+        0.032875001430511475,
+        0.8814552426338196,
+        0.04087500274181366,
+        0.8938183784484863
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "round_loop",
+        "perimeter_support": 0.84375,
+        "profile": "generic_fallback",
+        "objectness_score": 0.4296875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "3e433f4ed172421bb820b0a50722dd82",
+      "kind": "unknown",
+      "bbox": [
+        0.8640416264533997,
+        0.9103025794029236,
+        0.8738750219345093,
+        0.9254989624023438
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "round_loop",
+        "perimeter_support": 0.9375,
+        "profile": "generic_fallback",
+        "objectness_score": 0.5234375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "505093588c334ea196eb69c5fb49b586",
+      "kind": "unknown",
+      "bbox": [
+        0.903916597366333,
+        0.7723116874694824,
+        0.9131665825843811,
+        0.7866065502166748
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "round_loop",
+        "perimeter_support": 0.84375,
+        "profile": "generic_fallback",
+        "objectness_score": 0.578125,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "995a62e7a40546d49412a7e6c9243a38",
+      "kind": "unknown",
+      "bbox": [
+        0.83625,
+        0.9568576947842885,
+        0.9566666666666667,
+        0.9813264649066323
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.609375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e6c0f0e77a944fce89e8596d3bed9e62",
+      "kind": "unknown",
+      "bbox": [
+        0.93,
+        0.9388280746941404,
+        0.9775,
+        0.9587894397939472
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.546875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ab24544a52094646adf749ce169c410d",
+      "kind": "unknown",
+      "bbox": [
+        0.8833333333333333,
+        0.9201545396007726,
+        0.93125,
+        0.9587894397939472
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.4609375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "17ea6a40a7344e5dbc580da5c8f3c1bc",
+      "kind": "unknown",
+      "bbox": [
+        0.7891666666666667,
+        0.9066323245331617,
+        0.8375,
+        0.9813264649066323
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.3359375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f40780898ce44a28acb6f4ce7f49a8f2",
+      "kind": "unknown",
+      "bbox": [
+        0.83625,
+        0.8383773341918866,
+        0.9775,
+        0.8860270444301352
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.53125,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "5dd253190dea48e5811b69af85ceec08",
+      "kind": "unknown",
+      "bbox": [
+        0.92875,
+        0.759175788795879,
+        0.9408333333333333,
+        0.77269800386349
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.4140625,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "6537b8c52b7f462697f719bbb427832d",
+      "kind": "unknown",
+      "bbox": [
+        0.685,
+        0.9323889246619447,
+        0.7891666666666667,
+        0.9800386349001932
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.546875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "67ab64ef408844e6bfb061a20a6ff19c",
+      "kind": "unknown",
+      "bbox": [
+        0.04833333333333333,
+        0.8982614294913072,
+        0.10583333333333333,
+        0.9220862846104314
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.515625,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "4d5ad6691e2f492b87b4dac0d2cdc6b8",
+      "kind": "unknown",
+      "bbox": [
+        0.04833333333333333,
+        0.8312942691564713,
+        0.10583333333333333,
+        0.8551191242755957
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.515625,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "97e1d8872d694c5dac2f76bf33cc0010",
+      "kind": "unknown",
+      "bbox": [
+        0.44458333333333333,
+        0.7308435286542176,
+        0.45958333333333334,
+        0.7540244687701223
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.921875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "6cd29da32dca4de3bcac54fd5d465e0b",
+      "kind": "unknown",
+      "bbox": [
+        0.6383333333333333,
+        0.7926593689632968,
+        0.6629166666666667,
+        0.8074694140373471
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.3359375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "52fcce4ee6364360bd614c99e9d6c3ca",
+      "kind": "unknown",
+      "bbox": [
+        0.44458333333333333,
+        0.6986477784932389,
+        0.45958333333333334,
+        0.7224726336123631
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.7578125,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "28a3b91d6c864939b2b759d212808b19",
+      "kind": "unknown",
+      "bbox": [
+        0.3545833333333333,
+        0.6548615582743078,
+        0.36916666666666664,
+        0.6664520283322601
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.421875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d795d33b057f4299a47bb3af681683ba",
+      "kind": "unknown",
+      "bbox": [
+        0.6295833333333334,
+        0.6567933032839666,
+        0.6445833333333333,
+        0.6683837733419189
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "2c7dca601ee444599293a693f3ee28f0",
+      "kind": "unknown",
+      "bbox": [
+        0.7579166666666667,
+        0.7205408886027045,
+        0.7820833333333334,
+        0.7295556986477785
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.328125,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ab0cbcc7b057409e8efd7682762b5907",
+      "kind": "unknown",
+      "bbox": [
+        0.1375,
+        0.5608499678042499,
+        0.30416666666666664,
+        0.6368319381841597
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.65625,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "eb13dcac4e5445ec8178ecc94d53e373",
+      "kind": "unknown",
+      "bbox": [
+        0.5908333333333333,
+        0.5112685125563425,
+        0.6054166666666667,
+        0.5228589826142949
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.3984375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e8605d7db93d4c9aa2df118255c5b120",
+      "kind": "unknown",
+      "bbox": [
+        0.5495833333333333,
+        0.4616870573084353,
+        0.5545833333333333,
+        0.4752092723760464
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.3203125,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "279ea306ba214d48a32509f2236484bf",
+      "kind": "unknown",
+      "bbox": [
+        0.5695833333333333,
+        0.36703155183515773,
+        0.6620833333333334,
+        0.39858338699291695
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.7734375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "cde8498ad6e64eed9e793e1be2279084",
+      "kind": "unknown",
+      "bbox": [
+        0.5070833333333333,
+        0.5428203477141017,
+        0.5220833333333333,
+        0.5660012878300065
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.921875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "3bc117827f0943098f8eafb9f375519d",
+      "kind": "unknown",
+      "bbox": [
+        0.1375,
+        0.2781712813908564,
+        0.30416666666666664,
+        0.3541532517707663
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.609375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "4bf33e9f5308456d94210ccd7bdfb7f5",
+      "kind": "unknown",
+      "bbox": [
+        0.5575,
+        0.28267868641339344,
+        0.60125,
+        0.3116548615582743
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.3984375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e9e4325d7e36461bab6623e74072c770",
+      "kind": "unknown",
+      "bbox": [
+        0.4429166666666667,
+        0.10045074050225371,
+        0.4583333333333333,
+        0.12363168061815841
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.8671875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "6edd3ed7aa3f40c397a3c44d1cc5212c",
+      "kind": "unknown",
+      "bbox": [
+        0.6583333333333333,
+        0.06503541532517708,
+        0.6683333333333333,
+        0.08048937540244688
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.921875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d904b8c25cec40a8b0d9eff6f7138732",
+      "kind": "unknown",
+      "bbox": [
+        0.6170833333333333,
+        0.06503541532517708,
+        0.6270833333333333,
+        0.08048937540244688
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.84375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "9a6afa4944254b47b635b2d1f13232f1",
+      "kind": "unknown",
+      "bbox": [
+        0.04875,
+        0.039278815196394076,
+        0.10625,
+        0.06310367031551835
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.65625,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "7183258b5b6b46378c1d179f64664013",
+      "kind": "unknown",
+      "bbox": [
+        0.9641666666666666,
+        0.707662588538313,
+        0.9775,
+        0.737926593689633
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.6640625,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "cf461bbc636747e7ac90efd88284ea17",
+      "kind": "unknown",
+      "bbox": [
+        0.9525,
+        0.707662588538313,
+        0.9654166666666667,
+        0.737926593689633
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.578125,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e6ea0b0aa4664d44888a8ef79cf5a129",
+      "kind": "unknown",
+      "bbox": [
+        0.6904166666666667,
+        0.7417900837089504,
+        0.695,
+        0.7553122987765615
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.6328125,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "3600f142a1bf4e90b9698d4ab02c6060",
+      "kind": "unknown",
+      "bbox": [
+        0.8066666666666666,
+        0.6967160334835801,
+        0.8241666666666667,
+        0.7340631036703155
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.71875,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "b41c759b76614274913790c9d7da73dd",
+      "kind": "unknown",
+      "bbox": [
+        0.6625,
+        0.4043786220218931,
+        0.6833333333333333,
+        0.4198325820991629
+      ],
+      "source": "image_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "closed_loop",
+        "line_port": true,
+        "profile": "generic_fallback",
+        "objectness_score": 0.6484375,
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e341bf57f3f944b9a74ef200a0a8d48d",
+      "kind": "unknown",
+      "bbox": [
+        0.24250000715255737,
+        0.49066323041915894,
+        0.2566666603088379,
+        0.5183515548706055
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8984375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ea1f2c66406042d69f9f182c7275203c",
+      "kind": "unknown",
+      "bbox": [
+        0.6958333253860474,
+        0.6889890432357788,
+        0.7104166746139526,
+        0.7134578227996826
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8984375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e4416a112155477ab10059146a563fa5",
+      "kind": "unknown",
+      "bbox": [
+        0.3258333206176758,
+        0.3354797065258026,
+        0.3425000011920929,
+        0.3580167293548584
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8984375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "506dfd10441e4f3dbcd897b4cbedcea7",
+      "kind": "unknown",
+      "bbox": [
+        0.5816666483879089,
+        0.25885382294654846,
+        0.5975000262260437,
+        0.2807469367980957
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8984375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e3362e6455fb4b1ca5f92de452c11623",
+      "kind": "unknown",
+      "bbox": [
+        0.7754166722297668,
+        0.6709594130516052,
+        0.7895833253860474,
+        0.695428192615509
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.890625,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "45388f014570433c94efabfae80efa6b",
+      "kind": "unknown",
+      "bbox": [
+        0.19333332777023315,
+        0.49066323041915894,
+        0.20749999582767487,
+        0.5183515548706055
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8828125,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "452e42d0b9294a25857d6f474ddbf016",
+      "kind": "unknown",
+      "bbox": [
+        0.6754166483879089,
+        0.668383777141571,
+        0.6895833611488342,
+        0.6928525567054749
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8828125,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "50250e25c5904b1cbee13503ae127266",
+      "kind": "unknown",
+      "bbox": [
+        0.5350000262260437,
+        0.49259498715400696,
+        0.5491666793823242,
+        0.5170637369155884
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8828125,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1b4e1b0317024b12848222ead63b96ee",
+      "kind": "unknown",
+      "bbox": [
+        0.8762500286102295,
+        0.6072118282318115,
+        0.89083331823349,
+        0.6291049718856812
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.875,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "802b39c70ede4673ba3b53864f8d9a08",
+      "kind": "unknown",
+      "bbox": [
+        0.47083333134651184,
+        0.05022536963224411,
+        0.4854166805744171,
+        0.07469414174556732
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.875,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "c49092e2cb6a43e2aadfa63ef54a3545",
+      "kind": "unknown",
+      "bbox": [
+        0.26875001192092896,
+        0.49066323041915894,
+        0.2829166650772095,
+        0.5183515548706055
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.875,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ad1e8a16e71c46929bd8de78a5e1173f",
+      "kind": "unknown",
+      "bbox": [
+        0.6141666769981384,
+        0.3773341774940491,
+        0.6229166388511658,
+        0.39085641503334045
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.859375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1332b83ce60940278d19df94e037264e",
+      "kind": "unknown",
+      "bbox": [
+        0.8029166460037231,
+        0.2137797772884369,
+        0.8170833587646484,
+        0.23567289113998413
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.859375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "3b01ec75d8384d598f6f071275df04d7",
+      "kind": "unknown",
+      "bbox": [
+        0.17624999582767487,
+        0.5698647499084473,
+        0.19083333015441895,
+        0.5917578935623169
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8515625,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f3547c5384a54dc892c2c00a8418841a",
+      "kind": "unknown",
+      "bbox": [
+        0.6008333563804626,
+        0.620090126991272,
+        0.6175000071525574,
+        0.6419832706451416
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8515625,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "9d493a3c15084e0fb6d9e624139eee21",
+      "kind": "unknown",
+      "bbox": [
+        0.8029166460037231,
+        0.13457824289798737,
+        0.8170833587646484,
+        0.1564713418483734
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.84375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1e2dcf56ae5b4692bf6634ef9122c8ac",
+      "kind": "unknown",
+      "bbox": [
+        0.21708333492279053,
+        0.49066323041915894,
+        0.2316666692495346,
+        0.5183515548706055
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.84375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "0a496e1c73e04658b7cd6afd27b3baba",
+      "kind": "unknown",
+      "bbox": [
+        0.8029166460037231,
+        0.188023179769516,
+        0.8170833587646484,
+        0.20991629362106323
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8359375,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "22c3989335514fc993e27480120602c5",
+      "kind": "unknown",
+      "bbox": [
+        0.19333332777023315,
+        0.2079845517873764,
+        0.20749999582767487,
+        0.23567289113998413
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8203125,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "76ae070579a0418298162eb096b949a0",
+      "kind": "unknown",
+      "bbox": [
+        0.3258333206176758,
+        0.6181584000587463,
+        0.3425000011920929,
+        0.6400514841079712
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8203125,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "4289053b2ed74cf9b7c220aa5f7b1d75",
+      "kind": "unknown",
+      "bbox": [
+        0.26875001192092896,
+        0.2079845517873764,
+        0.2829166650772095,
+        0.23567289113998413
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8203125,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e176dcf2b74f4ddb89c272d1208245c9",
+      "kind": "unknown",
+      "bbox": [
+        0.5620833039283752,
+        0.4745653569698334,
+        0.5787500143051147,
+        0.4964584708213806
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8046875,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "697a525776f241f4847479c96f57512a",
+      "kind": "unknown",
+      "bbox": [
+        0.8725000023841858,
+        0.5402446985244751,
+        0.8945833444595337,
+        0.5743721723556519
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8046875,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "bfcbff35e65640e799acc07085a6b58e",
+      "kind": "unknown",
+      "bbox": [
+        0.8762500286102295,
+        0.6361880302429199,
+        0.89083331823349,
+        0.6580811142921448
+      ],
+      "source": "learned_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "learned_symbol",
+        "detector_score": 0.8046875,
+        "model": "hog-rtrees-symbol-v1",
+        "requires_review": true,
+        "profile": "generic_fallback",
+        "symbol_detector": "hog-rtrees-symbol-v1",
+        "symbol_model_sha256": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21"
+      },
+      "concept_id": null
+    }
+  ],
+  "connections": [
+    {
+      "id": "26d5199b037141d3b67674b1bd5e27c0",
+      "from_id": "65e1bcd39d2148b29c4684f741b77324",
+      "to_id": "17ea6a40a7344e5dbc580da5c8f3c1bc",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "9a3a01de3ef849cd8f925411c6600bd9",
+      "from_id": "65e1bcd39d2148b29c4684f741b77324",
+      "to_id": "6537b8c52b7f462697f719bbb427832d",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "0cc0b5b39b3a4dc5b421ce0b4e5ba9f5",
+      "from_id": "65e1bcd39d2148b29c4684f741b77324",
+      "to_id": "7183258b5b6b46378c1d179f64664013",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "26e16a29c80b45478934a0dbbec5eabc",
+      "from_id": "17ea6a40a7344e5dbc580da5c8f3c1bc",
+      "to_id": "6537b8c52b7f462697f719bbb427832d",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "4b279a3fbd1042509e0e35c1ea9dcc6d",
+      "from_id": "17ea6a40a7344e5dbc580da5c8f3c1bc",
+      "to_id": "7183258b5b6b46378c1d179f64664013",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "579f6bb144154ec6864a4fb4f0090f7b",
+      "from_id": "6537b8c52b7f462697f719bbb427832d",
+      "to_id": "7183258b5b6b46378c1d179f64664013",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "904b65eebdfe43e08640209c0d109e98",
+      "from_id": "995a62e7a40546d49412a7e6c9243a38",
+      "to_id": "e6c0f0e77a944fce89e8596d3bed9e62",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "66c3d59bce904c4eaf45115cbb97277e",
+      "from_id": "e6c0f0e77a944fce89e8596d3bed9e62",
+      "to_id": "ab24544a52094646adf749ce169c410d",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "4346d72e792f42739ea11eee05039b13",
+      "from_id": "e6c0f0e77a944fce89e8596d3bed9e62",
+      "to_id": "f40780898ce44a28acb6f4ce7f49a8f2",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "a73aee8fb44844888c31ea5962a0e0f7",
+      "from_id": "ab24544a52094646adf749ce169c410d",
+      "to_id": "f40780898ce44a28acb6f4ce7f49a8f2",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "a9218ca9920b4603972ff2cdc8de3c23",
+      "from_id": "17ea6a40a7344e5dbc580da5c8f3c1bc",
+      "to_id": "f40780898ce44a28acb6f4ce7f49a8f2",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "51f6b0e7ac3447a28022bf14174a395b",
+      "from_id": "f40780898ce44a28acb6f4ce7f49a8f2",
+      "to_id": "7183258b5b6b46378c1d179f64664013",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "bf52fb2a4dad4bb6b7ece9a0dcd30d8e",
+      "from_id": "f40780898ce44a28acb6f4ce7f49a8f2",
+      "to_id": "cf461bbc636747e7ac90efd88284ea17",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "944f88e1b9cf466ba298acd7fd821022",
+      "from_id": "7183258b5b6b46378c1d179f64664013",
+      "to_id": "cf461bbc636747e7ac90efd88284ea17",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "00362094da30454085102e64172c1f04",
+      "from_id": "eb13dcac4e5445ec8178ecc94d53e373",
+      "to_id": "e8605d7db93d4c9aa2df118255c5b120",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "c30ec4555f264b4b949fda618ccd60ad",
+      "from_id": "279ea306ba214d48a32509f2236484bf",
+      "to_id": "b41c759b76614274913790c9d7da73dd",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "e48fec00370b4753b07a362346230aca",
+      "from_id": "6edd3ed7aa3f40c397a3c44d1cc5212c",
+      "to_id": "d904b8c25cec40a8b0d9eff6f7138732",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "d9e2192029614e358587f6ab93a7e9ca",
+      "from_id": "5bfecf052edd4b5f940324f6f92e5cad",
+      "to_id": "505093588c334ea196eb69c5fb49b586",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "6f3fd7567d164bd8b4b06ffd9dd8ce05",
+      "from_id": "f40780898ce44a28acb6f4ce7f49a8f2",
+      "to_id": "3600f142a1bf4e90b9698d4ab02c6060",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "1924e42ec09b49ecb1275c672e7d462b",
+      "from_id": "ab0cbcc7b057409e8efd7682762b5907",
+      "to_id": "45388f014570433c94efabfae80efa6b",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "8c03b299b5f14161a0e2d79310d7a8a5",
+      "from_id": "4bf33e9f5308456d94210ccd7bdfb7f5",
+      "to_id": "506dfd10441e4f3dbcd897b4cbedcea7",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "f4b8e168eb1740fb9b19f5337f668813",
+      "from_id": "7183258b5b6b46378c1d179f64664013",
+      "to_id": "3600f142a1bf4e90b9698d4ab02c6060",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "3e2cd0f042244697b041c3a260c524a7",
+      "from_id": "cf461bbc636747e7ac90efd88284ea17",
+      "to_id": "3600f142a1bf4e90b9698d4ab02c6060",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    }
+  ]
+}

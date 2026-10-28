@@ -1,0 +1,390 @@
+[
+  {
+    "key": "virden-p5",
+    "proposals": 7000,
+    "nodes": [
+      {
+        "id": "bav",
+        "kind": "valve",
+        "bbox_px": [
+          782,
+          927,
+          802,
+          946
+        ],
+        "best_proposal_iou": 0.025295110419392586,
+        "exact_box_objectness": 0.390625,
+        "best_eligible_score": null
+      },
+      {
+        "id": "snv",
+        "kind": "valve",
+        "bbox_px": [
+          866,
+          912,
+          886,
+          947
+        ],
+        "best_proposal_iou": 0.6841505169868469,
+        "exact_box_objectness": 0.609375,
+        "best_eligible_score": 0.65625
+      },
+      {
+        "id": "lit",
+        "kind": "instrumentation",
+        "bbox_px": [
+          812,
+          969,
+          845,
+          1002
+        ],
+        "best_proposal_iou": 0.7810599207878113,
+        "exact_box_objectness": 0.9765625,
+        "best_eligible_score": 1.0
+      },
+      {
+        "id": "le",
+        "kind": "instrumentation",
+        "bbox_px": [
+          812,
+          1006,
+          845,
+          1039
+        ],
+        "best_proposal_iou": 0.9403122067451477,
+        "exact_box_objectness": 1.0,
+        "best_eligible_score": 0.9921875
+      },
+      {
+        "id": "hs",
+        "kind": "instrumentation",
+        "bbox_px": [
+          929,
+          946,
+          962,
+          980
+        ],
+        "best_proposal_iou": 0.6625953912734985,
+        "exact_box_objectness": 0.9765625,
+        "best_eligible_score": 0.7578125
+      },
+      {
+        "id": "screen",
+        "kind": "equipment",
+        "bbox_px": [
+          813,
+          982,
+          963,
+          1088
+        ],
+        "best_proposal_iou": 0.3381132185459137,
+        "exact_box_objectness": 0.546875,
+        "best_eligible_score": null
+      },
+      {
+        "id": "kgv",
+        "kind": "valve",
+        "bbox_px": [
+          994,
+          1046,
+          1011,
+          1064
+        ],
+        "best_proposal_iou": 0.5947712659835815,
+        "exact_box_objectness": 0.640625,
+        "best_eligible_score": 0.4765625
+      }
+    ]
+  },
+  {
+    "key": "virden-p7",
+    "proposals": 7000,
+    "nodes": [
+      {
+        "id": "a1",
+        "kind": "valve",
+        "bbox_px": [
+          996,
+          918,
+          1013,
+          937
+        ],
+        "best_proposal_iou": 0.4851751923561096,
+        "exact_box_objectness": 0.359375,
+        "best_eligible_score": null
+      },
+      {
+        "id": "p1",
+        "kind": "pump",
+        "bbox_px": [
+          1060,
+          900,
+          1108,
+          946
+        ],
+        "best_proposal_iou": 0.4073827862739563,
+        "exact_box_objectness": 0.53125,
+        "best_eligible_score": null
+      },
+      {
+        "id": "pi1",
+        "kind": "instrumentation",
+        "bbox_px": [
+          1155,
+          858,
+          1189,
+          894
+        ],
+        "best_proposal_iou": 0.595588207244873,
+        "exact_box_objectness": 0.984375,
+        "best_eligible_score": 0.9765625
+      },
+      {
+        "id": "c1",
+        "kind": "valve",
+        "bbox_px": [
+          1218,
+          915,
+          1233,
+          931
+        ],
+        "best_proposal_iou": 0.0032421478535979986,
+        "exact_box_objectness": 0.0546875,
+        "best_eligible_score": null
+      },
+      {
+        "id": "a2",
+        "kind": "valve",
+        "bbox_px": [
+          1274,
+          914,
+          1291,
+          934
+        ],
+        "best_proposal_iou": 0.5352941155433655,
+        "exact_box_objectness": 0.2109375,
+        "best_eligible_score": 0.1015625
+      },
+      {
+        "id": "b1",
+        "kind": "valve",
+        "bbox_px": [
+          996,
+          1077,
+          1014,
+          1096
+        ],
+        "best_proposal_iou": 0.4912280738353729,
+        "exact_box_objectness": 0.09375,
+        "best_eligible_score": null
+      },
+      {
+        "id": "p2",
+        "kind": "pump",
+        "bbox_px": [
+          1061,
+          1061,
+          1109,
+          1104
+        ],
+        "best_proposal_iou": 0.5343383550643921,
+        "exact_box_objectness": 0.6953125,
+        "best_eligible_score": 0.640625
+      },
+      {
+        "id": "pi2",
+        "kind": "instrumentation",
+        "bbox_px": [
+          1154,
+          1019,
+          1189,
+          1055
+        ],
+        "best_proposal_iou": 0.8642857074737549,
+        "exact_box_objectness": 1.0,
+        "best_eligible_score": 1.0
+      },
+      {
+        "id": "c2",
+        "kind": "valve",
+        "bbox_px": [
+          1218,
+          1073,
+          1234,
+          1091
+        ],
+        "best_proposal_iou": 0.7083333134651184,
+        "exact_box_objectness": 0.078125,
+        "best_eligible_score": 0.3125
+      },
+      {
+        "id": "b2",
+        "kind": "valve",
+        "bbox_px": [
+          1275,
+          1074,
+          1292,
+          1093
+        ],
+        "best_proposal_iou": 0.5326370596885681,
+        "exact_box_objectness": 0.1328125,
+        "best_eligible_score": 0.1171875
+      }
+    ]
+  },
+  {
+    "key": "ruttan-p50",
+    "proposals": 7000,
+    "nodes": [
+      {
+        "id": "hs",
+        "kind": "instrumentation",
+        "bbox_px": [
+          782,
+          522,
+          819,
+          559
+        ],
+        "best_proposal_iou": 0.832561194896698,
+        "exact_box_objectness": 0.953125,
+        "best_eligible_score": 0.8984375
+      },
+      {
+        "id": "pump",
+        "kind": "pump",
+        "bbox_px": [
+          823,
+          561,
+          940,
+          593
+        ],
+        "best_proposal_iou": 0.529411792755127,
+        "exact_box_objectness": 0.546875,
+        "best_eligible_score": 0.484375
+      },
+      {
+        "id": "v1",
+        "kind": "valve",
+        "bbox_px": [
+          890,
+          528,
+          909,
+          545
+        ],
+        "best_proposal_iou": 0.0006842974107712507,
+        "exact_box_objectness": 0.203125,
+        "best_eligible_score": null
+      },
+      {
+        "id": "v2",
+        "kind": "valve",
+        "bbox_px": [
+          965,
+          568,
+          985,
+          585
+        ],
+        "best_proposal_iou": 0.06521739065647125,
+        "exact_box_objectness": 0.171875,
+        "best_eligible_score": null
+      }
+    ]
+  },
+  {
+    "key": "ruttan-p62",
+    "proposals": 7000,
+    "nodes": [
+      {
+        "id": "v1",
+        "kind": "valve",
+        "bbox_px": [
+          727,
+          585,
+          740,
+          599
+        ],
+        "best_proposal_iou": 0.2993420958518982,
+        "exact_box_objectness": 0.0078125,
+        "best_eligible_score": null
+      },
+      {
+        "id": "v2",
+        "kind": "valve",
+        "bbox_px": [
+          733,
+          618,
+          745,
+          640
+        ],
+        "best_proposal_iou": 0.4647887349128723,
+        "exact_box_objectness": 0.578125,
+        "best_eligible_score": null
+      },
+      {
+        "id": "sample",
+        "kind": "valve",
+        "bbox_px": [
+          822,
+          655,
+          835,
+          679
+        ],
+        "best_proposal_iou": 0.008436080068349838,
+        "exact_box_objectness": 0.8359375,
+        "best_eligible_score": null
+      },
+      {
+        "id": "pump",
+        "kind": "pump",
+        "bbox_px": [
+          853,
+          634,
+          961,
+          671
+        ],
+        "best_proposal_iou": 0.262390673160553,
+        "exact_box_objectness": 0.6640625,
+        "best_eligible_score": null
+      },
+      {
+        "id": "ae",
+        "kind": "instrumentation",
+        "bbox_px": [
+          899,
+          695,
+          937,
+          734
+        ],
+        "best_proposal_iou": 0.040071383118629456,
+        "exact_box_objectness": 0.8828125,
+        "best_eligible_score": null
+      },
+      {
+        "id": "fe",
+        "kind": "instrumentation",
+        "bbox_px": [
+          949,
+          710,
+          989,
+          751
+        ],
+        "best_proposal_iou": 0.790243923664093,
+        "exact_box_objectness": 0.859375,
+        "best_eligible_score": 0.9140625
+      },
+      {
+        "id": "fit",
+        "kind": "instrumentation",
+        "bbox_px": [
+          909,
+          756,
+          948,
+          791
+        ],
+        "best_proposal_iou": 0.6529625058174133,
+        "exact_box_objectness": 0.8359375,
+        "best_eligible_score": 0.7890625
+      }
+    ]
+  }
+]
