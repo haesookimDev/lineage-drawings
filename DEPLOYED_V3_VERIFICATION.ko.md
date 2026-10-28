@@ -1,8 +1,11 @@
 # v3 형상·포트 추적 개선 운영 검증
 
-검증일: **2026-10-28 · 한국 시간**  
-운영 주소: **https://lineage.haesoo.dev**  
-배포 앱 커밋: **`2e111c42f33a02fb253b82a49e993c661e690ef3`**  
+검증일: **2026-10-28 · 한국 시간**
+
+운영 주소: **https://lineage.haesoo.dev**
+
+배포 앱 커밋: **`2e111c42f33a02fb253b82a49e993c661e690ef3`**
+
 [같은 커밋의 CI](https://github.com/haesookimDev/lineage-drawings/actions/runs/40633332847)
 
 **검증한 컨테이너를 실제 k3s에 배포했고, 외부 API 76개 항목과 브라우저 검토 저장·새로고침 보존이 정상 동작했다.**
