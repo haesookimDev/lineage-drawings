@@ -42,3 +42,12 @@ public synthetic **Complete / Dataset PID** subset (Digitize-PID, Paliwal et al.
 are recorded under `v3/stress-*.json` and `v3/confirmation-*.json`. The v3
 prototypes use only OPEN100 development 0–3; see `../backend/assets/NOTICE.md`.
 All v3 dataset-derived result JSON/CSV and figures follow CC BY-SA 4.0 as above.
+
+## v4 additional real-project validation
+
+The EPA-hosted Pāhala WWTP design/build concept document (July 2021), authored by Brown and Caldwell for County of Hawaii, is used as a separate real-project input:
+https://www.epa.gov/system/files/documents/2021-08/pahala-wwtp-design-build-drawings-2021-07-23.pdf
+
+Source PDF SHA-256: `6b61266b4fc32d6bd209648d8509d9e75be2d9bc584f499d855c2d4f16b8d0af`. Public hosting is not assumed to grant an open-data license. Source PDF, rendered images and complete OCR text are not redistributed. New geometric labels and factual adjacency pairs were manually transcribed for two predeclared process-area ROIs; these are single-annotator evaluation labels, not an official engineering answer key. See `v4/PLAN.json` and `v4/pahala-labels.json`. No training data or templates were derived from this source.
+
+OPEN100 and synthetic PID2Graph-derived v4 predictions, metrics and figures retain the CC BY-SA 4.0 attribution described above. Pāhala geometric prediction JSON omits OCR words and source text.

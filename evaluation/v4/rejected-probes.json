@@ -1,0 +1,26 @@
+{
+  "scope": "Exploratory routing probes with cached v3 synthetic predictions, not final/full-pipeline or unseen tests. All eight synthetic sheets had been evaluated previously.",
+  "ids": [
+    9,
+    34,
+    385,
+    285,
+    317,
+    281,
+    82,
+    382
+  ],
+  "unconditional_port_graph": {
+    "tp": 39,
+    "fp": 919,
+    "fn": 6547,
+    "f1": 0.010339342523860021
+  },
+  "axis_components_only": {
+    "tp": 103,
+    "fp": 1303,
+    "fn": 6483,
+    "f1": 0.025775775775775774
+  },
+  "decision": "Do not replace generic tracing with either route. Production preserves legacy candidates and adds a bounded second-pass component trace; final full-pipeline results are separate."
+}
