@@ -1,0 +1,38 @@
+{
+  "dataset": "PID2Graph Complete / Dataset PID (Digitize-PID synthetic)",
+  "ids": [
+    "9",
+    "34",
+    "385",
+    "285",
+    "317",
+    "281",
+    "82",
+    "382"
+  ],
+  "members": [
+    "PID2Graph/Complete/Dataset PID/9.png",
+    "PID2Graph/Complete/Dataset PID/34.png",
+    "PID2Graph/Complete/Dataset PID/385.png",
+    "PID2Graph/Complete/Dataset PID/285.png",
+    "PID2Graph/Complete/Dataset PID/317.png",
+    "PID2Graph/Complete/Dataset PID/281.png",
+    "PID2Graph/Complete/Dataset PID/82.png",
+    "PID2Graph/Complete/Dataset PID/382.png"
+  ],
+  "selection": "next 8 SHA256-ranked members after excluding the first 8 now used as negative validation",
+  "usage": "additional untouched synthetic confirmation, not real engineering generalization",
+  "legacy_open100": "0-3 development; 4-11 historical regression only, no longer claimed unseen",
+  "labels": "same five semantic categories where present; equipment-adjacency contraction unchanged",
+  "excluded_negative_validation_ids": [
+    "48",
+    "303",
+    "277",
+    "24",
+    "173",
+    "95",
+    "313",
+    "320"
+  ],
+  "reason": "Initial unconditional v3 regressed on the first 8; supported-style gating and legacy fallback were added. New set selected before its predictions or annotations were inspected."
+}

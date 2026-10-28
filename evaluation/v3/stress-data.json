@@ -1,0 +1,187 @@
+{
+  "source": "https://zenodo.org/records/14803338",
+  "archive_url": "https://zenodo.org/api/records/14803338/files/PID2Graph.zip/content",
+  "license": "CC-BY-SA-4.0",
+  "drawing_origin": "Digitize-PID / Dataset-P&ID (synthetic)",
+  "selection_plan": {
+    "dataset": "PID2Graph Complete / Dataset PID (Digitize-PID synthetic)",
+    "ids": [
+      "48",
+      "303",
+      "277",
+      "24",
+      "173",
+      "95",
+      "313",
+      "320"
+    ],
+    "members": [
+      "PID2Graph/Complete/Dataset PID/48.png",
+      "PID2Graph/Complete/Dataset PID/303.png",
+      "PID2Graph/Complete/Dataset PID/277.png",
+      "PID2Graph/Complete/Dataset PID/24.png",
+      "PID2Graph/Complete/Dataset PID/173.png",
+      "PID2Graph/Complete/Dataset PID/95.png",
+      "PID2Graph/Complete/Dataset PID/313.png",
+      "PID2Graph/Complete/Dataset PID/320.png"
+    ],
+    "selection": "first 8 SHA256(seed + archive member); seed=lineage-v3-confirmation-20261028",
+    "usage": "additional untouched synthetic confirmation, not real engineering generalization",
+    "legacy_open100": "0-3 development; 4-11 historical regression only, no longer claimed unseen",
+    "labels": "same five semantic categories where present; equipment-adjacency contraction unchanged"
+  },
+  "files": [
+    {
+      "file": "48.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/48.png",
+      "bytes": 6492403,
+      "sha256": "a8b8497e86a04b371c1b9ca2f94b59cc0afb8b9b8a046c6b25e10c1d68115481",
+      "crc32": "951e7527",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "48.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/48.graphml",
+      "bytes": 131703,
+      "sha256": "72d5e8a16be4f22f32cac9ba239cd217a038b3ba766bced6f5549974bbb94fb9",
+      "crc32": "fbd4b60f"
+    },
+    {
+      "file": "303.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/303.png",
+      "bytes": 6386425,
+      "sha256": "fccc749775cea410f01d293df2dd4fa3a9f98d133ff5c0a9031ca20d6466a766",
+      "crc32": "0284895d",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "303.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/303.graphml",
+      "bytes": 169690,
+      "sha256": "80b66269bddd38366fb61d5f58db1b094e7e580613abe762423db287a6be8a03",
+      "crc32": "cfe485e4"
+    },
+    {
+      "file": "277.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/277.png",
+      "bytes": 5791369,
+      "sha256": "83a9220f420eed2c0f2d3e1ef297ea45cbec3c4f8c7a69725e8247aa145637e2",
+      "crc32": "2a29facb",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "277.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/277.graphml",
+      "bytes": 141942,
+      "sha256": "bc13cd576e43910cdb4de6e97de787ebb78a8f97893a03aaf7291b979a0e0e05",
+      "crc32": "d5a21c21"
+    },
+    {
+      "file": "24.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/24.png",
+      "bytes": 5986631,
+      "sha256": "99a46f2fde72f91193b345909592bd13e7ff7de63bd0147f0ec22f09bb1c9ad1",
+      "crc32": "aafb3b09",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "24.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/24.graphml",
+      "bytes": 151570,
+      "sha256": "8bc407f9bfe006a764577f3b71bde6b40626316b728afbcfd5b5f69556f8f586",
+      "crc32": "7c2a7eeb"
+    },
+    {
+      "file": "173.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/173.png",
+      "bytes": 4808834,
+      "sha256": "1222327f5e8e673125181f86a5e022b7d9a3bb507cde0236d1e45b0dfd1d7dfe",
+      "crc32": "6032588a",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "173.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/173.graphml",
+      "bytes": 197722,
+      "sha256": "4fc5be42bf54538b87e5128539b1ca2b58db84fe5ad898a2cb79f5ba96fb5da5",
+      "crc32": "c19c640c"
+    },
+    {
+      "file": "95.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/95.png",
+      "bytes": 6990204,
+      "sha256": "e478c18a8e3f45d0e87c378e59efcea5c0efd3af4b6e7f7a4df259f50feb5531",
+      "crc32": "44d986f6",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "95.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/95.graphml",
+      "bytes": 133773,
+      "sha256": "f422955c122fae1a5069b17bcc16a0e41b01b2208d57e7cb51120b2caa389ea1",
+      "crc32": "65d3084e"
+    },
+    {
+      "file": "313.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/313.png",
+      "bytes": 6342206,
+      "sha256": "e7f1059191cbd9c4d30ff48bf29c022d5329db22aec9aef23976d57b7ddb492f",
+      "crc32": "6ea80eee",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "313.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/313.graphml",
+      "bytes": 141798,
+      "sha256": "2be25f57a52d130edb3c630aa899cec686b2048cfff490e00b8a3f0647cc1e90",
+      "crc32": "32fba5ea"
+    },
+    {
+      "file": "320.png",
+      "archive_member": "PID2Graph/Complete/Dataset PID/320.png",
+      "bytes": 7167582,
+      "sha256": "9c8655a3cfc62aa825bfef2b17357327bd421ae478cb723b2f3e3dd93fb89d8e",
+      "crc32": "8e977b8a",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "within_production_pixel_limit": true
+    },
+    {
+      "file": "320.graphml",
+      "archive_member": "PID2Graph/Complete/Dataset PID/320.graphml",
+      "bytes": 135206,
+      "sha256": "454b9682eab629ad1e4d1fc86232a5e97cabe62b548c52d170e8c30950e580e8",
+      "crc32": "8ba3b93c"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "dataset": "PID2Graph Complete / Dataset PID (Digitize-PID synthetic)",
+  "ids": [
+    "48",
+    "303",
+    "277",
+    "24",
+    "173",
+    "95",
+    "313",
+    "320"
+  ],
+  "members": [
+    "PID2Graph/Complete/Dataset PID/48.png",
+    "PID2Graph/Complete/Dataset PID/303.png",
+    "PID2Graph/Complete/Dataset PID/277.png",
+    "PID2Graph/Complete/Dataset PID/24.png",
+    "PID2Graph/Complete/Dataset PID/173.png",
+    "PID2Graph/Complete/Dataset PID/95.png",
+    "PID2Graph/Complete/Dataset PID/313.png",
+    "PID2Graph/Complete/Dataset PID/320.png"
+  ],
+  "selection": "first 8 SHA256(seed + archive member); seed=lineage-v3-confirmation-20261028",
+  "usage": "additional untouched synthetic confirmation, not real engineering generalization",
+  "legacy_open100": "0-3 development; 4-11 historical regression only, no longer claimed unseen",
+  "labels": "same five semantic categories where present; equipment-adjacency contraction unchanged"
+}

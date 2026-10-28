@@ -1,0 +1,1360 @@
+{
+  "scorer_sha256": "4dce6a62a2621e650b4df343796b2af6cfe6fca35e2bb57e9a06a1ab1fa180a8",
+  "evaluated_at": "2026-10-28T04:28:54.266407+00:00",
+  "opencv": "4.12.0",
+  "pillow": "12.0.0",
+  "extractor_sources": {
+    "backend/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/db.py": "a2e9f8d9097b88613a7a73de67fe4516b75777d6c1adfb41681bba4d238f6d51",
+    "backend/extract.py": "e42151db9a0f5667a64d0137c8ee198eae5be84df3f4e33156d4aa56bc37f846",
+    "backend/geometry.py": "0e795703da4909cca03153107e08e6beee6c7054077c41e4447b984fcae15c45",
+    "backend/main.py": "d91bd2d760321779cc4634acf05df1ce59c979f2b072361e289397bb911704ac"
+  },
+  "protocol": {
+    "dataset": "PID2Graph v1 / Complete / PID2Graph OPEN100",
+    "development_ids": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "holdout_ids": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "primary_iou": 0.5,
+    "secondary_iou": 0.25,
+    "matching": "maximum-cardinality one-to-one bipartite matching, class agnostic",
+    "semantic_labels": [
+      "valve",
+      "instrumentation",
+      "tank",
+      "pump",
+      "inlet/outlet"
+    ],
+    "edges": "undirected equipment adjacency; paths stop at intermediate equipment; transparent topology nodes; no transitive equipment closure",
+    "notes": "Fixed before inspecting development predictions; no holdout-based parameter selection. Unknown candidates count for localization but do not count as correctly classified semantics. Full uncropped sheets at production MAX_SIDE=2400."
+  },
+  "extractor_ref": "3bb6ff7",
+  "extractor_sha256": "e42151db9a0f5667a64d0137c8ee198eae5be84df3f4e33156d4aa56bc37f846",
+  "split": "all",
+  "explicit_ids": "48,303,277,24,173,95,313,320",
+  "sheets": [
+    {
+      "id": "48",
+      "image_sha256": "a8b8497e86a04b371c1b9ca2f94b59cc0afb8b9b8a046c6b25e10c1d68115481",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_labels": {
+        "crossing": 93,
+        "general": 38,
+        "connector": 203,
+        "valve": 42,
+        "instrumentation": 24,
+        "arrow": 3,
+        "background": 4
+      },
+      "gt_symbols": 66,
+      "gt_connections": 1227,
+      "pred_symbols": 149,
+      "pred_connections": 135,
+      "ocr_words": 351,
+      "elapsed_seconds": 2.858,
+      "warnings": [],
+      "scores": {
+        "0.5": {
+          "localization": {
+            "tp": 31,
+            "fp": 118,
+            "fn": 35,
+            "precision": 0.2080536912751678,
+            "recall": 0.4696969696969697,
+            "f1": 0.28837209302325584
+          },
+          "connections": {
+            "tp": 3,
+            "fp": 132,
+            "fn": 1224,
+            "precision": 0.022222222222222223,
+            "recall": 0.0024449877750611247,
+            "f1": 0.004405286343612335
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "e08f3052b7fb4c1b9c23e28f5652da64": "instrumentation236",
+            "701f46c164bb4dfe941f8d5b705724c7": "valve185",
+            "7d33abc50ba24b518b2a1c80d7c41b06": "instrumentation380",
+            "60333398efcb47f987491b107a9af1d3": "instrumentation305",
+            "420360cf903c4c86963106c97362532e": "instrumentation374",
+            "75d556d84e0542dd9a330a3b6c796599": "instrumentation302",
+            "0af9f0e1ce6e44e8bbaade7c5497894c": "instrumentation170",
+            "f1351025d6124a28abc9ca0324ddce1a": "instrumentation356",
+            "18a7f17f038748038be2a4e39c7da493": "instrumentation263",
+            "61020aea0fd043d0b85c6abf7bd89b44": "instrumentation125",
+            "14bf6f047dd54f5c940275a3c13371cf": "instrumentation188",
+            "d69a612cf968474193aedce5a1fd1f37": "instrumentation152",
+            "81f1507b4bfb492f96288b15c7647fc7": "instrumentation338",
+            "88980ee6b15f41c7b454ecb2dede7658": "instrumentation383",
+            "c129e9b386184a878d7e7cc083e6499b": "instrumentation365",
+            "4159c96fc6874de8be1d768b0c834ece": "instrumentation398",
+            "72d736fb88954f34ad7d5c7ae08cda18": "instrumentation128",
+            "0df0ab5cf8434498b3c78b5cca47c090": "instrumentation320",
+            "a761dec44bce4a18a3b8e8d83d958aac": "instrumentation221",
+            "d50df897c5af4009a05bc37d91b00fdf": "instrumentation362",
+            "8067c44a7b724d1796ad2f6eeb2a7fd0": "instrumentation281",
+            "a2e466ff7cf74834ba6086d3630d6098": "valve296",
+            "221d47f994834ac597317581e640420d": "valve140",
+            "f17bbabf49db4e299ebe99a39cb62985": "valve329",
+            "c780ff232333434eb95bf9c3f46961a1": "valve272",
+            "443103b280254ffbb2744b243c413173": "valve275",
+            "637c6d9ea59046b8a3962bccaca5c1cb": "valve347",
+            "b9d000e9853744c4980af49c79cffef8": "instrumentation242",
+            "8c99c1afc2ef444b8c91760af2fbb5af": "valve266",
+            "646a9aa9e1604d519e2150eb8e11a813": "valve368",
+            "499adc4b039145acb08cae7c24bbb196": "valve164"
+          },
+          "oracle_boxes": {
+            "tp": 252,
+            "fp": 0,
+            "fn": 975,
+            "precision": 1.0,
+            "recall": 0.20537897310513448,
+            "f1": 0.3407707910750507
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 34,
+            "fp": 115,
+            "fn": 32,
+            "precision": 0.22818791946308725,
+            "recall": 0.5151515151515151,
+            "f1": 0.31627906976744186
+          },
+          "connections": {
+            "tp": 4,
+            "fp": 131,
+            "fn": 1223,
+            "precision": 0.02962962962962963,
+            "recall": 0.0032599837000814994,
+            "f1": 0.005873715124816446
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "e08f3052b7fb4c1b9c23e28f5652da64": "instrumentation236",
+            "701f46c164bb4dfe941f8d5b705724c7": "valve185",
+            "7d33abc50ba24b518b2a1c80d7c41b06": "instrumentation380",
+            "60333398efcb47f987491b107a9af1d3": "instrumentation305",
+            "420360cf903c4c86963106c97362532e": "instrumentation374",
+            "75d556d84e0542dd9a330a3b6c796599": "instrumentation302",
+            "0af9f0e1ce6e44e8bbaade7c5497894c": "instrumentation170",
+            "f1351025d6124a28abc9ca0324ddce1a": "instrumentation356",
+            "18a7f17f038748038be2a4e39c7da493": "instrumentation263",
+            "61020aea0fd043d0b85c6abf7bd89b44": "instrumentation125",
+            "14bf6f047dd54f5c940275a3c13371cf": "instrumentation188",
+            "d69a612cf968474193aedce5a1fd1f37": "instrumentation152",
+            "81f1507b4bfb492f96288b15c7647fc7": "instrumentation338",
+            "88980ee6b15f41c7b454ecb2dede7658": "instrumentation383",
+            "c129e9b386184a878d7e7cc083e6499b": "instrumentation365",
+            "4159c96fc6874de8be1d768b0c834ece": "instrumentation398",
+            "72d736fb88954f34ad7d5c7ae08cda18": "instrumentation128",
+            "0df0ab5cf8434498b3c78b5cca47c090": "instrumentation320",
+            "a761dec44bce4a18a3b8e8d83d958aac": "instrumentation221",
+            "d50df897c5af4009a05bc37d91b00fdf": "instrumentation362",
+            "8067c44a7b724d1796ad2f6eeb2a7fd0": "instrumentation281",
+            "a2e466ff7cf74834ba6086d3630d6098": "valve296",
+            "221d47f994834ac597317581e640420d": "valve140",
+            "f17bbabf49db4e299ebe99a39cb62985": "valve329",
+            "c780ff232333434eb95bf9c3f46961a1": "valve272",
+            "443103b280254ffbb2744b243c413173": "valve275",
+            "637c6d9ea59046b8a3962bccaca5c1cb": "valve347",
+            "b4a13d7ca2aa48ca82824fe68259bc25": "valve143",
+            "b9d000e9853744c4980af49c79cffef8": "instrumentation242",
+            "4292a4488c744ec5878d0ee4dcea2650": "valve215",
+            "8c99c1afc2ef444b8c91760af2fbb5af": "valve266",
+            "57985c384c3248ba9ede2c0f0e800a23": "valve287",
+            "646a9aa9e1604d519e2150eb8e11a813": "valve368",
+            "499adc4b039145acb08cae7c24bbb196": "valve164"
+          },
+          "oracle_boxes": {
+            "tp": 252,
+            "fp": 0,
+            "fn": 975,
+            "precision": 1.0,
+            "recall": 0.20537897310513448,
+            "f1": 0.3407707910750507
+          }
+        }
+      }
+    },
+    {
+      "id": "303",
+      "image_sha256": "fccc749775cea410f01d293df2dd4fa3a9f98d133ff5c0a9031ca20d6466a766",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_labels": {
+        "crossing": 103,
+        "general": 34,
+        "connector": 278,
+        "valve": 75,
+        "instrumentation": 30,
+        "arrow": 4,
+        "background": 4
+      },
+      "gt_symbols": 105,
+      "gt_connections": 488,
+      "pred_symbols": 200,
+      "pred_connections": 45,
+      "ocr_words": 261,
+      "elapsed_seconds": 3.229,
+      "warnings": [
+        "이미지 요소 후보를 200개까지 표시합니다. 영역 단위 검토를 권장합니다."
+      ],
+      "scores": {
+        "0.5": {
+          "localization": {
+            "tp": 0,
+            "fp": 200,
+            "fn": 105,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 45,
+            "fn": 488,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "classified_correct": 0,
+          "matched_ids": {},
+          "oracle_boxes": {
+            "tp": 341,
+            "fp": 0,
+            "fn": 147,
+            "precision": 1.0,
+            "recall": 0.6987704918032787,
+            "f1": 0.8226779252110977
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 0,
+            "fp": 200,
+            "fn": 105,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 45,
+            "fn": 488,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "classified_correct": 0,
+          "matched_ids": {},
+          "oracle_boxes": {
+            "tp": 341,
+            "fp": 0,
+            "fn": 147,
+            "precision": 1.0,
+            "recall": 0.6987704918032787,
+            "f1": 0.8226779252110977
+          }
+        }
+      }
+    },
+    {
+      "id": "277",
+      "image_sha256": "83a9220f420eed2c0f2d3e1ef297ea45cbec3c4f8c7a69725e8247aa145637e2",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_labels": {
+        "crossing": 92,
+        "general": 40,
+        "connector": 226,
+        "valve": 57,
+        "instrumentation": 17,
+        "arrow": 5,
+        "background": 4
+      },
+      "gt_symbols": 74,
+      "gt_connections": 743,
+      "pred_symbols": 134,
+      "pred_connections": 100,
+      "ocr_words": 350,
+      "elapsed_seconds": 3.004,
+      "warnings": [],
+      "scores": {
+        "0.5": {
+          "localization": {
+            "tp": 27,
+            "fp": 107,
+            "fn": 47,
+            "precision": 0.20149253731343283,
+            "recall": 0.36486486486486486,
+            "f1": 0.25961538461538464
+          },
+          "connections": {
+            "tp": 3,
+            "fp": 97,
+            "fn": 740,
+            "precision": 0.03,
+            "recall": 0.004037685060565276,
+            "f1": 0.0071174377224199285
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "8e0b75487eb74e458d8223d962d13619": "instrumentation276",
+            "1ff25e8e090b442a9414584edd6e86d5": "instrumentation351",
+            "fcba9570da8a45d089f3dd096d4c5a00": "instrumentation282",
+            "a24e763f25db4433a364eb7ec1256d95": "instrumentation126",
+            "0d1629ad059447da849b13652ee3e75f": "instrumentation345",
+            "72288d4f587548678406f60fa8011988": "instrumentation210",
+            "37365229aa3d4dbab9cea97b0c493d23": "instrumentation135",
+            "9015aa1b6fe74efa9c8b4716d66cd4b6": "instrumentation408",
+            "685307afea424741b106a278429facd6": "instrumentation255",
+            "f3349fde9d514282ade658a044986b60": "instrumentation312",
+            "bda4c575f29e4c99b118d8538cce94e8": "instrumentation435",
+            "2319b78646ba4ec3a79405aea14b77d6": "instrumentation288",
+            "f6804104cafd4987b385d152c4448450": "instrumentation252",
+            "86b5d622518a49c69a7192a3ebf30725": "valve429",
+            "9fa3572fad5e43c7a19a08d556a5505e": "valve171",
+            "773f6ffb045c42489afecc9a635aed13": "valve120",
+            "e94df785fc6d4ae5b04687e9d56e371d": "valve414",
+            "a686a66ff4b548c3b3f80858bacb8456": "valve153",
+            "31969a5cb2f740fa8d2981891214783d": "valve234",
+            "0a801befaa504cefaf8c23f7387585f0": "instrumentation306",
+            "8121581422ca4a89a69b22156ed61fee": "instrumentation387",
+            "2e4fbb3023804fca8cfd8c136965b026": "valve321",
+            "ba296c4a8e95472c9b8e5a0356e71d9b": "valve333",
+            "0be3d3549cb94326a3cae947bc7ae16a": "valve189",
+            "13537607dee843e3bd5e21eceb900124": "valve405",
+            "5a5a91d15ff840619d009d6b14705b06": "valve225",
+            "6a463447bf194748b83782aa553d61a5": "valve357"
+          },
+          "oracle_boxes": {
+            "tp": 121,
+            "fp": 0,
+            "fn": 622,
+            "precision": 1.0,
+            "recall": 0.16285329744279947,
+            "f1": 0.2800925925925926
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 33,
+            "fp": 101,
+            "fn": 41,
+            "precision": 0.2462686567164179,
+            "recall": 0.44594594594594594,
+            "f1": 0.3173076923076923
+          },
+          "connections": {
+            "tp": 5,
+            "fp": 95,
+            "fn": 738,
+            "precision": 0.05,
+            "recall": 0.006729475100942127,
+            "f1": 0.011862396204033215
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "8e0b75487eb74e458d8223d962d13619": "instrumentation276",
+            "1ff25e8e090b442a9414584edd6e86d5": "instrumentation351",
+            "fcba9570da8a45d089f3dd096d4c5a00": "instrumentation282",
+            "a24e763f25db4433a364eb7ec1256d95": "instrumentation126",
+            "0d1629ad059447da849b13652ee3e75f": "instrumentation345",
+            "72288d4f587548678406f60fa8011988": "instrumentation210",
+            "37365229aa3d4dbab9cea97b0c493d23": "instrumentation135",
+            "9015aa1b6fe74efa9c8b4716d66cd4b6": "instrumentation408",
+            "685307afea424741b106a278429facd6": "instrumentation255",
+            "f3349fde9d514282ade658a044986b60": "instrumentation312",
+            "bda4c575f29e4c99b118d8538cce94e8": "instrumentation435",
+            "2319b78646ba4ec3a79405aea14b77d6": "instrumentation288",
+            "f6804104cafd4987b385d152c4448450": "instrumentation252",
+            "86b5d622518a49c69a7192a3ebf30725": "valve429",
+            "9fa3572fad5e43c7a19a08d556a5505e": "valve171",
+            "773f6ffb045c42489afecc9a635aed13": "valve120",
+            "e94df785fc6d4ae5b04687e9d56e371d": "valve414",
+            "a686a66ff4b548c3b3f80858bacb8456": "valve153",
+            "aa392a4cc73944378fab884e16b64ecc": "valve420",
+            "31969a5cb2f740fa8d2981891214783d": "valve234",
+            "0a801befaa504cefaf8c23f7387585f0": "instrumentation306",
+            "8121581422ca4a89a69b22156ed61fee": "instrumentation387",
+            "4a6c1c3d74184fed8d516e6b9fc2e8a7": "valve348",
+            "b3a2c8392dd94648bd6e1f69cb4c01d1": "valve180",
+            "8cf97d37e1ed40279a3f8ce2c1378794": "valve273",
+            "2e4fbb3023804fca8cfd8c136965b026": "valve321",
+            "ba296c4a8e95472c9b8e5a0356e71d9b": "valve333",
+            "0be3d3549cb94326a3cae947bc7ae16a": "valve189",
+            "076794c43d694e968b222552341521ea": "valve147",
+            "b942f46b5bd84505b93785299018e1c8": "valve297",
+            "13537607dee843e3bd5e21eceb900124": "valve405",
+            "5a5a91d15ff840619d009d6b14705b06": "valve225",
+            "6a463447bf194748b83782aa553d61a5": "valve357"
+          },
+          "oracle_boxes": {
+            "tp": 121,
+            "fp": 0,
+            "fn": 622,
+            "precision": 1.0,
+            "recall": 0.16285329744279947,
+            "f1": 0.2800925925925926
+          }
+        }
+      }
+    },
+    {
+      "id": "24",
+      "image_sha256": "99a46f2fde72f91193b345909592bd13e7ff7de63bd0147f0ec22f09bb1c9ad1",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_labels": {
+        "crossing": 111,
+        "general": 37,
+        "connector": 232,
+        "valve": 52,
+        "instrumentation": 27,
+        "arrow": 4,
+        "background": 4
+      },
+      "gt_symbols": 79,
+      "gt_connections": 748,
+      "pred_symbols": 167,
+      "pred_connections": 273,
+      "ocr_words": 333,
+      "elapsed_seconds": 3.221,
+      "warnings": [],
+      "scores": {
+        "0.5": {
+          "localization": {
+            "tp": 38,
+            "fp": 129,
+            "fn": 41,
+            "precision": 0.2275449101796407,
+            "recall": 0.4810126582278481,
+            "f1": 0.3089430894308943
+          },
+          "connections": {
+            "tp": 25,
+            "fp": 248,
+            "fn": 723,
+            "precision": 0.09157509157509157,
+            "recall": 0.03342245989304813,
+            "f1": 0.04897159647404505
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "89419146629444f88bb957ab3f6fe0c7": "instrumentation191",
+            "bc47a32b6ad647d2a9d52a26ec961ca9": "instrumentation350",
+            "86babecf92aa4d28a5927de79d3594ef": "instrumentation401",
+            "9b88c8cfe0b041f7923fb6054300504c": "instrumentation155",
+            "b871d94dbf944cfd8ec8bd7feb1a3c7e": "instrumentation287",
+            "a8c354d7f7aa447cb4f6e00ebf88422d": "instrumentation443",
+            "8785e5cbc2704daaaee6a36026f30b7f": "instrumentation386",
+            "1ee994286b9444179cb5354dc1d0a06a": "instrumentation422",
+            "879ac23b93854ee2b94e0c93dc36694d": "instrumentation389",
+            "4cd77f9051564d82a55acb219225cfe5": "instrumentation188",
+            "393b48408ce1491486d6582c903c21c6": "instrumentation335",
+            "e4b01493e74247e1ad87b9a45d2537ae": "instrumentation284",
+            "dbe9020eec3441c68dca1932f00d494d": "instrumentation251",
+            "65ff78f2365e442fa888f7654651c51d": "instrumentation224",
+            "19971ce6ea6b4fbbb6851c2482338768": "instrumentation179",
+            "3b86105594314a64b0e4a6f222187d3d": "instrumentation203",
+            "190e6f5d5adb48948e2f38647987028b": "instrumentation347",
+            "b35c54636fce4fc2ae10946d1e65deb3": "instrumentation233",
+            "306ff606ee134cda92439961f59eeb3e": "instrumentation140",
+            "9259aeb8d95f4c60b21fa2371de199ee": "valve182",
+            "e72e661817084c9f897ae1535e74eb68": "valve248",
+            "e1e6e1eb3653425e998dfdc2845bc7fb": "valve221",
+            "61ff4fd60bb44f399a958ddf7e0290c1": "instrumentation242",
+            "1c676c606a1641b391407f6112ca98ee": "valve371",
+            "e83fa0c5b8ef4ab79698a4ef5f9c6d7d": "instrumentation170",
+            "6a38736214cf4d93b722aac7499ec230": "instrumentation356",
+            "717c0c09570e44199aa949b25f177f19": "valve407",
+            "d29bf9f9bdfa4f5eb2371050f0272d89": "instrumentation431",
+            "02651c434caf4fcd8d5e17e93330cacd": "instrumentation263",
+            "1951cfc32b1d41e7a8a86c4415f16b96": "valve302",
+            "71f1e9340d9a4e4da4b585162353ae01": "valve230",
+            "ef94a3d50dc6407b8c867a818411c7ba": "valve167",
+            "a4ba2c2c2391497ba35f675304975193": "valve152",
+            "08f74691a21845e19daf3203f813682b": "valve434",
+            "4c30781202a94605bff1d14c25b26570": "valve209",
+            "02714319c06d41fba154011d76f20dc8": "valve197",
+            "14cc6cfe9e004d7fb0b134daeec33a7b": "valve269",
+            "329420d408af4db19ca45e5119d14f3f": "valve275"
+          },
+          "oracle_boxes": {
+            "tp": 207,
+            "fp": 0,
+            "fn": 541,
+            "precision": 1.0,
+            "recall": 0.2767379679144385,
+            "f1": 0.43350785340314135
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 51,
+            "fp": 116,
+            "fn": 28,
+            "precision": 0.30538922155688625,
+            "recall": 0.6455696202531646,
+            "f1": 0.4146341463414634
+          },
+          "connections": {
+            "tp": 40,
+            "fp": 233,
+            "fn": 708,
+            "precision": 0.14652014652014653,
+            "recall": 0.053475935828877004,
+            "f1": 0.07835455435847209
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "89419146629444f88bb957ab3f6fe0c7": "instrumentation191",
+            "bc47a32b6ad647d2a9d52a26ec961ca9": "instrumentation350",
+            "86babecf92aa4d28a5927de79d3594ef": "instrumentation401",
+            "9b88c8cfe0b041f7923fb6054300504c": "instrumentation155",
+            "b871d94dbf944cfd8ec8bd7feb1a3c7e": "instrumentation287",
+            "a8c354d7f7aa447cb4f6e00ebf88422d": "instrumentation443",
+            "8785e5cbc2704daaaee6a36026f30b7f": "instrumentation386",
+            "1ee994286b9444179cb5354dc1d0a06a": "instrumentation422",
+            "879ac23b93854ee2b94e0c93dc36694d": "instrumentation389",
+            "4cd77f9051564d82a55acb219225cfe5": "instrumentation188",
+            "393b48408ce1491486d6582c903c21c6": "instrumentation335",
+            "e4b01493e74247e1ad87b9a45d2537ae": "instrumentation284",
+            "dbe9020eec3441c68dca1932f00d494d": "instrumentation251",
+            "65ff78f2365e442fa888f7654651c51d": "instrumentation224",
+            "19971ce6ea6b4fbbb6851c2482338768": "instrumentation179",
+            "3b86105594314a64b0e4a6f222187d3d": "instrumentation203",
+            "190e6f5d5adb48948e2f38647987028b": "instrumentation347",
+            "b35c54636fce4fc2ae10946d1e65deb3": "instrumentation233",
+            "306ff606ee134cda92439961f59eeb3e": "instrumentation140",
+            "9259aeb8d95f4c60b21fa2371de199ee": "valve182",
+            "e72e661817084c9f897ae1535e74eb68": "valve248",
+            "282aecc7b10b45f8a1516390d9d6fb1f": "instrumentation362",
+            "e1e6e1eb3653425e998dfdc2845bc7fb": "valve221",
+            "58aef2c145a3421abd77cdcc516c3ee1": "valve344",
+            "61ff4fd60bb44f399a958ddf7e0290c1": "instrumentation242",
+            "78d059d4821042508307f9c2f87283b1": "valve341",
+            "f557fae695054497bea66e1ae26e0ecc": "valve143",
+            "786888171baa466b993ab04590dc3834": "valve314",
+            "526f907526994307a5f59aeac5ba019e": "valve452",
+            "1c676c606a1641b391407f6112ca98ee": "valve371",
+            "e83fa0c5b8ef4ab79698a4ef5f9c6d7d": "instrumentation170",
+            "2112675813464a37b5d96985bb95a927": "valve413",
+            "bce07e5697264b49b21b4b719e318533": "valve164",
+            "80f2c672de1942aea93554b3b044a7d8": "valve149",
+            "79ae3c0c5c374314aa5cf93a6d7fd13b": "valve446",
+            "6a38736214cf4d93b722aac7499ec230": "instrumentation356",
+            "717c0c09570e44199aa949b25f177f19": "valve407",
+            "d29bf9f9bdfa4f5eb2371050f0272d89": "instrumentation431",
+            "02651c434caf4fcd8d5e17e93330cacd": "instrumentation263",
+            "472d828aae2c416e886d321b669fdaee": "valve260",
+            "98ff8785a37241d2aec88013054e0830": "valve461",
+            "1951cfc32b1d41e7a8a86c4415f16b96": "valve302",
+            "41106bfc90b848cb85ed0da27f1d347e": "valve218",
+            "71f1e9340d9a4e4da4b585162353ae01": "valve230",
+            "ef94a3d50dc6407b8c867a818411c7ba": "valve167",
+            "a4ba2c2c2391497ba35f675304975193": "valve152",
+            "08f74691a21845e19daf3203f813682b": "valve434",
+            "4c30781202a94605bff1d14c25b26570": "valve209",
+            "02714319c06d41fba154011d76f20dc8": "valve197",
+            "14cc6cfe9e004d7fb0b134daeec33a7b": "valve269",
+            "329420d408af4db19ca45e5119d14f3f": "valve275"
+          },
+          "oracle_boxes": {
+            "tp": 207,
+            "fp": 0,
+            "fn": 541,
+            "precision": 1.0,
+            "recall": 0.2767379679144385,
+            "f1": 0.43350785340314135
+          }
+        }
+      }
+    },
+    {
+      "id": "173",
+      "image_sha256": "1222327f5e8e673125181f86a5e022b7d9a3bb507cde0236d1e45b0dfd1d7dfe",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_labels": {
+        "crossing": 126,
+        "general": 43,
+        "connector": 320,
+        "valve": 86,
+        "instrumentation": 31,
+        "arrow": 4,
+        "background": 4
+      },
+      "gt_symbols": 117,
+      "gt_connections": 679,
+      "pred_symbols": 121,
+      "pred_connections": 279,
+      "ocr_words": 281,
+      "elapsed_seconds": 3.18,
+      "warnings": [],
+      "scores": {
+        "0.5": {
+          "localization": {
+            "tp": 47,
+            "fp": 74,
+            "fn": 70,
+            "precision": 0.3884297520661157,
+            "recall": 0.4017094017094017,
+            "f1": 0.3949579831932773
+          },
+          "connections": {
+            "tp": 31,
+            "fp": 248,
+            "fn": 648,
+            "precision": 0.1111111111111111,
+            "recall": 0.045655375552282766,
+            "f1": 0.06471816283924843
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "0d35f7fa22b74c12b31e3511cf90d6a6": "instrumentation530",
+            "ebf7a9cbfaa74e4e9e5b808e1b4694bb": "instrumentation245",
+            "49a7d3074e514d5483dad482e1bf3fcc": "instrumentation179",
+            "371712317705423fbda534591a237160": "instrumentation353",
+            "92a4342cc6a24c71ae2171e74b5b3cc7": "instrumentation158",
+            "3d2d5a4141fa409096c55639f2d06c3e": "instrumentation209",
+            "0a1d58d12c084572ba8c672cefd8161c": "instrumentation380",
+            "a274b6163e0c408a8c585e453326317d": "instrumentation218",
+            "692249e868d84f52b2e6d0fe7bf26254": "instrumentation452",
+            "7bc301a8c98a4830884b2a7ce0ec9066": "instrumentation512",
+            "19a0d4d6280647ac96968d43f6c3baef": "instrumentation437",
+            "9a1299169949415cb542de1cdbb5ec4f": "instrumentation347",
+            "4c04af2c4d954fd98f199ea0df7e019b": "instrumentation341",
+            "4aa1054bc5dd4c4a961d96a5c0cf31a6": "instrumentation443",
+            "ab3239fab14a4c5e8c28c473af220312": "instrumentation212",
+            "fe0c4efdab1d43bc92a2760ba2e16e0e": "instrumentation194",
+            "6e5c76159179483db895c2b477af2569": "instrumentation581",
+            "270e84f23dcf43ed82067e91981b124e": "instrumentation395",
+            "d0662ee9bd8347b3886fc256a56a02cc": "instrumentation338",
+            "687ce317bcc343ceaa83a5fd8ad52074": "instrumentation371",
+            "5570232742bc4d03a8664e3c61478a1a": "valve542",
+            "4d0dae4600854d4b8a380b925aad4c59": "instrumentation257",
+            "41b4b7790f8b4e8296c4ba1f3e3dcab0": "instrumentation227",
+            "b545c86c4e284b70a3381e0a4ff0d3b7": "valve569",
+            "cbdf0f55ae4c43e5bc53137a96700d1b": "valve317",
+            "0a91f287d6964b128d6f96e6492a0680": "valve281",
+            "c4cba7ac5dd348ec812f0aa7cbeee4cd": "instrumentation563",
+            "e2cae9ea0516497584d0f995bd41d962": "instrumentation554",
+            "cd120972011949168ff31cf858332d7f": "valve593",
+            "51d5ccc4087d4597ab680598812041ea": "instrumentation539",
+            "dd4a8e92cae646c5bb0534feeffc1d09": "instrumentation242",
+            "4e92bed84f4542bca9ce7f68bb9340ea": "instrumentation236",
+            "9dca69c5a87d471dbf9d0da8564ab2c8": "instrumentation413",
+            "8be41632286c4d839db0f61722f9ebe4": "instrumentation326",
+            "70fc715e8d5b4fc08771df76eaec128c": "valve335",
+            "f05d71c1acf248479a1bd87b311883d4": "valve545",
+            "49b594bac03f4502a92e5e04d8f9e5f1": "valve548",
+            "e468c169f2fc481799d2cf2bbb307768": "valve533",
+            "6937f344a13d468fbc590b136dc617b2": "valve524",
+            "2a5a02d0db0c476c82e710fc0d53d254": "valve383",
+            "3bf5f45cd6f4493b8b8cc602845e1a5f": "valve233",
+            "d6195218c2c74e5aaf9e807969006bc4": "valve518",
+            "5371f3808d8a43c198d56bb0480ba799": "valve560",
+            "11c844da8bbf40eb920a34a48b413fe7": "valve308",
+            "be1cbec9cd36406d9a7c23ec3366d903": "valve491",
+            "e2dd48bbf6d246c2aaa1c34dc6ababed": "valve416",
+            "13b6092cd4ba493cb0055fa6ab631406": "valve248"
+          },
+          "oracle_boxes": {
+            "tp": 379,
+            "fp": 0,
+            "fn": 300,
+            "precision": 1.0,
+            "recall": 0.5581737849779087,
+            "f1": 0.7164461247637051
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 57,
+            "fp": 64,
+            "fn": 60,
+            "precision": 0.47107438016528924,
+            "recall": 0.48717948717948717,
+            "f1": 0.4789915966386555
+          },
+          "connections": {
+            "tp": 44,
+            "fp": 235,
+            "fn": 635,
+            "precision": 0.15770609318996415,
+            "recall": 0.06480117820324006,
+            "f1": 0.0918580375782881
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "0d35f7fa22b74c12b31e3511cf90d6a6": "instrumentation530",
+            "ebf7a9cbfaa74e4e9e5b808e1b4694bb": "instrumentation245",
+            "49a7d3074e514d5483dad482e1bf3fcc": "instrumentation179",
+            "371712317705423fbda534591a237160": "instrumentation353",
+            "92a4342cc6a24c71ae2171e74b5b3cc7": "instrumentation158",
+            "3d2d5a4141fa409096c55639f2d06c3e": "instrumentation209",
+            "0a1d58d12c084572ba8c672cefd8161c": "instrumentation380",
+            "a274b6163e0c408a8c585e453326317d": "instrumentation218",
+            "692249e868d84f52b2e6d0fe7bf26254": "instrumentation452",
+            "7bc301a8c98a4830884b2a7ce0ec9066": "instrumentation512",
+            "19a0d4d6280647ac96968d43f6c3baef": "instrumentation437",
+            "9a1299169949415cb542de1cdbb5ec4f": "instrumentation347",
+            "4c04af2c4d954fd98f199ea0df7e019b": "instrumentation341",
+            "4aa1054bc5dd4c4a961d96a5c0cf31a6": "instrumentation443",
+            "ab3239fab14a4c5e8c28c473af220312": "instrumentation212",
+            "fe0c4efdab1d43bc92a2760ba2e16e0e": "instrumentation194",
+            "6e5c76159179483db895c2b477af2569": "instrumentation581",
+            "270e84f23dcf43ed82067e91981b124e": "instrumentation395",
+            "d0662ee9bd8347b3886fc256a56a02cc": "instrumentation338",
+            "687ce317bcc343ceaa83a5fd8ad52074": "instrumentation371",
+            "5570232742bc4d03a8664e3c61478a1a": "valve542",
+            "4d0dae4600854d4b8a380b925aad4c59": "instrumentation257",
+            "41b4b7790f8b4e8296c4ba1f3e3dcab0": "instrumentation227",
+            "b545c86c4e284b70a3381e0a4ff0d3b7": "valve569",
+            "cbdf0f55ae4c43e5bc53137a96700d1b": "valve317",
+            "0a91f287d6964b128d6f96e6492a0680": "valve281",
+            "c4cba7ac5dd348ec812f0aa7cbeee4cd": "instrumentation563",
+            "e2cae9ea0516497584d0f995bd41d962": "instrumentation554",
+            "45e4e2bf7fac4d3da12d4c48708932de": "valve401",
+            "f27a01ac3413450c97860e6cdf1fcbeb": "valve506",
+            "cd120972011949168ff31cf858332d7f": "valve593",
+            "c8545f6dc1744e4686952a72c6fa8b66": "valve272",
+            "2b6f4c886d7f4cbe88702dd791b4f619": "valve497",
+            "51d5ccc4087d4597ab680598812041ea": "instrumentation539",
+            "3389b6284938460090827ce986cf9f90": "valve536",
+            "dd4a8e92cae646c5bb0534feeffc1d09": "instrumentation242",
+            "4e92bed84f4542bca9ce7f68bb9340ea": "instrumentation236",
+            "9dca69c5a87d471dbf9d0da8564ab2c8": "instrumentation413",
+            "8be41632286c4d839db0f61722f9ebe4": "instrumentation326",
+            "70fc715e8d5b4fc08771df76eaec128c": "valve335",
+            "740cc3b3fae44bee9d8d5f582f6b4b4a": "valve224",
+            "f05d71c1acf248479a1bd87b311883d4": "valve545",
+            "49b594bac03f4502a92e5e04d8f9e5f1": "valve548",
+            "e468c169f2fc481799d2cf2bbb307768": "valve533",
+            "6937f344a13d468fbc590b136dc617b2": "valve524",
+            "2a5a02d0db0c476c82e710fc0d53d254": "valve383",
+            "3bf5f45cd6f4493b8b8cc602845e1a5f": "valve233",
+            "d6195218c2c74e5aaf9e807969006bc4": "valve518",
+            "5371f3808d8a43c198d56bb0480ba799": "valve560",
+            "4a6693db6f5a4af99c063112a3f17d00": "valve572",
+            "11c844da8bbf40eb920a34a48b413fe7": "valve308",
+            "2115f94a667544eaa13b571e4543e792": "valve323",
+            "870e398ee7fc49f3954e80ccc78d4d93": "valve344",
+            "be1cbec9cd36406d9a7c23ec3366d903": "valve491",
+            "e2dd48bbf6d246c2aaa1c34dc6ababed": "valve416",
+            "13b6092cd4ba493cb0055fa6ab631406": "valve248",
+            "233c2b8197b34e0aba04c8fa9a6bb992": "valve332"
+          },
+          "oracle_boxes": {
+            "tp": 379,
+            "fp": 0,
+            "fn": 300,
+            "precision": 1.0,
+            "recall": 0.5581737849779087,
+            "f1": 0.7164461247637051
+          }
+        }
+      }
+    },
+    {
+      "id": "95",
+      "image_sha256": "e478c18a8e3f45d0e87c378e59efcea5c0efd3af4b6e7f7a4df259f50feb5531",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_labels": {
+        "crossing": 106,
+        "general": 23,
+        "connector": 199,
+        "valve": 54,
+        "instrumentation": 23,
+        "arrow": 1,
+        "background": 4
+      },
+      "gt_symbols": 77,
+      "gt_connections": 1322,
+      "pred_symbols": 185,
+      "pred_connections": 157,
+      "ocr_words": 315,
+      "elapsed_seconds": 2.694,
+      "warnings": [],
+      "scores": {
+        "0.5": {
+          "localization": {
+            "tp": 35,
+            "fp": 150,
+            "fn": 42,
+            "precision": 0.1891891891891892,
+            "recall": 0.45454545454545453,
+            "f1": 0.26717557251908397
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 151,
+            "fn": 1316,
+            "precision": 0.03821656050955414,
+            "recall": 0.0045385779122541605,
+            "f1": 0.008113590263691683
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "7c86f785fa7049e8bc4e490500320ac3": "instrumentation278",
+            "a53c0b36b1e042c58e2a417c73f43e24": "instrumentation296",
+            "777901622f044724bad29714ca754940": "instrumentation311",
+            "aa54450a53c44d3dbb0e325966d5b7f2": "instrumentation329",
+            "8b240a38891648719be10a365b71726c": "instrumentation377",
+            "45d689da7cd84b6193ce751c3b180c14": "instrumentation134",
+            "aee2c887bd7d4fa89447f1e317340abf": "instrumentation164",
+            "1bd5b5b854474c3f8cc18287f5b8c5e2": "instrumentation185",
+            "80bed14a05ee4aa7b688db3fea34464a": "instrumentation227",
+            "294904f646e9480cb06315da3108ce92": "instrumentation392",
+            "46b12b32ea864674888897d1026ddfcd": "instrumentation218",
+            "0bdbf758abb245c0a3745e287affd0d1": "instrumentation401",
+            "7ec430af10e1468da0ec35b5cd519e9a": "instrumentation398",
+            "ea725898dab14a96b1078e35297a5c3b": "valve257",
+            "e26ee3759647422fbfdf5ab20b8021a5": "valve341",
+            "45c7d03b52aa46e7981d462307c860ab": "valve128",
+            "e4944d0d54fe466ebc75a6118de9c543": "valve239",
+            "830b2616aa644883867b6dd792586e78": "valve209",
+            "385d5f34a68249caa0e0daff942e4bdc": "instrumentation281",
+            "056880473e004fd48f40e5dc70ddf8a4": "valve272",
+            "8fc2c72185da4b04a25ecda17a22f85e": "instrumentation275",
+            "6ff3e348076a4c3e97f008244e8b2982": "instrumentation290",
+            "c52c2f541ca048149ea4adca6fa3034d": "valve320",
+            "86cfde0e01474c84891e8b3c282d3fde": "valve380",
+            "f2db3e1d5fd440b7afbca5c6ef3e7c9d": "instrumentation350",
+            "24ead4fae74845f68b676fb9ee984a79": "valve155",
+            "c3f50383db6045d19d1b61b32d6d7abb": "instrumentation233",
+            "b793cc1ff42647e6bfb7386cdbbcb805": "valve119",
+            "86bba0073b6e453eb29db5f9fe54c8bd": "instrumentation368",
+            "f1141cd3f44c4c058dc0c92bc85264df": "instrumentation338",
+            "7d2e955aa51f49c79fc7818f8b979ac9": "valve254",
+            "1e6f0d055f064aa69027b6680c1ce87f": "valve284",
+            "6aa499c6f70d4e9db08504757cddfba2": "valve173",
+            "39783e80867542d29668135d5cf6491d": "valve260",
+            "a3d2ef31cc784699904acc03e52fd658": "valve176"
+          },
+          "oracle_boxes": {
+            "tp": 95,
+            "fp": 0,
+            "fn": 1227,
+            "precision": 1.0,
+            "recall": 0.0718608169440242,
+            "f1": 0.1340860973888497
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 41,
+            "fp": 144,
+            "fn": 36,
+            "precision": 0.22162162162162163,
+            "recall": 0.5324675324675324,
+            "f1": 0.31297709923664124
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 151,
+            "fn": 1316,
+            "precision": 0.03821656050955414,
+            "recall": 0.0045385779122541605,
+            "f1": 0.008113590263691683
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "7c86f785fa7049e8bc4e490500320ac3": "instrumentation278",
+            "a53c0b36b1e042c58e2a417c73f43e24": "instrumentation296",
+            "777901622f044724bad29714ca754940": "instrumentation311",
+            "aa54450a53c44d3dbb0e325966d5b7f2": "instrumentation329",
+            "8b240a38891648719be10a365b71726c": "instrumentation377",
+            "45d689da7cd84b6193ce751c3b180c14": "instrumentation134",
+            "aee2c887bd7d4fa89447f1e317340abf": "instrumentation164",
+            "1bd5b5b854474c3f8cc18287f5b8c5e2": "instrumentation185",
+            "80bed14a05ee4aa7b688db3fea34464a": "instrumentation227",
+            "294904f646e9480cb06315da3108ce92": "instrumentation392",
+            "46b12b32ea864674888897d1026ddfcd": "instrumentation218",
+            "0bdbf758abb245c0a3745e287affd0d1": "instrumentation401",
+            "7ec430af10e1468da0ec35b5cd519e9a": "instrumentation398",
+            "ea725898dab14a96b1078e35297a5c3b": "valve257",
+            "e26ee3759647422fbfdf5ab20b8021a5": "valve341",
+            "45c7d03b52aa46e7981d462307c860ab": "valve128",
+            "225918daed6d45a1808d432eaeb30514": "instrumentation236",
+            "e4944d0d54fe466ebc75a6118de9c543": "valve239",
+            "830b2616aa644883867b6dd792586e78": "valve209",
+            "385d5f34a68249caa0e0daff942e4bdc": "instrumentation281",
+            "056880473e004fd48f40e5dc70ddf8a4": "valve272",
+            "8fc2c72185da4b04a25ecda17a22f85e": "instrumentation275",
+            "6ff3e348076a4c3e97f008244e8b2982": "instrumentation290",
+            "dca01f2fad074ff1a8bb1b06933caa29": "valve323",
+            "c52c2f541ca048149ea4adca6fa3034d": "valve320",
+            "86cfde0e01474c84891e8b3c282d3fde": "valve380",
+            "2d60e8a8627040258d81003eff8b1890": "valve347",
+            "20b2439a80fa4db8a552ccfaeb850631": "valve248",
+            "f2db3e1d5fd440b7afbca5c6ef3e7c9d": "instrumentation350",
+            "24ead4fae74845f68b676fb9ee984a79": "valve155",
+            "c3f50383db6045d19d1b61b32d6d7abb": "instrumentation233",
+            "da4277e65acc47e9a597152f275be953": "valve308",
+            "27d6af0eb6b4465b94c57ac13852f1e7": "valve224",
+            "b793cc1ff42647e6bfb7386cdbbcb805": "valve119",
+            "86bba0073b6e453eb29db5f9fe54c8bd": "instrumentation368",
+            "f1141cd3f44c4c058dc0c92bc85264df": "instrumentation338",
+            "7d2e955aa51f49c79fc7818f8b979ac9": "valve254",
+            "1e6f0d055f064aa69027b6680c1ce87f": "valve284",
+            "6aa499c6f70d4e9db08504757cddfba2": "valve173",
+            "39783e80867542d29668135d5cf6491d": "valve260",
+            "a3d2ef31cc784699904acc03e52fd658": "valve176"
+          },
+          "oracle_boxes": {
+            "tp": 95,
+            "fp": 0,
+            "fn": 1227,
+            "precision": 1.0,
+            "recall": 0.0718608169440242,
+            "f1": 0.1340860973888497
+          }
+        }
+      }
+    },
+    {
+      "id": "313",
+      "image_sha256": "e7f1059191cbd9c4d30ff48bf29c022d5329db22aec9aef23976d57b7ddb492f",
+      "original_size": [
+        7168,
+        4562
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_labels": {
+        "crossing": 89,
+        "general": 32,
+        "connector": 230,
+        "valve": 60,
+        "instrumentation": 21,
+        "arrow": 5,
+        "background": 4
+      },
+      "gt_symbols": 81,
+      "gt_connections": 372,
+      "pred_symbols": 170,
+      "pred_connections": 94,
+      "ocr_words": 330,
+      "elapsed_seconds": 2.873,
+      "warnings": [],
+      "scores": {
+        "0.5": {
+          "localization": {
+            "tp": 35,
+            "fp": 135,
+            "fn": 46,
+            "precision": 0.20588235294117646,
+            "recall": 0.43209876543209874,
+            "f1": 0.2788844621513944
+          },
+          "connections": {
+            "tp": 7,
+            "fp": 87,
+            "fn": 365,
+            "precision": 0.07446808510638298,
+            "recall": 0.01881720430107527,
+            "f1": 0.030042918454935622
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "afd672cd3b714afa9d387195b69665e9": "instrumentation174",
+            "900b8e6584cd49659854b6b69b54420f": "instrumentation120",
+            "63a26bbbe1624881ab3c24373c7b88f8": "instrumentation408",
+            "607a6a7db928480194722d922c6f7587": "instrumentation357",
+            "c3cc7694e5a3495faf53856fb92c8e77": "instrumentation381",
+            "f309e58c598344279e37b5e36473b512": "instrumentation393",
+            "3329c5d30a3f429aa0981002492ff016": "instrumentation366",
+            "97a609bbfc354f97a344a7cb2fb715af": "instrumentation387",
+            "47dda34b782149ecbd858ef6567b248e": "instrumentation375",
+            "306504d7e9114cdd85c23f2c4e43484a": "instrumentation228",
+            "258d9ad9daea416685002e7e6b4efa87": "instrumentation300",
+            "f0b7e9ab9bbc4e8cbede9c381baec111": "instrumentation204",
+            "dcd7cd5dca0c4eaa8617e7c4005f3c36": "instrumentation303",
+            "7ef006de49314649b01b94d3c1f10f77": "valve378",
+            "aa37f38b77414152bf9d63188bc5555c": "valve261",
+            "c71728fc184840b096687f0f80d399d0": "valve414",
+            "3ce20d3ce3d84576bdefb5f718422797": "valve420",
+            "41b87b4fd1404e1cbcf4f9e282d0a258": "instrumentation156",
+            "f6e51d1e7d1947bca2f3606fd1ff494c": "valve132",
+            "c63c7d1ce87440679d57a0ffb7803636": "valve186",
+            "8beeb26bfad14ee9813dbb3b2e2358c2": "instrumentation213",
+            "60b1c33724e34dd1905dc3b2e16e9ecb": "valve216",
+            "db6d3b3e99b14c8a9fb754e049382352": "valve114",
+            "4e1646d1a33d4ff2b51653aaa12e124a": "valve144",
+            "6b673cd6bf4449af8803c267dc4e3fe3": "instrumentation171",
+            "d5d5369d9ce84b91bcfa8ca19e372a1d": "valve258",
+            "a34ada0d66fb4923a099db2659d0bbc3": "valve336",
+            "38def100bcb9432c97a540062f9ac025": "valve243",
+            "ef32ae120bee4efe8e3726906e1fceb6": "valve429",
+            "f91efa8e7c504a72bbaea5b2646e5f92": "valve207",
+            "434891ad006f489c8e6a4536dc9c6ba2": "valve279",
+            "a6416960bc734dc48998f387e038a1e1": "valve330",
+            "e9d5e96ecd3c449f8696a280fb807292": "valve180",
+            "5f37045361ab4b4ca26c2e21f4a0a494": "valve324",
+            "320c27a63f8140668f25d992a1238e0b": "instrumentation225"
+          },
+          "oracle_boxes": {
+            "tp": 183,
+            "fp": 0,
+            "fn": 189,
+            "precision": 1.0,
+            "recall": 0.49193548387096775,
+            "f1": 0.6594594594594595
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 46,
+            "fp": 124,
+            "fn": 35,
+            "precision": 0.27058823529411763,
+            "recall": 0.5679012345679012,
+            "f1": 0.3665338645418327
+          },
+          "connections": {
+            "tp": 18,
+            "fp": 76,
+            "fn": 354,
+            "precision": 0.19148936170212766,
+            "recall": 0.04838709677419355,
+            "f1": 0.07725321888412018
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "afd672cd3b714afa9d387195b69665e9": "instrumentation174",
+            "900b8e6584cd49659854b6b69b54420f": "instrumentation120",
+            "63a26bbbe1624881ab3c24373c7b88f8": "instrumentation408",
+            "607a6a7db928480194722d922c6f7587": "instrumentation357",
+            "c3cc7694e5a3495faf53856fb92c8e77": "instrumentation381",
+            "f309e58c598344279e37b5e36473b512": "instrumentation393",
+            "3329c5d30a3f429aa0981002492ff016": "instrumentation366",
+            "97a609bbfc354f97a344a7cb2fb715af": "instrumentation387",
+            "47dda34b782149ecbd858ef6567b248e": "instrumentation375",
+            "306504d7e9114cdd85c23f2c4e43484a": "instrumentation228",
+            "258d9ad9daea416685002e7e6b4efa87": "instrumentation300",
+            "f0b7e9ab9bbc4e8cbede9c381baec111": "instrumentation204",
+            "dcd7cd5dca0c4eaa8617e7c4005f3c36": "instrumentation303",
+            "7ef006de49314649b01b94d3c1f10f77": "valve378",
+            "aa37f38b77414152bf9d63188bc5555c": "valve261",
+            "c71728fc184840b096687f0f80d399d0": "valve414",
+            "c2bf7af5198c4cb49afcd5ec9dc81f9c": "valve234",
+            "f3557a23425c4d0e9fe0b664ea1b4235": "instrumentation252",
+            "3ce20d3ce3d84576bdefb5f718422797": "valve420",
+            "a0e101b23c134b8d957d7f6cc4cd5f9b": "instrumentation150",
+            "2be8cfafba554ef9ab5fd6b0b5f3b79a": "valve306",
+            "ce7f3c9b0b754094915e012e66fa6a70": "valve147",
+            "5bf260f9545a4c9096e7203f196de8e3": "valve243",
+            "41b87b4fd1404e1cbcf4f9e282d0a258": "instrumentation156",
+            "a28e26c3482d438db55d2e57371d5e42": "valve435",
+            "bd80a374f4d24dc0a549572499a14ce8": "valve207",
+            "f6e51d1e7d1947bca2f3606fd1ff494c": "valve132",
+            "c63c7d1ce87440679d57a0ffb7803636": "valve186",
+            "8beeb26bfad14ee9813dbb3b2e2358c2": "instrumentation213",
+            "60b1c33724e34dd1905dc3b2e16e9ecb": "valve216",
+            "db6d3b3e99b14c8a9fb754e049382352": "valve114",
+            "e877859a0c5b448ebba37969bd188de5": "valve111",
+            "865b3ad0104542a1aabc494229f9e061": "valve405",
+            "e4345717c4bd472d8dc104d4aefb890e": "valve360",
+            "4e1646d1a33d4ff2b51653aaa12e124a": "valve144",
+            "6b673cd6bf4449af8803c267dc4e3fe3": "instrumentation171",
+            "2bf8795ba8ae4990b8285422f22dd7a3": "valve237",
+            "d5d5369d9ce84b91bcfa8ca19e372a1d": "valve258",
+            "a34ada0d66fb4923a099db2659d0bbc3": "valve336",
+            "3b6e920f29b540dcb9c7bf6265f62450": "valve426",
+            "ef32ae120bee4efe8e3726906e1fceb6": "valve429",
+            "434891ad006f489c8e6a4536dc9c6ba2": "valve279",
+            "a6416960bc734dc48998f387e038a1e1": "valve330",
+            "e9d5e96ecd3c449f8696a280fb807292": "valve180",
+            "5f37045361ab4b4ca26c2e21f4a0a494": "valve324",
+            "320c27a63f8140668f25d992a1238e0b": "instrumentation225"
+          },
+          "oracle_boxes": {
+            "tp": 183,
+            "fp": 0,
+            "fn": 189,
+            "precision": 1.0,
+            "recall": 0.49193548387096775,
+            "f1": 0.6594594594594595
+          }
+        }
+      }
+    },
+    {
+      "id": "320",
+      "image_sha256": "9c8655a3cfc62aa825bfef2b17357327bd421ae478cb723b2f3e3dd93fb89d8e",
+      "original_size": [
+        7168,
+        4561
+      ],
+      "rendered_size": [
+        2400,
+        1527
+      ],
+      "gt_labels": {
+        "crossing": 96,
+        "general": 42,
+        "connector": 210,
+        "valve": 52,
+        "instrumentation": 12,
+        "arrow": 3,
+        "background": 4
+      },
+      "gt_symbols": 64,
+      "gt_connections": 367,
+      "pred_symbols": 172,
+      "pred_connections": 332,
+      "ocr_words": 328,
+      "elapsed_seconds": 3.119,
+      "warnings": [],
+      "scores": {
+        "0.5": {
+          "localization": {
+            "tp": 33,
+            "fp": 139,
+            "fn": 31,
+            "precision": 0.19186046511627908,
+            "recall": 0.515625,
+            "f1": 0.2796610169491525
+          },
+          "connections": {
+            "tp": 7,
+            "fp": 325,
+            "fn": 360,
+            "precision": 0.02108433734939759,
+            "recall": 0.01907356948228883,
+            "f1": 0.020028612303290415
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "8f7c423e036c4cc1871e477198ac9e25": "instrumentation290",
+            "aa9a74dee6604ca1b02cd80d97310e8e": "valve404",
+            "87c7d06cee0b4a37a0c1dd3be4adf07e": "instrumentation251",
+            "c5a0ac5739fc477eb14169d75950949f": "instrumentation236",
+            "27a4cc6dbb4a422aa17a98847e43927b": "instrumentation125",
+            "6ef1deae12a14e398d2732a0cb041343": "instrumentation212",
+            "8d1af3809c1b47bcaca6423830287c86": "valve353",
+            "419d43c3c31b499fa9ba8a50ac3c3f20": "instrumentation314",
+            "3f09974018f94601b5a5522d3c3af45b": "instrumentation119",
+            "97ff71b23e0942b2bc435a4d8755fd93": "instrumentation146",
+            "8731a3c364a64e55b5a43c70c9da5a10": "instrumentation275",
+            "88e84e9ce82a4627b5a5bf67bc26a1c8": "instrumentation272",
+            "cdd09f25504f4127a918be3337a08ae5": "valve266",
+            "5759dc20be86485abe772b127785eddf": "valve122",
+            "7e258cb98ad24dfeafb467f329240779": "valve305",
+            "01c0b53547bd404bbee8d33c131abe5d": "valve206",
+            "2926ae535b234e7fb07f37e4aa7d74e1": "instrumentation338",
+            "2060aa193d1b4d4c9b80547d36d4a693": "valve323",
+            "6c2cf831b3ab449fbc67f3f37f190a6e": "instrumentation332",
+            "091af6c168ce45b88922045bb16ca0ef": "valve242",
+            "03b88c074e5f4f9498ee73844c25f3a5": "valve188",
+            "f583e043caba464e80ebe7986651361a": "valve398",
+            "91e2c7eee6d54640b35ede0c757c96cd": "valve209",
+            "5f938b1727bf487194ebad51d5858820": "valve344",
+            "adad1a17bc2e42cdbe4ac73eb339fa5b": "valve221",
+            "b95906ed30ee44bc832438b85b19c67f": "valve410",
+            "b79ef2df2ec4465cae896002a3dd5e06": "valve248",
+            "df1d25108e3041d280e9c0fe211c1c16": "valve167",
+            "4c28b9622f3140f798b4a73b28ca54a7": "valve380",
+            "2a3a374b876842b5b068e2642b202b56": "valve293",
+            "5c337f3477334203b200e360e1c78f51": "valve296",
+            "ec5e71fcf18d4876a523f7c525ac5ae9": "valve230",
+            "67ce87e138a94aa4a4129a61a3744302": "valve140"
+          },
+          "oracle_boxes": {
+            "tp": 138,
+            "fp": 0,
+            "fn": 229,
+            "precision": 1.0,
+            "recall": 0.3760217983651226,
+            "f1": 0.5465346534653466
+          }
+        },
+        "0.25": {
+          "localization": {
+            "tp": 40,
+            "fp": 132,
+            "fn": 24,
+            "precision": 0.23255813953488372,
+            "recall": 0.625,
+            "f1": 0.3389830508474576
+          },
+          "connections": {
+            "tp": 13,
+            "fp": 319,
+            "fn": 354,
+            "precision": 0.0391566265060241,
+            "recall": 0.035422343324250684,
+            "f1": 0.03719599427753934
+          },
+          "classified_correct": 0,
+          "matched_ids": {
+            "8f7c423e036c4cc1871e477198ac9e25": "instrumentation290",
+            "aa9a74dee6604ca1b02cd80d97310e8e": "valve404",
+            "87c7d06cee0b4a37a0c1dd3be4adf07e": "instrumentation251",
+            "c5a0ac5739fc477eb14169d75950949f": "instrumentation236",
+            "27a4cc6dbb4a422aa17a98847e43927b": "instrumentation125",
+            "6ef1deae12a14e398d2732a0cb041343": "instrumentation212",
+            "8d1af3809c1b47bcaca6423830287c86": "valve353",
+            "419d43c3c31b499fa9ba8a50ac3c3f20": "instrumentation314",
+            "3f09974018f94601b5a5522d3c3af45b": "instrumentation119",
+            "97ff71b23e0942b2bc435a4d8755fd93": "instrumentation146",
+            "8731a3c364a64e55b5a43c70c9da5a10": "instrumentation275",
+            "88e84e9ce82a4627b5a5bf67bc26a1c8": "instrumentation272",
+            "cdd09f25504f4127a918be3337a08ae5": "valve266",
+            "5759dc20be86485abe772b127785eddf": "valve122",
+            "7e258cb98ad24dfeafb467f329240779": "valve305",
+            "01c0b53547bd404bbee8d33c131abe5d": "valve206",
+            "2926ae535b234e7fb07f37e4aa7d74e1": "instrumentation338",
+            "2060aa193d1b4d4c9b80547d36d4a693": "valve323",
+            "40977490f51645b2af2fdae74c9cf7f2": "valve335",
+            "6c2cf831b3ab449fbc67f3f37f190a6e": "instrumentation332",
+            "091af6c168ce45b88922045bb16ca0ef": "valve242",
+            "6007109ebbf64a15809627ead5883935": "valve116",
+            "efd741db052f43c68b8b40ccd0d320e0": "valve239",
+            "03b88c074e5f4f9498ee73844c25f3a5": "valve188",
+            "f583e043caba464e80ebe7986651361a": "valve398",
+            "91e2c7eee6d54640b35ede0c757c96cd": "valve209",
+            "5f938b1727bf487194ebad51d5858820": "valve344",
+            "3a053fd1247e4757b52751d01f4b3d12": "valve326",
+            "b76896212adb4915b4b6853288587dab": "valve131",
+            "adad1a17bc2e42cdbe4ac73eb339fa5b": "valve221",
+            "b95906ed30ee44bc832438b85b19c67f": "valve410",
+            "b79ef2df2ec4465cae896002a3dd5e06": "valve248",
+            "df1d25108e3041d280e9c0fe211c1c16": "valve167",
+            "4c28b9622f3140f798b4a73b28ca54a7": "valve380",
+            "7939e08084034ff9b9a3e3bff3aa654b": "valve158",
+            "2a3a374b876842b5b068e2642b202b56": "valve293",
+            "5c337f3477334203b200e360e1c78f51": "valve296",
+            "6c8e7e442d4241979838677be5b6368a": "valve386",
+            "ec5e71fcf18d4876a523f7c525ac5ae9": "valve230",
+            "67ce87e138a94aa4a4129a61a3744302": "valve140"
+          },
+          "oracle_boxes": {
+            "tp": 138,
+            "fp": 0,
+            "fn": 229,
+            "precision": 1.0,
+            "recall": 0.3760217983651226,
+            "f1": 0.5465346534653466
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "0.5": {
+      "localization": {
+        "tp": 246,
+        "fp": 1052,
+        "fn": 417,
+        "precision": 0.18952234206471494,
+        "recall": 0.37104072398190047,
+        "f1": 0.2508924018357981
+      },
+      "connections": {
+        "tp": 82,
+        "fp": 1333,
+        "fn": 5864,
+        "precision": 0.057950530035335686,
+        "recall": 0.013790783720148,
+        "f1": 0.022279581578589867
+      },
+      "oracle_boxes": {
+        "tp": 1716,
+        "fp": 0,
+        "fn": 4230,
+        "precision": 1.0,
+        "recall": 0.2885973763874874,
+        "f1": 0.44792482380579485
+      },
+      "classified_correct": 0
+    },
+    "0.25": {
+      "localization": {
+        "tp": 302,
+        "fp": 996,
+        "fn": 361,
+        "precision": 0.23266563944530047,
+        "recall": 0.4555052790346908,
+        "f1": 0.30800611932687405
+      },
+      "connections": {
+        "tp": 130,
+        "fp": 1285,
+        "fn": 5816,
+        "precision": 0.09187279151943463,
+        "recall": 0.02186343760511268,
+        "f1": 0.03532128786849613
+      },
+      "oracle_boxes": {
+        "tp": 1716,
+        "fp": 0,
+        "fn": 4230,
+        "precision": 1.0,
+        "recall": 0.2885973763874874,
+        "f1": 0.44792482380579485
+      },
+      "classified_correct": 0
+    }
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "ocr_version": "tesseract 5.3.0"
+}

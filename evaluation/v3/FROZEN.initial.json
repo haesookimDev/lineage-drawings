@@ -1,0 +1,39 @@
+{
+  "frozen_at": "2026-10-28T04:24:42.283520+00:00",
+  "scope": "No runtime/threshold/weights changes after this freeze based on OPEN100 regression IDs 4-11 or synthetic confirmation results. Correctness fixes must be explicitly recorded.",
+  "sources": {
+    "backend/main.py": "d91bd2d760321779cc4634acf05df1ce59c979f2b072361e289397bb911704ac",
+    "backend/extract.py": "bc369138443802f9fcadd423313f49873c4748a4671ddc428e06edfdf3a053fd",
+    "backend/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/db.py": "a2e9f8d9097b88613a7a73de67fe4516b75777d6c1adfb41681bba4d238f6d51",
+    "backend/network.py": "6f8668f424a7cadcf1ef1e414719a849092ca934d169eccc2509b06a768f5a57",
+    "backend/symbols.py": "c8bb22de5f3e151d0fc4d4dad63282c6f963a125381f54da93180875fd9b83fd",
+    "backend/geometry.py": "3f7e6f1b8fb9836c8dfda1da7ca4392b72a697ebdb24d3ffb5fd4bf65311bd47",
+    "backend/assets/open100-dev-shapes.npz": "f840393429986e4465795f35ac5cad9b57a214099fa354fff4f6bbd5b52c31df",
+    "backend/assets/open100-dev-shapes.json": "cfb75898757040e9fe7867aff60a4ed995c63d2c3ea88efc650a2491c277e2fe",
+    "frontend/src/App.tsx": "edf437ed76dd9d8b3d7d3940710fcd4732b302ba47f826af0232fb51da06be1a",
+    "evaluation/benchmark.py": "4dce6a62a2621e650b4df343796b2af6cfe6fca35e2bb57e9a06a1ab1fa180a8",
+    "evaluation/protocol.json": "61245c0e5561c53cdde1fbc6f4d3e5d3398fbc9064f0757785cfb5febf676a9a"
+  },
+  "baseline_commit": "3bb6ff7c639104492c5bddec906d663e6c935f47",
+  "training_ids": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "historical_regression_ids": [
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "confirmation_plan": "confirmation-plan.json",
+  "shape_model": "73 development-only prototypes; CCOEFF_NORMED >= .78; scales .85/1/1.15; no semantic class/standard ID auto-approval",
+  "junction_policy": "T/endpoints connect, 4-way intersections connect only with a dot; no hidden-gap bridging",
+  "reference_scorer": "same class-agnostic IoU .50 one-to-one and equipment-adjacency contraction; immutable multi-file baseline snapshot"
+}

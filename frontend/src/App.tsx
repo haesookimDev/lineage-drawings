@@ -8,7 +8,7 @@ type Connection={id:string;from_id:string;to_id:string;kind:string;status:string
 type Concept={id:string;name:string;definition:string;scope:string;unit:string;version:number};
 type Session={authenticated:boolean;csrf:string;local_mode:boolean};
 const statusNames:Record<string,string>={queued:'분석 대기',processing:'분석 중',ready:'검토 가능',failed:'분석 실패',needs_review:'검토 필요',approved:'승인됨',rejected:'제외됨'};
-const sourceNames:Record<string,string>={dxf_block:'CAD 블록',dxf_text:'CAD 문자',pdf_text:'PDF 문자',pdf_path:'PDF 벡터 후보',ocr:'문자 인식',image_candidate:'이미지 요소 후보',line_candidate:'선 기반 연결 후보',manual:'직접 작성'};
+const sourceNames:Record<string,string>={dxf_block:'CAD 블록',dxf_text:'CAD 문자',pdf_text:'PDF 문자',pdf_path:'PDF 벡터 후보',ocr:'문자 인식',image_candidate:'이미지 요소 후보',line_candidate:'선 기반 연결 후보',line_trace_candidate:'선 추적 연결 후보',port_graph_candidate:'포트·접속점 기반 연결 후보',manual:'직접 작성'};
 const relationNames:Record<string,string>={connectedTo:'연결됨 · 방향 없음',feeds:'공급 →',controls:'제어 →',adjacentTo:'인접함'};
 function message(error:unknown){return error instanceof Error?error.message:'요청을 처리하지 못했습니다.'}
 function Badge({status}:{status:string}){return <span className={'badge '+status}>{statusNames[status]||status}</span>}

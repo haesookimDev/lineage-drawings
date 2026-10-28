@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Class-agnostic symbol localization and equipment-adjacency evaluation.
 
-No annotations, templates, or graph labels are passed to production extraction.
+No evaluation-image annotations or graph labels are passed to extraction.
+The production model may load development-only shape prototypes.
 The separately named oracle_boxes diagnostic is not an end-to-end score.
 """
 import argparse
@@ -11,6 +12,9 @@ import PIL
 from collections import Counter, defaultdict
 import hashlib
 import importlib.util
+import inspect
+import re
+import types
 import json
 from pathlib import Path
 import subprocess
@@ -98,13 +102,41 @@ def score(pred,edges,gt,gt_edges,threshold):
 
 
 def load_extractor(ref):
+    """Isolate the entire historical backend, including geometry and model assets.
+
+    Loading only extract.py would import today's backend.geometry and silently
+    contaminate the v2 baseline. Relocate package imports, not extraction logic.
+    Hashes below always describe the original immutable Git bytes.
+    """
     if ref=='working':
         from backend import extract
-        return extract,hashlib.sha256((ROOT/'backend/extract.py').read_bytes()).hexdigest()
-    code=subprocess.check_output(['git','show',f'{ref}:backend/extract.py'],cwd=ROOT)
-    path=ROOT/'.benchmark-data'/f'extract-{ref}.py';path.parent.mkdir(exist_ok=True);path.write_bytes(code)
-    spec=importlib.util.spec_from_file_location('frozen_extractor',path);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-    return module,hashlib.sha256(code).hexdigest()
+        sources={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
+                 for p in sorted((ROOT/'backend').rglob('*')) if p.is_file()
+                 and p.suffix in ('.py','.npz','.json') and '__pycache__' not in p.parts}
+        return extract,sources['backend/extract.py'],sources
+    revision=subprocess.check_output(['git','rev-parse','--verify',ref+'^{commit}'],cwd=ROOT,text=True).strip()
+    package_name='lineage_frozen_'+revision
+    snapshot=ROOT/'.benchmark-data'/'extractor-snapshots'/revision
+    names=subprocess.check_output(['git','ls-tree','-r','--name-only',revision,'backend'],cwd=ROOT,text=True).splitlines()
+    sources={}
+    for name in names:
+        if Path(name).suffix not in ('.py','.npz','.json'):continue
+        data=subprocess.check_output(['git','show',revision+':'+name],cwd=ROOT)
+        sources[name]=hashlib.sha256(data).hexdigest()
+        target=snapshot/name;target.parent.mkdir(parents=True,exist_ok=True)
+        if target.suffix=='.py':
+            data=re.sub(rb'from backend(?=[. ])',('from '+package_name).encode(),data)
+        target.write_bytes(data)
+    spec=importlib.util.spec_from_file_location(package_name,snapshot/'backend/__init__.py',submodule_search_locations=[str(snapshot/'backend')])
+    package=importlib.util.module_from_spec(spec);sys.modules[package_name]=package;spec.loader.exec_module(package)
+    spec=importlib.util.spec_from_file_location(package_name+'.extract',snapshot/'backend/extract.py')
+    module=importlib.util.module_from_spec(spec);sys.modules[spec.name]=module;spec.loader.exec_module(module)
+    return module,sources['backend/extract.py'],sources
+
+
+def infer(extractor,elements,segments,image):
+    kwargs={'image':image} if 'image' in inspect.signature(extractor.infer_connections).parameters else {}
+    return extractor.infer_connections(elements,segments,*image.size,**kwargs)
 
 
 def aggregate(sheets):
@@ -124,8 +156,11 @@ def main():
     p.add_argument('--extractor-ref',default='working')
     p.add_argument('--split',choices=['development','holdout','all'],default='development')
     p.add_argument('--output',type=Path,required=True)
-    args=p.parse_args();extractor,digest=load_extractor(args.extractor_ref)
+    p.add_argument('--role',default=None,help='Evaluation role, separate from legacy split names')
+    p.add_argument('--ids',help='Explicit comma-separated sheet IDs; used for the predeclared synthetic confirmation set')
+    args=p.parse_args();extractor,digest,sources=load_extractor(args.extractor_ref)
     ids=PROTOCOL['development_ids'] if args.split=='development' else PROTOCOL['holdout_ids'] if args.split=='holdout' else PROTOCOL['development_ids']+PROTOCOL['holdout_ids']
+    if args.ids:ids=args.ids.split(',')
     sheets=[];args.output.mkdir(parents=True,exist_ok=True)
     for ident in ids:
         image_path=args.data/f'{ident}.png'
@@ -139,10 +174,12 @@ def main():
         # invalid evaluation environment (e.g. a missing tessdata/configs/tsv).
         if not any(e['kind']=='text' for e in elements):
             raise RuntimeError(f'OPEN100 sheet {ident}: zero OCR words. Check Tesseract, eng/kor traineddata and configs/tsv; refusing an invalid OCR comparison.')
-        edges=extractor.infer_connections(elements,segments,*im.size)
+        edges=infer(extractor,elements,segments,im)
         elapsed=time.perf_counter()-start
         symbols=[e for e in elements if e['kind']!='text']
-        oracle=extractor.infer_connections(gt,segments,*im.size)
+        fallback=symbols and all(e.get('properties',{}).get('profile')=='generic_fallback' for e in symbols)
+        oracle_gt=[{**g,'properties':{'profile':'generic_fallback'}} for g in gt] if fallback else gt
+        oracle=infer(extractor,oracle_gt,segments,im)
         scores={}
         for threshold in (0.5,0.25):
             result=score(symbols,edges,gt,gt_edges,threshold)
@@ -153,8 +190,7 @@ def main():
         sheets.append(sheet)
         (args.output/f'{ident}-predictions.json').write_text(json.dumps({'elements':elements,'connections':edges},ensure_ascii=False,indent=2)+'\n')
         print(ident,json.dumps({k:sheet[k] for k in ('gt_symbols','pred_symbols','gt_connections','pred_connections','elapsed_seconds')}),flush=True)
-    sources={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in (ROOT/'backend/extract.py',ROOT/'backend/geometry.py')} if args.extractor_ref=='working' else {'backend/extract.py':digest}
-    report={'evaluated_at':datetime.now(timezone.utc).isoformat(),'opencv':cv2.__version__,'pillow':PIL.__version__,'extractor_sources':sources,'protocol':PROTOCOL,'extractor_ref':args.extractor_ref,'extractor_sha256':digest,'split':args.split,'sheets':sheets,'aggregate':aggregate(sheets),'python':sys.version,'ocr_version':subprocess.run(['tesseract','--version'],capture_output=True,text=True).stdout.splitlines()[0]}
+    report={'scorer_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'evaluated_at':datetime.now(timezone.utc).isoformat(),'opencv':cv2.__version__,'pillow':PIL.__version__,'extractor_sources':sources,'protocol':PROTOCOL,'extractor_ref':args.extractor_ref,'extractor_sha256':digest,'split':args.split,'explicit_ids':args.ids,'evaluation_role':args.role or args.split,'sheets':sheets,'aggregate':aggregate(sheets),'python':sys.version,'ocr_version':subprocess.run(['tesseract','--version'],capture_output=True,text=True).stdout.splitlines()[0]}
     (args.output/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(report['aggregate'],indent=2))
 

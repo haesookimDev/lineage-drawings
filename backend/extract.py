@@ -82,17 +82,27 @@ def raster_candidates(image, warnings, with_ocr=True):
     return texts[:MAX_ELEMENTS-len(candidates)]+candidates,segments
 
 
-def infer_connections(elements, segments, w, h):
-    return [dict(id=uid(),from_id=a,to_id=b,kind='connectedTo',source='line_trace_candidate',status='needs_review')
-            for a,b in trace_adjacency(elements,segments,w,h)]
+def infer_connections(elements, segments, w, h, image=None, diagnostics=None):
+    details={} if diagnostics is None else diagnostics
+    pairs=trace_adjacency(elements,segments,w,h,image,details)
+    source='line_trace_candidate' if details.get('algorithm')=='legacy-components-v2' else 'port_graph_candidate'
+    return [dict(id=uid(),from_id=a,to_id=b,kind='connectedTo',source=source,status='needs_review') for a,b in pairs]
 
 
 def finish(image, elements, segments, coordinate, transform, folder, number, warnings):
     pid=uid();image.save(folder/f'{pid}.png')
     if len(elements)>MAX_ELEMENTS:warnings.append('요소 수가 많아 500개까지 추출했습니다.')
     elements=elements[:MAX_ELEMENTS]
+    details={};connections=infer_connections(elements,segments,*image.size,image=image,diagnostics=details)
+    transform={**transform,'connection_inference':details}
+    if details.get('algorithm')=='legacy-components-v2':
+        warnings.append('지원 형상·연속 표지가 부족해 일반 기초 추출을 사용했습니다. 연결과 교차 표기는 직접 검토해 주세요.')
+    if details.get('unmarked_crossings'):
+        warnings.append('접속점 없는 4방 교차는 비접속 후보로 처리했습니다. 도면의 교차 표기 관례를 확인해 주세요.')
+    if details.get('pair_budget_reached') or details.get('connections_limited'):
+        warnings.append('복잡한 선망의 연결 후보 상한에 도달했습니다. 영역을 나누어 검토해 주세요.')
     return dict(id=pid,number=number,width=image.width,height=image.height,coordinate_system=coordinate,
-                transform=transform,elements=elements,connections=infer_connections(elements,segments,*image.size))
+                transform=transform,elements=elements,connections=connections)
 
 
 def extract_pdf(path,folder,warnings):
