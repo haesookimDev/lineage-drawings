@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-29T08:38:03.492310+00:00",
+  "baseline": "be552914969fe311bae45b9ed7a40e6c850110d1",
+  "labels_sha256": "b60624dd7d49c09a74a44ff658b35821668818940af6a4a34e3a3ec20abb4e8c",
+  "sources": {
+    "backend/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "backend/assets/open100-dev-shapes.json": "cfb75898757040e9fe7867aff60a4ed995c63d2c3ea88efc650a2491c277e2fe",
+    "backend/assets/open100-dev-shapes.npz": "f840393429986e4465795f35ac5cad9b57a214099fa354fff4f6bbd5b52c31df",
+    "backend/assets/symbol-neural.json": "1f139e8938b027d40bc79f33d5475a0f005e8d81f8d431d6a6945703f093a2d3",
+    "backend/assets/symbol-neural.onnx": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+    "backend/assets/symbol-objectness.json": "6b0c086991c267c32f843e2c829a409a27e2b7c1d0846025b03be019d4b13c38",
+    "backend/assets/topology-context.json": "398c2a8bea41769705541539daf0dfa85554e452d6e020503b8fe433583435fe",
+    "backend/assets/topology.json": "857a586ac77c5d659474e4206c3330a0b674767e9f41eb6d4378208ad015dd76",
+    "backend/assets/topology.onnx": "8bf87022618182573b2c5aef79d62df83b6c619cf28217bccd07048979ed3a8c",
+    "backend/extract.py": "7145b56bdec3f469ddefa829ca6027c55f13357261fb029999c0099dba2d553e",
+    "backend/geometry.py": "eae54ff099e3c512e0646e3a48caf8522d510bfc2303b91a6b3ccfd11b64af87",
+    "backend/learned_symbols.py": "ac62b711072d428beb51887d26e17863a64ef8ed8fb1ef0c72e6f4baa3db03c9",
+    "backend/legacy_network.py": "bdd649018d7c5e51a653c2cfa1f38a35de8aa255e60a3ae3b14cb8ee562d001d",
+    "backend/line_recovery.py": "6c5dae2d26f271f7a78479df422a8f3922ba02067def683d7df08f58c17d38b8",
+    "backend/network.py": "9dc3e654a7e2dd06646fd72c39af00803073dab52948ca2b3eec026c1645fb1e",
+    "backend/neural_symbols.py": "8ace6a7dbb46c44a857a156b79da95736e9ac46f8f83aa5b72a525071160dae6",
+    "backend/sparse_topology.py": "e37a292b64f6e5cfeb5c449d92079c98b357022877f6426de8bfa5359ff97029",
+    "backend/symbols.py": "d0625484e54ad8e42c0e221da6d7567de8e87b197a69194da7063eda9a7275c9",
+    "backend/topology.py": "2c8421c7df075e3ed76161008df7be763a6d52c3ecc72572ec0cd7ffc261441c",
+    "backend/topology_context.py": "587ec5bdaa93f18ffdb0ffbf12a66f9ecfa6580ffca815385a843899e3cd6d4f",
+    "backend/topology_features.py": "b9041b4ab38f83af59c6c279ee9fab15e570cf8313a31015bf22c6d10bec3e5b"
+  },
+  "protocol": "Source-only AI annotation frozen before first extraction on White Rose. Two small ROIs, class-agnostic IoU.5. All full-page glyphs extracted; only frozen ROI/ignore used by scoring. No test tuning. Cold clears v11 OCR cache; warm immediately reuses identical image, not new-document latency.3 alternating paired repeats."
+}

@@ -1,0 +1,237 @@
+{
+  "freeze": {
+    "created_at": "2026-10-29T08:38:03.492310+00:00",
+    "baseline": "be552914969fe311bae45b9ed7a40e6c850110d1",
+    "labels_sha256": "b60624dd7d49c09a74a44ff658b35821668818940af6a4a34e3a3ec20abb4e8c",
+    "sources": {
+      "backend/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "backend/assets/open100-dev-shapes.json": "cfb75898757040e9fe7867aff60a4ed995c63d2c3ea88efc650a2491c277e2fe",
+      "backend/assets/open100-dev-shapes.npz": "f840393429986e4465795f35ac5cad9b57a214099fa354fff4f6bbd5b52c31df",
+      "backend/assets/symbol-neural.json": "1f139e8938b027d40bc79f33d5475a0f005e8d81f8d431d6a6945703f093a2d3",
+      "backend/assets/symbol-neural.onnx": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+      "backend/assets/symbol-objectness.json": "6b0c086991c267c32f843e2c829a409a27e2b7c1d0846025b03be019d4b13c38",
+      "backend/assets/topology-context.json": "398c2a8bea41769705541539daf0dfa85554e452d6e020503b8fe433583435fe",
+      "backend/assets/topology.json": "857a586ac77c5d659474e4206c3330a0b674767e9f41eb6d4378208ad015dd76",
+      "backend/assets/topology.onnx": "8bf87022618182573b2c5aef79d62df83b6c619cf28217bccd07048979ed3a8c",
+      "backend/extract.py": "7145b56bdec3f469ddefa829ca6027c55f13357261fb029999c0099dba2d553e",
+      "backend/geometry.py": "eae54ff099e3c512e0646e3a48caf8522d510bfc2303b91a6b3ccfd11b64af87",
+      "backend/learned_symbols.py": "ac62b711072d428beb51887d26e17863a64ef8ed8fb1ef0c72e6f4baa3db03c9",
+      "backend/legacy_network.py": "bdd649018d7c5e51a653c2cfa1f38a35de8aa255e60a3ae3b14cb8ee562d001d",
+      "backend/line_recovery.py": "6c5dae2d26f271f7a78479df422a8f3922ba02067def683d7df08f58c17d38b8",
+      "backend/network.py": "9dc3e654a7e2dd06646fd72c39af00803073dab52948ca2b3eec026c1645fb1e",
+      "backend/neural_symbols.py": "8ace6a7dbb46c44a857a156b79da95736e9ac46f8f83aa5b72a525071160dae6",
+      "backend/sparse_topology.py": "e37a292b64f6e5cfeb5c449d92079c98b357022877f6426de8bfa5359ff97029",
+      "backend/symbols.py": "d0625484e54ad8e42c0e221da6d7567de8e87b197a69194da7063eda9a7275c9",
+      "backend/topology.py": "2c8421c7df075e3ed76161008df7be763a6d52c3ecc72572ec0cd7ffc261441c",
+      "backend/topology_context.py": "587ec5bdaa93f18ffdb0ffbf12a66f9ecfa6580ffca815385a843899e3cd6d4f",
+      "backend/topology_features.py": "b9041b4ab38f83af59c6c279ee9fab15e570cf8313a31015bf22c6d10bec3e5b"
+    },
+    "protocol": "Source-only AI annotation frozen before first extraction on White Rose. Two small ROIs, class-agnostic IoU.5. All full-page glyphs extracted; only frozen ROI/ignore used by scoring. No test tuning. Cold clears v11 OCR cache; warm immediately reuses identical image, not new-document latency.3 alternating paired repeats."
+  },
+  "rows": [
+    {
+      "key": "white-rose-25",
+      "role": "project-holdout-AI-pilot",
+      "gt_symbols": 26,
+      "gt_edges": 36,
+      "variants": {
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 19,
+              "fp": 0,
+              "fn": 7,
+              "precision": 1.0,
+              "recall": 0.7307692307692307,
+              "f1": 0.8444444444444444
+            },
+            "connections": {
+              "tp": 16,
+              "fp": 0,
+              "fn": 20,
+              "precision": 1.0,
+              "recall": 0.4444444444444444,
+              "f1": 0.6153846153846154
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "routing": 3,
+            "recovered": 16,
+            "missing_symbol": 17
+          },
+          "ocr_words": 106,
+          "warnings": [],
+          "cold_seconds": [
+            4.380265560990665,
+            4.038512402010383,
+            3.986257556010969
+          ],
+          "cold_median": 4.038512402010383
+        },
+        "v11": {
+          "scores": {
+            "localization": {
+              "tp": 19,
+              "fp": 0,
+              "fn": 7,
+              "precision": 1.0,
+              "recall": 0.7307692307692307,
+              "f1": 0.8444444444444444
+            },
+            "connections": {
+              "tp": 16,
+              "fp": 0,
+              "fn": 20,
+              "precision": 1.0,
+              "recall": 0.4444444444444444,
+              "f1": 0.6153846153846154
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "routing": 3,
+            "recovered": 16,
+            "missing_symbol": 17
+          },
+          "ocr_words": 106,
+          "warnings": [],
+          "cold_seconds": [
+            4.476172959984979,
+            3.980446863017278,
+            4.015512108977418
+          ],
+          "cold_median": 4.015512108977418,
+          "identical_image_warm_seconds": [
+            3.5532722319767345,
+            3.241780248004943,
+            3.410510959016392
+          ],
+          "warm_median": 3.410510959016392
+        }
+      }
+    },
+    {
+      "key": "white-rose-22",
+      "role": "project-holdout-AI-pilot",
+      "gt_symbols": 19,
+      "gt_edges": 20,
+      "variants": {
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 9,
+              "fp": 4,
+              "fn": 10,
+              "precision": 0.6923076923076923,
+              "recall": 0.47368421052631576,
+              "f1": 0.5625
+            },
+            "connections": {
+              "tp": 4,
+              "fp": 10,
+              "fn": 16,
+              "precision": 0.2857142857142857,
+              "recall": 0.2,
+              "f1": 0.23529411764705882
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "recovered": 4,
+            "missing_symbol": 16
+          },
+          "ocr_words": 229,
+          "warnings": [],
+          "cold_seconds": [
+            5.260715548007283,
+            5.114598688000115,
+            5.237733969988767
+          ],
+          "cold_median": 5.237733969988767
+        },
+        "v11": {
+          "scores": {
+            "localization": {
+              "tp": 9,
+              "fp": 4,
+              "fn": 10,
+              "precision": 0.6923076923076923,
+              "recall": 0.47368421052631576,
+              "f1": 0.5625
+            },
+            "connections": {
+              "tp": 4,
+              "fp": 10,
+              "fn": 16,
+              "precision": 0.2857142857142857,
+              "recall": 0.2,
+              "f1": 0.23529411764705882
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "recovered": 4,
+            "missing_symbol": 16
+          },
+          "ocr_words": 229,
+          "warnings": [],
+          "cold_seconds": [
+            5.25750602100743,
+            5.296450850000838,
+            5.1813864830182865
+          ],
+          "cold_median": 5.25750602100743,
+          "identical_image_warm_seconds": [
+            3.6972231050021946,
+            3.6355378220032435,
+            3.5825358719739597
+          ],
+          "warm_median": 3.6355378220032435
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "v10": {
+      "localization": {
+        "tp": 28,
+        "fp": 4,
+        "fn": 17,
+        "precision": 0.875,
+        "recall": 0.6222222222222222,
+        "f1": 0.7272727272727273
+      },
+      "connections": {
+        "tp": 20,
+        "fp": 10,
+        "fn": 36,
+        "precision": 0.6666666666666666,
+        "recall": 0.35714285714285715,
+        "f1": 0.46511627906976744
+      },
+      "mean_page_cold_median": 4.638123185999575
+    },
+    "v11": {
+      "localization": {
+        "tp": 28,
+        "fp": 4,
+        "fn": 17,
+        "precision": 0.875,
+        "recall": 0.6222222222222222,
+        "f1": 0.7272727272727273
+      },
+      "connections": {
+        "tp": 20,
+        "fp": 10,
+        "fn": 36,
+        "precision": 0.6666666666666666,
+        "recall": 0.35714285714285715,
+        "f1": 0.46511627906976744
+      },
+      "mean_page_cold_median": 4.636509064992424,
+      "mean_identical_image_warm_median": 3.5230243905098177
+    }
+  },
+  "limitations": "45 glyphs/56 edges in2 source-only AI-annotated ROIs. No expert certification; no full-page or project-wide quality claim. No gradient training.3 sequential paired repeats, not service SLA or throughput."
+}

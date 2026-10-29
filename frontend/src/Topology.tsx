@@ -26,3 +26,5 @@ export function PortsInfo({element}:{element:Shape}){
  const stale=!sameBox(element.properties.topology_bbox as number[]|undefined,element.bbox);
  return <details className="ports-info"><summary>포트 인식 후보 {ports.length}개</summary><p>추출 당시의 관찰 근거입니다. 요소 승인은 포트·접속점의 승인을 뜻하지 않습니다.</p>{stale&&<p>요소 영역이 변경되었습니다. 기존 포트와 경로 표시는 숨겼습니다.</p>}<ul>{ports.map((p,i)=><li key={i}>{p.side} · ({p.point.map(v=>v.toFixed(3)).join(', ')}) · 점수 {p.score.toFixed(2)}</li>)}</ul><small>점수는 보정된 정확도가 아닙니다.</small></details>
 }
+
+export function ReviewedTopologyOverlay({review}:{review:any}){return <g className="topology-overlay" aria-label={'저장된 교정 버전 '+review.version}>{review.payload.ports.filter((p:any)=>!p.stale&&p.status!=='rejected').map((p:any)=><circle key={p.id} cx={p.point[0]*1000} cy={p.point[1]*1000} r={3} fill={p.status==='approved'?'#147b59':'#176db1'}><title>교정 포트 · {p.side} · {p.status}</title></circle>)}{review.payload.junctions.filter((p:any)=>p.status!=='rejected').map((p:any)=><rect key={p.id} x={p.point[0]*1000-3} y={p.point[1]*1000-3} width={6} height={6} fill={p.kind==='plain_cross'?'#8846b8':'#c18525'}><title>교정 접점 · {p.kind} · {p.status}</title></rect>)}</g>}

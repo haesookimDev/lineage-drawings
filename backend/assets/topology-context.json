@@ -17,5 +17,6 @@
   "release_policy": "Single-model parameter interpolation with development repair/preservation gates; same image-supported periodic recovery and human review. Local style search replaces unused full-page template proposals.",
   "extra_max_points": 8,
   "line_recovery": true,
-  "routing_revision": "v10-local-style-and-replay"
+  "routing_revision": "v11-validated-short-dashes",
+  "short_dash_recovery": true
 }

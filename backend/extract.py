@@ -4,6 +4,11 @@ import shutil
 import subprocess
 import tempfile
 import uuid
+import time
+import hashlib
+from collections import OrderedDict
+from functools import lru_cache
+from threading import Lock
 from pathlib import Path
 
 import ezdxf
@@ -19,6 +24,16 @@ MAX_PAGES = 25
 MAX_SIDE = 2400
 MAX_ELEMENTS = 500
 Image.MAX_IMAGE_PIXELS = 50_000_000
+_OCR_CACHE=OrderedDict()
+_OCR_CACHE_LOCK=Lock()
+
+def clear_ocr_cache():
+    with _OCR_CACHE_LOCK:_OCR_CACHE.clear()
+
+@lru_cache(maxsize=4)
+def ocr_language(binary):
+    langs=subprocess.run([binary,'--list-langs'],capture_output=True,text=True,timeout=10).stdout
+    return 'eng+kor' if '\nkor' in langs else 'eng'
 
 
 def uid():
@@ -44,17 +59,28 @@ def font(size):
     return ImageFont.load_default()
 
 
-def ocr(image, warnings):
+def ocr(image, warnings, diagnostics=None):
     binary = shutil.which('tesseract')
     if not binary:
         warnings.append('OCR 실행기가 없어 문자 추출을 생략했습니다. 요소는 직접 추가할 수 있습니다.')
         return []
+    try:language=ocr_language(binary)
+    except subprocess.SubprocessError:
+        warnings.append('OCR 언어 정보를 읽지 못했습니다.');return []
+    # Bounded process-local cache contains word tuples only, never image bytes,
+    # credentials or review edits. Recreate IDs for every analysis/page.
+    key=(binary,language,image.mode,image.size,hashlib.sha256(image.tobytes()).hexdigest())
+    with _OCR_CACHE_LOCK:
+        cached=_OCR_CACHE.get(key)
+        if cached is not None:_OCR_CACHE.move_to_end(key)
+    if cached is not None:
+        if diagnostics is not None:diagnostics['ocr_cache_hit']=True
+        return [element(text,'text',list(box),'ocr',{'ocr_score':score,'language':language}) for text,box,score in cached]
+    if diagnostics is not None:diagnostics['ocr_cache_hit']=False
     with tempfile.TemporaryDirectory() as tmp:
         path = Path(tmp)/'page.png'
         image.save(path)
         try:
-            langs = subprocess.run([binary, '--list-langs'], capture_output=True, text=True, timeout=10).stdout
-            language = 'eng+kor' if '\nkor' in langs else 'eng'
             result = subprocess.run([binary, str(path), 'stdout', '-l', language, '--psm', '11', 'tsv'],
                                     capture_output=True, text=True, timeout=45, check=True)
             words = []
@@ -65,15 +91,23 @@ def ocr(image, warnings):
                 x,y,w,h = map(int, v[6:10])
                 words.append(element(v[11], 'text', normalized((x,y,x+w,y+h), *image.size),
                                      'ocr', {'ocr_score': float(v[10]), 'language': language}))
-            return words[:MAX_ELEMENTS]
+            words=words[:MAX_ELEMENTS]
+            with _OCR_CACHE_LOCK:
+                _OCR_CACHE[key]=tuple((w['label'],tuple(w['bbox']),w['properties']['ocr_score']) for w in words)
+                while len(_OCR_CACHE)>8:_OCR_CACHE.popitem(last=False)
+            return words
         except (subprocess.SubprocessError, ValueError):
             warnings.append('문자 추출이 완료되지 않았습니다. 원본에서 직접 검토해 주세요.')
             return []
 
 
-def raster_candidates(image, warnings, with_ocr=True, high_resolution=None):
-    texts = ocr(image,warnings) if with_ocr else []
+def raster_candidates(image, warnings, with_ocr=True, high_resolution=None, timings=None):
+    started=time.perf_counter()
+    texts = (ocr(image,warnings,timings) if timings is not None else ocr(image,warnings)) if with_ocr else []
+    if timings is not None:timings['ocr_seconds']=time.perf_counter()-started
+    started=time.perf_counter()
     shapes,segments,limited = geometric_candidates(image,texts,high_resolution=high_resolution)
+    if timings is not None:timings['symbols_and_lines_seconds']=time.perf_counter()-started
     candidates = [element(f'요소 {i+1}','unknown',box,'neural_symbol_candidate' if properties.get('geometry')=='neural_symbol' else 'learned_symbol_candidate' if properties.get('geometry')=='learned_symbol' else 'image_candidate',properties)
                   for i,(box,properties) in enumerate(shapes)]
     if limited:
@@ -105,8 +139,9 @@ def finish(image, elements, segments, coordinate, transform, folder, number, war
     pid=uid();image.save(folder/f'{pid}.png')
     if len(elements)>MAX_ELEMENTS:warnings.append('요소 수가 많아 500개까지 추출했습니다.')
     elements=elements[:MAX_ELEMENTS]
-    details={};connections=infer_connections(elements,segments,*image.size,image=image,diagnostics=details)
-    transform={**transform,'connection_inference':details}
+    details={};started=time.perf_counter();connections=infer_connections(elements,segments,*image.size,image=image,diagnostics=details)
+    timing={**transform.get('analysis_timing',{}),'connections_seconds':time.perf_counter()-started}
+    transform={**transform,'connection_inference':details,'analysis_timing':timing}
     if details.get('algorithm') in ('legacy-components-v2','visible-components-v4'):
         warnings.append('지원 형상·연속 표지가 부족해 일반 선 추적 후보를 사용했습니다. 교차의 접속 여부와 추가 연결 후보는 직접 검토해 주세요.')
     if details.get('unmarked_crossings'):
@@ -123,6 +158,7 @@ def extract_pdf(path,folder,warnings):
         if not doc.is_pdf or doc.needs_pass:raise ValueError('암호화되었거나 읽을 수 없는 PDF입니다.')
         if len(doc)>MAX_PAGES:raise ValueError(f'PDF는 최대 {MAX_PAGES}페이지까지 지원합니다.')
         for n,page in enumerate(doc):
+            page_started=time.perf_counter();timings={}
             if page.rect.width<=0 or page.rect.height<=0:raise ValueError('PDF 페이지 크기가 유효하지 않습니다.')
             scale=min(2.,MAX_SIDE/max(page.rect.width,page.rect.height))
             pix=page.get_pixmap(matrix=fitz.Matrix(scale,scale),alpha=False,colorspace=fitz.csRGB)
@@ -153,10 +189,10 @@ def extract_pdf(path,folder,warnings):
                 if drawing.get('closePath') and r.width>5 and r.height>5 and r.width<page.rect.width*.45 and r.height<page.rect.height*.45:
                     elements.append(element(f'벡터 요소 {len(elements)+1}','unknown',normalized((r.x0-page.rect.x0,r.y0-page.rect.y0,r.x1-page.rect.x0,r.y1-page.rect.y0),page.rect.width,page.rect.height),'pdf_path'))
             if not words:
-                extra,lines=raster_candidates(image,warnings,high_resolution=high_resolution);elements+=extra
+                extra,lines=raster_candidates(image,warnings,high_resolution=high_resolution,timings=timings);elements+=extra
                 if not segments:segments=lines
             elif page.get_images():
-                extra,lines=raster_candidates(image,warnings,with_ocr=True,high_resolution=high_resolution)
+                extra,lines=raster_candidates(image,warnings,with_ocr=True,high_resolution=high_resolution,timings=timings)
                 for e in extra:
                     if e['kind']=='text' and any(e['label']==t['label'] for t in elements if t['kind']=='text'):continue
                     elements.append(e)
@@ -172,7 +208,7 @@ def extract_pdf(path,folder,warnings):
                 # Native PDF text must not consume every symbol slot.
                 symbols=[e for e in elements if e['kind']!='text'][:200]
                 elements=[e for e in elements if e['kind']=='text'][:MAX_ELEMENTS-len(symbols)]+symbols
-            pages.append(finish(image,elements,segments,'pdf_page',{'scale':scale,'rotation':page.rotation,'page_rect':list(page.rect)},folder,n+1,warnings))
+            output=finish(image,elements,segments,'pdf_page',{'scale':scale,'rotation':page.rotation,'page_rect':list(page.rect),'analysis_timing':timings},folder,n+1,warnings);output['transform']['analysis_timing']['page_total_seconds']=time.perf_counter()-page_started;pages.append(output)
     return pages
 
 
@@ -234,9 +270,9 @@ def extract(path,extension,folder):
             from .neural_symbols import MAX_SOURCE_SIDE
             image=high_resolution.copy();image.thumbnail((MAX_SIDE,MAX_SIDE))
             high_resolution.thumbnail((MAX_SOURCE_SIDE,MAX_SOURCE_SIDE))
-        elements,segments=raster_candidates(image,warnings,high_resolution=high_resolution)
+        timings={};started=time.perf_counter();elements,segments=raster_candidates(image,warnings,high_resolution=high_resolution,timings=timings)
         warnings.append('이미지 요소와 연결은 기하 기반 후보입니다. 작은 기호·점선·교차 접속·물리 단위·의미는 원본과 대조해 주세요.')
-        pages=[finish(image,elements,segments,'image_pixel',{'original_size':original,'rendered_size':list(image.size),'physical_scale':None},folder,1,warnings)]
+        pages=[finish(image,elements,segments,'image_pixel',{'original_size':original,'rendered_size':list(image.size),'physical_scale':None,'analysis_timing':timings},folder,1,warnings)];pages[0]['transform']['analysis_timing']['page_inference_seconds']=time.perf_counter()-started
     return pages,list(dict.fromkeys(warnings))
 
 

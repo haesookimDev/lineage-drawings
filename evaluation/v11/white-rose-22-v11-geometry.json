@@ -1,0 +1,3624 @@
+{
+  "elements": [
+    {
+      "id": "d9cf49086fb84766be3ff9a428623805",
+      "kind": "unknown",
+      "bbox": [
+        0.6881727576255798,
+        0.7028481364250183,
+        0.7058149576187134,
+        0.728325605392456
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9474049806594849,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.6438,
+            "point": [
+              0.6969256,
+              0.7283256
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.6881727576255798,
+          0.7028481364250183,
+          0.7058149576187134,
+          0.728325605392456
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "66420e918fed43549e9870eec79b4a14",
+      "kind": "unknown",
+      "bbox": [
+        0.48421886563301086,
+        0.6815637350082397,
+        0.5012162327766418,
+        0.7061461806297302
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9450642466545105,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.6375,
+            "point": [
+              0.4927048,
+              0.7061462
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.48421886563301086,
+          0.6815637350082397,
+          0.5012162327766418,
+          0.7061461806297302
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a22fb9bff87748c4a61f06356bcd78b4",
+      "kind": "unknown",
+      "bbox": [
+        0.5420988202095032,
+        0.6860442757606506,
+        0.5592796206474304,
+        0.7110897898674011
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.944932222366333,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.7,
+            "point": [
+              0.5507025,
+              0.7110898
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5420988202095032,
+          0.6860442757606506,
+          0.5592796206474304,
+          0.7110897898674011
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "75579015a24e4ee1b0938ea6818214dd",
+      "kind": "unknown",
+      "bbox": [
+        0.5424085259437561,
+        0.575218677520752,
+        0.5590364933013916,
+        0.599912166595459
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9446314573287964,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.7063,
+            "point": [
+              0.5505695,
+              0.5999122
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5424085259437561,
+          0.575218677520752,
+          0.5590364933013916,
+          0.599912166595459
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "647c60337c1649b7bd177e1149f25196",
+      "kind": "unknown",
+      "bbox": [
+        0.2917238175868988,
+        0.703031063079834,
+        0.30885353684425354,
+        0.727148175239563
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9435680508613586,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "right",
+            "score": 0.7375,
+            "point": [
+              0.3088535,
+              0.7151019
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.2917238175868988,
+          0.703031063079834,
+          0.30885353684425354,
+          0.727148175239563
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1261e567d7ca44d3a055055911103ac0",
+      "kind": "unknown",
+      "bbox": [
+        0.5420747995376587,
+        0.7255827188491821,
+        0.5590421557426453,
+        0.7502009272575378
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9433305859565735,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "top",
+            "score": 0.7875,
+            "point": [
+              0.5507025,
+              0.7255827
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.8562,
+            "point": [
+              0.5507025,
+              0.7502009
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5420747995376587,
+          0.7255827188491821,
+          0.5590421557426453,
+          0.7502009272575378
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "64eb914a986d4f8d9ec441b75dfc5dbd",
+      "kind": "unknown",
+      "bbox": [
+        0.3194858431816101,
+        0.7030255198478699,
+        0.3366597592830658,
+        0.7271862030029297
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9426775574684143,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.6812,
+            "point": [
+              0.3194858,
+              0.7151019
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 0.9688,
+            "point": [
+              0.3366598,
+              0.7153269
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.3194858431816101,
+          0.7030255198478699,
+          0.3366597592830658,
+          0.7271862030029297
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "fce1a4a2b99c42ccba7d12656c253206",
+      "kind": "unknown",
+      "bbox": [
+        0.6882166266441345,
+        0.7431905269622803,
+        0.7052835822105408,
+        0.7666807174682617
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9423146843910217,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.9875,
+            "point": [
+              0.6964583,
+              0.7666807
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.6875,
+            "point": [
+              0.6969256,
+              0.7431905
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.6882166266441345,
+          0.7431905269622803,
+          0.7052835822105408,
+          0.7666807174682617
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a92f642aa573465aa2d4fbf13280a4ed",
+      "kind": "unknown",
+      "bbox": [
+        0.5909756422042847,
+        0.637352705001831,
+        0.608127772808075,
+        0.6618664860725403
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9419064521789551,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "right",
+            "score": 0.9688,
+            "point": [
+              0.6081278,
+              0.6494405
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "left",
+            "score": 0.9937,
+            "point": [
+              0.5909756,
+              0.6495141
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.8062,
+            "point": [
+              0.5996607,
+              0.6373527
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5909756422042847,
+          0.637352705001831,
+          0.608127772808075,
+          0.6618664860725403
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "23637389a8234cefb9df12c04f82c495",
+      "kind": "unknown",
+      "bbox": [
+        0.21602386236190796,
+        0.8420275449752808,
+        0.23303349316120148,
+        0.866629958152771
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9412099719047546,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "86d83382cb4f4c10b6423f908e6788b4",
+      "kind": "unknown",
+      "bbox": [
+        0.6896061897277832,
+        0.3854522407054901,
+        0.7088001370429993,
+        0.4117572605609894
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9406419396400452,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.65,
+            "point": [
+              0.6984461,
+              0.4117573
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.6896061897277832,
+          0.3854522407054901,
+          0.7088001370429993,
+          0.4117572605609894
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ea3e6d3ec4b54e0da13937a8ce039ead",
+      "kind": "unknown",
+      "bbox": [
+        0.5909571051597595,
+        0.5979377627372742,
+        0.6085273623466492,
+        0.6225972771644592
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9405328631401062,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.75,
+            "point": [
+              0.5996607,
+              0.6225973
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5909571051597595,
+          0.5979377627372742,
+          0.6085273623466492,
+          0.6225972771644592
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "4fa867dfd59145a9b3a0569861c62744",
+      "kind": "unknown",
+      "bbox": [
+        0.3497680127620697,
+        0.6575254797935486,
+        0.3667386770248413,
+        0.6822316646575928
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9403743147850037,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.7437,
+            "point": [
+              0.358165,
+              0.6822317
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.3497680127620697,
+          0.6575254797935486,
+          0.3667386770248413,
+          0.6822316646575928
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "738c08b7266e4f469ea7224650429fa0",
+      "kind": "unknown",
+      "bbox": [
+        0.37840375304222107,
+        0.2271067500114441,
+        0.3956999182701111,
+        0.25211164355278015
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9403660297393799,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "7aa000f44541444290bf920f51a0ca87",
+      "kind": "unknown",
+      "bbox": [
+        0.7262911796569824,
+        0.37433135509490967,
+        0.7437839508056641,
+        0.39928358793258667
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9391936659812927,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "top",
+            "score": 0.8625,
+            "point": [
+              0.7350552,
+              0.3743314
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.8813,
+            "point": [
+              0.7350684,
+              0.3992836
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.7262911796569824,
+          0.37433135509490967,
+          0.7437839508056641,
+          0.39928358793258667
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "753ce6487ccb4ae5a0860d567a86ecb9",
+      "kind": "unknown",
+      "bbox": [
+        0.7261725068092346,
+        0.5172321200370789,
+        0.7434850335121155,
+        0.542442262172699
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9383794069290161,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.9375,
+            "point": [
+              0.7345312,
+              0.5424423
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.8062,
+            "point": [
+              0.7347879,
+              0.5172321
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.7261725068092346,
+          0.5172321200370789,
+          0.7434850335121155,
+          0.542442262172699
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "79cc2230ed05498287ac3f60f14ef545",
+      "kind": "unknown",
+      "bbox": [
+        0.7265936732292175,
+        0.33823809027671814,
+        0.7437726855278015,
+        0.3630295693874359
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9383169412612915,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.65,
+            "point": [
+              0.7350552,
+              0.3630296
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.7265936732292175,
+          0.33823809027671814,
+          0.7437726855278015,
+          0.3630295693874359
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ac7e371383a64d87b2ecdc4599930f94",
+      "kind": "unknown",
+      "bbox": [
+        0.6897843480110168,
+        0.5372316837310791,
+        0.7072697877883911,
+        0.5618625283241272
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9379231333732605,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.7125,
+            "point": [
+              0.6982491,
+              0.5618625
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.6897843480110168,
+          0.5372316837310791,
+          0.7072697877883911,
+          0.5618625283241272
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "kind": "unknown",
+      "bbox": [
+        0.349582314491272,
+        0.6965148448944092,
+        0.3666004240512848,
+        0.7215365171432495
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.937917172908783,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "top",
+            "score": 0.8438,
+            "point": [
+              0.358165,
+              0.6965148
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.8125,
+            "point": [
+              0.358165,
+              0.7215365
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.349582314491272,
+          0.6965148448944092,
+          0.3666004240512848,
+          0.7215365171432495
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "520502ed73024340ad9afb15827f2416",
+      "kind": "unknown",
+      "bbox": [
+        0.36591070890426636,
+        0.20481489598751068,
+        0.3826894164085388,
+        0.22906091809272766
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.936792254447937,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.7312,
+            "point": [
+              0.3742975,
+              0.2290609
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.36591070890426636,
+          0.20481489598751068,
+          0.3826894164085388,
+          0.22906091809272766
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "0feac4fc0ac64071a89304061da4bd1e",
+      "kind": "unknown",
+      "bbox": [
+        0.5423794984817505,
+        0.6147167086601257,
+        0.559064507484436,
+        0.639154851436615
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9358738660812378,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "top",
+            "score": 0.8188,
+            "point": [
+              0.5505695,
+              0.6147167
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.9875,
+            "point": [
+              0.5504167,
+              0.6391549
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5423794984817505,
+          0.6147167086601257,
+          0.559064507484436,
+          0.639154851436615
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a13506269a034e2b869ff973ed9afec8",
+      "kind": "unknown",
+      "bbox": [
+        0.7261669039726257,
+        0.4807683229446411,
+        0.7441453337669373,
+        0.5056490302085876
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9353190064430237,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.5938,
+            "point": [
+              0.7347879,
+              0.505649
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.7261669039726257,
+          0.4807683229446411,
+          0.7441453337669373,
+          0.5056490302085876
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "5a9c17eeb64244b3988ea690ae74051d",
+      "kind": "unknown",
+      "bbox": [
+        0.4064999520778656,
+        0.4590893089771271,
+        0.42323052883148193,
+        0.4822697043418884
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9350259304046631,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f11ce074e41e43ec889325c9153e6291",
+      "kind": "unknown",
+      "bbox": [
+        0.6899473667144775,
+        0.5765280723571777,
+        0.7064911127090454,
+        0.6013388633728027
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9344233870506287,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.5188,
+            "point": [
+              0.6979167,
+              0.6013389
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.8938,
+            "point": [
+              0.6982491,
+              0.5765281
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.6899473667144775,
+          0.5765280723571777,
+          0.7064911127090454,
+          0.6013388633728027
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "kind": "unknown",
+      "bbox": [
+        0.4844059348106384,
+        0.720825731754303,
+        0.5016930103302002,
+        0.7451099753379822
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.932602047920227,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.9812,
+            "point": [
+              0.4925,
+              0.74511
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.6812,
+            "point": [
+              0.4927048,
+              0.7208257
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.4844059348106384,
+          0.720825731754303,
+          0.5016930103302002,
+          0.7451099753379822
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "f95e2385902a4093af5f7c7f7a50dbea",
+      "kind": "unknown",
+      "bbox": [
+        0.27378153800964355,
+        0.3809366226196289,
+        0.29081490635871887,
+        0.4048682749271393
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9303199648857117,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ae235f7f845f40af887575b7b055a070",
+      "kind": "unknown",
+      "bbox": [
+        0.690062940120697,
+        0.4260095953941345,
+        0.7065994143486023,
+        0.4507725238800049
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.92942214012146,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "top",
+            "score": 0.825,
+            "point": [
+              0.6984461,
+              0.4260096
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.9062,
+            "point": [
+              0.698125,
+              0.4507725
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.690062940120697,
+          0.4260095953941345,
+          0.7065994143486023,
+          0.4507725238800049
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "62e20e6790bb4c98add07b8cc6c0f9ef",
+      "kind": "unknown",
+      "bbox": [
+        0.31661346554756165,
+        0.2504672110080719,
+        0.32690948247909546,
+        0.26241475343704224
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9153129458427429,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 1.0,
+            "point": [
+              0.3166135,
+              0.2582082
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 0.9937,
+            "point": [
+              0.3269095,
+              0.2582082
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.5875,
+            "point": [
+              0.3206836,
+              0.2624148
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.31661346554756165,
+          0.2504672110080719,
+          0.32690948247909546,
+          0.26241475343704224
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "253400d8e3bb4a96a417d80fa702b574",
+      "kind": "unknown",
+      "bbox": [
+        0.1537095308303833,
+        0.2455844134092331,
+        0.18814171850681305,
+        0.27139511704444885
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9145978093147278,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "right",
+            "score": 0.9,
+            "point": [
+              0.1881417,
+              0.2573697
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.1537095308303833,
+          0.2455844134092331,
+          0.18814171850681305,
+          0.27139511704444885
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "8ba6526380b14713ac4f261c7ee770f0",
+      "kind": "unknown",
+      "bbox": [
+        0.4450299143791199,
+        0.3411289155483246,
+        0.4554080069065094,
+        0.3532390296459198
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9122847318649292,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.975,
+            "point": [
+              0.4450299,
+              0.3487191
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 0.9,
+            "point": [
+              0.455408,
+              0.3487191
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.4450299143791199,
+          0.3411289155483246,
+          0.4554080069065094,
+          0.3532390296459198
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "kind": "unknown",
+      "bbox": [
+        0.3719397485256195,
+        0.5662423372268677,
+        0.37831202149391174,
+        0.5845462679862976
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9079342484474182,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.5562,
+            "point": [
+              0.3719397,
+              0.5662544
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.9438,
+            "point": [
+              0.3753044,
+              0.5662423
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.9688,
+            "point": [
+              0.3753044,
+              0.5845463
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.3719397485256195,
+          0.5662423372268677,
+          0.37831202149391174,
+          0.5845462679862976
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "8eb64d4dd80c4dac90cc27ede1114990",
+      "kind": "unknown",
+      "bbox": [
+        0.5960693359375,
+        0.7699836492538452,
+        0.606835126876831,
+        0.7819280028343201
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9078059196472168,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.9563,
+            "point": [
+              0.5960693,
+              0.776649
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 1.0,
+            "point": [
+              0.6068351,
+              0.776649
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.4812,
+            "point": [
+              0.6055534,
+              0.781928
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5960693359375,
+          0.7699836492538452,
+          0.606835126876831,
+          0.7819280028343201
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "ebfaddc4f81544678fc527c02be14e88",
+      "kind": "unknown",
+      "bbox": [
+        0.7820543646812439,
+        0.458015501499176,
+        0.7927178144454956,
+        0.4706908166408539
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9029392600059509,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "right",
+            "score": 0.9812,
+            "point": [
+              0.7927178,
+              0.4648484
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "left",
+            "score": 0.9312,
+            "point": [
+              0.7820544,
+              0.4662333
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.7820543646812439,
+          0.458015501499176,
+          0.7927178144454956,
+          0.4706908166408539
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a961e205514845dba342b37fc548bcb1",
+      "kind": "unknown",
+      "bbox": [
+        0.7814128398895264,
+        0.6101770997047424,
+        0.7923205494880676,
+        0.6231575608253479
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.9017759561538696,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.8562,
+            "point": [
+              0.7814128,
+              0.6183903
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 0.9812,
+            "point": [
+              0.7923205,
+              0.6183903
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.7814128398895264,
+          0.6101770997047424,
+          0.7923205494880676,
+          0.6231575608253479
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "99cd13be49b74834bc1ece3a118ee24d",
+      "kind": "unknown",
+      "bbox": [
+        0.2968583405017853,
+        0.30488288402557373,
+        0.30559584498405457,
+        0.31996577978134155
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8986230492591858,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "top",
+            "score": 0.9312,
+            "point": [
+              0.3009765,
+              0.3048829
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 1.0,
+            "point": [
+              0.3023047,
+              0.3199658
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.2968583405017853,
+          0.30488288402557373,
+          0.30559584498405457,
+          0.31996577978134155
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "07d795884c944e679b7cdbf11a3ce429",
+      "kind": "unknown",
+      "bbox": [
+        0.3703223168849945,
+        0.2398907095193863,
+        0.3785301446914673,
+        0.2518579661846161
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8940569758415222,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.45,
+            "point": [
+              0.3703223,
+              0.2516196
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.6812,
+            "point": [
+              0.3742975,
+              0.2398907
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.3703223168849945,
+          0.2398907095193863,
+          0.3785301446914673,
+          0.2518579661846161
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "unknown",
+      "bbox": [
+        0.5024721026420593,
+        0.7364109754562378,
+        0.5111655592918396,
+        0.7532544136047363
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8863458633422852,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "right",
+            "score": 0.6062,
+            "point": [
+              0.5111656,
+              0.7499264
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.9812,
+            "point": [
+              0.507749,
+              0.736411
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.775,
+            "point": [
+              0.507749,
+              0.7532544
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5024721026420593,
+          0.7364109754562378,
+          0.5111655592918396,
+          0.7532544136047363
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "e4ec5e1caee44d56bea4b489b1634347",
+      "kind": "unknown",
+      "bbox": [
+        0.6167354583740234,
+        0.7385661005973816,
+        0.6240457892417908,
+        0.7531093955039978
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8846621513366699,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "right",
+            "score": 0.4938,
+            "point": [
+              0.6240458,
+              0.7393993
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.9438,
+            "point": [
+              0.6205351,
+              0.7385661
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.9937,
+            "point": [
+              0.6205351,
+              0.7531094
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.6167354583740234,
+          0.7385661005973816,
+          0.6240457892417908,
+          0.7531093955039978
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "a8068922ea9c424ab8ae4faf18173856",
+      "kind": "unknown",
+      "bbox": [
+        0.8062966465950012,
+        0.5325153470039368,
+        0.8127723932266235,
+        0.5508744716644287
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.869972288608551,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "bottom",
+            "score": 0.9375,
+            "point": [
+              0.8096159,
+              0.5508745
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.9812,
+            "point": [
+              0.8096191,
+              0.5325153
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.8062966465950012,
+          0.5325153470039368,
+          0.8127723932266235,
+          0.5508744716644287
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "unknown",
+      "bbox": [
+        0.6586921215057373,
+        0.534584641456604,
+        0.6672804355621338,
+        0.5493203401565552
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8667402863502502,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "top",
+            "score": 0.9812,
+            "point": [
+              0.6643489,
+              0.5345846
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.9875,
+            "point": [
+              0.6643489,
+              0.5493203
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.6586921215057373,
+          0.534584641456604,
+          0.6672804355621338,
+          0.5493203401565552
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "5adc4e5b7cd34450a0801889f5d55c34",
+      "kind": "unknown",
+      "bbox": [
+        0.4707719385623932,
+        0.2869279980659485,
+        0.4810729920864105,
+        0.2986553907394409
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8467108607292175,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.9125,
+            "point": [
+              0.4707719,
+              0.2933414
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 0.9812,
+            "point": [
+              0.481073,
+              0.2933414
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.4707719385623932,
+          0.2869279980659485,
+          0.4810729920864105,
+          0.2986553907394409
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "d2ea70d87ea7470788aa07870b6260c8",
+      "kind": "unknown",
+      "bbox": [
+        0.7563434839248657,
+        0.45836448669433594,
+        0.7671100497245789,
+        0.47019556164741516
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8457353711128235,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.8625,
+            "point": [
+              0.7563435,
+              0.4662333
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 0.8938,
+            "point": [
+              0.76711,
+              0.4662333
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.7563434839248657,
+          0.45836448669433594,
+          0.7671100497245789,
+          0.47019556164741516
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "0495341d569543598cbaf3be858f023e",
+      "kind": "unknown",
+      "bbox": [
+        0.3695441782474518,
+        0.7956801056861877,
+        0.3788418471813202,
+        0.8130632638931274
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8402721881866455,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.5312,
+            "point": [
+              0.3695442,
+              0.8107286
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.6812,
+            "point": [
+              0.3759017,
+              0.7956801
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.6812,
+            "point": [
+              0.3759017,
+              0.8130633
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.3695441782474518,
+          0.7956801056861877,
+          0.3788418471813202,
+          0.8130632638931274
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "unknown",
+      "bbox": [
+        0.5708814859390259,
+        0.7706071734428406,
+        0.5811733603477478,
+        0.7820419669151306
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8267664909362793,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.9688,
+            "point": [
+              0.5708815,
+              0.7767962
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 0.7437,
+            "point": [
+              0.5811734,
+              0.7779741
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.6062,
+            "point": [
+              0.5767057,
+              0.782042
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.5708814859390259,
+          0.7706071734428406,
+          0.5811733603477478,
+          0.7820419669151306
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "8df4607c0b544fd0a0001eee43949ff5",
+      "kind": "unknown",
+      "bbox": [
+        0.7565895318984985,
+        0.6105944514274597,
+        0.7666351199150085,
+        0.6221291422843933
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.821828305721283,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "left",
+            "score": 0.7125,
+            "point": [
+              0.7565895,
+              0.6183903
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "right",
+            "score": 0.925,
+            "point": [
+              0.7666351,
+              0.6183903
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.6438,
+            "point": [
+              0.7654785,
+              0.6221291
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.7565895318984985,
+          0.6105944514274597,
+          0.7666351199150085,
+          0.6221291422843933
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "106c7e4bf3ae459993e67c2fc5ac6f76",
+      "kind": "unknown",
+      "bbox": [
+        0.33626124262809753,
+        0.3048013150691986,
+        0.3442402184009552,
+        0.32007312774658203
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.8150339722633362,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "top",
+            "score": 0.8875,
+            "point": [
+              0.3415011,
+              0.3048013
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.975,
+            "point": [
+              0.3415011,
+              0.3200731
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.33626124262809753,
+          0.3048013150691986,
+          0.3442402184009552,
+          0.32007312774658203
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "7ba46eae642e4231bcc203e0c19ae9c6",
+      "kind": "unknown",
+      "bbox": [
+        0.19919562339782715,
+        0.22230787575244904,
+        0.21552211046218872,
+        0.24579089879989624
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.80523681640625,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "1eb7da2844074d65a319fefc70a287f9",
+      "kind": "unknown",
+      "bbox": [
+        0.2965892553329468,
+        0.2684408128261566,
+        0.3058520257472992,
+        0.28339555859565735
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.7692219614982605,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "right",
+            "score": 0.5562,
+            "point": [
+              0.305852,
+              0.2760601
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "left",
+            "score": 0.5063,
+            "point": [
+              0.2965893,
+              0.2819033
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.9187,
+            "point": [
+              0.3009765,
+              0.2833956
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "top",
+            "score": 0.975,
+            "point": [
+              0.3022396,
+              0.2684408
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.2965892553329468,
+          0.2684408128261566,
+          0.3058520257472992,
+          0.28339555859565735
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "8d4ed908d5c1431c93311d626c892774",
+      "kind": "unknown",
+      "bbox": [
+        0.06334178894758224,
+        0.9563416838645935,
+        0.07425293326377869,
+        0.9719021320343018
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.6499324440956116,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "328f0034a66e461093275f4973dc10b8",
+      "kind": "unknown",
+      "bbox": [
+        0.7451898455619812,
+        0.7928576469421387,
+        0.7596254944801331,
+        0.8140983581542969
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.6429538726806641,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "0289cf2be0b84a9cb9c38b018c7b5146",
+      "kind": "unknown",
+      "bbox": [
+        0.2922065854072571,
+        0.39618176221847534,
+        0.31369632482528687,
+        0.4440467655658722
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.6102921366691589,
+        "requires_review": true,
+        "inference_view": "overview",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support",
+        "ports": [
+          {
+            "side": "right",
+            "score": 0.5312,
+            "point": [
+              0.3136963,
+              0.4054031
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          },
+          {
+            "side": "bottom",
+            "score": 0.8125,
+            "point": [
+              0.294707,
+              0.4440468
+            ],
+            "status": "needs_review",
+            "source": "sparse_context_and_line_contact"
+          }
+        ],
+        "topology_bbox": [
+          0.2922065854072571,
+          0.39618176221847534,
+          0.31369632482528687,
+          0.4440467655658722
+        ]
+      },
+      "concept_id": null
+    },
+    {
+      "id": "355ba37cf4074b70921416908edeaf7c",
+      "kind": "unknown",
+      "bbox": [
+        0.6863841414451599,
+        0.7927019000053406,
+        0.7008199095726013,
+        0.814154326915741
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.6091634631156921,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    },
+    {
+      "id": "62d821b34dda4e659f2cfbf7e99bd0b0",
+      "kind": "unknown",
+      "bbox": [
+        0.2707865238189697,
+        0.48005834221839905,
+        0.2901615798473358,
+        0.51578688621521
+      ],
+      "source": "neural_symbol_candidate",
+      "status": "needs_review",
+      "properties": {
+        "geometry": "neural_symbol",
+        "model": "yolox-nano-symbol-v10",
+        "symbol_detector": "yolox-nano-symbol-v1",
+        "symbol_model_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "detector_score": 0.6000922918319702,
+        "requires_review": true,
+        "inference_view": "tile",
+        "source_size": [
+          4800,
+          3395
+        ],
+        "tile_count": 25,
+        "detail_tile_count": 0,
+        "profile": "generic_fallback",
+        "style_gate": "neural_local_template_support"
+      },
+      "concept_id": null
+    }
+  ],
+  "connections": [
+    {
+      "id": "e2a4cb98c9ee4c4caefb648fa29358a0",
+      "from_id": "66420e918fed43549e9870eec79b4a14",
+      "to_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "39bb0aeebadf4998992d76fa4435a788",
+      "from_id": "1261e567d7ca44d3a055055911103ac0",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "28be32017e5b4dd2afd03f3be0b9df97",
+      "from_id": "a92f642aa573465aa2d4fbf13280a4ed",
+      "to_id": "0feac4fc0ac64071a89304061da4bd1e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "61651d53fab94f618f03ee5193176301",
+      "from_id": "738c08b7266e4f469ea7224650429fa0",
+      "to_id": "07d795884c944e679b7cdbf11a3ce429",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "8b2f39e7161f43609b2afe941c382ea4",
+      "from_id": "7aa000f44541444290bf920f51a0ca87",
+      "to_id": "ae235f7f845f40af887575b7b055a070",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "be1f5bc14cee49df8e41df52989af42d",
+      "from_id": "7aa000f44541444290bf920f51a0ca87",
+      "to_id": "8ba6526380b14713ac4f261c7ee770f0",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "ce4a2bd341f94b8499d8f6f357f7232c",
+      "from_id": "7aa000f44541444290bf920f51a0ca87",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "14d5e66e85e84245935b20278d411b0a",
+      "from_id": "7aa000f44541444290bf920f51a0ca87",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "0a456606ad744423813074ad8855f415",
+      "from_id": "7aa000f44541444290bf920f51a0ca87",
+      "to_id": "d2ea70d87ea7470788aa07870b6260c8",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "b5335495ee0c4d6ea8304e8fb6e59425",
+      "from_id": "ae235f7f845f40af887575b7b055a070",
+      "to_id": "8ba6526380b14713ac4f261c7ee770f0",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "103da39276454b61ab9afdce87d4045a",
+      "from_id": "ae235f7f845f40af887575b7b055a070",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "14e54080a61444989683170585cf692c",
+      "from_id": "ae235f7f845f40af887575b7b055a070",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "6b24e6ad45df44a4ad4615128a426c65",
+      "from_id": "ae235f7f845f40af887575b7b055a070",
+      "to_id": "d2ea70d87ea7470788aa07870b6260c8",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "4639b1bc569240e2aa451db8e467a8e6",
+      "from_id": "8ba6526380b14713ac4f261c7ee770f0",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "70dd56c1897c465da1f0505300991083",
+      "from_id": "8ba6526380b14713ac4f261c7ee770f0",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "8b3264ddf7f84d638cd0d250b94a8698",
+      "from_id": "8ba6526380b14713ac4f261c7ee770f0",
+      "to_id": "d2ea70d87ea7470788aa07870b6260c8",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "1d7a27f1e2cf4e8eb2bd3c93682259d4",
+      "from_id": "7e5c5170a9334ea783b117486f1499ce",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "03ab35bb539543d5b5e5968af3fdcdce",
+      "from_id": "7e5c5170a9334ea783b117486f1499ce",
+      "to_id": "d2ea70d87ea7470788aa07870b6260c8",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "2f91a0e80fe6405192e3b7f168598fcc",
+      "from_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "to_id": "d2ea70d87ea7470788aa07870b6260c8",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "fb1d8a097d6c46e1bc8c694b747609dd",
+      "from_id": "753ce6487ccb4ae5a0860d567a86ecb9",
+      "to_id": "f11ce074e41e43ec889325c9153e6291",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "f0e6ef19c4fa4b66ab5f9237a0becdf4",
+      "from_id": "753ce6487ccb4ae5a0860d567a86ecb9",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "cb590538936148d99eb4b2df77b9bd9a",
+      "from_id": "753ce6487ccb4ae5a0860d567a86ecb9",
+      "to_id": "8df4607c0b544fd0a0001eee43949ff5",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "d2442ca47e18437ea9b505e47a5e17b5",
+      "from_id": "f11ce074e41e43ec889325c9153e6291",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "acdf060ceeeb4c5fb91896c5f80bf82e",
+      "from_id": "f11ce074e41e43ec889325c9153e6291",
+      "to_id": "8df4607c0b544fd0a0001eee43949ff5",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "ee2a86cde70f491ebbd6e755278830b7",
+      "from_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "to_id": "8df4607c0b544fd0a0001eee43949ff5",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "78da8697c5764cec9742ff39242c0234",
+      "from_id": "62e20e6790bb4c98add07b8cc6c0f9ef",
+      "to_id": "1eb7da2844074d65a319fefc70a287f9",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "94565fa29eb9405480042dc27717f749",
+      "from_id": "62e20e6790bb4c98add07b8cc6c0f9ef",
+      "to_id": "99cd13be49b74834bc1ece3a118ee24d",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "05a129e4d2794483a62b2973ebc74066",
+      "from_id": "99cd13be49b74834bc1ece3a118ee24d",
+      "to_id": "1eb7da2844074d65a319fefc70a287f9",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "cf1c4763c9ed4604b21cddaba15b9bc6",
+      "from_id": "253400d8e3bb4a96a417d80fa702b574",
+      "to_id": "0289cf2be0b84a9cb9c38b018c7b5146",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "393e299b10cc4ac99cfa94ff4e2e7c72",
+      "from_id": "8eb64d4dd80c4dac90cc27ede1114990",
+      "to_id": "e4ec5e1caee44d56bea4b489b1634347",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "e22cd013a6e548f9918e2ddb30c51378",
+      "from_id": "8eb64d4dd80c4dac90cc27ede1114990",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "2085e479de1e432bbe81e6784cd88421",
+      "from_id": "ebfaddc4f81544678fc527c02be14e88",
+      "to_id": "d2ea70d87ea7470788aa07870b6260c8",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "976d6bb628ac440f85cb3ef525c067f2",
+      "from_id": "ebfaddc4f81544678fc527c02be14e88",
+      "to_id": "a8068922ea9c424ab8ae4faf18173856",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "1993635ef21c4efbb455a934c14dbf10",
+      "from_id": "a961e205514845dba342b37fc548bcb1",
+      "to_id": "a8068922ea9c424ab8ae4faf18173856",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "a7bc37869f814cf4b113549b779298d0",
+      "from_id": "a961e205514845dba342b37fc548bcb1",
+      "to_id": "8df4607c0b544fd0a0001eee43949ff5",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "26cbaceae9184b9ebe8a9e964e6e419b",
+      "from_id": "a22fb9bff87748c4a61f06356bcd78b4",
+      "to_id": "1261e567d7ca44d3a055055911103ac0",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "e0c1de440c454f08bb78964dd2510ed9",
+      "from_id": "75579015a24e4ee1b0938ea6818214dd",
+      "to_id": "0feac4fc0ac64071a89304061da4bd1e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "b7c54186a97b4cc682327ff27be3fce0",
+      "from_id": "647c60337c1649b7bd177e1149f25196",
+      "to_id": "64eb914a986d4f8d9ec441b75dfc5dbd",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "df9fa6d15e55436589b2131ac6953a35",
+      "from_id": "1261e567d7ca44d3a055055911103ac0",
+      "to_id": "23637389a8234cefb9df12c04f82c495",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "0352e9820a0a40b085f6994ca6c7315f",
+      "from_id": "1261e567d7ca44d3a055055911103ac0",
+      "to_id": "4fa867dfd59145a9b3a0569861c62744",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "40c0e46468a846559165f53368761043",
+      "from_id": "1261e567d7ca44d3a055055911103ac0",
+      "to_id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "dced67baf2ac4f4981464af0c69c504c",
+      "from_id": "1261e567d7ca44d3a055055911103ac0",
+      "to_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "6205026aeaef47bd8ca2e57ab9a16017",
+      "from_id": "1261e567d7ca44d3a055055911103ac0",
+      "to_id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "44fbf83d52744b85a36fd08560ad618f",
+      "from_id": "1261e567d7ca44d3a055055911103ac0",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "e74d049bbb804eeea26c1c9100f474a8",
+      "from_id": "1261e567d7ca44d3a055055911103ac0",
+      "to_id": "0495341d569543598cbaf3be858f023e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "0851d7c9cda44d94b5fec22aee1294cc",
+      "from_id": "fce1a4a2b99c42ccba7d12656c253206",
+      "to_id": "8eb64d4dd80c4dac90cc27ede1114990",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "4500c9e28ead45d5a0a27480de51080b",
+      "from_id": "fce1a4a2b99c42ccba7d12656c253206",
+      "to_id": "e4ec5e1caee44d56bea4b489b1634347",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "3250af65e11b460e996f883664b46aca",
+      "from_id": "fce1a4a2b99c42ccba7d12656c253206",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "7cb652d62d4c42c5871abefd28e26228",
+      "from_id": "fce1a4a2b99c42ccba7d12656c253206",
+      "to_id": "8df4607c0b544fd0a0001eee43949ff5",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "c0163b1d956742e9b044b5106d20b5e1",
+      "from_id": "a92f642aa573465aa2d4fbf13280a4ed",
+      "to_id": "ea3e6d3ec4b54e0da13937a8ce039ead",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "eb433cf72f3443a58851afe1f96cbd59",
+      "from_id": "23637389a8234cefb9df12c04f82c495",
+      "to_id": "4fa867dfd59145a9b3a0569861c62744",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "fc088930aa3541a4bfa8e97ceb32799b",
+      "from_id": "23637389a8234cefb9df12c04f82c495",
+      "to_id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "37c06dec9ceb4d32ae1f62fe46bade51",
+      "from_id": "23637389a8234cefb9df12c04f82c495",
+      "to_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "ce70cea516734c11a5934b684a72e1c2",
+      "from_id": "23637389a8234cefb9df12c04f82c495",
+      "to_id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "8f0769aef9f0453990695b7baf24e7b3",
+      "from_id": "23637389a8234cefb9df12c04f82c495",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "fcc1bc226dfe445faa7d6633abcdff17",
+      "from_id": "23637389a8234cefb9df12c04f82c495",
+      "to_id": "0495341d569543598cbaf3be858f023e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "2ea2d3ff2d6e4e8c9d9221cc81efb9a2",
+      "from_id": "23637389a8234cefb9df12c04f82c495",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "645a5c4439b94db388f1d84c1ad4e7f1",
+      "from_id": "4fa867dfd59145a9b3a0569861c62744",
+      "to_id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "e6da32e7537548fbbca45fe865bcbc36",
+      "from_id": "4fa867dfd59145a9b3a0569861c62744",
+      "to_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "d8207bd9cac7472eb516fa2f154e2a0f",
+      "from_id": "4fa867dfd59145a9b3a0569861c62744",
+      "to_id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "26bd7dd4141c485b8a35066c4eb41f90",
+      "from_id": "4fa867dfd59145a9b3a0569861c62744",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "7dd1c85ba9994b44a2848d06fbda15c1",
+      "from_id": "4fa867dfd59145a9b3a0569861c62744",
+      "to_id": "0495341d569543598cbaf3be858f023e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "35f658f78a894ce7aca012414314d036",
+      "from_id": "4fa867dfd59145a9b3a0569861c62744",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "e5426a5ddfbe40c49ea7ab5d39119cf3",
+      "from_id": "738c08b7266e4f469ea7224650429fa0",
+      "to_id": "62e20e6790bb4c98add07b8cc6c0f9ef",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "b4d5171f4bf943dd892583c7854415a0",
+      "from_id": "738c08b7266e4f469ea7224650429fa0",
+      "to_id": "106c7e4bf3ae459993e67c2fc5ac6f76",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "a4708b1d44274339b43ed053d024bab8",
+      "from_id": "7aa000f44541444290bf920f51a0ca87",
+      "to_id": "79cc2230ed05498287ac3f60f14ef545",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "66eb58d20d44405686ded5e8bed17e49",
+      "from_id": "7aa000f44541444290bf920f51a0ca87",
+      "to_id": "5adc4e5b7cd34450a0801889f5d55c34",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "9b96c29783d441199bfc27533bba4a71",
+      "from_id": "753ce6487ccb4ae5a0860d567a86ecb9",
+      "to_id": "a13506269a034e2b869ff973ed9afec8",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "d41eb7edd9c141de8677900953f6a03b",
+      "from_id": "ac7e371383a64d87b2ecdc4599930f94",
+      "to_id": "f11ce074e41e43ec889325c9153e6291",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "ed394033cb58495eb287ba71a7418bca",
+      "from_id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "to_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "a532bb687b11413a97687292edfa39e3",
+      "from_id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "to_id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "3062ba72630e4d7b9db3282d0bb578b3",
+      "from_id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "f52979bab51f40beb98e2e1fd4494d1d",
+      "from_id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "to_id": "0495341d569543598cbaf3be858f023e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "0963613a74a246878750c66e673bd8f9",
+      "from_id": "2236eb0d6f8a49da8b42b9e3c6c0be6a",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "d388e93e402f40db8abb0911d0662c5b",
+      "from_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "to_id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "eb63008ab46c4f7db3820b061503e800",
+      "from_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "ec52059612f84d8ea305bf2f93857d71",
+      "from_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "to_id": "0495341d569543598cbaf3be858f023e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "23e1f7edafc244bcb434ac3103fa8cf0",
+      "from_id": "a06fbf6c4a9f4f269ed87bf5a3af075c",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "1423a84b47f647ec96a8570460cb27f6",
+      "from_id": "ae235f7f845f40af887575b7b055a070",
+      "to_id": "5adc4e5b7cd34450a0801889f5d55c34",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "df6a274da23044329ced873b0c58773b",
+      "from_id": "62e20e6790bb4c98add07b8cc6c0f9ef",
+      "to_id": "07d795884c944e679b7cdbf11a3ce429",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "c4673f55c0674218b306b19f81b1f150",
+      "from_id": "62e20e6790bb4c98add07b8cc6c0f9ef",
+      "to_id": "106c7e4bf3ae459993e67c2fc5ac6f76",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "0eafb96061c94bc1a640788a531c24e7",
+      "from_id": "253400d8e3bb4a96a417d80fa702b574",
+      "to_id": "7ba46eae642e4231bcc203e0c19ae9c6",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "b546a800cbe54f179e3364ef07c6478f",
+      "from_id": "8ba6526380b14713ac4f261c7ee770f0",
+      "to_id": "5adc4e5b7cd34450a0801889f5d55c34",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "45fdd3e3e6cf40429a62c81bd0de5f04",
+      "from_id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "a5443f93d5dd4f3fbdf674bdafa6a85c",
+      "from_id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "to_id": "0495341d569543598cbaf3be858f023e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "6c772f54b17a450389216211b35ce18f",
+      "from_id": "ffa92b6bc8ec401d9ae5d0f25119423a",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "7509b2a8083642838cd3d1c1ca6096e0",
+      "from_id": "8eb64d4dd80c4dac90cc27ede1114990",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "15fb8e101700446ca4f0b6c61c7c8dcd",
+      "from_id": "8eb64d4dd80c4dac90cc27ede1114990",
+      "to_id": "8df4607c0b544fd0a0001eee43949ff5",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "123ccc7058074c6183d241216906a183",
+      "from_id": "99cd13be49b74834bc1ece3a118ee24d",
+      "to_id": "106c7e4bf3ae459993e67c2fc5ac6f76",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "c119cbb9bdd9414b922801380c625b28",
+      "from_id": "07d795884c944e679b7cdbf11a3ce429",
+      "to_id": "106c7e4bf3ae459993e67c2fc5ac6f76",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "6f936ef1950d4b0d8eb7d4addf8182eb",
+      "from_id": "7e5c5170a9334ea783b117486f1499ce",
+      "to_id": "0495341d569543598cbaf3be858f023e",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "3a678eb1d93d4d5495a92f9329a6249f",
+      "from_id": "7e5c5170a9334ea783b117486f1499ce",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "b6c1525e532c4b2ab21354ba39000376",
+      "from_id": "e4ec5e1caee44d56bea4b489b1634347",
+      "to_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "8ac6179d7117435a9934e43a6f41983a",
+      "from_id": "e4ec5e1caee44d56bea4b489b1634347",
+      "to_id": "8df4607c0b544fd0a0001eee43949ff5",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "579ad818ad41478dbeed681f16b2aa4a",
+      "from_id": "14c86f05c6c94f06a1690c8e6b1a9f40",
+      "to_id": "5adc4e5b7cd34450a0801889f5d55c34",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "ddb0319db4504eaba48634d6d40acc31",
+      "from_id": "5adc4e5b7cd34450a0801889f5d55c34",
+      "to_id": "d2ea70d87ea7470788aa07870b6260c8",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "834dd9b3f5c943229714f551312c4d48",
+      "from_id": "0495341d569543598cbaf3be858f023e",
+      "to_id": "abea9161bdad42e68fbef427a869b2de",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "d169339367544426aef74d57ba0f3e59",
+      "from_id": "7ba46eae642e4231bcc203e0c19ae9c6",
+      "to_id": "0289cf2be0b84a9cb9c38b018c7b5146",
+      "kind": "connectedTo",
+      "source": "line_trace_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "53e64bbeca5048b4a3787eedf0d43a78",
+      "from_id": "5adc4e5b7cd34450a0801889f5d55c34",
+      "to_id": "7e5c5170a9334ea783b117486f1499ce",
+      "kind": "connectedTo",
+      "source": "recognized_path_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "84ec59f09ce44744a209d84138ffcd93",
+      "from_id": "07d795884c944e679b7cdbf11a3ce429",
+      "to_id": "520502ed73024340ad9afb15827f2416",
+      "kind": "connectedTo",
+      "source": "recognized_path_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "aa4b0b982c4f45e384c4cfcbd4574cd4",
+      "from_id": "86d83382cb4f4c10b6423f908e6788b4",
+      "to_id": "ae235f7f845f40af887575b7b055a070",
+      "kind": "connectedTo",
+      "source": "recognized_path_candidate",
+      "status": "needs_review"
+    },
+    {
+      "id": "2672727748794968abe17fd53a64fdde",
+      "from_id": "d9cf49086fb84766be3ff9a428623805",
+      "to_id": "fce1a4a2b99c42ccba7d12656c253206",
+      "kind": "connectedTo",
+      "source": "recognized_path_candidate",
+      "status": "needs_review"
+    }
+  ]
+}

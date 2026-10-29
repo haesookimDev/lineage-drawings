@@ -62,6 +62,43 @@ def initialize():
         CREATE INDEX IF NOT EXISTS idx_page_doc ON pages(document_id);
         CREATE INDEX IF NOT EXISTS idx_element_page ON elements(page_id);
         CREATE INDEX IF NOT EXISTS idx_connection_page ON connections(page_id);
+        CREATE TABLE IF NOT EXISTS projects (
+          id TEXT PRIMARY KEY, name TEXT NOT NULL UNIQUE, split TEXT NOT NULL,
+          created TEXT NOT NULL, updated TEXT NOT NULL,
+          CHECK(split IN ('unassigned','training','validation','test')));
+        CREATE TABLE IF NOT EXISTS document_meta (
+          document_id TEXT PRIMARY KEY REFERENCES documents(id) ON DELETE CASCADE,
+          project_id TEXT NOT NULL REFERENCES projects(id), revision TEXT NOT NULL,
+          updated TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS analysis_runs (
+          id TEXT PRIMARY KEY, page_id TEXT NOT NULL UNIQUE REFERENCES pages(id) ON DELETE CASCADE,
+          source_sha256 TEXT NOT NULL, runtime_sha256 TEXT NOT NULL,
+          created TEXT NOT NULL, payload TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS topology_reviews (
+          page_id TEXT NOT NULL REFERENCES pages(id) ON DELETE CASCADE,
+          version INTEGER NOT NULL, reviewer TEXT NOT NULL, updated TEXT NOT NULL,
+          payload TEXT NOT NULL, PRIMARY KEY(page_id,version));
+        CREATE TABLE IF NOT EXISTS annotations (
+          id TEXT PRIMARY KEY, page_id TEXT NOT NULL REFERENCES pages(id),
+          project_id TEXT NOT NULL REFERENCES projects(id), revision INTEGER NOT NULL,
+          reviewer TEXT NOT NULL, basis TEXT NOT NULL, confirmed INTEGER NOT NULL,
+          created TEXT NOT NULL, payload TEXT NOT NULL,
+          UNIQUE(page_id,revision));
+        CREATE TABLE IF NOT EXISTS evaluations (
+          id TEXT PRIMARY KEY, created TEXT NOT NULL, specification TEXT NOT NULL,
+          result TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS concept_facts (
+          concept_id TEXT PRIMARY KEY REFERENCES concepts(id), identifier TEXT NOT NULL,
+          source_url TEXT NOT NULL, status TEXT NOT NULL, reviewer TEXT NOT NULL,
+          note TEXT NOT NULL, version INTEGER NOT NULL, updated TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS concept_relations (
+          id TEXT PRIMARY KEY, from_id TEXT NOT NULL REFERENCES concepts(id),
+          to_id TEXT NOT NULL REFERENCES concepts(id), kind TEXT NOT NULL,
+          status TEXT NOT NULL, evidence TEXT NOT NULL, version INTEGER NOT NULL,
+          updated TEXT NOT NULL, UNIQUE(from_id,to_id,kind), CHECK(from_id != to_id));
+        CREATE TABLE IF NOT EXISTS comparisons (
+          id TEXT PRIMARY KEY, created TEXT NOT NULL, specification TEXT NOT NULL,
+          result TEXT NOT NULL);
         ''')
         db.execute("UPDATE documents SET status='queued' WHERE status='processing'")
 

@@ -20,6 +20,7 @@ from pydantic import BaseModel, Field, field_validator
 
 from .db import connect, data_dir, decode, initialize
 from .extract import extract, make_sample, uid
+from .workflows import router as workflow_router,record_analysis
 
 log=logging.getLogger('lineage')
 MAX_UPLOAD=40*1024*1024
@@ -68,6 +69,8 @@ def worker(stop):
         try:
             folder=data_dir()/doc['id']
             pages,warnings=extract(folder/('original.'+doc['format']),doc['format'],folder)
+            with (folder/('original.'+doc['format'])).open('rb') as original:
+                source_sha256=hashlib.file_digest(original,'sha256').hexdigest()
             with connect() as db:
                 db.execute('DELETE FROM pages WHERE document_id=?',(doc['id'],))
                 for page in pages:
@@ -76,6 +79,7 @@ def worker(stop):
                         db.execute('INSERT INTO elements VALUES(?,?,?,?,?,?,?,?,?)',(e['id'],page['id'],e['label'],e['kind'],encode(e['bbox']),e['source'],e['status'],encode(e['properties']),None))
                     for edge in page['connections']:
                         db.execute('INSERT INTO connections VALUES(?,?,?,?,?,?,?)',(edge['id'],page['id'],edge['from_id'],edge['to_id'],edge['kind'],edge['source'],edge['status']))
+                    record_analysis(db,page,source_sha256)
                 db.execute("UPDATE documents SET status='ready',warnings=?,error=NULL,updated=? WHERE id=?",(encode(warnings),now(),doc['id']))
         except Exception as exc:
             log.warning('Extraction failed for %s (%s)',doc['id'],type(exc).__name__)
@@ -337,5 +341,6 @@ def update_concept(ident:str,body:ConceptFields):
 def history(ident:str):
     with connect() as db:return [decode(r) for r in db.execute('SELECT * FROM audits WHERE target_id=? ORDER BY id DESC LIMIT 100',(ident,))]
 
+app.include_router(workflow_router)
 frontend=Path(__file__).resolve().parents[1]/'frontend'/'dist'
 if frontend.exists():app.mount('/',StaticFiles(directory=frontend,html=True),name='frontend')
