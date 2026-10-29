@@ -1,0 +1,791 @@
+{
+  "role": "Post-test factual diagnostic of the historical v8-to-v9 decline; no new parameter changes. Normalized source GraphML IDs only, no source pixels.",
+  "aggregate": {
+    "missing_symbol": 43,
+    "matched_symbols_routing_or_contact": 28
+  },
+  "rows": [
+    {
+      "id": 6,
+      "lost": [
+        {
+          "gt_pair": [
+            "instrumentation103",
+            "tank1"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation110",
+            "instrumentation93"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "instrumentation114",
+            "tank1"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation124",
+            "tank1"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation38",
+            "instrumentation93"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "instrumentation90",
+            "instrumentation93"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "instrumentation91",
+            "instrumentation93"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "instrumentation92",
+            "instrumentation93"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "tank1",
+            "valve51"
+          ],
+          "cause": "missing_symbol"
+        }
+      ],
+      "gained": [
+        [
+          "inlet/outlet16",
+          "instrumentation130"
+        ],
+        [
+          "inlet/outlet16",
+          "valve83"
+        ],
+        [
+          "inlet/outlet27",
+          "instrumentation133"
+        ],
+        [
+          "inlet/outlet30",
+          "inlet/outlet41"
+        ],
+        [
+          "inlet/outlet30",
+          "instrumentation86"
+        ],
+        [
+          "inlet/outlet30",
+          "instrumentation87"
+        ],
+        [
+          "inlet/outlet41",
+          "instrumentation86"
+        ],
+        [
+          "instrumentation110",
+          "instrumentation97"
+        ],
+        [
+          "instrumentation130",
+          "valve49"
+        ],
+        [
+          "instrumentation130",
+          "valve83"
+        ],
+        [
+          "instrumentation18",
+          "instrumentation24"
+        ],
+        [
+          "instrumentation18",
+          "instrumentation85"
+        ],
+        [
+          "instrumentation19",
+          "instrumentation24"
+        ],
+        [
+          "instrumentation19",
+          "instrumentation85"
+        ],
+        [
+          "instrumentation20",
+          "instrumentation24"
+        ],
+        [
+          "instrumentation23",
+          "instrumentation24"
+        ],
+        [
+          "instrumentation24",
+          "instrumentation84"
+        ],
+        [
+          "instrumentation24",
+          "instrumentation85"
+        ],
+        [
+          "instrumentation38",
+          "instrumentation97"
+        ],
+        [
+          "instrumentation84",
+          "instrumentation85"
+        ],
+        [
+          "instrumentation86",
+          "instrumentation87"
+        ],
+        [
+          "instrumentation90",
+          "instrumentation97"
+        ],
+        [
+          "instrumentation91",
+          "instrumentation97"
+        ],
+        [
+          "instrumentation92",
+          "instrumentation97"
+        ],
+        [
+          "valve58",
+          "valve59"
+        ],
+        [
+          "valve58",
+          "valve60"
+        ]
+      ]
+    },
+    {
+      "id": 7,
+      "lost": [
+        {
+          "gt_pair": [
+            "inlet/outlet34",
+            "valve82"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        }
+      ],
+      "gained": [
+        [
+          "inlet/outlet31",
+          "inlet/outlet32"
+        ],
+        [
+          "inlet/outlet31",
+          "valve55"
+        ],
+        [
+          "inlet/outlet32",
+          "inlet/outlet33"
+        ],
+        [
+          "inlet/outlet32",
+          "instrumentation80"
+        ],
+        [
+          "inlet/outlet32",
+          "instrumentation95"
+        ],
+        [
+          "inlet/outlet32",
+          "valve55"
+        ],
+        [
+          "inlet/outlet32",
+          "valve72"
+        ],
+        [
+          "inlet/outlet32",
+          "valve83"
+        ],
+        [
+          "inlet/outlet76",
+          "instrumentation98"
+        ],
+        [
+          "instrumentation22",
+          "instrumentation98"
+        ],
+        [
+          "instrumentation80",
+          "valve55"
+        ],
+        [
+          "instrumentation91",
+          "valve43"
+        ],
+        [
+          "instrumentation94",
+          "valve10"
+        ],
+        [
+          "instrumentation94",
+          "valve11"
+        ],
+        [
+          "instrumentation94",
+          "valve9"
+        ],
+        [
+          "instrumentation95",
+          "valve55"
+        ],
+        [
+          "instrumentation98",
+          "valve52"
+        ],
+        [
+          "instrumentation98",
+          "valve74"
+        ],
+        [
+          "instrumentation98",
+          "valve83"
+        ],
+        [
+          "instrumentation98",
+          "valve84"
+        ],
+        [
+          "pump12",
+          "valve55"
+        ],
+        [
+          "valve55",
+          "valve72"
+        ],
+        [
+          "valve55",
+          "valve83"
+        ]
+      ]
+    },
+    {
+      "id": 8,
+      "lost": [
+        {
+          "gt_pair": [
+            "instrumentation18",
+            "instrumentation39"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "instrumentation18",
+            "valve14"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "instrumentation18",
+            "valve34"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "instrumentation18",
+            "valve35"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation39",
+            "valve35"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation39",
+            "valve8"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "valve14",
+            "valve35"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve14",
+            "valve8"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "valve23",
+            "valve35"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve33",
+            "valve35"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve34",
+            "valve35"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve34",
+            "valve8"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "valve35",
+            "valve8"
+          ],
+          "cause": "missing_symbol"
+        }
+      ],
+      "gained": [
+        [
+          "inlet/outlet54",
+          "instrumentation4"
+        ],
+        [
+          "instrumentation4",
+          "valve22"
+        ],
+        [
+          "instrumentation4",
+          "valve33"
+        ]
+      ]
+    },
+    {
+      "id": 9,
+      "lost": [
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "instrumentation24"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "instrumentation3"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "instrumentation32"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "instrumentation34"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "instrumentation38"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "instrumentation42"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "valve1"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "valve18"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "valve27"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "valve50"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "valve69"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "valve79"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "inlet/outlet2",
+            "valve80"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        }
+      ],
+      "gained": []
+    },
+    {
+      "id": 10,
+      "lost": [
+        {
+          "gt_pair": [
+            "instrumentation77",
+            "valve158"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation88",
+            "valve133"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation88",
+            "valve179"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation88",
+            "valve183"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "instrumentation88",
+            "valve184"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve123",
+            "valve133"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve123",
+            "valve179"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve123",
+            "valve183"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "valve123",
+            "valve184"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve133",
+            "valve179"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve133",
+            "valve183"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve133",
+            "valve184"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve133",
+            "valve92"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve141",
+            "valve209"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve158",
+            "valve159"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve158",
+            "valve41"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve179",
+            "valve183"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve179",
+            "valve184"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve179",
+            "valve92"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve183",
+            "valve184"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve183",
+            "valve92"
+          ],
+          "cause": "matched_symbols_routing_or_contact"
+        },
+        {
+          "gt_pair": [
+            "valve184",
+            "valve92"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve209",
+            "valve51"
+          ],
+          "cause": "missing_symbol"
+        }
+      ],
+      "gained": [
+        [
+          "inlet/outlet24",
+          "valve23"
+        ],
+        [
+          "instrumentation29",
+          "valve18"
+        ],
+        [
+          "tank190",
+          "valve140"
+        ]
+      ]
+    },
+    {
+      "id": 11,
+      "lost": [
+        {
+          "gt_pair": [
+            "instrumentation55",
+            "valve130"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "instrumentation55",
+            "valve15"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "tank90",
+            "valve125"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "tank90",
+            "valve27"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve1",
+            "valve130"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve1",
+            "valve15"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve113",
+            "valve15"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve125",
+            "valve95"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve125",
+            "valve96"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve130",
+            "valve15"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve130",
+            "valve96"
+          ],
+          "cause": "missing_symbol"
+        },
+        {
+          "gt_pair": [
+            "valve95",
+            "valve96"
+          ],
+          "cause": "missing_symbol"
+        }
+      ],
+      "gained": [
+        [
+          "inlet/outlet23",
+          "valve92"
+        ],
+        [
+          "instrumentation10",
+          "instrumentation50"
+        ],
+        [
+          "instrumentation10",
+          "valve97"
+        ],
+        [
+          "instrumentation50",
+          "valve113"
+        ],
+        [
+          "instrumentation50",
+          "valve97"
+        ],
+        [
+          "valve13",
+          "valve92"
+        ]
+      ]
+    }
+  ]
+}

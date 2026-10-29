@@ -68,3 +68,7 @@ Winkler는WWTP upgrade project60430450, Winnipeg2는NEWPCC BNR upgrade Contract3
 [원시 결과](results/report.json) · [OPEN100 회복](repair/report.json) · [합성 회귀](synthetic/report.json) · [장별 CSV](per-page.csv) · [선택 전 실험 전체](RELEASE-SELECTION.json) · [고정 정보](FROZEN.json) · [재현](README.md) · [모델 카드](MODEL-CARD.ko.md)
 
 원본 출처: [Winkler](https://www.manitoba.ca/sd/eal/registries/2708.2winkler/nov2016noa.pdf), [Winnipeg](https://www.winnipeg.ca/finance/findata/matmgt/documents/2015/382-2015/382-2015_ADDENDUM_2/382-2015_Addendum_02-Appendix_M_PID_Drawings.pdf), [PID2Graph](https://zenodo.org/records/14803338). 원본 URL/해시는 이전 [출처 기록](../v9/NEW-SOURCES.json) 및 [학습 분리](../v9/SPLIT-AUDIT.json)에 있다.
+
+## 운영 반영
+
+앱 커밋 `be552914969fe311bae45b9ed7a40e6c850110d1`을 [서비스](https://lineage.haesoo.dev)에 배포했다. 테스트72개·외부HTTPS253개 확인, 실제브라우저 저장/새로고침, 새PNG7장의 평가/운영 결과 일치와 기존64문서·10의미·66페이지 보존을 확인했다. [배포 검증](../../DEPLOYED_V10_VERIFICATION.ko.md) · [기계 판독 기록](DEPLOYED.json).
