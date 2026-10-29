@@ -1,0 +1,12 @@
+{
+  "identified_on": "Historical synthetic regression, before deployment",
+  "invalid_candidate_commit": "391428397513499ea05d4f683b03e42309cc1ffb",
+  "defect": "Export sidecar merge_mode=replace was copied into production config, whereas every staged validation configuration used only the neural proposals. Legacy HOG/geometric candidates were unexpectedly retained, producing hundreds of false boxes. Runtime did not implement the selected validated model.",
+  "correction": "Set merge_mode=neural_only, the candidate set already used in validation; preserve weights,thresholds,GT,route rules. No test-driven hyperparameter or label edits. Keep all original invalid reports and do not present them as the final conforming evaluation. Re-run full unseen-project and historical evaluation on corrected frozen runtime.",
+  "test_exposure_disclosure": "New-project input had already been run under nonconforming pipeline. New projects remain absent from training/selection, but report this bugfix/re-execution rather than claiming first-ever inference after corrected freeze.",
+  "corrected_at": "2026-10-29T03:31:10.356475+00:00",
+  "initial_invalid_reports": {
+    "results": "0124d67216fb114206165cbd4dd77bb8bf7658ab96e018dd82a6e1bf793cba9d",
+    "regression": "4f37dae5cfb23cbea58ff75ab13fa59f7a2aaa67379f6773a01b17eff1650e16"
+  }
+}

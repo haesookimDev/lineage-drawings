@@ -60,3 +60,11 @@ def test_test_pages_disjoint_from_training_and_validation():
   used={(g,i) for g,ids in p[role].items() if g!='synthetic' for i in ids}
   assert new.isdisjoint(used)
  labels=root/'evaluation/v6/new-page-labels.json';assert hashlib.sha256(labels.read_bytes()).hexdigest()==json.loads((root/'evaluation/v6/LABELS-FROZEN.json').read_text())['sha256']
+
+
+def test_release_candidate_set_matches_the_validated_selection():
+ root=Path(__file__).resolve().parents[1]
+ selected=json.loads((root/'evaluation/v9/RELEASE-SELECTION.json').read_text())
+ deployed=json.loads((root/'backend/assets/symbol-neural.json').read_text())
+ assert deployed['merge_mode']==selected['validated_candidate_set']=='neural_only'
+ assert deployed['weights_sha256']==selected['symbol_configuration']['weights_sha256']

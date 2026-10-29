@@ -8,7 +8,7 @@
   "tile_size": 1024,
   "overlap": 0.2,
   "input_size": 640,
-  "merge_mode": "replace",
+  "merge_mode": "neural_only",
   "max_source_side": 4800,
   "max_tiles": 36,
   "opencv_torch_max_abs_difference": 0.00010283291339874268,
