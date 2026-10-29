@@ -1,0 +1,18 @@
+[
+  {
+    "project": "winkler",
+    "url": "https://www.manitoba.ca/sd/eal/registries/2708.2winkler/nov2016noa.pdf",
+    "bytes": 20592025,
+    "sha256": "52cdefe5361d5e2c2143a703d9437b46fba03dff6af56ef84e12eb1d1a80decb",
+    "role": "new-project-test-only",
+    "access_policy": "Source inspection and annotation only until final weights/runtime/GT freeze; no model inference before freeze. No training data from project. Government-hosted third-party source; no redistribution permission assumed."
+  },
+  {
+    "project": "winnipeg",
+    "url": "https://www.winnipeg.ca/finance/findata/matmgt/documents/2015/382-2015/382-2015_ADDENDUM_2/382-2015_Addendum_02-Appendix_M_PID_Drawings.pdf",
+    "bytes": 2059574,
+    "sha256": "0215b1daaf9f345adc0f3f9cacb1f1f74b7546cb12ed557d3b9cd8b8d2bcb245",
+    "role": "new-project-test-only",
+    "access_policy": "Source inspection and annotation only until final weights/runtime/GT freeze; no model inference before freeze. No training data from project. Government-hosted third-party source; no redistribution permission assumed."
+  }
+]

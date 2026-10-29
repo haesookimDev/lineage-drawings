@@ -91,7 +91,7 @@ def infer_connections(elements, segments, w, h, image=None, diagnostics=None):
         details['symbol_model_sha256']=next((e['properties']['symbol_model_sha256'] for e in elements if e.get('properties',{}).get('symbol_model_sha256')),None)
         neural=[e for e in elements if e.get('source')=='neural_symbol_candidate']
         if neural:
-            details['symbol_detector']='yolox-nano-symbol-v1'
+            details['symbol_detector']=neural[0]['properties'].get('model','yolox-nano-symbol-v1')
             details['symbol_model_sha256']=neural[0]['properties']['symbol_model_sha256']
             details['neural_symbol_candidates']=len(neural)
             details['neural_source_size']=neural[0]['properties']['source_size']

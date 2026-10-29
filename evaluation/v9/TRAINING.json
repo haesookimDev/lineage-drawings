@@ -1,0 +1,90 @@
+{
+  "method": "YOLOX-Nano 1 generic symbol class; Warm-start selected v6 epoch16 (original COCO official initialization), all layers fine-tuned on CPU; old test ROIs explicit training",
+  "seed": 20261029,
+  "torch": "2.9.0+cpu",
+  "opencv": "4.12.0",
+  "train_tiles": 769,
+  "batch": 4,
+  "steps_per_epoch": 64,
+  "configured_epochs": 12,
+  "weighted_sampling": "Former tests now glyph training5x, previous real ROI2.5x, replay others1x; replacement",
+  "augmentation": "horizontal flip, contrast/brightness, mild blur; box transform applied; no test data",
+  "initial_weights_sha256": "b3a5e44e405cce4a414a4babbc950bcd90701266f0b6dc9e971022ca279ebf86",
+  "upstream_commit": "6ddff4824372906469a7fae2dc3206c7aa4bbaee",
+  "copied_pretrained_tensors": 642,
+  "history": [
+    {
+      "epoch": 1,
+      "mean_loss": 2.019743861630559,
+      "seconds": 24.02,
+      "lr": 0.0002
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 1.7250935602933168,
+      "seconds": 23.463,
+      "lr": 0.0002463796190432135
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 1.5795954028144479,
+      "seconds": 23.381,
+      "lr": 0.00023576519915209662
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 1.4861451322212815,
+      "seconds": 23.505,
+      "lr": 0.0002188800955010707
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 1.403049181215465,
+      "seconds": 23.565,
+      "lr": 0.000196875
+    },
+    {
+      "epoch": 6,
+      "mean_loss": 1.3663916354998946,
+      "seconds": 23.391,
+      "lr": 0.00017124952354214283
+    },
+    {
+      "epoch": 7,
+      "mean_loss": 1.353648086078465,
+      "seconds": 23.57,
+      "lr": 0.00014375
+    },
+    {
+      "epoch": 8,
+      "mean_loss": 1.1932530393823981,
+      "seconds": 23.854,
+      "lr": 0.0001162504764578572
+    },
+    {
+      "epoch": 9,
+      "mean_loss": 1.3092920258641243,
+      "seconds": 23.585,
+      "lr": 9.062500000000001e-05
+    },
+    {
+      "epoch": 10,
+      "mean_loss": 1.2591320648789406,
+      "seconds": 23.323,
+      "lr": 6.861990449892933e-05
+    },
+    {
+      "epoch": 11,
+      "mean_loss": 1.1975248660892248,
+      "seconds": 23.32,
+      "lr": 5.1734800847903383e-05
+    },
+    {
+      "epoch": 12,
+      "mean_loss": 1.2099391501396894,
+      "seconds": 23.159,
+      "lr": 4.11203809567865e-05
+    }
+  ],
+  "training_seconds_so_far": 284.985
+}

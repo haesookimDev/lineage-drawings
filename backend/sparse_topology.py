@@ -6,7 +6,7 @@ from .network import axis_segments,merge_segments,candidate_pairs,has_junction_d
 from .topology_context import prepare,rays,ray_batch,features,votes,model
 
 
-def segments(image,ink,existing=()):
+def segments(image,ink,existing=(),recover=False):
  lines=axis_segments(image);extra=[]
  # Only bridge short repeated gaps on long aligned runs; text remains subject
  # to port, arm and point-context filters. No invisible semantic edges.
@@ -17,7 +17,11 @@ def segments(image,ink,existing=()):
    if not ((horizontal and abs(b-d)<=1) or (not horizontal and abs(a-c)<=1)):continue
    n=round(math.hypot(c-a,d-b))+1;xs=np.clip(np.rint(np.linspace(a,c,n)).astype(int),0,ink.shape[1]-1);ys=np.clip(np.rint(np.linspace(b,d,n)).astype(int),0,ink.shape[0]-1);hit=(ink[ys,xs]>0).astype(np.uint8);changes=np.flatnonzero(np.diff(np.r_[0,hit,0]));runs=changes[1::2]-changes[::2]
    if len(runs)>=3 and .3<float(hit.mean())<.95:extra.append([float(a),float(b),float(c),float(d)])
- return merge_segments(lines+extra)[:5000],len(extra)
+ lines=merge_segments(lines+extra)
+ if recover:
+  from .line_recovery import recover as recover_lines
+  lines,n=recover_lines(ink,lines);return merge_segments(lines)[:5000],len(extra)+n
+ return lines[:5000],len(extra)
 
 
 def proposals(elements,lines,w,h):
@@ -42,7 +46,7 @@ def proposals(elements,lines,w,h):
  return raw[:6000],intervals
 
 
-def intersections(lines,intervals,ink):
+def intersections(lines,intervals,ink,recover=False):
  rows=[];distance=cv2.distanceTransform((ink>0).astype(np.uint8),cv2.DIST_L2,3)
  for i,j in candidate_pairs(lines):
   p=np.array(lines[i][:2]);r=np.array(lines[i][2:])-p;q=np.array(lines[j][:2]);v=np.array(lines[j][2:])-q;lr=np.linalg.norm(r);lv=np.linalg.norm(v);cross=r[0]*v[1]-r[1]*v[0]
@@ -55,8 +59,12 @@ def intersections(lines,intervals,ink):
   rows.append({'pixel':point.tolist(),'i':i,'j':j,'t':t,'u':u})
   if len(rows)>=6000:break
  support_all=ray_batch(ink,[p['pixel'] for p in rows]).reshape(-1,4,3) if rows else []
- for p,support in zip(rows,support_all):
-  count=int((support[:,:2].mean(1)>=.55).sum());strict=int(((support[:,0]>=.75)&(support[:,:2].mean(1)>=.55)).sum());dot=has_junction_dot(distance,*p['pixel']);p.update(arms=strict,dot=dot,geometry=[float(count)/4,float(dot),*support[:,0].tolist()])
+ dash=None
+ if recover and rows:
+  from .line_recovery import dashed_arms
+  dash=dashed_arms(ink,[p['pixel'] for p in rows])
+ for index,(p,support) in enumerate(zip(rows,support_all)):
+  count=int((support[:,:2].mean(1)>=.55).sum());arm_mask=(support[:,0]>=.75)&(support[:,:2].mean(1)>=.55);strict=int((arm_mask|dash[index]).sum()) if dash is not None else int(arm_mask.sum());dot=has_junction_dot(distance,*p['pixel']);p.update(arms=strict,dot=dot,geometry=[float(count)/4,float(dot),*support[:,0].tolist()])
  return rows
 
 
@@ -64,7 +72,11 @@ def route(elements,existing,w,h,image,config=None,return_proposals=False,recogni
  port_model,junction_model,meta=model();meta={**(meta or {}),**(config or {})}
  if isinstance(recognized,dict):gray,ink,lines,dashed,raw,intervals,junctions=(recognized[k] for k in ('gray','ink','lines','dashed','raw','intervals','junctions'))
  else:
-  gray,ink=prepare(image);lines,dashed=segments(image,ink,existing);raw,intervals=proposals(elements,lines,w,h);junctions=intersections(lines,intervals,ink)
+  gray,ink=prepare(image);lines,dashed=segments(image,ink,existing,recover=meta.get('line_recovery',False))
+  if meta.get('short_dash_recovery'):
+   from .line_recovery import short_links
+   links=short_links(elements,ink,w,h);lines=merge_segments(lines+links);dashed+=len(links)
+  raw,intervals=proposals(elements,lines,w,h);junctions=intersections(lines,intervals,ink,recover=meta.get('line_recovery',False))
  if return_proposals:return gray,ink,raw,junctions,lines
  if port_model is None:return [],{},{}
  ps=votes(port_model,features(gray,ink,raw),2)[:,1] if recognized is None else recognized['port_scores'] if isinstance(recognized,dict) else recognized[0];js=votes(junction_model,features(gray,ink,junctions),4) if recognized is None else recognized['junction_scores'] if isinstance(recognized,dict) else recognized[1];accepted=[];ports=defaultdict(list)
@@ -73,7 +85,7 @@ def route(elements,existing,w,h,image,config=None,return_proposals=False,recogni
   ident=p['element_id'];x,y=p['pixel']
   if len(ports[ident])>=12 or any(np.linalg.norm(np.array(p['pixel'])-q['pixel'])<5 for q in ports[ident]):continue
   item={**p,'score':round(float(score),4),'point':[round(x/w,7),round(y/h,7)],'status':'needs_review','source':'sparse_context_and_line_contact'};ports[ident].append(item);accepted.append(item)
- details={'algorithm':'sparse-line-port-v8','recognition_algorithm':'sparse-line-port-v8','topology_model':'hog-rtrees-port-junction-v2','topology_model_sha256':meta.get('port_sha256'),'junction_model_sha256':meta.get('junction_sha256'),'recognition_tiles':0,'port_count':len(accepted),'ports':{k:[{a:b for a,b in p.items() if a not in ('pixel','line','t','geometry','element_id')} for p in v] for k,v in ports.items()},'junctions':[],'routing_contacts':[],'lines':[],'paths':[],'line_segments':len(lines),'dashed_run_proposals':dashed,'connections_limited':False,'crossing_policy':'actual_arms_and_dot_with_reviewed_context; plain_X_separate'}
+ details={'algorithm':'sparse-line-port-v8','recognition_algorithm':'sparse-line-port-v8','topology_model':'hog-rtrees-port-junction-v2','topology_model_sha256':meta.get('port_sha256'),'junction_model_sha256':meta.get('junction_sha256'),'recognition_tiles':0,'line_recovery':bool(meta.get('line_recovery')), 'port_count':len(accepted),'ports':{k:[{a:b for a,b in p.items() if a not in ('pixel','line','t','geometry','element_id')} for p in v] for k,v in ports.items()},'junctions':[],'routing_contacts':[],'lines':[],'paths':[],'line_segments':len(lines),'dashed_run_proposals':dashed,'connections_limited':False,'crossing_policy':'actual_arms_and_dot_with_reviewed_context; plain_X_separate'}
  coords={};along=[{} for _ in lines];adj=defaultdict(dict);owners=defaultdict(set);starts=defaultdict(set);port_scores={};serial=0
  def node(i,t):
   nonlocal serial

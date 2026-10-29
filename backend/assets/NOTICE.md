@@ -94,3 +94,21 @@ routing association hypothesis are distinct records, both requiring review.
 Validated old connection candidates are retained; only threshold-gated visible
 paths are added within the same500-edge output budget. Native DXF connections
 continue to use original geometry; no semantic/flow approval is inferred.
+
+## v9 symbol detector and periodic line recovery
+
+The generic YOLOX-Nano weights were further fine-tuned on the same licensed
+PID2Graph/OPEN100 and synthetic training sources plus public prior-project ROI
+annotations explicitly reclassified as training. Additional glyph labels:73
+from former v6/v7/v8-R1 tests, never the new Winkler/Winnipeg test projects.
+Initial v9 pass: v6 selected epoch16,12epochs64batches; selected epoch4 then
+warm-started a scale-shrink pass8epochs64batches. Selected scale epoch8 uses
+random0.35-1.0 shrink/placement to match small native drawing glyph sizes.
+Exact weights, data, iteration failures, validation choice and source hashes:
+evaluation/v9/. Original YOLOX Apache2.0 code attribution and PID2Graph-derived
+CC-BY-SA4.0 weight/provenance attribution above continue to apply.
+Point-context RTrees weights are unchanged from v8-R2. Routing thresholds and
+pixel-supported periodic line recovery were selected only on old-project
+validation. All outputs remain review candidates; no standard IDs or physical
+flow/safety approval are invented. Government-hosted source PDFs, page pixels,
+private runtime data and full government OCR are excluded from Git/images.

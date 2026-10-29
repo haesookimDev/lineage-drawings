@@ -204,11 +204,14 @@ def combine_context_pairs(elements,pairs,paths,context_meta):
     # Limit only supplemental edges; retain all validated pairs and their paths.
     candidates={tuple(sorted((p['from_id'],p['to_id']))):p for p in paths if p.get('score',0)>=context_meta.get('extra_edge_threshold',.65) and len(p.get('points',[]))<=context_meta.get('extra_max_points',128)}
     by_id={e['id']:e for e in elements};symbol_cut=context_meta.get('extra_symbol_threshold',0.);unfiltered_extra=set(candidates)-old
+    sparse=context_meta.get('routing_mode')=='sparse' and not native
+    if sparse:unfiltered_extra=set(candidates)
     eligible={k for k in unfiltered_extra if not symbol_cut or all(by_id[x].get('source')=='neural_symbol_candidate' and by_id[x].get('properties',{}).get('detector_score',0)>=symbol_cut for x in k)}
     extra=sorted(eligible,key=lambda k:(-candidates[k]['score'],tuple(sorted((order[k[0]],order[k[1]])))))
+    if sparse:pairs=[]
     count=0 if native else min(len(extra),max(0,500-len(pairs)))
     pairs=pairs+extra[:count]
-    return pairs,dict(context_extra_pairs=[list(p) for p in extra[:count]],context_supplemental_connections=count,retained_validated_connections=len(old),context_candidates_rejected=len(unfiltered_extra)-count,context_low_quality_endpoints_rejected=len(unfiltered_extra)-len(eligible),routing_mode='native_geometry_with_context_evidence' if native else 'context_gated_hybrid',recognition_is_advisory=False)
+    return pairs,dict(context_extra_pairs=[list(p) for p in extra[:count]],context_supplemental_connections=sum(k not in old for k in extra[:count]),retained_validated_connections=len(old&set(pairs)),context_candidates_rejected=len(unfiltered_extra)-count,context_low_quality_endpoints_rejected=len(unfiltered_extra)-len(eligible),routing_mode='native_geometry_with_context_evidence' if native else 'context_gated_sparse' if sparse else 'context_gated_hybrid',recognition_is_advisory=False)
 
 
 def trace_adjacency(elements,segments,w,h,image=None,diagnostics=None):

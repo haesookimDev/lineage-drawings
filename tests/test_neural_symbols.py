@@ -40,6 +40,20 @@ def test_neural_candidates_preserve_unknown_and_human_review(monkeypatch):
  assert els[0]['kind']=='unknown' and els[0]['status']=='needs_review' and els[0]['concept_id'] is None
 
 
+def test_uncertain_small_glyph_is_revisited_with_bounded_detail_crop(monkeypatch):
+ class Net:
+  calls=0
+  def setInput(self,x):assert x.shape==(1,3,640,640)
+  def forward(self):
+   self.calls+=1
+   return np.array([[200.,100.,220.,120.,.2 if self.calls==1 else .9]])
+ net=Net();monkeypatch.setattr(neural,'model',lambda:(net,{'threshold':.6,'detail_tiles':6,'weights_sha256':'fixture'}));monkeypatch.setattr(neural,'decode',lambda raw,size:raw)
+ im=Image.new('RGB',(1024,256),'white');__import__('PIL.ImageDraw',fromlist=['Draw']).Draw(im).line((0,120,1023,120),fill='black',width=2)
+ found=neural.detect(im)
+ assert net.calls==2 and found and all(p['inference_view']=='detail' and p['detail_tile_count']==1 and p['tile_count']<=37 and p['requires_review'] for b,p in found)
+ assert all(0<=x<=1 for b,p in found for x in b)
+
+
 def test_test_pages_disjoint_from_training_and_validation():
  root=Path(__file__).resolve().parents[1];p=json.loads((root/'evaluation/v6/PLAN.json').read_text());new={(g,i) for g,ids in p['new_page_test'].items() for i in ids}
  for role in ('training','validation'):

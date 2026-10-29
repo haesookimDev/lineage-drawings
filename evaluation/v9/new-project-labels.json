@@ -1,0 +1,743 @@
+{
+  "annotation": "Single AI source annotator, not expert-certified; source pages inspected/rendered before any new-project inference. Hough circles assisted coordinates only, no learned detection. Scored ROIs include all visible semantic glyphs under valve/instrument/pump/inlet-outlet convention. Pipe size reducers, rock-trap transparent fitting, disconnected equipment-name oval, meter support bracket are explicit ignore regions, not negatives; text/line IDs are not equipment. Motors are visible instrument bubbles; compound square-with-circle panels are one glyph. Adjacency stops at intermediate semantic equipment. Unmarked four-arm pipe crossings remain separate. Edges may traverse outside ROI where the full source unambiguously shows a common header (Winnipeg2 downstream valves). Branch/dashed subsets overlap and are not independent samples.",
+  "selection": "Winkler142/150 and Winnipeg2/7 chosen by source-only process content. Winnipeg7 complex actuator/control boxes were inspected but excluded before inference because internal link boundaries are ambiguous; the scored3-glyph vertical dashed chain is intentionally small. No claim of whole-sheet accuracy. All4 pages and both projects stay test-only.",
+  "sheets": {
+    "winkler-p142": {
+      "project": "winkler",
+      "group": "winkler",
+      "id": "p142",
+      "role": "unseen-project-test",
+      "canvas": [
+        2400,
+        1553
+      ],
+      "roi": [
+        0.24583333333333332,
+        0.206052801030264,
+        0.5333333333333333,
+        0.463618802318094
+      ],
+      "ignore": [
+        [
+          0.35875,
+          0.3631680618158403,
+          0.3875,
+          0.38763683193818416
+        ],
+        [
+          0.475,
+          0.3502897617514488,
+          0.5033333333333333,
+          0.35930457179652286
+        ],
+        [
+          0.33208333333333334,
+          0.3419188667095943,
+          0.34125,
+          0.3586606567933033
+        ],
+        [
+          0.4554166666666667,
+          0.36123631680618157,
+          0.4625,
+          0.37411461687057307
+        ]
+      ],
+      "nodes": [
+        {
+          "id": "v1",
+          "kind": "valve",
+          "bbox": [
+            0.2866666666666667,
+            0.34449452672247266,
+            0.29375,
+            0.3535093367675467
+          ]
+        },
+        {
+          "id": "m1",
+          "kind": "instrumentation",
+          "bbox": [
+            0.2866666666666667,
+            0.32324533161622665,
+            0.29375,
+            0.33419188667095945
+          ]
+        },
+        {
+          "id": "fcv",
+          "kind": "instrumentation",
+          "bbox": [
+            0.27125,
+            0.3528654217643271,
+            0.28583333333333333,
+            0.37540244687701224
+          ]
+        },
+        {
+          "id": "pump",
+          "kind": "pump",
+          "bbox": [
+            0.36541666666666667,
+            0.33547971667739857,
+            0.38458333333333333,
+            0.35930457179652286
+          ]
+        },
+        {
+          "id": "m2",
+          "kind": "instrumentation",
+          "bbox": [
+            0.36791666666666667,
+            0.3142305215711526,
+            0.3779166666666667,
+            0.3296844816484224
+          ]
+        },
+        {
+          "id": "v2",
+          "kind": "valve",
+          "bbox": [
+            0.33375,
+            0.3844172569220863,
+            0.33958333333333335,
+            0.3953638119768191
+          ]
+        },
+        {
+          "id": "drain",
+          "kind": "inlet/outlet",
+          "bbox": [
+            0.3333333333333333,
+            0.4043786220218931,
+            0.34041666666666665,
+            0.4230521571152608
+          ]
+        },
+        {
+          "id": "meter",
+          "kind": "instrumentation",
+          "bbox": [
+            0.48375,
+            0.3322601416613007,
+            0.49416666666666664,
+            0.34771410173857054
+          ]
+        },
+        {
+          "id": "fe",
+          "kind": "instrumentation",
+          "bbox": [
+            0.4816666666666667,
+            0.2916934964584675,
+            0.49583333333333335,
+            0.31294269156471344
+          ]
+        },
+        {
+          "id": "fit",
+          "kind": "instrumentation",
+          "bbox": [
+            0.4816666666666667,
+            0.2504829362524147,
+            0.49583333333333335,
+            0.27173213135866064
+          ]
+        },
+        {
+          "id": "v3",
+          "kind": "valve",
+          "bbox": [
+            0.4558333333333333,
+            0.3811976819059884,
+            0.46208333333333335,
+            0.3915003219575016
+          ]
+        },
+        {
+          "id": "sample",
+          "kind": "inlet/outlet",
+          "bbox": [
+            0.4529166666666667,
+            0.4088860270444301,
+            0.46458333333333335,
+            0.4249839021249195
+          ]
+        }
+      ],
+      "edges": [
+        [
+          "drain",
+          "v2"
+        ],
+        [
+          "fe",
+          "fit"
+        ],
+        [
+          "fe",
+          "meter"
+        ],
+        [
+          "m1",
+          "v1"
+        ],
+        [
+          "m2",
+          "pump"
+        ],
+        [
+          "meter",
+          "pump"
+        ],
+        [
+          "meter",
+          "v3"
+        ],
+        [
+          "pump",
+          "v1"
+        ],
+        [
+          "pump",
+          "v2"
+        ],
+        [
+          "pump",
+          "v3"
+        ],
+        [
+          "sample",
+          "v3"
+        ],
+        [
+          "v1",
+          "v2"
+        ]
+      ],
+      "edge_subsets": {
+        "dashed": [
+          [
+            "fe",
+            "fit"
+          ],
+          [
+            "fe",
+            "meter"
+          ]
+        ],
+        "branch": [
+          [
+            "meter",
+            "pump"
+          ],
+          [
+            "meter",
+            "v3"
+          ],
+          [
+            "pump",
+            "v1"
+          ],
+          [
+            "pump",
+            "v2"
+          ],
+          [
+            "pump",
+            "v3"
+          ],
+          [
+            "v1",
+            "v2"
+          ]
+        ]
+      },
+      "image_sha256": "d09df044258bc7a6c10aa1d58bf8318f2ab0b9208c4e9639a57e9a33d144a18b"
+    },
+    "winkler-p150": {
+      "project": "winkler",
+      "group": "winkler",
+      "id": "p150",
+      "role": "unseen-project-test",
+      "canvas": [
+        2400,
+        1553
+      ],
+      "roi": [
+        0.075,
+        0.5215711526078558,
+        0.4166666666666667,
+        0.7340631036703155
+      ],
+      "ignore": [
+        [
+          0.2791666666666667,
+          0.5756600128783,
+          0.28833333333333333,
+          0.5924018029620091
+        ]
+      ],
+      "nodes": [
+        {
+          "id": "ait1",
+          "kind": "instrumentation",
+          "bbox": [
+            0.10458333333333333,
+            0.5486155827430779,
+            0.11875,
+            0.5705086928525435
+          ]
+        },
+        {
+          "id": "ae1",
+          "kind": "instrumentation",
+          "bbox": [
+            0.10458333333333333,
+            0.596909207984546,
+            0.11875,
+            0.6188023180940115
+          ]
+        },
+        {
+          "id": "ait2",
+          "kind": "instrumentation",
+          "bbox": [
+            0.15458333333333332,
+            0.5486155827430779,
+            0.16875,
+            0.5705086928525435
+          ]
+        },
+        {
+          "id": "ae2",
+          "kind": "instrumentation",
+          "bbox": [
+            0.15458333333333332,
+            0.596909207984546,
+            0.16875,
+            0.6188023180940115
+          ]
+        },
+        {
+          "id": "v1",
+          "kind": "valve",
+          "bbox": [
+            0.315,
+            0.6278171281390856,
+            0.32458333333333333,
+            0.6381197681905988
+          ]
+        },
+        {
+          "id": "v2",
+          "kind": "valve",
+          "bbox": [
+            0.36833333333333335,
+            0.6278171281390856,
+            0.3775,
+            0.6381197681905988
+          ]
+        },
+        {
+          "id": "drain",
+          "kind": "valve",
+          "bbox": [
+            0.33708333333333335,
+            0.6761107533805538,
+            0.3441666666666667,
+            0.6889890534449453
+          ]
+        },
+        {
+          "id": "tap",
+          "kind": "valve",
+          "bbox": [
+            0.3545833333333333,
+            0.6761107533805538,
+            0.36125,
+            0.6877012234385061
+          ]
+        },
+        {
+          "id": "sample",
+          "kind": "inlet/outlet",
+          "bbox": [
+            0.35125,
+            0.7025112685125563,
+            0.3645833333333333,
+            0.721184803605924
+          ]
+        }
+      ],
+      "edges": [
+        [
+          "ae1",
+          "ae2"
+        ],
+        [
+          "ae1",
+          "ait1"
+        ],
+        [
+          "ae1",
+          "v1"
+        ],
+        [
+          "ae2",
+          "ait2"
+        ],
+        [
+          "ae2",
+          "v1"
+        ],
+        [
+          "drain",
+          "tap"
+        ],
+        [
+          "drain",
+          "v1"
+        ],
+        [
+          "drain",
+          "v2"
+        ],
+        [
+          "sample",
+          "tap"
+        ],
+        [
+          "tap",
+          "v1"
+        ],
+        [
+          "tap",
+          "v2"
+        ],
+        [
+          "v1",
+          "v2"
+        ]
+      ],
+      "edge_subsets": {
+        "dashed": [
+          [
+            "ae1",
+            "ait1"
+          ],
+          [
+            "ae2",
+            "ait2"
+          ]
+        ],
+        "branch": [
+          [
+            "ae1",
+            "ae2"
+          ],
+          [
+            "ae1",
+            "v1"
+          ],
+          [
+            "ae2",
+            "v1"
+          ],
+          [
+            "drain",
+            "tap"
+          ],
+          [
+            "drain",
+            "v1"
+          ],
+          [
+            "drain",
+            "v2"
+          ],
+          [
+            "tap",
+            "v1"
+          ],
+          [
+            "tap",
+            "v2"
+          ],
+          [
+            "v1",
+            "v2"
+          ]
+        ]
+      },
+      "image_sha256": "06197c65f3e45f6f5d6f6fa5e827378755e436032cfedf8f9628d2a754238b6c"
+    },
+    "winnipeg-p2": {
+      "project": "winnipeg",
+      "group": "winnipeg",
+      "id": "p2",
+      "role": "unseen-project-test",
+      "canvas": [
+        2400,
+        1696
+      ],
+      "roi": [
+        0.5375,
+        0.0589622641509434,
+        0.7791666666666667,
+        0.4716981132075472
+      ],
+      "ignore": [],
+      "nodes": [
+        {
+          "id": "p750",
+          "kind": "instrumentation",
+          "bbox": [
+            0.5679166666666666,
+            0.09316037735849056,
+            0.5879166666666666,
+            0.1214622641509434
+          ]
+        },
+        {
+          "id": "p710",
+          "kind": "instrumentation",
+          "bbox": [
+            0.6279166666666667,
+            0.09198113207547169,
+            0.6479166666666667,
+            0.1214622641509434
+          ]
+        },
+        {
+          "id": "p720",
+          "kind": "instrumentation",
+          "bbox": [
+            0.6870833333333334,
+            0.09257075471698113,
+            0.7075,
+            0.1214622641509434
+          ]
+        },
+        {
+          "id": "fit710",
+          "kind": "instrumentation",
+          "bbox": [
+            0.6279166666666667,
+            0.18455188679245282,
+            0.6475,
+            0.21226415094339623
+          ]
+        },
+        {
+          "id": "fe710",
+          "kind": "instrumentation",
+          "bbox": [
+            0.6279166666666667,
+            0.2647405660377358,
+            0.6475,
+            0.29245283018867924
+          ]
+        },
+        {
+          "id": "fit720",
+          "kind": "instrumentation",
+          "bbox": [
+            0.6879166666666666,
+            0.30660377358490565,
+            0.7066666666666667,
+            0.3331367924528302
+          ]
+        },
+        {
+          "id": "fe720",
+          "kind": "instrumentation",
+          "bbox": [
+            0.6870833333333334,
+            0.3867924528301887,
+            0.7070833333333333,
+            0.41509433962264153
+          ]
+        },
+        {
+          "id": "v710a",
+          "kind": "valve",
+          "bbox": [
+            0.5983333333333334,
+            0.2706367924528302,
+            0.61125,
+            0.28537735849056606
+          ]
+        },
+        {
+          "id": "v710b",
+          "kind": "valve",
+          "bbox": [
+            0.665,
+            0.2706367924528302,
+            0.6779166666666666,
+            0.28537735849056606
+          ]
+        },
+        {
+          "id": "v720a",
+          "kind": "valve",
+          "bbox": [
+            0.6575,
+            0.3920990566037736,
+            0.6704166666666667,
+            0.4080188679245283
+          ]
+        },
+        {
+          "id": "v720b",
+          "kind": "valve",
+          "bbox": [
+            0.75125,
+            0.3920990566037736,
+            0.76375,
+            0.4080188679245283
+          ]
+        }
+      ],
+      "edges": [
+        [
+          "fe710",
+          "fit710"
+        ],
+        [
+          "fe710",
+          "v710a"
+        ],
+        [
+          "fe710",
+          "v710b"
+        ],
+        [
+          "fe720",
+          "fit720"
+        ],
+        [
+          "fe720",
+          "v720a"
+        ],
+        [
+          "fe720",
+          "v720b"
+        ],
+        [
+          "fit710",
+          "p710"
+        ],
+        [
+          "fit720",
+          "p720"
+        ],
+        [
+          "v710b",
+          "v720b"
+        ]
+      ],
+      "edge_subsets": {
+        "dashed": [
+          [
+            "fe710",
+            "fit710"
+          ],
+          [
+            "fe720",
+            "fit720"
+          ],
+          [
+            "fit710",
+            "p710"
+          ],
+          [
+            "fit720",
+            "p720"
+          ]
+        ],
+        "branch": [
+          [
+            "v710b",
+            "v720b"
+          ]
+        ]
+      },
+      "image_sha256": "a5ab23e2f0b9c16346dda35661e515309e8dcb5fb418386fc613af45e68c3276"
+    },
+    "winnipeg-p7": {
+      "project": "winnipeg",
+      "group": "winnipeg",
+      "id": "p7",
+      "role": "unseen-project-test",
+      "canvas": [
+        2400,
+        1828
+      ],
+      "roi": [
+        0.22916666666666666,
+        0.10393873085339168,
+        0.25916666666666666,
+        0.2762582056892779
+      ],
+      "ignore": [],
+      "nodes": [
+        {
+          "id": "panel",
+          "kind": "instrumentation",
+          "bbox": [
+            0.235,
+            0.11159737417943107,
+            0.25333333333333335,
+            0.13402625820568928
+          ]
+        },
+        {
+          "id": "fit",
+          "kind": "instrumentation",
+          "bbox": [
+            0.23583333333333334,
+            0.19091903719912473,
+            0.2525,
+            0.21280087527352298
+          ]
+        },
+        {
+          "id": "fe",
+          "kind": "instrumentation",
+          "bbox": [
+            0.23583333333333334,
+            0.24890590809628008,
+            0.2525,
+            0.2702407002188184
+          ]
+        }
+      ],
+      "edges": [
+        [
+          "fe",
+          "fit"
+        ],
+        [
+          "fit",
+          "panel"
+        ]
+      ],
+      "edge_subsets": {
+        "dashed": [
+          [
+            "fe",
+            "fit"
+          ],
+          [
+            "fit",
+            "panel"
+          ]
+        ],
+        "branch": []
+      },
+      "image_sha256": "c54a1db4063ceab7aba5be95a4ab895a8fc27eb874b01a5502ea8db7815e6e2b"
+    }
+  }
+}

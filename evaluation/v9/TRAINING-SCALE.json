@@ -1,0 +1,67 @@
+{
+  "method": "YOLOX-Nano warm start v9 first-pass epoch4, whose origin is v6 selected epoch16; all layers CPU fine-tuned with random shrink0.35-1.0",
+  "seed": 20261030,
+  "torch": "2.9.0+cpu",
+  "opencv": "4.12.0",
+  "train_tiles": 769,
+  "batch": 4,
+  "steps_per_epoch": 64,
+  "configured_epochs": 8,
+  "weighted_sampling": "Former tests now glyph training5x, previous real ROI2.5x, replay others1x; replacement",
+  "augmentation": "horizontal flip, contrast/brightness, mild blur,80% probability random0.35-1.0 shrink with random placement; geometry-transformed boxes; no test data",
+  "initial_weights_sha256": "f9bb87f3da6993ffa9ebc3cc371d5512902ea368c012a111dac447a6f62e0c73",
+  "upstream_commit": "6ddff4824372906469a7fae2dc3206c7aa4bbaee",
+  "copied_pretrained_tensors": 642,
+  "history": [
+    {
+      "epoch": 1,
+      "mean_loss": 2.5053322967141867,
+      "seconds": 23.284,
+      "lr": 0.00011999999999999999
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 2.3841672111302614,
+      "seconds": 23.134,
+      "lr": 0.00014514732019759452
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 2.226931905373931,
+      "seconds": 23.258,
+      "lr": 0.0001313280573006424
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 2.014475505799055,
+      "seconds": 23.444,
+      "lr": 0.00011064606881327447
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 2.515052828937769,
+      "seconds": 23.261,
+      "lr": 8.624999999999998e-05
+    },
+    {
+      "epoch": 6,
+      "mean_loss": 2.2644962929189205,
+      "seconds": 23.322,
+      "lr": 6.185393118672553e-05
+    },
+    {
+      "epoch": 7,
+      "mean_loss": 2.253155028447509,
+      "seconds": 23.418,
+      "lr": 4.117194269935759e-05
+    },
+    {
+      "epoch": 8,
+      "mean_loss": 2.0425761602818966,
+      "seconds": 23.248,
+      "lr": 2.7352679802405467e-05
+    }
+  ],
+  "training_seconds_so_far": 189.154,
+  "initial_checkpoint": ".benchmark-data/v9-models/epoch-4.pth"
+}

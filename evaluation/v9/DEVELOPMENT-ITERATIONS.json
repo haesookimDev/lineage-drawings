@@ -1,0 +1,26 @@
+{
+  "policy": "All iterations used only predeclared validation. Both new projects remain unused for inference until final freeze.",
+  "iterations": [
+    {
+      "id": 1,
+      "symbol": "Uncertain neural proposals as zoom seeds",
+      "selected": "4/6/0.45/recover-recall",
+      "validation_objective": 0.6109850355260428,
+      "baseline_objective": 0.5230274054517372,
+      "remaining_failure": "Virden13 tiny valves mostly produced no low-confidence seed; no zoom revisit near them."
+    },
+    {
+      "id": 2,
+      "symbol": "Half of bounded detail budget seeded by visible two-sided pipe-contact residuals; trained network still emits final boxes",
+      "cache": ".benchmark-data/v9-validation-ports",
+      "routing": "Same predeclared grid. Vectorized dashed ray sampling validated against scalar reference; no decision rule changed by vectorization."
+    },
+    {
+      "id": 3,
+      "training": "Scale shrink0.35-1.0 with padding to model actual tiny glyph pixel footprint; warm start v9 epoch4,8epochs64batches,checkpoint4/8. Former test ROI training only.",
+      "routing": "Add image-supported short two-dash face-to-face links; keep previous winner and production baseline eligible.",
+      "cache": ".benchmark-data/v9-validation-scale",
+      "policy": "Same validation and no new-project inference. Earlier two iterations fully retained, not discarded when choosing final."
+    }
+  ]
+}

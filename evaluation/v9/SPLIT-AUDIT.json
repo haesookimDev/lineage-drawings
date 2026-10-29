@@ -1,0 +1,104 @@
+{
+  "no_test_source_image_hash_in_training": true,
+  "no_test_source_group_in_training": true,
+  "training_groups": [
+    "open100",
+    "pahala",
+    "ruttan",
+    "v5-synthetic",
+    "virden"
+  ],
+  "training_image_hashes": [
+    "0a4eb0e88a72f002cee202be8a74650439ff90ea036065e42f626e16164e0125",
+    "0b7aa18a2f0669d05d85063bf7ccbc678b62333a618ce081891761b5c6f27239",
+    "1ec4986e03067e79464a63f8d5decfada6c579846c1efc4c5334d8745432df04",
+    "217d76c507db7f94dfe36d6314eb223a056f20927b2d46280a71481c0372c613",
+    "2451fbe9b8d0494a822901493cfbf1d2656f0bd7678f0f25bb2266b5e78a7dc9",
+    "27356b778cb5c3007e82a06768e04392a901ead1002962e7c47d0945d79c2250",
+    "293d416db064be7c78def7f3f9856a6060e65b7d9e7b15d2b42d273a98fc49e1",
+    "2a16ca1db138062ca5da31190342743442bc3387ff9d529da5b1fb5898d009c8",
+    "4093d839e34f8264241bc73254886c20a3a4d9a2ed60f06893c03680e6af351a",
+    "409fe43c4635d6fecf84fd58e46f56d62a0c588668731617b76f64dc2f2be9fa",
+    "4a1d7ab90d7b7a0d4eb5c97faf424d299bed96088c8e8ade8612b186242b40e7",
+    "604d68474f9a0630c280ab371f0e9556cdfff278b578d996582f3fb5c9bf9983",
+    "60f7fd7ac7d02cc3aa94bf73a83ab3646b9618642522cb23a5fca08b65f32db3",
+    "6605a79eac67c58ec4e259245585062788c80b6c5aa5e762bace8d03b40d69f4",
+    "6d805d33da94f99d03d764d3685597097ffe36c3c126c6301030289b2c5160bc",
+    "6f1d3755feac8c12cc241d9bf06ad8fcf7301dc4a09b7b347d35b7a0524988dd",
+    "7d6ac6edbd8c4ecb67e84f849e819c0afb4da784bf15439d3a5c8f2c88a0a3de",
+    "8618dc074d17f366c41a6f2dbd29b220b360e92663cf89cd3fb186ab101b5d99",
+    "8a36e9ae5064283ced701e17fab3a6ae74caee2ac07b8135cf65a8415077a46e",
+    "92636b395f8151d50b8e6a4d85834b5a474e6721310bcc3a29b1a49c0b7262ac",
+    "a176d005b05e6f1abdcfb8f4d0bb90ace8d44a467d4611d9770b65f25e4947fe",
+    "ab0a925570ccaa75a52a8d08c7adee5d1b111f14c55114261e8e5811ce065bcf",
+    "ac8efafb2dd93bb1d5d84fc08d851457ab429b697ba05ff3afcfa49b03acdb37",
+    "b8788e74e90cc4006fc23f0baed7d2d329d900cb1cbc3144a79550800023e4ae",
+    "be3cdc1557d776df1f19049dc5ffd991ea09667cb56c378854b157a119e349f9",
+    "c469a5e7de3c0b9cb1339becdc51dd63bde1da9afe6b3ff1ff3446499d91e816",
+    "c8c696042bf7a16eb30e492a312af274c312a2049a7eb765ca82f84d3770eba8",
+    "cbcc347ee70cf46a2a70763acc541ac9411a7579ffdceb7c16954601c509bcaa",
+    "d03558748f63869db687cb87bddace8b26f6b2258c78928a60a156420b17846b",
+    "e4053b54f4dabd6ea6d11711e2f63963418ca3f02b71fdf78299af0f1f0e1f73",
+    "e6c847a12fb7800542d4d7a805ac2c3a3c3bfbacc51f76c4e0f9d30fc1eb4521",
+    "ed7f93a779381fbabd1fc46af15db7acfe3c7ef7dfdf7e6ffff16c44ed272df9"
+  ],
+  "new_sources": [
+    {
+      "project": "winkler",
+      "url": "https://www.manitoba.ca/sd/eal/registries/2708.2winkler/nov2016noa.pdf",
+      "bytes": 20592025,
+      "sha256": "52cdefe5361d5e2c2143a703d9437b46fba03dff6af56ef84e12eb1d1a80decb",
+      "role": "new-project-test-only",
+      "access_policy": "Source inspection and annotation only until final weights/runtime/GT freeze; no model inference before freeze. No training data from project. Government-hosted third-party source; no redistribution permission assumed."
+    },
+    {
+      "project": "winnipeg",
+      "url": "https://www.winnipeg.ca/finance/findata/matmgt/documents/2015/382-2015/382-2015_ADDENDUM_2/382-2015_Addendum_02-Appendix_M_PID_Drawings.pdf",
+      "bytes": 2059574,
+      "sha256": "0215b1daaf9f345adc0f3f9cacb1f1f74b7546cb12ed557d3b9cd8b8d2bcb245",
+      "role": "new-project-test-only",
+      "access_policy": "Source inspection and annotation only until final weights/runtime/GT freeze; no model inference before freeze. No training data from project. Government-hosted third-party source; no redistribution permission assumed."
+    }
+  ],
+  "test_sheet_projects": {
+    "winkler-p142": {
+      "facility_project": "Winkler WWTP upgrade, project60430450",
+      "source_group": "winkler",
+      "sheet": "05-N001 Septage Receiver"
+    },
+    "winkler-p150": {
+      "facility_project": "Winkler WWTP upgrade, project60430450",
+      "source_group": "winkler",
+      "sheet": "05-N009 Secondary Clarifiers"
+    },
+    "winnipeg-p2": {
+      "facility_project": "Winnipeg NEWPCC BNR upgrade Contract3",
+      "source_group": "winnipeg",
+      "sheet": "Return Activated Sludge Pumping, Area S Secondary Clarifier3"
+    },
+    "winnipeg-p7": {
+      "facility_project": "Winnipeg WEWPCC historical aeration/blowers",
+      "source_group": "winnipeg",
+      "sheet": "WEP-91 Aeration/Blowers"
+    }
+  },
+  "clarification": "Two new source collections contain three facility projects: Winkler and Winnipeg NEWPCC/WEWPCC. Source grouping Winnipeg is a collection/city, not one plant. Existing training real projects are OPEN100/Pahala/Virden/Ruttan only. Same engineering firms/drafting conventions can occur across projects, so project separation is not organization/style independence. Synthetic training has procedural/diagram sources, not these actual projects.",
+  "gt_counts": {
+    "winkler-p142": {
+      "symbols": 12,
+      "edges": 12
+    },
+    "winkler-p150": {
+      "symbols": 9,
+      "edges": 12
+    },
+    "winnipeg-p2": {
+      "symbols": 11,
+      "edges": 9
+    },
+    "winnipeg-p7": {
+      "symbols": 3,
+      "edges": 2
+    }
+  }
+}

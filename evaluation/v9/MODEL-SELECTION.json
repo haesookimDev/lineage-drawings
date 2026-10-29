@@ -1,0 +1,488 @@
+{
+  "rule": "Choose best source-macro validation objective across ALL three development iterations; preserve original production as eligible. No test input.",
+  "ranking": [
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale8/0/0.6/recover-recall",
+      "objective": 0.6487995309437181
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale8/0/0.6/recover-short",
+      "objective": 0.6483524121082698
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale8/0/0.6/recover-balanced",
+      "objective": 0.6473355448420425
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale8/0/0.6/recover-conservative",
+      "objective": 0.6279065419449014
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale8/0/0.6/v8",
+      "objective": 0.6242417761098585
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/recover-recall",
+      "objective": 0.6109850355260428
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/recover-recall",
+      "objective": 0.6109850355260428
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/recover-short",
+      "objective": 0.6108682915134465
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/recover-balanced",
+      "objective": 0.6078036053084147
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/recover-balanced",
+      "objective": 0.6078036053084147
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale4/6/0.6/recover-short",
+      "objective": 0.6000687772968546
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale4/6/0.6/recover-recall",
+      "objective": 0.5998383997509033
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale4/6/0.6/recover-balanced",
+      "objective": 0.5984152055415781
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale8/0/0.6/sparse-balanced",
+      "objective": 0.5877451148951216
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "4/0/0.45/recover-recall",
+      "objective": 0.5834488963171901
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/recover-conservative",
+      "objective": 0.5830031279536306
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/recover-conservative",
+      "objective": 0.5830031279536306
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "4/0/0.45/recover-balanced",
+      "objective": 0.5801017890014747
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale4/6/0.6/recover-conservative",
+      "objective": 0.5789492113867274
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/v8",
+      "objective": 0.5779638942596836
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/v8",
+      "objective": 0.5779638942596836
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale4/6/0.6/v8",
+      "objective": 0.5758119913556926
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "8/6/0.6/recover-recall",
+      "objective": 0.5739753734423786
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "8/6/0.6/recover-balanced",
+      "objective": 0.5733226719116103
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "8/0/0.6/recover-recall",
+      "objective": 0.5647059629594204
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "8/0/0.6/recover-balanced",
+      "objective": 0.5639954726955102
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "4/0/0.45/recover-conservative",
+      "objective": 0.5616375815430135
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "8/6/0.6/recover-conservative",
+      "objective": 0.5606530447171993
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "4/0/0.45/v8",
+      "objective": 0.5574520627973685
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "8/6/0.6/v8",
+      "objective": 0.5569161308546129
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "8/0/0.6/recover-conservative",
+      "objective": 0.5526722279031582
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "8/0/0.6/v8",
+      "objective": 0.5492136850492021
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/sparse-balanced",
+      "objective": 0.5413098604134836
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "4/6/0.45/sparse-balanced",
+      "objective": 0.5413098604134836
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-short",
+      "objective": 0.5410949421323434
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-recall",
+      "objective": 0.5410418295907278
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-recall",
+      "objective": 0.5410418295907278
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-recall",
+      "objective": 0.5410418295907278
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-balanced",
+      "objective": 0.5395761961830479
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-balanced",
+      "objective": 0.5395761961830479
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-balanced",
+      "objective": 0.5395761961830479
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "scale4/6/0.6/sparse-balanced",
+      "objective": 0.5342439499723273
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-conservative",
+      "objective": 0.5258956518392754
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-conservative",
+      "objective": 0.5258956518392754
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/recover-conservative",
+      "objective": 0.5258956518392754
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/v8",
+      "objective": 0.5230274054517372
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "production",
+      "objective": 0.5230274054517372
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/v8",
+      "objective": 0.5230274054517372
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "production",
+      "objective": 0.5230274054517372
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/v8",
+      "objective": 0.5230274054517372
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "production",
+      "objective": 0.5230274054517372
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "4/0/0.45/sparse-balanced",
+      "objective": 0.5189127625301162
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "8/6/0.6/sparse-balanced",
+      "objective": 0.516805361271373
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "8/0/0.6/sparse-balanced",
+      "objective": 0.5085318454497972
+    },
+    {
+      "file": "ITERATION-1-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/sparse-balanced",
+      "objective": 0.48409637910230136
+    },
+    {
+      "file": "ITERATION-2-ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/sparse-balanced",
+      "objective": 0.48409637910230136
+    },
+    {
+      "file": "ROUTE-VALIDATION.json",
+      "configuration": "base/0/0.6/sparse-balanced",
+      "objective": 0.48409637910230136
+    }
+  ],
+  "selected": {
+    "file": "ROUTE-VALIDATION.json",
+    "configuration": "scale8/0/0.6/recover-recall",
+    "objective": 0.6487995309437181
+  },
+  "selected_groups": {
+    "groups": {
+      "open100": {
+        "localization": {
+          "tp": 86,
+          "fp": 5,
+          "fn": 61,
+          "precision": 0.945054945054945,
+          "recall": 0.5850340136054422,
+          "f1": 0.7226890756302521
+        },
+        "connections": {
+          "tp": 43,
+          "fp": 11,
+          "fn": 502,
+          "precision": 0.7962962962962963,
+          "recall": 0.07889908256880734,
+          "f1": 0.14357262103505844
+        }
+      },
+      "pahala": {
+        "localization": {
+          "tp": 16,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9411764705882353,
+          "f1": 0.9696969696969697
+        },
+        "connections": {
+          "tp": 48,
+          "fp": 0,
+          "fn": 12,
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1": 0.8888888888888888
+        }
+      },
+      "v5-synthetic": {
+        "localization": {
+          "tp": 314,
+          "fp": 10,
+          "fn": 4,
+          "precision": 0.9691358024691358,
+          "recall": 0.9874213836477987,
+          "f1": 0.9781931464174455
+        },
+        "connections": {
+          "tp": 1122,
+          "fp": 68,
+          "fn": 2099,
+          "precision": 0.9428571428571428,
+          "recall": 0.3483390251474697,
+          "f1": 0.5087281795511222
+        }
+      },
+      "virden": {
+        "localization": {
+          "tp": 3,
+          "fp": 1,
+          "fn": 4,
+          "precision": 0.75,
+          "recall": 0.42857142857142855,
+          "f1": 0.5454545454545454
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.5,
+          "recall": 0.16666666666666666,
+          "f1": 0.25
+        }
+      }
+    },
+    "objective": 0.6487995309437181
+  },
+  "baseline": {
+    "groups": {
+      "open100": {
+        "localization": {
+          "tp": 60,
+          "fp": 2,
+          "fn": 87,
+          "precision": 0.967741935483871,
+          "recall": 0.40816326530612246,
+          "f1": 0.5741626794258373
+        },
+        "connections": {
+          "tp": 34,
+          "fp": 6,
+          "fn": 511,
+          "precision": 0.85,
+          "recall": 0.062385321100917435,
+          "f1": 0.11623931623931624
+        }
+      },
+      "pahala": {
+        "localization": {
+          "tp": 17,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.8095238095238095,
+          "recall": 1.0,
+          "f1": 0.8947368421052632
+        },
+        "connections": {
+          "tp": 49,
+          "fp": 0,
+          "fn": 11,
+          "precision": 1.0,
+          "recall": 0.8166666666666667,
+          "f1": 0.8990825688073395
+        }
+      },
+      "v5-synthetic": {
+        "localization": {
+          "tp": 312,
+          "fp": 16,
+          "fn": 6,
+          "precision": 0.9512195121951219,
+          "recall": 0.9811320754716981,
+          "f1": 0.9659442724458205
+        },
+        "connections": {
+          "tp": 850,
+          "fp": 50,
+          "fn": 2371,
+          "precision": 0.9444444444444444,
+          "recall": 0.26389320086929524,
+          "f1": 0.41252123271050717
+        }
+      },
+      "virden": {
+        "localization": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.5,
+          "recall": 0.14285714285714285,
+          "f1": 0.2222222222222222
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "objective": 0.5230274054517372
+  },
+  "symbol_configuration": {
+    "model": "yolox-nano-symbol-v9",
+    "weights_sha256": "11be82efc29c1390258e8d14b2e007249cf17764fc811d565cbefe967cbf05fa",
+    "epoch": 8,
+    "threshold": 0.6,
+    "detail_tiles": 0,
+    "detail_seed_max": 0.6,
+    "tile_size": 1024,
+    "overlap": 0.2,
+    "input_size": 640,
+    "merge_mode": "replace",
+    "max_source_side": 4800,
+    "max_tiles": 36,
+    "opencv_torch_max_abs_difference": 0.00010283291339874268,
+    "score_note": "Objectness times single-class sigmoid; not calibrated probability. Generic candidate only, no class or standard approval.",
+    "detail_hint_mode": "neural",
+    "selection": "Validation-only staged source-macro(connectionF1+.25symbolF1) across all retained iterations; unseen projects never used."
+  },
+  "routing_configuration": {
+    "model": "hog-rtrees-port-junction-v2",
+    "port_file": "port-context.xml.gz",
+    "port_sha256": "2770da03a009fea7e22d8fd0234b2d21d3faf6cb4732169bb7d18ac197c1ddd5",
+    "junction_file": "junction-context.xml.gz",
+    "junction_sha256": "bcfe23a3202d6eaeaf5b2e08b03c8da42c61d12800f1eba1b75d3ce3366bb20d",
+    "port_threshold": 0.45,
+    "junction_threshold": 0.35,
+    "junction_display_threshold": 0.35,
+    "extra_edge_threshold": 0.5,
+    "routing_mode": "hybrid",
+    "score_note": "Uncalibrated tree vote fractions, no automatic engineering approval",
+    "seed": 20261030,
+    "training_revision": "v8-r2-real-instrument-bus",
+    "extra_symbol_threshold": 0.45,
+    "strict_contacts": true,
+    "release_policy": "Validation-selected hybrid, periodic image-supported line recovery. Fixed point forests; no automatic approval.",
+    "extra_max_points": 8,
+    "line_recovery": true,
+    "routing_revision": "v9-periodic-branches"
+  }
+}

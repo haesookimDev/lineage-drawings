@@ -1,0 +1,16 @@
+{
+  "baseline": "c9cef5afc6363e30c86e9ab4a5fe17dd68313e11",
+  "objective": "Reduce missed symbols and recover visible branch/dashed adjacency on unseen public projects, compare precision/recall/F1 and complete paired CPU latency, deploy only measured release.",
+  "training": "Retain v6 glyph training607 tiles (OPEN1000-3,synthetic12,Pahala23/24,Virden5/7,Ruttan50/62), explicitly transfer previous v6/v7/v8-R1 tests to glyph training (32+10+31 boxes, partial ROIs only). No operational uploads. No Winkler or Winnipeg sources.",
+  "validation": "Original v6 seven pages (OPEN1004/5,Pahala20,synthetic4) plus previous v8-R2 ROIs Pahala14,Virden13/14; these3 are no longer new tests. Point weights may have previous-project exposure, disclosed. No new-project inference during development/selection.",
+  "symbol_experiments": "Fine-tune selected v6 epoch16 with replay plus real missed-example tiles at multiple scales; checkpoints4/8/12. Compare confidence0.3/0.45/0.6 and bounded adaptive512px detail crops0/6. Retain reference v8 model as selectable baseline.",
+  "routing_experiments": "Image-supported endpoint snapping, collinear continuation and periodic dashed runs, actual T/dot vs plainX. Shared visible port/junction evidence and bounded output. Select thresholds/mode only on validation before new-project inference.",
+  "selection": "Stage1 equal-source macro localization F1 shortlist of two distinct checkpoint families, baseline always eligible; stage2 equal-source macro(connectionF1+.25localizationF1) on routing grid. Staged search fixed before validation/new-project inference, avoids expensive full cross product. No test-driven tuning.",
+  "new_projects": [
+    "Winkler wastewater upgrade (AECOM,2016)",
+    "Winnipeg RFP382-2015 existing West End plant drawings"
+  ],
+  "new_test_policy": "Choose process pages and source-visible nontrivial regions before model inference; include all symbols/edges in scored ROIs, branches/dashed signals where unambiguous. Single AI source annotator, not expert-certified GT. Disclose project names, sheet roles and per-project/per-page results; do not equate ROI with full-sheet accuracy or pairs with independent networks. All final outcomes reported even if unchanged/worse.",
+  "rights": "Government-hosted third-party drawings do not imply redistribution license. Keep source PDFs/renders/crops/full OCR out of Git and image. Training/val/test project roles explicit. Existing labels not silently relabeled on test failure.",
+  "protocol_created": "2026-10-29"
+}

@@ -56,6 +56,19 @@ def merge(base,neural,mode='replace'):
  return retained+neural
 
 
+def port_hints(bgr):
+ """Geometry proposes zoom locations; only the trained network emits boxes."""
+ h,w=bgr.shape[:2];scale=min(1.,2400/max(w,h));small=cv2.resize(bgr,None,fx=scale,fy=scale) if scale<1 else bgr;gray=cv2.cvtColor(small,cv2.COLOR_BGR2GRAY);ink=cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY_INV,31,7)
+ horizontal=cv2.morphologyEx(ink,cv2.MORPH_OPEN,np.ones((1,15),np.uint8));vertical=cv2.morphologyEx(ink,cv2.MORPH_OPEN,np.ones((15,1),np.uint8));residual=cv2.morphologyEx(cv2.subtract(ink,horizontal|vertical),cv2.MORPH_CLOSE,np.ones((5,5),np.uint8));_,_,stats,_=cv2.connectedComponentsWithStats(residual);sh,sw=ink.shape;hints=[]
+ for x,y,cw,ch,area in stats[1:]:
+  if area<10 or min(cw,ch)<4 or max(cw,ch)>55 or max(cw,ch)/min(cw,ch)>5:continue
+  cy,cx=y+ch//2,x+cw//2
+  arms=[np.count_nonzero(horizontal[max(0,cy-2):min(sh,cy+3),max(0,x-16):max(0,x-2)]),np.count_nonzero(horizontal[max(0,cy-2):min(sh,cy+3),min(sw,x+cw+2):min(sw,x+cw+16)]),np.count_nonzero(vertical[max(0,y-16):max(0,y-2),max(0,cx-2):min(sw,cx+3)]),np.count_nonzero(vertical[min(sh,y+ch+2):min(sh,y+ch+16),max(0,cx-2):min(sw,cx+3)])]
+  if not ((arms[0]>=5 and arms[1]>=5) or (arms[2]>=5 and arms[3]>=5)):continue
+  hints.append(([x/sw,y/sh,(x+cw)/sw,(y+ch)/sh],min(max(min(arms[0:2]),min(arms[2:4])),30)))
+ return sorted(hints,key=lambda z:(-z[1],-min((z[0][2]-z[0][0])*sw,(z[0][3]-z[0][1])*sh),z[0]))[:150]
+
+
 def detect(image,threshold=None,meta_override=None):
  net,meta=model()
  if net is None:return []
@@ -65,21 +78,42 @@ def detect(image,threshold=None,meta_override=None):
  if np.median(border)<128:bgr=255-bgr
  regions=tiles(w,h,meta.get('tile_size',1024),meta.get('overlap',.2));regions=[(*r,'tile') for r in regions]
  if max(w,h)>meta.get('tile_size',1024):regions.append((0,0,w,h,'overview'))
- found=[]
- for x,y,right,bottom,kind in regions:
+ found=[];detail_count=0
+ def infer_region(region):
+  x,y,right,bottom,kind=region
   crop=bgr[y:bottom,x:right]
   # Only empty background is skipped; faint content is retained.
-  if float((crop.min(axis=2)<249).mean())<.0001:continue
+  if float((crop.min(axis=2)<249).mean())<.0001:return
   blob,ratio=preprocess(crop,size)
   with _LOCK:net.setInput(blob);raw=net.forward()
-  pred=decode(raw,size);pred=pred[np.isfinite(pred).all(1)&(pred[:,4]>=cut)]
+  low=min(cut,.08) if meta.get('detail_tiles',0) else cut
+  pred=decode(raw,size);pred=pred[np.isfinite(pred).all(1)&(pred[:,4]>=low)]
   for a,b,c,d,score in pred:
    a,c=np.clip([a/ratio,c/ratio],0,right-x)+x;b,d=np.clip([b/ratio,d/ratio],0,bottom-y)+y
    if min(c-a,d-b)<3:continue
    found.append(([float(a/w),float(b/h),float(c/w),float(d/h)],float(score),kind))
+ for region in regions:infer_region(region)
+ # Revisit small uncertain objects at twice the local sampling resolution.
+ # Seeds are predictions only; no filename, project, annotation or OCR ID.
+ budget=min(int(meta.get('detail_tiles',0)),max(0,MAX_TILES+1-len(regions))) if max(w,h)>512 else 0;details=[]
+ seeds=sorted([(b,s) for b,s,k in found if .08<=s<meta.get('detail_seed_max',.6) and 6<=min((b[2]-b[0])*w,(b[3]-b[1])*h) and max((b[2]-b[0])*w,(b[3]-b[1])*h)<=90],key=lambda z:(-z[1],z[0]))
+ hints=port_hints(bgr) if budget and meta.get('detail_hint_mode')=='ports' else []
+ # Allocate half the small budget to visible two-sided pipe contacts, including
+ # glyphs that generated no low-confidence network proposal at all.
+ seeds=[(b,1.) for b,_ in hints[:max(3,budget//2)*4]]+seeds if hints else seeds
+ geometric_budget=max(0,budget//2);geometric_count=0
+ for box,score in seeds:
+  if len(details)>=budget:break
+  if score==1. and geometric_count>=geometric_budget:continue
+  cx,cy=(box[0]+box[2])*w/2,(box[1]+box[3])*h/2;tile=512;x=int(np.clip(cx-tile/2,0,max(0,w-tile)));y=int(np.clip(cy-tile/2,0,max(0,h-tile)))
+  if any(abs(x-a)<tile*.65 and abs(y-b)<tile*.65 for a,b,_,_,_ in details):continue
+  details.append((x,y,min(w,x+tile),min(h,y+tile),'detail'))
+  if score==1.:geometric_count+=1
+ for region in details:infer_region(region)
+ detail_count=len(details);regions+=details;found=[(b,s,k) for b,s,k in found if s>=cut]
  if not found:return []
  boxes=[[b[0]*w,b[1]*h,(b[2]-b[0])*w,(b[3]-b[1])*h] for b,_,_ in found];scores=[s for _,s,_ in found]
  kept=cv2.dnn.NMSBoxes(boxes,scores,float(cut)-1e-5,.4,top_k=1000);result=[]
  for i in np.asarray(kept).ravel()[:200]:
-  box,score,kind=found[int(i)];result.append((box,{'geometry':'neural_symbol','model':'yolox-nano-symbol-v1','symbol_detector':'yolox-nano-symbol-v1','symbol_model_sha256':meta['weights_sha256'],'detector_score':score,'requires_review':True,'inference_view':kind,'source_size':[w,h],'tile_count':len(regions)}))
+  box,score,kind=found[int(i)];result.append((box,{'geometry':'neural_symbol','model':meta.get('model','yolox-nano-symbol-v1'),'symbol_detector':'yolox-nano-symbol-v1','symbol_model_sha256':meta['weights_sha256'],'detector_score':score,'requires_review':True,'inference_view':kind,'source_size':[w,h],'tile_count':len(regions),'detail_tile_count':detail_count}))
  return result
