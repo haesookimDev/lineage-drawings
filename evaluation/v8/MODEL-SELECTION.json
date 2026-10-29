@@ -1,0 +1,95 @@
+{
+  "configuration": "0.5/0.25/0.55/hybrid/0.45",
+  "baseline_macro_connection_f1": 0.33053105368350266,
+  "selected": {
+    "groups": {
+      "open100": {
+        "tp": 34,
+        "fp": 7,
+        "fn": 511,
+        "precision": 0.8292682926829268,
+        "recall": 0.062385321100917435,
+        "f1": 0.11604095563139932
+      },
+      "pahala": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.75,
+        "recall": 0.6,
+        "f1": 0.6666666666666666
+      },
+      "ruttan": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 6,
+        "precision": 1.0,
+        "recall": 0.14285714285714285,
+        "f1": 0.25
+      },
+      "v5-synthetic": {
+        "tp": 1122,
+        "fp": 64,
+        "fn": 2099,
+        "precision": 0.9460370994940978,
+        "recall": 0.3483390251474697,
+        "f1": 0.5091899251191286
+      },
+      "virden": {
+        "tp": 5,
+        "fp": 12,
+        "fn": 6,
+        "precision": 0.29411764705882354,
+        "recall": 0.45454545454545453,
+        "f1": 0.35714285714285715
+      }
+    },
+    "objective": 0.3798080809120104,
+    "recognition": {
+      "ports": {
+        "tp": 18,
+        "fp": 3,
+        "fn": 20,
+        "precision": 0.8571428571428571,
+        "recall": 0.47368421052631576,
+        "f1": 0.6101694915254238
+      },
+      "junctions": {
+        "tp": 2,
+        "fp": 8,
+        "fn": 3,
+        "precision": 0.2,
+        "recall": 0.4,
+        "f1": 0.26666666666666666
+      }
+    }
+  },
+  "baseline_manual_points": {
+    "ports": {
+      "tp": 23,
+      "fp": 17,
+      "fn": 15
+    },
+    "junctions": {
+      "tp": 1,
+      "fp": 18,
+      "fn": 4
+    }
+  },
+  "selection_rule": "Maximize mean connection F1 over five predeclared validation source groups; tie-break by manual port F1 then junction F1. Source regions/roles fixed before final test. All output cap500, retain original candidates before additions. Confidence-ranked point suppression and recognition-display threshold are separate from lower-confidence association hypotheses, both stored.",
+  "thresholds": {
+    "model": "hog-rtrees-port-junction-v2",
+    "port_file": "port-context.xml.gz",
+    "port_sha256": "7286edc9c5cbb120a6d896809801a8a0ab9ce5e4d8360bceddd3088f89f7ea26",
+    "junction_file": "junction-context.xml.gz",
+    "junction_sha256": "a4cf2a7ac47f7099fdb7948c4602cb413a639c8ce39f76042ea2198de0231783",
+    "port_threshold": 0.5,
+    "junction_threshold": 0.25,
+    "junction_display_threshold": 0.45,
+    "extra_edge_threshold": 0.55,
+    "routing_mode": "hybrid",
+    "score_note": "Uncalibrated tree vote fractions, no automatic engineering approval",
+    "seed": 20261030
+  },
+  "validation_pages": 9
+}

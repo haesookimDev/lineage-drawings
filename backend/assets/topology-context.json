@@ -1,0 +1,14 @@
+{
+  "model": "hog-rtrees-port-junction-v2",
+  "port_file": "port-context.xml.gz",
+  "port_sha256": "7286edc9c5cbb120a6d896809801a8a0ab9ce5e4d8360bceddd3088f89f7ea26",
+  "junction_file": "junction-context.xml.gz",
+  "junction_sha256": "a4cf2a7ac47f7099fdb7948c4602cb413a639c8ce39f76042ea2198de0231783",
+  "port_threshold": 0.5,
+  "junction_threshold": 0.25,
+  "junction_display_threshold": 0.45,
+  "extra_edge_threshold": 0.55,
+  "routing_mode": "hybrid",
+  "score_note": "Uncalibrated tree vote fractions, no automatic engineering approval",
+  "seed": 20261030
+}

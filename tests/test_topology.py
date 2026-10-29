@@ -36,6 +36,8 @@ def test_explicit_ports_and_crossing_policy(monkeypatch,kind,count):
 
 def test_advisory_recognition_never_adds_or_approves_edges(monkeypatch):
     image,lines,els,_=fixture('plain');original=copy.deepcopy(els)
+    from backend import topology_context
+    monkeypatch.setattr(topology_context,'model',lambda:(None,None,None))
     monkeypatch.setattr(geometry,'_trace_validated',lambda *a:[('a','b')])
     monkeypatch.setattr(topology_features,'model',lambda:(object(),{}))
     pp={'a':[{'point':[.1,.5],'pixel':[25.6,128],'score':.9,'side':'right','status':'needs_review'}]}

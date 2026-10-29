@@ -75,3 +75,22 @@ F1 at0.5 is zero on procedural validation; geometric crossing rules remain
 necessary. New learned routing did not beat the existing router on validation,
 so deployed v7 retains v6 adjacency and supplies recognition evidence only.
 See evaluation/v7 for rejected routing variants, frozen artifacts and limits.
+
+## Sparse port/junction context forests (v8)
+
+`port-context.xml.gz`, `junction-context.xml.gz` and `topology-context.json`
+replace full-page topology CNN maps in the default v8 inference path. These
+CPU OpenCV random forests use point-local HOG/ink/arm features and reviewed
+ports/junctions from five real development sheets/ROIs,60 visually reviewed
+OPEN100 source points, weak GraphML port supervision from OPEN1000–3 and the
+same12 synthetic training sheets, and300 exact procedural scenes. Former v7
+three test ROIs are explicitly training data for v8, never new test evidence.
+Training manifests and separate validation/test source labels are in evaluation/v8.
+
+The PID2Graph-derived forests/provenance retain CC BY-SA4.0 attribution above.
+Public third-party engineering PDFs and source crops are not redistributed.
+Votes are uncalibrated; a high-confidence displayed junction and a lower-score
+routing association hypothesis are distinct records, both requiring review.
+Validated old connection candidates are retained; only threshold-gated visible
+paths are added within the same500-edge output budget. Native DXF connections
+continue to use original geometry; no semantic/flow approval is inferred.

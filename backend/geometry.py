@@ -197,28 +197,39 @@ def geometric_candidates(image,texts,high_resolution=None):
 
 
 def trace_adjacency(elements,segments,w,h,image=None,diagnostics=None):
-    """Retain validated adjacency; attach separately reviewable recognition evidence.
-
-    The experimental learned router did not beat v6 on held-out validation.
-    Its paths may explain an existing candidate, but cannot add/approve edges.
-    """
-    details={}
-    pairs=_trace_validated(elements,segments,w,h,image,details)
+    """Retain validated candidates and add only context-gated visible paths."""
+    details={};pairs=_trace_validated(elements,segments,w,h,image,details)
     if image is not None:
-        from .topology_features import model
-        if model()[0] is not None:
-            from .topology import route
-            _,recognized,ports=route(elements,segments,w,h,image)
-            allowed={tuple(sorted(pair)) for pair in pairs}
-            boxes={e['id']:e['bbox'] for e in elements}
+        from .topology_context import model as context_model
+        _,_,context_meta=context_model()
+        recognized={};ports={}
+        if context_meta is not None:
+            from .sparse_topology import route
+            fresh,recognized,ports=route(elements,segments,w,h,image)
+            old={tuple(sorted(pair)) for pair in pairs};order={e['id']:i for i,e in enumerate(elements)}
+            native=all(e.get('source')=='dxf_block' for e in elements if e['kind']!='text')
+            candidates={tuple(sorted((p['from_id'],p['to_id']))):p for p in recognized.get('paths',[]) if p.get('score',0)>=context_meta.get('extra_edge_threshold',.65)}
+            extra=sorted(set(candidates)-old,key=lambda k:(-candidates[k]['score'],tuple(sorted((order[k[0]],order[k[1]])))))
+            count=0 if native else min(len(extra),max(0,500-len(pairs)))
+            pairs=pairs+extra[:count]
+            details.update(context_extra_pairs=[list(p) for p in extra[:count]],context_supplemental_connections=count,retained_validated_connections=len(old),
+                           context_candidates_rejected=len(extra)-count,routing_mode='native_geometry_with_context_evidence' if native else 'context_gated_hybrid',recognition_is_advisory=False)
+        else:
+            from .topology_features import model
+            if model()[0] is not None:
+                from .topology import route
+                _,recognized,ports=route(elements,segments,w,h,image)
+                details.update(routing_mode='validated_v6_with_recognition_evidence',recognition_is_advisory=True)
+        if recognized:
+            allowed={tuple(sorted(pair)) for pair in pairs};boxes={e['id']:e['bbox'] for e in elements}
             paths=[{**p,'from_bbox':boxes[p['from_id']],'to_bbox':boxes[p['to_id']]} for p in recognized.pop('paths',[]) if tuple(sorted((p['from_id'],p['to_id']))) in allowed]
             details.update({k:v for k,v in recognized.items() if k not in ('algorithm','crossing_policy','connections_limited','pair_budget_reached')})
-            details.update(recognition_algorithm='line-port-junction-v7',routing_mode='validated_v6_with_recognition_evidence',
-                           recognition_is_advisory=True,paths=paths,
+            details.update(recognition_algorithm=recognized.get('recognition_algorithm','line-port-junction-v7'),paths=paths,
                            recognition_pair_budget_reached=recognized.get('pair_budget_reached',False))
             for element in elements:
+                element.setdefault('properties',{}).pop('ports',None)
                 if element['id'] in ports:
-                    element.setdefault('properties',{})['ports']=[{k:v for k,v in p.items() if k!='pixel'} for p in ports[element['id']]]
+                    element['properties']['ports']=[{k:v for k,v in p.items() if k!='pixel'} for p in ports[element['id']]]
                     element['properties']['topology_bbox']=list(element['bbox'])
     if diagnostics is not None:diagnostics.update(details)
     return pairs

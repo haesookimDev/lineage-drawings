@@ -1,7 +1,7 @@
 export type Port={point:number[];side:string;score:number;status:string};
 type Junction={point:number[];type:string;score:number;connected:boolean};
 type Path={from_id:string;to_id:string;points:number[][];from_bbox?:number[];to_bbox?:number[]};
-export type Recognition={recognition_algorithm?:string;port_count?:number;paths?:Path[];junctions?:Junction[];lines?:{points:number[][];style:string;score:number}[]};
+export type Recognition={recognition_algorithm?:string;recognition_is_advisory?:boolean;port_count?:number;paths?:Path[];junctions?:Junction[];lines?:{points:number[][];style:string;score:number}[]};
 type Shape={id:string;bbox:number[];status:string;properties:Record<string,unknown>};
 export function pointsString(points:number[][]){return points.map(p=>p.map(x=>x*1000).join(',')).join(' ')}
 const sameBox=(a:number[]|undefined,b:number[])=>!!a&&a.every((v,i)=>Math.abs(v-b[i])<1e-7);

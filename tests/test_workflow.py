@@ -150,7 +150,7 @@ def test_restart_preserves_review_and_dictionary(tmp_path,monkeypatch):
 
 
 def test_recognition_evidence_survives_review_and_export(client,tmp_path,monkeypatch):
-    from backend import topology
+    from backend import sparse_topology as topology
     def recognized(elements,*args):
         symbols=[e for e in elements if e['kind']!='text'];a,b=symbols[:2];port={'point':[.3,.4],'pixel':[30,40],'side':'right','score':.8,'status':'needs_review'}
         return [],{'paths':[{'from_id':a['id'],'to_id':b['id'],'points':[[.3,.4],[.6,.4]],'status':'needs_review'}],'ports':{a['id']:[{k:v for k,v in port.items() if k!='pixel'}]},'port_count':1,'junctions':[{'point':[.4,.4],'type':'tee','status':'needs_review'}]},{a['id']:[port]}

@@ -1,0 +1,7 @@
+{
+  "original_annotations_sha256": "3341484fe0d551c693eb40266b17f0ed4fcfa43da2870ad70390430873e94ec5",
+  "reviewed_validation_sha256": "4cbc5d7786d7bdf83af06f91e36c170b5187770c977423b4e414133a74799a30",
+  "training_data_unchanged": true,
+  "new_test_data_unchanged": true,
+  "reason": "Validation source audit before final selection: Ruttan62 has two further visible T branches at ROI-local(70,17),(195,17). Added from source inspection, no new-test prediction or label changes. Port comparison restricted identically to annotated matched symbols in both versions; final test scores all ROI candidates."
+}

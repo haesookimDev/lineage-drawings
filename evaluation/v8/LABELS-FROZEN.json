@@ -1,0 +1,8 @@
+{
+  "policy": "All new test ROIs and port/junction/edge labels visually reviewed before any v8 model inference. Known projects, no independent engineering certification. Source-coordinate Hough circles used only to assist manual extents; not evaluated model predictions.",
+  "sha256": {
+    "new-page-labels.json": "cf9539be694d7a2655b119036817efd2c85866a0aa5806ae54ed4de47d0d912a",
+    "manual-development.json": "3341484fe0d551c693eb40266b17f0ed4fcfa43da2870ad70390430873e94ec5",
+    "reviewed-graph-points.json": "689e80851ac667babb4b37a61952f03bfe22b5cff2088ac695014c56041fb2d7"
+  }
+}

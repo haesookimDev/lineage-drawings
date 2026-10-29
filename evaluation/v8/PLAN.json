@@ -1,0 +1,28 @@
+{
+  "baseline": "43041df641c860e064815845df54ea9be12e6270",
+  "scope": "Reduce port/junction false positives with reviewed real point labels and sparse context classifiers; improve actual adjacency with evidence-gated hybrid routing; avoid full-page six-channel CNN inference at runtime. Keep v6 symbol detector unchanged to isolate topology.",
+  "training": {
+    "manual": "v7 previous three test ROIs explicitly moved to training; v5/v6 historical training process regions selected and fully reviewed for visible ports/junctions",
+    "graphml": "OPEN1000-3, twelve previous synthetic training sheets; weak labels kept distinct from manual labels",
+    "procedural": "exact drawn geometry, separate seed range"
+  },
+  "validation": {
+    "manual": [
+      "pahala-p20",
+      "virden-p7",
+      "ruttan-p62"
+    ],
+    "graphml_open100": [
+      4,
+      5
+    ],
+    "synthetic": "previous four validation sheets"
+  },
+  "new_page_test": [
+    "virden-p10",
+    "virden-p12",
+    "pahala-p18"
+  ],
+  "policy": "Select nontrivial source ROIs by source inspection before inference. One human-like model annotator visually transcribes, no engineering certification. Known projects, potential revisions, not independent projects. Freeze labels and final models/runtime before test inference; no threshold fitting on test. Previously inspected pages reported only as training/validation/regression. Report end-to-end and conditional-on-detected-endpoints recall, precision/F1 and paired latency, candidate point precision/recall. Do not claim success if hybrid gains are only from a larger output budget. Deploy best validated bounded CPU option, all results remain needs_review.",
+  "source_inspection_amendment": "Before any v8 inference, Ruttan52 was inspected and is a faint mechanical floor plan rather than a reliably annotatable P&ID region; replaced by Virden12 under source-type criterion. Ruttan49 electrical sheet and floor plans inspected only, not used as hidden tests. No model predictions used in page/ROI selection."
+}
