@@ -9,14 +9,15 @@ from backend.extract import infer_connections
 
 def symbol(k,b):return {'id':k,'kind':'unknown','bbox':b,'properties':{}}
 
+@pytest.mark.parametrize('strict',[False,True])
 @pytest.mark.parametrize('kind,expected',[('plain',2),('tee',3),('dot',6)])
-def test_sparse_router_obeys_contact_geometry(monkeypatch,kind,expected):
+def test_sparse_router_obeys_contact_geometry(monkeypatch,kind,expected,strict):
     im=Image.new('RGB',(256,256),'white');d=ImageDraw.Draw(im)
     d.line((40,128,216,128),fill='black',width=2);d.line((128,40,128,128 if kind=='tee' else 216),fill='black',width=2)
     if kind=='dot':d.ellipse((122,122,134,134),fill='black')
     els=[symbol('a',[.05,.45,40/256,.55]),symbol('b',[216/256,.45,.95,.55]),symbol('c',[.45,.05,.55,40/256])]
     if kind!='tee':els.append(symbol('d',[.45,216/256,.55,.95]))
-    monkeypatch.setattr(sparse,'model',lambda:(object(),object(),{}));monkeypatch.setattr(sparse,'features',lambda g,i,p:np.array([q['geometry'] for q in p],np.float32).reshape(-1,6))
+    monkeypatch.setattr(sparse,'model',lambda:(object(),object(),{'strict_contacts':strict}));monkeypatch.setattr(sparse,'features',lambda g,i,p:np.array([q['geometry'] for q in p],np.float32).reshape(-1,6))
     def votes(m,x,classes):
         if classes==2:return np.tile([0.,1.],(len(x),1))
         out=np.zeros((len(x),4),np.float32)
@@ -59,3 +60,34 @@ def test_context_integrity_check(tmp_path,monkeypatch):
     try:
         with pytest.raises(ValueError):context.model()
     finally:context.model.cache_clear()
+
+
+@pytest.mark.parametrize('label,expected',[('TAG',1),('...',3)])
+def test_strict_contacts_do_not_route_through_ocr_words(monkeypatch,label,expected):
+    im=Image.new('RGB',(256,256),'white');d=ImageDraw.Draw(im)
+    d.line((40,128,216,128),fill='black',width=2);d.line((128,40,128,128),fill='black',width=2)
+    els=[symbol('a',[.05,.45,40/256,.55]),symbol('b',[216/256,.45,.95,.55]),symbol('c',[.45,.05,.55,40/256]),{'id':'word','kind':'text','label':label,'bbox':[.48,.48,.52,.52]}]
+    monkeypatch.setattr(sparse,'model',lambda:(object(),object(),{'strict_contacts':True}))
+    monkeypatch.setattr(sparse,'features',lambda g,i,p:np.array([q['geometry'] for q in p],np.float32).reshape(-1,6))
+    monkeypatch.setattr(sparse,'votes',lambda m,x,classes:np.tile([0.,1.] if classes==2 else [0.,1.,0.,0.],(len(x),1)))
+    pairs,details,_=sparse.route(els,[],256,256,im)
+    assert len(pairs)==expected
+    assert bool(details['routing_contacts'])==(label=='...')
+
+
+def test_uncertain_glyph_cannot_add_an_edge_but_old_candidates_remain(monkeypatch):
+    els=[symbol(k,[.1+i*.2,.2,.2+i*.2,.3]) for i,k in enumerate('abc')]
+    for e,score in zip(els,[.3,.95,.98]):e['source']='neural_symbol_candidate';e['properties']['detector_score']=score
+    im=Image.new('RGB',(100,100),'white');monkeypatch.setattr(geometry,'_trace_validated',lambda *a:[('a','b')]);monkeypatch.setattr(context,'model',lambda:(object(),object(),{'extra_edge_threshold':.7,'extra_symbol_threshold':.8}))
+    paths=[{'from_id':a,'to_id':b,'points':[[.1,.2],[.4,.2]],'score':.95} for a,b in [('a','c'),('b','c')]];monkeypatch.setattr(sparse,'route',lambda *a:([],{'paths':paths},{}));details={};edges=infer_connections(els,[],100,100,im,details)
+    assert {frozenset((e['from_id'],e['to_id'])) for e in edges}=={frozenset(('a','b')),frozenset(('b','c'))}
+    assert details['context_low_quality_endpoints_rejected']==1 and details['retained_validated_connections']==1
+
+
+def test_path_complexity_guard_applies_only_to_new_connections():
+    els=[symbol(k,[.1,.1,.2,.2]) for k in 'abc']
+    paths=[{'from_id':'a','to_id':'b','score':1.,'points':[[0,0]]*8},
+           {'from_id':'a','to_id':'c','score':1.,'points':[[0,0]]*5},
+           {'from_id':'b','to_id':'c','score':1.,'points':[[0,0]]*4}]
+    pairs,_=geometry.combine_context_pairs(els,[('a','b')],paths,{'extra_max_points':4})
+    assert set(pairs)=={('a','b'),('b','c')}

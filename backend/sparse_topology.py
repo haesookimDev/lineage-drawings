@@ -97,11 +97,16 @@ def route(elements,existing,w,h,image,config=None,return_proposals=False,recogni
  for p,score in zip(junctions,js):
   x,y=p['pixel']
   original_arms=round(p['geometry'][0]*4);routing_type='dot' if p['dot'] and original_arms>=3 else 'tee' if original_arms==3 else 'plain_cross' if original_arms==4 else 'bend';routing_class={'tee':1,'dot':2,'plain_cross':3,'bend':0}[routing_type];routing_score=float(score[routing_class]);routing_connected=(routing_type=='bend' and original_arms==2) or (routing_type in ('tee','dot') and routing_score>=meta.get('junction_threshold',.2))
+  if meta.get('strict_contacts'):
+   # New links use the same actual arms, OCR/glyph clearance and vote threshold
+   # as displayed contact evidence. A four-arm crossing without a dot stays open.
+   arms=p['arms'];routing_type='dot' if p['dot'] and arms>=3 else 'tee' if arms==3 else 'plain_cross' if arms==4 else 'bend';routing_class={'tee':1,'dot':2,'plain_cross':3,'bend':0}[routing_type];routing_score=float(score[routing_class]);near_ignored=bool(len(ignore) and np.any((ignore[:,0]<=x)&(x<=ignore[:,2])&(ignore[:,1]<=y)&(y<=ignore[:,3])))
+   routing_connected=bool((routing_type=='bend' and arms==2) or (routing_type in ('tee','dot') and not near_ignored and routing_score+1e-7>=max(meta.get('junction_threshold',.25),meta.get('junction_display_threshold',.45))))
   if routing_connected:
    link(node(p['i'],p['t']),node(p['j'],p['u']))
    if routing_type!='bend' and len(details['routing_contacts'])<500:details['routing_contacts'].append({'point':[round(x/w,7),round(y/h,7)],'type':routing_type,'score':round(routing_score,4),'status':'needs_review','source':'association_hypothesis_not_confirmed_junction'})
   if len(ignore) and np.any((ignore[:,0]<=x)&(x<=ignore[:,2])&(ignore[:,1]<=y)&(y<=ignore[:,3])):continue
-  arms=p['arms'];typ='dot' if p['dot'] and arms>=3 else 'tee' if arms==3 else 'plain_cross' if arms==4 else 'bend';cls={'tee':1,'dot':2,'plain_cross':3,'bend':0}[typ];confidence=float(score[cls]);connected=typ=='bend' and arms==2 or typ in ('tee','dot') and confidence>=meta.get('junction_threshold',.2)
+  arms=p['arms'];typ='dot' if p['dot'] and arms>=3 else 'tee' if arms==3 else 'plain_cross' if arms==4 else 'bend';cls={'tee':1,'dot':2,'plain_cross':3,'bend':0}[typ];confidence=float(score[cls]);connected=typ=='bend' and arms==2 or typ in ('tee','dot') and confidence+1e-7>=meta.get('junction_threshold',.2)
   if typ=='bend' or confidence<.25:continue
   display_candidates.append({'point':[round(p['pixel'][0]/w,7),round(p['pixel'][1]/h,7)],'type':typ,'score':round(confidence,4),'connected':bool(connected),'status':'needs_review','source':'actual_arms_and_trained_context'})
  # Merge duplicate association hypotheses for inspection; routing links above

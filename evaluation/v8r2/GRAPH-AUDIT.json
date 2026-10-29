@@ -1,0 +1,66 @@
+{
+  "scope": "All graph outcomes after original R2 test are audited development/regression, not blind generalization. Port/junction point models and measured point detections remained fixed. Final graph rule was developed after viewing historical failures; further held-out projects needed.",
+  "stages": [
+    {
+      "stage": "original frozen R2 a70bffd",
+      "open100_tp_fp_fn": [
+        351,
+        160,
+        497
+      ],
+      "reason_rejected": "Connection F1 below immutable production baseline339/112/509."
+    },
+    {
+      "stage": "strict actual arms, glyph clearance, junction .35",
+      "open100_tp_fp_fn": [
+        350,
+        145,
+        498
+      ],
+      "reason_rejected": "Tiny F1 decline persists."
+    },
+    {
+      "stage": "same display confidence .45, OCR clearance, actual type",
+      "open100_tp_fp_fn": [
+        346,
+        146,
+        502
+      ],
+      "reason_rejected": "Long-chain false contacts still amplify edges."
+    },
+    {
+      "stage": "path-length audit on above outputs",
+      "limits_explored": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "counts": {
+        "2": [
+          339,
+          112,
+          509
+        ],
+        "3": [
+          340,
+          112,
+          508
+        ],
+        "4": [
+          343,
+          113,
+          505
+        ],
+        "5": [
+          344,
+          122,
+          504
+        ]
+      },
+      "interpretation": "These historical metrics were inspected during development. Never describe final graph evaluation as untouched."
+    }
+  ],
+  "release_policy": "Keep old pairs. New path must pass point/endpoint confidence and contain no more than two bends (4 simplified points). Fixed validation compared3/4point bounds with same real-source precision constraint; selected4. This conservative feature is still development-derived, not engineering certification.",
+  "protocol_erratum": "Original PLAN source_scope_addendum says four government pages; actual frozen new test is THREE (Pahala14,Virden13/14). Pahala17 was excluded before inference as recorded in same plan. Do not count it."
+}

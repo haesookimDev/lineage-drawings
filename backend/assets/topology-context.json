@@ -5,11 +5,15 @@
   "junction_file": "junction-context.xml.gz",
   "junction_sha256": "bcfe23a3202d6eaeaf5b2e08b03c8da42c61d12800f1eba1b75d3ce3366bb20d",
   "port_threshold": 0.65,
-  "junction_threshold": 0.25,
+  "junction_threshold": 0.45,
   "junction_display_threshold": 0.45,
   "extra_edge_threshold": 0.75,
   "routing_mode": "hybrid",
   "score_note": "Uncalibrated tree vote fractions, no automatic engineering approval",
   "seed": 20261030,
-  "training_revision": "v8-r2-real-instrument-bus"
+  "training_revision": "v8-r2-real-instrument-bus",
+  "extra_symbol_threshold": 0.8,
+  "strict_contacts": true,
+  "release_policy": "New contacts use actual arms and OCR/glyph clearance at the displayed confidence threshold; plain X stays separate",
+  "extra_max_points": 4
 }
