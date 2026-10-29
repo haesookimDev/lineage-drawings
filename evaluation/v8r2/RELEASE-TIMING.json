@@ -1,0 +1,313 @@
+{
+  "scope": "18 actual full inference runs, final release and immutable production v7,3 repeats each on3 new pages. Includes OCR, same4800px symbol detector and2400px line/recognition; excludes decode/PDF/network/save. CPU OpenCV2 threads/OMP1. Sequential alternating variant order. Source known projects; graph comparisons are post-audit regression, point models/outputs unchanged from original R2 blind point test.",
+  "release_freeze_sha256": "ebaf124ff25763bcab98080d7095b5c028da36c47b198d762a0d78191434221f",
+  "sheets": [
+    {
+      "id": "pahala-p14",
+      "variants": {
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 46,
+              "fp": 0,
+              "fn": 9,
+              "precision": 1.0,
+              "recall": 0.8363636363636363,
+              "f1": 0.9108910891089109
+            },
+            "classified_correct": 0
+          },
+          "recognition": {
+            "ports": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 11,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 10,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.411614958982682,
+              5.324007510003867,
+              5.3396346410154365
+            ],
+            "median": 5.3396346410154365
+          }
+        },
+        "release": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 46,
+              "fp": 0,
+              "fn": 9,
+              "precision": 1.0,
+              "recall": 0.8363636363636363,
+              "f1": 0.9108910891089109
+            },
+            "classified_correct": 0
+          },
+          "recognition": {
+            "ports": {
+              "tp": 10,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9090909090909091,
+              "f1": 0.9523809523809523
+            },
+            "junctions": {
+              "tp": 9,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9,
+              "f1": 0.9473684210526315
+            }
+          },
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              4.743925379007123,
+              4.65358988699154,
+              4.67952170202625
+            ],
+            "median": 4.67952170202625
+          }
+        }
+      }
+    },
+    {
+      "id": "virden-p13",
+      "variants": {
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "recognition": {
+            "ports": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "junctions": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666
+            }
+          },
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              7.017948916996829,
+              7.0514207140076905,
+              7.0129378009878565
+            ],
+            "median": 7.017948916996829
+          }
+        },
+        "release": {
+          "scores": {
+            "localization": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "recognition": {
+            "ports": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 6,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              6.256022182002198,
+              6.30250262998743,
+              6.2433417059946805
+            ],
+            "median": 6.256022182002198
+          }
+        }
+      }
+    },
+    {
+      "id": "virden-p14",
+      "variants": {
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1": 0.3333333333333333
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "recognition": {
+            "ports": {
+              "tp": 1,
+              "fp": 6,
+              "fn": 6,
+              "precision": 0.14285714285714285,
+              "recall": 0.14285714285714285,
+              "f1": 0.14285714285714285
+            },
+            "junctions": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666
+            }
+          },
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.90683793099015,
+              5.9245015820197295,
+              5.918159134016605
+            ],
+            "median": 5.918159134016605
+          }
+        },
+        "release": {
+          "scores": {
+            "localization": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1": 0.3333333333333333
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "recognition": {
+            "ports": {
+              "tp": 1,
+              "fp": 2,
+              "fn": 6,
+              "precision": 0.3333333333333333,
+              "recall": 0.14285714285714285,
+              "f1": 0.2
+            },
+            "junctions": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "deterministic": true,
+          "timing": {
+            "seconds": [
+              5.421233207016485,
+              5.400669026013929,
+              5.41788902899134
+            ],
+            "median": 5.41788902899134
+          }
+        }
+      }
+    }
+  ],
+  "mean_sheet_median_seconds": {
+    "v7": 6.091914230676291,
+    "release": 5.4511443043399295
+  }
+}

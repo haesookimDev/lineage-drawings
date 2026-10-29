@@ -1,0 +1,108 @@
+{
+  "release": {
+    "commit": "c9cef5afc6363e30c86e9ab4a5fe17dd68313e11",
+    "ci_run": "40804974709",
+    "ci_url": "https://github.com/haesookimDev/lineage-drawings/actions/runs/40804974709",
+    "artifact_sha256": "f6e8fa619dc4cb738230b6f2f42a3bc770dd9d535dede8bc92206d48356ca564",
+    "evaluated_backend_and_model_match_image": true,
+    "checked_backend_files": 27,
+    "checked_frontend_files": 3,
+    "architecture": "amd64",
+    "runtime_user": "1000:1000",
+    "deployment_status": "deployed; external API, UI and cluster checks passed"
+  },
+  "api_checks": 186,
+  "new_test_documents": 8,
+  "new_test_concepts": 1,
+  "preservation": {
+    "browser_label_confirmed_on_server": true,
+    "meaning_and_approval_preserved": true,
+    "port_junction_path_evidence_preserved": true,
+    "learned_source_preserved": true,
+    "existing_documents_concepts_pages_still_unchanged": true,
+    "documents": 56,
+    "concepts": 9,
+    "before_documents": 48,
+    "before_concepts": 8,
+    "before_pages": 50,
+    "new_test_documents": 8,
+    "new_test_concepts": 1
+  },
+  "cluster": {
+    "image": "docker.io/library/lineage-drawings:c9cef5afc6363e30c86e9ab4a5fe17dd68313e11",
+    "pod": "lineage-578bb9cc5-rp8vx",
+    "image_id": "sha256:eed90ca7f88d753f4b1efdfd78c32612da8f58a6e01586f1d92dac2064c6b360",
+    "ready_replicas": 1,
+    "restart_count": 0,
+    "pvc_phase": "Bound",
+    "route_conditions": [
+      {
+        "lastTransitionTime": "2026-10-28T02:09:00Z",
+        "message": "",
+        "observedGeneration": 1,
+        "reason": "Accepted",
+        "status": "True",
+        "type": "Accepted"
+      },
+      {
+        "lastTransitionTime": "2026-10-28T02:09:00Z",
+        "message": "",
+        "observedGeneration": 1,
+        "reason": "ResolvedRefs",
+        "status": "True",
+        "type": "ResolvedRefs"
+      }
+    ],
+    "evaluated_code_and_model_hashes_match": true,
+    "evaluated_ocr_fingerprints_match": true,
+    "live_engine_junction_checks": {
+      "plain_crossing_pairs": 2,
+      "dotted_junction_pairs": 6,
+      "tee_pairs": 3
+    },
+    "recent_error_lines": 0,
+    "pod_metrics": "lineage-578bb9cc5-rp8vx   18m   376Mi"
+  },
+  "ui": {
+    "outcome": "passed",
+    "actualLogin": true,
+    "saveThenReloadConfirmed": true,
+    "topologyToggleHidesPorts": true,
+    "junctions": 116,
+    "observedPolylines": 78,
+    "portDetailsVisible": true,
+    "ports": 54,
+    "savedLabel": "V8R2-VERIFY UI 저장 확인 요소",
+    "meaningPreserved": true,
+    "frontendAsset": "/assets/index-Dv9rgopV.js",
+    "screenshot": "test-results/v8r2-live/production-review.png"
+  },
+  "point_models": {
+    "model": "hog-rtrees-port-junction-v2",
+    "port_file": "port-context.xml.gz",
+    "port_sha256": "2770da03a009fea7e22d8fd0234b2d21d3faf6cb4732169bb7d18ac197c1ddd5",
+    "junction_file": "junction-context.xml.gz",
+    "junction_sha256": "bcfe23a3202d6eaeaf5b2e08b03c8da42c61d12800f1eba1b75d3ce3366bb20d",
+    "port_threshold": 0.65,
+    "junction_threshold": 0.45,
+    "junction_display_threshold": 0.45,
+    "extra_edge_threshold": 0.75,
+    "routing_mode": "hybrid",
+    "score_note": "Uncalibrated tree vote fractions, no automatic engineering approval",
+    "seed": 20261030,
+    "training_revision": "v8-r2-real-instrument-bus",
+    "extra_symbol_threshold": 0.8,
+    "strict_contacts": true,
+    "release_policy": "New contacts use actual arms and OCR/glyph clearance at the displayed confidence threshold; plain X stays separate",
+    "extra_max_points": 4
+  },
+  "unchanged_symbol_model_sha256": "b1242af58625dc24482829fadb3386768c6aaa6ae185babf20f1650d507306fe",
+  "benchmark_sheets": 28,
+  "original_r2_full_inference_runs": 177,
+  "final_release_full_inference_runs": 18,
+  "final_mean_sheet_median_seconds": {
+    "v7": 6.091914230676291,
+    "release": 5.4511443043399295
+  },
+  "evaluation_scope": "New point-model small-ROI test; final graph development regression after audit, no independent-project claim"
+}

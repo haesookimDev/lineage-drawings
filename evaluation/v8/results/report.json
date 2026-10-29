@@ -1,0 +1,603 @@
+{
+  "baseline": "43041df641c860e064815845df54ea9be12e6270",
+  "evaluated_at": "2026-10-29T01:11:04.641124+00:00",
+  "frozen_sha256": "1b9f5b1128342b0839764b2144baecc2e8eec6e70a8fa7bd688fdd962162d78b",
+  "runs": 3,
+  "timing_scope": "In-memory OCR + same max4800 symbol detector + max2400 adjacency/recognition. RGB decode/resize, PDF render, network and save excluded. Sequential paired repeats, reversed order each repeat. CPU OpenCV2threads/OMP1. Mean of per-sheet3-run medians; not Pod SLA.",
+  "sheets": [
+    {
+      "group": "new-page",
+      "id": "virden-p10",
+      "role": "new-page-known-project",
+      "roi_only": true,
+      "source_sha256": "ab0a925570ccaa75a52a8d08c7adee5d1b111f14c55114261e8e5811ce065bcf",
+      "rendered_size": [
+        2400,
+        1458
+      ],
+      "gt_symbols": 6,
+      "gt_edges": 6,
+      "variants": {
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 6,
+              "fp": 3,
+              "fn": 0,
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 75,
+          "full_page_connections": 122,
+          "ports": 253,
+          "junctions": 164,
+          "observed_paths": 8,
+          "supplemental_connections": 0,
+          "conditional_endpoints": {
+            "eligible": 6,
+            "recovered": 6,
+            "recall": 1.0
+          },
+          "miss_attribution": {
+            "recovered": 6
+          },
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 8,
+              "fp": 37,
+              "fn": 0,
+              "precision": 0.17777777777777778,
+              "recall": 1.0,
+              "f1": 0.3018867924528302
+            },
+            "junctions": {
+              "tp": 2,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8
+            }
+          },
+          "association_junctions": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "timing": {
+            "seconds": [
+              6.5573,
+              6.5152,
+              6.4674
+            ],
+            "median": 6.5152
+          }
+        },
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 6,
+              "fp": 3,
+              "fn": 0,
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 75,
+          "full_page_connections": 139,
+          "ports": 73,
+          "junctions": 42,
+          "observed_paths": 33,
+          "supplemental_connections": 17,
+          "conditional_endpoints": {
+            "eligible": 6,
+            "recovered": 6,
+            "recall": 1.0
+          },
+          "miss_attribution": {
+            "recovered": 6
+          },
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 6,
+              "fp": 2,
+              "fn": 2,
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1": 0.75
+            },
+            "junctions": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "association_junctions": {
+            "tp": 2,
+            "fp": 3,
+            "fn": 0,
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          },
+          "timing": {
+            "seconds": [
+              6.0807,
+              6.0087,
+              6.036
+            ],
+            "median": 6.036
+          }
+        }
+      },
+      "symbols_unchanged": true,
+      "old_candidates_retained": true,
+      "added_true_roi_edges": 0,
+      "added_false_roi_edges": 0
+    },
+    {
+      "group": "new-page",
+      "id": "virden-p12",
+      "role": "new-page-known-project",
+      "roi_only": true,
+      "source_sha256": "2a16ca1db138062ca5da31190342743442bc3387ff9d529da5b1fb5898d009c8",
+      "rendered_size": [
+        2400,
+        1458
+      ],
+      "gt_symbols": 14,
+      "gt_edges": 6,
+      "variants": {
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 14,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9333333333333333,
+              "recall": 1.0,
+              "f1": 0.9655172413793104
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 10,
+              "fn": 0,
+              "precision": 0.375,
+              "recall": 1.0,
+              "f1": 0.5454545454545454
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 46,
+          "full_page_connections": 149,
+          "ports": 139,
+          "junctions": 91,
+          "observed_paths": 1,
+          "supplemental_connections": 0,
+          "conditional_endpoints": {
+            "eligible": 6,
+            "recovered": 6,
+            "recall": 1.0
+          },
+          "miss_attribution": {
+            "recovered": 6
+          },
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 19,
+              "fp": 22,
+              "fn": 1,
+              "precision": 0.4634146341463415,
+              "recall": 0.95,
+              "f1": 0.6229508196721312
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "association_junctions": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "timing": {
+            "seconds": [
+              5.2697,
+              5.2334,
+              5.2589
+            ],
+            "median": 5.2589
+          }
+        },
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 14,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.9333333333333333,
+              "recall": 1.0,
+              "f1": 0.9655172413793104
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 10,
+              "fn": 0,
+              "precision": 0.375,
+              "recall": 1.0,
+              "f1": 0.5454545454545454
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 46,
+          "full_page_connections": 149,
+          "ports": 53,
+          "junctions": 25,
+          "observed_paths": 18,
+          "supplemental_connections": 0,
+          "conditional_endpoints": {
+            "eligible": 6,
+            "recovered": 6,
+            "recall": 1.0
+          },
+          "miss_attribution": {
+            "recovered": 6
+          },
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 20,
+              "fp": 7,
+              "fn": 0,
+              "precision": 0.7407407407407407,
+              "recall": 1.0,
+              "f1": 0.851063829787234
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "association_junctions": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "timing": {
+            "seconds": [
+              4.6645,
+              4.6736,
+              4.6551
+            ],
+            "median": 4.6645
+          }
+        }
+      },
+      "symbols_unchanged": true,
+      "old_candidates_retained": true,
+      "added_true_roi_edges": 0,
+      "added_false_roi_edges": 0
+    },
+    {
+      "group": "new-page",
+      "id": "pahala-p18",
+      "role": "new-page-known-project",
+      "roi_only": true,
+      "source_sha256": "ed7f93a779381fbabd1fc46af15db7acfe3c7ef7dfdf7e6ffff16c44ed272df9",
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "gt_symbols": 11,
+      "gt_edges": 55,
+      "variants": {
+        "v7": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 47,
+              "fp": 0,
+              "fn": 8,
+              "precision": 1.0,
+              "recall": 0.8545454545454545,
+              "f1": 0.9215686274509803
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 54,
+          "full_page_connections": 141,
+          "ports": 116,
+          "junctions": 63,
+          "observed_paths": 8,
+          "supplemental_connections": 0,
+          "conditional_endpoints": {
+            "eligible": 55,
+            "recovered": 47,
+            "recall": 0.8545454545454545
+          },
+          "miss_attribution": {
+            "recovered": 47,
+            "routing": 8
+          },
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 11,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 10,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "association_junctions": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "timing": {
+            "seconds": [
+              5.2607,
+              5.2372,
+              5.252
+            ],
+            "median": 5.252
+          }
+        },
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 47,
+              "fp": 0,
+              "fn": 8,
+              "precision": 1.0,
+              "recall": 0.8545454545454545,
+              "f1": 0.9215686274509803
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 54,
+          "full_page_connections": 145,
+          "ports": 50,
+          "junctions": 96,
+          "observed_paths": 36,
+          "supplemental_connections": 4,
+          "conditional_endpoints": {
+            "eligible": 55,
+            "recovered": 47,
+            "recall": 0.8545454545454545
+          },
+          "miss_attribution": {
+            "recovered": 47,
+            "routing": 8
+          },
+          "deterministic": true,
+          "recognition": {
+            "ports": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 6,
+              "precision": 1.0,
+              "recall": 0.45454545454545453,
+              "f1": 0.625
+            },
+            "junctions": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 10,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "association_junctions": {
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315
+          },
+          "timing": {
+            "seconds": [
+              4.5325,
+              4.605,
+              4.5292
+            ],
+            "median": 4.5325
+          }
+        }
+      },
+      "symbols_unchanged": true,
+      "old_candidates_retained": true,
+      "added_true_roi_edges": 0,
+      "added_false_roi_edges": 0
+    }
+  ],
+  "aggregate": {
+    "new-page": {
+      "v7": {
+        "localization": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.8857142857142857,
+          "recall": 1.0,
+          "f1": 0.9393939393939394
+        },
+        "connections": {
+          "tp": 59,
+          "fp": 10,
+          "fn": 8,
+          "precision": 0.855072463768116,
+          "recall": 0.8805970149253731,
+          "f1": 0.8676470588235294
+        },
+        "mean_sheet_median_seconds": 5.675366666666666,
+        "conditional_endpoints": {
+          "eligible": 67,
+          "recovered": 59,
+          "recall": 0.8805970149253731
+        },
+        "observed_paths": 17,
+        "miss_attribution": {
+          "recovered": 59,
+          "routing": 8
+        },
+        "recognition": {
+          "ports": {
+            "tp": 27,
+            "fp": 59,
+            "fn": 12,
+            "precision": 0.313953488372093,
+            "recall": 0.6923076923076923,
+            "f1": 0.432
+          },
+          "junctions": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 10,
+            "precision": 0.5,
+            "recall": 0.16666666666666666,
+            "f1": 0.25
+          }
+        },
+        "association_junctions": {
+          "tp": 2,
+          "fp": 2,
+          "fn": 10,
+          "precision": 0.5,
+          "recall": 0.16666666666666666,
+          "f1": 0.25
+        }
+      },
+      "v8": {
+        "localization": {
+          "tp": 31,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.8857142857142857,
+          "recall": 1.0,
+          "f1": 0.9393939393939394
+        },
+        "connections": {
+          "tp": 59,
+          "fp": 10,
+          "fn": 8,
+          "precision": 0.855072463768116,
+          "recall": 0.8805970149253731,
+          "f1": 0.8676470588235294
+        },
+        "mean_sheet_median_seconds": 5.0776666666666666,
+        "conditional_endpoints": {
+          "eligible": 67,
+          "recovered": 59,
+          "recall": 0.8805970149253731
+        },
+        "observed_paths": 87,
+        "miss_attribution": {
+          "recovered": 59,
+          "routing": 8
+        },
+        "recognition": {
+          "ports": {
+            "tp": 31,
+            "fp": 9,
+            "fn": 8,
+            "precision": 0.775,
+            "recall": 0.7948717948717948,
+            "f1": 0.7848101265822784
+          },
+          "junctions": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 10,
+            "precision": 1.0,
+            "recall": 0.16666666666666666,
+            "f1": 0.2857142857142857
+          }
+        },
+        "association_junctions": {
+          "tp": 11,
+          "fp": 4,
+          "fn": 1,
+          "precision": 0.7333333333333333,
+          "recall": 0.9166666666666666,
+          "f1": 0.8148148148148148
+        }
+      }
+    }
+  },
+  "evaluation_status": "R1 prototype rejected after primary3-ROI outcome; remaining regression was interrupted to continue development. This report contains only the3 fully evaluated primary source ROIs."
+}
