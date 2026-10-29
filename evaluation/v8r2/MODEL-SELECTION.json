@@ -1,0 +1,83 @@
+{
+  "configuration": "0.65/0.25/0.75/hybrid/0.45",
+  "selection_rule": "Macro connection F1 over5 fixed validation source groups, ties by manual port/junction F1; same policy as R1. No R2 fresh test used.",
+  "baseline_macro_f1": 0.33053105368350266,
+  "selected": {
+    "groups": {
+      "open100": {
+        "tp": 34,
+        "fp": 6,
+        "fn": 511,
+        "precision": 0.85,
+        "recall": 0.062385321100917435,
+        "f1": 0.11623931623931624
+      },
+      "pahala": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75
+      },
+      "ruttan": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 6,
+        "precision": 1.0,
+        "recall": 0.14285714285714285,
+        "f1": 0.25
+      },
+      "v5-synthetic": {
+        "tp": 1083,
+        "fp": 61,
+        "fn": 2138,
+        "precision": 0.9466783216783217,
+        "recall": 0.33623098416640795,
+        "f1": 0.4962199312714777
+      },
+      "virden": {
+        "tp": 5,
+        "fp": 11,
+        "fn": 6,
+        "precision": 0.3125,
+        "recall": 0.45454545454545453,
+        "f1": 0.37037037037037035
+      }
+    },
+    "objective": 0.3965659235762328,
+    "recognition": {
+      "ports": {
+        "tp": 18,
+        "fp": 3,
+        "fn": 20,
+        "precision": 0.8571428571428571,
+        "recall": 0.47368421052631576,
+        "f1": 0.6101694915254238
+      },
+      "junctions": {
+        "tp": 2,
+        "fp": 9,
+        "fn": 3,
+        "precision": 0.18181818181818182,
+        "recall": 0.4,
+        "f1": 0.25
+      }
+    }
+  },
+  "thresholds": {
+    "model": "hog-rtrees-port-junction-v2",
+    "port_file": "port-context.xml.gz",
+    "port_sha256": "2770da03a009fea7e22d8fd0234b2d21d3faf6cb4732169bb7d18ac197c1ddd5",
+    "junction_file": "junction-context.xml.gz",
+    "junction_sha256": "bcfe23a3202d6eaeaf5b2e08b03c8da42c61d12800f1eba1b75d3ce3366bb20d",
+    "port_threshold": 0.65,
+    "junction_threshold": 0.25,
+    "junction_display_threshold": 0.45,
+    "extra_edge_threshold": 0.75,
+    "routing_mode": "hybrid",
+    "score_note": "Uncalibrated tree vote fractions, no automatic engineering approval",
+    "seed": 20261030,
+    "training_revision": "v8-r2-real-instrument-bus"
+  }
+}

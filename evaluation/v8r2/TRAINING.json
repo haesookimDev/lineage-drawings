@@ -1,0 +1,238 @@
+{
+  "manual_annotations_sha256": "9560b5dc1dd6e49c0b3d7a554c76b85dcbafc18cfe5f62c38530b2473ce0d7c6",
+  "reviewed_graph_points_sha256": "689e80851ac667babb4b37a61952f03bfe22b5cff2088ac695014c56041fb2d7",
+  "models": {
+    "port": {
+      "file": "port-context.xml.gz",
+      "sha256": "2770da03a009fea7e22d8fd0234b2d21d3faf6cb4732169bb7d18ac197c1ddd5",
+      "rows": 10123,
+      "class_counts": {
+        "0": 5677,
+        "1": 4446
+      }
+    },
+    "junction": {
+      "file": "junction-context.xml.gz",
+      "sha256": "bcfe23a3202d6eaeaf5b2e08b03c8da42c61d12800f1eba1b75d3ce3366bb20d",
+      "rows": 3504,
+      "class_counts": {
+        "0": 2490,
+        "1": 568,
+        "2": 338,
+        "3": 108
+      }
+    }
+  },
+  "sources": [
+    {
+      "kind": "manual-real-training",
+      "id": "virden-p11",
+      "source_sha256": "902e4fb43abdd3f876e23540bfcd8f12ebdff3d3aa96075f2ab3d097be6a20ec",
+      "reviewed_ports": 4,
+      "reviewed_junction_points": 4,
+      "port_training_rows_before_jitter": 177
+    },
+    {
+      "kind": "manual-real-training",
+      "id": "virden-p9",
+      "source_sha256": "42c1b767bb280922ee474a51d00d6c9709dcb958b31ef9888d68f332f6fb1ee4",
+      "reviewed_ports": 4,
+      "reviewed_junction_points": 1,
+      "port_training_rows_before_jitter": 104
+    },
+    {
+      "kind": "manual-real-training",
+      "id": "pahala-p19",
+      "source_sha256": "ab71365b78ed450a5fc177ad907a72c838cce7cf00b844b67e7dbaf6b9018ee3",
+      "reviewed_ports": 6,
+      "reviewed_junction_points": 14,
+      "port_training_rows_before_jitter": 181
+    },
+    {
+      "kind": "manual-real-training",
+      "id": "virden-p5",
+      "source_sha256": "27356b778cb5c3007e82a06768e04392a901ead1002962e7c47d0945d79c2250",
+      "reviewed_ports": 10,
+      "reviewed_junction_points": 0,
+      "port_training_rows_before_jitter": 274
+    },
+    {
+      "kind": "manual-real-training",
+      "id": "ruttan-p50",
+      "source_sha256": "be3cdc1557d776df1f19049dc5ffd991ea09667cb56c378854b157a119e349f9",
+      "reviewed_ports": 8,
+      "reviewed_junction_points": 0,
+      "port_training_rows_before_jitter": 185
+    },
+    {
+      "kind": "manual-real-training",
+      "id": "virden-p10",
+      "source_sha256": "2ede6c3b02ebed19bfde79d8dac4c4c480fa6f9ff275cdb605082ee9d5f16eb0",
+      "reviewed_ports": 8,
+      "reviewed_junction_points": 2,
+      "port_training_rows_before_jitter": 237
+    },
+    {
+      "kind": "manual-real-training",
+      "id": "virden-p12",
+      "source_sha256": "53618fcfcd292de942058cfe4eb2076a51b8c74aa5d2b78ebaa7f14351da15f5",
+      "reviewed_ports": 20,
+      "reviewed_junction_points": 0,
+      "port_training_rows_before_jitter": 675
+    },
+    {
+      "kind": "manual-real-training",
+      "id": "pahala-p18",
+      "source_sha256": "625aa7905fdaad8ff493984fc2f38f962aa0832695fe9438f78339029e07f8a2",
+      "reviewed_ports": 11,
+      "reviewed_junction_points": 10,
+      "port_training_rows_before_jitter": 493
+    },
+    {
+      "kind": "reviewed-real-graph-points",
+      "id": "0",
+      "count": 12,
+      "source_sha256": "2451fbe9b8d0494a822901493cfbf1d2656f0bd7678f0f25bb2266b5e78a7dc9"
+    },
+    {
+      "kind": "reviewed-real-graph-points",
+      "id": "1",
+      "count": 16,
+      "source_sha256": "c8c696042bf7a16eb30e492a312af274c312a2049a7eb765ca82f84d3770eba8"
+    },
+    {
+      "kind": "reviewed-real-graph-points",
+      "id": "2",
+      "count": 16,
+      "source_sha256": "8a36e9ae5064283ced701e17fab3a6ae74caee2ac07b8135cf65a8415077a46e"
+    },
+    {
+      "kind": "reviewed-real-graph-points",
+      "id": "3",
+      "count": 16,
+      "source_sha256": "293d416db064be7c78def7f3f9856a6060e65b7d9e7b15d2b42d273a98fc49e1"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/open100/0.png",
+      "rows": 152,
+      "positives": 123,
+      "source_sha256": "2451fbe9b8d0494a822901493cfbf1d2656f0bd7678f0f25bb2266b5e78a7dc9"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/open100/1.png",
+      "rows": 48,
+      "positives": 34,
+      "source_sha256": "c8c696042bf7a16eb30e492a312af274c312a2049a7eb765ca82f84d3770eba8"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/open100/2.png",
+      "rows": 143,
+      "positives": 121,
+      "source_sha256": "8a36e9ae5064283ced701e17fab3a6ae74caee2ac07b8135cf65a8415077a46e"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/open100/3.png",
+      "rows": 96,
+      "positives": 82,
+      "source_sha256": "293d416db064be7c78def7f3f9856a6060e65b7d9e7b15d2b42d273a98fc49e1"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/240.png",
+      "rows": 190,
+      "positives": 165,
+      "source_sha256": "7d6ac6edbd8c4ecb67e84f849e819c0afb4da784bf15439d3a5c8f2c88a0a3de"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/398.png",
+      "rows": 224,
+      "positives": 180,
+      "source_sha256": "409fe43c4635d6fecf84fd58e46f56d62a0c588668731617b76f64dc2f2be9fa"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/110.png",
+      "rows": 249,
+      "positives": 200,
+      "source_sha256": "1ec4986e03067e79464a63f8d5decfada6c579846c1efc4c5334d8745432df04"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/99.png",
+      "rows": 222,
+      "positives": 181,
+      "source_sha256": "ac8efafb2dd93bb1d5d84fc08d851457ab429b697ba05ff3afcfa49b03acdb37"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/468.png",
+      "rows": 191,
+      "positives": 158,
+      "source_sha256": "b8788e74e90cc4006fc23f0baed7d2d329d900cb1cbc3144a79550800023e4ae"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/457.png",
+      "rows": 245,
+      "positives": 198,
+      "source_sha256": "4093d839e34f8264241bc73254886c20a3a4d9a2ed60f06893c03680e6af351a"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/150.png",
+      "rows": 184,
+      "positives": 144,
+      "source_sha256": "c469a5e7de3c0b9cb1339becdc51dd63bde1da9afe6b3ff1ff3446499d91e816"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/447.png",
+      "rows": 232,
+      "positives": 185,
+      "source_sha256": "d03558748f63869db687cb87bddace8b26f6b2258c78928a60a156420b17846b"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/123.png",
+      "rows": 230,
+      "positives": 192,
+      "source_sha256": "a176d005b05e6f1abdcfb8f4d0bb90ace8d44a467d4611d9770b65f25e4947fe"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/158.png",
+      "rows": 248,
+      "positives": 200,
+      "source_sha256": "4a1d7ab90d7b7a0d4eb5c97faf424d299bed96088c8e8ade8612b186242b40e7"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/72.png",
+      "rows": 260,
+      "positives": 200,
+      "source_sha256": "0b7aa18a2f0669d05d85063bf7ccbc678b62333a618ce081891761b5c6f27239"
+    },
+    {
+      "kind": "weak-GraphML-port",
+      "id": ".benchmark-data/v5-synthetic/248.png",
+      "rows": 231,
+      "positives": 190,
+      "source_sha256": "604d68474f9a0630c280ab371f0e9556cdfff278b578d996582f3fb5c9bf9983"
+    }
+  ],
+  "seconds": 47.142249990982236,
+  "features": "Two32px HOG/ink grids from24/48px point context, oriented for ports, local actual-arm coverage and six candidate geometry values. No project id/page coordinates in feature vector.",
+  "cpu_threads": 4,
+  "trees": 160,
+  "max_depth": 18,
+  "procedural_seeds": [
+    20281030,
+    20281329
+  ],
+  "training_source_sha256": "6d85659690ccad073a1ed08c97c304626d17be93dec71f34f69ee6d694ec8336"
+}

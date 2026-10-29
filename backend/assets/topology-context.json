@@ -1,14 +1,15 @@
 {
   "model": "hog-rtrees-port-junction-v2",
   "port_file": "port-context.xml.gz",
-  "port_sha256": "7286edc9c5cbb120a6d896809801a8a0ab9ce5e4d8360bceddd3088f89f7ea26",
+  "port_sha256": "2770da03a009fea7e22d8fd0234b2d21d3faf6cb4732169bb7d18ac197c1ddd5",
   "junction_file": "junction-context.xml.gz",
-  "junction_sha256": "a4cf2a7ac47f7099fdb7948c4602cb413a639c8ce39f76042ea2198de0231783",
-  "port_threshold": 0.5,
+  "junction_sha256": "bcfe23a3202d6eaeaf5b2e08b03c8da42c61d12800f1eba1b75d3ce3366bb20d",
+  "port_threshold": 0.65,
   "junction_threshold": 0.25,
   "junction_display_threshold": 0.45,
-  "extra_edge_threshold": 0.55,
+  "extra_edge_threshold": 0.75,
   "routing_mode": "hybrid",
   "score_note": "Uncalibrated tree vote fractions, no automatic engineering approval",
-  "seed": 20261030
+  "seed": 20261030,
+  "training_revision": "v8-r2-real-instrument-bus"
 }

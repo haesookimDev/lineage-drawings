@@ -1,0 +1,14 @@
+{
+  "baseline": "43041df641c860e064815845df54ea9be12e6270",
+  "rejected_r1": "6836d0ab900fef970de90bee2be04345f7be084c",
+  "reason": "R1 reduced point FP and latency but connection recall unchanged on its3 fresh source ROIs. Those ROIs are now explicit R2 training, with11 real bus ports and10 real black-dot junctions added. No claim they remain a test.",
+  "training": "v8 manual training5 regions + R1 test3 regions, same reviewed OPEN10060 points/weak sources/procedural300; classifier feature schema and routing rules unchanged",
+  "validation": "Same v8 reviewed validation9 pages, unchanged",
+  "new_test": [
+    "pahala-p14",
+    "virden-p13",
+    "virden-p14"
+  ],
+  "policy": "Select source regions and manually review labels before any R2 inference on these new pages. Keep v7 production baseline immutable. Known projects, no independent-project claim. Record R1 new-test failure and all R2 outcomes. No threshold fitting on R2 new test.",
+  "source_scope_addendum": "Before R2 inference add Pahala14 as a second visible instrument bus, complementing Pahala17 pump controls. Attempted extra OPEN10012/13 selection was withdrawn after verifying the pinned official archive has only12 real pairs0-11; no missing pages invented or substituted after inference. New test remains four government-source pages from known projects. Pahala17 excluded before R2 inference: touching paired instrument assemblies made symbol boundary/within-assembly adjacency ambiguous. Kept only source-unambiguous scored ROIs. Pahala14 bus edges are correlated pairs and must be reported alongside per-page metrics, not independent networks."
+}
