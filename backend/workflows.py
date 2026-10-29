@@ -43,13 +43,14 @@ def record_analysis(db,page,source_sha256):
     db.execute('INSERT INTO analysis_runs VALUES(?,?,?,?,?,?)',(uid(),page['id'],source_sha256,runtime_digest(),now(),dump(page)))
 
 def model_topology(page):
-    rec=page.get('transform',{}).get('connection_inference',{});ports=[]
+    rec=page.get('transform',{}).get('connection_inference',{});ports=[];elements={e['id']:e for e in page['elements']}
     for e in page['elements']:
+        if e['status']=='rejected' or e.get('properties',{}).get('topology_bbox')!=e['bbox']:continue
         for i,p in enumerate(e.get('properties',{}).get('ports',[])):
-            ports.append({'id':f"port-{e['id']}-{i}",'element_id':e['id'],'point':p['point'],'side':p['side'],'status':'needs_review','source':'model_observation','score':p.get('score')})
+            ports.append({'id':f"port-{e['id']}-{i}",'element_id':e['id'],'point':p['point'],'side':p['side'],'status':'needs_review','source':'model_observation','score':p.get('score'),'owner_bbox':e['bbox']})
     junctions=[{'id':f'junction-{i}','point':j['point'],'kind':j['type'] if j['type'] in ('tee','dot','plain_cross','bend') else 'unknown','status':'needs_review','source':'model_observation','score':j.get('score')} for i,j in enumerate(rec.get('junctions',[]))]
     edges={tuple(sorted((e['from_id'],e['to_id']))):e['id'] for e in page['connections']}
-    paths=[{'id':f'path-{i}','connection_id':edges[tuple(sorted((p['from_id'],p['to_id'])))],'points':p['points'],'status':'needs_review','source':'model_observation','from_port_id':None,'to_port_id':None} for i,p in enumerate(rec.get('paths',[])) if tuple(sorted((p['from_id'],p['to_id']))) in edges]
+    paths=[{'id':f'path-{i}','connection_id':edges[tuple(sorted((p['from_id'],p['to_id'])))],'points':p['points'],'status':'needs_review','source':'model_observation','from_port_id':None,'to_port_id':None} for i,p in enumerate(rec.get('paths',[])) if tuple(sorted((p['from_id'],p['to_id']))) in edges and p.get('from_bbox')==elements[p['from_id']]['bbox'] and p.get('to_bbox')==elements[p['to_id']]['bbox']]
     return {'ports':ports[:2400],'junctions':junctions[:500],'paths':paths[:500]}
 def reviewed(db,page):
     row=db.execute('SELECT * FROM topology_reviews WHERE page_id=? ORDER BY version DESC LIMIT 1',(page['id'],)).fetchone()
@@ -118,22 +119,22 @@ def check_review(page,payload):
                 if pid not in ports or ports[pid]['element_id']!=owner or ports[pid]['status']=='rejected':raise HTTPException(422,'경로 포트의 소유 요소가 일치하지 않습니다.')
                 if math.dist(route['points'][index],ports[pid]['point'])>1e-6:raise HTTPException(422,'경로 끝점을 선택한 포트에 맞춰 주세요.')
     if len({r['connection_id'] for r in payload['paths']})!=len(payload['paths']):raise HTTPException(422,'연결당 경로는 하나만 저장할 수 있습니다.')
-def save_review(db,page,body):
+def save_review(db,page,body,restored_payload=None):
     current=reviewed(db,page)
     if body.expected_version!=current['version']:raise HTTPException(409,'다른 검토가 저장됐습니다. 최신 버전을 다시 불러오세요.')
     payload={k:[r.model_dump() for r in getattr(body,k)] for k in ('ports','junctions','paths')};check_review(page,payload)
     previous={r['id']:r for k in ('ports','junctions','paths') for r in current['payload'][k]}
     for field,rows in payload.items():
         for row in rows:
-            prior=previous.get(row['id']);row['source']='human_review'
+            prior=previous.get(row['id']);row['source']='human_review';restored=next((r for r in (restored_payload or {}).get(field,[]) if r['id']==row['id']),{})
             if prior and prior.get('source')=='model_observation':row['observation']=prior
             elif prior and prior.get('observation'):row['observation']=prior['observation']
-            if field=='ports':row['owner_bbox']=next(e['bbox'] for e in page['elements'] if e['id']==row['element_id'])
-            if field=='paths':row['endpoint_signature']=endpoint_signature(next(e for e in page['connections'] if e['id']==row['connection_id']),{e['id']:e for e in page['elements']})
+            if field=='ports':row['owner_bbox']=restored.get('owner_bbox',next(e['bbox'] for e in page['elements'] if e['id']==row['element_id']))
+            if field=='paths':row['endpoint_signature']=restored.get('endpoint_signature',endpoint_signature(next(e for e in page['connections'] if e['id']==row['connection_id']),{e['id']:e for e in page['elements']}))
     version=current['version']+1
     db.execute('INSERT INTO topology_reviews VALUES(?,?,?,?,?)',(page['id'],version,body.reviewer,now(),dump(payload)))
     audit(db,page['id'],'review_topology',current,{'version':version,'reviewer':body.reviewer,'payload':payload})
-    return {'version':version,'payload':payload,'reviewer':body.reviewer}
+    return reviewed(db,page)
 @router.get('/pages/{ident}/topology-review')
 def topology_get(ident:str):
     with connect() as db:return reviewed(db,page_data(db,ident))
@@ -159,7 +160,7 @@ def topology_restore(ident:str,body:Restore):
             row=db.execute('SELECT payload FROM topology_reviews WHERE page_id=? AND version=?',(ident,body.version)).fetchone()
             if not row:raise HTTPException(404,'해당 검토 버전이 없습니다.')
             payload=json.loads(row['payload'])
-        return save_review(db,page,ReviewFields(expected_version=body.expected_version,reviewer=body.reviewer,**payload))
+        return save_review(db,page,ReviewFields(expected_version=body.expected_version,reviewer=body.reviewer,**payload),restored_payload=payload)
 
 class ProjectFields(BaseModel):
     name:str=Field(min_length=1,max_length=150)

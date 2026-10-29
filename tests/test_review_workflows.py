@@ -110,6 +110,9 @@ def test_stale_review_geometry_excluded_from_graph_and_versioned(client):
     assert not any(n['type']=='Port' for n in c.get(path+'/ontology').json()['nodes'])
     body['expected_version']=1;body['ports'][0]['point']=[.05,.03];assert c.put(path+'/topology-review',json=body).status_code==200
     assert not c.get(path+'/topology-review').json()['payload']['ports'][0]['stale']
+    restored=c.post(path+'/topology-restore',json={'expected_version':2,'version':1,'reviewer':'restore test'}).json()
+    assert restored['payload']['ports'][0]['stale'] # Restore cannot silently revalidate old geometry.
+    assert not any(n['type']=='Port' for n in c.get(path+'/ontology').json()['nodes'])
 
 def test_revision_tracks_reviewed_geometry_and_immutable_history(client):
     c=client;d,p=sample(c);pid=project(c,d);qd,q=sample(c);c.put('/api/documents/'+qd+'/project',json={'project_id':pid,'revision':'B'})
