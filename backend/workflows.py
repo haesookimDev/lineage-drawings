@@ -439,19 +439,25 @@ def impact_candidates(page,body):
         if uncertain and not body.include_uncertain:continue
         adj[edge['from_id']].append((edge['to_id'],edge,uncertain))
         if edge['kind'] in ('connectedTo','adjacentTo'):adj[edge['to_id']].append((edge['from_id'],edge,uncertain))
-    heap=[];best={};paths={};origins=set(body.origins)
+    # Keep shortest paths separately for confirmed/uncertain states. A short
+    # uncertain route may reach downstream within the depth budget even when
+    # a longer confirmed route is preferred for the intermediate node itself.
+    heap=[];dist={};state_paths={};origins=set(body.origins);visited_nodes=set(origins)
     for origin in sorted(origins):
-        cost=(int(elements[origin]['status']!='approved'),0);best[origin]=cost;paths[origin]=[];heapq.heappush(heap,(*cost,origin))
+        weak=int(elements[origin]['status']!='approved');dist[origin,weak]=0;state_paths[origin,weak]=[];heapq.heappush(heap,(0,weak,origin))
     truncated=False
     while heap:
-        uncertain,hops,at=heapq.heappop(heap)
-        if (uncertain,hops)!=best[at]:continue
+        hops,uncertain,at=heapq.heappop(heap)
+        if hops!=dist[at,uncertain]:continue
         if hops>=body.depth:continue
         for target,edge,weak in sorted(adj[at],key=lambda v:(v[0],v[1]['id'])):
-            cost=(max(uncertain,int(weak)),hops+1)
-            if cost>=best.get(target,(2,999)):continue
-            if target not in best and len(best)>=500:truncated=True;continue
-            best[target]=cost;paths[target]=paths[at]+[{'connection_id':edge['id'],'from_id':at,'to_id':target,'kind':edge['kind'],'status':edge['status'],'source':edge['source']}];heapq.heappush(heap,(*cost,target))
+            flag=max(uncertain,int(weak));key=(target,flag)
+            if hops+1>=dist.get(key,999):continue
+            if target not in visited_nodes and len(visited_nodes)>=500:truncated=True;continue
+            visited_nodes.add(target);dist[key]=hops+1;state_paths[key]=state_paths[at,uncertain]+[{'connection_id':edge['id'],'from_id':at,'to_id':target,'kind':edge['kind'],'status':edge['status'],'source':edge['source']}];heapq.heappush(heap,(hops+1,flag,target))
+    best={};paths={}
+    for (ident,flag),hops in dist.items():
+        if (flag,hops)<best.get(ident,(2,999)):best[ident]=(flag,hops);paths[ident]=state_paths[ident,flag]
     return {'schema':'lineage-impact-candidates-1','origins':sorted(origins),'results':[{'element_id':i,'label':elements[i]['label'],'bbox':elements[i]['bbox'],'status':elements[i]['status'],'uncertain':bool(best[i][0]),'hops':best[i][1],'path':paths[i]} for i in sorted(best,key=lambda i:(*best[i],i)) if i not in origins],'depth':body.depth,'truncated':truncated,'direction_policy':'feeds/controls forward; connectedTo undirected; adjacency only when explicitly requested','engineering_causality_confirmed':False,'note':'저장된 관계 경로에 따른 영향 후보이며 물리적 인과·안전성·운전 결과를 확정하지 않습니다.'}
 @router.post('/pages/{ident}/impact')
 def impact(ident:str,body:ImpactFields):

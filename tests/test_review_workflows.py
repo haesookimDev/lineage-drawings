@@ -133,3 +133,10 @@ def test_shared_definition_reference_does_not_invent_physical_connection(client)
     assert len(r['related_document_references'])==1
     assert r['related_document_references'][0]['physical_connection_inferred'] is False
     assert all(e['element_id'] not in {e['id'] for e in q['elements']} for e in r['results'])
+
+def test_short_uncertain_path_can_reach_downstream_within_depth_budget():
+    p={'elements':[element(k,[0,0,.1,.1]) for k in 'abcde'],'connections':[edge('ab','a','b','feeds'),edge('bc','b','c','feeds'),edge('cd','c','d','feeds'),edge('ad','a','d','feeds','needs_review'),edge('de','d','e','feeds')]}
+    r=impact_candidates(p,ImpactFields(origins=['a'],include_uncertain=True,depth=3));by={v['element_id']:v for v in r['results']}
+    assert by['d']['uncertain'] is False and by['d']['hops']==3
+    assert by['e']['uncertain'] is True and by['e']['hops']==2
+    assert len(impact_candidates(p,ImpactFields(origins=['e'],depth=10))['results'])==0
