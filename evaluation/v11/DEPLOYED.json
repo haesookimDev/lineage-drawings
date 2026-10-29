@@ -1,0 +1,66 @@
+{
+  "verified_at": "2026-10-29T09:04:00.060261+00:00",
+  "url": "https://lineage.haesoo.dev",
+  "app_commit": "7e1c349c41c0bf92340d9c53d99629bb8bd4c8a3",
+  "ci_url": "https://github.com/haesookimDev/lineage-drawings/actions/runs/40845319046",
+  "ci_tests_passed": 83,
+  "checked_backend_files": 29,
+  "checked_frontend_files": 3,
+  "image_artifact_sha256": "add3e001a6fb43af8d42844ffd013cd0b49c588e26c97d445ee32fffbbc29b13",
+  "live_image": "docker.io/library/lineage-drawings:7e1c349c41c0bf92340d9c53d99629bb8bd4c8a3",
+  "pod_ready_replicas": 1,
+  "restarts": 0,
+  "pvc": "Bound",
+  "api_checks": 168,
+  "api_outcome": "passed",
+  "new_documents": 7,
+  "uploaded_formats": [
+    "PNG",
+    "JPG",
+    "native PDF",
+    "scan PDF",
+    "DXF"
+  ],
+  "existing_documents_preserved": 75,
+  "existing_pages_preserved": 77,
+  "existing_concepts_preserved": 11,
+  "backup_sha256": "e70425184f3e7959395c22116ac026a75666dc724fa67ac5ae2dd4114e553733",
+  "migration_original_tables_unchanged": true,
+  "database": {
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "analysis_runs": 7,
+    "annotations": 1,
+    "topology_reviews": 4,
+    "comparisons": 1
+  },
+  "evaluated_frozen_public_geometry_matched_live": true,
+  "browser": {
+    "passed": true,
+    "public_correction_saved": true,
+    "public_correction_persisted_after_reload": true,
+    "public_correction_version": 1,
+    "graph_nodes": 3,
+    "graph_edges": 2,
+    "immutable_evaluation_visible": true,
+    "revision_history_reopened": true,
+    "revision_changed_symbols": 3,
+    "impact_candidate_paths_visible": true,
+    "screenshots": [
+      "production-review.png",
+      "production-evaluation.png",
+      "production-revision.png"
+    ],
+    "annotation_status": "Verification fixtures only; no expert certification"
+  },
+  "scope": "All5 MVP workflows verified. Public source-only single AI annotation is not expert-certified. Impact is a relationship-based candidate, not physical causality.",
+  "post_browser_server_check": {
+    "passed": true,
+    "browser_point_matches_server": true,
+    "original_observations_unchanged": true,
+    "verification_port_kept_needs_review": true,
+    "existing_documents_preserved": 75,
+    "existing_pages_preserved": 77,
+    "existing_concepts_preserved": 11
+  }
+}
