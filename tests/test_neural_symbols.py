@@ -25,6 +25,15 @@ def test_letterbox_and_decode_keep_native_source_coordinates():
  assert np.allclose(result[0],[12,20,20,28,.4])
 
 
+def test_shared_foreground_counts_keep_faint_and_colored_ink():
+ rng=np.random.default_rng(5);pixels=np.full((47,93,3),255,np.uint8)
+ pixels[12,15]=[255,248,255];pixels[30:35,40:55]=rng.integers(244,256,(5,15,3),dtype=np.uint8)
+ integral=neural.foreground_integral(pixels)
+ for a,b,c,d in [(0,0,93,47),(10,10,20,20),(20,20,80,45),(0,0,5,5)]:
+  count=int(integral[d,c]-integral[b,c]-integral[d,a]+integral[b,a])
+  assert count==np.count_nonzero(pixels[b:d,a:c].min(axis=2)<249)
+
+
 def test_neural_weights_integrity_rejects_corruption(tmp_path,monkeypatch):
  (tmp_path/'symbol-neural.json').write_text(json.dumps({'weights_sha256':'0'*64}));(tmp_path/'symbol-neural.onnx').write_bytes(b'corrupt')
  neural.model.cache_clear();monkeypatch.setattr(neural,'MODEL_DIR',tmp_path)
@@ -64,7 +73,7 @@ def test_test_pages_disjoint_from_training_and_validation():
 
 def test_release_candidate_set_matches_the_validated_selection():
  root=Path(__file__).resolve().parents[1]
- selected=json.loads((root/'evaluation/v9/RELEASE-SELECTION.json').read_text())
+ selected=json.loads((root/'evaluation/v10/RELEASE-SELECTION.json').read_text())
  deployed=json.loads((root/'backend/assets/symbol-neural.json').read_text())
  assert deployed['merge_mode']==selected['validated_candidate_set']=='neural_only'
  assert deployed['weights_sha256']==selected['symbol_configuration']['weights_sha256']

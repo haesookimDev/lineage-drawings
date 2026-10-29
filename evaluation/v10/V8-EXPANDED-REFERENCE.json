@@ -1,0 +1,119 @@
+{
+  "role": "Post-freeze historical reference rescored from immutable v9-run full-page predictions; same source4800 renders/viewer2400. Not a fresh timing run or selection data.",
+  "rows": [
+    {
+      "key": "winkler-p142",
+      "prediction_file": "evaluation/v9/results/winkler-p142-v8-predictions.json",
+      "prediction_sha256": "05a7eff5a27f0cca8f1007b3147c33ef904f6ea49baa24bfca9719746866475e",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 8,
+          "fn": 5,
+          "precision": 0.5789473684210527,
+          "recall": 0.6875,
+          "f1": 0.6285714285714286
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 9,
+          "fn": 13,
+          "precision": 0.18181818181818182,
+          "recall": 0.13333333333333333,
+          "f1": 0.15384615384615385
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "key": "winkler-p150",
+      "prediction_file": "evaluation/v9/results/winkler-p150-v8-predictions.json",
+      "prediction_sha256": "1b4ae01e275f25f133f0eba6cac2ef85adba917d1f9136110be864c5584180f4",
+      "scores": {
+        "localization": {
+          "tp": 27,
+          "fp": 29,
+          "fn": 15,
+          "precision": 0.48214285714285715,
+          "recall": 0.6428571428571429,
+          "f1": 0.5510204081632653
+        },
+        "connections": {
+          "tp": 12,
+          "fp": 31,
+          "fn": 57,
+          "precision": 0.27906976744186046,
+          "recall": 0.17391304347826086,
+          "f1": 0.21428571428571427
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "key": "winnipeg-p2",
+      "prediction_file": "evaluation/v9/results/winnipeg-p2-v8-predictions.json",
+      "prediction_sha256": "7cbc329b2188809ac0840bae62a478cb04a52a9beb2604690bcf10779563fdc9",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 4,
+          "fn": 4,
+          "precision": 0.7142857142857143,
+          "recall": 0.7142857142857143,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 4,
+          "fp": 2,
+          "fn": 10,
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "key": "winnipeg-p7",
+      "prediction_file": "evaluation/v9/results/winnipeg-p7-v8-predictions.json",
+      "prediction_sha256": "d6443d64fb5bfb10c5cfefa6fb9d9bf5eece3d4063a5559a49aaa8be7a349eb0",
+      "scores": {
+        "localization": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    }
+  ],
+  "aggregate": {
+    "localization": {
+      "tp": 54,
+      "fp": 41,
+      "fn": 24,
+      "precision": 0.5684210526315789,
+      "recall": 0.6923076923076923,
+      "f1": 0.6242774566473989
+    },
+    "connections": {
+      "tp": 18,
+      "fp": 42,
+      "fn": 84,
+      "precision": 0.3,
+      "recall": 0.17647058823529413,
+      "f1": 0.2222222222222222
+    }
+  }
+}

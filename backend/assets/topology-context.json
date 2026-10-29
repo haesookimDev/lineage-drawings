@@ -14,8 +14,8 @@
   "training_revision": "v8-r2-real-instrument-bus",
   "extra_symbol_threshold": 0.45,
   "strict_contacts": true,
-  "release_policy": "Validation-selected hybrid, periodic image-supported line recovery. Fixed point forests; no automatic approval.",
+  "release_policy": "Single-model parameter interpolation with development repair/preservation gates; same image-supported periodic recovery and human review. Local style search replaces unused full-page template proposals.",
   "extra_max_points": 8,
   "line_recovery": true,
-  "routing_revision": "v9-periodic-branches"
+  "routing_revision": "v10-local-style-and-replay"
 }

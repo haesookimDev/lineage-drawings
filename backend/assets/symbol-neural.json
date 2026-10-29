@@ -1,18 +1,17 @@
 {
-  "model": "yolox-nano-symbol-v9",
-  "weights_sha256": "11be82efc29c1390258e8d14b2e007249cf17764fc811d565cbefe967cbf05fa",
-  "epoch": 8,
+  "model": "yolox-nano-symbol-v10",
+  "weights_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+  "v9_fraction": 0.5,
   "threshold": 0.6,
   "detail_tiles": 0,
-  "detail_seed_max": 0.6,
   "tile_size": 1024,
   "overlap": 0.2,
   "input_size": 640,
   "merge_mode": "neural_only",
   "max_source_side": 4800,
   "max_tiles": 36,
-  "opencv_torch_max_abs_difference": 0.00010283291339874268,
-  "score_note": "Objectness times single-class sigmoid; not calibrated probability. Generic candidate only, no class or standard approval.",
-  "detail_hint_mode": "neural",
-  "selection": "Validation-only staged source-macro(connectionF1+.25symbolF1) across all retained iterations; unseen projects never used."
+  "opencv_torch_max_abs_difference": 9.113550186157227e-05,
+  "score_note": "Generic single-model candidate; uncalibrated, requires human review.",
+  "local_style_gate": true,
+  "selection": "Explicit regression repair selection on previous20 development pages/ROIs. New enlarged labels withheld; prior35 labels and OPEN1006-11 are now development. No gradient training/ensemble. See evaluation/v10/RELEASE-SELECTION.json."
 }

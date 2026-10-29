@@ -1,0 +1,7617 @@
+{
+  "role": "Final bounded development fourth trial, prior20 development pages only. Lower confidence0.45 on blend0.25/0.5; no enlarged labels inspected. No further search after final scoring.",
+  "candidates": [
+    {
+      "name": "blend-0.25-cut0.45",
+      "manifest": {
+        "model": "yolox-nano-symbol-v10",
+        "weights_sha256": "93bcc4c83b988f8b40dd304d6385fe234c55e45324ba216ab0b83548e36689af",
+        "v9_fraction": 0.25,
+        "threshold": 0.45,
+        "detail_tiles": 0,
+        "tile_size": 1024,
+        "overlap": 0.2,
+        "input_size": 640,
+        "merge_mode": "neural_only",
+        "max_source_side": 4800,
+        "max_tiles": 36,
+        "opencv_torch_max_abs_difference": 7.261335849761963e-05,
+        "score_note": "Generic single-model candidate; uncalibrated, requires human review."
+      }
+    },
+    {
+      "name": "blend-0.5-cut0.45",
+      "manifest": {
+        "model": "yolox-nano-symbol-v10",
+        "weights_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+        "v9_fraction": 0.5,
+        "threshold": 0.45,
+        "detail_tiles": 0,
+        "tile_size": 1024,
+        "overlap": 0.2,
+        "input_size": 640,
+        "merge_mode": "neural_only",
+        "max_source_side": 4800,
+        "max_tiles": 36,
+        "opencv_torch_max_abs_difference": 9.113550186157227e-05,
+        "score_note": "Generic single-model candidate; uncalibrated, requires human review."
+      }
+    }
+  ],
+  "configs": [
+    {
+      "name": "edge0.5-points6",
+      "extra_edge_threshold": 0.5,
+      "extra_max_points": 6
+    },
+    {
+      "name": "edge0.5-points8",
+      "extra_edge_threshold": 0.5,
+      "extra_max_points": 8
+    },
+    {
+      "name": "edge0.65-points6",
+      "extra_edge_threshold": 0.65,
+      "extra_max_points": 6
+    },
+    {
+      "name": "edge0.65-points8",
+      "extra_edge_threshold": 0.65,
+      "extra_max_points": 8
+    },
+    {
+      "name": "edge0.8-points6",
+      "extra_edge_threshold": 0.8,
+      "extra_max_points": 6
+    },
+    {
+      "name": "edge0.8-points8",
+      "extra_edge_threshold": 0.8,
+      "extra_max_points": 8
+    }
+  ],
+  "rows": [
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 2,
+          "fn": 18,
+          "precision": 0.9649122807017544,
+          "recall": 0.7534246575342466,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 33,
+          "fp": 10,
+          "fn": 73,
+          "precision": 0.7674418604651163,
+          "recall": 0.3113207547169811,
+          "f1": 0.4429530201342282
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 2,
+          "fn": 18,
+          "precision": 0.9649122807017544,
+          "recall": 0.7534246575342466,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 33,
+          "fp": 12,
+          "fn": 73,
+          "precision": 0.7333333333333333,
+          "recall": 0.3113207547169811,
+          "f1": 0.4370860927152318
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 2,
+          "fn": 18,
+          "precision": 0.9649122807017544,
+          "recall": 0.7534246575342466,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 33,
+          "fp": 8,
+          "fn": 73,
+          "precision": 0.8048780487804879,
+          "recall": 0.3113207547169811,
+          "f1": 0.4489795918367347
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 2,
+          "fn": 18,
+          "precision": 0.9649122807017544,
+          "recall": 0.7534246575342466,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 33,
+          "fp": 8,
+          "fn": 73,
+          "precision": 0.8048780487804879,
+          "recall": 0.3113207547169811,
+          "f1": 0.4489795918367347
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 2,
+          "fn": 18,
+          "precision": 0.9649122807017544,
+          "recall": 0.7534246575342466,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 33,
+          "fp": 8,
+          "fn": 73,
+          "precision": 0.8048780487804879,
+          "recall": 0.3113207547169811,
+          "f1": 0.4489795918367347
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 2,
+          "fn": 18,
+          "precision": 0.9649122807017544,
+          "recall": 0.7534246575342466,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 33,
+          "fp": 8,
+          "fn": 73,
+          "precision": 0.8048780487804879,
+          "recall": 0.3113207547169811,
+          "f1": 0.4489795918367347
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 33,
+          "fp": 1,
+          "fn": 41,
+          "precision": 0.9705882352941176,
+          "recall": 0.44594594594594594,
+          "f1": 0.6111111111111112
+        },
+        "connections": {
+          "tp": 17,
+          "fp": 2,
+          "fn": 422,
+          "precision": 0.8947368421052632,
+          "recall": 0.0387243735763098,
+          "f1": 0.07423580786026202
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 33,
+          "fp": 1,
+          "fn": 41,
+          "precision": 0.9705882352941176,
+          "recall": 0.44594594594594594,
+          "f1": 0.6111111111111112
+        },
+        "connections": {
+          "tp": 17,
+          "fp": 2,
+          "fn": 422,
+          "precision": 0.8947368421052632,
+          "recall": 0.0387243735763098,
+          "f1": 0.07423580786026202
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 33,
+          "fp": 1,
+          "fn": 41,
+          "precision": 0.9705882352941176,
+          "recall": 0.44594594594594594,
+          "f1": 0.6111111111111112
+        },
+        "connections": {
+          "tp": 17,
+          "fp": 2,
+          "fn": 422,
+          "precision": 0.8947368421052632,
+          "recall": 0.0387243735763098,
+          "f1": 0.07423580786026202
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 33,
+          "fp": 1,
+          "fn": 41,
+          "precision": 0.9705882352941176,
+          "recall": 0.44594594594594594,
+          "f1": 0.6111111111111112
+        },
+        "connections": {
+          "tp": 17,
+          "fp": 2,
+          "fn": 422,
+          "precision": 0.8947368421052632,
+          "recall": 0.0387243735763098,
+          "f1": 0.07423580786026202
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 33,
+          "fp": 1,
+          "fn": 41,
+          "precision": 0.9705882352941176,
+          "recall": 0.44594594594594594,
+          "f1": 0.6111111111111112
+        },
+        "connections": {
+          "tp": 17,
+          "fp": 2,
+          "fn": 422,
+          "precision": 0.8947368421052632,
+          "recall": 0.0387243735763098,
+          "f1": 0.07423580786026202
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 33,
+          "fp": 1,
+          "fn": 41,
+          "precision": 0.9705882352941176,
+          "recall": 0.44594594594594594,
+          "f1": 0.6111111111111112
+        },
+        "connections": {
+          "tp": 17,
+          "fp": 2,
+          "fn": 422,
+          "precision": 0.8947368421052632,
+          "recall": 0.0387243735763098,
+          "f1": 0.07423580786026202
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 20,
+          "fn": 0,
+          "precision": 0.7333333333333333,
+          "recall": 1.0,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 120,
+          "fp": 27,
+          "fn": 1023,
+          "precision": 0.8163265306122449,
+          "recall": 0.10498687664041995,
+          "f1": 0.18604651162790697
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 20,
+          "fn": 0,
+          "precision": 0.7333333333333333,
+          "recall": 1.0,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 158,
+          "fp": 44,
+          "fn": 985,
+          "precision": 0.7821782178217822,
+          "recall": 0.13823272090988625,
+          "f1": 0.23494423791821561
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 20,
+          "fn": 0,
+          "precision": 0.7333333333333333,
+          "recall": 1.0,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 109,
+          "fp": 25,
+          "fn": 1034,
+          "precision": 0.8134328358208955,
+          "recall": 0.09536307961504811,
+          "f1": 0.1707126076742365
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 20,
+          "fn": 0,
+          "precision": 0.7333333333333333,
+          "recall": 1.0,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 144,
+          "fp": 35,
+          "fn": 999,
+          "precision": 0.8044692737430168,
+          "recall": 0.12598425196850394,
+          "f1": 0.2178517397881997
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 20,
+          "fn": 0,
+          "precision": 0.7333333333333333,
+          "recall": 1.0,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 97,
+          "fp": 22,
+          "fn": 1046,
+          "precision": 0.8151260504201681,
+          "recall": 0.08486439195100612,
+          "f1": 0.1537242472266244
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 20,
+          "fn": 0,
+          "precision": 0.7333333333333333,
+          "recall": 1.0,
+          "f1": 0.8461538461538461
+        },
+        "connections": {
+          "tp": 130,
+          "fp": 32,
+          "fn": 1013,
+          "precision": 0.8024691358024691,
+          "recall": 0.1137357830271216,
+          "f1": 0.19923371647509577
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 307,
+          "fp": 4,
+          "fn": 368,
+          "precision": 0.9871382636655949,
+          "recall": 0.45481481481481484,
+          "f1": 0.6227180527383367
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 317,
+          "fp": 4,
+          "fn": 358,
+          "precision": 0.9875389408099688,
+          "recall": 0.4696296296296296,
+          "f1": 0.6365461847389559
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 307,
+          "fp": 4,
+          "fn": 368,
+          "precision": 0.9871382636655949,
+          "recall": 0.45481481481481484,
+          "f1": 0.6227180527383367
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 317,
+          "fp": 4,
+          "fn": 358,
+          "precision": 0.9875389408099688,
+          "recall": 0.4696296296296296,
+          "f1": 0.6365461847389559
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 307,
+          "fp": 4,
+          "fn": 368,
+          "precision": 0.9871382636655949,
+          "recall": 0.45481481481481484,
+          "f1": 0.6227180527383367
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 317,
+          "fp": 4,
+          "fn": 358,
+          "precision": 0.9875389408099688,
+          "recall": 0.4696296296296296,
+          "f1": 0.6365461847389559
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.987012987012987
+        },
+        "connections": {
+          "tp": 334,
+          "fp": 49,
+          "fn": 467,
+          "precision": 0.8720626631853786,
+          "recall": 0.41697877652933835,
+          "f1": 0.5641891891891891
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.987012987012987
+        },
+        "connections": {
+          "tp": 354,
+          "fp": 77,
+          "fn": 447,
+          "precision": 0.8213457076566125,
+          "recall": 0.4419475655430712,
+          "f1": 0.5746753246753247
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.987012987012987
+        },
+        "connections": {
+          "tp": 322,
+          "fp": 43,
+          "fn": 479,
+          "precision": 0.8821917808219178,
+          "recall": 0.4019975031210986,
+          "f1": 0.5523156089193825
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.987012987012987
+        },
+        "connections": {
+          "tp": 342,
+          "fp": 70,
+          "fn": 459,
+          "precision": 0.8300970873786407,
+          "recall": 0.42696629213483145,
+          "f1": 0.5638911788953009
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.987012987012987
+        },
+        "connections": {
+          "tp": 311,
+          "fp": 39,
+          "fn": 490,
+          "precision": 0.8885714285714286,
+          "recall": 0.3882646691635456,
+          "f1": 0.5403996524761078
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9743589743589743,
+          "recall": 1.0,
+          "f1": 0.987012987012987
+        },
+        "connections": {
+          "tp": 331,
+          "fp": 63,
+          "fn": 470,
+          "precision": 0.8401015228426396,
+          "recall": 0.4132334581772784,
+          "f1": 0.5539748953974896
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 367,
+          "fp": 0,
+          "fn": 235,
+          "precision": 1.0,
+          "recall": 0.6096345514950167,
+          "f1": 0.7574819401444789
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 370,
+          "fp": 0,
+          "fn": 232,
+          "precision": 1.0,
+          "recall": 0.6146179401993356,
+          "f1": 0.7613168724279835
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 358,
+          "fp": 0,
+          "fn": 244,
+          "precision": 1.0,
+          "recall": 0.5946843853820598,
+          "f1": 0.7458333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 360,
+          "fp": 0,
+          "fn": 242,
+          "precision": 1.0,
+          "recall": 0.5980066445182725,
+          "f1": 0.7484407484407485
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 358,
+          "fp": 0,
+          "fn": 244,
+          "precision": 1.0,
+          "recall": 0.5946843853820598,
+          "f1": 0.7458333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 360,
+          "fp": 0,
+          "fn": 242,
+          "precision": 1.0,
+          "recall": 0.5980066445182725,
+          "f1": 0.7484407484407485
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 37,
+          "fp": 0,
+          "fn": 18,
+          "precision": 1.0,
+          "recall": 0.6727272727272727,
+          "f1": 0.8043478260869565
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 37,
+          "fp": 0,
+          "fn": 18,
+          "precision": 1.0,
+          "recall": 0.6727272727272727,
+          "f1": 0.8043478260869565
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 54,
+          "fp": 19,
+          "fn": 104,
+          "precision": 0.7397260273972602,
+          "recall": 0.34177215189873417,
+          "f1": 0.4675324675324675
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 67,
+          "fp": 20,
+          "fn": 91,
+          "precision": 0.7701149425287356,
+          "recall": 0.4240506329113924,
+          "f1": 0.5469387755102041
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 53,
+          "fp": 18,
+          "fn": 105,
+          "precision": 0.7464788732394366,
+          "recall": 0.33544303797468356,
+          "f1": 0.462882096069869
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 65,
+          "fp": 19,
+          "fn": 93,
+          "precision": 0.7738095238095238,
+          "recall": 0.41139240506329117,
+          "f1": 0.5371900826446281
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 53,
+          "fp": 18,
+          "fn": 105,
+          "precision": 0.7464788732394366,
+          "recall": 0.33544303797468356,
+          "f1": 0.462882096069869
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 65,
+          "fp": 19,
+          "fn": 93,
+          "precision": 0.7738095238095238,
+          "recall": 0.41139240506329117,
+          "f1": 0.5371900826446281
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 58,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.9666666666666667,
+          "recall": 0.9508196721311475,
+          "f1": 0.9586776859504132
+        },
+        "connections": {
+          "tp": 79,
+          "fp": 17,
+          "fn": 79,
+          "precision": 0.8229166666666666,
+          "recall": 0.5,
+          "f1": 0.6220472440944882
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 58,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.9666666666666667,
+          "recall": 0.9508196721311475,
+          "f1": 0.9586776859504132
+        },
+        "connections": {
+          "tp": 87,
+          "fp": 20,
+          "fn": 71,
+          "precision": 0.8130841121495327,
+          "recall": 0.5506329113924051,
+          "f1": 0.6566037735849056
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 58,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.9666666666666667,
+          "recall": 0.9508196721311475,
+          "f1": 0.9586776859504132
+        },
+        "connections": {
+          "tp": 79,
+          "fp": 17,
+          "fn": 79,
+          "precision": 0.8229166666666666,
+          "recall": 0.5,
+          "f1": 0.6220472440944882
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 58,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.9666666666666667,
+          "recall": 0.9508196721311475,
+          "f1": 0.9586776859504132
+        },
+        "connections": {
+          "tp": 87,
+          "fp": 20,
+          "fn": 71,
+          "precision": 0.8130841121495327,
+          "recall": 0.5506329113924051,
+          "f1": 0.6566037735849056
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 58,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.9666666666666667,
+          "recall": 0.9508196721311475,
+          "f1": 0.9586776859504132
+        },
+        "connections": {
+          "tp": 75,
+          "fp": 17,
+          "fn": 83,
+          "precision": 0.8152173913043478,
+          "recall": 0.47468354430379744,
+          "f1": 0.6
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 58,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.9666666666666667,
+          "recall": 0.9508196721311475,
+          "f1": 0.9586776859504132
+        },
+        "connections": {
+          "tp": 79,
+          "fp": 20,
+          "fn": 79,
+          "precision": 0.797979797979798,
+          "recall": 0.5,
+          "f1": 0.6147859922178989
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630136
+        },
+        "connections": {
+          "tp": 38,
+          "fp": 11,
+          "fn": 15,
+          "precision": 0.7755102040816326,
+          "recall": 0.7169811320754716,
+          "f1": 0.7450980392156863
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630136
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 12,
+          "fn": 12,
+          "precision": 0.7735849056603774,
+          "recall": 0.7735849056603774,
+          "f1": 0.7735849056603774
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630136
+        },
+        "connections": {
+          "tp": 38,
+          "fp": 11,
+          "fn": 15,
+          "precision": 0.7755102040816326,
+          "recall": 0.7169811320754716,
+          "f1": 0.7450980392156863
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630136
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 12,
+          "fn": 12,
+          "precision": 0.7735849056603774,
+          "recall": 0.7735849056603774,
+          "f1": 0.7735849056603774
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630136
+        },
+        "connections": {
+          "tp": 38,
+          "fp": 11,
+          "fn": 15,
+          "precision": 0.7755102040816326,
+          "recall": 0.7169811320754716,
+          "f1": 0.7450980392156863
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630136
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 12,
+          "fn": 12,
+          "precision": 0.7735849056603774,
+          "recall": 0.7735849056603774,
+          "f1": 0.7735849056603774
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.9473684210526315,
+          "recall": 0.8571428571428571,
+          "f1": 0.9
+        },
+        "connections": {
+          "tp": 129,
+          "fp": 0,
+          "fn": 27,
+          "precision": 1.0,
+          "recall": 0.8269230769230769,
+          "f1": 0.9052631578947369
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.9473684210526315,
+          "recall": 0.8571428571428571,
+          "f1": 0.9
+        },
+        "connections": {
+          "tp": 129,
+          "fp": 0,
+          "fn": 27,
+          "precision": 1.0,
+          "recall": 0.8269230769230769,
+          "f1": 0.9052631578947369
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.9473684210526315,
+          "recall": 0.8571428571428571,
+          "f1": 0.9
+        },
+        "connections": {
+          "tp": 129,
+          "fp": 0,
+          "fn": 27,
+          "precision": 1.0,
+          "recall": 0.8269230769230769,
+          "f1": 0.9052631578947369
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.9473684210526315,
+          "recall": 0.8571428571428571,
+          "f1": 0.9
+        },
+        "connections": {
+          "tp": 129,
+          "fp": 0,
+          "fn": 27,
+          "precision": 1.0,
+          "recall": 0.8269230769230769,
+          "f1": 0.9052631578947369
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.9473684210526315,
+          "recall": 0.8571428571428571,
+          "f1": 0.9
+        },
+        "connections": {
+          "tp": 129,
+          "fp": 0,
+          "fn": 27,
+          "precision": 1.0,
+          "recall": 0.8269230769230769,
+          "f1": 0.9052631578947369
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 6,
+          "precision": 0.9473684210526315,
+          "recall": 0.8571428571428571,
+          "f1": 0.9
+        },
+        "connections": {
+          "tp": 129,
+          "fp": 0,
+          "fn": 27,
+          "precision": 1.0,
+          "recall": 0.8269230769230769,
+          "f1": 0.9052631578947369
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 4,
+          "fn": 13,
+          "precision": 0.95,
+          "recall": 0.8539325842696629,
+          "f1": 0.8994082840236687
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 44,
+          "fn": 126,
+          "precision": 0.4823529411764706,
+          "recall": 0.24550898203592814,
+          "f1": 0.3253968253968254
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 4,
+          "fn": 13,
+          "precision": 0.95,
+          "recall": 0.8539325842696629,
+          "f1": 0.8994082840236687
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 46,
+          "fn": 126,
+          "precision": 0.47126436781609193,
+          "recall": 0.24550898203592814,
+          "f1": 0.3228346456692913
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 4,
+          "fn": 13,
+          "precision": 0.95,
+          "recall": 0.8539325842696629,
+          "f1": 0.8994082840236687
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 44,
+          "fn": 126,
+          "precision": 0.4823529411764706,
+          "recall": 0.24550898203592814,
+          "f1": 0.3253968253968254
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 4,
+          "fn": 13,
+          "precision": 0.95,
+          "recall": 0.8539325842696629,
+          "f1": 0.8994082840236687
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 46,
+          "fn": 126,
+          "precision": 0.47126436781609193,
+          "recall": 0.24550898203592814,
+          "f1": 0.3228346456692913
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 4,
+          "fn": 13,
+          "precision": 0.95,
+          "recall": 0.8539325842696629,
+          "f1": 0.8994082840236687
+        },
+        "connections": {
+          "tp": 40,
+          "fp": 44,
+          "fn": 127,
+          "precision": 0.47619047619047616,
+          "recall": 0.23952095808383234,
+          "f1": 0.3187250996015936
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 4,
+          "fn": 13,
+          "precision": 0.95,
+          "recall": 0.8539325842696629,
+          "f1": 0.8994082840236687
+        },
+        "connections": {
+          "tp": 40,
+          "fp": 46,
+          "fn": 127,
+          "precision": 0.46511627906976744,
+          "recall": 0.23952095808383234,
+          "f1": 0.31620553359683795
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 64,
+          "fp": 1,
+          "fn": 18,
+          "precision": 0.9846153846153847,
+          "recall": 0.7804878048780488,
+          "f1": 0.8707482993197279
+        },
+        "connections": {
+          "tp": 32,
+          "fp": 66,
+          "fn": 124,
+          "precision": 0.32653061224489793,
+          "recall": 0.20512820512820512,
+          "f1": 0.25196850393700787
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 64,
+          "fp": 1,
+          "fn": 18,
+          "precision": 0.9846153846153847,
+          "recall": 0.7804878048780488,
+          "f1": 0.8707482993197279
+        },
+        "connections": {
+          "tp": 32,
+          "fp": 87,
+          "fn": 124,
+          "precision": 0.2689075630252101,
+          "recall": 0.20512820512820512,
+          "f1": 0.23272727272727273
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 64,
+          "fp": 1,
+          "fn": 18,
+          "precision": 0.9846153846153847,
+          "recall": 0.7804878048780488,
+          "f1": 0.8707482993197279
+        },
+        "connections": {
+          "tp": 32,
+          "fp": 64,
+          "fn": 124,
+          "precision": 0.3333333333333333,
+          "recall": 0.20512820512820512,
+          "f1": 0.25396825396825395
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 64,
+          "fp": 1,
+          "fn": 18,
+          "precision": 0.9846153846153847,
+          "recall": 0.7804878048780488,
+          "f1": 0.8707482993197279
+        },
+        "connections": {
+          "tp": 32,
+          "fp": 85,
+          "fn": 124,
+          "precision": 0.27350427350427353,
+          "recall": 0.20512820512820512,
+          "f1": 0.23443223443223443
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 64,
+          "fp": 1,
+          "fn": 18,
+          "precision": 0.9846153846153847,
+          "recall": 0.7804878048780488,
+          "f1": 0.8707482993197279
+        },
+        "connections": {
+          "tp": 31,
+          "fp": 42,
+          "fn": 125,
+          "precision": 0.4246575342465753,
+          "recall": 0.1987179487179487,
+          "f1": 0.27074235807860264
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 64,
+          "fp": 1,
+          "fn": 18,
+          "precision": 0.9846153846153847,
+          "recall": 0.7804878048780488,
+          "f1": 0.8707482993197279
+        },
+        "connections": {
+          "tp": 31,
+          "fp": 53,
+          "fn": 125,
+          "precision": 0.36904761904761907,
+          "recall": 0.1987179487179487,
+          "f1": 0.25833333333333336
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.5454545454545454,
+          "recall": 0.5,
+          "f1": 0.5217391304347826
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.5454545454545454,
+          "recall": 0.5,
+          "f1": 0.5217391304347826
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.5454545454545454,
+          "recall": 0.5,
+          "f1": 0.5217391304347826
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.5454545454545454,
+          "recall": 0.5,
+          "f1": 0.5217391304347826
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 4,
+          "fn": 6,
+          "precision": 0.6,
+          "recall": 0.5,
+          "f1": 0.5454545454545454
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 4,
+          "fn": 6,
+          "precision": 0.6,
+          "recall": 0.5,
+          "f1": 0.5454545454545454
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 4,
+          "fp": 8,
+          "fn": 8,
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 4,
+          "fp": 8,
+          "fn": 8,
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.5555555555555556,
+          "f1": 0.7142857142857143
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.5555555555555556,
+          "f1": 0.7142857142857143
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.25-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 56,
+          "fp": 2,
+          "fn": 17,
+          "precision": 0.9655172413793104,
+          "recall": 0.7671232876712328,
+          "f1": 0.8549618320610687
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 7,
+          "fn": 71,
+          "precision": 0.8333333333333334,
+          "recall": 0.330188679245283,
+          "f1": 0.47297297297297297
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 56,
+          "fp": 2,
+          "fn": 17,
+          "precision": 0.9655172413793104,
+          "recall": 0.7671232876712328,
+          "f1": 0.8549618320610687
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 9,
+          "fn": 71,
+          "precision": 0.7954545454545454,
+          "recall": 0.330188679245283,
+          "f1": 0.4666666666666667
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 56,
+          "fp": 2,
+          "fn": 17,
+          "precision": 0.9655172413793104,
+          "recall": 0.7671232876712328,
+          "f1": 0.8549618320610687
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 6,
+          "fn": 71,
+          "precision": 0.8536585365853658,
+          "recall": 0.330188679245283,
+          "f1": 0.47619047619047616
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 56,
+          "fp": 2,
+          "fn": 17,
+          "precision": 0.9655172413793104,
+          "recall": 0.7671232876712328,
+          "f1": 0.8549618320610687
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 6,
+          "fn": 71,
+          "precision": 0.8536585365853658,
+          "recall": 0.330188679245283,
+          "f1": 0.47619047619047616
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 56,
+          "fp": 2,
+          "fn": 17,
+          "precision": 0.9655172413793104,
+          "recall": 0.7671232876712328,
+          "f1": 0.8549618320610687
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 6,
+          "fn": 71,
+          "precision": 0.8536585365853658,
+          "recall": 0.330188679245283,
+          "f1": 0.47619047619047616
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100",
+      "id": "4",
+      "scores": {
+        "localization": {
+          "tp": 56,
+          "fp": 2,
+          "fn": 17,
+          "precision": 0.9655172413793104,
+          "recall": 0.7671232876712328,
+          "f1": 0.8549618320610687
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 6,
+          "fn": 71,
+          "precision": 0.8536585365853658,
+          "recall": 0.330188679245283,
+          "f1": 0.47619047619047616
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 39,
+          "fp": 1,
+          "fn": 35,
+          "precision": 0.975,
+          "recall": 0.527027027027027,
+          "f1": 0.6842105263157895
+        },
+        "connections": {
+          "tp": 19,
+          "fp": 4,
+          "fn": 420,
+          "precision": 0.8260869565217391,
+          "recall": 0.04328018223234624,
+          "f1": 0.08225108225108226
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 39,
+          "fp": 1,
+          "fn": 35,
+          "precision": 0.975,
+          "recall": 0.527027027027027,
+          "f1": 0.6842105263157895
+        },
+        "connections": {
+          "tp": 22,
+          "fp": 6,
+          "fn": 417,
+          "precision": 0.7857142857142857,
+          "recall": 0.05011389521640091,
+          "f1": 0.09421841541755889
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 39,
+          "fp": 1,
+          "fn": 35,
+          "precision": 0.975,
+          "recall": 0.527027027027027,
+          "f1": 0.6842105263157895
+        },
+        "connections": {
+          "tp": 19,
+          "fp": 4,
+          "fn": 420,
+          "precision": 0.8260869565217391,
+          "recall": 0.04328018223234624,
+          "f1": 0.08225108225108226
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 39,
+          "fp": 1,
+          "fn": 35,
+          "precision": 0.975,
+          "recall": 0.527027027027027,
+          "f1": 0.6842105263157895
+        },
+        "connections": {
+          "tp": 22,
+          "fp": 4,
+          "fn": 417,
+          "precision": 0.8461538461538461,
+          "recall": 0.05011389521640091,
+          "f1": 0.09462365591397849
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 39,
+          "fp": 1,
+          "fn": 35,
+          "precision": 0.975,
+          "recall": 0.527027027027027,
+          "f1": 0.6842105263157895
+        },
+        "connections": {
+          "tp": 19,
+          "fp": 4,
+          "fn": 420,
+          "precision": 0.8260869565217391,
+          "recall": 0.04328018223234624,
+          "f1": 0.08225108225108226
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100",
+      "id": "5",
+      "scores": {
+        "localization": {
+          "tp": 39,
+          "fp": 1,
+          "fn": 35,
+          "precision": 0.975,
+          "recall": 0.527027027027027,
+          "f1": 0.6842105263157895
+        },
+        "connections": {
+          "tp": 22,
+          "fp": 4,
+          "fn": 417,
+          "precision": 0.8461538461538461,
+          "recall": 0.05011389521640091,
+          "f1": 0.09462365591397849
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "pahala",
+      "id": "p20",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 27,
+          "fn": 0,
+          "precision": 0.6707317073170732,
+          "recall": 1.0,
+          "f1": 0.8029197080291971
+        },
+        "connections": {
+          "tp": 100,
+          "fp": 50,
+          "fn": 1043,
+          "precision": 0.6666666666666666,
+          "recall": 0.08748906386701662,
+          "f1": 0.15467904098994587
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 27,
+          "fn": 0,
+          "precision": 0.6707317073170732,
+          "recall": 1.0,
+          "f1": 0.8029197080291971
+        },
+        "connections": {
+          "tp": 111,
+          "fp": 75,
+          "fn": 1032,
+          "precision": 0.5967741935483871,
+          "recall": 0.09711286089238845,
+          "f1": 0.1670428893905192
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 27,
+          "fn": 0,
+          "precision": 0.6707317073170732,
+          "recall": 1.0,
+          "f1": 0.8029197080291971
+        },
+        "connections": {
+          "tp": 92,
+          "fp": 42,
+          "fn": 1051,
+          "precision": 0.6865671641791045,
+          "recall": 0.0804899387576553,
+          "f1": 0.14408770555990602
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 27,
+          "fn": 0,
+          "precision": 0.6707317073170732,
+          "recall": 1.0,
+          "f1": 0.8029197080291971
+        },
+        "connections": {
+          "tp": 102,
+          "fp": 60,
+          "fn": 1041,
+          "precision": 0.6296296296296297,
+          "recall": 0.08923884514435695,
+          "f1": 0.15632183908045977
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 27,
+          "fn": 0,
+          "precision": 0.6707317073170732,
+          "recall": 1.0,
+          "f1": 0.8029197080291971
+        },
+        "connections": {
+          "tp": 83,
+          "fp": 32,
+          "fn": 1060,
+          "precision": 0.7217391304347827,
+          "recall": 0.0726159230096238,
+          "f1": 0.13195548489666137
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "v5-synthetic",
+      "id": "232",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 27,
+          "fn": 0,
+          "precision": 0.6707317073170732,
+          "recall": 1.0,
+          "f1": 0.8029197080291971
+        },
+        "connections": {
+          "tp": 93,
+          "fp": 48,
+          "fn": 1050,
+          "precision": 0.6595744680851063,
+          "recall": 0.08136482939632546,
+          "f1": 0.14485981308411214
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 307,
+          "fp": 4,
+          "fn": 368,
+          "precision": 0.9871382636655949,
+          "recall": 0.45481481481481484,
+          "f1": 0.6227180527383367
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 317,
+          "fp": 4,
+          "fn": 358,
+          "precision": 0.9875389408099688,
+          "recall": 0.4696296296296296,
+          "f1": 0.6365461847389559
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 307,
+          "fp": 4,
+          "fn": 368,
+          "precision": 0.9871382636655949,
+          "recall": 0.45481481481481484,
+          "f1": 0.6227180527383367
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 317,
+          "fp": 4,
+          "fn": 358,
+          "precision": 0.9875389408099688,
+          "recall": 0.4696296296296296,
+          "f1": 0.6365461847389559
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 307,
+          "fp": 4,
+          "fn": 368,
+          "precision": 0.9871382636655949,
+          "recall": 0.45481481481481484,
+          "f1": 0.6227180527383367
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "v5-synthetic",
+      "id": "238",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 317,
+          "fp": 4,
+          "fn": 358,
+          "precision": 0.9875389408099688,
+          "recall": 0.4696296296296296,
+          "f1": 0.6365461847389559
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 334,
+          "fp": 2,
+          "fn": 467,
+          "precision": 0.9940476190476191,
+          "recall": 0.41697877652933835,
+          "f1": 0.5875109938434476
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 354,
+          "fp": 6,
+          "fn": 447,
+          "precision": 0.9833333333333333,
+          "recall": 0.4419475655430712,
+          "f1": 0.6098191214470284
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 322,
+          "fp": 2,
+          "fn": 479,
+          "precision": 0.9938271604938271,
+          "recall": 0.4019975031210986,
+          "f1": 0.5724444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 342,
+          "fp": 5,
+          "fn": 459,
+          "precision": 0.9855907780979827,
+          "recall": 0.42696629213483145,
+          "f1": 0.5958188153310104
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 311,
+          "fp": 1,
+          "fn": 490,
+          "precision": 0.9967948717948718,
+          "recall": 0.3882646691635456,
+          "f1": 0.5588499550763701
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "v5-synthetic",
+      "id": "470",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 331,
+          "fp": 4,
+          "fn": 470,
+          "precision": 0.9880597014925373,
+          "recall": 0.4132334581772784,
+          "f1": 0.5827464788732394
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 367,
+          "fp": 0,
+          "fn": 235,
+          "precision": 1.0,
+          "recall": 0.6096345514950167,
+          "f1": 0.7574819401444789
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 370,
+          "fp": 0,
+          "fn": 232,
+          "precision": 1.0,
+          "recall": 0.6146179401993356,
+          "f1": 0.7613168724279835
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 358,
+          "fp": 0,
+          "fn": 244,
+          "precision": 1.0,
+          "recall": 0.5946843853820598,
+          "f1": 0.7458333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 360,
+          "fp": 0,
+          "fn": 242,
+          "precision": 1.0,
+          "recall": 0.5980066445182725,
+          "f1": 0.7484407484407485
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 358,
+          "fp": 0,
+          "fn": 244,
+          "precision": 1.0,
+          "recall": 0.5946843853820598,
+          "f1": 0.7458333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "v5-synthetic",
+      "id": "278",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 360,
+          "fp": 0,
+          "fn": 242,
+          "precision": 1.0,
+          "recall": 0.5980066445182725,
+          "f1": 0.7484407484407485
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "pahala",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "virden",
+      "id": "p13",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "virden",
+      "id": "p14",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.3333333333333333,
+          "recall": 0.25,
+          "f1": 0.2857142857142857
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 53,
+          "fp": 17,
+          "fn": 105,
+          "precision": 0.7571428571428571,
+          "recall": 0.33544303797468356,
+          "f1": 0.4649122807017544
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 66,
+          "fp": 18,
+          "fn": 92,
+          "precision": 0.7857142857142857,
+          "recall": 0.4177215189873418,
+          "f1": 0.5454545454545454
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 52,
+          "fp": 17,
+          "fn": 106,
+          "precision": 0.7536231884057971,
+          "recall": 0.3291139240506329,
+          "f1": 0.4581497797356828
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 64,
+          "fp": 18,
+          "fn": 94,
+          "precision": 0.7804878048780488,
+          "recall": 0.4050632911392405,
+          "f1": 0.5333333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 52,
+          "fp": 17,
+          "fn": 106,
+          "precision": 0.7536231884057971,
+          "recall": 0.3291139240506329,
+          "f1": 0.4581497797356828
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "6",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 64,
+          "fp": 18,
+          "fn": 94,
+          "precision": 0.7804878048780488,
+          "recall": 0.4050632911392405,
+          "f1": 0.5333333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1": 0.95
+        },
+        "connections": {
+          "tp": 78,
+          "fp": 12,
+          "fn": 80,
+          "precision": 0.8666666666666667,
+          "recall": 0.4936708860759494,
+          "f1": 0.6290322580645161
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1": 0.95
+        },
+        "connections": {
+          "tp": 86,
+          "fp": 12,
+          "fn": 72,
+          "precision": 0.8775510204081632,
+          "recall": 0.5443037974683544,
+          "f1": 0.671875
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1": 0.95
+        },
+        "connections": {
+          "tp": 78,
+          "fp": 12,
+          "fn": 80,
+          "precision": 0.8666666666666667,
+          "recall": 0.4936708860759494,
+          "f1": 0.6290322580645161
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1": 0.95
+        },
+        "connections": {
+          "tp": 86,
+          "fp": 12,
+          "fn": 72,
+          "precision": 0.8775510204081632,
+          "recall": 0.5443037974683544,
+          "f1": 0.671875
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1": 0.95
+        },
+        "connections": {
+          "tp": 77,
+          "fp": 12,
+          "fn": 81,
+          "precision": 0.8651685393258427,
+          "recall": 0.4873417721518987,
+          "f1": 0.6234817813765182
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "7",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1": 0.95
+        },
+        "connections": {
+          "tp": 85,
+          "fp": 12,
+          "fn": 73,
+          "precision": 0.8762886597938144,
+          "recall": 0.5379746835443038,
+          "f1": 0.6666666666666666
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9473684210526315,
+          "recall": 1.0,
+          "f1": 0.972972972972973
+        },
+        "connections": {
+          "tp": 38,
+          "fp": 14,
+          "fn": 15,
+          "precision": 0.7307692307692307,
+          "recall": 0.7169811320754716,
+          "f1": 0.7238095238095238
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9473684210526315,
+          "recall": 1.0,
+          "f1": 0.972972972972973
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 15,
+          "fn": 12,
+          "precision": 0.7321428571428571,
+          "recall": 0.7735849056603774,
+          "f1": 0.7522935779816514
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9473684210526315,
+          "recall": 1.0,
+          "f1": 0.972972972972973
+        },
+        "connections": {
+          "tp": 38,
+          "fp": 14,
+          "fn": 15,
+          "precision": 0.7307692307692307,
+          "recall": 0.7169811320754716,
+          "f1": 0.7238095238095238
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9473684210526315,
+          "recall": 1.0,
+          "f1": 0.972972972972973
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 15,
+          "fn": 12,
+          "precision": 0.7321428571428571,
+          "recall": 0.7735849056603774,
+          "f1": 0.7522935779816514
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9473684210526315,
+          "recall": 1.0,
+          "f1": 0.972972972972973
+        },
+        "connections": {
+          "tp": 38,
+          "fp": 14,
+          "fn": 15,
+          "precision": 0.7307692307692307,
+          "recall": 0.7169811320754716,
+          "f1": 0.7238095238095238
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "8",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9473684210526315,
+          "recall": 1.0,
+          "f1": 0.972972972972973
+        },
+        "connections": {
+          "tp": 40,
+          "fp": 14,
+          "fn": 13,
+          "precision": 0.7407407407407407,
+          "recall": 0.7547169811320755,
+          "f1": 0.7476635514018691
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 38,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.926829268292683,
+          "recall": 0.9047619047619048,
+          "f1": 0.9156626506024096
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 13,
+          "fn": 40,
+          "precision": 0.8992248062015504,
+          "recall": 0.7435897435897436,
+          "f1": 0.8140350877192982
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 38,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.926829268292683,
+          "recall": 0.9047619047619048,
+          "f1": 0.9156626506024096
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 13,
+          "fn": 40,
+          "precision": 0.8992248062015504,
+          "recall": 0.7435897435897436,
+          "f1": 0.8140350877192982
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 38,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.926829268292683,
+          "recall": 0.9047619047619048,
+          "f1": 0.9156626506024096
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 13,
+          "fn": 40,
+          "precision": 0.8992248062015504,
+          "recall": 0.7435897435897436,
+          "f1": 0.8140350877192982
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 38,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.926829268292683,
+          "recall": 0.9047619047619048,
+          "f1": 0.9156626506024096
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 13,
+          "fn": 40,
+          "precision": 0.8992248062015504,
+          "recall": 0.7435897435897436,
+          "f1": 0.8140350877192982
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 38,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.926829268292683,
+          "recall": 0.9047619047619048,
+          "f1": 0.9156626506024096
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 13,
+          "fn": 40,
+          "precision": 0.8992248062015504,
+          "recall": 0.7435897435897436,
+          "f1": 0.8140350877192982
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "9",
+      "scores": {
+        "localization": {
+          "tp": 38,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.926829268292683,
+          "recall": 0.9047619047619048,
+          "f1": 0.9156626506024096
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 13,
+          "fn": 40,
+          "precision": 0.8992248062015504,
+          "recall": 0.7435897435897436,
+          "f1": 0.8140350877192982
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 74,
+          "fp": 5,
+          "fn": 15,
+          "precision": 0.9367088607594937,
+          "recall": 0.8314606741573034,
+          "f1": 0.8809523809523809
+        },
+        "connections": {
+          "tp": 29,
+          "fp": 34,
+          "fn": 138,
+          "precision": 0.4603174603174603,
+          "recall": 0.17365269461077845,
+          "f1": 0.25217391304347825
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 74,
+          "fp": 5,
+          "fn": 15,
+          "precision": 0.9367088607594937,
+          "recall": 0.8314606741573034,
+          "f1": 0.8809523809523809
+        },
+        "connections": {
+          "tp": 29,
+          "fp": 38,
+          "fn": 138,
+          "precision": 0.43283582089552236,
+          "recall": 0.17365269461077845,
+          "f1": 0.24786324786324787
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 74,
+          "fp": 5,
+          "fn": 15,
+          "precision": 0.9367088607594937,
+          "recall": 0.8314606741573034,
+          "f1": 0.8809523809523809
+        },
+        "connections": {
+          "tp": 29,
+          "fp": 33,
+          "fn": 138,
+          "precision": 0.46774193548387094,
+          "recall": 0.17365269461077845,
+          "f1": 0.25327510917030566
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 74,
+          "fp": 5,
+          "fn": 15,
+          "precision": 0.9367088607594937,
+          "recall": 0.8314606741573034,
+          "f1": 0.8809523809523809
+        },
+        "connections": {
+          "tp": 29,
+          "fp": 36,
+          "fn": 138,
+          "precision": 0.4461538461538462,
+          "recall": 0.17365269461077845,
+          "f1": 0.25
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 74,
+          "fp": 5,
+          "fn": 15,
+          "precision": 0.9367088607594937,
+          "recall": 0.8314606741573034,
+          "f1": 0.8809523809523809
+        },
+        "connections": {
+          "tp": 28,
+          "fp": 33,
+          "fn": 139,
+          "precision": 0.45901639344262296,
+          "recall": 0.16766467065868262,
+          "f1": 0.24561403508771928
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "10",
+      "scores": {
+        "localization": {
+          "tp": 74,
+          "fp": 5,
+          "fn": 15,
+          "precision": 0.9367088607594937,
+          "recall": 0.8314606741573034,
+          "f1": 0.8809523809523809
+        },
+        "connections": {
+          "tp": 28,
+          "fp": 35,
+          "fn": 139,
+          "precision": 0.4444444444444444,
+          "recall": 0.16766467065868262,
+          "f1": 0.24347826086956523
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 61,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.7439024390243902,
+          "f1": 0.8531468531468531
+        },
+        "connections": {
+          "tp": 23,
+          "fp": 44,
+          "fn": 133,
+          "precision": 0.34328358208955223,
+          "recall": 0.14743589743589744,
+          "f1": 0.2062780269058296
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 61,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.7439024390243902,
+          "f1": 0.8531468531468531
+        },
+        "connections": {
+          "tp": 25,
+          "fp": 62,
+          "fn": 131,
+          "precision": 0.28735632183908044,
+          "recall": 0.16025641025641027,
+          "f1": 0.205761316872428
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 61,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.7439024390243902,
+          "f1": 0.8531468531468531
+        },
+        "connections": {
+          "tp": 23,
+          "fp": 44,
+          "fn": 133,
+          "precision": 0.34328358208955223,
+          "recall": 0.14743589743589744,
+          "f1": 0.2062780269058296
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 61,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.7439024390243902,
+          "f1": 0.8531468531468531
+        },
+        "connections": {
+          "tp": 25,
+          "fp": 62,
+          "fn": 131,
+          "precision": 0.28735632183908044,
+          "recall": 0.16025641025641027,
+          "f1": 0.205761316872428
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 61,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.7439024390243902,
+          "f1": 0.8531468531468531
+        },
+        "connections": {
+          "tp": 22,
+          "fp": 29,
+          "fn": 134,
+          "precision": 0.43137254901960786,
+          "recall": 0.14102564102564102,
+          "f1": 0.21256038647342995
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "open100-repair",
+      "id": "11",
+      "scores": {
+        "localization": {
+          "tp": 61,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.7439024390243902,
+          "f1": 0.8531468531468531
+        },
+        "connections": {
+          "tp": 24,
+          "fp": 33,
+          "fn": 132,
+          "precision": 0.42105263157894735,
+          "recall": 0.15384615384615385,
+          "f1": 0.22535211267605634
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.8181818181818182,
+          "recall": 0.75,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 4,
+          "fn": 7,
+          "precision": 0.5555555555555556,
+          "recall": 0.4166666666666667,
+          "f1": 0.47619047619047616
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.8181818181818182,
+          "recall": 0.75,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 4,
+          "fn": 7,
+          "precision": 0.5555555555555556,
+          "recall": 0.4166666666666667,
+          "f1": 0.47619047619047616
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.8181818181818182,
+          "recall": 0.75,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 4,
+          "fn": 7,
+          "precision": 0.5555555555555556,
+          "recall": 0.4166666666666667,
+          "f1": 0.47619047619047616
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.8181818181818182,
+          "recall": 0.75,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 4,
+          "fn": 7,
+          "precision": 0.5555555555555556,
+          "recall": 0.4166666666666667,
+          "f1": 0.47619047619047616
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.8181818181818182,
+          "recall": 0.75,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 7,
+          "precision": 0.625,
+          "recall": 0.4166666666666667,
+          "f1": 0.5
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "winkler-preservation",
+      "id": "p142",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 2,
+          "fn": 3,
+          "precision": 0.8181818181818182,
+          "recall": 0.75,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 7,
+          "precision": 0.625,
+          "recall": 0.4166666666666667,
+          "f1": 0.5
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 9,
+          "fn": 6,
+          "precision": 0.4,
+          "recall": 0.5,
+          "f1": 0.4444444444444444
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 4,
+          "fp": 8,
+          "fn": 8,
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "winkler-preservation",
+      "id": "p150",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 5,
+          "fn": 0,
+          "precision": 0.6428571428571429,
+          "recall": 1.0,
+          "f1": 0.782608695652174
+        },
+        "connections": {
+          "tp": 4,
+          "fp": 8,
+          "fn": 8,
+          "precision": 0.3333333333333333,
+          "recall": 0.3333333333333333,
+          "f1": 0.3333333333333333
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.5555555555555556,
+          "f1": 0.7142857142857143
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.5555555555555556,
+          "f1": 0.7142857142857143
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points6",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.5-points8",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points6",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.65-points8",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points6",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "model": "blend-0.5-cut0.45",
+      "config": "edge0.8-points8",
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666
+        },
+        "classified_correct": 0
+      }
+    }
+  ],
+  "aggregate": {
+    "blend-0.25-cut0.45": {
+      "edge0.5-points6": {
+        "open100": {
+          "localization": {
+            "tp": 88,
+            "fp": 3,
+            "fn": 59,
+            "precision": 0.967032967032967,
+            "recall": 0.5986394557823129,
+            "f1": 0.7394957983193278
+          },
+          "connections": {
+            "tp": 50,
+            "fp": 12,
+            "fn": 495,
+            "precision": 0.8064516129032258,
+            "recall": 0.09174311926605505,
+            "f1": 0.16474464579901152
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 339,
+            "fp": 10,
+            "fn": 41,
+            "precision": 0.9713467048710601,
+            "recall": 0.8921052631578947,
+            "f1": 0.9300411522633745
+          },
+          "connections": {
+            "tp": 373,
+            "fp": 157,
+            "fn": 475,
+            "precision": 0.7037735849056603,
+            "recall": 0.43985849056603776,
+            "f1": 0.5413642960812772
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 22,
+            "fn": 6,
+            "precision": 0.9341317365269461,
+            "recall": 0.9811320754716981,
+            "f1": 0.9570552147239264
+          },
+          "connections": {
+            "tp": 1128,
+            "fp": 80,
+            "fn": 2093,
+            "precision": 0.9337748344370861,
+            "recall": 0.3502018006830177,
+            "f1": 0.5093700609618425
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 8,
+            "fn": 3,
+            "precision": 0.6923076923076923,
+            "recall": 0.8571428571428571,
+            "f1": 0.7659574468085106
+          },
+          "connections": {
+            "tp": 12,
+            "fp": 14,
+            "fn": 12,
+            "precision": 0.46153846153846156,
+            "recall": 0.5,
+            "f1": 0.48
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          }
+        }
+      },
+      "edge0.5-points8": {
+        "open100": {
+          "localization": {
+            "tp": 88,
+            "fp": 3,
+            "fn": 59,
+            "precision": 0.967032967032967,
+            "recall": 0.5986394557823129,
+            "f1": 0.7394957983193278
+          },
+          "connections": {
+            "tp": 50,
+            "fp": 14,
+            "fn": 495,
+            "precision": 0.78125,
+            "recall": 0.09174311926605505,
+            "f1": 0.16420361247947454
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 339,
+            "fp": 10,
+            "fn": 41,
+            "precision": 0.9713467048710601,
+            "recall": 0.8921052631578947,
+            "f1": 0.9300411522633745
+          },
+          "connections": {
+            "tp": 397,
+            "fp": 185,
+            "fn": 451,
+            "precision": 0.6821305841924399,
+            "recall": 0.4681603773584906,
+            "f1": 0.5552447552447553
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 22,
+            "fn": 6,
+            "precision": 0.9341317365269461,
+            "recall": 0.9811320754716981,
+            "f1": 0.9570552147239264
+          },
+          "connections": {
+            "tp": 1199,
+            "fp": 125,
+            "fn": 2022,
+            "precision": 0.9055891238670695,
+            "recall": 0.3722446445203353,
+            "f1": 0.5276127612761277
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 8,
+            "fn": 3,
+            "precision": 0.6923076923076923,
+            "recall": 0.8571428571428571,
+            "f1": 0.7659574468085106
+          },
+          "connections": {
+            "tp": 12,
+            "fp": 14,
+            "fn": 12,
+            "precision": 0.46153846153846156,
+            "recall": 0.5,
+            "f1": 0.48
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          }
+        }
+      },
+      "edge0.65-points6": {
+        "open100": {
+          "localization": {
+            "tp": 88,
+            "fp": 3,
+            "fn": 59,
+            "precision": 0.967032967032967,
+            "recall": 0.5986394557823129,
+            "f1": 0.7394957983193278
+          },
+          "connections": {
+            "tp": 50,
+            "fp": 10,
+            "fn": 495,
+            "precision": 0.8333333333333334,
+            "recall": 0.09174311926605505,
+            "f1": 0.1652892561983471
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 339,
+            "fp": 10,
+            "fn": 41,
+            "precision": 0.9713467048710601,
+            "recall": 0.8921052631578947,
+            "f1": 0.9300411522633745
+          },
+          "connections": {
+            "tp": 372,
+            "fp": 154,
+            "fn": 476,
+            "precision": 0.7072243346007605,
+            "recall": 0.4386792452830189,
+            "f1": 0.5414847161572053
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 22,
+            "fn": 6,
+            "precision": 0.9341317365269461,
+            "recall": 0.9811320754716981,
+            "f1": 0.9570552147239264
+          },
+          "connections": {
+            "tp": 1096,
+            "fp": 72,
+            "fn": 2125,
+            "precision": 0.9383561643835616,
+            "recall": 0.3402669978267619,
+            "f1": 0.4994303941672363
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 8,
+            "fn": 3,
+            "precision": 0.6923076923076923,
+            "recall": 0.8571428571428571,
+            "f1": 0.7659574468085106
+          },
+          "connections": {
+            "tp": 12,
+            "fp": 14,
+            "fn": 12,
+            "precision": 0.46153846153846156,
+            "recall": 0.5,
+            "f1": 0.48
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          }
+        }
+      },
+      "edge0.65-points8": {
+        "open100": {
+          "localization": {
+            "tp": 88,
+            "fp": 3,
+            "fn": 59,
+            "precision": 0.967032967032967,
+            "recall": 0.5986394557823129,
+            "f1": 0.7394957983193278
+          },
+          "connections": {
+            "tp": 50,
+            "fp": 10,
+            "fn": 495,
+            "precision": 0.8333333333333334,
+            "recall": 0.09174311926605505,
+            "f1": 0.1652892561983471
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 339,
+            "fp": 10,
+            "fn": 41,
+            "precision": 0.9713467048710601,
+            "recall": 0.8921052631578947,
+            "f1": 0.9300411522633745
+          },
+          "connections": {
+            "tp": 395,
+            "fp": 182,
+            "fn": 453,
+            "precision": 0.6845753899480069,
+            "recall": 0.4658018867924528,
+            "f1": 0.5543859649122806
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 22,
+            "fn": 6,
+            "precision": 0.9341317365269461,
+            "recall": 0.9811320754716981,
+            "f1": 0.9570552147239264
+          },
+          "connections": {
+            "tp": 1163,
+            "fp": 109,
+            "fn": 2058,
+            "precision": 0.914308176100629,
+            "recall": 0.3610679913070475,
+            "f1": 0.5176941909637214
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 8,
+            "fn": 3,
+            "precision": 0.6923076923076923,
+            "recall": 0.8571428571428571,
+            "f1": 0.7659574468085106
+          },
+          "connections": {
+            "tp": 12,
+            "fp": 14,
+            "fn": 12,
+            "precision": 0.46153846153846156,
+            "recall": 0.5,
+            "f1": 0.48
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          }
+        }
+      },
+      "edge0.8-points6": {
+        "open100": {
+          "localization": {
+            "tp": 88,
+            "fp": 3,
+            "fn": 59,
+            "precision": 0.967032967032967,
+            "recall": 0.5986394557823129,
+            "f1": 0.7394957983193278
+          },
+          "connections": {
+            "tp": 50,
+            "fp": 10,
+            "fn": 495,
+            "precision": 0.8333333333333334,
+            "recall": 0.09174311926605505,
+            "f1": 0.1652892561983471
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 339,
+            "fp": 10,
+            "fn": 41,
+            "precision": 0.9713467048710601,
+            "recall": 0.8921052631578947,
+            "f1": 0.9300411522633745
+          },
+          "connections": {
+            "tp": 366,
+            "fp": 132,
+            "fn": 482,
+            "precision": 0.7349397590361446,
+            "recall": 0.43160377358490565,
+            "f1": 0.5438335809806835
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 39,
+            "fp": 3,
+            "fn": 21,
+            "precision": 0.9285714285714286,
+            "recall": 0.65,
+            "f1": 0.7647058823529411
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 22,
+            "fn": 6,
+            "precision": 0.9341317365269461,
+            "recall": 0.9811320754716981,
+            "f1": 0.9570552147239264
+          },
+          "connections": {
+            "tp": 1073,
+            "fp": 65,
+            "fn": 2148,
+            "precision": 0.9428822495606327,
+            "recall": 0.333126358273828,
+            "f1": 0.49231475108969946
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 8,
+            "fn": 3,
+            "precision": 0.6923076923076923,
+            "recall": 0.8571428571428571,
+            "f1": 0.7659574468085106
+          },
+          "connections": {
+            "tp": 10,
+            "fp": 12,
+            "fn": 14,
+            "precision": 0.45454545454545453,
+            "recall": 0.4166666666666667,
+            "f1": 0.43478260869565216
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5454545454545454,
+            "f1": 0.7058823529411765
+          }
+        }
+      },
+      "edge0.8-points8": {
+        "open100": {
+          "localization": {
+            "tp": 88,
+            "fp": 3,
+            "fn": 59,
+            "precision": 0.967032967032967,
+            "recall": 0.5986394557823129,
+            "f1": 0.7394957983193278
+          },
+          "connections": {
+            "tp": 50,
+            "fp": 10,
+            "fn": 495,
+            "precision": 0.8333333333333334,
+            "recall": 0.09174311926605505,
+            "f1": 0.1652892561983471
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 339,
+            "fp": 10,
+            "fn": 41,
+            "precision": 0.9713467048710601,
+            "recall": 0.8921052631578947,
+            "f1": 0.9300411522633745
+          },
+          "connections": {
+            "tp": 385,
+            "fp": 150,
+            "fn": 463,
+            "precision": 0.719626168224299,
+            "recall": 0.4540094339622642,
+            "f1": 0.556760665220535
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 39,
+            "fp": 3,
+            "fn": 21,
+            "precision": 0.9285714285714286,
+            "recall": 0.65,
+            "f1": 0.7647058823529411
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 22,
+            "fn": 6,
+            "precision": 0.9341317365269461,
+            "recall": 0.9811320754716981,
+            "f1": 0.9570552147239264
+          },
+          "connections": {
+            "tp": 1138,
+            "fp": 99,
+            "fn": 2083,
+            "precision": 0.919967663702506,
+            "recall": 0.35330642657559763,
+            "f1": 0.5105428443248093
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 8,
+            "fn": 3,
+            "precision": 0.6923076923076923,
+            "recall": 0.8571428571428571,
+            "f1": 0.7659574468085106
+          },
+          "connections": {
+            "tp": 10,
+            "fp": 12,
+            "fn": 14,
+            "precision": 0.45454545454545453,
+            "recall": 0.4166666666666667,
+            "f1": 0.43478260869565216
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5454545454545454,
+            "f1": 0.7058823529411765
+          }
+        }
+      }
+    },
+    "blend-0.5-cut0.45": {
+      "edge0.5-points6": {
+        "open100": {
+          "localization": {
+            "tp": 95,
+            "fp": 3,
+            "fn": 52,
+            "precision": 0.9693877551020408,
+            "recall": 0.6462585034013606,
+            "f1": 0.7755102040816326
+          },
+          "connections": {
+            "tp": 54,
+            "fp": 11,
+            "fn": 491,
+            "precision": 0.8307692307692308,
+            "recall": 0.09908256880733946,
+            "f1": 0.17704918032786884
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 335,
+            "fp": 12,
+            "fn": 45,
+            "precision": 0.9654178674351584,
+            "recall": 0.881578947368421,
+            "f1": 0.921595598349381
+          },
+          "connections": {
+            "tp": 337,
+            "fp": 134,
+            "fn": 511,
+            "precision": 0.7154989384288747,
+            "recall": 0.39740566037735847,
+            "f1": 0.5109931766489765
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 28,
+            "fn": 6,
+            "precision": 0.9176470588235294,
+            "recall": 0.9811320754716981,
+            "f1": 0.9483282674772037
+          },
+          "connections": {
+            "tp": 1108,
+            "fp": 56,
+            "fn": 2113,
+            "precision": 0.9518900343642611,
+            "recall": 0.3439925488978578,
+            "f1": 0.5053591790193843
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 7,
+            "fn": 3,
+            "precision": 0.72,
+            "recall": 0.8571428571428571,
+            "f1": 0.782608695652174
+          },
+          "connections": {
+            "tp": 11,
+            "fp": 13,
+            "fn": 13,
+            "precision": 0.4583333333333333,
+            "recall": 0.4583333333333333,
+            "f1": 0.4583333333333333
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          }
+        }
+      },
+      "edge0.5-points8": {
+        "open100": {
+          "localization": {
+            "tp": 95,
+            "fp": 3,
+            "fn": 52,
+            "precision": 0.9693877551020408,
+            "recall": 0.6462585034013606,
+            "f1": 0.7755102040816326
+          },
+          "connections": {
+            "tp": 57,
+            "fp": 15,
+            "fn": 488,
+            "precision": 0.7916666666666666,
+            "recall": 0.10458715596330276,
+            "f1": 0.1847649918962723
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 335,
+            "fp": 12,
+            "fn": 45,
+            "precision": 0.9654178674351584,
+            "recall": 0.881578947368421,
+            "f1": 0.921595598349381
+          },
+          "connections": {
+            "tp": 363,
+            "fp": 158,
+            "fn": 485,
+            "precision": 0.6967370441458733,
+            "recall": 0.42806603773584906,
+            "f1": 0.5303140978816655
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 28,
+            "fn": 6,
+            "precision": 0.9176470588235294,
+            "recall": 0.9811320754716981,
+            "f1": 0.9483282674772037
+          },
+          "connections": {
+            "tp": 1152,
+            "fp": 85,
+            "fn": 2069,
+            "precision": 0.931285367825384,
+            "recall": 0.35765290282520956,
+            "f1": 0.5168236877523553
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 7,
+            "fn": 3,
+            "precision": 0.72,
+            "recall": 0.8571428571428571,
+            "f1": 0.782608695652174
+          },
+          "connections": {
+            "tp": 11,
+            "fp": 13,
+            "fn": 13,
+            "precision": 0.4583333333333333,
+            "recall": 0.4583333333333333,
+            "f1": 0.4583333333333333
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          }
+        }
+      },
+      "edge0.65-points6": {
+        "open100": {
+          "localization": {
+            "tp": 95,
+            "fp": 3,
+            "fn": 52,
+            "precision": 0.9693877551020408,
+            "recall": 0.6462585034013606,
+            "f1": 0.7755102040816326
+          },
+          "connections": {
+            "tp": 54,
+            "fp": 10,
+            "fn": 491,
+            "precision": 0.84375,
+            "recall": 0.09908256880733946,
+            "f1": 0.17733990147783252
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 335,
+            "fp": 12,
+            "fn": 45,
+            "precision": 0.9654178674351584,
+            "recall": 0.881578947368421,
+            "f1": 0.921595598349381
+          },
+          "connections": {
+            "tp": 336,
+            "fp": 133,
+            "fn": 512,
+            "precision": 0.7164179104477612,
+            "recall": 0.39622641509433965,
+            "f1": 0.510250569476082
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 28,
+            "fn": 6,
+            "precision": 0.9176470588235294,
+            "recall": 0.9811320754716981,
+            "f1": 0.9483282674772037
+          },
+          "connections": {
+            "tp": 1079,
+            "fp": 48,
+            "fn": 2142,
+            "precision": 0.9574090505767524,
+            "recall": 0.33498913380937595,
+            "f1": 0.4963201471941122
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 7,
+            "fn": 3,
+            "precision": 0.72,
+            "recall": 0.8571428571428571,
+            "f1": 0.782608695652174
+          },
+          "connections": {
+            "tp": 11,
+            "fp": 13,
+            "fn": 13,
+            "precision": 0.4583333333333333,
+            "recall": 0.4583333333333333,
+            "f1": 0.4583333333333333
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          }
+        }
+      },
+      "edge0.65-points8": {
+        "open100": {
+          "localization": {
+            "tp": 95,
+            "fp": 3,
+            "fn": 52,
+            "precision": 0.9693877551020408,
+            "recall": 0.6462585034013606,
+            "f1": 0.7755102040816326
+          },
+          "connections": {
+            "tp": 57,
+            "fp": 10,
+            "fn": 488,
+            "precision": 0.8507462686567164,
+            "recall": 0.10458715596330276,
+            "f1": 0.18627450980392157
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 335,
+            "fp": 12,
+            "fn": 45,
+            "precision": 0.9654178674351584,
+            "recall": 0.881578947368421,
+            "f1": 0.921595598349381
+          },
+          "connections": {
+            "tp": 361,
+            "fp": 156,
+            "fn": 487,
+            "precision": 0.6982591876208898,
+            "recall": 0.4257075471698113,
+            "f1": 0.528937728937729
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 28,
+            "fn": 6,
+            "precision": 0.9176470588235294,
+            "recall": 0.9811320754716981,
+            "f1": 0.9483282674772037
+          },
+          "connections": {
+            "tp": 1121,
+            "fp": 69,
+            "fn": 2100,
+            "precision": 0.9420168067226891,
+            "recall": 0.34802856255821174,
+            "f1": 0.5082747676263886
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 7,
+            "fn": 3,
+            "precision": 0.72,
+            "recall": 0.8571428571428571,
+            "f1": 0.782608695652174
+          },
+          "connections": {
+            "tp": 11,
+            "fp": 13,
+            "fn": 13,
+            "precision": 0.4583333333333333,
+            "recall": 0.4583333333333333,
+            "f1": 0.4583333333333333
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          }
+        }
+      },
+      "edge0.8-points6": {
+        "open100": {
+          "localization": {
+            "tp": 95,
+            "fp": 3,
+            "fn": 52,
+            "precision": 0.9693877551020408,
+            "recall": 0.6462585034013606,
+            "f1": 0.7755102040816326
+          },
+          "connections": {
+            "tp": 54,
+            "fp": 10,
+            "fn": 491,
+            "precision": 0.84375,
+            "recall": 0.09908256880733946,
+            "f1": 0.17733990147783252
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 335,
+            "fp": 12,
+            "fn": 45,
+            "precision": 0.9654178674351584,
+            "recall": 0.881578947368421,
+            "f1": 0.921595598349381
+          },
+          "connections": {
+            "tp": 333,
+            "fp": 118,
+            "fn": 515,
+            "precision": 0.738359201773836,
+            "recall": 0.392688679245283,
+            "f1": 0.5127020785219399
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 28,
+            "fn": 6,
+            "precision": 0.9176470588235294,
+            "recall": 0.9811320754716981,
+            "f1": 0.9483282674772037
+          },
+          "connections": {
+            "tp": 1059,
+            "fp": 37,
+            "fn": 2162,
+            "precision": 0.9662408759124088,
+            "recall": 0.3287798820242161,
+            "f1": 0.4906184850590688
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 7,
+            "fn": 3,
+            "precision": 0.72,
+            "recall": 0.8571428571428571,
+            "f1": 0.782608695652174
+          },
+          "connections": {
+            "tp": 9,
+            "fp": 11,
+            "fn": 15,
+            "precision": 0.45,
+            "recall": 0.375,
+            "f1": 0.4090909090909091
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5454545454545454,
+            "f1": 0.7058823529411765
+          }
+        }
+      },
+      "edge0.8-points8": {
+        "open100": {
+          "localization": {
+            "tp": 95,
+            "fp": 3,
+            "fn": 52,
+            "precision": 0.9693877551020408,
+            "recall": 0.6462585034013606,
+            "f1": 0.7755102040816326
+          },
+          "connections": {
+            "tp": 57,
+            "fp": 10,
+            "fn": 488,
+            "precision": 0.8507462686567164,
+            "recall": 0.10458715596330276,
+            "f1": 0.18627450980392157
+          }
+        },
+        "open100-repair": {
+          "localization": {
+            "tp": 335,
+            "fp": 12,
+            "fn": 45,
+            "precision": 0.9654178674351584,
+            "recall": 0.881578947368421,
+            "f1": 0.921595598349381
+          },
+          "connections": {
+            "tp": 357,
+            "fp": 125,
+            "fn": 491,
+            "precision": 0.7406639004149378,
+            "recall": 0.4209905660377358,
+            "f1": 0.5368421052631579
+          }
+        },
+        "pahala": {
+          "localization": {
+            "tp": 16,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.8421052631578947,
+            "recall": 0.9411764705882353,
+            "f1": 0.8888888888888888
+          },
+          "connections": {
+            "tp": 48,
+            "fp": 3,
+            "fn": 12,
+            "precision": 0.9411764705882353,
+            "recall": 0.8,
+            "f1": 0.8648648648648649
+          }
+        },
+        "v5-synthetic": {
+          "localization": {
+            "tp": 312,
+            "fp": 28,
+            "fn": 6,
+            "precision": 0.9176470588235294,
+            "recall": 0.9811320754716981,
+            "f1": 0.9483282674772037
+          },
+          "connections": {
+            "tp": 1101,
+            "fp": 56,
+            "fn": 2120,
+            "precision": 0.9515989628349178,
+            "recall": 0.34181931077305183,
+            "f1": 0.5029693924166286
+          }
+        },
+        "virden": {
+          "localization": {
+            "tp": 2,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.2857142857142857,
+            "f1": 0.36363636363636365
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "winkler-preservation": {
+          "localization": {
+            "tp": 18,
+            "fp": 7,
+            "fn": 3,
+            "precision": 0.72,
+            "recall": 0.8571428571428571,
+            "f1": 0.782608695652174
+          },
+          "connections": {
+            "tp": 9,
+            "fp": 11,
+            "fn": 15,
+            "precision": 0.45,
+            "recall": 0.375,
+            "f1": 0.4090909090909091
+          }
+        },
+        "winnipeg-preservation": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5454545454545454,
+            "f1": 0.7058823529411765
+          }
+        }
+      }
+    }
+  }
+}

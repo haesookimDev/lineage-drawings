@@ -1,0 +1,60 @@
+{
+  "method": "Linear interpolation of all floating tensors, including BN statistics; integer buffers from v9. No gradient update, no ensemble/double inference. Parameters selected on explicit development only.",
+  "endpoints": [
+    {
+      "path": ".benchmark-data/v6-models/epoch-16.pth",
+      "sha256": "b3a5e44e405cce4a414a4babbc950bcd90701266f0b6dc9e971022ca279ebf86"
+    },
+    {
+      "path": ".benchmark-data/v9b-models/epoch-8.pth",
+      "sha256": "76f58e55ca3dfbb5cedcd2d1e5246eac82387c726bde1d363782804fe6f54c58"
+    }
+  ],
+  "candidates": [
+    {
+      "model": "yolox-nano-symbol-v10",
+      "weights_sha256": "93bcc4c83b988f8b40dd304d6385fe234c55e45324ba216ab0b83548e36689af",
+      "v9_fraction": 0.25,
+      "threshold": 0.6,
+      "detail_tiles": 0,
+      "tile_size": 1024,
+      "overlap": 0.2,
+      "input_size": 640,
+      "merge_mode": "neural_only",
+      "max_source_side": 4800,
+      "max_tiles": 36,
+      "opencv_torch_max_abs_difference": 7.261335849761963e-05,
+      "score_note": "Generic single-model candidate; uncalibrated, requires human review."
+    },
+    {
+      "model": "yolox-nano-symbol-v10",
+      "weights_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
+      "v9_fraction": 0.5,
+      "threshold": 0.6,
+      "detail_tiles": 0,
+      "tile_size": 1024,
+      "overlap": 0.2,
+      "input_size": 640,
+      "merge_mode": "neural_only",
+      "max_source_side": 4800,
+      "max_tiles": 36,
+      "opencv_torch_max_abs_difference": 9.113550186157227e-05,
+      "score_note": "Generic single-model candidate; uncalibrated, requires human review."
+    },
+    {
+      "model": "yolox-nano-symbol-v10",
+      "weights_sha256": "8825522a574ce889186732509318f15fbf217ec2daf2358de0b83ccda26e639b",
+      "v9_fraction": 0.75,
+      "threshold": 0.6,
+      "detail_tiles": 0,
+      "tile_size": 1024,
+      "overlap": 0.2,
+      "input_size": 640,
+      "merge_mode": "neural_only",
+      "max_source_side": 4800,
+      "max_tiles": 36,
+      "opencv_torch_max_abs_difference": 7.766485214233398e-05,
+      "score_note": "Generic single-model candidate; uncalibrated, requires human review."
+    }
+  ]
+}

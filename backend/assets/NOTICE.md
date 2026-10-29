@@ -112,3 +112,18 @@ pixel-supported periodic line recovery were selected only on old-project
 validation. All outputs remain review candidates; no standard IDs or physical
 flow/safety approval are invented. Government-hosted source PDFs, page pixels,
 private runtime data and full government OCR are excluded from Git/images.
+
+## v10 regression repair and inference reuse
+
+The selected generic detector linearly interpolates the floating tensors of
+the existing v6 epoch16 and v9 scale epoch8 checkpoints at equal weights.
+Integer buffers come from v9. It is one network per page, with no new gradient
+training and no change to the source training data or licenses above.
+The coefficient and configuration were selected on explicitly reused old
+validation, historical OPEN1006–11 repair pages and previous35 test labels.
+These are development data for v10, not unseen-test evidence. Enlarged source
+annotations on the same untrained Winkler/Winnipeg pages were withheld from
+selection; prior whole-image/project exposure is disclosed in evaluation/v10.
+Local template support replaces discarded whole-page proposals in neural-only
+mode; foreground integral counts and batched dash predicates reuse exact pixel
+evidence. Port/junction forests, candidate budgets and human review remain.

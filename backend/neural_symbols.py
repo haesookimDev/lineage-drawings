@@ -38,6 +38,12 @@ def preprocess(image,size=640):
  return cv2.dnn.blobFromImage(canvas,1.,(size,size),swapRB=False,crop=False),ratio
 
 
+def foreground_integral(bgr):
+ """One exact RGB foreground pass shared by overlapping inference crops."""
+ foreground=(cv2.inRange(bgr,(249,249,249),(255,255,255))==0).astype(np.uint8)
+ return cv2.integral(foreground,sdepth=cv2.CV_32S)
+
+
 def decode(raw,size=640):
  grids=[];strides=[]
  for stride in (8,16,32):
@@ -76,6 +82,7 @@ def detect(image,threshold=None,meta_override=None):
  source=image.copy();source.thumbnail((MAX_SOURCE_SIDE,MAX_SOURCE_SIDE));rgb=np.asarray(source);h,w=rgb.shape[:2];bgr=rgb[:,:,::-1].copy();size=meta.get('input_size',640)
  border=np.concatenate((bgr[0],bgr[-1],bgr[:,0],bgr[:,-1]))
  if np.median(border)<128:bgr=255-bgr
+ integral=foreground_integral(bgr)
  regions=tiles(w,h,meta.get('tile_size',1024),meta.get('overlap',.2));regions=[(*r,'tile') for r in regions]
  if max(w,h)>meta.get('tile_size',1024):regions.append((0,0,w,h,'overview'))
  found=[];detail_count=0
@@ -83,7 +90,8 @@ def detect(image,threshold=None,meta_override=None):
   x,y,right,bottom,kind=region
   crop=bgr[y:bottom,x:right]
   # Only empty background is skipped; faint content is retained.
-  if float((crop.min(axis=2)<249).mean())<.0001:return
+  count=int(integral[bottom,right]-integral[y,right]-integral[bottom,x]+integral[y,x])
+  if count/((bottom-y)*(right-x))<.0001:return
   blob,ratio=preprocess(crop,size)
   with _LOCK:net.setInput(blob);raw=net.forward()
   low=min(cut,.08) if meta.get('detail_tiles',0) else cut

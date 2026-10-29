@@ -86,15 +86,16 @@ def route(elements,existing,w,h,image,config=None,return_proposals=False,recogni
   if len(ports[ident])>=12 or any(np.linalg.norm(np.array(p['pixel'])-q['pixel'])<5 for q in ports[ident]):continue
   item={**p,'score':round(float(score),4),'point':[round(x/w,7),round(y/h,7)],'status':'needs_review','source':'sparse_context_and_line_contact'};ports[ident].append(item);accepted.append(item)
  details={'algorithm':'sparse-line-port-v8','recognition_algorithm':'sparse-line-port-v8','topology_model':'hog-rtrees-port-junction-v2','topology_model_sha256':meta.get('port_sha256'),'junction_model_sha256':meta.get('junction_sha256'),'recognition_tiles':0,'line_recovery':bool(meta.get('line_recovery')), 'port_count':len(accepted),'ports':{k:[{a:b for a,b in p.items() if a not in ('pixel','line','t','geometry','element_id')} for p in v] for k,v in ports.items()},'junctions':[],'routing_contacts':[],'lines':[],'paths':[],'line_segments':len(lines),'dashed_run_proposals':dashed,'connections_limited':False,'crossing_policy':'actual_arms_and_dot_with_reviewed_context; plain_X_separate'}
- coords={};along=[{} for _ in lines];adj=defaultdict(dict);owners=defaultdict(set);starts=defaultdict(set);port_scores={};serial=0
+ coords={};along=[{} for _ in lines];adj=defaultdict(dict);edge_quality=defaultdict(dict);owners=defaultdict(set);starts=defaultdict(set);port_scores={};serial=0
  def node(i,t):
   nonlocal serial
   t=round(float(t),6)
   if t not in along[i]:
    n=serial;serial+=1;along[i][t]=n;s=np.array(lines[i]);coords[n]=s[:2]+t*(s[2:]-s[:2])
   return along[i][t]
- def link(a,b):
+ def link(a,b,quality=1.):
   cost=float(np.linalg.norm(coords[a]-coords[b]));adj[a][b]=cost;adj[b][a]=cost
+  edge_quality[a][b]=max(edge_quality[a].get(b,0.),quality);edge_quality[b][a]=edge_quality[a][b]
  for i in range(len(lines)):node(i,0);node(i,1)
  for p in accepted:
   n=node(p['line'],p['t']);ident=p['element_id'];owners[n].add(ident);starts[ident].add(n);port_scores[(ident,n)]=p['score']
@@ -115,7 +116,7 @@ def route(elements,existing,w,h,image,config=None,return_proposals=False,recogni
    arms=p['arms'];routing_type='dot' if p['dot'] and arms>=3 else 'tee' if arms==3 else 'plain_cross' if arms==4 else 'bend';routing_class={'tee':1,'dot':2,'plain_cross':3,'bend':0}[routing_type];routing_score=float(score[routing_class]);near_ignored=bool(len(ignore) and np.any((ignore[:,0]<=x)&(x<=ignore[:,2])&(ignore[:,1]<=y)&(y<=ignore[:,3])))
    routing_connected=bool((routing_type=='bend' and arms==2) or (routing_type in ('tee','dot') and not near_ignored and routing_score+1e-7>=max(meta.get('junction_threshold',.25),meta.get('junction_display_threshold',.45))))
   if routing_connected:
-   link(node(p['i'],p['t']),node(p['j'],p['u']))
+   link(node(p['i'],p['t']),node(p['j'],p['u']),routing_score if routing_type!='bend' else 1.)
    if routing_type!='bend' and len(details['routing_contacts'])<500:details['routing_contacts'].append({'point':[round(x/w,7),round(y/h,7)],'type':routing_type,'score':round(routing_score,4),'status':'needs_review','source':'association_hypothesis_not_confirmed_junction'})
   if len(ignore) and np.any((ignore[:,0]<=x)&(x<=ignore[:,2])&(ignore[:,1]<=y)&(y<=ignore[:,3])):continue
   arms=p['arms'];typ='dot' if p['dot'] and arms>=3 else 'tee' if arms==3 else 'plain_cross' if arms==4 else 'bend';cls={'tee':1,'dot':2,'plain_cross':3,'bend':0}[typ];confidence=float(score[cls]);connected=typ=='bend' and arms==2 or typ in ('tee','dot') and confidence+1e-7>=meta.get('junction_threshold',.2)
@@ -150,16 +151,23 @@ def route(elements,existing,w,h,image,config=None,return_proposals=False,recogni
    other=owners[n]-{ident}
    if other:
     for target in sorted(other,key=lambda k:order[k]):
-     key=tuple(sorted((ident,target)));points=[];at=n
-     while at is not None:points.append(coords[at]);at=prev[at]
+     key=tuple(sorted((ident,target)));points=[];at=n;junction_score=1.
+     while at is not None:
+      points.append(coords[at]);before=prev[at]
+      if before is not None:junction_score=min(junction_score,edge_quality[before][at])
+      at=before
      points.reverse();points=cv2.approxPolyDP(np.array(points,np.float32).reshape(-1,1,2),.6,False).reshape(-1,2).tolist() if len(points)>2 else points
      confidence=min(port_scores[(ident,origin[n])],port_scores[(target,n)])
-     if len(points)>=2 and (key not in paths or length<paths[key]['length']):paths[key]={'from_id':ident,'to_id':target,'points':[[round(float(x/w),7),round(float(y/h),7)] for x,y in points[:127]+([points[-1]] if len(points)>127 else [])],'length':length,'score':confidence,'source':'sparse_visible_line_and_ports','status':'needs_review'}
+     if len(points)>=2 and (key not in paths or length<paths[key]['length']):paths[key]={'from_id':ident,'to_id':target,'points':[[round(float(x/w),7),round(float(y/h),7)] for x,y in points[:127]+([points[-1]] if len(points)>127 else [])],'length':length,'score':confidence,'junction_score':round(float(junction_score),4),'source':'sparse_visible_line_and_ports','status':'needs_review'}
     continue
    for nxt,cost in adj[n].items():
     value=length+cost
     if value<dist.get(nxt,float('inf'))-1e-6:dist[nxt]=value;prev[nxt]=n;origin[nxt]=origin[n];heapq.heappush(heap,(value,nxt))
  ranked=sorted(paths,key=lambda k:(-paths[k]['score'],tuple(sorted((order[k[0]],order[k[1]])))))[:500];details['paths']=[paths[k] for k in ranked];details['connections_limited']=len(paths)>500
+ if meta.get('extra_solid_threshold'):
+  from .line_recovery import path_has_periodic_dashes
+  for path in details['paths']:
+   path['periodic_dashed']=path_has_periodic_dashes(ink,path['points'],w,h) if len(path['points'])<=meta.get('extra_max_points',128) else False
  for a,b,c,d in lines[:750]:
   n=max(2,round(math.hypot(c-a,d-b)));xs=np.clip(np.rint(np.linspace(a,c,n)).astype(int),0,w-1);ys=np.clip(np.rint(np.linspace(b,d,n)).astype(int),0,h-1);hit=ink[ys,xs]>0;changes=np.flatnonzero(np.diff(np.r_[0,hit,0]));runs=len(changes)//2;coverage=float(hit.mean());style='dashed' if runs>=3 and coverage<.9 else 'solid'
   details['lines'].append({'points':[[round(a/w,7),round(b/h,7)],[round(c/w,7),round(d/h,7)]],'style':style,'score':round(coverage,4),'status':'needs_review'})

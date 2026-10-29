@@ -64,6 +64,55 @@ def template_candidates(gray):
     return kept
 
 
+def neural_style_support(image, legacy, neural):
+    """Check the routing style locally; do not generate discarded proposals.
+
+    In neural-only mode template proposals cannot reach the result. Search only
+    near neural extents and existing geometric hints, using the same templates,
+    NCC and line support. No whole-page template proposals are generated.
+    Three distinct supported matches retain the shape-aware routing policy.
+    """
+    gray=cv2.cvtColor(np.asarray(image),cv2.COLOR_RGB2GRAY)
+    pointed=[box for box,props in legacy
+             if props.get('geometry')=='closed_loop' and pointed_loop(box,gray)]
+    if len(pointed)<2:
+        return False
+    h,w=gray.shape;binary=(gray<210).astype(np.float32);ink=(binary*255).astype(np.uint8)
+    horizontal=cv2.morphologyEx(ink,cv2.MORPH_OPEN,np.ones((1,max(12,w//150)),np.uint8))
+    vertical=cv2.morphologyEx(ink,cv2.MORPH_OPEN,np.ones((max(12,h//150),1),np.uint8))
+    supported=[]
+    templates=[cv2.resize(original,(round(original.shape[1]*scale),round(original.shape[0]*scale)))
+               for original,_ in prototypes() for scale in (.85,1.,1.15)]
+    for box,_ in list(neural)+list(legacy):
+        a,b,c,d=np.array(box)*[w,h,w,h]
+        x0,y0=max(0,int(a)-5),max(0,int(b)-5)
+        x1,y1=min(w,int(c)+6),min(h,int(d)+6)
+        crop=binary[y0:y1,x0:x1]
+        for template in templates:
+            th,tw=template.shape
+            if th>crop.shape[0] or tw>crop.shape[1] or min(tw,th)<5:
+                continue
+            # A match must describe the glyph, not a small letter inside it.
+            if tw*th < .35*max(1,(c-a)*(d-b)):
+                continue
+            _,confidence,_,position=cv2.minMaxLoc(cv2.matchTemplate(crop,template,cv2.TM_CCOEFF_NORMED))
+            if confidence<.78:
+                continue
+            x,y=x0+position[0],y0+position[1]
+            ports=(horizontal[y:y+th,max(0,x-4):x],horizontal[y:y+th,x+tw:min(w,x+tw+4)],
+                   vertical[max(0,y-4):y,x:x+tw],vertical[y+th:min(h,y+th+4),x:x+tw])
+            if not any(np.count_nonzero(port)>=3 for port in ports):
+                continue
+            match=[x/w,y/h,(x+tw)/w,(y+th)/h]
+            if any(iou(match,prior)>.35 for prior in supported):
+                continue
+            supported.append(match)
+            if len(supported)>=3:
+                return True
+            break
+    return False
+
+
 def interior_parts(box,gray):
     h,w=gray.shape;a,b,c,d=box;cx,cy=(a+c)*w/2,(b+d)*h/2;radius=min((c-a)*w,(d-b)*h)/2
     x1,y1=max(0,round(cx-radius)),max(0,round(cy-radius));x2,y2=min(w,round(cx+radius)+1),min(h,round(cy+radius)+1)

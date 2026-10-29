@@ -1,0 +1,21 @@
+{
+  "baseline": "67d8caf47229f4d2bd3f40abc354fbf50db26934",
+  "v8_reference": "c9cef5afc6363e30c86e9ab4a5fe17dd68313e11",
+  "objective": "Recover historical OPEN100 quality, retain previous new-project connection recall, reduce complete OCR+CV latency, and expand held-out untrained drawing annotation coverage before final inference.",
+  "development_roles": {
+    "old_validation": "evaluation.v9.data.validation original10 pages",
+    "open100_6_11": "Historical regressions explicitly promoted to regression-repair development, no longer untouched test evidence",
+    "v9_35_glyph_ROIs": "Previously evaluated test35 glyph/35 edges explicitly development preservation constraint; no gradient training on Winkler/Winnipeg",
+    "training": "No gradient training planned; compare parameter interpolation of already trained v6 epoch16 and v9b epoch8. Source training unchanged; interpolation coefficients chosen only development.",
+    "test": "Source-only expanded regions on prior4 untrained pages, previous35 nodes and35 edges separately reported. New extension not used for coefficient/threshold selection, runtime frozen before inference. No claim new unseen project after v9; same3 untrained projects. Single AI annotation, disclose no independent expert review."
+  },
+  "experiments": {
+    "glyph": "Single-model parameter interpolation v9 fraction0.25/0.5/0.75 and endpoints0/1, NN-only and same budgets; no test labels in training/selection. Final bounded fourth development trial adds confidence0.45 for the0.25/0.5 blends, fixed before expanded scoring; retain both. No further parameter search after final test.",
+    "routing": "Boxes-vs-route ablation; compare endpoint score/point limits and minimum actual traversed tee/dot vote. Three trials: original local NN gate; add local legacy shape hints to restore a validation profile; add path junction-score evidence, retain all previous iterations. No enlarged test scoring during development.",
+    "speed": "Remove unused template proposals in NN-only branch with image-based style gate, reuse image/line analysis, exact fast periodic vectorization. Test runtime equivalence or label routing changes explicitly."
+  },
+  "selection": "Development macro connectionF1 plus0.25localizationF1 across source groups, with previous new ROI TP>=20/35 and historical OPEN100 recall/F1>=v8 as release gates; no test-driven tuning. Retain all iterations.",
+  "expanded_annotation": "Expanded normalized labels and all4 source overlays fixed before scoring enlarged regions. Development predictions for old ROIs use the whole images concurrently; no model results outside old ROIs inspected while annotating. Label holdout only, prior project/whole-image exposure disclosed. Preserve old35 nodes/35edges verbatim. No gradient training on these pages.",
+  "timing": "Paired rotated baseline/new full OCR+4800glyph+2400routing,3 repetitions on same images; independently resize original for both scales. No decode/render/network/save. CPU2 CV/OMP1, no API SLA.",
+  "release": "Run meaningful tests and GitHub CI, deploy verified CI archive to existing k3s workload preserving auth/PVC/data, external UI/API save+reload test; never expose secrets or ship raw government drawings/OCR."
+}

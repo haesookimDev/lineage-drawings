@@ -1,0 +1,848 @@
+{
+  "role": "Expanded held-out annotations on untrained pages with prior whole-image/project exposure; old35 labels used for preservation selection, extension labels not selected on.",
+  "runs": 3,
+  "baseline": "67d8caf47229f4d2bd3f40abc354fbf50db26934",
+  "frozen_sha256": "a9fe8df62aa201cb98014b9c6b94b8ee25fb8d84116864b4d866b986c0dc9f1c",
+  "timing_scope": "Same-host paired rotated2-variant order, in-memory OCR+max4800 neural+max2400 geometry/topology; independent original resizes, 2 OpenCV threads/OMP1. Mean of per-sheet3-run medians, decode/PDF/network/storage excluded, not Pod SLA.",
+  "sheets": [
+    {
+      "key": "winkler-p142",
+      "source_sha256": "d87f1204d23879e74b0d7263dfffb02b2a56b4f029a508dac63ba415ade30726",
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "symbol_size": [
+        4800,
+        3106
+      ],
+      "gt_symbols": 16,
+      "gt_edges": 15,
+      "roi_only": true,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 12,
+              "fp": 6,
+              "fn": 4,
+              "precision": 0.6666666666666666,
+              "recall": 0.75,
+              "f1": 0.7058823529411765
+            },
+            "connections": {
+              "tp": 4,
+              "fp": 7,
+              "fn": 11,
+              "precision": 0.36363636363636365,
+              "recall": 0.26666666666666666,
+              "f1": 0.3076923076923077
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 9,
+            "recovered": 4,
+            "routing": 2
+          },
+          "symbols": 21,
+          "connections": 11,
+          "ocr_words": 111,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "generic_fallback"
+          ],
+          "ports": 27,
+          "junctions": 146,
+          "edge_subsets": {
+            "dashed": {
+              "tp": 2,
+              "total": 2
+            },
+            "branch": {
+              "tp": 1,
+              "total": 6
+            }
+          },
+          "extension_connections": {
+            "tp": 0,
+            "fp": 7,
+            "fn": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "original_roi_scores": {
+            "localization": {
+              "tp": 8,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.8888888888888888,
+              "recall": 0.6666666666666666,
+              "f1": 0.7619047619047619
+            },
+            "connections": {
+              "tp": 4,
+              "fp": 2,
+              "fn": 8,
+              "precision": 0.6666666666666666,
+              "recall": 0.3333333333333333,
+              "f1": 0.4444444444444444
+            },
+            "classified_correct": 0
+          },
+          "timing": {
+            "seconds": [
+              6.556208294990938,
+              6.470834731997456,
+              6.489220012008445
+            ],
+            "median": 6.489220012008445
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 12,
+              "fp": 8,
+              "fn": 4,
+              "precision": 0.6,
+              "recall": 0.75,
+              "f1": 0.6666666666666666
+            },
+            "connections": {
+              "tp": 4,
+              "fp": 11,
+              "fn": 11,
+              "precision": 0.26666666666666666,
+              "recall": 0.26666666666666666,
+              "f1": 0.26666666666666666
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 9,
+            "recovered": 4,
+            "routing": 2
+          },
+          "symbols": 24,
+          "connections": 16,
+          "ocr_words": 111,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "generic_fallback"
+          ],
+          "ports": 32,
+          "junctions": 138,
+          "edge_subsets": {
+            "dashed": {
+              "tp": 2,
+              "total": 2
+            },
+            "branch": {
+              "tp": 1,
+              "total": 6
+            }
+          },
+          "extension_connections": {
+            "tp": 0,
+            "fp": 10,
+            "fn": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "original_roi_scores": {
+            "localization": {
+              "tp": 8,
+              "fp": 2,
+              "fn": 4,
+              "precision": 0.8,
+              "recall": 0.6666666666666666,
+              "f1": 0.7272727272727273
+            },
+            "connections": {
+              "tp": 4,
+              "fp": 3,
+              "fn": 8,
+              "precision": 0.5714285714285714,
+              "recall": 0.3333333333333333,
+              "f1": 0.42105263157894735
+            },
+            "classified_correct": 0
+          },
+          "timing": {
+            "seconds": [
+              4.002352376002818,
+              3.8915590310061816,
+              3.9750990790198557
+            ],
+            "median": 3.9750990790198557
+          }
+        }
+      }
+    },
+    {
+      "key": "winkler-p150",
+      "source_sha256": "a4c992a8ac2cd1f1f6cfeccdde0433e152ba3ec445f0edcb4549364ba068cc78",
+      "rendered_size": [
+        2400,
+        1553
+      ],
+      "symbol_size": [
+        4800,
+        3106
+      ],
+      "gt_symbols": 42,
+      "gt_edges": 69,
+      "roi_only": true,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 29,
+              "fp": 27,
+              "fn": 13,
+              "precision": 0.5178571428571429,
+              "recall": 0.6904761904761905,
+              "f1": 0.5918367346938775
+            },
+            "connections": {
+              "tp": 21,
+              "fp": 40,
+              "fn": 48,
+              "precision": 0.3442622950819672,
+              "recall": 0.30434782608695654,
+              "f1": 0.3230769230769231
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 15,
+            "missing_symbol": 33,
+            "recovered": 21
+          },
+          "symbols": 61,
+          "connections": 72,
+          "ocr_words": 221,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 83,
+          "junctions": 182,
+          "edge_subsets": {
+            "dashed": {
+              "tp": 5,
+              "total": 5
+            },
+            "branch": {
+              "tp": 15,
+              "total": 50
+            }
+          },
+          "extension_connections": {
+            "tp": 13,
+            "fp": 40,
+            "fn": 44,
+            "precision": 0.24528301886792453,
+            "recall": 0.22807017543859648,
+            "f1": 0.23636363636363636
+          },
+          "original_roi_scores": {
+            "localization": {
+              "tp": 9,
+              "fp": 4,
+              "fn": 0,
+              "precision": 0.6923076923076923,
+              "recall": 1.0,
+              "f1": 0.8181818181818182
+            },
+            "connections": {
+              "tp": 8,
+              "fp": 7,
+              "fn": 4,
+              "precision": 0.5333333333333333,
+              "recall": 0.6666666666666666,
+              "f1": 0.5925925925925926
+            },
+            "classified_correct": 0
+          },
+          "timing": {
+            "seconds": [
+              7.3090488240122795,
+              7.320315657998435,
+              7.297967675986001
+            ],
+            "median": 7.3090488240122795
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 27,
+              "fp": 28,
+              "fn": 15,
+              "precision": 0.4909090909090909,
+              "recall": 0.6428571428571429,
+              "f1": 0.5567010309278351
+            },
+            "connections": {
+              "tp": 19,
+              "fp": 36,
+              "fn": 50,
+              "precision": 0.34545454545454546,
+              "recall": 0.2753623188405797,
+              "f1": 0.3064516129032258
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 37,
+            "routing": 13,
+            "recovered": 19
+          },
+          "symbols": 61,
+          "connections": 66,
+          "ocr_words": 221,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 81,
+          "junctions": 176,
+          "edge_subsets": {
+            "dashed": {
+              "tp": 5,
+              "total": 5
+            },
+            "branch": {
+              "tp": 13,
+              "total": 50
+            }
+          },
+          "extension_connections": {
+            "tp": 11,
+            "fp": 36,
+            "fn": 46,
+            "precision": 0.23404255319148937,
+            "recall": 0.19298245614035087,
+            "f1": 0.21153846153846154
+          },
+          "original_roi_scores": {
+            "localization": {
+              "tp": 9,
+              "fp": 4,
+              "fn": 0,
+              "precision": 0.6923076923076923,
+              "recall": 1.0,
+              "f1": 0.8181818181818182
+            },
+            "connections": {
+              "tp": 8,
+              "fp": 7,
+              "fn": 4,
+              "precision": 0.5333333333333333,
+              "recall": 0.6666666666666666,
+              "f1": 0.5925925925925926
+            },
+            "classified_correct": 0
+          },
+          "timing": {
+            "seconds": [
+              4.602587255008984,
+              4.567252988024848,
+              4.585274016018957
+            ],
+            "median": 4.585274016018957
+          }
+        }
+      }
+    },
+    {
+      "key": "winnipeg-p2",
+      "source_sha256": "0882dbc7490504ef83285c3b1605b1e72c3a20e7886bedbd1b60bc4c034c4577",
+      "rendered_size": [
+        2400,
+        1696
+      ],
+      "symbol_size": [
+        4800,
+        3391
+      ],
+      "gt_symbols": 14,
+      "gt_edges": 14,
+      "roi_only": true,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 13,
+              "fp": 4,
+              "fn": 1,
+              "precision": 0.7647058823529411,
+              "recall": 0.9285714285714286,
+              "f1": 0.8387096774193549
+            },
+            "connections": {
+              "tp": 8,
+              "fp": 5,
+              "fn": 6,
+              "precision": 0.6153846153846154,
+              "recall": 0.5714285714285714,
+              "f1": 0.5925925925925926
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 8,
+            "routing": 5,
+            "missing_symbol": 1
+          },
+          "symbols": 52,
+          "connections": 40,
+          "ocr_words": 319,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "generic_fallback"
+          ],
+          "ports": 81,
+          "junctions": 141,
+          "edge_subsets": {
+            "dashed": {
+              "tp": 4,
+              "total": 6
+            },
+            "branch": {
+              "tp": 0,
+              "total": 3
+            }
+          },
+          "extension_connections": {
+            "tp": 2,
+            "fp": 4,
+            "fn": 3,
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.36363636363636365
+          },
+          "original_roi_scores": {
+            "localization": {
+              "tp": 10,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9090909090909091,
+              "f1": 0.9523809523809523
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.8571428571428571,
+              "recall": 0.6666666666666666,
+              "f1": 0.75
+            },
+            "classified_correct": 0
+          },
+          "timing": {
+            "seconds": [
+              8.417376975005027,
+              8.474038382992148,
+              8.455831995001063
+            ],
+            "median": 8.455831995001063
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 13,
+              "fp": 4,
+              "fn": 1,
+              "precision": 0.7647058823529411,
+              "recall": 0.9285714285714286,
+              "f1": 0.8387096774193549
+            },
+            "connections": {
+              "tp": 8,
+              "fp": 5,
+              "fn": 6,
+              "precision": 0.6153846153846154,
+              "recall": 0.5714285714285714,
+              "f1": 0.5925925925925926
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 8,
+            "routing": 5,
+            "missing_symbol": 1
+          },
+          "symbols": 55,
+          "connections": 42,
+          "ocr_words": 319,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "generic_fallback"
+          ],
+          "ports": 85,
+          "junctions": 131,
+          "edge_subsets": {
+            "dashed": {
+              "tp": 4,
+              "total": 6
+            },
+            "branch": {
+              "tp": 0,
+              "total": 3
+            }
+          },
+          "extension_connections": {
+            "tp": 2,
+            "fp": 4,
+            "fn": 3,
+            "precision": 0.3333333333333333,
+            "recall": 0.4,
+            "f1": 0.36363636363636365
+          },
+          "original_roi_scores": {
+            "localization": {
+              "tp": 10,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9090909090909091,
+              "f1": 0.9523809523809523
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.8571428571428571,
+              "recall": 0.6666666666666666,
+              "f1": 0.75
+            },
+            "classified_correct": 0
+          },
+          "timing": {
+            "seconds": [
+              5.64351338200504,
+              5.620892838021973,
+              5.646296481980244
+            ],
+            "median": 5.64351338200504
+          }
+        }
+      }
+    },
+    {
+      "key": "winnipeg-p7",
+      "source_sha256": "7da59d6ab46e9d71efc091fd25854b6970d1b86c60b13f4494d07c5709cf6ea4",
+      "rendered_size": [
+        2400,
+        1828
+      ],
+      "symbol_size": [
+        4800,
+        3655
+      ],
+      "gt_symbols": 6,
+      "gt_edges": 4,
+      "roi_only": true,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 2,
+            "missing_symbol": 1,
+            "routing": 1
+          },
+          "symbols": 129,
+          "connections": 50,
+          "ocr_words": 371,
+          "warnings": [
+            "\uc774\ubbf8\uc9c0 \uc694\uc18c \ud6c4\ubcf4\ub97c 200\uac1c\uae4c\uc9c0 \ud45c\uc2dc\ud569\ub2c8\ub2e4. \uc601\uc5ed \ub2e8\uc704 \uac80\ud1a0\ub97c \uad8c\uc7a5\ud569\ub2c8\ub2e4."
+          ],
+          "deterministic": true,
+          "profile": [
+            "generic_fallback"
+          ],
+          "ports": 152,
+          "junctions": 115,
+          "edge_subsets": {
+            "dashed": {
+              "tp": 2,
+              "total": 4
+            },
+            "branch": {
+              "tp": 0,
+              "total": 0
+            }
+          },
+          "extension_connections": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "original_roi_scores": {
+            "localization": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "classified_correct": 0
+          },
+          "timing": {
+            "seconds": [
+              12.560006000014255,
+              12.571182996995049,
+              12.567963141016662
+            ],
+            "median": 12.567963141016662
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 3,
+              "fp": 1,
+              "fn": 1,
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1": 0.75
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 3,
+            "routing": 1
+          },
+          "symbols": 143,
+          "connections": 72,
+          "ocr_words": 357,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "generic_fallback"
+          ],
+          "ports": 169,
+          "junctions": 115,
+          "edge_subsets": {
+            "dashed": {
+              "tp": 3,
+              "total": 4
+            },
+            "branch": {
+              "tp": 0,
+              "total": 0
+            }
+          },
+          "extension_connections": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "original_roi_scores": {
+            "localization": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "classified_correct": 0
+          },
+          "timing": {
+            "seconds": [
+              11.946347981982399,
+              11.96659271401586,
+              12.069901456008665
+            ],
+            "median": 11.96659271401586
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "v9": {
+      "localization": {
+        "tp": 59,
+        "fp": 37,
+        "fn": 19,
+        "precision": 0.6145833333333334,
+        "recall": 0.7564102564102564,
+        "f1": 0.6781609195402298
+      },
+      "connections": {
+        "tp": 35,
+        "fp": 52,
+        "fn": 67,
+        "precision": 0.40229885057471265,
+        "recall": 0.3431372549019608,
+        "f1": 0.37037037037037035
+      },
+      "mean_sheet_median_seconds": 8.705515993009612,
+      "miss_attribution": {
+        "missing_symbol": 44,
+        "recovered": 35,
+        "routing": 23
+      },
+      "extension_connections": {
+        "tp": 15,
+        "fp": 51,
+        "fn": 52,
+        "precision": 0.22727272727272727,
+        "recall": 0.22388059701492538,
+        "f1": 0.22556390977443608
+      },
+      "original_roi_scores": {
+        "localization": {
+          "tp": 30,
+          "fp": 5,
+          "fn": 5,
+          "precision": 0.8571428571428571,
+          "recall": 0.8571428571428571,
+          "f1": 0.8571428571428571
+        },
+        "connections": {
+          "tp": 20,
+          "fp": 10,
+          "fn": 15,
+          "precision": 0.6666666666666666,
+          "recall": 0.5714285714285714,
+          "f1": 0.6153846153846154
+        }
+      },
+      "edge_subsets": {
+        "dashed": {
+          "tp": 13,
+          "total": 17
+        },
+        "branch": {
+          "tp": 16,
+          "total": 59
+        }
+      }
+    },
+    "v10": {
+      "localization": {
+        "tp": 58,
+        "fp": 40,
+        "fn": 20,
+        "precision": 0.5918367346938775,
+        "recall": 0.7435897435897436,
+        "f1": 0.6590909090909091
+      },
+      "connections": {
+        "tp": 34,
+        "fp": 53,
+        "fn": 68,
+        "precision": 0.39080459770114945,
+        "recall": 0.3333333333333333,
+        "f1": 0.35978835978835977
+      },
+      "mean_sheet_median_seconds": 6.542619797764928,
+      "miss_attribution": {
+        "missing_symbol": 47,
+        "recovered": 34,
+        "routing": 21
+      },
+      "extension_connections": {
+        "tp": 14,
+        "fp": 51,
+        "fn": 53,
+        "precision": 0.2153846153846154,
+        "recall": 0.208955223880597,
+        "f1": 0.21212121212121213
+      },
+      "original_roi_scores": {
+        "localization": {
+          "tp": 30,
+          "fp": 6,
+          "fn": 5,
+          "precision": 0.8333333333333334,
+          "recall": 0.8571428571428571,
+          "f1": 0.8450704225352113
+        },
+        "connections": {
+          "tp": 20,
+          "fp": 11,
+          "fn": 15,
+          "precision": 0.6451612903225806,
+          "recall": 0.5714285714285714,
+          "f1": 0.6060606060606061
+        }
+      },
+      "edge_subsets": {
+        "dashed": {
+          "tp": 14,
+          "total": 17
+        },
+        "branch": {
+          "tp": 14,
+          "total": 59
+        }
+      }
+    }
+  }
+}

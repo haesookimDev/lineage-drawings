@@ -1,0 +1,688 @@
+{
+  "role": "Development-exposed historical repair confirmation",
+  "runs": 3,
+  "baseline": "67d8caf47229f4d2bd3f40abc354fbf50db26934",
+  "frozen_sha256": "a9fe8df62aa201cb98014b9c6b94b8ee25fb8d84116864b4d866b986c0dc9f1c",
+  "timing_scope": "Same-host paired rotated2-variant order, in-memory OCR+max4800 neural+max2400 geometry/topology; independent original resizes, 2 OpenCV threads/OMP1. Mean of per-sheet3-run medians, decode/PDF/network/storage excluded, not Pod SLA.",
+  "sheets": [
+    {
+      "key": "open100-6",
+      "source_sha256": "44a67176c8265ca5b7a2ae9833932a1797564bb35ce030d3d29e920ddf1fc9c1",
+      "rendered_size": [
+        2400,
+        1598
+      ],
+      "symbol_size": [
+        3196,
+        2128
+      ],
+      "gt_symbols": 70,
+      "gt_edges": 158,
+      "roi_only": false,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 67,
+              "fp": 2,
+              "fn": 3,
+              "precision": 0.9710144927536232,
+              "recall": 0.9571428571428572,
+              "f1": 0.9640287769784173
+            },
+            "connections": {
+              "tp": 58,
+              "fp": 17,
+              "fn": 100,
+              "precision": 0.7733333333333333,
+              "recall": 0.3670886075949367,
+              "f1": 0.4978540772532189
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 58,
+            "routing": 79,
+            "missing_symbol": 21
+          },
+          "symbols": 69,
+          "connections": 75,
+          "ocr_words": 197,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 75,
+          "junctions": 140,
+          "timing": {
+            "seconds": [
+              6.626263059006305,
+              6.430509380996227,
+              6.542511789011769
+            ],
+            "median": 6.542511789011769
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 69,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9857142857142858,
+              "f1": 0.9928057553956835
+            },
+            "connections": {
+              "tp": 66,
+              "fp": 18,
+              "fn": 92,
+              "precision": 0.7857142857142857,
+              "recall": 0.4177215189873418,
+              "f1": 0.5454545454545454
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 66,
+            "routing": 82,
+            "missing_symbol": 10
+          },
+          "symbols": 69,
+          "connections": 84,
+          "ocr_words": 197,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 72,
+          "junctions": 159,
+          "timing": {
+            "seconds": [
+              4.19808935499168,
+              4.1365485659916885,
+              4.0807783259951975
+            ],
+            "median": 4.1365485659916885
+          }
+        }
+      }
+    },
+    {
+      "key": "open100-7",
+      "source_sha256": "071e7dc66c07b7b9fb752de7c91ed2fb7c65cce1135bac43291723980e32fdd0",
+      "rendered_size": [
+        2400,
+        1601
+      ],
+      "symbol_size": [
+        3194,
+        2130
+      ],
+      "gt_symbols": 61,
+      "gt_edges": 158,
+      "roi_only": false,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 57,
+              "fp": 3,
+              "fn": 4,
+              "precision": 0.95,
+              "recall": 0.9344262295081968,
+              "f1": 0.9421487603305785
+            },
+            "connections": {
+              "tp": 86,
+              "fp": 16,
+              "fn": 72,
+              "precision": 0.8431372549019608,
+              "recall": 0.5443037974683544,
+              "f1": 0.6615384615384615
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 62,
+            "recovered": 86,
+            "missing_symbol": 10
+          },
+          "symbols": 60,
+          "connections": 102,
+          "ocr_words": 192,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 72,
+          "junctions": 161,
+          "timing": {
+            "seconds": [
+              6.50493448699126,
+              6.5863496260135435,
+              6.582547799014719
+            ],
+            "median": 6.582547799014719
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 57,
+              "fp": 2,
+              "fn": 4,
+              "precision": 0.9661016949152542,
+              "recall": 0.9344262295081968,
+              "f1": 0.95
+            },
+            "connections": {
+              "tp": 86,
+              "fp": 12,
+              "fn": 72,
+              "precision": 0.8775510204081632,
+              "recall": 0.5443037974683544,
+              "f1": 0.671875
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 62,
+            "recovered": 86,
+            "missing_symbol": 10
+          },
+          "symbols": 59,
+          "connections": 98,
+          "ocr_words": 192,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 65,
+          "junctions": 158,
+          "timing": {
+            "seconds": [
+              3.919460170000093,
+              3.9112160310032777,
+              3.886597331002122
+            ],
+            "median": 3.9112160310032777
+          }
+        }
+      }
+    },
+    {
+      "key": "open100-8",
+      "source_sha256": "d0e38b31ec1d30189bb9ee32cbf07387a3e033439ec69d62b7cd8578975e729e",
+      "rendered_size": [
+        2400,
+        1596
+      ],
+      "symbol_size": [
+        3342,
+        2222
+      ],
+      "gt_symbols": 36,
+      "gt_edges": 53,
+      "roi_only": false,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 35,
+              "fp": 4,
+              "fn": 1,
+              "precision": 0.8974358974358975,
+              "recall": 0.9722222222222222,
+              "f1": 0.9333333333333333
+            },
+            "connections": {
+              "tp": 28,
+              "fp": 17,
+              "fn": 25,
+              "precision": 0.6222222222222222,
+              "recall": 0.5283018867924528,
+              "f1": 0.5714285714285714
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 28,
+            "routing": 17,
+            "missing_symbol": 8
+          },
+          "symbols": 39,
+          "connections": 45,
+          "ocr_words": 126,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 44,
+          "junctions": 109,
+          "timing": {
+            "seconds": [
+              5.784421200020006,
+              5.83343885600334,
+              5.83317306599929
+            ],
+            "median": 5.83317306599929
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 41,
+              "fp": 12,
+              "fn": 12,
+              "precision": 0.7735849056603774,
+              "recall": 0.7735849056603774,
+              "f1": 0.7735849056603774
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 41,
+            "routing": 12
+          },
+          "symbols": 37,
+          "connections": 53,
+          "ocr_words": 126,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 42,
+          "junctions": 115,
+          "timing": {
+            "seconds": [
+              3.194771218986716,
+              3.229304273001617,
+              3.1855713409895543
+            ],
+            "median": 3.194771218986716
+          }
+        }
+      }
+    },
+    {
+      "key": "open100-9",
+      "source_sha256": "c620ed2ad097e10c3249050266595d303750453154fc51449c1e1e4196d43321",
+      "rendered_size": [
+        2400,
+        1597
+      ],
+      "symbol_size": [
+        3198,
+        2128
+      ],
+      "gt_symbols": 42,
+      "gt_edges": 156,
+      "roi_only": false,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 39,
+              "fp": 4,
+              "fn": 3,
+              "precision": 0.9069767441860465,
+              "recall": 0.9285714285714286,
+              "f1": 0.9176470588235294
+            },
+            "connections": {
+              "tp": 116,
+              "fp": 0,
+              "fn": 40,
+              "precision": 1.0,
+              "recall": 0.7435897435897436,
+              "f1": 0.8529411764705882
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "recovered": 116,
+            "routing": 38,
+            "missing_symbol": 2
+          },
+          "symbols": 43,
+          "connections": 116,
+          "ocr_words": 123,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 40,
+          "junctions": 96,
+          "timing": {
+            "seconds": [
+              5.6160584519966505,
+              5.554810872999951,
+              5.611607208993519
+            ],
+            "median": 5.611607208993519
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 37,
+              "fp": 3,
+              "fn": 5,
+              "precision": 0.925,
+              "recall": 0.8809523809523809,
+              "f1": 0.9024390243902439
+            },
+            "connections": {
+              "tp": 116,
+              "fp": 13,
+              "fn": 40,
+              "precision": 0.8992248062015504,
+              "recall": 0.7435897435897436,
+              "f1": 0.8140350877192982
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "routing": 38,
+            "recovered": 116,
+            "missing_symbol": 2
+          },
+          "symbols": 40,
+          "connections": 129,
+          "ocr_words": 123,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 42,
+          "junctions": 111,
+          "timing": {
+            "seconds": [
+              3.2248329049907625,
+              3.245917300984729,
+              3.2254589869990014
+            ],
+            "median": 3.2254589869990014
+          }
+        }
+      }
+    },
+    {
+      "key": "open100-10",
+      "source_sha256": "246841b69ea44b8b881429b801ff66ca16637832b95a1ce09632c5538842ee1b",
+      "rendered_size": [
+        2400,
+        1599
+      ],
+      "symbol_size": [
+        2792,
+        1860
+      ],
+      "gt_symbols": 89,
+      "gt_edges": 167,
+      "roi_only": false,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 72,
+              "fp": 6,
+              "fn": 17,
+              "precision": 0.9230769230769231,
+              "recall": 0.8089887640449438,
+              "f1": 0.8622754491017964
+            },
+            "connections": {
+              "tp": 23,
+              "fp": 46,
+              "fn": 144,
+              "precision": 0.3333333333333333,
+              "recall": 0.1377245508982036,
+              "f1": 0.19491525423728814
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 81,
+            "routing": 63,
+            "recovered": 23
+          },
+          "symbols": 78,
+          "connections": 69,
+          "ocr_words": 230,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 78,
+          "junctions": 205,
+          "timing": {
+            "seconds": [
+              7.715648444020189,
+              7.674727605015505,
+              7.69008616701467
+            ],
+            "median": 7.69008616701467
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 74,
+              "fp": 5,
+              "fn": 15,
+              "precision": 0.9367088607594937,
+              "recall": 0.8314606741573034,
+              "f1": 0.8809523809523809
+            },
+            "connections": {
+              "tp": 29,
+              "fp": 38,
+              "fn": 138,
+              "precision": 0.43283582089552236,
+              "recall": 0.17365269461077845,
+              "f1": 0.24786324786324787
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 62,
+            "routing": 76,
+            "recovered": 29
+          },
+          "symbols": 79,
+          "connections": 67,
+          "ocr_words": 230,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 80,
+          "junctions": 208,
+          "timing": {
+            "seconds": [
+              5.096436758001801,
+              5.1079642889963,
+              5.150280934001785
+            ],
+            "median": 5.1079642889963
+          }
+        }
+      }
+    },
+    {
+      "key": "open100-11",
+      "source_sha256": "363bf989089abe8e235862729392633a99b4e879b1adbd407fcce7f90eb26d94",
+      "rendered_size": [
+        2400,
+        1604
+      ],
+      "symbol_size": [
+        2786,
+        1862
+      ],
+      "gt_symbols": 82,
+      "gt_edges": 156,
+      "roi_only": false,
+      "variants": {
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 60,
+              "fp": 0,
+              "fn": 22,
+              "precision": 1.0,
+              "recall": 0.7317073170731707,
+              "f1": 0.8450704225352113
+            },
+            "connections": {
+              "tp": 22,
+              "fp": 55,
+              "fn": 134,
+              "precision": 0.2857142857142857,
+              "recall": 0.14102564102564102,
+              "f1": 0.1888412017167382
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 111,
+            "recovered": 22,
+            "routing": 23
+          },
+          "symbols": 60,
+          "connections": 77,
+          "ocr_words": 136,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 51,
+          "junctions": 140,
+          "timing": {
+            "seconds": [
+              6.307991260022391,
+              6.314414687978569,
+              6.28907637501834
+            ],
+            "median": 6.307991260022391
+          }
+        },
+        "v10": {
+          "scores": {
+            "localization": {
+              "tp": 61,
+              "fp": 0,
+              "fn": 21,
+              "precision": 1.0,
+              "recall": 0.7439024390243902,
+              "f1": 0.8531468531468531
+            },
+            "connections": {
+              "tp": 25,
+              "fp": 62,
+              "fn": 131,
+              "precision": 0.28735632183908044,
+              "recall": 0.16025641025641027,
+              "f1": 0.205761316872428
+            },
+            "classified_correct": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 106,
+            "recovered": 25,
+            "routing": 25
+          },
+          "symbols": 61,
+          "connections": 87,
+          "ocr_words": 136,
+          "warnings": [],
+          "deterministic": true,
+          "profile": [
+            "shape_assisted"
+          ],
+          "ports": 54,
+          "junctions": 140,
+          "timing": {
+            "seconds": [
+              3.8416406780015677,
+              3.8046849770180415,
+              3.8461783379898407
+            ],
+            "median": 3.8416406780015677
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "v9": {
+      "localization": {
+        "tp": 330,
+        "fp": 19,
+        "fn": 50,
+        "precision": 0.9455587392550143,
+        "recall": 0.868421052631579,
+        "f1": 0.9053497942386831
+      },
+      "connections": {
+        "tp": 333,
+        "fp": 151,
+        "fn": 515,
+        "precision": 0.6880165289256198,
+        "recall": 0.392688679245283,
+        "f1": 0.5
+      },
+      "mean_sheet_median_seconds": 6.427986215009393,
+      "miss_attribution": {
+        "recovered": 333,
+        "routing": 282,
+        "missing_symbol": 233
+      }
+    },
+    "v10": {
+      "localization": {
+        "tp": 334,
+        "fp": 11,
+        "fn": 46,
+        "precision": 0.9681159420289855,
+        "recall": 0.8789473684210526,
+        "f1": 0.9213793103448276
+      },
+      "connections": {
+        "tp": 363,
+        "fp": 155,
+        "fn": 485,
+        "precision": 0.7007722007722008,
+        "recall": 0.42806603773584906,
+        "f1": 0.5314787701317716
+      },
+      "mean_sheet_median_seconds": 3.902933294996425,
+      "miss_attribution": {
+        "recovered": 363,
+        "routing": 295,
+        "missing_symbol": 190
+      }
+    }
+  }
+}

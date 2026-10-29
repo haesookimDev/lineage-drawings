@@ -1,6 +1,6 @@
 import numpy as np
 from PIL import Image,ImageDraw
-from backend.line_recovery import periodic,recover,dashed_arms,profile,short_links
+from backend.line_recovery import periodic,periodic_batch,recover,dashed_arms,profile,short_links
 from backend.topology_context import prepare
 from backend.sparse_topology import intersections
 
@@ -29,6 +29,16 @@ def test_batched_dashed_arms_match_scalar_pixel_reference():
  rng=np.random.default_rng(24);ink=(rng.random((170,220))>.7).astype(np.uint8)*255;points=rng.uniform([0,0],[219,169],(50,2))
  expected=np.array([[periodic(profile(ink,x+dx*3,y+dy*3,x+dx*65,y+dy*65)) for dx,dy in ((1,0),(-1,0),(0,1),(0,-1))] for x,y in points])
  assert np.array_equal(dashed_arms(ink,points),expected)
+
+
+def test_periodic_batch_preserves_boundary_runs_and_irregular_gap_rejection():
+ rng=np.random.default_rng(130);rows=[rng.random(63)>.6 for _ in range(300)]
+ for start in range(12):
+  for length,gap in ((3,2),(8,14),(10,26),(2,9),(5,27)):
+   rows.append(np.array([(i-start)%(length+gap)<length for i in range(63)]))
+ rows.extend([np.ones(63,bool),np.zeros(63,bool)])
+ matrix=np.asarray(rows);assert np.array_equal(periodic_batch(matrix),[periodic(row) for row in matrix])
+ assert periodic_batch(np.zeros((0,63),bool)).shape==(0,)
 
 
 def test_two_dash_signal_between_faces_needs_real_ink_not_empty_gap():

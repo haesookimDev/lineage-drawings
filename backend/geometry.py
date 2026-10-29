@@ -172,12 +172,20 @@ def geometric_candidates(image,texts,high_resolution=None):
     from .neural_symbols import detect as neural_detect,merge,model as neural_model
     # The deployed worker has a 2-CPU limit. Bound CV's native thread pool too.
     cv2.setNumThreads(2)
+    net,neural_meta=neural_model()
+    neural_only=net is not None and neural_meta.get('merge_mode')=='neural_only'
+    if neural_only and neural_meta.get('local_style_gate'):
+        from .symbols import neural_style_support
+        legacy,legacy_lines,limited=legacy_candidates(image,texts)
+        found=neural_detect(high_resolution if high_resolution is not None else image)
+        assisted=neural_style_support(image,legacy,found)
+        candidates=[(box,{**props,'profile':'shape_assisted' if assisted else 'generic_fallback',
+                           'style_gate':'neural_local_template_support'}) for box,props in found]
+        return candidates[:200],axis_segments(image) if assisted else legacy_lines,len(candidates)>200
     legacy,legacy_lines,limited=legacy_candidates(image,texts)
     candidates=refine_symbols(image,legacy)
     proposal_base=[box for box,_ in candidates]
     fallback=not candidates or all(p.get('profile')=='generic_fallback' for _,p in candidates)
-    net,neural_meta=neural_model()
-    neural_only=net is not None and neural_meta.get('merge_mode')=='neural_only'
     classifier,metadata=(None,None) if neural_only else model()
     if classifier is not None:
         scores=score_boxes(image,[box for box,_ in candidates])
@@ -202,7 +210,7 @@ def combine_context_pairs(elements,pairs,paths,context_meta):
     native=all(e.get('source')=='dxf_block' for e in elements if e['kind']!='text')
     # Long chains amplify one false contact into many new equipment pairs.
     # Limit only supplemental edges; retain all validated pairs and their paths.
-    candidates={tuple(sorted((p['from_id'],p['to_id']))):p for p in paths if p.get('score',0)>=context_meta.get('extra_edge_threshold',.65) and len(p.get('points',[]))<=context_meta.get('extra_max_points',128)}
+    candidates={tuple(sorted((p['from_id'],p['to_id']))):p for p in paths if p.get('score',0)>=max(context_meta.get('extra_edge_threshold',.65),context_meta.get('extra_solid_threshold',0.) if not p.get('periodic_dashed',False) else 0.) and p.get('junction_score',1.)>=context_meta.get('extra_junction_threshold',0.) and len(p.get('points',[]))<=context_meta.get('extra_max_points',128)}
     by_id={e['id']:e for e in elements};symbol_cut=context_meta.get('extra_symbol_threshold',0.);unfiltered_extra=set(candidates)-old
     sparse=context_meta.get('routing_mode')=='sparse' and not native
     if sparse:unfiltered_extra=set(candidates)

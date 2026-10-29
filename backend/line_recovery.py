@@ -14,6 +14,38 @@ def periodic(hit):
  return bool(len(runs)>=3 and len(gaps)>=2 and np.median(runs)>=3 and 2<=np.median(gaps)<=24 and gaps.max()<=26 and np.std(gaps)/max(1,np.mean(gaps))<=.55 and .22<hit.mean()<.92)
 
 
+def periodic_batch(hit):
+ """Same run/gap predicate as periodic(), without per-intersection Python."""
+ hit=np.asarray(hit,dtype=bool)
+ if hit.ndim!=2:raise ValueError('Expected rows of sampled line pixels')
+ result=np.zeros(len(hit),bool)
+ if not len(hit):return result
+ changes=np.diff(np.pad(hit.astype(np.int8),((0,0),(1,1))),axis=1)
+ counts=(changes==1).sum(1);coverage=hit.mean(1)
+ selected=np.flatnonzero((counts>=3)&(coverage>.22)&(coverage<.92))
+ if not len(selected):return result
+ rows=changes[selected];n=rows.shape[1];positions=np.arange(n)
+ # Sorting padded coordinates creates fixed-size, ordered run boundaries.
+ starts=np.sort(np.where(rows==1,positions,n),axis=1)
+ ends=np.sort(np.where(rows==-1,positions,n),axis=1)
+ valid=np.arange(n)[None,:]<counts[selected,None]
+ runs=np.where(valid,ends-starts,np.nan)
+ gap_valid=np.arange(n-1)[None,:]<(counts[selected]-1)[:,None]
+ gaps=np.where(gap_valid,starts[:,1:]-ends[:,:-1],np.nan)
+ med=np.nanmedian(gaps,axis=1)
+ result[selected]=(np.nanmedian(runs,axis=1)>=3)&(med>=2)&(med<=24)&(np.nanmax(gaps,axis=1)<=26)&(np.nanstd(gaps,axis=1)/np.maximum(1,np.nanmean(gaps,axis=1))<=.55)
+ return result
+
+
+def path_has_periodic_dashes(ink,points,w,h):
+ """A lower signal-port gate requires actual repeated dashes on its path."""
+ for first,last in zip(points,points[1:]):
+  a,b=np.asarray(first)*[w,h];c,d=np.asarray(last)*[w,h]
+  if math.hypot(c-a,d-b)>=45 and periodic(profile(ink,a,b,c,d)):
+   return True
+ return False
+
+
 def recover(ink,lines):
  """Closing proposes runs; periodic pixel evidence, not closing, accepts them."""
  h,w=ink.shape;extra=[]
@@ -67,6 +99,5 @@ def dashed_arms(ink,points):
  for k,(dx,dy) in enumerate(((1,0),(-1,0),(0,1),(0,-1))):
   xs=np.rint(xy[:,0,None]+dx*offsets).astype(int);ys=np.rint(xy[:,1,None]+dy*offsets).astype(int);hit=np.zeros(xs.shape,bool)
   for off in (-1,0,1):hit|=ink[np.clip(ys+(off if dx else 0),0,h-1),np.clip(xs+(off if dy else 0),0,w-1)]>0
-  changes=np.count_nonzero(np.diff(np.pad(hit.astype(np.int8),((0,0),(1,1))),axis=1)==1,axis=1);coverage=hit.mean(1)
-  for index in np.flatnonzero((changes>=3)&(coverage>.22)&(coverage<.92)):result[index,k]=periodic(hit[index])
+  result[:,k]=periodic_batch(hit)
  return result

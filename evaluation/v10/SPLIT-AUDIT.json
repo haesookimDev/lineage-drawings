@@ -1,0 +1,357 @@
+{
+  "gradient_training_sources": [
+    {
+      "group": "open100",
+      "id": "0",
+      "symbols": 82,
+      "tiles": 32,
+      "source_image_sha256": "2451fbe9b8d0494a822901493cfbf1d2656f0bd7678f0f25bb2266b5e78a7dc9"
+    },
+    {
+      "group": "open100",
+      "id": "1",
+      "symbols": 27,
+      "tiles": 27,
+      "source_image_sha256": "c8c696042bf7a16eb30e492a312af274c312a2049a7eb765ca82f84d3770eba8"
+    },
+    {
+      "group": "open100",
+      "id": "2",
+      "symbols": 65,
+      "tiles": 32,
+      "source_image_sha256": "8a36e9ae5064283ced701e17fab3a6ae74caee2ac07b8135cf65a8415077a46e"
+    },
+    {
+      "group": "open100",
+      "id": "3",
+      "symbols": 53,
+      "tiles": 32,
+      "source_image_sha256": "293d416db064be7c78def7f3f9856a6060e65b7d9e7b15d2b42d273a98fc49e1"
+    },
+    {
+      "group": "pahala",
+      "id": "p23",
+      "symbols": 12,
+      "tiles": 16,
+      "source_image_sha256": "92636b395f8151d50b8e6a4d85834b5a474e6721310bcc3a29b1a49c0b7262ac"
+    },
+    {
+      "group": "pahala",
+      "id": "p24",
+      "symbols": 36,
+      "tiles": 40,
+      "source_image_sha256": "217d76c507db7f94dfe36d6314eb223a056f20927b2d46280a71481c0372c613"
+    },
+    {
+      "group": "virden",
+      "id": "p5",
+      "symbols": 7,
+      "tiles": 11,
+      "source_image_sha256": "27356b778cb5c3007e82a06768e04392a901ead1002962e7c47d0945d79c2250"
+    },
+    {
+      "group": "virden",
+      "id": "p7",
+      "symbols": 10,
+      "tiles": 14,
+      "source_image_sha256": "6f1d3755feac8c12cc241d9bf06ad8fcf7301dc4a09b7b347d35b7a0524988dd"
+    },
+    {
+      "group": "ruttan",
+      "id": "p50",
+      "symbols": 4,
+      "tiles": 8,
+      "source_image_sha256": "be3cdc1557d776df1f19049dc5ffd991ea09667cb56c378854b157a119e349f9"
+    },
+    {
+      "group": "ruttan",
+      "id": "p62",
+      "symbols": 7,
+      "tiles": 11,
+      "source_image_sha256": "6d805d33da94f99d03d764d3685597097ffe36c3c126c6301030289b2c5160bc"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "240",
+      "symbols": 67,
+      "tiles": 32,
+      "source_image_sha256": "7d6ac6edbd8c4ecb67e84f849e819c0afb4da784bf15439d3a5c8f2c88a0a3de"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "398",
+      "symbols": 69,
+      "tiles": 32,
+      "source_image_sha256": "409fe43c4635d6fecf84fd58e46f56d62a0c588668731617b76f64dc2f2be9fa"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "110",
+      "symbols": 87,
+      "tiles": 32,
+      "source_image_sha256": "1ec4986e03067e79464a63f8d5decfada6c579846c1efc4c5334d8745432df04"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "99",
+      "symbols": 72,
+      "tiles": 32,
+      "source_image_sha256": "ac8efafb2dd93bb1d5d84fc08d851457ab429b697ba05ff3afcfa49b03acdb37"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "468",
+      "symbols": 61,
+      "tiles": 32,
+      "source_image_sha256": "b8788e74e90cc4006fc23f0baed7d2d329d900cb1cbc3144a79550800023e4ae"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "457",
+      "symbols": 77,
+      "tiles": 32,
+      "source_image_sha256": "4093d839e34f8264241bc73254886c20a3a4d9a2ed60f06893c03680e6af351a"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "150",
+      "symbols": 59,
+      "tiles": 32,
+      "source_image_sha256": "c469a5e7de3c0b9cb1339becdc51dd63bde1da9afe6b3ff1ff3446499d91e816"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "447",
+      "symbols": 77,
+      "tiles": 32,
+      "source_image_sha256": "d03558748f63869db687cb87bddace8b26f6b2258c78928a60a156420b17846b"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "123",
+      "symbols": 78,
+      "tiles": 32,
+      "source_image_sha256": "a176d005b05e6f1abdcfb8f4d0bb90ace8d44a467d4611d9770b65f25e4947fe"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "158",
+      "symbols": 110,
+      "tiles": 32,
+      "source_image_sha256": "4a1d7ab90d7b7a0d4eb5c97faf424d299bed96088c8e8ade8612b186242b40e7"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "72",
+      "symbols": 121,
+      "tiles": 32,
+      "source_image_sha256": "0b7aa18a2f0669d05d85063bf7ccbc678b62333a618ce081891761b5c6f27239"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "248",
+      "symbols": 78,
+      "tiles": 32,
+      "source_image_sha256": "604d68474f9a0630c280ab371f0e9556cdfff278b578d996582f3fb5c9bf9983"
+    },
+    {
+      "group": "virden",
+      "id": "p6",
+      "symbols": 9,
+      "tiles": 22,
+      "source_image_sha256": "8618dc074d17f366c41a6f2dbd29b220b360e92663cf89cd3fb186ab101b5d99",
+      "previous_role": "v6 test -> glyph training"
+    },
+    {
+      "group": "virden",
+      "id": "p8",
+      "symbols": 6,
+      "tiles": 16,
+      "source_image_sha256": "60f7fd7ac7d02cc3aa94bf73a83ab3646b9618642522cb23a5fca08b65f32db3",
+      "previous_role": "v6 test -> glyph training"
+    },
+    {
+      "group": "pahala",
+      "id": "p22",
+      "symbols": 9,
+      "tiles": 29,
+      "source_image_sha256": "cbcc347ee70cf46a2a70763acc541ac9411a7579ffdceb7c16954601c509bcaa",
+      "previous_role": "v6 test -> glyph training"
+    },
+    {
+      "group": "ruttan",
+      "id": "p51",
+      "symbols": 8,
+      "tiles": 18,
+      "source_image_sha256": "6605a79eac67c58ec4e259245585062788c80b6c5aa5e762bace8d03b40d69f4",
+      "previous_role": "v6 test -> glyph training"
+    },
+    {
+      "group": "virden",
+      "id": "p11",
+      "symbols": 4,
+      "tiles": 7,
+      "source_image_sha256": "e6c847a12fb7800542d4d7a805ac2c3a3c3bfbacc51f76c4e0f9d30fc1eb4521",
+      "previous_role": "v7 test -> glyph training"
+    },
+    {
+      "group": "virden",
+      "id": "p9",
+      "symbols": 2,
+      "tiles": 4,
+      "source_image_sha256": "e4053b54f4dabd6ea6d11711e2f63963418ca3f02b71fdf78299af0f1f0e1f73",
+      "previous_role": "v7 test -> glyph training"
+    },
+    {
+      "group": "pahala",
+      "id": "p19",
+      "symbols": 4,
+      "tiles": 13,
+      "source_image_sha256": "0a4eb0e88a72f002cee202be8a74650439ff90ea036065e42f626e16164e0125",
+      "previous_role": "v7 test -> glyph training"
+    },
+    {
+      "group": "virden",
+      "id": "p10",
+      "symbols": 6,
+      "tiles": 8,
+      "source_image_sha256": "ab0a925570ccaa75a52a8d08c7adee5d1b111f14c55114261e8e5811ce065bcf",
+      "previous_role": "v8 test -> glyph training"
+    },
+    {
+      "group": "virden",
+      "id": "p12",
+      "symbols": 14,
+      "tiles": 22,
+      "source_image_sha256": "2a16ca1db138062ca5da31190342743442bc3387ff9d529da5b1fb5898d009c8",
+      "previous_role": "v8 test -> glyph training"
+    },
+    {
+      "group": "pahala",
+      "id": "p18",
+      "symbols": 11,
+      "tiles": 23,
+      "source_image_sha256": "ed7f93a779381fbabd1fc46af15db7acfe3c7ef7dfdf7e6ffff16c44ed272df9",
+      "previous_role": "v8 test -> glyph training"
+    }
+  ],
+  "gradient_training_source_groups": [
+    "open100",
+    "pahala",
+    "ruttan",
+    "v5-synthetic",
+    "virden"
+  ],
+  "gradient_training_unchanged": true,
+  "new_gradient_updates": 0,
+  "untrained_test_source_groups": [
+    "winkler",
+    "winnipeg"
+  ],
+  "test_gradients_disjoint": true,
+  "development_sources": [
+    {
+      "group": "open100",
+      "id": "4",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/open100/4.png"
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/open100/5.png"
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/pahala/p20.png"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v5-synthetic/232.png"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v5-synthetic/238.png"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v5-synthetic/470.png"
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v5-synthetic/278.png"
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v8r2-pages/pahala/p14-4800.png"
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v8r2-pages/virden/p13-4800.png"
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v8r2-pages/virden/p14-4800.png"
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/open100/6.png"
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/open100/7.png"
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/open100/8.png"
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/open100/9.png"
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/open100/10.png"
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/open100/11.png"
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v9-held/winkler/p142-4800.png"
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v9-held/winkler/p150-4800.png"
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v9-held/winnipeg/p2-4800.png"
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "path": "/home/khs/workspace/ontology/mvp/.benchmark-data/v9-held/winnipeg/p7-4800.png"
+    }
+  ],
+  "original35_nodes_and_edges_preserved": true,
+  "expanded_label_holdout_only": "Prior whole-image/project exposure and previous35 label selection are disclosed. Not new-project/first-inference blind evidence. Single AI source annotation, not expert-certified.",
+  "new_test_pixels_not_republished": true
+}
