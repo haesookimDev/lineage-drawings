@@ -1,0 +1,1353 @@
+{
+  "baseline": "c9cef5afc6363e30c86e9ab4a5fe17dd68313e11",
+  "frozen_sha256": "ea8a187d3d394e9c0ddfa744c920a8f3e6c427ac34df4395d3fdcf7ca46d0f44",
+  "role": "Untouched new-project small-ROI test, all3 variants frozen before first inference",
+  "runs": 3,
+  "timing_scope": "Full in-memory OCR + same max4800 symbol input +2400 line/port/junction inference. Sequential rotated3-variant order,3 repeats; mean of per-sheet medians. Decode/render/network/save excluded; CPU OpenCV2/OMP1, not Pod SLA.",
+  "sheets": [
+    {
+      "group": "winkler",
+      "id": "p142",
+      "project": "Winkler WWTP upgrade, project60430450",
+      "roi_only": true,
+      "source_sha256": "d87f1204d23879e74b0d7263dfffb02b2a56b4f029a508dac63ba415ade30726",
+      "gt_symbols": 12,
+      "gt_edges": 12,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 2,
+              "fn": 5,
+              "precision": 0.7777777777777778,
+              "recall": 0.5833333333333334,
+              "f1": 0.6666666666666666
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 1,
+              "fn": 10,
+              "precision": 0.6666666666666666,
+              "recall": 0.16666666666666666,
+              "f1": 0.26666666666666666
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 24,
+          "full_page_connections": 12,
+          "conditional_endpoints": {
+            "eligible": 2,
+            "recovered": 2
+          },
+          "miss_attribution": {
+            "missing_symbol": 10,
+            "recovered": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 2,
+              "recall": 0.5
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 6,
+              "recall": 0.0
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 20,
+          "junctions": 31,
+          "timing": {
+            "seconds": [
+              6.406396327976836,
+              6.240759901993442,
+              6.199053272983292
+            ],
+            "median": 6.240759901993442
+          }
+        },
+        "glyph-only": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 1,
+              "fn": 1,
+              "precision": 0.9166666666666666,
+              "recall": 0.9166666666666666,
+              "f1": 0.9166666666666666
+            },
+            "connections": {
+              "tp": 5,
+              "fp": 3,
+              "fn": 7,
+              "precision": 0.625,
+              "recall": 0.4166666666666667,
+              "f1": 0.5
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 33,
+          "full_page_connections": 18,
+          "conditional_endpoints": {
+            "eligible": 11,
+            "recovered": 5
+          },
+          "miss_attribution": {
+            "recovered": 5,
+            "routing": 6,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 2,
+              "recall": 0.5
+            },
+            "branch": {
+              "recovered": 1,
+              "total": 6,
+              "recall": 0.16666666666666666
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 35,
+          "junctions": 37,
+          "timing": {
+            "seconds": [
+              6.862088358000619,
+              6.693629005982075,
+              6.627391557005467
+            ],
+            "median": 6.693629005982075
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 1,
+              "fn": 1,
+              "precision": 0.9166666666666666,
+              "recall": 0.9166666666666666,
+              "f1": 0.9166666666666666
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 3,
+              "fn": 6,
+              "precision": 0.6666666666666666,
+              "recall": 0.5,
+              "f1": 0.5714285714285714
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 33,
+          "full_page_connections": 20,
+          "conditional_endpoints": {
+            "eligible": 11,
+            "recovered": 6
+          },
+          "miss_attribution": {
+            "recovered": 6,
+            "routing": 5,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 2,
+              "recall": 1.0
+            },
+            "branch": {
+              "recovered": 1,
+              "total": 6,
+              "recall": 0.16666666666666666
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 37,
+          "junctions": 139,
+          "timing": {
+            "seconds": [
+              6.918675627995981,
+              6.85094897201634,
+              6.7959247670078184
+            ],
+            "median": 6.85094897201634
+          }
+        }
+      }
+    },
+    {
+      "group": "winkler",
+      "id": "p150",
+      "project": "Winkler WWTP upgrade, project60430450",
+      "roi_only": true,
+      "source_sha256": "a4c992a8ac2cd1f1f6cfeccdde0433e152ba3ec445f0edcb4549364ba068cc78",
+      "gt_symbols": 9,
+      "gt_edges": 12,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 9,
+              "fp": 4,
+              "fn": 0,
+              "precision": 0.6923076923076923,
+              "recall": 1.0,
+              "f1": 0.8181818181818182
+            },
+            "connections": {
+              "tp": 4,
+              "fp": 6,
+              "fn": 8,
+              "precision": 0.4,
+              "recall": 0.3333333333333333,
+              "f1": 0.36363636363636365
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 62,
+          "full_page_connections": 52,
+          "conditional_endpoints": {
+            "eligible": 12,
+            "recovered": 4
+          },
+          "miss_attribution": {
+            "routing": 8,
+            "recovered": 4
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 2,
+              "recall": 0.0
+            },
+            "branch": {
+              "recovered": 4,
+              "total": 9,
+              "recall": 0.4444444444444444
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 68,
+          "junctions": 78,
+          "timing": {
+            "seconds": [
+              7.124287261016434,
+              7.045657277980354,
+              7.063661357009551
+            ],
+            "median": 7.063661357009551
+          }
+        },
+        "glyph-only": {
+          "scores": {
+            "localization": {
+              "tp": 9,
+              "fp": 4,
+              "fn": 0,
+              "precision": 0.6923076923076923,
+              "recall": 1.0,
+              "f1": 0.8181818181818182
+            },
+            "connections": {
+              "tp": 4,
+              "fp": 6,
+              "fn": 8,
+              "precision": 0.4,
+              "recall": 0.3333333333333333,
+              "f1": 0.36363636363636365
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 87,
+          "full_page_connections": 68,
+          "conditional_endpoints": {
+            "eligible": 12,
+            "recovered": 4
+          },
+          "miss_attribution": {
+            "routing": 8,
+            "recovered": 4
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 2,
+              "recall": 0.0
+            },
+            "branch": {
+              "recovered": 4,
+              "total": 9,
+              "recall": 0.4444444444444444
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 75,
+          "junctions": 85,
+          "timing": {
+            "seconds": [
+              7.533301301999018,
+              7.577656034991378,
+              7.503315006004414
+            ],
+            "median": 7.533301301999018
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 9,
+              "fp": 4,
+              "fn": 0,
+              "precision": 0.6923076923076923,
+              "recall": 1.0,
+              "f1": 0.8181818181818182
+            },
+            "connections": {
+              "tp": 8,
+              "fp": 7,
+              "fn": 4,
+              "precision": 0.5333333333333333,
+              "recall": 0.6666666666666666,
+              "f1": 0.5925925925925926
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 87,
+          "full_page_connections": 82,
+          "conditional_endpoints": {
+            "eligible": 12,
+            "recovered": 8
+          },
+          "miss_attribution": {
+            "routing": 4,
+            "recovered": 8
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 2,
+              "recall": 1.0
+            },
+            "branch": {
+              "recovered": 6,
+              "total": 9,
+              "recall": 0.6666666666666666
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 95,
+          "junctions": 174,
+          "timing": {
+            "seconds": [
+              7.792113837000215,
+              7.756312727986369,
+              7.79615029701381
+            ],
+            "median": 7.792113837000215
+          }
+        }
+      }
+    },
+    {
+      "group": "winnipeg",
+      "id": "p2",
+      "project": "Winnipeg NEWPCC BNR upgrade Contract3",
+      "roi_only": true,
+      "source_sha256": "0882dbc7490504ef83285c3b1605b1e72c3a20e7886bedbd1b60bc4c034c4577",
+      "gt_symbols": 11,
+      "gt_edges": 9,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.6363636363636364,
+              "f1": 0.7777777777777778
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 7,
+              "precision": 1.0,
+              "recall": 0.2222222222222222,
+              "f1": 0.36363636363636365
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 55,
+          "full_page_connections": 30,
+          "conditional_endpoints": {
+            "eligible": 4,
+            "recovered": 2
+          },
+          "miss_attribution": {
+            "missing_symbol": 5,
+            "routing": 2,
+            "recovered": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 4,
+              "recall": 0.5
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1,
+              "recall": 0.0
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 62,
+          "junctions": 68,
+          "timing": {
+            "seconds": [
+              8.0384851230192,
+              7.951560410001548,
+              7.943825754016871
+            ],
+            "median": 7.951560410001548
+          }
+        },
+        "glyph-only": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 3,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 138,
+          "full_page_connections": 186,
+          "conditional_endpoints": {
+            "eligible": 9,
+            "recovered": 6
+          },
+          "miss_attribution": {
+            "recovered": 6,
+            "routing": 3
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 4,
+              "recall": 0.5
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1,
+              "recall": 0.0
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 121,
+          "junctions": 17,
+          "timing": {
+            "seconds": [
+              8.4011446479999,
+              8.332898048014613,
+              8.328888285992434
+            ],
+            "median": 8.332898048014613
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 7,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.875,
+              "recall": 0.7777777777777778,
+              "f1": 0.8235294117647058
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 138,
+          "full_page_connections": 190,
+          "conditional_endpoints": {
+            "eligible": 9,
+            "recovered": 7
+          },
+          "miss_attribution": {
+            "recovered": 7,
+            "routing": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 3,
+              "total": 4,
+              "recall": 0.75
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1,
+              "recall": 0.0
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 174,
+          "junctions": 59,
+          "timing": {
+            "seconds": [
+              8.649360979004996,
+              8.65187047800282,
+              8.649038866977207
+            ],
+            "median": 8.649360979004996
+          }
+        }
+      }
+    },
+    {
+      "group": "winnipeg",
+      "id": "p7",
+      "project": "Winnipeg WEWPCC historical aeration/blowers",
+      "roi_only": true,
+      "source_sha256": "7da59d6ab46e9d71efc091fd25854b6970d1b86c60b13f4494d07c5709cf6ea4",
+      "gt_symbols": 3,
+      "gt_edges": 2,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 143,
+          "full_page_connections": 30,
+          "conditional_endpoints": {
+            "eligible": 2,
+            "recovered": 0
+          },
+          "miss_attribution": {
+            "routing": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 2,
+              "recall": 0.0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0,
+              "recall": 0.0
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 31,
+          "detail_tiles": 0,
+          "ports": 83,
+          "junctions": 60,
+          "timing": {
+            "seconds": [
+              12.073264556995127,
+              12.057029354007682,
+              12.167678122990765
+            ],
+            "median": 12.073264556995127
+          }
+        },
+        "glyph-only": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 200,
+          "full_page_connections": 105,
+          "conditional_endpoints": {
+            "eligible": 1,
+            "recovered": 0
+          },
+          "miss_attribution": {
+            "routing": 1,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 2,
+              "recall": 0.0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0,
+              "recall": 0.0
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 31,
+          "detail_tiles": 0,
+          "ports": 91,
+          "junctions": 57,
+          "timing": {
+            "seconds": [
+              12.641503332997672,
+              12.676146751007764,
+              12.728610991995083
+            ],
+            "median": 12.676146751007764
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 200,
+          "full_page_connections": 114,
+          "conditional_endpoints": {
+            "eligible": 1,
+            "recovered": 1
+          },
+          "miss_attribution": {
+            "recovered": 1,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 2,
+              "recall": 0.5
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0,
+              "recall": 0.0
+            }
+          },
+          "deterministic": true,
+          "neural_tiles": 31,
+          "detail_tiles": 0,
+          "ports": 172,
+          "junctions": 111,
+          "timing": {
+            "seconds": [
+              13.22049184399657,
+              13.437450489000184,
+              13.148325076996116
+            ],
+            "median": 13.22049184399657
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "all": {
+      "all": {
+        "v8": {
+          "localization": {
+            "tp": 26,
+            "fp": 6,
+            "fn": 9,
+            "precision": 0.8125,
+            "recall": 0.7428571428571429,
+            "f1": 0.7761194029850746
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 7,
+            "fn": 27,
+            "precision": 0.5333333333333333,
+            "recall": 0.22857142857142856,
+            "f1": 0.32
+          },
+          "mean_sheet_median_seconds": 8.332311556499917,
+          "miss_attribution": {
+            "missing_symbol": 15,
+            "recovered": 8,
+            "routing": 12
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 3,
+              "total": 10
+            },
+            "branch": {
+              "recovered": 4,
+              "total": 16
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 33,
+            "fp": 5,
+            "fn": 2,
+            "precision": 0.868421052631579,
+            "recall": 0.9428571428571428,
+            "f1": 0.9041095890410958
+          },
+          "connections": {
+            "tp": 15,
+            "fp": 9,
+            "fn": 20,
+            "precision": 0.625,
+            "recall": 0.42857142857142855,
+            "f1": 0.5084745762711864
+          },
+          "mean_sheet_median_seconds": 8.808993776750867,
+          "miss_attribution": {
+            "recovered": 15,
+            "routing": 18,
+            "missing_symbol": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 3,
+              "total": 10
+            },
+            "branch": {
+              "recovered": 5,
+              "total": 16
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 33,
+            "fp": 5,
+            "fn": 2,
+            "precision": 0.868421052631579,
+            "recall": 0.9428571428571428,
+            "f1": 0.9041095890410958
+          },
+          "connections": {
+            "tp": 22,
+            "fp": 11,
+            "fn": 13,
+            "precision": 0.6666666666666666,
+            "recall": 0.6285714285714286,
+            "f1": 0.6470588235294118
+          },
+          "mean_sheet_median_seconds": 9.12822890800453,
+          "miss_attribution": {
+            "recovered": 22,
+            "routing": 11,
+            "missing_symbol": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 8,
+              "total": 10
+            },
+            "branch": {
+              "recovered": 7,
+              "total": 16
+            }
+          }
+        }
+      }
+    },
+    "group": {
+      "winkler": {
+        "v8": {
+          "localization": {
+            "tp": 16,
+            "fp": 6,
+            "fn": 5,
+            "precision": 0.7272727272727273,
+            "recall": 0.7619047619047619,
+            "f1": 0.7441860465116279
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 7,
+            "fn": 18,
+            "precision": 0.46153846153846156,
+            "recall": 0.25,
+            "f1": 0.32432432432432434
+          },
+          "mean_sheet_median_seconds": 6.652210629501496,
+          "miss_attribution": {
+            "missing_symbol": 10,
+            "recovered": 6,
+            "routing": 8
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 4,
+              "total": 15
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 20,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.8,
+            "recall": 0.9523809523809523,
+            "f1": 0.8695652173913043
+          },
+          "connections": {
+            "tp": 9,
+            "fp": 9,
+            "fn": 15,
+            "precision": 0.5,
+            "recall": 0.375,
+            "f1": 0.42857142857142855
+          },
+          "mean_sheet_median_seconds": 7.113465153990546,
+          "miss_attribution": {
+            "recovered": 9,
+            "routing": 14,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 5,
+              "total": 15
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 20,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.8,
+            "recall": 0.9523809523809523,
+            "f1": 0.8695652173913043
+          },
+          "connections": {
+            "tp": 14,
+            "fp": 10,
+            "fn": 10,
+            "precision": 0.5833333333333334,
+            "recall": 0.5833333333333334,
+            "f1": 0.5833333333333334
+          },
+          "mean_sheet_median_seconds": 7.321531404508278,
+          "miss_attribution": {
+            "recovered": 14,
+            "routing": 9,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 4,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 7,
+              "total": 15
+            }
+          }
+        }
+      },
+      "winnipeg": {
+        "v8": {
+          "localization": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.7142857142857143,
+            "f1": 0.8333333333333334
+          },
+          "connections": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.18181818181818182,
+            "f1": 0.3076923076923077
+          },
+          "mean_sheet_median_seconds": 10.012412483498338,
+          "miss_attribution": {
+            "missing_symbol": 5,
+            "routing": 4,
+            "recovered": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 6
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5454545454545454,
+            "f1": 0.7058823529411765
+          },
+          "mean_sheet_median_seconds": 10.504522399511188,
+          "miss_attribution": {
+            "recovered": 6,
+            "routing": 4,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 6
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          },
+          "mean_sheet_median_seconds": 10.934926411500783,
+          "miss_attribution": {
+            "recovered": 8,
+            "routing": 2,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 4,
+              "total": 6
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        }
+      }
+    },
+    "project": {
+      "Winkler WWTP upgrade, project60430450": {
+        "v8": {
+          "localization": {
+            "tp": 16,
+            "fp": 6,
+            "fn": 5,
+            "precision": 0.7272727272727273,
+            "recall": 0.7619047619047619,
+            "f1": 0.7441860465116279
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 7,
+            "fn": 18,
+            "precision": 0.46153846153846156,
+            "recall": 0.25,
+            "f1": 0.32432432432432434
+          },
+          "mean_sheet_median_seconds": 6.652210629501496,
+          "miss_attribution": {
+            "missing_symbol": 10,
+            "recovered": 6,
+            "routing": 8
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 4,
+              "total": 15
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 20,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.8,
+            "recall": 0.9523809523809523,
+            "f1": 0.8695652173913043
+          },
+          "connections": {
+            "tp": 9,
+            "fp": 9,
+            "fn": 15,
+            "precision": 0.5,
+            "recall": 0.375,
+            "f1": 0.42857142857142855
+          },
+          "mean_sheet_median_seconds": 7.113465153990546,
+          "miss_attribution": {
+            "recovered": 9,
+            "routing": 14,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 5,
+              "total": 15
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 20,
+            "fp": 5,
+            "fn": 1,
+            "precision": 0.8,
+            "recall": 0.9523809523809523,
+            "f1": 0.8695652173913043
+          },
+          "connections": {
+            "tp": 14,
+            "fp": 10,
+            "fn": 10,
+            "precision": 0.5833333333333334,
+            "recall": 0.5833333333333334,
+            "f1": 0.5833333333333334
+          },
+          "mean_sheet_median_seconds": 7.321531404508278,
+          "miss_attribution": {
+            "recovered": 14,
+            "routing": 9,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 4,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 7,
+              "total": 15
+            }
+          }
+        }
+      },
+      "Winnipeg NEWPCC BNR upgrade Contract3": {
+        "v8": {
+          "localization": {
+            "tp": 7,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.6363636363636364,
+            "f1": 0.7777777777777778
+          },
+          "connections": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 7,
+            "precision": 1.0,
+            "recall": 0.2222222222222222,
+            "f1": 0.36363636363636365
+          },
+          "mean_sheet_median_seconds": 7.951560410001548,
+          "miss_attribution": {
+            "missing_symbol": 5,
+            "routing": 2,
+            "recovered": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 11,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 3,
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          },
+          "mean_sheet_median_seconds": 8.332898048014613,
+          "miss_attribution": {
+            "recovered": 6,
+            "routing": 3
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 11,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 7,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.875,
+            "recall": 0.7777777777777778,
+            "f1": 0.8235294117647058
+          },
+          "mean_sheet_median_seconds": 8.649360979004996,
+          "miss_attribution": {
+            "recovered": 7,
+            "routing": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 3,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        }
+      },
+      "Winnipeg WEWPCC historical aeration/blowers": {
+        "v8": {
+          "localization": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "mean_sheet_median_seconds": 12.073264556995127,
+          "miss_attribution": {
+            "routing": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 2
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "mean_sheet_median_seconds": 12.676146751007764,
+          "miss_attribution": {
+            "routing": 1,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 2
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          },
+          "connections": {
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "mean_sheet_median_seconds": 13.22049184399657,
+          "miss_attribution": {
+            "recovered": 1,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 2
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

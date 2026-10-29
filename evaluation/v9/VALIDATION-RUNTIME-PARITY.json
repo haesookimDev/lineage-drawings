@@ -1,0 +1,20 @@
+{
+  "purpose": "Three cached validation ROIs re-executed through actual complete raster pipeline; corrected neural-only boxes/graph scores exactly match selected validation configuration. Does not use new-project test to adjust parameters.",
+  "checks": [
+    {
+      "group": "pahala",
+      "id": "p14",
+      "scores_match": true
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "scores_match": true
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "scores_match": true
+    }
+  ]
+}

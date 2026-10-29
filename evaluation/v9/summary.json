@@ -1,0 +1,1191 @@
+{
+  "new": {
+    "all": {
+      "all": {
+        "v8": {
+          "localization": {
+            "tp": 26,
+            "fp": 6,
+            "fn": 9,
+            "precision": 0.8125,
+            "recall": 0.7428571428571429,
+            "f1": 0.7761194029850746
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 7,
+            "fn": 27,
+            "precision": 0.5333333333333333,
+            "recall": 0.22857142857142856,
+            "f1": 0.32
+          },
+          "mean_sheet_median_seconds": 8.37041441850306,
+          "miss_attribution": {
+            "missing_symbol": 15,
+            "recovered": 8,
+            "routing": 12
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 3,
+              "total": 10
+            },
+            "branch": {
+              "recovered": 4,
+              "total": 16
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 30,
+            "fp": 5,
+            "fn": 5,
+            "precision": 0.8571428571428571,
+            "recall": 0.8571428571428571,
+            "f1": 0.8571428571428571
+          },
+          "connections": {
+            "tp": 12,
+            "fp": 8,
+            "fn": 23,
+            "precision": 0.6,
+            "recall": 0.34285714285714286,
+            "f1": 0.43636363636363634
+          },
+          "mean_sheet_median_seconds": 8.385202289238805,
+          "miss_attribution": {
+            "missing_symbol": 9,
+            "recovered": 12,
+            "routing": 14
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 3,
+              "total": 10
+            },
+            "branch": {
+              "recovered": 5,
+              "total": 16
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 30,
+            "fp": 5,
+            "fn": 5,
+            "precision": 0.8571428571428571,
+            "recall": 0.8571428571428571,
+            "f1": 0.8571428571428571
+          },
+          "connections": {
+            "tp": 20,
+            "fp": 10,
+            "fn": 15,
+            "precision": 0.6666666666666666,
+            "recall": 0.5714285714285714,
+            "f1": 0.6153846153846154
+          },
+          "mean_sheet_median_seconds": 8.764984613007982,
+          "miss_attribution": {
+            "missing_symbol": 9,
+            "recovered": 20,
+            "routing": 6
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 9,
+              "total": 10
+            },
+            "branch": {
+              "recovered": 7,
+              "total": 16
+            }
+          }
+        }
+      }
+    },
+    "group": {
+      "winkler": {
+        "v8": {
+          "localization": {
+            "tp": 16,
+            "fp": 6,
+            "fn": 5,
+            "precision": 0.7272727272727273,
+            "recall": 0.7619047619047619,
+            "f1": 0.7441860465116279
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 7,
+            "fn": 18,
+            "precision": 0.46153846153846156,
+            "recall": 0.25,
+            "f1": 0.32432432432432434
+          },
+          "mean_sheet_median_seconds": 6.64156195500982,
+          "miss_attribution": {
+            "missing_symbol": 10,
+            "recovered": 6,
+            "routing": 8
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 4,
+              "total": 15
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 17,
+            "fp": 5,
+            "fn": 4,
+            "precision": 0.7727272727272727,
+            "recall": 0.8095238095238095,
+            "f1": 0.7906976744186046
+          },
+          "connections": {
+            "tp": 7,
+            "fp": 8,
+            "fn": 17,
+            "precision": 0.4666666666666667,
+            "recall": 0.2916666666666667,
+            "f1": 0.358974358974359
+          },
+          "mean_sheet_median_seconds": 6.6591576834907755,
+          "miss_attribution": {
+            "missing_symbol": 8,
+            "recovered": 7,
+            "routing": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 5,
+              "total": 15
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 17,
+            "fp": 5,
+            "fn": 4,
+            "precision": 0.7727272727272727,
+            "recall": 0.8095238095238095,
+            "f1": 0.7906976744186046
+          },
+          "connections": {
+            "tp": 12,
+            "fp": 9,
+            "fn": 12,
+            "precision": 0.5714285714285714,
+            "recall": 0.5,
+            "f1": 0.5333333333333333
+          },
+          "mean_sheet_median_seconds": 6.926361369507504,
+          "miss_attribution": {
+            "missing_symbol": 8,
+            "recovered": 12,
+            "routing": 4
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 4,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 7,
+              "total": 15
+            }
+          }
+        }
+      },
+      "winnipeg": {
+        "v8": {
+          "localization": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.7142857142857143,
+            "f1": 0.8333333333333334
+          },
+          "connections": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.18181818181818182,
+            "f1": 0.3076923076923077
+          },
+          "mean_sheet_median_seconds": 10.0992668819963,
+          "miss_attribution": {
+            "missing_symbol": 5,
+            "routing": 4,
+            "recovered": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 6
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 6,
+            "precision": 1.0,
+            "recall": 0.45454545454545453,
+            "f1": 0.625
+          },
+          "mean_sheet_median_seconds": 10.111246894986834,
+          "miss_attribution": {
+            "recovered": 5,
+            "missing_symbol": 1,
+            "routing": 5
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 6
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 13,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629
+          },
+          "connections": {
+            "tp": 8,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8888888888888888,
+            "recall": 0.7272727272727273,
+            "f1": 0.8
+          },
+          "mean_sheet_median_seconds": 10.60360785650846,
+          "miss_attribution": {
+            "recovered": 8,
+            "missing_symbol": 1,
+            "routing": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 5,
+              "total": 6
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        }
+      }
+    },
+    "project": {
+      "Winkler WWTP upgrade, project60430450": {
+        "v8": {
+          "localization": {
+            "tp": 16,
+            "fp": 6,
+            "fn": 5,
+            "precision": 0.7272727272727273,
+            "recall": 0.7619047619047619,
+            "f1": 0.7441860465116279
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 7,
+            "fn": 18,
+            "precision": 0.46153846153846156,
+            "recall": 0.25,
+            "f1": 0.32432432432432434
+          },
+          "mean_sheet_median_seconds": 6.64156195500982,
+          "miss_attribution": {
+            "missing_symbol": 10,
+            "recovered": 6,
+            "routing": 8
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 4,
+              "total": 15
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 17,
+            "fp": 5,
+            "fn": 4,
+            "precision": 0.7727272727272727,
+            "recall": 0.8095238095238095,
+            "f1": 0.7906976744186046
+          },
+          "connections": {
+            "tp": 7,
+            "fp": 8,
+            "fn": 17,
+            "precision": 0.4666666666666667,
+            "recall": 0.2916666666666667,
+            "f1": 0.358974358974359
+          },
+          "mean_sheet_median_seconds": 6.6591576834907755,
+          "miss_attribution": {
+            "missing_symbol": 8,
+            "recovered": 7,
+            "routing": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 1,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 5,
+              "total": 15
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 17,
+            "fp": 5,
+            "fn": 4,
+            "precision": 0.7727272727272727,
+            "recall": 0.8095238095238095,
+            "f1": 0.7906976744186046
+          },
+          "connections": {
+            "tp": 12,
+            "fp": 9,
+            "fn": 12,
+            "precision": 0.5714285714285714,
+            "recall": 0.5,
+            "f1": 0.5333333333333333
+          },
+          "mean_sheet_median_seconds": 6.926361369507504,
+          "miss_attribution": {
+            "missing_symbol": 8,
+            "recovered": 12,
+            "routing": 4
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 4,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 7,
+              "total": 15
+            }
+          }
+        }
+      },
+      "Winnipeg NEWPCC BNR upgrade Contract3": {
+        "v8": {
+          "localization": {
+            "tp": 7,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.6363636363636364,
+            "f1": 0.7777777777777778
+          },
+          "connections": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 7,
+            "precision": 1.0,
+            "recall": 0.2222222222222222,
+            "f1": 0.36363636363636365
+          },
+          "mean_sheet_median_seconds": 8.078195064008469,
+          "miss_attribution": {
+            "missing_symbol": 5,
+            "routing": 2,
+            "recovered": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9090909090909091,
+            "f1": 0.9523809523809523
+          },
+          "connections": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.5555555555555556,
+            "f1": 0.7142857142857143
+          },
+          "mean_sheet_median_seconds": 8.099097351980163,
+          "miss_attribution": {
+            "recovered": 5,
+            "missing_symbol": 1,
+            "routing": 3
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 10,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9090909090909091,
+            "f1": 0.9523809523809523
+          },
+          "connections": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.8571428571428571,
+            "recall": 0.6666666666666666,
+            "f1": 0.75
+          },
+          "mean_sheet_median_seconds": 8.563032334001036,
+          "miss_attribution": {
+            "recovered": 6,
+            "missing_symbol": 1,
+            "routing": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 3,
+              "total": 4
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 1
+            }
+          }
+        }
+      },
+      "Winnipeg WEWPCC historical aeration/blowers": {
+        "v8": {
+          "localization": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "mean_sheet_median_seconds": 12.120338699984131,
+          "miss_attribution": {
+            "routing": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 2
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "glyph-only": {
+          "localization": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "mean_sheet_median_seconds": 12.123396437993506,
+          "miss_attribution": {
+            "routing": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 2
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 3,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "mean_sheet_median_seconds": 12.644183379015885,
+          "miss_attribution": {
+            "recovered": 2
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 2,
+              "total": 2
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "regression": {
+    "all": {
+      "all": {
+        "v8": {
+          "localization": {
+            "tp": 926,
+            "fp": 55,
+            "fn": 49,
+            "precision": 0.9439347604485219,
+            "recall": 0.9497435897435897,
+            "f1": 0.9468302658486708
+          },
+          "connections": {
+            "tp": 2262,
+            "fp": 347,
+            "fn": 5233,
+            "precision": 0.866998850134151,
+            "recall": 0.3018012008005337,
+            "f1": 0.4477434679334917
+          },
+          "mean_sheet_median_seconds": 6.20587122876382,
+          "miss_attribution": {
+            "routing": 5061,
+            "recovered": 2262,
+            "missing_symbol": 172
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 914,
+            "fp": 53,
+            "fn": 61,
+            "precision": 0.9451913133402275,
+            "recall": 0.9374358974358974,
+            "f1": 0.94129763130793
+          },
+          "connections": {
+            "tp": 2592,
+            "fp": 538,
+            "fn": 4903,
+            "precision": 0.8281150159744409,
+            "recall": 0.3458305537024683,
+            "f1": 0.4879058823529412
+          },
+          "mean_sheet_median_seconds": 6.519404355996384,
+          "miss_attribution": {
+            "routing": 4522,
+            "recovered": 2592,
+            "missing_symbol": 381
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    "group": {
+      "open100": {
+        "v8": {
+          "localization": {
+            "tp": 339,
+            "fp": 7,
+            "fn": 41,
+            "precision": 0.9797687861271677,
+            "recall": 0.8921052631578947,
+            "f1": 0.9338842975206612
+          },
+          "connections": {
+            "tp": 343,
+            "fp": 113,
+            "fn": 505,
+            "precision": 0.7521929824561403,
+            "recall": 0.4044811320754717,
+            "f1": 0.5260736196319018
+          },
+          "mean_sheet_median_seconds": 6.277547882995957,
+          "miss_attribution": {
+            "routing": 348,
+            "recovered": 343,
+            "missing_symbol": 157
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 330,
+            "fp": 19,
+            "fn": 50,
+            "precision": 0.9455587392550143,
+            "recall": 0.868421052631579,
+            "f1": 0.9053497942386831
+          },
+          "connections": {
+            "tp": 333,
+            "fp": 151,
+            "fn": 515,
+            "precision": 0.6880165289256198,
+            "recall": 0.392688679245283,
+            "f1": 0.5
+          },
+          "mean_sheet_median_seconds": 6.478343480654682,
+          "miss_attribution": {
+            "routing": 282,
+            "recovered": 333,
+            "missing_symbol": 233
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "pahala": {
+        "v8": {
+          "localization": {
+            "tp": 11,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 46,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.8363636363636363,
+            "f1": 0.9108910891089109
+          },
+          "mean_sheet_median_seconds": 4.633171657013008,
+          "miss_attribution": {
+            "recovered": 46,
+            "routing": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 11,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 46,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.8363636363636363,
+            "f1": 0.9108910891089109
+          },
+          "mean_sheet_median_seconds": 4.811453634989448,
+          "miss_attribution": {
+            "recovered": 46,
+            "routing": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "synthetic": {
+        "v8": {
+          "localization": {
+            "tp": 575,
+            "fp": 47,
+            "fn": 2,
+            "precision": 0.9244372990353698,
+            "recall": 0.9965337954939342,
+            "f1": 0.9591326105087573
+          },
+          "connections": {
+            "tp": 1873,
+            "fp": 233,
+            "fn": 4713,
+            "precision": 0.889363722697056,
+            "recall": 0.28439113270573946,
+            "f1": 0.4309710078232858
+          },
+          "mean_sheet_median_seconds": 6.429731674626964,
+          "miss_attribution": {
+            "routing": 4704,
+            "recovered": 1873,
+            "missing_symbol": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 570,
+            "fp": 33,
+            "fn": 7,
+            "precision": 0.945273631840796,
+            "recall": 0.9878682842287695,
+            "f1": 0.9661016949152542
+          },
+          "connections": {
+            "tp": 2212,
+            "fp": 386,
+            "fn": 4374,
+            "precision": 0.8514241724403387,
+            "recall": 0.33586395384148193,
+            "f1": 0.4817073170731707
+          },
+          "mean_sheet_median_seconds": 6.853543046752748,
+          "miss_attribution": {
+            "routing": 4231,
+            "recovered": 2212,
+            "missing_symbol": 143
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "virden": {
+        "v8": {
+          "localization": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.5,
+            "recall": 0.14285714285714285,
+            "f1": 0.2222222222222222
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "mean_sheet_median_seconds": 5.881749268490239,
+          "miss_attribution": {
+            "missing_symbol": 6
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 3,
+            "fp": 1,
+            "fn": 4,
+            "precision": 0.75,
+            "recall": 0.42857142857142855,
+            "f1": 0.5454545454545454
+          },
+          "connections": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.16666666666666666,
+            "f1": 0.25
+          },
+          "mean_sheet_median_seconds": 6.160007579499506,
+          "miss_attribution": {
+            "recovered": 1,
+            "missing_symbol": 5
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    "project": {
+      "OPEN100 historical regression": {
+        "v8": {
+          "localization": {
+            "tp": 339,
+            "fp": 7,
+            "fn": 41,
+            "precision": 0.9797687861271677,
+            "recall": 0.8921052631578947,
+            "f1": 0.9338842975206612
+          },
+          "connections": {
+            "tp": 343,
+            "fp": 113,
+            "fn": 505,
+            "precision": 0.7521929824561403,
+            "recall": 0.4044811320754717,
+            "f1": 0.5260736196319018
+          },
+          "mean_sheet_median_seconds": 6.277547882995957,
+          "miss_attribution": {
+            "routing": 348,
+            "recovered": 343,
+            "missing_symbol": 157
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 330,
+            "fp": 19,
+            "fn": 50,
+            "precision": 0.9455587392550143,
+            "recall": 0.868421052631579,
+            "f1": 0.9053497942386831
+          },
+          "connections": {
+            "tp": 333,
+            "fp": 151,
+            "fn": 515,
+            "precision": 0.6880165289256198,
+            "recall": 0.392688679245283,
+            "f1": 0.5
+          },
+          "mean_sheet_median_seconds": 6.478343480654682,
+          "miss_attribution": {
+            "routing": 282,
+            "recovered": 333,
+            "missing_symbol": 233
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "Synthetic historical regression": {
+        "v8": {
+          "localization": {
+            "tp": 575,
+            "fp": 47,
+            "fn": 2,
+            "precision": 0.9244372990353698,
+            "recall": 0.9965337954939342,
+            "f1": 0.9591326105087573
+          },
+          "connections": {
+            "tp": 1873,
+            "fp": 233,
+            "fn": 4713,
+            "precision": 0.889363722697056,
+            "recall": 0.28439113270573946,
+            "f1": 0.4309710078232858
+          },
+          "mean_sheet_median_seconds": 6.429731674626964,
+          "miss_attribution": {
+            "routing": 4704,
+            "recovered": 1873,
+            "missing_symbol": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 570,
+            "fp": 33,
+            "fn": 7,
+            "precision": 0.945273631840796,
+            "recall": 0.9878682842287695,
+            "f1": 0.9661016949152542
+          },
+          "connections": {
+            "tp": 2212,
+            "fp": 386,
+            "fn": 4374,
+            "precision": 0.8514241724403387,
+            "recall": 0.33586395384148193,
+            "f1": 0.4817073170731707
+          },
+          "mean_sheet_median_seconds": 6.853543046752748,
+          "miss_attribution": {
+            "routing": 4231,
+            "recovered": 2212,
+            "missing_symbol": 143
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "Validation diagnostic, not unseen": {
+        "v8": {
+          "localization": {
+            "tp": 12,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.9230769230769231,
+            "recall": 0.6666666666666666,
+            "f1": 0.7741935483870968
+          },
+          "connections": {
+            "tp": 46,
+            "fp": 1,
+            "fn": 15,
+            "precision": 0.9787234042553191,
+            "recall": 0.7540983606557377,
+            "f1": 0.8518518518518519
+          },
+          "mean_sheet_median_seconds": 5.465556731331162,
+          "miss_attribution": {
+            "recovered": 46,
+            "routing": 9,
+            "missing_symbol": 6
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 14,
+            "fp": 1,
+            "fn": 4,
+            "precision": 0.9333333333333333,
+            "recall": 0.7777777777777778,
+            "f1": 0.8484848484848485
+          },
+          "connections": {
+            "tp": 47,
+            "fp": 1,
+            "fn": 14,
+            "precision": 0.9791666666666666,
+            "recall": 0.7704918032786885,
+            "f1": 0.8623853211009175
+          },
+          "mean_sheet_median_seconds": 5.710489597996154,
+          "miss_attribution": {
+            "recovered": 47,
+            "routing": 9,
+            "missing_symbol": 5
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

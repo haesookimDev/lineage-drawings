@@ -1,0 +1,9 @@
+{
+  "reason": "Historical synthetic originals are7168px, so viewer must be resized directly from original independently of4800px symbol image, matching backend.extract. Earlier secondary run resized viewer from4800 and has been archived. New four source renders already4800px: direct/indirect viewer pixels are verified EXACTLY equal, so new-project scores/timing/freeze are unaffected.",
+  "primary_project_pixels_unchanged": true,
+  "repeat_synthetic_only": 8,
+  "retain_already_correct_real_validation_rows": 9,
+  "evaluator_sha256": "4fab0e89328d0633887250d056fa523ce000e7eb5152929d7d50adf18d172830",
+  "release_freeze_sha256": "b5f410ba70a0df0604d59a00c5a647d234dcff9e385e580261fc2c76bfc4afa5",
+  "frozen_at": "2026-10-29T03:50:39.424589+00:00"
+}

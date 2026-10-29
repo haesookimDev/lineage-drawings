@@ -1,0 +1,195 @@
+{
+  "role": "Post-test diagnostic, no edits to labels,weights,thresholds or routing; not an extra validation step",
+  "sheets": {
+    "winkler-p142": {
+      "missing_symbols": [
+        {
+          "gt_id": "pump",
+          "kind": "pump",
+          "best_box_iou": 0.0
+        },
+        {
+          "gt_id": "v2",
+          "kind": "valve",
+          "best_box_iou": 0.0
+        },
+        {
+          "gt_id": "drain",
+          "kind": "inlet/outlet",
+          "best_box_iou": 0.0
+        },
+        {
+          "gt_id": "sample",
+          "kind": "inlet/outlet",
+          "best_box_iou": 0.0
+        }
+      ],
+      "missing_connections": [
+        {
+          "pair": [
+            "drain",
+            "v2"
+          ],
+          "cause": "missing_symbol",
+          "subsets": []
+        },
+        {
+          "pair": [
+            "m2",
+            "pump"
+          ],
+          "cause": "missing_symbol",
+          "subsets": []
+        },
+        {
+          "pair": [
+            "meter",
+            "pump"
+          ],
+          "cause": "missing_symbol",
+          "subsets": [
+            "branch"
+          ]
+        },
+        {
+          "pair": [
+            "pump",
+            "v1"
+          ],
+          "cause": "missing_symbol",
+          "subsets": [
+            "branch"
+          ]
+        },
+        {
+          "pair": [
+            "pump",
+            "v2"
+          ],
+          "cause": "missing_symbol",
+          "subsets": [
+            "branch"
+          ]
+        },
+        {
+          "pair": [
+            "pump",
+            "v3"
+          ],
+          "cause": "missing_symbol",
+          "subsets": [
+            "branch"
+          ]
+        },
+        {
+          "pair": [
+            "sample",
+            "v3"
+          ],
+          "cause": "missing_symbol",
+          "subsets": []
+        },
+        {
+          "pair": [
+            "v1",
+            "v2"
+          ],
+          "cause": "missing_symbol",
+          "subsets": [
+            "branch"
+          ]
+        }
+      ],
+      "false_connections": 2
+    },
+    "winkler-p150": {
+      "missing_symbols": [],
+      "missing_connections": [
+        {
+          "pair": [
+            "ae1",
+            "v1"
+          ],
+          "cause": "line_or_port_routing",
+          "subsets": [
+            "branch"
+          ]
+        },
+        {
+          "pair": [
+            "ae2",
+            "v1"
+          ],
+          "cause": "line_or_port_routing",
+          "subsets": [
+            "branch"
+          ]
+        },
+        {
+          "pair": [
+            "drain",
+            "tap"
+          ],
+          "cause": "line_or_port_routing",
+          "subsets": [
+            "branch"
+          ]
+        },
+        {
+          "pair": [
+            "sample",
+            "tap"
+          ],
+          "cause": "line_or_port_routing",
+          "subsets": []
+        }
+      ],
+      "false_connections": 7
+    },
+    "winnipeg-p2": {
+      "missing_symbols": [
+        {
+          "gt_id": "v720a",
+          "kind": "valve",
+          "best_box_iou": 0.0
+        }
+      ],
+      "missing_connections": [
+        {
+          "pair": [
+            "fe720",
+            "v720a"
+          ],
+          "cause": "missing_symbol",
+          "subsets": []
+        },
+        {
+          "pair": [
+            "fit720",
+            "p720"
+          ],
+          "cause": "line_or_port_routing",
+          "subsets": [
+            "dashed"
+          ]
+        },
+        {
+          "pair": [
+            "v710b",
+            "v720b"
+          ],
+          "cause": "line_or_port_routing",
+          "subsets": [
+            "branch"
+          ]
+        }
+      ],
+      "false_connections": 1
+    },
+    "winnipeg-p7": {
+      "missing_symbols": [],
+      "missing_connections": [],
+      "false_connections": 0
+    }
+  }
+}

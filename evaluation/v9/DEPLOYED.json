@@ -1,0 +1,194 @@
+{
+  "release": {
+    "commit": "67d8caf47229f4d2bd3f40abc354fbf50db26934",
+    "ci_run": "40812701751",
+    "ci_url": "https://github.com/haesookimDev/lineage-drawings/actions/runs/40812701751",
+    "artifact_sha256": "145997a627c8f35bc5a8369ce8d2fe9b5cd96c01ef4f10cc4f23455e86a5a662",
+    "evaluated_backend_and_model_match_image": true,
+    "checked_backend_files": 28,
+    "checked_frontend_files": 3,
+    "architecture": "amd64",
+    "runtime_user": "1000:1000",
+    "deployment_status": "deployed; external API, UI and actual Pod source/model/OCR checks passed"
+  },
+  "tests": 69,
+  "api_checks": 194,
+  "documents_added": 8,
+  "concepts_added": 1,
+  "preservation": {
+    "browser_label_confirmed_on_server": true,
+    "meaning_and_approval_preserved": true,
+    "port_junction_path_evidence_preserved": true,
+    "learned_source_preserved": true,
+    "existing_documents_concepts_pages_still_unchanged": true,
+    "documents": 64,
+    "concepts": 10,
+    "before_documents": 56,
+    "before_concepts": 9,
+    "before_pages": 58,
+    "new_test_documents": 8,
+    "new_test_concepts": 1
+  },
+  "ui": {
+    "outcome": "passed",
+    "actualLogin": true,
+    "saveThenReloadConfirmed": true,
+    "topologyToggleHidesPorts": true,
+    "junctions": 146,
+    "ports": 27,
+    "observedPolylines": 3,
+    "approvedConnections": 1,
+    "portDetailsVisible": true,
+    "savedLabel": "V9-VERIFY UI 저장 확인 요소",
+    "meaningPreserved": true,
+    "screenshot": "test-results/v9-live/production-review.png"
+  },
+  "cluster": {
+    "image": "docker.io/library/lineage-drawings:67d8caf47229f4d2bd3f40abc354fbf50db26934",
+    "pod": "lineage-7947bd8dfd-lh68c",
+    "image_id": "sha256:8395cf9d0f58b8214ba4df4fcfa13c49adf080139ca0b2162df73c52e553ecf2",
+    "ready_replicas": 1,
+    "restart_count": 0,
+    "pvc_phase": "Bound",
+    "route_conditions": [
+      {
+        "lastTransitionTime": "2026-10-28T02:09:00Z",
+        "message": "",
+        "observedGeneration": 1,
+        "reason": "Accepted",
+        "status": "True",
+        "type": "Accepted"
+      },
+      {
+        "lastTransitionTime": "2026-10-28T02:09:00Z",
+        "message": "",
+        "observedGeneration": 1,
+        "reason": "ResolvedRefs",
+        "status": "True",
+        "type": "ResolvedRefs"
+      }
+    ],
+    "evaluated_code_and_model_hashes_match": true,
+    "evaluated_ocr_fingerprints_match": true,
+    "live_engine_junction_checks": {
+      "plain_crossing_pairs": 2,
+      "dotted_junction_pairs": 6,
+      "tee_pairs": 3
+    },
+    "recent_error_lines": 0,
+    "pod_metrics": "lineage-7947bd8dfd-lh68c   11m   513Mi"
+  },
+  "new_project_aggregate": {
+    "v8": {
+      "localization": {
+        "tp": 26,
+        "fp": 6,
+        "fn": 9,
+        "precision": 0.8125,
+        "recall": 0.7428571428571429,
+        "f1": 0.7761194029850746
+      },
+      "connections": {
+        "tp": 8,
+        "fp": 7,
+        "fn": 27,
+        "precision": 0.5333333333333333,
+        "recall": 0.22857142857142856,
+        "f1": 0.32
+      },
+      "mean_sheet_median_seconds": 8.37041441850306,
+      "miss_attribution": {
+        "missing_symbol": 15,
+        "recovered": 8,
+        "routing": 12
+      },
+      "edge_subsets": {
+        "dashed": {
+          "recovered": 3,
+          "total": 10
+        },
+        "branch": {
+          "recovered": 4,
+          "total": 16
+        }
+      }
+    },
+    "glyph-only": {
+      "localization": {
+        "tp": 30,
+        "fp": 5,
+        "fn": 5,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571
+      },
+      "connections": {
+        "tp": 12,
+        "fp": 8,
+        "fn": 23,
+        "precision": 0.6,
+        "recall": 0.34285714285714286,
+        "f1": 0.43636363636363634
+      },
+      "mean_sheet_median_seconds": 8.385202289238805,
+      "miss_attribution": {
+        "missing_symbol": 9,
+        "recovered": 12,
+        "routing": 14
+      },
+      "edge_subsets": {
+        "dashed": {
+          "recovered": 3,
+          "total": 10
+        },
+        "branch": {
+          "recovered": 5,
+          "total": 16
+        }
+      }
+    },
+    "v9": {
+      "localization": {
+        "tp": 30,
+        "fp": 5,
+        "fn": 5,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "f1": 0.8571428571428571
+      },
+      "connections": {
+        "tp": 20,
+        "fp": 10,
+        "fn": 15,
+        "precision": 0.6666666666666666,
+        "recall": 0.5714285714285714,
+        "f1": 0.6153846153846154
+      },
+      "mean_sheet_median_seconds": 8.764984613007982,
+      "miss_attribution": {
+        "missing_symbol": 9,
+        "recovered": 20,
+        "routing": 6
+      },
+      "edge_subsets": {
+        "dashed": {
+          "recovered": 9,
+          "total": 10
+        },
+        "branch": {
+          "recovered": 7,
+          "total": 16
+        }
+      }
+    }
+  },
+  "new_project_sheets": 4,
+  "new_project_full_runs": 36,
+  "regression_pages": 17,
+  "regression_full_runs": 34,
+  "primary_evaluation_correction": "VALIDATION-CONTRACT-FIX.json: originally nonconforming merge was caught before deployment; weights/thresholds/GT unchanged. Final reports use corrected validation-conforming runtime.",
+  "newly_recovered_reviewed_edge_gt_pair": [
+    "fe",
+    "meter"
+  ]
+}

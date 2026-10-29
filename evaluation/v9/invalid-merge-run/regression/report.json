@@ -1,0 +1,2228 @@
+{
+  "baseline": "c9cef5afc6363e30c86e9ab4a5fe17dd68313e11",
+  "frozen_sha256": "ea8a187d3d394e9c0ddfa744c920a8f3e6c427ac34df4395d3fdcf7ca46d0f44",
+  "role": "Historical regression and validation diagnostic, not new-project evidence",
+  "runs": 1,
+  "timing_scope": "Full in-memory OCR + same max4800 symbol input +2400 line/port/junction inference. Sequential rotated3-variant order,3 repeats; mean of per-sheet medians. Decode/render/network/save excluded; CPU OpenCV2/OMP1, not Pod SLA.",
+  "sheets": [
+    {
+      "group": "open100",
+      "id": "6",
+      "project": "OPEN100 historical regression",
+      "roi_only": false,
+      "source_sha256": "44a67176c8265ca5b7a2ae9833932a1797564bb35ce030d3d29e920ddf1fc9c1",
+      "gt_symbols": 70,
+      "gt_edges": 158,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 69,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.9857142857142858,
+              "f1": 0.9928057553956835
+            },
+            "connections": {
+              "tp": 41,
+              "fp": 17,
+              "fn": 117,
+              "precision": 0.7068965517241379,
+              "recall": 0.25949367088607594,
+              "f1": 0.37962962962962965
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 69,
+          "full_page_connections": 58,
+          "conditional_endpoints": {
+            "eligible": 148,
+            "recovered": 41
+          },
+          "miss_attribution": {
+            "recovered": 41,
+            "routing": 107,
+            "missing_symbol": 10
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 63,
+          "junctions": 109,
+          "timing": {
+            "seconds": [
+              6.645777620986337
+            ],
+            "median": 6.645777620986337
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 68,
+              "fp": 15,
+              "fn": 2,
+              "precision": 0.8192771084337349,
+              "recall": 0.9714285714285714,
+              "f1": 0.8888888888888888
+            },
+            "connections": {
+              "tp": 59,
+              "fp": 22,
+              "fn": 99,
+              "precision": 0.7283950617283951,
+              "recall": 0.37341772151898733,
+              "f1": 0.49372384937238495
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 83,
+          "full_page_connections": 81,
+          "conditional_endpoints": {
+            "eligible": 144,
+            "recovered": 59
+          },
+          "miss_attribution": {
+            "recovered": 59,
+            "routing": 85,
+            "missing_symbol": 14
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 78,
+          "junctions": 126,
+          "timing": {
+            "seconds": [
+              7.240662142023211
+            ],
+            "median": 7.240662142023211
+          }
+        }
+      }
+    },
+    {
+      "group": "open100",
+      "id": "7",
+      "project": "OPEN100 historical regression",
+      "roi_only": false,
+      "source_sha256": "071e7dc66c07b7b9fb752de7c91ed2fb7c65cce1135bac43291723980e32fdd0",
+      "gt_symbols": 61,
+      "gt_edges": 158,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 57,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.9827586206896551,
+              "recall": 0.9344262295081968,
+              "f1": 0.957983193277311
+            },
+            "connections": {
+              "tp": 64,
+              "fp": 13,
+              "fn": 94,
+              "precision": 0.8311688311688312,
+              "recall": 0.4050632911392405,
+              "f1": 0.5446808510638298
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 58,
+          "full_page_connections": 77,
+          "conditional_endpoints": {
+            "eligible": 148,
+            "recovered": 64
+          },
+          "miss_attribution": {
+            "routing": 84,
+            "recovered": 64,
+            "missing_symbol": 10
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 60,
+          "junctions": 89,
+          "timing": {
+            "seconds": [
+              6.313729011017131
+            ],
+            "median": 6.313729011017131
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 58,
+              "fp": 23,
+              "fn": 3,
+              "precision": 0.7160493827160493,
+              "recall": 0.9508196721311475,
+              "f1": 0.8169014084507042
+            },
+            "connections": {
+              "tp": 91,
+              "fp": 19,
+              "fn": 67,
+              "precision": 0.8272727272727273,
+              "recall": 0.5759493670886076,
+              "f1": 0.6791044776119403
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 81,
+          "full_page_connections": 110,
+          "conditional_endpoints": {
+            "eligible": 153,
+            "recovered": 91
+          },
+          "miss_attribution": {
+            "routing": 62,
+            "recovered": 91,
+            "missing_symbol": 5
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 81,
+          "junctions": 153,
+          "timing": {
+            "seconds": [
+              7.021914514014497
+            ],
+            "median": 7.021914514014497
+          }
+        }
+      }
+    },
+    {
+      "group": "open100",
+      "id": "8",
+      "project": "OPEN100 historical regression",
+      "roi_only": false,
+      "source_sha256": "d0e38b31ec1d30189bb9ee32cbf07387a3e033439ec69d62b7cd8578975e729e",
+      "gt_symbols": 36,
+      "gt_edges": 53,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 38,
+              "fp": 11,
+              "fn": 15,
+              "precision": 0.7755102040816326,
+              "recall": 0.7169811320754716,
+              "f1": 0.7450980392156863
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 37,
+          "full_page_connections": 49,
+          "conditional_endpoints": {
+            "eligible": 53,
+            "recovered": 38
+          },
+          "miss_attribution": {
+            "recovered": 38,
+            "routing": 15
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 33,
+          "junctions": 52,
+          "timing": {
+            "seconds": [
+              5.603642366011627
+            ],
+            "median": 5.603642366011627
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 35,
+              "fp": 12,
+              "fn": 1,
+              "precision": 0.7446808510638298,
+              "recall": 0.9722222222222222,
+              "f1": 0.8433734939759037
+            },
+            "connections": {
+              "tp": 28,
+              "fp": 25,
+              "fn": 25,
+              "precision": 0.5283018867924528,
+              "recall": 0.5283018867924528,
+              "f1": 0.5283018867924528
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 47,
+          "full_page_connections": 53,
+          "conditional_endpoints": {
+            "eligible": 45,
+            "recovered": 28
+          },
+          "miss_attribution": {
+            "recovered": 28,
+            "routing": 17,
+            "missing_symbol": 8
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 46,
+          "junctions": 102,
+          "timing": {
+            "seconds": [
+              6.157301864004694
+            ],
+            "median": 6.157301864004694
+          }
+        }
+      }
+    },
+    {
+      "group": "open100",
+      "id": "9",
+      "project": "OPEN100 historical regression",
+      "roi_only": false,
+      "source_sha256": "c620ed2ad097e10c3249050266595d303750453154fc51449c1e1e4196d43321",
+      "gt_symbols": 42,
+      "gt_edges": 156,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 36,
+              "fp": 1,
+              "fn": 6,
+              "precision": 0.972972972972973,
+              "recall": 0.8571428571428571,
+              "f1": 0.9113924050632911
+            },
+            "connections": {
+              "tp": 129,
+              "fp": 0,
+              "fn": 27,
+              "precision": 1.0,
+              "recall": 0.8269230769230769,
+              "f1": 0.9052631578947369
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 37,
+          "full_page_connections": 129,
+          "conditional_endpoints": {
+            "eligible": 154,
+            "recovered": 129
+          },
+          "miss_attribution": {
+            "recovered": 129,
+            "routing": 25,
+            "missing_symbol": 2
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 39,
+          "junctions": 64,
+          "timing": {
+            "seconds": [
+              5.603531091008335
+            ],
+            "median": 5.603531091008335
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 39,
+              "fp": 22,
+              "fn": 3,
+              "precision": 0.639344262295082,
+              "recall": 0.9285714285714286,
+              "f1": 0.7572815533980582
+            },
+            "connections": {
+              "tp": 116,
+              "fp": 6,
+              "fn": 40,
+              "precision": 0.9508196721311475,
+              "recall": 0.7435897435897436,
+              "f1": 0.8345323741007195
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 61,
+          "full_page_connections": 122,
+          "conditional_endpoints": {
+            "eligible": 154,
+            "recovered": 116
+          },
+          "miss_attribution": {
+            "recovered": 116,
+            "routing": 38,
+            "missing_symbol": 2
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 42,
+          "junctions": 90,
+          "timing": {
+            "seconds": [
+              6.070855002006283
+            ],
+            "median": 6.070855002006283
+          }
+        }
+      }
+    },
+    {
+      "group": "open100",
+      "id": "10",
+      "project": "OPEN100 historical regression",
+      "roi_only": false,
+      "source_sha256": "246841b69ea44b8b881429b801ff66ca16637832b95a1ce09632c5538842ee1b",
+      "gt_symbols": 89,
+      "gt_edges": 167,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 77,
+              "fp": 3,
+              "fn": 12,
+              "precision": 0.9625,
+              "recall": 0.8651685393258427,
+              "f1": 0.9112426035502958
+            },
+            "connections": {
+              "tp": 43,
+              "fp": 37,
+              "fn": 124,
+              "precision": 0.5375,
+              "recall": 0.25748502994011974,
+              "f1": 0.3481781376518219
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 80,
+          "full_page_connections": 80,
+          "conditional_endpoints": {
+            "eligible": 122,
+            "recovered": 43
+          },
+          "miss_attribution": {
+            "routing": 79,
+            "recovered": 43,
+            "missing_symbol": 45
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 77,
+          "junctions": 109,
+          "timing": {
+            "seconds": [
+              7.470269329001894
+            ],
+            "median": 7.470269329001894
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 74,
+              "fp": 33,
+              "fn": 15,
+              "precision": 0.6915887850467289,
+              "recall": 0.8314606741573034,
+              "f1": 0.7551020408163265
+            },
+            "connections": {
+              "tp": 27,
+              "fp": 50,
+              "fn": 140,
+              "precision": 0.35064935064935066,
+              "recall": 0.16167664670658682,
+              "f1": 0.22131147540983606
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 107,
+          "full_page_connections": 77,
+          "conditional_endpoints": {
+            "eligible": 97,
+            "recovered": 27
+          },
+          "miss_attribution": {
+            "routing": 70,
+            "missing_symbol": 70,
+            "recovered": 27
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 88,
+          "junctions": 194,
+          "timing": {
+            "seconds": [
+              8.257290435984032
+            ],
+            "median": 8.257290435984032
+          }
+        }
+      }
+    },
+    {
+      "group": "open100",
+      "id": "11",
+      "project": "OPEN100 historical regression",
+      "roi_only": false,
+      "source_sha256": "363bf989089abe8e235862729392633a99b4e879b1adbd407fcce7f90eb26d94",
+      "gt_symbols": 82,
+      "gt_edges": 156,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 1,
+              "fn": 18,
+              "precision": 0.9846153846153847,
+              "recall": 0.7804878048780488,
+              "f1": 0.8707482993197279
+            },
+            "connections": {
+              "tp": 28,
+              "fp": 35,
+              "fn": 128,
+              "precision": 0.4444444444444444,
+              "recall": 0.1794871794871795,
+              "f1": 0.2557077625570776
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 65,
+          "full_page_connections": 63,
+          "conditional_endpoints": {
+            "eligible": 66,
+            "recovered": 28
+          },
+          "miss_attribution": {
+            "missing_symbol": 90,
+            "recovered": 28,
+            "routing": 38
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 53,
+          "junctions": 81,
+          "timing": {
+            "seconds": [
+              6.140399180992972
+            ],
+            "median": 6.140399180992972
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 70,
+              "fp": 19,
+              "fn": 12,
+              "precision": 0.7865168539325843,
+              "recall": 0.8536585365853658,
+              "f1": 0.8187134502923976
+            },
+            "connections": {
+              "tp": 41,
+              "fp": 68,
+              "fn": 115,
+              "precision": 0.3761467889908257,
+              "recall": 0.26282051282051283,
+              "f1": 0.30943396226415093
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 89,
+          "full_page_connections": 109,
+          "conditional_endpoints": {
+            "eligible": 81,
+            "recovered": 41
+          },
+          "miss_attribution": {
+            "recovered": 41,
+            "missing_symbol": 75,
+            "routing": 40
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 13,
+          "detail_tiles": 0,
+          "ports": 83,
+          "junctions": 130,
+          "timing": {
+            "seconds": [
+              6.881853141996544
+            ],
+            "median": 6.881853141996544
+          }
+        }
+      }
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "project": "Validation diagnostic, not unseen",
+      "roi_only": true,
+      "source_sha256": "c9db818d27546b5a616e18a3bf3858f33df0362df0842ad78fabeeb55bc5340c",
+      "gt_symbols": 11,
+      "gt_edges": 55,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 46,
+              "fp": 0,
+              "fn": 9,
+              "precision": 1.0,
+              "recall": 0.8363636363636363,
+              "f1": 0.9108910891089109
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 56,
+          "full_page_connections": 165,
+          "conditional_endpoints": {
+            "eligible": 55,
+            "recovered": 46
+          },
+          "miss_attribution": {
+            "recovered": 46,
+            "routing": 9
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 54,
+          "junctions": 116,
+          "timing": {
+            "seconds": [
+              4.669778183975723
+            ],
+            "median": 4.669778183975723
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 11,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "connections": {
+              "tp": 46,
+              "fp": 0,
+              "fn": 9,
+              "precision": 1.0,
+              "recall": 0.8363636363636363,
+              "f1": 0.9108910891089109
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 121,
+          "full_page_connections": 430,
+          "conditional_endpoints": {
+            "eligible": 55,
+            "recovered": 46
+          },
+          "miss_attribution": {
+            "recovered": 46,
+            "routing": 9
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 134,
+          "junctions": 94,
+          "timing": {
+            "seconds": [
+              5.31428409498767
+            ],
+            "median": 5.31428409498767
+          }
+        }
+      }
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "project": "Validation diagnostic, not unseen",
+      "roi_only": true,
+      "source_sha256": "5683d5869e3a781d7a76eb31423384cc579962d290089902f3239e3b299c592d",
+      "gt_symbols": 3,
+      "gt_edges": 2,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 3,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 0,
+              "fn": 2,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 91,
+          "full_page_connections": 48,
+          "conditional_endpoints": {
+            "eligible": 0,
+            "recovered": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 2
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 54,
+          "junctions": 31,
+          "timing": {
+            "seconds": [
+              6.291822756000329
+            ],
+            "median": 6.291822756000329
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 2,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 0,
+              "fn": 1,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 170,
+          "full_page_connections": 136,
+          "conditional_endpoints": {
+            "eligible": 1,
+            "recovered": 1
+          },
+          "miss_attribution": {
+            "recovered": 1,
+            "missing_symbol": 1
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 159,
+          "junctions": 55,
+          "timing": {
+            "seconds": [
+              7.423576030007098
+            ],
+            "median": 7.423576030007098
+          }
+        }
+      }
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "project": "Validation diagnostic, not unseen",
+      "roi_only": true,
+      "source_sha256": "5551e8e7bcfb2a2554966d0a9133b670588bd07f7a71caf21e1d9bac6394a2c6",
+      "gt_symbols": 4,
+      "gt_edges": 4,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1": 0.3333333333333333
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 59,
+          "full_page_connections": 58,
+          "conditional_endpoints": {
+            "eligible": 0,
+            "recovered": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 4
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 57,
+          "junctions": 26,
+          "timing": {
+            "seconds": [
+              5.3954696230066475
+            ],
+            "median": 5.3954696230066475
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 1,
+              "fp": 1,
+              "fn": 3,
+              "precision": 0.5,
+              "recall": 0.25,
+              "f1": 0.3333333333333333
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 4,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 97,
+          "full_page_connections": 93,
+          "conditional_endpoints": {
+            "eligible": 0,
+            "recovered": 0
+          },
+          "miss_attribution": {
+            "missing_symbol": 4
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 89,
+          "junctions": 57,
+          "timing": {
+            "seconds": [
+              6.059565622010268
+            ],
+            "median": 6.059565622010268
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic",
+      "id": "9",
+      "project": "Synthetic historical regression",
+      "roi_only": false,
+      "source_sha256": "782d49193ee26b41226940213b7453e83fe9554eed8299453f6de1cdcc80fa7b",
+      "gt_symbols": 66,
+      "gt_edges": 763,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 13,
+              "fn": 0,
+              "precision": 0.8354430379746836,
+              "recall": 1.0,
+              "f1": 0.9103448275862069
+            },
+            "connections": {
+              "tp": 166,
+              "fp": 60,
+              "fn": 597,
+              "precision": 0.7345132743362832,
+              "recall": 0.21756225425950196,
+              "f1": 0.3356926188068756
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 79,
+          "full_page_connections": 226,
+          "conditional_endpoints": {
+            "eligible": 763,
+            "recovered": 166
+          },
+          "miss_attribution": {
+            "routing": 597,
+            "recovered": 166
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 132,
+          "junctions": 106,
+          "timing": {
+            "seconds": [
+              5.949687560001621
+            ],
+            "median": 5.949687560001621
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 115,
+              "fn": 0,
+              "precision": 0.36464088397790057,
+              "recall": 1.0,
+              "f1": 0.5344129554655871
+            },
+            "connections": {
+              "tp": 30,
+              "fp": 147,
+              "fn": 733,
+              "precision": 0.1694915254237288,
+              "recall": 0.039318479685452164,
+              "f1": 0.06382978723404255
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 181,
+          "full_page_connections": 177,
+          "conditional_endpoints": {
+            "eligible": 763,
+            "recovered": 30
+          },
+          "miss_attribution": {
+            "routing": 733,
+            "recovered": 30
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 333,
+          "junctions": 71,
+          "timing": {
+            "seconds": [
+              6.659083372011082
+            ],
+            "median": 6.659083372011082
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic",
+      "id": "34",
+      "project": "Synthetic historical regression",
+      "roi_only": false,
+      "source_sha256": "d576093c78e7ea564bf8a513f66d2a4f9fcc6c4055b0774c860039f6a30a84c5",
+      "gt_symbols": 72,
+      "gt_edges": 547,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 72,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.972972972972973,
+              "recall": 1.0,
+              "f1": 0.9863013698630136
+            },
+            "connections": {
+              "tp": 161,
+              "fp": 6,
+              "fn": 386,
+              "precision": 0.9640718562874252,
+              "recall": 0.2943327239488117,
+              "f1": 0.45098039215686275
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 74,
+          "full_page_connections": 167,
+          "conditional_endpoints": {
+            "eligible": 547,
+            "recovered": 161
+          },
+          "miss_attribution": {
+            "recovered": 161,
+            "routing": 386
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 145,
+          "junctions": 102,
+          "timing": {
+            "seconds": [
+              5.955228229984641
+            ],
+            "median": 5.955228229984641
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 72,
+              "fp": 84,
+              "fn": 0,
+              "precision": 0.46153846153846156,
+              "recall": 1.0,
+              "f1": 0.631578947368421
+            },
+            "connections": {
+              "tp": 84,
+              "fp": 128,
+              "fn": 463,
+              "precision": 0.39622641509433965,
+              "recall": 0.15356489945155394,
+              "f1": 0.22134387351778656
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 156,
+          "full_page_connections": 212,
+          "conditional_endpoints": {
+            "eligible": 547,
+            "recovered": 84
+          },
+          "miss_attribution": {
+            "recovered": 84,
+            "routing": 463
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 319,
+          "junctions": 78,
+          "timing": {
+            "seconds": [
+              6.824772305000806
+            ],
+            "median": 6.824772305000806
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic",
+      "id": "385",
+      "project": "Synthetic historical regression",
+      "roi_only": false,
+      "source_sha256": "795416befd7828eda31c88e4348e7a5d32996406fbc6a8ffd4837b3b06e691e8",
+      "gt_symbols": 64,
+      "gt_edges": 724,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 15,
+              "fn": 0,
+              "precision": 0.810126582278481,
+              "recall": 1.0,
+              "f1": 0.8951048951048951
+            },
+            "connections": {
+              "tp": 235,
+              "fp": 51,
+              "fn": 489,
+              "precision": 0.8216783216783217,
+              "recall": 0.324585635359116,
+              "f1": 0.46534653465346537
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 79,
+          "full_page_connections": 286,
+          "conditional_endpoints": {
+            "eligible": 724,
+            "recovered": 235
+          },
+          "miss_attribution": {
+            "routing": 489,
+            "recovered": 235
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 138,
+          "junctions": 109,
+          "timing": {
+            "seconds": [
+              6.092750975978561
+            ],
+            "median": 6.092750975978561
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 64,
+              "fp": 122,
+              "fn": 0,
+              "precision": 0.34408602150537637,
+              "recall": 1.0,
+              "f1": 0.512
+            },
+            "connections": {
+              "tp": 26,
+              "fp": 187,
+              "fn": 698,
+              "precision": 0.12206572769953052,
+              "recall": 0.03591160220994475,
+              "f1": 0.05549626467449306
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 186,
+          "full_page_connections": 213,
+          "conditional_endpoints": {
+            "eligible": 724,
+            "recovered": 26
+          },
+          "miss_attribution": {
+            "routing": 698,
+            "recovered": 26
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 326,
+          "junctions": 80,
+          "timing": {
+            "seconds": [
+              6.885634374018991
+            ],
+            "median": 6.885634374018991
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic",
+      "id": "285",
+      "project": "Synthetic historical regression",
+      "roi_only": false,
+      "source_sha256": "eddbe6d1b92e76f94fb9633cb57ff1cba0c55a514035439cfa0e914f7829c278",
+      "gt_symbols": 68,
+      "gt_edges": 1189,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 68,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.9714285714285714,
+              "recall": 1.0,
+              "f1": 0.9855072463768116
+            },
+            "connections": {
+              "tp": 231,
+              "fp": 18,
+              "fn": 958,
+              "precision": 0.927710843373494,
+              "recall": 0.19428090832632464,
+              "f1": 0.32127955493741306
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 70,
+          "full_page_connections": 249,
+          "conditional_endpoints": {
+            "eligible": 1189,
+            "recovered": 231
+          },
+          "miss_attribution": {
+            "recovered": 231,
+            "routing": 958
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 134,
+          "junctions": 113,
+          "timing": {
+            "seconds": [
+              6.5779248740000185
+            ],
+            "median": 6.5779248740000185
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 68,
+              "fp": 87,
+              "fn": 0,
+              "precision": 0.43870967741935485,
+              "recall": 1.0,
+              "f1": 0.6098654708520179
+            },
+            "connections": {
+              "tp": 57,
+              "fp": 93,
+              "fn": 1132,
+              "precision": 0.38,
+              "recall": 0.0479394449116905,
+              "f1": 0.08513816280806571
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 155,
+          "full_page_connections": 150,
+          "conditional_endpoints": {
+            "eligible": 1189,
+            "recovered": 57
+          },
+          "miss_attribution": {
+            "routing": 1132,
+            "recovered": 57
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 274,
+          "junctions": 86,
+          "timing": {
+            "seconds": [
+              7.498989184008678
+            ],
+            "median": 7.498989184008678
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic",
+      "id": "317",
+      "project": "Synthetic historical regression",
+      "roi_only": false,
+      "source_sha256": "0b65775ed999f61ad7127f53badd919723f79ee303049cf4b8735584d3bf746e",
+      "gt_symbols": 78,
+      "gt_edges": 726,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 78,
+              "fp": 2,
+              "fn": 0,
+              "precision": 0.975,
+              "recall": 1.0,
+              "f1": 0.9873417721518988
+            },
+            "connections": {
+              "tp": 308,
+              "fp": 24,
+              "fn": 418,
+              "precision": 0.927710843373494,
+              "recall": 0.42424242424242425,
+              "f1": 0.5822306238185255
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 80,
+          "full_page_connections": 332,
+          "conditional_endpoints": {
+            "eligible": 726,
+            "recovered": 308
+          },
+          "miss_attribution": {
+            "routing": 418,
+            "recovered": 308
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 148,
+          "junctions": 130,
+          "timing": {
+            "seconds": [
+              6.444540283002425
+            ],
+            "median": 6.444540283002425
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 78,
+              "fp": 87,
+              "fn": 0,
+              "precision": 0.4727272727272727,
+              "recall": 1.0,
+              "f1": 0.6419753086419753
+            },
+            "connections": {
+              "tp": 93,
+              "fp": 139,
+              "fn": 633,
+              "precision": 0.40086206896551724,
+              "recall": 0.128099173553719,
+              "f1": 0.1941544885177453
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 165,
+          "full_page_connections": 232,
+          "conditional_endpoints": {
+            "eligible": 726,
+            "recovered": 93
+          },
+          "miss_attribution": {
+            "routing": 633,
+            "recovered": 93
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 311,
+          "junctions": 87,
+          "timing": {
+            "seconds": [
+              7.229958178999368
+            ],
+            "median": 7.229958178999368
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic",
+      "id": "281",
+      "project": "Synthetic historical regression",
+      "roi_only": false,
+      "source_sha256": "e1512dc259a492aed45d6bb6ea8045ade03623f72aff70b23e93df9941bc21a3",
+      "gt_symbols": 65,
+      "gt_edges": 580,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 65,
+              "fp": 6,
+              "fn": 0,
+              "precision": 0.9154929577464789,
+              "recall": 1.0,
+              "f1": 0.9558823529411765
+            },
+            "connections": {
+              "tp": 245,
+              "fp": 26,
+              "fn": 335,
+              "precision": 0.9040590405904059,
+              "recall": 0.4224137931034483,
+              "f1": 0.5757931844888367
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 71,
+          "full_page_connections": 271,
+          "conditional_endpoints": {
+            "eligible": 580,
+            "recovered": 245
+          },
+          "miss_attribution": {
+            "routing": 335,
+            "recovered": 245
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 131,
+          "junctions": 112,
+          "timing": {
+            "seconds": [
+              6.380163245019503
+            ],
+            "median": 6.380163245019503
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 65,
+              "fp": 120,
+              "fn": 0,
+              "precision": 0.35135135135135137,
+              "recall": 1.0,
+              "f1": 0.52
+            },
+            "connections": {
+              "tp": 61,
+              "fp": 266,
+              "fn": 519,
+              "precision": 0.18654434250764526,
+              "recall": 0.10517241379310345,
+              "f1": 0.1345093715545755
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 185,
+          "full_page_connections": 327,
+          "conditional_endpoints": {
+            "eligible": 580,
+            "recovered": 61
+          },
+          "miss_attribution": {
+            "routing": 519,
+            "recovered": 61
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 302,
+          "junctions": 67,
+          "timing": {
+            "seconds": [
+              7.123011793009937
+            ],
+            "median": 7.123011793009937
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic",
+      "id": "82",
+      "project": "Synthetic historical regression",
+      "roi_only": false,
+      "source_sha256": "d94e6e63eef205dd26248d9935f4bad316f3763a7c8d7b18ac1f93b845f87a3e",
+      "gt_symbols": 66,
+      "gt_edges": 1138,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 7,
+              "fn": 0,
+              "precision": 0.9041095890410958,
+              "recall": 1.0,
+              "f1": 0.9496402877697842
+            },
+            "connections": {
+              "tp": 208,
+              "fp": 36,
+              "fn": 930,
+              "precision": 0.8524590163934426,
+              "recall": 0.1827768014059754,
+              "f1": 0.30101302460202606
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 73,
+          "full_page_connections": 244,
+          "conditional_endpoints": {
+            "eligible": 1138,
+            "recovered": 208
+          },
+          "miss_attribution": {
+            "recovered": 208,
+            "routing": 930
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 136,
+          "junctions": 151,
+          "timing": {
+            "seconds": [
+              5.973094373999629
+            ],
+            "median": 5.973094373999629
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 66,
+              "fp": 91,
+              "fn": 0,
+              "precision": 0.42038216560509556,
+              "recall": 1.0,
+              "f1": 0.5919282511210763
+            },
+            "connections": {
+              "tp": 23,
+              "fp": 267,
+              "fn": 1115,
+              "precision": 0.07931034482758621,
+              "recall": 0.020210896309314587,
+              "f1": 0.03221288515406162
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 157,
+          "full_page_connections": 290,
+          "conditional_endpoints": {
+            "eligible": 1138,
+            "recovered": 23
+          },
+          "miss_attribution": {
+            "routing": 1115,
+            "recovered": 23
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 324,
+          "junctions": 56,
+          "timing": {
+            "seconds": [
+              6.742111301980913
+            ],
+            "median": 6.742111301980913
+          }
+        }
+      }
+    },
+    {
+      "group": "synthetic",
+      "id": "382",
+      "project": "Synthetic historical regression",
+      "roi_only": false,
+      "source_sha256": "f14bc0299dab1ee0d7b36f5f0b0c24c3e18dea5857d66ff14963056b6ffd479b",
+      "gt_symbols": 98,
+      "gt_edges": 919,
+      "variants": {
+        "v8": {
+          "scores": {
+            "localization": {
+              "tp": 96,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.9795918367346939,
+              "f1": 0.9896907216494846
+            },
+            "connections": {
+              "tp": 378,
+              "fp": 2,
+              "fn": 541,
+              "precision": 0.9947368421052631,
+              "recall": 0.41131664853101196,
+              "f1": 0.581986143187067
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 96,
+          "full_page_connections": 380,
+          "conditional_endpoints": {
+            "eligible": 910,
+            "recovered": 378
+          },
+          "miss_attribution": {
+            "routing": 532,
+            "recovered": 378,
+            "missing_symbol": 9
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 181,
+          "junctions": 136,
+          "timing": {
+            "seconds": [
+              6.637975568999536
+            ],
+            "median": 6.637975568999536
+          }
+        },
+        "v9": {
+          "scores": {
+            "localization": {
+              "tp": 98,
+              "fp": 92,
+              "fn": 0,
+              "precision": 0.5157894736842106,
+              "recall": 1.0,
+              "f1": 0.6805555555555556
+            },
+            "connections": {
+              "tp": 81,
+              "fp": 184,
+              "fn": 838,
+              "precision": 0.30566037735849055,
+              "recall": 0.088139281828074,
+              "f1": 0.13682432432432431
+            },
+            "classified_correct": 0
+          },
+          "full_page_symbols": 190,
+          "full_page_connections": 265,
+          "conditional_endpoints": {
+            "eligible": 919,
+            "recovered": 81
+          },
+          "miss_attribution": {
+            "routing": 838,
+            "recovered": 81
+          },
+          "edge_subsets": {},
+          "deterministic": true,
+          "neural_tiles": 25,
+          "detail_tiles": 0,
+          "ports": 373,
+          "junctions": 84,
+          "timing": {
+            "seconds": [
+              7.427653715974884
+            ],
+            "median": 7.427653715974884
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "all": {
+      "all": {
+        "v8": {
+          "localization": {
+            "tp": 926,
+            "fp": 55,
+            "fn": 49,
+            "precision": 0.9439347604485219,
+            "recall": 0.9497435897435897,
+            "f1": 0.9468302658486708
+          },
+          "connections": {
+            "tp": 2321,
+            "fp": 337,
+            "fn": 5174,
+            "precision": 0.8732129420617005,
+            "recall": 0.30967311541027354,
+            "f1": 0.457204767063922
+          },
+          "mean_sheet_median_seconds": 6.126222604293349,
+          "miss_attribution": {
+            "recovered": 2321,
+            "routing": 5002,
+            "missing_symbol": 172
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 935,
+            "fp": 923,
+            "fn": 40,
+            "precision": 0.5032292787944026,
+            "recall": 0.958974358974359,
+            "f1": 0.6600776561948465
+          },
+          "connections": {
+            "tp": 864,
+            "fp": 1602,
+            "fn": 6631,
+            "precision": 0.35036496350364965,
+            "recall": 0.11527685123415611,
+            "f1": 0.17347655857845598
+          },
+          "mean_sheet_median_seconds": 6.871677474825821,
+          "miss_attribution": {
+            "recovered": 864,
+            "routing": 6452,
+            "missing_symbol": 179
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    "group": {
+      "open100": {
+        "v8": {
+          "localization": {
+            "tp": 339,
+            "fp": 7,
+            "fn": 41,
+            "precision": 0.9797687861271677,
+            "recall": 0.8921052631578947,
+            "f1": 0.9338842975206612
+          },
+          "connections": {
+            "tp": 343,
+            "fp": 113,
+            "fn": 505,
+            "precision": 0.7521929824561403,
+            "recall": 0.4044811320754717,
+            "f1": 0.5260736196319018
+          },
+          "mean_sheet_median_seconds": 6.296224766503049,
+          "miss_attribution": {
+            "recovered": 343,
+            "routing": 348,
+            "missing_symbol": 157
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 344,
+            "fp": 124,
+            "fn": 36,
+            "precision": 0.7350427350427351,
+            "recall": 0.9052631578947369,
+            "f1": 0.8113207547169812
+          },
+          "connections": {
+            "tp": 362,
+            "fp": 190,
+            "fn": 486,
+            "precision": 0.6557971014492754,
+            "recall": 0.4268867924528302,
+            "f1": 0.5171428571428571
+          },
+          "mean_sheet_median_seconds": 6.938312850004877,
+          "miss_attribution": {
+            "recovered": 362,
+            "routing": 312,
+            "missing_symbol": 174
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "pahala": {
+        "v8": {
+          "localization": {
+            "tp": 11,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 46,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.8363636363636363,
+            "f1": 0.9108910891089109
+          },
+          "mean_sheet_median_seconds": 4.669778183975723,
+          "miss_attribution": {
+            "recovered": 46,
+            "routing": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 11,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "connections": {
+            "tp": 46,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.8363636363636363,
+            "f1": 0.9108910891089109
+          },
+          "mean_sheet_median_seconds": 5.31428409498767,
+          "miss_attribution": {
+            "recovered": 46,
+            "routing": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "synthetic": {
+        "v8": {
+          "localization": {
+            "tp": 575,
+            "fp": 47,
+            "fn": 2,
+            "precision": 0.9244372990353698,
+            "recall": 0.9965337954939342,
+            "f1": 0.9591326105087573
+          },
+          "connections": {
+            "tp": 1932,
+            "fp": 223,
+            "fn": 4654,
+            "precision": 0.8965197215777262,
+            "recall": 0.29334952930458547,
+            "f1": 0.4420546848186706
+          },
+          "mean_sheet_median_seconds": 6.251420638873242,
+          "miss_attribution": {
+            "routing": 4645,
+            "recovered": 1932,
+            "missing_symbol": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 577,
+            "fp": 798,
+            "fn": 0,
+            "precision": 0.41963636363636364,
+            "recall": 1.0,
+            "f1": 0.5911885245901639
+          },
+          "connections": {
+            "tp": 455,
+            "fp": 1411,
+            "fn": 6131,
+            "precision": 0.24383708467309753,
+            "recall": 0.06908593987245673,
+            "f1": 0.10766682442025556
+          },
+          "mean_sheet_median_seconds": 7.0489017781255825,
+          "miss_attribution": {
+            "routing": 6131,
+            "recovered": 455
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "virden": {
+        "v8": {
+          "localization": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.5,
+            "recall": 0.14285714285714285,
+            "f1": 0.2222222222222222
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "mean_sheet_median_seconds": 5.843646189503488,
+          "miss_attribution": {
+            "missing_symbol": 6
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 3,
+            "fp": 1,
+            "fn": 4,
+            "precision": 0.75,
+            "recall": 0.42857142857142855,
+            "f1": 0.5454545454545454
+          },
+          "connections": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 5,
+            "precision": 0.5,
+            "recall": 0.16666666666666666,
+            "f1": 0.25
+          },
+          "mean_sheet_median_seconds": 6.741570826008683,
+          "miss_attribution": {
+            "recovered": 1,
+            "missing_symbol": 5
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    },
+    "project": {
+      "OPEN100 historical regression": {
+        "v8": {
+          "localization": {
+            "tp": 339,
+            "fp": 7,
+            "fn": 41,
+            "precision": 0.9797687861271677,
+            "recall": 0.8921052631578947,
+            "f1": 0.9338842975206612
+          },
+          "connections": {
+            "tp": 343,
+            "fp": 113,
+            "fn": 505,
+            "precision": 0.7521929824561403,
+            "recall": 0.4044811320754717,
+            "f1": 0.5260736196319018
+          },
+          "mean_sheet_median_seconds": 6.296224766503049,
+          "miss_attribution": {
+            "recovered": 343,
+            "routing": 348,
+            "missing_symbol": 157
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 344,
+            "fp": 124,
+            "fn": 36,
+            "precision": 0.7350427350427351,
+            "recall": 0.9052631578947369,
+            "f1": 0.8113207547169812
+          },
+          "connections": {
+            "tp": 362,
+            "fp": 190,
+            "fn": 486,
+            "precision": 0.6557971014492754,
+            "recall": 0.4268867924528302,
+            "f1": 0.5171428571428571
+          },
+          "mean_sheet_median_seconds": 6.938312850004877,
+          "miss_attribution": {
+            "recovered": 362,
+            "routing": 312,
+            "missing_symbol": 174
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "Synthetic historical regression": {
+        "v8": {
+          "localization": {
+            "tp": 575,
+            "fp": 47,
+            "fn": 2,
+            "precision": 0.9244372990353698,
+            "recall": 0.9965337954939342,
+            "f1": 0.9591326105087573
+          },
+          "connections": {
+            "tp": 1932,
+            "fp": 223,
+            "fn": 4654,
+            "precision": 0.8965197215777262,
+            "recall": 0.29334952930458547,
+            "f1": 0.4420546848186706
+          },
+          "mean_sheet_median_seconds": 6.251420638873242,
+          "miss_attribution": {
+            "routing": 4645,
+            "recovered": 1932,
+            "missing_symbol": 9
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 577,
+            "fp": 798,
+            "fn": 0,
+            "precision": 0.41963636363636364,
+            "recall": 1.0,
+            "f1": 0.5911885245901639
+          },
+          "connections": {
+            "tp": 455,
+            "fp": 1411,
+            "fn": 6131,
+            "precision": 0.24383708467309753,
+            "recall": 0.06908593987245673,
+            "f1": 0.10766682442025556
+          },
+          "mean_sheet_median_seconds": 7.0489017781255825,
+          "miss_attribution": {
+            "routing": 6131,
+            "recovered": 455
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      },
+      "Validation diagnostic, not unseen": {
+        "v8": {
+          "localization": {
+            "tp": 12,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.9230769230769231,
+            "recall": 0.6666666666666666,
+            "f1": 0.7741935483870968
+          },
+          "connections": {
+            "tp": 46,
+            "fp": 1,
+            "fn": 15,
+            "precision": 0.9787234042553191,
+            "recall": 0.7540983606557377,
+            "f1": 0.8518518518518519
+          },
+          "mean_sheet_median_seconds": 5.452356854327566,
+          "miss_attribution": {
+            "recovered": 46,
+            "routing": 9,
+            "missing_symbol": 6
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        },
+        "v9": {
+          "localization": {
+            "tp": 14,
+            "fp": 1,
+            "fn": 4,
+            "precision": 0.9333333333333333,
+            "recall": 0.7777777777777778,
+            "f1": 0.8484848484848485
+          },
+          "connections": {
+            "tp": 47,
+            "fp": 1,
+            "fn": 14,
+            "precision": 0.9791666666666666,
+            "recall": 0.7704918032786885,
+            "f1": 0.8623853211009175
+          },
+          "mean_sheet_median_seconds": 6.265808582335012,
+          "miss_attribution": {
+            "recovered": 47,
+            "routing": 9,
+            "missing_symbol": 5
+          },
+          "edge_subsets": {
+            "dashed": {
+              "recovered": 0,
+              "total": 0
+            },
+            "branch": {
+              "recovered": 0,
+              "total": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

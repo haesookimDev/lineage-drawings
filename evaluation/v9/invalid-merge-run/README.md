@@ -1,0 +1,1 @@
+These are nonconforming pre-release runs from commit3914283. They were never deployed. Reports are preserved verbatim for failure audit; full prediction payloads remain local in .benchmark-data/v9-invalid-merge-predictions. Reproduce with the original FROZEN.json and commit3914283, not the corrected runtime. Do not use these metrics as final results.
