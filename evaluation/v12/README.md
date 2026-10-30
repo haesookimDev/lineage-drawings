@@ -1,0 +1,13 @@
+# Reproduce v12
+
+Python3.12, requirements-dev.txt, OpenCV2threads and OMP_NUM_THREADS=1. ML-only training additionally uses the existing YOLOX source/runtime under `.benchmark-data` and Torch/ONNX; these dependencies are not in the production image.
+
+- Training: `prepare_symbols.py`, `train_symbols.py`, `export_symbols.py` record the initial BN-updating failure. `train_symbols_frozen.py` produces the selected frozen-BN epoch4 checkpoint. Run `export_symbols.py frozen-bn-epoch-4` for its graph/input640 export, warm-starting the original v6/v9 endpoints. Checkpoints stay ignored; deployed ONNX and SHA are in `backend/assets/symbol-neural.*`.
+- `train_joint.py`: shared three-head point encoder with source manifest and procedural scene seeds recorded in JOINT-TRAINING.json; disabled by default after development ablation.
+- `validate_pipeline.py`: 20 previous development pages ×5 fixed ablations. This script writes ignored full OCR/raw predictions. Its shared-cache timing is diagnostic, **not cold latency**. EXPANDED-PRESERVATION.json rescored the existing v10 expanded labels on these same full predictions.
+- `evaluate.py`: baseline historical commit versus selected working extractor, fixed4 new-project ROIs, 3 alternating paired cold repetitions. Requires official sources rendered to4800max side at `.benchmark-data/v12-held/{peterhead,epa-wtp}/pN-4800.png` and exact hashes in new-project-labels.json. Source PDFs and crops are not redistributed. PyMuPDF pixmaps use scale4800/max(page.rect.width,page.rect.height), RGB/no alpha.
+- OCR fingerprints for timing used the same Bookworm Tesseract binary and eng/kor traineddata as production, made available locally at `/tmp/lineage-ocr-bookworm/bin`. Runtime diagnostics and warnings are in HELD-OUT.json. Running a different OCR installation may change word counts, text masks and topology.
+- Selection, annotation and extraction source hashes were written **before first new-project model inference**. Do not overwrite the evidence files and present a retuned rerun as the original holdout. New tuning makes these projects development data and requires another unseen project.
+- `pytest -q` verifies PDF region coordinate recovery/repeated tags, zero-proposal detail recovery, preserved base boxes, joint output contract, proposal-only semantics, immutable predictions, CAS, forged/stale evidence rejection and proposal dry-run evaluation.
+
+New ground truth is a single AI source annotation pilot, not expert certified. Some target classes include separate operator boxes; evaluation is class-agnostic IoU.5 with a predeclared ROI/ignore scope. Raw OCR/document observations remain ignored and must not be committed. `comparison.png` is an original metric chart with no source drawing pixels.

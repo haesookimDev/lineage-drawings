@@ -99,6 +99,24 @@ def initialize():
         CREATE TABLE IF NOT EXISTS comparisons (
           id TEXT PRIMARY KEY, created TEXT NOT NULL, specification TEXT NOT NULL,
           result TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS legend_templates (
+          id TEXT PRIMARY KEY, page_id TEXT NOT NULL REFERENCES pages(id),
+          project_id TEXT NOT NULL REFERENCES projects(id), name TEXT NOT NULL,
+          concept_id TEXT REFERENCES concepts(id), status TEXT NOT NULL,
+          version INTEGER NOT NULL, payload TEXT NOT NULL, reviewer TEXT NOT NULL,
+          created TEXT NOT NULL, updated TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS assistance_runs (
+          id TEXT PRIMARY KEY, page_id TEXT NOT NULL REFERENCES pages(id),
+          kind TEXT NOT NULL, input_sha256 TEXT NOT NULL, created TEXT NOT NULL,
+          payload TEXT NOT NULL);
+        CREATE TABLE IF NOT EXISTS correction_proposals (
+          id TEXT PRIMARY KEY, page_id TEXT NOT NULL REFERENCES pages(id),
+          run_id TEXT NOT NULL REFERENCES assistance_runs(id), kind TEXT NOT NULL,
+          source TEXT NOT NULL, status TEXT NOT NULL, version INTEGER NOT NULL,
+          payload TEXT NOT NULL, reviewer TEXT NOT NULL, created TEXT NOT NULL,
+          updated TEXT NOT NULL);
+        CREATE INDEX IF NOT EXISTS idx_assistance_page ON assistance_runs(page_id);
+        CREATE INDEX IF NOT EXISTS idx_proposal_page ON correction_proposals(page_id);
         ''')
         db.execute("UPDATE documents SET status='queued' WHERE status='processing'")
 

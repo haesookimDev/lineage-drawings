@@ -75,7 +75,7 @@ def port_hints(bgr):
  return sorted(hints,key=lambda z:(-z[1],-min((z[0][2]-z[0][0])*sw,(z[0][3]-z[0][1])*sh),z[0]))[:150]
 
 
-def detect(image,threshold=None,meta_override=None):
+def detect(image,threshold=None,meta_override=None,proposal_hints=None):
  net,meta=model()
  if net is None:return []
  meta={**meta,**(meta_override or {})};cut=meta['threshold'] if threshold is None else threshold
@@ -108,12 +108,19 @@ def detect(image,threshold=None,meta_override=None):
  hints=port_hints(bgr) if budget and meta.get('detail_hint_mode')=='ports' else []
  # Allocate half the small budget to visible two-sided pipe contacts, including
  # glyphs that generated no low-confidence network proposal at all.
+ if budget and meta.get('detail_hint_mode')=='hybrid':
+  from .geometry import _iou
+  accepted=[b for b,s,_ in found if s>=cut]
+  resolved=proposal_hints() if callable(proposal_hints) else proposal_hints
+  missing=[b for b in (resolved or []) if not any(_iou(b,a)>.25 for a in accepted) and 5<=min((b[2]-b[0])*w,(b[3]-b[1])*h)<=85]
+  # Independent geometry can seed glyphs with no detector proposal at all.
+  hints=[(b,1.) for b in missing[:40]]
  seeds=[(b,1.) for b,_ in hints[:max(3,budget//2)*4]]+seeds if hints else seeds
  geometric_budget=max(0,budget//2);geometric_count=0
  for box,score in seeds:
   if len(details)>=budget:break
   if score==1. and geometric_count>=geometric_budget:continue
-  cx,cy=(box[0]+box[2])*w/2,(box[1]+box[3])*h/2;tile=512;x=int(np.clip(cx-tile/2,0,max(0,w-tile)));y=int(np.clip(cy-tile/2,0,max(0,h-tile)))
+  cx,cy=(box[0]+box[2])*w/2,(box[1]+box[3])*h/2;tile=int(np.clip(meta.get('detail_tile_size',512),256,640));x=int(np.clip(cx-tile/2,0,max(0,w-tile)));y=int(np.clip(cy-tile/2,0,max(0,h-tile)))
   if any(abs(x-a)<tile*.65 and abs(y-b)<tile*.65 for a,b,_,_,_ in details):continue
   details.append((x,y,min(w,x+tile),min(h,y+tile),'detail'))
   if score==1.:geometric_count+=1
@@ -121,7 +128,17 @@ def detect(image,threshold=None,meta_override=None):
  detail_count=len(details);regions+=details;found=[(b,s,k) for b,s,k in found if s>=cut]
  if not found:return []
  boxes=[[b[0]*w,b[1]*h,(b[2]-b[0])*w,(b[3]-b[1])*h] for b,_,_ in found];scores=[s for _,s,_ in found]
- kept=cv2.dnn.NMSBoxes(boxes,scores,float(cut)-1e-5,.4,top_k=1000);result=[]
- for i in np.asarray(kept).ravel()[:200]:
+ base_ids=[i for i,(_,_,k) in enumerate(found) if k!='detail'];detail_ids=[i for i,(_,_,k) in enumerate(found) if k=='detail']
+ def suppress(indices):
+  if not indices:return []
+  kept=cv2.dnn.NMSBoxes([boxes[i] for i in indices],[scores[i] for i in indices],float(cut)-1e-5,.4,top_k=1000)
+  return [indices[int(j)] for j in np.asarray(kept).ravel()]
+ kept_base=suppress(base_ids)
+ # Refinement adds missing glyphs; it cannot replace good base localization
+ # or push existing candidates out of the fixed200-symbol budget.
+ from .geometry import _iou
+ detail_ids=[i for i in detail_ids if not any(_iou(found[i][0],found[j][0])>.2 for j in kept_base)]
+ kept=(kept_base+suppress(detail_ids))[:200];result=[]
+ for i in kept:
   box,score,kind=found[int(i)];result.append((box,{'geometry':'neural_symbol','model':meta.get('model','yolox-nano-symbol-v1'),'symbol_detector':'yolox-nano-symbol-v1','symbol_model_sha256':meta['weights_sha256'],'detector_score':score,'requires_review':True,'inference_view':kind,'source_size':[w,h],'tile_count':len(regions),'detail_tile_count':detail_count}))
  return result

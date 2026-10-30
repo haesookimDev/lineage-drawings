@@ -1,0 +1,59 @@
+{
+  "role": "Separate source legend pages, visually cropped before first extraction. Not target answer crops. Source pixels serve as runtime context only. Fixed threshold .48, max20 candidates; rotation0/90/180/270 and5scales. No test threshold selection.",
+  "templates": [
+    {
+      "project": "peterhead",
+      "page": 12,
+      "bbox_pixels": [
+        528,
+        733,
+        584,
+        786
+      ],
+      "id": "field",
+      "name": "Field mounted instrument",
+      "mode": "outline",
+      "source_image_sha256": "e04a28b5b99d3bea5e8b6abb2279b501117d6107a3b955f272852478316159dc",
+      "viewer_size": [
+        2400,
+        1696
+      ]
+    },
+    {
+      "project": "peterhead",
+      "page": 12,
+      "bbox_pixels": [
+        528,
+        864,
+        584,
+        915
+      ],
+      "id": "panel",
+      "name": "Local panel instrument",
+      "mode": "full",
+      "source_image_sha256": "e04a28b5b99d3bea5e8b6abb2279b501117d6107a3b955f272852478316159dc",
+      "viewer_size": [
+        2400,
+        1696
+      ]
+    },
+    {
+      "project": "epa-wtp",
+      "page": 8,
+      "bbox_pixels": [
+        803,
+        347,
+        843,
+        374
+      ],
+      "id": "ball",
+      "name": "Ball valve",
+      "mode": "full",
+      "source_image_sha256": "3db71111a1b8375787afff36cfc09f0cfbcaec36a777d625a105e095a9c7d2e7",
+      "viewer_size": [
+        2400,
+        1620
+      ]
+    }
+  ]
+}

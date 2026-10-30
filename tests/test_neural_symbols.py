@@ -70,10 +70,35 @@ def test_test_pages_disjoint_from_training_and_validation():
   assert new.isdisjoint(used)
  labels=root/'evaluation/v6/new-page-labels.json';assert hashlib.sha256(labels.read_bytes()).hexdigest()==json.loads((root/'evaluation/v6/LABELS-FROZEN.json').read_text())['sha256']
 
+def test_geometry_hint_recovers_glyph_without_any_neural_seed(monkeypatch):
+ class Net:
+  calls=0
+  def setInput(self,x):pass
+  def forward(self):
+   self.calls+=1
+   return np.zeros((0,5)) if self.calls==1 else np.array([[200.,100.,240.,140.,.9]])
+ net=Net();monkeypatch.setattr(neural,'model',lambda:(net,{'threshold':.6,'detail_tiles':4,'detail_hint_mode':'hybrid','detail_tile_size':384,'weights_sha256':'fixture'}));monkeypatch.setattr(neural,'decode',lambda raw,size:raw)
+ im=Image.new('RGB',(1024,256),'white');__import__('PIL.ImageDraw',fromlist=['Draw']).Draw(im).line((0,120,1023,120),fill='black',width=2)
+ found=neural.detect(im,proposal_hints=lambda:[[.7,.4,.72,.48]])
+ assert net.calls==2 and len(found)==1 and found[0][1]['inference_view']=='detail'
+
+def test_detail_cannot_replace_good_base_localization(monkeypatch):
+ class Net:
+  calls=0
+  def setInput(self,x):pass
+  def forward(self):
+   self.calls+=1
+   return np.array([[200.,100.,220.,120.,.8],[230.,100.,250.,120.,.2]]) if self.calls==1 else np.array([[213.,266.,266.,320.,.99]])
+ net=Net();monkeypatch.setattr(neural,'model',lambda:(net,{'threshold':.6,'detail_tiles':4,'detail_tile_size':384,'weights_sha256':'fixture'}));monkeypatch.setattr(neural,'decode',lambda raw,size:raw)
+ im=Image.new('RGB',(1024,256),'white');__import__('PIL.ImageDraw',fromlist=['Draw']).Draw(im).line((0,120,1023,120),fill='black',width=2)
+ found=neural.detect(im)
+ assert net.calls==2 and len(found)==1 and found[0][1]['inference_view']=='tile'
+ assert found[0][0]==pytest.approx([320/1024,160/256,352/1024,192/256])
+
 
 def test_release_candidate_set_matches_the_validated_selection():
  root=Path(__file__).resolve().parents[1]
- selected=json.loads((root/'evaluation/v10/RELEASE-SELECTION.json').read_text())
+ selected=json.loads((root/'evaluation/v12/RELEASE-SELECTION.json').read_text())
  deployed=json.loads((root/'backend/assets/symbol-neural.json').read_text())
  assert deployed['merge_mode']==selected['validated_candidate_set']=='neural_only'
  assert deployed['weights_sha256']==selected['symbol_configuration']['weights_sha256']

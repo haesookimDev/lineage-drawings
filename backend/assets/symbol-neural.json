@@ -1,17 +1,19 @@
 {
-  "model": "yolox-nano-symbol-v10",
-  "weights_sha256": "64aa437392cc5d02134611bdae950dd1814e09d1f8c50b8baa79f1da59a300b5",
-  "v9_fraction": 0.5,
+  "model": "yolox-nano-symbol-v12",
+  "weights_sha256": "56ac65841a91cb60d816995335ba3def4f923d7ab25d7687b38d2bb64453a3ff",
   "threshold": 0.6,
-  "detail_tiles": 0,
+  "detail_tiles": 4,
   "tile_size": 1024,
   "overlap": 0.2,
   "input_size": 640,
   "merge_mode": "neural_only",
   "max_source_side": 4800,
   "max_tiles": 36,
-  "opencv_torch_max_abs_difference": 9.113550186157227e-05,
+  "opencv_torch_max_abs_difference": 6.58e-05,
   "score_note": "Generic single-model candidate; uncalibrated, requires human review.",
   "local_style_gate": true,
-  "selection": "Explicit regression repair selection on previous20 development pages/ROIs. New enlarged labels withheld; prior35 labels and OPEN1006-11 are now development. No gradient training/ensemble. See evaluation/v10/RELEASE-SELECTION.json."
+  "selection": "Frozen-BN epoch4 selected on20 prior development sheets and expanded prior-image labels before new-project inference. Joint model not promoted: lower OPEN100 recall. No test-specific rules. See evaluation/v12/RELEASE-SELECTION.json.",
+  "detail_hint_mode": "hybrid",
+  "detail_tile_size": 384,
+  "parallel_ocr": true
 }

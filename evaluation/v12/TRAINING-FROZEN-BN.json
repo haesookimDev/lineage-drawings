@@ -1,0 +1,48 @@
+{
+  "method": "Fine-tune convolutions with frozen BN statistics to preserve development scale behavior; former White Rose explicitly training + balanced replay; CPU",
+  "seed": 20261030,
+  "epochs": 4,
+  "steps_per_epoch": 32,
+  "batch": 4,
+  "learning_rate": 2e-05,
+  "initial_endpoints": [
+    {
+      "path": ".benchmark-data/v6-models/epoch-16.pth",
+      "sha256": "b3a5e44e405cce4a414a4babbc950bcd90701266f0b6dc9e971022ca279ebf86"
+    },
+    {
+      "path": ".benchmark-data/v9b-models/epoch-8.pth",
+      "sha256": "76f58e55ca3dfbb5cedcd2d1e5246eac82387c726bde1d363782804fe6f54c58"
+    }
+  ],
+  "new_project_exclusion": [
+    "fernald",
+    "epa-wtp",
+    "peterhead"
+  ],
+  "training_manifest_sha256": "7e119c136f8a5fa675c385a1f423957647843beb62ab836a78cec52f8d96b8ff",
+  "history": [
+    {
+      "epoch": 1,
+      "mean_loss": 1.9066230989992619,
+      "seconds": 15.078403601015452
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 1.6270535551011562,
+      "seconds": 11.146581822016742
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 1.7700231429189444,
+      "seconds": 12.359654386003967
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 1.5837141573429108,
+      "seconds": 11.285806533996947
+    }
+  ],
+  "seconds_so_far": 49.91142007097369,
+  "annotation_basis": "AI pilot, not expert-certified"
+}

@@ -1,0 +1,571 @@
+{
+  "freeze": {
+    "created_at": "2026-10-30T01:46:09.562432+00:00",
+    "baseline": "7e1c349c41c0bf92340d9c53d99629bb8bd4c8a3",
+    "labels_sha256": "0ccac5882217fae07d768b3b0283af963e4a89e244dcaf1efe674a6d5b957276",
+    "legend_sources_sha256": "1f26da8c989f7f75b54cfed4b29ad1df0a9a3ec260dbbed892ee386a164e4fee",
+    "release_selection_sha256": "09b98cbfc690834c741b7e6fa6a2d7e6c00a587dc0cf6b5fb5b86f9cbc754fba",
+    "sources": {
+      "backend/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "backend/assets/joint-context.json": "f4b39be4f41607e73c207853307291e1ec694305bfa2d775d937a9b77e4befa1",
+      "backend/assets/joint-context.onnx": "4e6accd5b95db0169620b9f627fa0003b095aa53dfa6972cbb031b0356b5ab68",
+      "backend/assets/junction-context.xml.gz": "bcfe23a3202d6eaeaf5b2e08b03c8da42c61d12800f1eba1b75d3ce3366bb20d",
+      "backend/assets/open100-dev-shapes.json": "cfb75898757040e9fe7867aff60a4ed995c63d2c3ea88efc650a2491c277e2fe",
+      "backend/assets/open100-dev-shapes.npz": "f840393429986e4465795f35ac5cad9b57a214099fa354fff4f6bbd5b52c31df",
+      "backend/assets/port-context.xml.gz": "2770da03a009fea7e22d8fd0234b2d21d3faf6cb4732169bb7d18ac197c1ddd5",
+      "backend/assets/symbol-neural.json": "092a8e3cea5461d9356ec776622d9eba5065fb5ccfc964e8b9f86a509c90a1bf",
+      "backend/assets/symbol-neural.onnx": "56ac65841a91cb60d816995335ba3def4f923d7ab25d7687b38d2bb64453a3ff",
+      "backend/assets/symbol-objectness.json": "6b0c086991c267c32f843e2c829a409a27e2b7c1d0846025b03be019d4b13c38",
+      "backend/assets/symbol-objectness.xml.gz": "97d87e31e4f98d3e8eda112db81460cafc181ff7866c757a203d656542367e21",
+      "backend/assets/topology-context.json": "398c2a8bea41769705541539daf0dfa85554e452d6e020503b8fe433583435fe",
+      "backend/assets/topology.json": "857a586ac77c5d659474e4206c3330a0b674767e9f41eb6d4378208ad015dd76",
+      "backend/assets/topology.onnx": "8bf87022618182573b2c5aef79d62df83b6c619cf28217bccd07048979ed3a8c",
+      "backend/extract.py": "ce0725f893af193c7f58711f53ea4f49d4056d96c6c347f99f602beba1d89d22",
+      "backend/geometry.py": "aa22460ced49d97f726b34c7f4e87370a65aaf5ebd9118ce92125abcec4bcede",
+      "backend/joint_context.py": "5f6268579d36c343d247ee80dc80fec264295bd749580d379aed34a7d8cbcf1e",
+      "backend/learned_symbols.py": "ac62b711072d428beb51887d26e17863a64ef8ed8fb1ef0c72e6f4baa3db03c9",
+      "backend/legacy_network.py": "bdd649018d7c5e51a653c2cfa1f38a35de8aa255e60a3ae3b14cb8ee562d001d",
+      "backend/legend.py": "28f142e525be3b4cc76152dffbcd16fcea7b34ba93b94cd90ec4f4255d5eaafb",
+      "backend/line_recovery.py": "6c5dae2d26f271f7a78479df422a8f3922ba02067def683d7df08f58c17d38b8",
+      "backend/network.py": "9dc3e654a7e2dd06646fd72c39af00803073dab52948ca2b3eec026c1645fb1e",
+      "backend/neural_symbols.py": "fe72de1d75521d47dcfaf29c476d4b1a813a4f0afcb0e6a441ceac13de0858cb",
+      "backend/region_ocr.py": "f9ddaa1a569e7f9216f89061ecae1c44a771fa9ff15ece5a21452f856e5d9902",
+      "backend/sparse_topology.py": "62851d615bf053d76d7b400a563ec2cb6581620f0d5d6f6d027e73854477d32f",
+      "backend/symbols.py": "d0625484e54ad8e42c0e221da6d7567de8e87b197a69194da7063eda9a7275c9",
+      "backend/topology.py": "2c8421c7df075e3ed76161008df7be763a6d52c3ecc72572ec0cd7ffc261441c",
+      "backend/topology_context.py": "587ec5bdaa93f18ffdb0ffbf12a66f9ecfa6580ffca815385a843899e3cd6d4f",
+      "backend/topology_features.py": "b9041b4ab38f83af59c6c279ee9fab15e570cf8313a31015bf22c6d10bec3e5b"
+    },
+    "protocol": "4 new project ROIs,45glyph53edge, single AI annotation. No expert certification.3 paired cold repetitions, alternating order; exact same inputs max4800 source/max2400 OCR/viewer. Each variant clears OCR cache before each repeat. Legend condition separately adds source-legend proposals and re-infers paths without target answers. Code/threshold fixed before first extraction. In-memory OCR+NN+connection extraction only, excluding decode/render/upload/save. Not service SLA."
+  },
+  "rows": [
+    {
+      "sheet": "peterhead-17",
+      "project": "peterhead",
+      "gt_glyphs": 9,
+      "gt_edges": 10,
+      "variants": {
+        "v11": {
+          "scores": {
+            "localization": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 5,
+              "precision": 1.0,
+              "recall": 0.4444444444444444,
+              "f1": 0.6153846153846154
+            },
+            "connections": {
+              "tp": 1,
+              "fp": 2,
+              "fn": 9,
+              "precision": 0.3333333333333333,
+              "recall": 0.1,
+              "f1": 0.15384615384615385
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "missing_symbol_or_IoU": 9,
+            "recovered": 1
+          },
+          "ocr_words": 461,
+          "timing_components": {
+            "ocr_cache_hit": false,
+            "ocr_seconds": 2.734500720980577,
+            "symbols_and_lines_seconds": 2.7202738640480675
+          },
+          "warnings": [],
+          "cold_seconds": [
+            6.3546681049629115,
+            6.3156914609717205,
+            6.324038574995939
+          ],
+          "cold_median": 6.324038574995939
+        },
+        "v12": {
+          "scores": {
+            "localization": {
+              "tp": 5,
+              "fp": 0,
+              "fn": 4,
+              "precision": 1.0,
+              "recall": 0.5555555555555556,
+              "f1": 0.7142857142857143
+            },
+            "connections": {
+              "tp": 3,
+              "fp": 3,
+              "fn": 7,
+              "precision": 0.5,
+              "recall": 0.3,
+              "f1": 0.375
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "missing_symbol_or_IoU": 7,
+            "recovered": 3
+          },
+          "ocr_words": 459,
+          "timing_components": {
+            "ocr_cache_hit": false,
+            "ocr_seconds": 2.891576752997935,
+            "neural_wall_seconds": 3.986627368023619,
+            "geometry_after_neural_seconds": 0.004378068959340453,
+            "ocr_mode": "full_conservative",
+            "ocr_parallel": true,
+            "ocr_neural_geometry_wall_seconds": 4.014142685977276
+          },
+          "warnings": [],
+          "cold_seconds": [
+            4.887997797050048,
+            4.767743272997905,
+            4.800768793968018
+          ],
+          "cold_median": 4.800768793968018
+        }
+      },
+      "legend_assisted": {
+        "scores": {
+          "localization": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.5555555555555556,
+            "f1": 0.7142857142857143
+          },
+          "connections": {
+            "tp": 3,
+            "fp": 3,
+            "fn": 7,
+            "precision": 0.5,
+            "recall": 0.3,
+            "f1": 0.375
+          },
+          "classified_correct": 0
+        },
+        "miss_causes": {
+          "missing_symbol_or_IoU": 7,
+          "recovered": 3
+        },
+        "proposed": 11,
+        "added": 0,
+        "proposal_and_routing_seconds": 3.2842566709732637,
+        "not_automatically_applied": true
+      }
+    },
+    {
+      "sheet": "peterhead-24",
+      "project": "peterhead",
+      "gt_glyphs": 6,
+      "gt_edges": 5,
+      "variants": {
+        "v11": {
+          "scores": {
+            "localization": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 3,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 1,
+              "fn": 5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "routing": 1,
+            "missing_symbol_or_IoU": 4
+          },
+          "ocr_words": 401,
+          "timing_components": {
+            "ocr_cache_hit": false,
+            "ocr_seconds": 2.1861071300227195,
+            "symbols_and_lines_seconds": 2.8008853860083036
+          },
+          "warnings": [],
+          "cold_seconds": [
+            5.875682884012349,
+            5.845024962036405,
+            5.8560255210031755
+          ],
+          "cold_median": 5.8560255210031755
+        },
+        "v12": {
+          "scores": {
+            "localization": {
+              "tp": 4,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1": 0.8
+            },
+            "connections": {
+              "tp": 0,
+              "fp": 3,
+              "fn": 5,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "routing": 1,
+            "missing_symbol_or_IoU": 4
+          },
+          "ocr_words": 401,
+          "timing_components": {
+            "ocr_cache_hit": false,
+            "ocr_seconds": 2.3186121030012146,
+            "neural_wall_seconds": 3.394016826990992,
+            "geometry_after_neural_seconds": 0.003337843983899802,
+            "ocr_mode": "full_conservative",
+            "ocr_parallel": true,
+            "ocr_neural_geometry_wall_seconds": 3.3976709530106746
+          },
+          "warnings": [],
+          "cold_seconds": [
+            4.2268506190157495,
+            4.242399859998841,
+            4.289031845983118
+          ],
+          "cold_median": 4.242399859998841
+        }
+      },
+      "legend_assisted": {
+        "scores": {
+          "localization": {
+            "tp": 4,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          },
+          "connections": {
+            "tp": 0,
+            "fp": 3,
+            "fn": 5,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "classified_correct": 0
+        },
+        "miss_causes": {
+          "routing": 1,
+          "missing_symbol_or_IoU": 4
+        },
+        "proposed": 0,
+        "added": 0,
+        "proposal_and_routing_seconds": 3.1145366959972307,
+        "not_automatically_applied": true
+      }
+    },
+    {
+      "sheet": "epa-wtp-13",
+      "project": "epa-wtp",
+      "gt_glyphs": 18,
+      "gt_edges": 21,
+      "variants": {
+        "v11": {
+          "scores": {
+            "localization": {
+              "tp": 5,
+              "fp": 4,
+              "fn": 13,
+              "precision": 0.5555555555555556,
+              "recall": 0.2777777777777778,
+              "f1": 0.37037037037037035
+            },
+            "connections": {
+              "tp": 2,
+              "fp": 9,
+              "fn": 19,
+              "precision": 0.18181818181818182,
+              "recall": 0.09523809523809523,
+              "f1": 0.125
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "recovered": 2,
+            "missing_symbol_or_IoU": 19
+          },
+          "ocr_words": 238,
+          "timing_components": {
+            "ocr_cache_hit": false,
+            "ocr_seconds": 1.9824155739624985,
+            "symbols_and_lines_seconds": 2.5401720000081696
+          },
+          "warnings": [],
+          "cold_seconds": [
+            5.695082010992337,
+            5.823185792018194,
+            5.817704663029872
+          ],
+          "cold_median": 5.817704663029872
+        },
+        "v12": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 4,
+              "fn": 11,
+              "precision": 0.6363636363636364,
+              "recall": 0.3888888888888889,
+              "f1": 0.4827586206896552
+            },
+            "connections": {
+              "tp": 5,
+              "fp": 10,
+              "fn": 16,
+              "precision": 0.3333333333333333,
+              "recall": 0.23809523809523808,
+              "f1": 0.2777777777777778
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "recovered": 5,
+            "missing_symbol_or_IoU": 16
+          },
+          "ocr_words": 238,
+          "timing_components": {
+            "ocr_cache_hit": false,
+            "ocr_seconds": 2.0518394020036794,
+            "neural_wall_seconds": 2.945118527044542,
+            "geometry_after_neural_seconds": 0.003655548964161426,
+            "ocr_mode": "full_conservative",
+            "ocr_parallel": true,
+            "ocr_neural_geometry_wall_seconds": 2.9491288490244187
+          },
+          "warnings": [],
+          "cold_seconds": [
+            4.18737499503186,
+            4.1743018320412375,
+            4.325637657020707
+          ],
+          "cold_median": 4.18737499503186
+        }
+      },
+      "legend_assisted": {
+        "scores": {
+          "localization": {
+            "tp": 7,
+            "fp": 7,
+            "fn": 11,
+            "precision": 0.5,
+            "recall": 0.3888888888888889,
+            "f1": 0.4375
+          },
+          "connections": {
+            "tp": 1,
+            "fp": 4,
+            "fn": 20,
+            "precision": 0.2,
+            "recall": 0.047619047619047616,
+            "f1": 0.07692307692307693
+          },
+          "classified_correct": 0
+        },
+        "miss_causes": {
+          "routing": 4,
+          "missing_symbol_or_IoU": 16,
+          "recovered": 1
+        },
+        "proposed": 19,
+        "added": 19,
+        "proposal_and_routing_seconds": 2.2550891480059363,
+        "not_automatically_applied": true
+      }
+    },
+    {
+      "sheet": "epa-wtp-15",
+      "project": "epa-wtp",
+      "gt_glyphs": 12,
+      "gt_edges": 17,
+      "variants": {
+        "v11": {
+          "scores": {
+            "localization": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 6,
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1": 0.6666666666666666
+            },
+            "connections": {
+              "tp": 3,
+              "fp": 0,
+              "fn": 14,
+              "precision": 1.0,
+              "recall": 0.17647058823529413,
+              "f1": 0.3
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "missing_symbol_or_IoU": 14,
+            "recovered": 3
+          },
+          "ocr_words": 266,
+          "timing_components": {
+            "ocr_cache_hit": false,
+            "ocr_seconds": 2.034119946998544,
+            "symbols_and_lines_seconds": 3.231362617982086
+          },
+          "warnings": [],
+          "cold_seconds": [
+            6.397910831961781,
+            6.314338319993112,
+            6.372669470030814
+          ],
+          "cold_median": 6.372669470030814
+        },
+        "v12": {
+          "scores": {
+            "localization": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 5,
+              "precision": 1.0,
+              "recall": 0.5833333333333334,
+              "f1": 0.7368421052631579
+            },
+            "connections": {
+              "tp": 6,
+              "fp": 0,
+              "fn": 11,
+              "precision": 1.0,
+              "recall": 0.35294117647058826,
+              "f1": 0.5217391304347826
+            },
+            "classified_correct": 0
+          },
+          "miss_causes": {
+            "missing_symbol_or_IoU": 11,
+            "recovered": 6
+          },
+          "ocr_words": 266,
+          "timing_components": {
+            "ocr_cache_hit": false,
+            "ocr_seconds": 2.1750044230138883,
+            "neural_wall_seconds": 3.0540797119610943,
+            "geometry_after_neural_seconds": 0.7343571049859747,
+            "ocr_mode": "full_conservative",
+            "ocr_parallel": true,
+            "ocr_neural_geometry_wall_seconds": 3.7888280369807035
+          },
+          "warnings": [],
+          "cold_seconds": [
+            4.8948876279755495,
+            4.794008689990733,
+            4.753228145011235
+          ],
+          "cold_median": 4.794008689990733
+        }
+      },
+      "legend_assisted": {
+        "scores": {
+          "localization": {
+            "tp": 7,
+            "fp": 3,
+            "fn": 5,
+            "precision": 0.7,
+            "recall": 0.5833333333333334,
+            "f1": 0.6363636363636364
+          },
+          "connections": {
+            "tp": 3,
+            "fp": 4,
+            "fn": 14,
+            "precision": 0.42857142857142855,
+            "recall": 0.17647058823529413,
+            "f1": 0.25
+          },
+          "classified_correct": 0
+        },
+        "miss_causes": {
+          "missing_symbol_or_IoU": 11,
+          "recovered": 3,
+          "routing": 3
+        },
+        "proposed": 20,
+        "added": 20,
+        "proposal_and_routing_seconds": 2.169178388954606,
+        "not_automatically_applied": true
+      }
+    }
+  ],
+  "aggregate": {
+    "v11": {
+      "localization": {
+        "tp": 18,
+        "fp": 4,
+        "fn": 27,
+        "precision": 0.8181818181818182,
+        "recall": 0.4,
+        "f1": 0.5373134328358209
+      },
+      "connections": {
+        "tp": 6,
+        "fp": 12,
+        "fn": 47,
+        "precision": 0.3333333333333333,
+        "recall": 0.11320754716981132,
+        "f1": 0.16901408450704225
+      },
+      "mean_page_cold_median": 6.09260955726495
+    },
+    "v12": {
+      "localization": {
+        "tp": 23,
+        "fp": 4,
+        "fn": 22,
+        "precision": 0.8518518518518519,
+        "recall": 0.5111111111111111,
+        "f1": 0.6388888888888888
+      },
+      "connections": {
+        "tp": 14,
+        "fp": 16,
+        "fn": 39,
+        "precision": 0.4666666666666667,
+        "recall": 0.2641509433962264,
+        "f1": 0.3373493975903614
+      },
+      "mean_page_cold_median": 4.506138084747363
+    },
+    "legend_assisted": {
+      "localization": {
+        "tp": 23,
+        "fp": 10,
+        "fn": 22,
+        "precision": 0.696969696969697,
+        "recall": 0.5111111111111111,
+        "f1": 0.5897435897435898
+      },
+      "connections": {
+        "tp": 7,
+        "fp": 14,
+        "fn": 46,
+        "precision": 0.3333333333333333,
+        "recall": 0.1320754716981132,
+        "f1": 0.1891891891891892
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "method": "Fine-tune deployed interpolation checkpoint with former White Rose test hard examples and v9 replay; all layers CPU",
+  "seed": 20261030,
+  "epochs": 8,
+  "steps_per_epoch": 32,
+  "batch": 4,
+  "learning_rate": 6e-05,
+  "initial_endpoints": [
+    {
+      "path": ".benchmark-data/v6-models/epoch-16.pth",
+      "sha256": "b3a5e44e405cce4a414a4babbc950bcd90701266f0b6dc9e971022ca279ebf86"
+    },
+    {
+      "path": ".benchmark-data/v9b-models/epoch-8.pth",
+      "sha256": "76f58e55ca3dfbb5cedcd2d1e5246eac82387c726bde1d363782804fe6f54c58"
+    }
+  ],
+  "new_project_exclusion": [
+    "fernald",
+    "epa-wtp",
+    "peterhead"
+  ],
+  "training_manifest_sha256": "7e119c136f8a5fa675c385a1f423957647843beb62ab836a78cec52f8d96b8ff",
+  "history": [
+    {
+      "epoch": 1,
+      "mean_loss": 2.16996475122869,
+      "seconds": 12.256471691012848
+    },
+    {
+      "epoch": 2,
+      "mean_loss": 1.7465334981679916,
+      "seconds": 11.760017921042163
+    },
+    {
+      "epoch": 3,
+      "mean_loss": 1.9508390836417675,
+      "seconds": 11.822107369021978
+    },
+    {
+      "epoch": 4,
+      "mean_loss": 1.6343674082309008,
+      "seconds": 11.800329732999671
+    },
+    {
+      "epoch": 5,
+      "mean_loss": 1.7982304319739342,
+      "seconds": 11.75288335699588
+    },
+    {
+      "epoch": 6,
+      "mean_loss": 1.7826120592653751,
+      "seconds": 11.972840135043953
+    },
+    {
+      "epoch": 7,
+      "mean_loss": 1.7740193270146847,
+      "seconds": 11.822678069991525
+    },
+    {
+      "epoch": 8,
+      "mean_loss": 1.6707999221980572,
+      "seconds": 11.741144425002858
+    }
+  ],
+  "seconds_so_far": 95.00938560499344,
+  "annotation_basis": "AI pilot, not expert-certified"
+}

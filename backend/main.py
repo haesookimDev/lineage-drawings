@@ -21,6 +21,7 @@ from pydantic import BaseModel, Field, field_validator
 from .db import connect, data_dir, decode, initialize
 from .extract import extract, make_sample, uid
 from .workflows import router as workflow_router,record_analysis
+from .assistance import router as assistance_router
 
 log=logging.getLogger('lineage')
 MAX_UPLOAD=40*1024*1024
@@ -342,5 +343,6 @@ def history(ident:str):
     with connect() as db:return [decode(r) for r in db.execute('SELECT * FROM audits WHERE target_id=? ORDER BY id DESC LIMIT 100',(ident,))]
 
 app.include_router(workflow_router)
+app.include_router(assistance_router)
 frontend=Path(__file__).resolve().parents[1]/'frontend'/'dist'
 if frontend.exists():app.mount('/',StaticFiles(directory=frontend,html=True),name='frontend')

@@ -101,13 +101,37 @@ def ocr(image, warnings, diagnostics=None):
             return []
 
 
-def raster_candidates(image, warnings, with_ocr=True, high_resolution=None, timings=None):
-    started=time.perf_counter()
-    texts = (ocr(image,warnings,timings) if timings is not None else ocr(image,warnings)) if with_ocr else []
-    if timings is not None:timings['ocr_seconds']=time.perf_counter()-started
-    started=time.perf_counter()
-    shapes,segments,limited = geometric_candidates(image,texts,high_resolution=high_resolution)
-    if timings is not None:timings['symbols_and_lines_seconds']=time.perf_counter()-started
+def raster_candidates(image, warnings, with_ocr=True, high_resolution=None, timings=None, ocr_regions=None):
+    started=time.perf_counter();parallel=False
+    # OCR subprocess work overlaps independent detector tiles. Expensive detail
+    # proposals wait for OCR only when their geometric context requires it.
+    from .neural_symbols import model as neural_model,detect as neural_detect
+    from .geometry import legacy_candidates
+    def run_ocr():
+        if ocr_regions is not None:
+            from .region_ocr import read_regions
+            def call(crop,warns,diag):return ocr(crop,warns,diag) if timings is not None else ocr(crop,warns)
+            return read_regions(image,warnings,call,ocr_regions,timings)
+        return ocr(image,warnings,timings) if timings is not None else ocr(image,warnings)
+    net,meta=neural_model();parallel=bool(with_ocr and meta and meta.get('parallel_ocr',False) and meta.get('merge_mode')=='neural_only' and meta.get('local_style_gate'))
+    if parallel:
+        from concurrent.futures import ThreadPoolExecutor
+        clock={};legacy=[]
+        def read_text():
+            t=time.perf_counter();result=run_ocr();clock['ocr_seconds']=time.perf_counter()-t;return result
+        with ThreadPoolExecutor(max_workers=1) as pool:
+            future=pool.submit(read_text)
+            def hints():
+                if not legacy:legacy.append(legacy_candidates(image,future.result()))
+                return [box for box,_ in legacy[0][0]]
+            t=time.perf_counter();found=neural_detect(high_resolution if high_resolution is not None else image,proposal_hints=hints);clock['neural_wall_seconds']=time.perf_counter()-t;texts=future.result()
+        t=time.perf_counter();shapes,segments,limited=geometric_candidates(image,texts,high_resolution=high_resolution,neural_candidates=found,legacy_result=legacy[0] if legacy else None);clock['geometry_after_neural_seconds']=time.perf_counter()-t
+        if timings is not None:timings.update(clock,ocr_mode='source_regions' if ocr_regions is not None else 'full_conservative',ocr_parallel=True,ocr_neural_geometry_wall_seconds=time.perf_counter()-started)
+    else:
+        texts=run_ocr() if with_ocr else []
+        if timings is not None:timings['ocr_seconds']=time.perf_counter()-started;timings['ocr_mode']='source_regions' if ocr_regions is not None else 'full_conservative';timings['ocr_parallel']=False
+        started=time.perf_counter();shapes,segments,limited=geometric_candidates(image,texts,high_resolution=high_resolution)
+        if timings is not None:timings['symbols_and_lines_seconds']=time.perf_counter()-started
     candidates = [element(f'요소 {i+1}','unknown',box,'neural_symbol_candidate' if properties.get('geometry')=='neural_symbol' else 'learned_symbol_candidate' if properties.get('geometry')=='learned_symbol' else 'image_candidate',properties)
                   for i,(box,properties) in enumerate(shapes)]
     if limited:
@@ -192,12 +216,22 @@ def extract_pdf(path,folder,warnings):
                 extra,lines=raster_candidates(image,warnings,high_resolution=high_resolution,timings=timings);elements+=extra
                 if not segments:segments=lines
             elif page.get_images():
-                extra,lines=raster_candidates(image,warnings,with_ocr=True,high_resolution=high_resolution,timings=timings)
+                # Native text stays native; OCR only substantial raster image
+                # placements. Small logos do not trigger full-page OCR.
+                regions=[]
+                for picture in page.get_images(full=True):
+                    for rect in page.get_image_rects(picture[0]):
+                        r=(rect*matrix)&page.rect
+                        if r.is_empty or r.width*r.height<page.rect.width*page.rect.height*.02:continue
+                        regions.append(normalized((r.x0-page.rect.x0,r.y0-page.rect.y0,r.x1-page.rect.x0,r.y1-page.rect.y0),page.rect.width,page.rect.height))
+                if len(regions)>8:regions=[[0,0,1,1]]
+                extra,lines=raster_candidates(image,warnings,with_ocr=bool(regions),high_resolution=high_resolution,timings=timings,ocr_regions=regions)
+                from .geometry import _iou
                 for e in extra:
-                    if e['kind']=='text' and any(e['label']==t['label'] for t in elements if t['kind']=='text'):continue
+                    if e['kind']=='text' and any(e['label']==t['label'] and _iou(e['bbox'],t['bbox'])>.3 for t in elements if t['kind']=='text'):continue
                     elements.append(e)
                 segments+=lines
-                warnings.append(f'{n+1}페이지는 벡터·이미지 혼합 분석 결과입니다. 중복과 누락을 검토해 주세요.')
+                warnings.append(f'{n+1}페이지는 벡터·이미지 혼합 분석 결과입니다. 이미지 영역의 OCR 후보를 원본과 대조해 주세요.')
             elif high_resolution is not None:
                 # Vector text can coexist with symbols made of open paths.
                 # Use direct neural candidates without duplicating OCR/text.

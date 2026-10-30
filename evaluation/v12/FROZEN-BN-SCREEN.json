@@ -1,0 +1,1365 @@
+{
+  "role": "Development only. Fixed confidence grid .45/.55 after detecting score drift; no new-project inputs.",
+  "rows": [
+    {
+      "group": "open100",
+      "id": "4",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 57,
+        "fp": 2,
+        "fn": 16,
+        "precision": 0.9661016949152542,
+        "recall": 0.7808219178082192,
+        "f1": 0.8636363636363636
+      },
+      "seconds": 0.6214554560137913
+    },
+    {
+      "group": "open100",
+      "id": "4",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 56,
+        "fp": 2,
+        "fn": 17,
+        "precision": 0.9655172413793104,
+        "recall": 0.7671232876712328,
+        "f1": 0.8549618320610687
+      },
+      "seconds": 0.9666389329941012
+    },
+    {
+      "group": "open100",
+      "id": "4",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 57,
+        "fp": 2,
+        "fn": 16,
+        "precision": 0.9661016949152542,
+        "recall": 0.7808219178082192,
+        "f1": 0.8636363636363636
+      },
+      "seconds": 0.6292504749726504
+    },
+    {
+      "group": "open100",
+      "id": "4",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 56,
+        "fp": 2,
+        "fn": 17,
+        "precision": 0.9655172413793104,
+        "recall": 0.7671232876712328,
+        "f1": 0.8549618320610687
+      },
+      "seconds": 0.974779648007825
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 41,
+        "fp": 4,
+        "fn": 33,
+        "precision": 0.9111111111111111,
+        "recall": 0.5540540540540541,
+        "f1": 0.6890756302521008
+      },
+      "seconds": 1.065524983976502
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 48,
+        "fp": 5,
+        "fn": 26,
+        "precision": 0.9056603773584906,
+        "recall": 0.6486486486486487,
+        "f1": 0.7559055118110236
+      },
+      "seconds": 1.4136287360452116
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 40,
+        "fp": 2,
+        "fn": 34,
+        "precision": 0.9523809523809523,
+        "recall": 0.5405405405405406,
+        "f1": 0.6896551724137931
+      },
+      "seconds": 1.0579611110151745
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 46,
+        "fp": 3,
+        "fn": 28,
+        "precision": 0.9387755102040817,
+        "recall": 0.6216216216216216,
+        "f1": 0.7479674796747967
+      },
+      "seconds": 1.397001009027008
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.625,
+        "recall": 0.8333333333333334,
+        "f1": 0.7142857142857143
+      },
+      "seconds": 0.5753267260151915
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.625,
+        "recall": 0.8333333333333334,
+        "f1": 0.7142857142857143
+      },
+      "seconds": 0.8883826450328343
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.625,
+        "recall": 0.8333333333333334,
+        "f1": 0.7142857142857143
+      },
+      "seconds": 0.5729068919899873
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.625,
+        "recall": 0.8333333333333334,
+        "f1": 0.7142857142857143
+      },
+      "seconds": 0.8873145389952697
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 55,
+        "fp": 14,
+        "fn": 0,
+        "precision": 0.7971014492753623,
+        "recall": 1.0,
+        "f1": 0.8870967741935484
+      },
+      "seconds": 2.0901986329699866
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 55,
+        "fp": 15,
+        "fn": 0,
+        "precision": 0.7857142857142857,
+        "recall": 1.0,
+        "f1": 0.88
+      },
+      "seconds": 2.4643405630486086
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 55,
+        "fp": 12,
+        "fn": 0,
+        "precision": 0.8208955223880597,
+        "recall": 1.0,
+        "f1": 0.9016393442622951
+      },
+      "seconds": 2.106593771954067
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 55,
+        "fp": 13,
+        "fn": 0,
+        "precision": 0.8088235294117647,
+        "recall": 1.0,
+        "f1": 0.8943089430894309
+      },
+      "seconds": 2.4457499939599074
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 98,
+        "fp": 0,
+        "fn": 8,
+        "precision": 1.0,
+        "recall": 0.9245283018867925,
+        "f1": 0.9607843137254902
+      },
+      "seconds": 2.0925221699872054
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 97,
+        "fp": 0,
+        "fn": 9,
+        "precision": 1.0,
+        "recall": 0.9150943396226415,
+        "f1": 0.9556650246305419
+      },
+      "seconds": 2.4717707409872673
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 98,
+        "fp": 0,
+        "fn": 8,
+        "precision": 1.0,
+        "recall": 0.9245283018867925,
+        "f1": 0.9607843137254902
+      },
+      "seconds": 2.098783886001911
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 97,
+        "fp": 0,
+        "fn": 9,
+        "precision": 1.0,
+        "recall": 0.9150943396226415,
+        "f1": 0.9556650246305419
+      },
+      "seconds": 2.4606566629954614
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 76,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.987012987012987,
+        "recall": 1.0,
+        "f1": 0.9934640522875817
+      },
+      "seconds": 2.0764218129916117
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 76,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.987012987012987,
+        "recall": 1.0,
+        "f1": 0.9934640522875817
+      },
+      "seconds": 2.509001052007079
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 76,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.987012987012987,
+        "recall": 1.0,
+        "f1": 0.9934640522875817
+      },
+      "seconds": 2.0806437649880536
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 76,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.987012987012987,
+        "recall": 1.0,
+        "f1": 0.9934640522875817
+      },
+      "seconds": 2.4947015400393866
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 81,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.076106353022624
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 81,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.5097078930120915
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 81,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.0687380499439314
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 81,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.5004399829776958
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.0220256350003183
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.3600618559867144
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.0422984620090574
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.3584830299951136
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "seconds": 2.089303574990481
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "seconds": 2.4943883229861967
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "seconds": 2.0842893960070796
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "seconds": 2.496479483030271
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333
+      },
+      "seconds": 2.051230684039183
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333
+      },
+      "seconds": 2.400590931007173
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333
+      },
+      "seconds": 2.0523179959855042
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333
+      },
+      "seconds": 2.4115925789810717
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 68,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9855072463768116,
+        "recall": 0.9714285714285714,
+        "f1": 0.9784172661870504
+      },
+      "seconds": 1.077184525958728
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 68,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9855072463768116,
+        "recall": 0.9714285714285714,
+        "f1": 0.9784172661870504
+      },
+      "seconds": 1.4180032089934684
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 68,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9855072463768116,
+        "recall": 0.9714285714285714,
+        "f1": 0.9784172661870504
+      },
+      "seconds": 1.0955078349797986
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 68,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9855072463768116,
+        "recall": 0.9714285714285714,
+        "f1": 0.9784172661870504
+      },
+      "seconds": 1.4386521680280566
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 57,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.9661016949152542,
+        "recall": 0.9344262295081968,
+        "f1": 0.95
+      },
+      "seconds": 1.0894261199864559
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 57,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.9661016949152542,
+        "recall": 0.9344262295081968,
+        "f1": 0.95
+      },
+      "seconds": 1.45176507497672
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 57,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.9661016949152542,
+        "recall": 0.9344262295081968,
+        "f1": 0.95
+      },
+      "seconds": 1.0862599709653296
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 57,
+        "fp": 2,
+        "fn": 4,
+        "precision": 0.9661016949152542,
+        "recall": 0.9344262295081968,
+        "f1": 0.95
+      },
+      "seconds": 1.4491743259713985
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 36,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315
+      },
+      "seconds": 1.3322960950317793
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 36,
+        "fp": 7,
+        "fn": 0,
+        "precision": 0.8372093023255814,
+        "recall": 1.0,
+        "f1": 0.9113924050632911
+      },
+      "seconds": 1.5812809180351906
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 36,
+        "fp": 2,
+        "fn": 0,
+        "precision": 0.9473684210526315,
+        "recall": 1.0,
+        "f1": 0.972972972972973
+      },
+      "seconds": 1.1041375700151548
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 36,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.8780487804878049,
+        "recall": 1.0,
+        "f1": 0.935064935064935
+      },
+      "seconds": 1.4399874759837985
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 36,
+        "fp": 4,
+        "fn": 6,
+        "precision": 0.9,
+        "recall": 0.8571428571428571,
+        "f1": 0.8780487804878049
+      },
+      "seconds": 1.0838950389879756
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 36,
+        "fp": 5,
+        "fn": 6,
+        "precision": 0.8780487804878049,
+        "recall": 0.8571428571428571,
+        "f1": 0.8674698795180723
+      },
+      "seconds": 1.4164479759638198
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 36,
+        "fp": 3,
+        "fn": 6,
+        "precision": 0.9230769230769231,
+        "recall": 0.8571428571428571,
+        "f1": 0.8888888888888888
+      },
+      "seconds": 1.0805126019986346
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 36,
+        "fp": 4,
+        "fn": 6,
+        "precision": 0.9,
+        "recall": 0.8571428571428571,
+        "f1": 0.8780487804878049
+      },
+      "seconds": 1.429044341959525
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 76,
+        "fp": 3,
+        "fn": 13,
+        "precision": 0.9620253164556962,
+        "recall": 0.8539325842696629,
+        "f1": 0.9047619047619048
+      },
+      "seconds": 1.1153341290191747
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 77,
+        "fp": 3,
+        "fn": 12,
+        "precision": 0.9625,
+        "recall": 0.8651685393258427,
+        "f1": 0.9112426035502958
+      },
+      "seconds": 1.4643737439764664
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 76,
+        "fp": 3,
+        "fn": 13,
+        "precision": 0.9620253164556962,
+        "recall": 0.8539325842696629,
+        "f1": 0.9047619047619048
+      },
+      "seconds": 1.0928006310132332
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 77,
+        "fp": 3,
+        "fn": 12,
+        "precision": 0.9625,
+        "recall": 0.8651685393258427,
+        "f1": 0.9112426035502958
+      },
+      "seconds": 1.464737213042099
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 64,
+        "fp": 0,
+        "fn": 18,
+        "precision": 1.0,
+        "recall": 0.7804878048780488,
+        "f1": 0.8767123287671232
+      },
+      "seconds": 1.123024454980623
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 62,
+        "fp": 0,
+        "fn": 20,
+        "precision": 1.0,
+        "recall": 0.7560975609756098,
+        "f1": 0.8611111111111112
+      },
+      "seconds": 1.490550116985105
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 64,
+        "fp": 0,
+        "fn": 18,
+        "precision": 1.0,
+        "recall": 0.7804878048780488,
+        "f1": 0.8767123287671232
+      },
+      "seconds": 1.113631855987478
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 62,
+        "fp": 0,
+        "fn": 20,
+        "precision": 1.0,
+        "recall": 0.7560975609756098,
+        "f1": 0.8611111111111112
+      },
+      "seconds": 1.5029020439833403
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 8,
+        "fp": 3,
+        "fn": 4,
+        "precision": 0.7272727272727273,
+        "recall": 0.6666666666666666,
+        "f1": 0.6956521739130435
+      },
+      "seconds": 2.063850092992652
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 8,
+        "fp": 3,
+        "fn": 4,
+        "precision": 0.7272727272727273,
+        "recall": 0.6666666666666666,
+        "f1": 0.6956521739130435
+      },
+      "seconds": 2.411900175968185
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 8,
+        "fp": 3,
+        "fn": 4,
+        "precision": 0.7272727272727273,
+        "recall": 0.6666666666666666,
+        "f1": 0.6956521739130435
+      },
+      "seconds": 2.0333878599922173
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 8,
+        "fp": 3,
+        "fn": 4,
+        "precision": 0.7272727272727273,
+        "recall": 0.6666666666666666,
+        "f1": 0.6956521739130435
+      },
+      "seconds": 2.3787775370292366
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 9,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.6923076923076923,
+        "recall": 1.0,
+        "f1": 0.8181818181818182
+      },
+      "seconds": 2.116388641006779
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 9,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.6923076923076923,
+        "recall": 1.0,
+        "f1": 0.8181818181818182
+      },
+      "seconds": 2.4783411050448194
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 9,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.6923076923076923,
+        "recall": 1.0,
+        "f1": 0.8181818181818182
+      },
+      "seconds": 2.1051384130259976
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 9,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.6923076923076923,
+        "recall": 1.0,
+        "f1": 0.8181818181818182
+      },
+      "seconds": 2.4673043790389784
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 10,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.9090909090909091,
+        "recall": 0.9090909090909091,
+        "f1": 0.9090909090909091
+      },
+      "seconds": 2.1119359649601392
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 10,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.8333333333333334,
+        "recall": 0.9090909090909091,
+        "f1": 0.8695652173913043
+      },
+      "seconds": 2.4569990810123272
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 10,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.9090909090909091,
+        "recall": 0.9090909090909091,
+        "f1": 0.9090909090909091
+      },
+      "seconds": 2.166193558019586
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 10,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.8333333333333334,
+        "recall": 0.9090909090909091,
+        "f1": 0.8695652173913043
+      },
+      "seconds": 2.486412672966253
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail0",
+      "localization": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.6447042940417305
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "candidate": "frozen-bn-epoch-4-score0.55-detail4",
+      "localization": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 3.158495790034067
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail0",
+      "localization": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.6418532360112295
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 3.118619979999494
+    }
+  ],
+  "aggregate": {
+    "open100": {
+      "frozen-bn-epoch-4-score0.55-detail0": {
+        "tp": 98,
+        "fp": 6,
+        "fn": 49,
+        "precision": 0.9423076923076923,
+        "recall": 0.6666666666666666,
+        "f1": 0.7808764940239044
+      },
+      "frozen-bn-epoch-4-score0.55-detail4": {
+        "tp": 104,
+        "fp": 7,
+        "fn": 43,
+        "precision": 0.9369369369369369,
+        "recall": 0.7074829931972789,
+        "f1": 0.8062015503875969
+      },
+      "frozen-bn-epoch-4-score0.6-detail0": {
+        "tp": 97,
+        "fp": 4,
+        "fn": 50,
+        "precision": 0.9603960396039604,
+        "recall": 0.6598639455782312,
+        "f1": 0.782258064516129
+      },
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 102,
+        "fp": 5,
+        "fn": 45,
+        "precision": 0.9532710280373832,
+        "recall": 0.6938775510204082,
+        "f1": 0.8031496062992126
+      }
+    },
+    "open100-repair": {
+      "frozen-bn-epoch-4-score0.55-detail0": {
+        "tp": 337,
+        "fp": 14,
+        "fn": 43,
+        "precision": 0.9601139601139601,
+        "recall": 0.8868421052631579,
+        "f1": 0.9220246238030095
+      },
+      "frozen-bn-epoch-4-score0.55-detail4": {
+        "tp": 336,
+        "fp": 18,
+        "fn": 44,
+        "precision": 0.9491525423728814,
+        "recall": 0.8842105263157894,
+        "f1": 0.9155313351498637
+      },
+      "frozen-bn-epoch-4-score0.6-detail0": {
+        "tp": 337,
+        "fp": 11,
+        "fn": 43,
+        "precision": 0.9683908045977011,
+        "recall": 0.8868421052631579,
+        "f1": 0.9258241758241759
+      },
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 336,
+        "fp": 15,
+        "fn": 44,
+        "precision": 0.9572649572649573,
+        "recall": 0.8842105263157894,
+        "f1": 0.9192886456908345
+      }
+    },
+    "pahala": {
+      "frozen-bn-epoch-4-score0.55-detail0": {
+        "tp": 16,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.8421052631578947,
+        "recall": 0.9411764705882353,
+        "f1": 0.8888888888888888
+      },
+      "frozen-bn-epoch-4-score0.55-detail4": {
+        "tp": 16,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.8421052631578947,
+        "recall": 0.9411764705882353,
+        "f1": 0.8888888888888888
+      },
+      "frozen-bn-epoch-4-score0.6-detail0": {
+        "tp": 16,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.8421052631578947,
+        "recall": 0.9411764705882353,
+        "f1": 0.8888888888888888
+      },
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 16,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.8421052631578947,
+        "recall": 0.9411764705882353,
+        "f1": 0.8888888888888888
+      }
+    },
+    "v5-synthetic": {
+      "frozen-bn-epoch-4-score0.55-detail0": {
+        "tp": 310,
+        "fp": 15,
+        "fn": 8,
+        "precision": 0.9538461538461539,
+        "recall": 0.9748427672955975,
+        "f1": 0.9642301710730948
+      },
+      "frozen-bn-epoch-4-score0.55-detail4": {
+        "tp": 309,
+        "fp": 16,
+        "fn": 9,
+        "precision": 0.9507692307692308,
+        "recall": 0.9716981132075472,
+        "f1": 0.9611197511664075
+      },
+      "frozen-bn-epoch-4-score0.6-detail0": {
+        "tp": 310,
+        "fp": 13,
+        "fn": 8,
+        "precision": 0.9597523219814241,
+        "recall": 0.9748427672955975,
+        "f1": 0.9672386895475819
+      },
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 309,
+        "fp": 14,
+        "fn": 9,
+        "precision": 0.9566563467492261,
+        "recall": 0.9716981132075472,
+        "f1": 0.9641185647425897
+      }
+    },
+    "virden": {
+      "frozen-bn-epoch-4-score0.55-detail0": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.6666666666666666,
+        "recall": 0.2857142857142857,
+        "f1": 0.4
+      },
+      "frozen-bn-epoch-4-score0.55-detail4": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.6666666666666666,
+        "recall": 0.2857142857142857,
+        "f1": 0.4
+      },
+      "frozen-bn-epoch-4-score0.6-detail0": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.6666666666666666,
+        "recall": 0.2857142857142857,
+        "f1": 0.4
+      },
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.6666666666666666,
+        "recall": 0.2857142857142857,
+        "f1": 0.4
+      }
+    },
+    "winkler-preservation": {
+      "frozen-bn-epoch-4-score0.55-detail0": {
+        "tp": 17,
+        "fp": 7,
+        "fn": 4,
+        "precision": 0.7083333333333334,
+        "recall": 0.8095238095238095,
+        "f1": 0.7555555555555555
+      },
+      "frozen-bn-epoch-4-score0.55-detail4": {
+        "tp": 17,
+        "fp": 7,
+        "fn": 4,
+        "precision": 0.7083333333333334,
+        "recall": 0.8095238095238095,
+        "f1": 0.7555555555555555
+      },
+      "frozen-bn-epoch-4-score0.6-detail0": {
+        "tp": 17,
+        "fp": 7,
+        "fn": 4,
+        "precision": 0.7083333333333334,
+        "recall": 0.8095238095238095,
+        "f1": 0.7555555555555555
+      },
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 17,
+        "fp": 7,
+        "fn": 4,
+        "precision": 0.7083333333333334,
+        "recall": 0.8095238095238095,
+        "f1": 0.7555555555555555
+      }
+    },
+    "winnipeg-preservation": {
+      "frozen-bn-epoch-4-score0.55-detail0": {
+        "tp": 13,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.9285714285714286,
+        "recall": 0.9285714285714286,
+        "f1": 0.9285714285714286
+      },
+      "frozen-bn-epoch-4-score0.55-detail4": {
+        "tp": 13,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.8666666666666667,
+        "recall": 0.9285714285714286,
+        "f1": 0.896551724137931
+      },
+      "frozen-bn-epoch-4-score0.6-detail0": {
+        "tp": 13,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.9285714285714286,
+        "recall": 0.9285714285714286,
+        "f1": 0.9285714285714286
+      },
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 13,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.8666666666666667,
+        "recall": 0.9285714285714286,
+        "f1": 0.896551724137931
+      }
+    }
+  }
+}

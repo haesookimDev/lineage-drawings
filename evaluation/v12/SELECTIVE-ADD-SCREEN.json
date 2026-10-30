@@ -1,0 +1,357 @@
+{
+  "role": "Development only. Fixed confidence grid .45/.55 after detecting score drift; no new-project inputs.",
+  "rows": [
+    {
+      "group": "open100",
+      "id": "4",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 59,
+        "fp": 2,
+        "fn": 14,
+        "precision": 0.9672131147540983,
+        "recall": 0.8082191780821918,
+        "f1": 0.8805970149253731
+      },
+      "seconds": 0.9371357150375843
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 46,
+        "fp": 3,
+        "fn": 28,
+        "precision": 0.9387755102040817,
+        "recall": 0.6216216216216216,
+        "f1": 0.7479674796747967
+      },
+      "seconds": 1.3979998680297285
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 5,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.625,
+        "recall": 0.8333333333333334,
+        "f1": 0.7142857142857143
+      },
+      "seconds": 0.9237551760161296
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 55,
+        "fp": 13,
+        "fn": 0,
+        "precision": 0.8088235294117647,
+        "recall": 1.0,
+        "f1": 0.8943089430894309
+      },
+      "seconds": 2.480428458948154
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 98,
+        "fp": 0,
+        "fn": 8,
+        "precision": 1.0,
+        "recall": 0.9245283018867925,
+        "f1": 0.9607843137254902
+      },
+      "seconds": 2.443679473013617
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 76,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.987012987012987,
+        "recall": 1.0,
+        "f1": 0.9934640522875817
+      },
+      "seconds": 2.454465307004284
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 81,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9878048780487805,
+        "recall": 1.0,
+        "f1": 0.9938650306748467
+      },
+      "seconds": 2.5016269569750875
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 2.3570601399987936
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 1,
+        "fp": 0,
+        "fn": 2,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5
+      },
+      "seconds": 2.498390951019246
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 1,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333
+      },
+      "seconds": 2.4103741670260206
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 68,
+        "fp": 1,
+        "fn": 2,
+        "precision": 0.9855072463768116,
+        "recall": 0.9714285714285714,
+        "f1": 0.9784172661870504
+      },
+      "seconds": 1.4395116899977438
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 57,
+        "fp": 3,
+        "fn": 4,
+        "precision": 0.95,
+        "recall": 0.9344262295081968,
+        "f1": 0.9421487603305785
+      },
+      "seconds": 1.4391977220075205
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 36,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.9,
+        "recall": 1.0,
+        "f1": 0.9473684210526315
+      },
+      "seconds": 1.3401116720051505
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 36,
+        "fp": 4,
+        "fn": 6,
+        "precision": 0.9,
+        "recall": 0.8571428571428571,
+        "f1": 0.8780487804878049
+      },
+      "seconds": 1.3846380629693158
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 77,
+        "fp": 4,
+        "fn": 12,
+        "precision": 0.9506172839506173,
+        "recall": 0.8651685393258427,
+        "f1": 0.9058823529411765
+      },
+      "seconds": 1.4290658819954842
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 66,
+        "fp": 1,
+        "fn": 16,
+        "precision": 0.9850746268656716,
+        "recall": 0.8048780487804879,
+        "f1": 0.8859060402684564
+      },
+      "seconds": 1.4248803869704716
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 8,
+        "fp": 3,
+        "fn": 4,
+        "precision": 0.7272727272727273,
+        "recall": 0.6666666666666666,
+        "f1": 0.6956521739130435
+      },
+      "seconds": 2.3469799250015058
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 9,
+        "fp": 4,
+        "fn": 0,
+        "precision": 0.6923076923076923,
+        "recall": 1.0,
+        "f1": 0.8181818181818182
+      },
+      "seconds": 2.4033982469700277
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 10,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.8333333333333334,
+        "recall": 0.9090909090909091,
+        "f1": 0.8695652173913043
+      },
+      "seconds": 2.3662179869716056
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "candidate": "frozen-bn-epoch-4-score0.6-detail4",
+      "localization": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "seconds": 3.1364366060006432
+    }
+  ],
+  "aggregate": {
+    "open100": {
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 105,
+        "fp": 5,
+        "fn": 42,
+        "precision": 0.9545454545454546,
+        "recall": 0.7142857142857143,
+        "f1": 0.8171206225680934
+      }
+    },
+    "open100-repair": {
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 340,
+        "fp": 17,
+        "fn": 40,
+        "precision": 0.9523809523809523,
+        "recall": 0.8947368421052632,
+        "f1": 0.9226594301221167
+      }
+    },
+    "pahala": {
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 16,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.8421052631578947,
+        "recall": 0.9411764705882353,
+        "f1": 0.8888888888888888
+      }
+    },
+    "v5-synthetic": {
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 310,
+        "fp": 15,
+        "fn": 8,
+        "precision": 0.9538461538461539,
+        "recall": 0.9748427672955975,
+        "f1": 0.9642301710730948
+      }
+    },
+    "virden": {
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 5,
+        "precision": 0.6666666666666666,
+        "recall": 0.2857142857142857,
+        "f1": 0.4
+      }
+    },
+    "winkler-preservation": {
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 17,
+        "fp": 7,
+        "fn": 4,
+        "precision": 0.7083333333333334,
+        "recall": 0.8095238095238095,
+        "f1": 0.7555555555555555
+      }
+    },
+    "winnipeg-preservation": {
+      "frozen-bn-epoch-4-score0.6-detail4": {
+        "tp": 13,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.8666666666666667,
+        "recall": 0.9285714285714286,
+        "f1": 0.896551724137931
+      }
+    }
+  }
+}

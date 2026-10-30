@@ -1,0 +1,557 @@
+{
+  "role": "Prior image-exposed expanded labels, now development preservation; no gradient training",
+  "rows": [
+    {
+      "sheet": "winkler-p142",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 12,
+          "fp": 8,
+          "fn": 4,
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.6666666666666666
+        },
+        "connections": {
+          "tp": 4,
+          "fp": 11,
+          "fn": 11,
+          "precision": 0.26666666666666666,
+          "recall": 0.26666666666666666,
+          "f1": 0.26666666666666666
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p142",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 12,
+          "fp": 9,
+          "fn": 4,
+          "precision": 0.5714285714285714,
+          "recall": 0.75,
+          "f1": 0.6486486486486487
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 15,
+          "fn": 12,
+          "precision": 0.16666666666666666,
+          "recall": 0.2,
+          "f1": 0.18181818181818182
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p142",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 12,
+          "fp": 9,
+          "fn": 4,
+          "precision": 0.5714285714285714,
+          "recall": 0.75,
+          "f1": 0.6486486486486487
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 15,
+          "fn": 12,
+          "precision": 0.16666666666666666,
+          "recall": 0.2,
+          "f1": 0.18181818181818182
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p142",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 12,
+          "fp": 9,
+          "fn": 4,
+          "precision": 0.5714285714285714,
+          "recall": 0.75,
+          "f1": 0.6486486486486487
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 15,
+          "fn": 12,
+          "precision": 0.16666666666666666,
+          "recall": 0.2,
+          "f1": 0.18181818181818182
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p142",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 12,
+          "fp": 9,
+          "fn": 4,
+          "precision": 0.5714285714285714,
+          "recall": 0.75,
+          "f1": 0.6486486486486487
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 12,
+          "fn": 12,
+          "precision": 0.2,
+          "recall": 0.2,
+          "f1": 0.2
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p150",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 27,
+          "fp": 28,
+          "fn": 15,
+          "precision": 0.4909090909090909,
+          "recall": 0.6428571428571429,
+          "f1": 0.5567010309278351
+        },
+        "connections": {
+          "tp": 19,
+          "fp": 36,
+          "fn": 50,
+          "precision": 0.34545454545454546,
+          "recall": 0.2753623188405797,
+          "f1": 0.3064516129032258
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p150",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 30,
+          "fp": 31,
+          "fn": 12,
+          "precision": 0.4918032786885246,
+          "recall": 0.7142857142857143,
+          "f1": 0.5825242718446602
+        },
+        "connections": {
+          "tp": 23,
+          "fp": 41,
+          "fn": 46,
+          "precision": 0.359375,
+          "recall": 0.3333333333333333,
+          "f1": 0.3458646616541353
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p150",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 30,
+          "fp": 31,
+          "fn": 12,
+          "precision": 0.4918032786885246,
+          "recall": 0.7142857142857143,
+          "f1": 0.5825242718446602
+        },
+        "connections": {
+          "tp": 23,
+          "fp": 41,
+          "fn": 46,
+          "precision": 0.359375,
+          "recall": 0.3333333333333333,
+          "f1": 0.3458646616541353
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p150",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 30,
+          "fp": 31,
+          "fn": 12,
+          "precision": 0.4918032786885246,
+          "recall": 0.7142857142857143,
+          "f1": 0.5825242718446602
+        },
+        "connections": {
+          "tp": 23,
+          "fp": 42,
+          "fn": 46,
+          "precision": 0.35384615384615387,
+          "recall": 0.3333333333333333,
+          "f1": 0.34328358208955223
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winkler-p150",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 30,
+          "fp": 31,
+          "fn": 12,
+          "precision": 0.4918032786885246,
+          "recall": 0.7142857142857143,
+          "f1": 0.5825242718446602
+        },
+        "connections": {
+          "tp": 24,
+          "fp": 43,
+          "fn": 45,
+          "precision": 0.3582089552238806,
+          "recall": 0.34782608695652173,
+          "f1": 0.35294117647058826
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p2",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 13,
+          "fp": 4,
+          "fn": 1,
+          "precision": 0.7647058823529411,
+          "recall": 0.9285714285714286,
+          "f1": 0.8387096774193549
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.6153846153846154,
+          "recall": 0.5714285714285714,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p2",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 13,
+          "fp": 5,
+          "fn": 1,
+          "precision": 0.7222222222222222,
+          "recall": 0.9285714285714286,
+          "f1": 0.8125
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.6153846153846154,
+          "recall": 0.5714285714285714,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p2",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 13,
+          "fp": 6,
+          "fn": 1,
+          "precision": 0.6842105263157895,
+          "recall": 0.9285714285714286,
+          "f1": 0.7878787878787878
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.6153846153846154,
+          "recall": 0.5714285714285714,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p2",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 13,
+          "fp": 6,
+          "fn": 1,
+          "precision": 0.6842105263157895,
+          "recall": 0.9285714285714286,
+          "f1": 0.7878787878787878
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.6153846153846154,
+          "recall": 0.5714285714285714,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p2",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 13,
+          "fp": 6,
+          "fn": 1,
+          "precision": 0.6842105263157895,
+          "recall": 0.9285714285714286,
+          "f1": 0.7878787878787878
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 5,
+          "fn": 6,
+          "precision": 0.6153846153846154,
+          "recall": 0.5714285714285714,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p7",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 4,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8888888888888888
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p7",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p7",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p7",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571
+        },
+        "classified_correct": 0
+      }
+    },
+    {
+      "sheet": "winnipeg-p7",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.8333333333333334,
+          "f1": 0.9090909090909091
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1": 0.8571428571428571
+        },
+        "classified_correct": 0
+      }
+    }
+  ],
+  "aggregate": {
+    "baseline": {
+      "localization": {
+        "tp": 58,
+        "fp": 40,
+        "fn": 20,
+        "precision": 0.5918367346938775,
+        "recall": 0.7435897435897436,
+        "f1": 0.6590909090909091
+      },
+      "connections": {
+        "tp": 35,
+        "fp": 53,
+        "fn": 67,
+        "precision": 0.3977272727272727,
+        "recall": 0.3431372549019608,
+        "f1": 0.3684210526315789
+      }
+    },
+    "retrained": {
+      "localization": {
+        "tp": 60,
+        "fp": 45,
+        "fn": 18,
+        "precision": 0.5714285714285714,
+        "recall": 0.7692307692307693,
+        "f1": 0.6557377049180327
+      },
+      "connections": {
+        "tp": 37,
+        "fp": 61,
+        "fn": 65,
+        "precision": 0.37755102040816324,
+        "recall": 0.3627450980392157,
+        "f1": 0.37
+      }
+    },
+    "selective": {
+      "localization": {
+        "tp": 60,
+        "fp": 46,
+        "fn": 18,
+        "precision": 0.5660377358490566,
+        "recall": 0.7692307692307693,
+        "f1": 0.6521739130434783
+      },
+      "connections": {
+        "tp": 37,
+        "fp": 61,
+        "fn": 65,
+        "precision": 0.37755102040816324,
+        "recall": 0.3627450980392157,
+        "f1": 0.37
+      }
+    },
+    "joint025": {
+      "localization": {
+        "tp": 60,
+        "fp": 46,
+        "fn": 18,
+        "precision": 0.5660377358490566,
+        "recall": 0.7692307692307693,
+        "f1": 0.6521739130434783
+      },
+      "connections": {
+        "tp": 37,
+        "fp": 62,
+        "fn": 65,
+        "precision": 0.37373737373737376,
+        "recall": 0.3627450980392157,
+        "f1": 0.3681592039800995
+      }
+    },
+    "joint05": {
+      "localization": {
+        "tp": 60,
+        "fp": 46,
+        "fn": 18,
+        "precision": 0.5660377358490566,
+        "recall": 0.7692307692307693,
+        "f1": 0.6521739130434783
+      },
+      "connections": {
+        "tp": 38,
+        "fp": 60,
+        "fn": 64,
+        "precision": 0.3877551020408163,
+        "recall": 0.37254901960784315,
+        "f1": 0.38
+      }
+    }
+  }
+}

@@ -165,7 +165,7 @@ def legacy_candidates(image, texts):
     return candidates[:200],segments[:5000],len(candidates)>200
 
 
-def geometric_candidates(image,texts,high_resolution=None):
+def geometric_candidates(image,texts,high_resolution=None,neural_candidates=None,legacy_result=None):
     from .symbols import refine_symbols
     from .learned_symbols import detect,score_boxes,model
     from .network import axis_segments
@@ -176,8 +176,10 @@ def geometric_candidates(image,texts,high_resolution=None):
     neural_only=net is not None and neural_meta.get('merge_mode')=='neural_only'
     if neural_only and neural_meta.get('local_style_gate'):
         from .symbols import neural_style_support
-        legacy,legacy_lines,limited=legacy_candidates(image,texts)
-        found=neural_detect(high_resolution if high_resolution is not None else image)
+        legacy,legacy_lines,limited=legacy_result if legacy_result is not None else legacy_candidates(image,texts)
+        if neural_candidates is not None:found=neural_candidates
+        elif neural_meta.get('detail_hint_mode')=='hybrid':found=neural_detect(high_resolution if high_resolution is not None else image,proposal_hints=[box for box,_ in legacy])
+        else:found=neural_detect(high_resolution if high_resolution is not None else image)
         assisted=neural_style_support(image,legacy,found)
         candidates=[(box,{**props,'profile':'shape_assisted' if assisted else 'generic_fallback',
                            'style_gate':'neural_local_template_support'}) for box,props in found]

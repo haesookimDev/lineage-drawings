@@ -79,13 +79,21 @@ def route(elements,existing,w,h,image,config=None,return_proposals=False,recogni
   raw,intervals=proposals(elements,lines,w,h);junctions=intersections(lines,intervals,ink,recover=meta.get('line_recovery',False))
  if return_proposals:return gray,ink,raw,junctions,lines
  if port_model is None:return [],{},{}
- ps=votes(port_model,features(gray,ink,raw),2)[:,1] if recognized is None else recognized['port_scores'] if isinstance(recognized,dict) else recognized[0];js=votes(junction_model,features(gray,ink,junctions),4) if recognized is None else recognized['junction_scores'] if isinstance(recognized,dict) else recognized[1];accepted=[];ports=defaultdict(list)
+ ps=votes(port_model,features(gray,ink,raw),2)[:,1] if recognized is None else recognized['port_scores'] if isinstance(recognized,dict) else recognized[0];js=votes(junction_model,features(gray,ink,junctions),4) if recognized is None else recognized['junction_scores'] if isinstance(recognized,dict) else recognized[1];accepted=[];ports=defaultdict(list);joint_info=None
+ if meta.get('joint_context',False):
+  from .joint_context import predict
+  joint=predict(gray,ink,raw+junctions)
+  if joint is not None:
+   mix=float(np.clip(meta.get('joint_mix',.25),0,1));ps=ps*(1-mix)+joint['port'][:len(raw),1]*mix;js=js*(1-mix)+joint['junction'][len(raw):]*mix
+   joint_info={'model_sha256':joint['model_sha256'],'mix':mix,'shared_heads':['port','junction','local_line_style'],'score_is_calibrated':False}
+   for i,p in enumerate(raw):p['learned_line_style']=['none','solid','dashed'][int(joint['line'][i].argmax())]
  for p,score in zip(raw,ps):
   if score<meta.get('port_threshold',.5):continue
   ident=p['element_id'];x,y=p['pixel']
   if len(ports[ident])>=12 or any(np.linalg.norm(np.array(p['pixel'])-q['pixel'])<5 for q in ports[ident]):continue
   item={**p,'score':round(float(score),4),'point':[round(x/w,7),round(y/h,7)],'status':'needs_review','source':'sparse_context_and_line_contact'};ports[ident].append(item);accepted.append(item)
  details={'algorithm':'sparse-line-port-v8','recognition_algorithm':'sparse-line-port-v8','topology_model':'hog-rtrees-port-junction-v2','topology_model_sha256':meta.get('port_sha256'),'junction_model_sha256':meta.get('junction_sha256'),'recognition_tiles':0,'line_recovery':bool(meta.get('line_recovery')), 'port_count':len(accepted),'ports':{k:[{a:b for a,b in p.items() if a not in ('pixel','line','t','geometry','element_id')} for p in v] for k,v in ports.items()},'junctions':[],'routing_contacts':[],'lines':[],'paths':[],'line_segments':len(lines),'dashed_run_proposals':dashed,'connections_limited':False,'crossing_policy':'actual_arms_and_dot_with_reviewed_context; plain_X_separate'}
+ if joint_info:details['joint_context']=joint_info
  coords={};along=[{} for _ in lines];adj=defaultdict(dict);edge_quality=defaultdict(dict);owners=defaultdict(set);starts=defaultdict(set);port_scores={};serial=0
  def node(i,t):
   nonlocal serial

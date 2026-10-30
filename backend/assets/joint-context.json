@@ -1,0 +1,13 @@
+{
+  "model": "shared-point-context-v12",
+  "file": "joint-context.onnx",
+  "sha256": "4e6accd5b95db0169620b9f627fa0003b095aa53dfa6972cbb031b0356b5ab68",
+  "batch_size": 64,
+  "heads": [
+    "port2",
+    "junction4",
+    "local_line3"
+  ],
+  "annotation_basis": "AI reviewed real points + exact procedural scenes; no new-project sources",
+  "enabled_by_default": false
+}

@@ -1,0 +1,3188 @@
+{
+  "role": "Development only, 5 fixed ablations. Timing diagnostics share OCR cache and are not cold latency. No new-project input used.",
+  "variants": [
+    [
+      "baseline",
+      "initial",
+      0,
+      false,
+      0
+    ],
+    [
+      "retrained",
+      "frozen-bn-epoch-4",
+      0,
+      true,
+      0
+    ],
+    [
+      "selective",
+      "frozen-bn-epoch-4",
+      4,
+      true,
+      0
+    ],
+    [
+      "joint025",
+      "frozen-bn-epoch-4",
+      4,
+      true,
+      0.25
+    ],
+    [
+      "joint05",
+      "frozen-bn-epoch-4",
+      4,
+      true,
+      0.5
+    ]
+  ],
+  "rows": [
+    {
+      "group": "open100",
+      "id": "4",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 56,
+          "fp": 2,
+          "fn": 17,
+          "precision": 0.9655172413793104,
+          "recall": 0.7671232876712328,
+          "f1": 0.8549618320610687
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 10,
+          "fn": 71,
+          "precision": 0.7777777777777778,
+          "recall": 0.330188679245283,
+          "f1": 0.46357615894039733
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.7149149239994586
+    },
+    {
+      "group": "open100",
+      "id": "4",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 16,
+          "precision": 0.9661016949152542,
+          "recall": 0.7808219178082192,
+          "f1": 0.8636363636363636
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 7,
+          "fn": 65,
+          "precision": 0.8541666666666666,
+          "recall": 0.3867924528301887,
+          "f1": 0.5324675324675324
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 1.6286063799634576
+    },
+    {
+      "group": "open100",
+      "id": "4",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 59,
+          "fp": 2,
+          "fn": 14,
+          "precision": 0.9672131147540983,
+          "recall": 0.8082191780821918,
+          "f1": 0.8805970149253731
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 7,
+          "fn": 60,
+          "precision": 0.8679245283018868,
+          "recall": 0.4339622641509434,
+          "f1": 0.5786163522012578
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 1.9967255649971776
+    },
+    {
+      "group": "open100",
+      "id": "4",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 59,
+          "fp": 2,
+          "fn": 14,
+          "precision": 0.9672131147540983,
+          "recall": 0.8082191780821918,
+          "f1": 0.8805970149253731
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 7,
+          "fn": 60,
+          "precision": 0.8679245283018868,
+          "recall": 0.4339622641509434,
+          "f1": 0.5786163522012578
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.115238303958904
+    },
+    {
+      "group": "open100",
+      "id": "4",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 59,
+          "fp": 2,
+          "fn": 14,
+          "precision": 0.9672131147540983,
+          "recall": 0.8082191780821918,
+          "f1": 0.8805970149253731
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 15,
+          "fn": 60,
+          "precision": 0.7540983606557377,
+          "recall": 0.4339622641509434,
+          "f1": 0.5508982035928144
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.043717703956645
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 1,
+          "fn": 38,
+          "precision": 0.972972972972973,
+          "recall": 0.4864864864864865,
+          "f1": 0.6486486486486487
+        },
+        "connections": {
+          "tp": 21,
+          "fp": 3,
+          "fn": 418,
+          "precision": 0.875,
+          "recall": 0.04783599088838269,
+          "f1": 0.09071274298056156
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.050227640022058
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 40,
+          "fp": 2,
+          "fn": 34,
+          "precision": 0.9523809523809523,
+          "recall": 0.5405405405405406,
+          "f1": 0.6896551724137931
+        },
+        "connections": {
+          "tp": 42,
+          "fp": 66,
+          "fn": 397,
+          "precision": 0.3888888888888889,
+          "recall": 0.09567198177676538,
+          "f1": 0.15356489945155394
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.3150056899758056
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 46,
+          "fp": 3,
+          "fn": 28,
+          "precision": 0.9387755102040817,
+          "recall": 0.6216216216216216,
+          "f1": 0.7479674796747967
+        },
+        "connections": {
+          "tp": 37,
+          "fp": 3,
+          "fn": 402,
+          "precision": 0.925,
+          "recall": 0.08428246013667426,
+          "f1": 0.1544885177453027
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.925349974015262
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 46,
+          "fp": 3,
+          "fn": 28,
+          "precision": 0.9387755102040817,
+          "recall": 0.6216216216216216,
+          "f1": 0.7479674796747967
+        },
+        "connections": {
+          "tp": 37,
+          "fp": 13,
+          "fn": 402,
+          "precision": 0.74,
+          "recall": 0.08428246013667426,
+          "f1": 0.15132924335378323
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.003283226978965
+    },
+    {
+      "group": "open100",
+      "id": "5",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 46,
+          "fp": 3,
+          "fn": 28,
+          "precision": 0.9387755102040817,
+          "recall": 0.6216216216216216,
+          "f1": 0.7479674796747967
+        },
+        "connections": {
+          "tp": 37,
+          "fp": 13,
+          "fn": 402,
+          "precision": 0.74,
+          "recall": 0.08428246013667426,
+          "f1": 0.15132924335378323
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.0087610200280324
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.7142857142857143,
+          "recall": 0.8333333333333334,
+          "f1": 0.7692307692307693
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 1.9508665110333823
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 1.3048160030157305
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 1.6645806820015423
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 1.7359178909682669
+    },
+    {
+      "group": "pahala",
+      "id": "p20",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.625,
+          "recall": 0.8333333333333334,
+          "f1": 0.7142857142857143
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 3,
+          "precision": 0.4,
+          "recall": 0.4,
+          "f1": 0.4
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 1.6919135819771327
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 14,
+          "fn": 0,
+          "precision": 0.7971014492753623,
+          "recall": 1.0,
+          "f1": 0.8870967741935484
+        },
+        "connections": {
+          "tp": 132,
+          "fp": 49,
+          "fn": 1011,
+          "precision": 0.7292817679558011,
+          "recall": 0.11548556430446194,
+          "f1": 0.19939577039274925
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 6.0917405060026795
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 12,
+          "fn": 0,
+          "precision": 0.8208955223880597,
+          "recall": 1.0,
+          "f1": 0.9016393442622951
+        },
+        "connections": {
+          "tp": 185,
+          "fp": 23,
+          "fn": 958,
+          "precision": 0.8894230769230769,
+          "recall": 0.16185476815398075,
+          "f1": 0.27387120651369357
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.597129331959877
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 13,
+          "fn": 0,
+          "precision": 0.8088235294117647,
+          "recall": 1.0,
+          "f1": 0.8943089430894309
+        },
+        "connections": {
+          "tp": 185,
+          "fp": 25,
+          "fn": 958,
+          "precision": 0.8809523809523809,
+          "recall": 0.16185476815398075,
+          "f1": 0.2734663710273466
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.9414799750084057
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 13,
+          "fn": 0,
+          "precision": 0.8088235294117647,
+          "recall": 1.0,
+          "f1": 0.8943089430894309
+        },
+        "connections": {
+          "tp": 177,
+          "fp": 29,
+          "fn": 966,
+          "precision": 0.8592233009708737,
+          "recall": 0.15485564304461943,
+          "f1": 0.26241660489251295
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.148410307010636
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "232",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 55,
+          "fp": 13,
+          "fn": 0,
+          "precision": 0.8088235294117647,
+          "recall": 1.0,
+          "f1": 0.8943089430894309
+        },
+        "connections": {
+          "tp": 194,
+          "fp": 30,
+          "fn": 949,
+          "precision": 0.8660714285714286,
+          "recall": 0.16972878390201224,
+          "f1": 0.28383321141185075
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.111580352997407
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 100,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9433962264150944,
+          "f1": 0.970873786407767
+        },
+        "connections": {
+          "tp": 311,
+          "fp": 4,
+          "fn": 364,
+          "precision": 0.9873015873015873,
+          "recall": 0.46074074074074073,
+          "f1": 0.6282828282828283
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 5.750239929999225
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 98,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.9245283018867925,
+          "f1": 0.9607843137254902
+        },
+        "connections": {
+          "tp": 299,
+          "fp": 10,
+          "fn": 376,
+          "precision": 0.9676375404530745,
+          "recall": 0.44296296296296295,
+          "f1": 0.6077235772357723
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.0220919080311432
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 98,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.9245283018867925,
+          "f1": 0.9607843137254902
+        },
+        "connections": {
+          "tp": 299,
+          "fp": 10,
+          "fn": 376,
+          "precision": 0.9676375404530745,
+          "recall": 0.44296296296296295,
+          "f1": 0.6077235772357723
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.3898384270141833
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 98,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.9245283018867925,
+          "f1": 0.9607843137254902
+        },
+        "connections": {
+          "tp": 273,
+          "fp": 13,
+          "fn": 402,
+          "precision": 0.9545454545454546,
+          "recall": 0.40444444444444444,
+          "f1": 0.5681581685744017
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.500599969003815
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "238",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 98,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.9245283018867925,
+          "f1": 0.9607843137254902
+        },
+        "connections": {
+          "tp": 266,
+          "fp": 9,
+          "fn": 409,
+          "precision": 0.9672727272727273,
+          "recall": 0.3940740740740741,
+          "f1": 0.56
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.5082709590205923
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 375,
+          "fp": 11,
+          "fn": 426,
+          "precision": 0.9715025906735751,
+          "recall": 0.4681647940074906,
+          "f1": 0.6318449873631002
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 6.059582411951851
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 375,
+          "fp": 89,
+          "fn": 426,
+          "precision": 0.8081896551724138,
+          "recall": 0.4681647940074906,
+          "f1": 0.5928853754940712
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.552613491017837
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 375,
+          "fp": 89,
+          "fn": 426,
+          "precision": 0.8081896551724138,
+          "recall": 0.4681647940074906,
+          "f1": 0.5928853754940712
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.911485233984422
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 375,
+          "fp": 12,
+          "fn": 426,
+          "precision": 0.9689922480620154,
+          "recall": 0.4681647940074906,
+          "f1": 0.6313131313131313
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.062108638987411
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "470",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.987012987012987,
+          "recall": 1.0,
+          "f1": 0.9934640522875817
+        },
+        "connections": {
+          "tp": 384,
+          "fp": 13,
+          "fn": 417,
+          "precision": 0.9672544080604534,
+          "recall": 0.4794007490636704,
+          "f1": 0.6410684474123539
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.1356352510047145
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 377,
+          "fp": 0,
+          "fn": 225,
+          "precision": 1.0,
+          "recall": 0.6262458471760798,
+          "f1": 0.7701736465781409
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 6.400562260998413
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 375,
+          "fp": 0,
+          "fn": 227,
+          "precision": 1.0,
+          "recall": 0.6229235880398671,
+          "f1": 0.7676560900716479
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.7399585809907876
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9878048780487805,
+          "recall": 1.0,
+          "f1": 0.9938650306748467
+        },
+        "connections": {
+          "tp": 375,
+          "fp": 0,
+          "fn": 227,
+          "precision": 1.0,
+          "recall": 0.6229235880398671,
+          "f1": 0.7676560900716479
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.133227529004216
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9878048780487805,
+          "recall": 1.0,
+          "f1": 0.9938650306748467
+        },
+        "connections": {
+          "tp": 378,
+          "fp": 0,
+          "fn": 224,
+          "precision": 1.0,
+          "recall": 0.627906976744186,
+          "f1": 0.7714285714285715
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.358628279005643
+    },
+    {
+      "group": "v5-synthetic",
+      "id": "278",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 81,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.9878048780487805,
+          "recall": 1.0,
+          "f1": 0.9938650306748467
+        },
+        "connections": {
+          "tp": 371,
+          "fp": 0,
+          "fn": 231,
+          "precision": 1.0,
+          "recall": 0.6162790697674418,
+          "f1": 0.762589928057554
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.373379772994667
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.250878853024915
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.128024310048204
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.4248915200005285
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.5308175109676085
+    },
+    {
+      "group": "pahala",
+      "id": "p14",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 11,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 46,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.8363636363636363,
+          "f1": 0.9108910891089109
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.5734627479687333
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 6.054925179982092
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.495292558975052
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.920933726010844
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.062018783995882
+    },
+    {
+      "group": "virden",
+      "id": "p13",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.3333333333333333,
+          "f1": 0.5
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.094103392970283
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 5.839953005022835
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.442560104012955
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.814770288998261
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.9485341910040006
+    },
+    {
+      "group": "virden",
+      "id": "p14",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.9114966050256044
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 69,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9857142857142858,
+          "f1": 0.9928057553956835
+        },
+        "connections": {
+          "tp": 65,
+          "fp": 18,
+          "fn": 93,
+          "precision": 0.7831325301204819,
+          "recall": 0.41139240506329117,
+          "f1": 0.5394190871369294
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.201996012998279
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 68,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.9855072463768116,
+          "recall": 0.9714285714285714,
+          "f1": 0.9784172661870504
+        },
+        "connections": {
+          "tp": 63,
+          "fp": 22,
+          "fn": 95,
+          "precision": 0.7411764705882353,
+          "recall": 0.3987341772151899,
+          "f1": 0.5185185185185185
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.6832887459895574
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 68,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.9855072463768116,
+          "recall": 0.9714285714285714,
+          "f1": 0.9784172661870504
+        },
+        "connections": {
+          "tp": 63,
+          "fp": 22,
+          "fn": 95,
+          "precision": 0.7411764705882353,
+          "recall": 0.3987341772151899,
+          "f1": 0.5185185185185185
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.07922747900011
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 68,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.9855072463768116,
+          "recall": 0.9714285714285714,
+          "f1": 0.9784172661870504
+        },
+        "connections": {
+          "tp": 63,
+          "fp": 23,
+          "fn": 95,
+          "precision": 0.7325581395348837,
+          "recall": 0.3987341772151899,
+          "f1": 0.5163934426229508
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.2216297929990105
+    },
+    {
+      "group": "open100-repair",
+      "id": "6",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 68,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.9855072463768116,
+          "recall": 0.9714285714285714,
+          "f1": 0.9784172661870504
+        },
+        "connections": {
+          "tp": 63,
+          "fp": 23,
+          "fn": 95,
+          "precision": 0.7325581395348837,
+          "recall": 0.3987341772151899,
+          "f1": 0.5163934426229508
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.1938223660108633
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1": 0.95
+        },
+        "connections": {
+          "tp": 104,
+          "fp": 12,
+          "fn": 54,
+          "precision": 0.896551724137931,
+          "recall": 0.6582278481012658,
+          "f1": 0.7591240875912408
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.04687683400698
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.9661016949152542,
+          "recall": 0.9344262295081968,
+          "f1": 0.95
+        },
+        "connections": {
+          "tp": 104,
+          "fp": 13,
+          "fn": 54,
+          "precision": 0.8888888888888888,
+          "recall": 0.6582278481012658,
+          "f1": 0.7563636363636363
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.639522315002978
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.95,
+          "recall": 0.9344262295081968,
+          "f1": 0.9421487603305785
+        },
+        "connections": {
+          "tp": 104,
+          "fp": 13,
+          "fn": 54,
+          "precision": 0.8888888888888888,
+          "recall": 0.6582278481012658,
+          "f1": 0.7563636363636363
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.003372462000698
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.95,
+          "recall": 0.9344262295081968,
+          "f1": 0.9421487603305785
+        },
+        "connections": {
+          "tp": 104,
+          "fp": 13,
+          "fn": 54,
+          "precision": 0.8888888888888888,
+          "recall": 0.6582278481012658,
+          "f1": 0.7563636363636363
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.1795352780027315
+    },
+    {
+      "group": "open100-repair",
+      "id": "7",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 57,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.95,
+          "recall": 0.9344262295081968,
+          "f1": 0.9421487603305785
+        },
+        "connections": {
+          "tp": 102,
+          "fp": 17,
+          "fn": 56,
+          "precision": 0.8571428571428571,
+          "recall": 0.6455696202531646,
+          "f1": 0.7364620938628159
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.118372133001685
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 1,
+          "fn": 0,
+          "precision": 0.972972972972973,
+          "recall": 1.0,
+          "f1": 0.9863013698630136
+        },
+        "connections": {
+          "tp": 41,
+          "fp": 12,
+          "fn": 12,
+          "precision": 0.7735849056603774,
+          "recall": 0.7735849056603774,
+          "f1": 0.7735849056603774
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.2859971140278503
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 2,
+          "fn": 0,
+          "precision": 0.9473684210526315,
+          "recall": 1.0,
+          "f1": 0.972972972972973
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 14,
+          "fn": 18,
+          "precision": 0.7142857142857143,
+          "recall": 0.660377358490566,
+          "f1": 0.6862745098039216
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.2450670420075767
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 14,
+          "fn": 18,
+          "precision": 0.7142857142857143,
+          "recall": 0.660377358490566,
+          "f1": 0.6862745098039216
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.5388579290010966
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 14,
+          "fn": 18,
+          "precision": 0.7142857142857143,
+          "recall": 0.660377358490566,
+          "f1": 0.6862745098039216
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.6223461179761216
+    },
+    {
+      "group": "open100-repair",
+      "id": "8",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.9,
+          "recall": 1.0,
+          "f1": 0.9473684210526315
+        },
+        "connections": {
+          "tp": 35,
+          "fp": 14,
+          "fn": 18,
+          "precision": 0.7142857142857143,
+          "recall": 0.660377358490566,
+          "f1": 0.6862745098039216
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.597920867963694
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 37,
+          "fp": 3,
+          "fn": 5,
+          "precision": 0.925,
+          "recall": 0.8809523809523809,
+          "f1": 0.9024390243902439
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 13,
+          "fn": 40,
+          "precision": 0.8992248062015504,
+          "recall": 0.7435897435897436,
+          "f1": 0.8140350877192982
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.19758236897178
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 3,
+          "fn": 6,
+          "precision": 0.9230769230769231,
+          "recall": 0.8571428571428571,
+          "f1": 0.8888888888888888
+        },
+        "connections": {
+          "tp": 126,
+          "fp": 1,
+          "fn": 30,
+          "precision": 0.9921259842519685,
+          "recall": 0.8076923076923077,
+          "f1": 0.8904593639575972
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.158056090003811
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 4,
+          "fn": 6,
+          "precision": 0.9,
+          "recall": 0.8571428571428571,
+          "f1": 0.8780487804878049
+        },
+        "connections": {
+          "tp": 126,
+          "fp": 1,
+          "fn": 30,
+          "precision": 0.9921259842519685,
+          "recall": 0.8076923076923077,
+          "f1": 0.8904593639575972
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.4832349240314215
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 4,
+          "fn": 6,
+          "precision": 0.9,
+          "recall": 0.8571428571428571,
+          "f1": 0.8780487804878049
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 1,
+          "fn": 40,
+          "precision": 0.9914529914529915,
+          "recall": 0.7435897435897436,
+          "f1": 0.8498168498168498
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.558799276011996
+    },
+    {
+      "group": "open100-repair",
+      "id": "9",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 36,
+          "fp": 4,
+          "fn": 6,
+          "precision": 0.9,
+          "recall": 0.8571428571428571,
+          "f1": 0.8780487804878049
+        },
+        "connections": {
+          "tp": 116,
+          "fp": 1,
+          "fn": 40,
+          "precision": 0.9914529914529915,
+          "recall": 0.7435897435897436,
+          "f1": 0.8498168498168498
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.6023237420013174
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 74,
+          "fp": 5,
+          "fn": 15,
+          "precision": 0.9367088607594937,
+          "recall": 0.8314606741573034,
+          "f1": 0.8809523809523809
+        },
+        "connections": {
+          "tp": 30,
+          "fp": 38,
+          "fn": 137,
+          "precision": 0.4411764705882353,
+          "recall": 0.17964071856287425,
+          "f1": 0.2553191489361702
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 5.075090195983648
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 76,
+          "fp": 3,
+          "fn": 13,
+          "precision": 0.9620253164556962,
+          "recall": 0.8539325842696629,
+          "f1": 0.9047619047619048
+        },
+        "connections": {
+          "tp": 44,
+          "fp": 35,
+          "fn": 123,
+          "precision": 0.5569620253164557,
+          "recall": 0.2634730538922156,
+          "f1": 0.35772357723577236
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.976097695995122
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 77,
+          "fp": 4,
+          "fn": 12,
+          "precision": 0.9506172839506173,
+          "recall": 0.8651685393258427,
+          "f1": 0.9058823529411765
+        },
+        "connections": {
+          "tp": 44,
+          "fp": 38,
+          "fn": 123,
+          "precision": 0.5365853658536586,
+          "recall": 0.2634730538922156,
+          "f1": 0.3534136546184739
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.3452508940245025
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 77,
+          "fp": 4,
+          "fn": 12,
+          "precision": 0.9506172839506173,
+          "recall": 0.8651685393258427,
+          "f1": 0.9058823529411765
+        },
+        "connections": {
+          "tp": 44,
+          "fp": 38,
+          "fn": 123,
+          "precision": 0.5365853658536586,
+          "recall": 0.2634730538922156,
+          "f1": 0.3534136546184739
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.5431668629753403
+    },
+    {
+      "group": "open100-repair",
+      "id": "10",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 77,
+          "fp": 4,
+          "fn": 12,
+          "precision": 0.9506172839506173,
+          "recall": 0.8651685393258427,
+          "f1": 0.9058823529411765
+        },
+        "connections": {
+          "tp": 43,
+          "fp": 38,
+          "fn": 124,
+          "precision": 0.5308641975308642,
+          "recall": 0.25748502994011974,
+          "f1": 0.3467741935483871
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.5414919489994645
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 61,
+          "fp": 0,
+          "fn": 21,
+          "precision": 1.0,
+          "recall": 0.7439024390243902,
+          "f1": 0.8531468531468531
+        },
+        "connections": {
+          "tp": 26,
+          "fp": 70,
+          "fn": 130,
+          "precision": 0.2708333333333333,
+          "recall": 0.16666666666666666,
+          "f1": 0.20634920634920634
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.821834033005871
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 64,
+          "fp": 0,
+          "fn": 18,
+          "precision": 1.0,
+          "recall": 0.7804878048780488,
+          "f1": 0.8767123287671232
+        },
+        "connections": {
+          "tp": 37,
+          "fp": 82,
+          "fn": 119,
+          "precision": 0.31092436974789917,
+          "recall": 0.23717948717948717,
+          "f1": 0.2690909090909091
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.6459279650007375
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 66,
+          "fp": 1,
+          "fn": 16,
+          "precision": 0.9850746268656716,
+          "recall": 0.8048780487804879,
+          "f1": 0.8859060402684564
+        },
+        "connections": {
+          "tp": 45,
+          "fp": 85,
+          "fn": 111,
+          "precision": 0.34615384615384615,
+          "recall": 0.28846153846153844,
+          "f1": 0.3146853146853147
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.008525928016752
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 66,
+          "fp": 1,
+          "fn": 16,
+          "precision": 0.9850746268656716,
+          "recall": 0.8048780487804879,
+          "f1": 0.8859060402684564
+        },
+        "connections": {
+          "tp": 42,
+          "fp": 87,
+          "fn": 114,
+          "precision": 0.32558139534883723,
+          "recall": 0.2692307692307692,
+          "f1": 0.29473684210526313
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.146834935992956
+    },
+    {
+      "group": "open100-repair",
+      "id": "11",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 66,
+          "fp": 1,
+          "fn": 16,
+          "precision": 0.9850746268656716,
+          "recall": 0.8048780487804879,
+          "f1": 0.8859060402684564
+        },
+        "connections": {
+          "tp": 42,
+          "fp": 84,
+          "fn": 114,
+          "precision": 0.3333333333333333,
+          "recall": 0.2692307692307692,
+          "f1": 0.2978723404255319
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.1751592030050233
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 8,
+          "fp": 2,
+          "fn": 4,
+          "precision": 0.8,
+          "recall": 0.6666666666666666,
+          "f1": 0.7272727272727273
+        },
+        "connections": {
+          "tp": 4,
+          "fp": 3,
+          "fn": 8,
+          "precision": 0.5714285714285714,
+          "recall": 0.3333333333333333,
+          "f1": 0.42105263157894735
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.752116359944921
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 8,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.7272727272727273,
+          "recall": 0.6666666666666666,
+          "f1": 0.6956521739130435
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 4,
+          "fn": 9,
+          "precision": 0.42857142857142855,
+          "recall": 0.25,
+          "f1": 0.3157894736842105
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 2.9264658269821666
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 8,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.7272727272727273,
+          "recall": 0.6666666666666666,
+          "f1": 0.6956521739130435
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 4,
+          "fn": 9,
+          "precision": 0.42857142857142855,
+          "recall": 0.25,
+          "f1": 0.3157894736842105
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.237533696985338
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 8,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.7272727272727273,
+          "recall": 0.6666666666666666,
+          "f1": 0.6956521739130435
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 4,
+          "fn": 9,
+          "precision": 0.42857142857142855,
+          "recall": 0.25,
+          "f1": 0.3157894736842105
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.3275036769919097
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p142",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 8,
+          "fp": 3,
+          "fn": 4,
+          "precision": 0.7272727272727273,
+          "recall": 0.6666666666666666,
+          "f1": 0.6956521739130435
+        },
+        "connections": {
+          "tp": 3,
+          "fp": 4,
+          "fn": 9,
+          "precision": 0.42857142857142855,
+          "recall": 0.25,
+          "f1": 0.3157894736842105
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.302469246031251
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.6923076923076923,
+          "recall": 1.0,
+          "f1": 0.8181818181818182
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 7,
+          "fn": 4,
+          "precision": 0.5333333333333333,
+          "recall": 0.6666666666666666,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.480472630995791
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.6923076923076923,
+          "recall": 1.0,
+          "f1": 0.8181818181818182
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 7,
+          "fn": 4,
+          "precision": 0.5333333333333333,
+          "recall": 0.6666666666666666,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.2200222029932775
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.6923076923076923,
+          "recall": 1.0,
+          "f1": 0.8181818181818182
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 7,
+          "fn": 4,
+          "precision": 0.5333333333333333,
+          "recall": 0.6666666666666666,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.5598100579809397
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.6923076923076923,
+          "recall": 1.0,
+          "f1": 0.8181818181818182
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 7,
+          "fn": 4,
+          "precision": 0.5333333333333333,
+          "recall": 0.6666666666666666,
+          "f1": 0.5925925925925926
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.6913203920121305
+    },
+    {
+      "group": "winkler-preservation",
+      "id": "p150",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 9,
+          "fp": 4,
+          "fn": 0,
+          "precision": 0.6923076923076923,
+          "recall": 1.0,
+          "f1": 0.8181818181818182
+        },
+        "connections": {
+          "tp": 9,
+          "fp": 7,
+          "fn": 3,
+          "precision": 0.5625,
+          "recall": 0.75,
+          "f1": 0.6428571428571429
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.666051628999412
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9090909090909091,
+          "f1": 0.9523809523809523
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 5.581183854024857
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.9090909090909091,
+          "recall": 0.9090909090909091,
+          "f1": 0.9090909090909091
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 3.7892529200180434
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.8333333333333334,
+          "recall": 0.9090909090909091,
+          "f1": 0.8695652173913043
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.164021823031362
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.8333333333333334,
+          "recall": 0.9090909090909091,
+          "f1": 0.8695652173913043
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.277137688011862
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p2",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 10,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.8333333333333334,
+          "recall": 0.9090909090909091,
+          "f1": 0.8695652173913043
+        },
+        "connections": {
+          "tp": 6,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 4.24464667198481
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "variant": "baseline",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 11.880925932026003
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "variant": "retrained",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 6.465787643974181
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "variant": "selective",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 6.9657263300032355
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "variant": "joint025",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 7.1279912540339865
+    },
+    {
+      "group": "winnipeg-preservation",
+      "id": "p7",
+      "variant": "joint05",
+      "scores": {
+        "localization": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "connections": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "classified_correct": 0
+      },
+      "diagnostic_warm_seconds": 7.115669724007603
+    }
+  ],
+  "aggregate": {
+    "open100": {
+      "baseline": {
+        "localization": {
+          "tp": 92,
+          "fp": 3,
+          "fn": 55,
+          "precision": 0.968421052631579,
+          "recall": 0.6258503401360545,
+          "f1": 0.7603305785123967
+        },
+        "connections": {
+          "tp": 56,
+          "fp": 13,
+          "fn": 489,
+          "precision": 0.8115942028985508,
+          "recall": 0.10275229357798166,
+          "f1": 0.18241042345276873
+        }
+      },
+      "retrained": {
+        "localization": {
+          "tp": 97,
+          "fp": 4,
+          "fn": 50,
+          "precision": 0.9603960396039604,
+          "recall": 0.6598639455782312,
+          "f1": 0.782258064516129
+        },
+        "connections": {
+          "tp": 83,
+          "fp": 73,
+          "fn": 462,
+          "precision": 0.532051282051282,
+          "recall": 0.15229357798165138,
+          "f1": 0.23680456490727533
+        }
+      },
+      "selective": {
+        "localization": {
+          "tp": 105,
+          "fp": 5,
+          "fn": 42,
+          "precision": 0.9545454545454546,
+          "recall": 0.7142857142857143,
+          "f1": 0.8171206225680934
+        },
+        "connections": {
+          "tp": 83,
+          "fp": 10,
+          "fn": 462,
+          "precision": 0.8924731182795699,
+          "recall": 0.15229357798165138,
+          "f1": 0.2601880877742947
+        }
+      },
+      "joint025": {
+        "localization": {
+          "tp": 105,
+          "fp": 5,
+          "fn": 42,
+          "precision": 0.9545454545454546,
+          "recall": 0.7142857142857143,
+          "f1": 0.8171206225680934
+        },
+        "connections": {
+          "tp": 83,
+          "fp": 20,
+          "fn": 462,
+          "precision": 0.8058252427184466,
+          "recall": 0.15229357798165138,
+          "f1": 0.25617283950617287
+        }
+      },
+      "joint05": {
+        "localization": {
+          "tp": 105,
+          "fp": 5,
+          "fn": 42,
+          "precision": 0.9545454545454546,
+          "recall": 0.7142857142857143,
+          "f1": 0.8171206225680934
+        },
+        "connections": {
+          "tp": 83,
+          "fp": 28,
+          "fn": 462,
+          "precision": 0.7477477477477478,
+          "recall": 0.15229357798165138,
+          "f1": 0.2530487804878049
+        }
+      }
+    },
+    "open100-repair": {
+      "baseline": {
+        "localization": {
+          "tp": 334,
+          "fp": 11,
+          "fn": 46,
+          "precision": 0.9681159420289855,
+          "recall": 0.8789473684210526,
+          "f1": 0.9213793103448276
+        },
+        "connections": {
+          "tp": 382,
+          "fp": 163,
+          "fn": 466,
+          "precision": 0.7009174311926606,
+          "recall": 0.45047169811320753,
+          "f1": 0.548456568557071
+        }
+      },
+      "retrained": {
+        "localization": {
+          "tp": 337,
+          "fp": 11,
+          "fn": 43,
+          "precision": 0.9683908045977011,
+          "recall": 0.8868421052631579,
+          "f1": 0.9258241758241759
+        },
+        "connections": {
+          "tp": 409,
+          "fp": 167,
+          "fn": 439,
+          "precision": 0.7100694444444444,
+          "recall": 0.482311320754717,
+          "f1": 0.574438202247191
+        }
+      },
+      "selective": {
+        "localization": {
+          "tp": 340,
+          "fp": 17,
+          "fn": 40,
+          "precision": 0.9523809523809523,
+          "recall": 0.8947368421052632,
+          "f1": 0.9226594301221167
+        },
+        "connections": {
+          "tp": 417,
+          "fp": 173,
+          "fn": 431,
+          "precision": 0.7067796610169491,
+          "recall": 0.49174528301886794,
+          "f1": 0.5799721835883171
+        }
+      },
+      "joint025": {
+        "localization": {
+          "tp": 340,
+          "fp": 17,
+          "fn": 40,
+          "precision": 0.9523809523809523,
+          "recall": 0.8947368421052632,
+          "f1": 0.9226594301221167
+        },
+        "connections": {
+          "tp": 404,
+          "fp": 176,
+          "fn": 444,
+          "precision": 0.696551724137931,
+          "recall": 0.47641509433962265,
+          "f1": 0.5658263305322129
+        }
+      },
+      "joint05": {
+        "localization": {
+          "tp": 340,
+          "fp": 17,
+          "fn": 40,
+          "precision": 0.9523809523809523,
+          "recall": 0.8947368421052632,
+          "f1": 0.9226594301221167
+        },
+        "connections": {
+          "tp": 401,
+          "fp": 177,
+          "fn": 447,
+          "precision": 0.6937716262975778,
+          "recall": 0.47287735849056606,
+          "f1": 0.5624123422159888
+        }
+      }
+    },
+    "pahala": {
+      "baseline": {
+        "localization": {
+          "tp": 16,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.8888888888888888,
+          "recall": 0.9411764705882353,
+          "f1": 0.9142857142857143
+        },
+        "connections": {
+          "tp": 48,
+          "fp": 3,
+          "fn": 12,
+          "precision": 0.9411764705882353,
+          "recall": 0.8,
+          "f1": 0.8648648648648649
+        }
+      },
+      "retrained": {
+        "localization": {
+          "tp": 16,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.8421052631578947,
+          "recall": 0.9411764705882353,
+          "f1": 0.8888888888888888
+        },
+        "connections": {
+          "tp": 48,
+          "fp": 3,
+          "fn": 12,
+          "precision": 0.9411764705882353,
+          "recall": 0.8,
+          "f1": 0.8648648648648649
+        }
+      },
+      "selective": {
+        "localization": {
+          "tp": 16,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.8421052631578947,
+          "recall": 0.9411764705882353,
+          "f1": 0.8888888888888888
+        },
+        "connections": {
+          "tp": 48,
+          "fp": 3,
+          "fn": 12,
+          "precision": 0.9411764705882353,
+          "recall": 0.8,
+          "f1": 0.8648648648648649
+        }
+      },
+      "joint025": {
+        "localization": {
+          "tp": 16,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.8421052631578947,
+          "recall": 0.9411764705882353,
+          "f1": 0.8888888888888888
+        },
+        "connections": {
+          "tp": 48,
+          "fp": 3,
+          "fn": 12,
+          "precision": 0.9411764705882353,
+          "recall": 0.8,
+          "f1": 0.8648648648648649
+        }
+      },
+      "joint05": {
+        "localization": {
+          "tp": 16,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.8421052631578947,
+          "recall": 0.9411764705882353,
+          "f1": 0.8888888888888888
+        },
+        "connections": {
+          "tp": 48,
+          "fp": 3,
+          "fn": 12,
+          "precision": 0.9411764705882353,
+          "recall": 0.8,
+          "f1": 0.8648648648648649
+        }
+      }
+    },
+    "v5-synthetic": {
+      "baseline": {
+        "localization": {
+          "tp": 312,
+          "fp": 15,
+          "fn": 6,
+          "precision": 0.9541284403669725,
+          "recall": 0.9811320754716981,
+          "f1": 0.9674418604651163
+        },
+        "connections": {
+          "tp": 1195,
+          "fp": 64,
+          "fn": 2026,
+          "precision": 0.949166004765687,
+          "recall": 0.37100279416330334,
+          "f1": 0.5334821428571429
+        }
+      },
+      "retrained": {
+        "localization": {
+          "tp": 310,
+          "fp": 13,
+          "fn": 8,
+          "precision": 0.9597523219814241,
+          "recall": 0.9748427672955975,
+          "f1": 0.9672386895475819
+        },
+        "connections": {
+          "tp": 1234,
+          "fp": 122,
+          "fn": 1987,
+          "precision": 0.9100294985250738,
+          "recall": 0.3831108351443651,
+          "f1": 0.5392178282717938
+        }
+      },
+      "selective": {
+        "localization": {
+          "tp": 310,
+          "fp": 15,
+          "fn": 8,
+          "precision": 0.9538461538461539,
+          "recall": 0.9748427672955975,
+          "f1": 0.9642301710730948
+        },
+        "connections": {
+          "tp": 1234,
+          "fp": 124,
+          "fn": 1987,
+          "precision": 0.9086892488954345,
+          "recall": 0.3831108351443651,
+          "f1": 0.5389823105481546
+        }
+      },
+      "joint025": {
+        "localization": {
+          "tp": 310,
+          "fp": 15,
+          "fn": 8,
+          "precision": 0.9538461538461539,
+          "recall": 0.9748427672955975,
+          "f1": 0.9642301710730948
+        },
+        "connections": {
+          "tp": 1203,
+          "fp": 54,
+          "fn": 2018,
+          "precision": 0.9570405727923628,
+          "recall": 0.3734864948773673,
+          "f1": 0.537293434569004
+        }
+      },
+      "joint05": {
+        "localization": {
+          "tp": 310,
+          "fp": 15,
+          "fn": 8,
+          "precision": 0.9538461538461539,
+          "recall": 0.9748427672955975,
+          "f1": 0.9642301710730948
+        },
+        "connections": {
+          "tp": 1215,
+          "fp": 52,
+          "fn": 2006,
+          "precision": 0.9589581689029203,
+          "recall": 0.3772120459484632,
+          "f1": 0.5414438502673797
+        }
+      }
+    },
+    "virden": {
+      "baseline": {
+        "localization": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1": 0.4
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "retrained": {
+        "localization": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1": 0.4
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "selective": {
+        "localization": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1": 0.4
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "joint025": {
+        "localization": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1": 0.4
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "joint05": {
+        "localization": {
+          "tp": 2,
+          "fp": 1,
+          "fn": 5,
+          "precision": 0.6666666666666666,
+          "recall": 0.2857142857142857,
+          "f1": 0.4
+        },
+        "connections": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      }
+    },
+    "winkler-preservation": {
+      "baseline": {
+        "localization": {
+          "tp": 17,
+          "fp": 6,
+          "fn": 4,
+          "precision": 0.7391304347826086,
+          "recall": 0.8095238095238095,
+          "f1": 0.7727272727272727
+        },
+        "connections": {
+          "tp": 12,
+          "fp": 10,
+          "fn": 12,
+          "precision": 0.5454545454545454,
+          "recall": 0.5,
+          "f1": 0.5217391304347826
+        }
+      },
+      "retrained": {
+        "localization": {
+          "tp": 17,
+          "fp": 7,
+          "fn": 4,
+          "precision": 0.7083333333333334,
+          "recall": 0.8095238095238095,
+          "f1": 0.7555555555555555
+        },
+        "connections": {
+          "tp": 11,
+          "fp": 11,
+          "fn": 13,
+          "precision": 0.5,
+          "recall": 0.4583333333333333,
+          "f1": 0.4782608695652174
+        }
+      },
+      "selective": {
+        "localization": {
+          "tp": 17,
+          "fp": 7,
+          "fn": 4,
+          "precision": 0.7083333333333334,
+          "recall": 0.8095238095238095,
+          "f1": 0.7555555555555555
+        },
+        "connections": {
+          "tp": 11,
+          "fp": 11,
+          "fn": 13,
+          "precision": 0.5,
+          "recall": 0.4583333333333333,
+          "f1": 0.4782608695652174
+        }
+      },
+      "joint025": {
+        "localization": {
+          "tp": 17,
+          "fp": 7,
+          "fn": 4,
+          "precision": 0.7083333333333334,
+          "recall": 0.8095238095238095,
+          "f1": 0.7555555555555555
+        },
+        "connections": {
+          "tp": 11,
+          "fp": 11,
+          "fn": 13,
+          "precision": 0.5,
+          "recall": 0.4583333333333333,
+          "f1": 0.4782608695652174
+        }
+      },
+      "joint05": {
+        "localization": {
+          "tp": 17,
+          "fp": 7,
+          "fn": 4,
+          "precision": 0.7083333333333334,
+          "recall": 0.8095238095238095,
+          "f1": 0.7555555555555555
+        },
+        "connections": {
+          "tp": 12,
+          "fp": 11,
+          "fn": 12,
+          "precision": 0.5217391304347826,
+          "recall": 0.5,
+          "f1": 0.5106382978723404
+        }
+      }
+    },
+    "winnipeg-preservation": {
+      "baseline": {
+        "localization": {
+          "tp": 13,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.9285714285714286,
+          "f1": 0.9629629629629629
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8888888888888888,
+          "recall": 0.7272727272727273,
+          "f1": 0.8
+        }
+      },
+      "retrained": {
+        "localization": {
+          "tp": 13,
+          "fp": 1,
+          "fn": 1,
+          "precision": 0.9285714285714286,
+          "recall": 0.9285714285714286,
+          "f1": 0.9285714285714286
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8888888888888888,
+          "recall": 0.7272727272727273,
+          "f1": 0.8
+        }
+      },
+      "selective": {
+        "localization": {
+          "tp": 13,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.8666666666666667,
+          "recall": 0.9285714285714286,
+          "f1": 0.896551724137931
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8888888888888888,
+          "recall": 0.7272727272727273,
+          "f1": 0.8
+        }
+      },
+      "joint025": {
+        "localization": {
+          "tp": 13,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.8666666666666667,
+          "recall": 0.9285714285714286,
+          "f1": 0.896551724137931
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8888888888888888,
+          "recall": 0.7272727272727273,
+          "f1": 0.8
+        }
+      },
+      "joint05": {
+        "localization": {
+          "tp": 13,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.8666666666666667,
+          "recall": 0.9285714285714286,
+          "f1": 0.896551724137931
+        },
+        "connections": {
+          "tp": 8,
+          "fp": 1,
+          "fn": 3,
+          "precision": 0.8888888888888888,
+          "recall": 0.7272727272727273,
+          "f1": 0.8
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "model": {
+    "model": "shared-point-context-v12",
+    "file": "joint-context.onnx",
+    "sha256": "4e6accd5b95db0169620b9f627fa0003b095aa53dfa6972cbb031b0356b5ab68",
+    "batch_size": 64,
+    "heads": [
+      "port2",
+      "junction4",
+      "local_line3"
+    ],
+    "annotation_basis": "AI reviewed real points + exact procedural scenes; no new-project sources",
+    "enabled_by_default": false
+  },
+  "rows": 7181,
+  "class_counts": {
+    "0": [
+      2682,
+      1641
+    ],
+    "1": [
+      1503,
+      110,
+      162,
+      74
+    ],
+    "2": [
+      1391,
+      1920,
+      480
+    ]
+  },
+  "sources": [
+    {
+      "page": "virden-p11",
+      "source_sha256": "902e4fb43abdd3f876e23540bfcd8f12ebdff3d3aa96075f2ab3d097be6a20ec",
+      "ports": 4,
+      "junctions": 4
+    },
+    {
+      "page": "virden-p9",
+      "source_sha256": "42c1b767bb280922ee474a51d00d6c9709dcb958b31ef9888d68f332f6fb1ee4",
+      "ports": 4,
+      "junctions": 1
+    },
+    {
+      "page": "pahala-p19",
+      "source_sha256": "ab71365b78ed450a5fc177ad907a72c838cce7cf00b844b67e7dbaf6b9018ee3",
+      "ports": 6,
+      "junctions": 14
+    },
+    {
+      "page": "virden-p5",
+      "source_sha256": "27356b778cb5c3007e82a06768e04392a901ead1002962e7c47d0945d79c2250",
+      "ports": 10,
+      "junctions": 0
+    },
+    {
+      "page": "ruttan-p50",
+      "source_sha256": "be3cdc1557d776df1f19049dc5ffd991ea09667cb56c378854b157a119e349f9",
+      "ports": 8,
+      "junctions": 0
+    },
+    {
+      "page": "virden-p10",
+      "source_sha256": "2ede6c3b02ebed19bfde79d8dac4c4c480fa6f9ff275cdb605082ee9d5f16eb0",
+      "ports": 8,
+      "junctions": 2
+    },
+    {
+      "page": "virden-p12",
+      "source_sha256": "53618fcfcd292de942058cfe4eb2076a51b8c74aa5d2b78ebaa7f14351da15f5",
+      "ports": 20,
+      "junctions": 0
+    },
+    {
+      "page": "pahala-p18",
+      "source_sha256": "625aa7905fdaad8ff493984fc2f38f962aa0832695fe9438f78339029e07f8a2",
+      "ports": 11,
+      "junctions": 10
+    }
+  ],
+  "procedural_seeds": [
+    20301030,
+    20301229
+  ],
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.6270430150784945
+    },
+    {
+      "epoch": 2,
+      "loss": 1.8617102995253445
+    },
+    {
+      "epoch": 3,
+      "loss": 1.6667290654098779
+    },
+    {
+      "epoch": 4,
+      "loss": 1.4212588406445688
+    },
+    {
+      "epoch": 5,
+      "loss": 1.2857462878812824
+    },
+    {
+      "epoch": 6,
+      "loss": 1.2107940337114167
+    },
+    {
+      "epoch": 7,
+      "loss": 1.1931089173283493
+    },
+    {
+      "epoch": 8,
+      "loss": 1.1376830464915226
+    },
+    {
+      "epoch": 9,
+      "loss": 1.047184123281847
+    },
+    {
+      "epoch": 10,
+      "loss": 1.015341417831287
+    }
+  ],
+  "seconds": 9.152595881023444,
+  "opencv_torch_max_abs_difference": 5.7220458984375e-06
+}

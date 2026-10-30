@@ -1,8 +1,9 @@
 import {useEffect,useRef,useState} from 'react';
+import Assistance from './Assistance';
 import {X,Save,Download,Plus,Undo2,GitCompare,Network,Target,Move,Check} from 'lucide-react';
 type Api=(path:string,init?:RequestInit)=>Promise<any>;
 type Page={id:string;number:number;width:number;height:number;elements:any[];connections:any[];transform?:any};
-type Props={page:Page;document:{id:string;name:string};concepts:any[];api:Api;onClose:()=>void;onRefresh:()=>Promise<void>};
+export type Props={page:Page;document:{id:string;name:string};concepts:any[];api:Api;onClose:()=>void;onRefresh:()=>Promise<void>};
 const names:Record<string,string>={needs_review:'검토 필요',approved:'확정',rejected:'제외',training:'학습',validation:'개발 검증',test:'최종 평가',unassigned:'미지정'};
 const pointNames:Record<string,string>={tee:'T 접속',dot:'점 표시 접속',plain_cross:'비접속 교차',bend:'꺾임',unknown:'미분류'};
 function jsonDownload(name:string,value:any){const url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
@@ -11,7 +12,7 @@ function StatusSelect({value,onChange}:{value:string;onChange:(v:string)=>void})
 export default function Workflows(props:Props){
  const [tab,setTab]=useState('topology');const root=useRef<HTMLDivElement>(null);const dirty=useRef(false);const close=()=>{if(!dirty.current||confirm('저장하지 않은 포트·접점·경로 변경을 버리고 닫을까요?'))props.onClose()};
  useEffect(()=>{const previous=document.activeElement as HTMLElement;root.current?.querySelector<HTMLButtonElement>('button')?.focus();const key=(e:KeyboardEvent)=>{if(e.key==='Escape')close();if(e.key==='Tab'){const fields=root.current?.querySelectorAll<HTMLElement>('button:not(:disabled),input:not(:disabled),select,textarea,a[href]');if(!fields?.length)return;const first=fields[0],last=fields[fields.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}};document.addEventListener('keydown',key);return()=>{document.removeEventListener('keydown',key);previous?.focus()}},[]);
- return <div className="workflow-backdrop"><section ref={root} className="workflow" role="dialog" aria-modal="true" aria-label="도면 검토·평가·의미·개정"><header><div><small>DRAWING EVIDENCE</small><h2>{props.document.name} · {props.page.number}페이지</h2></div><button aria-label="검토 작업 닫기" onClick={close}><X size={20}/></button></header><nav>{[['topology','포트·접점·경로'],['data','정답·평가'],['graph','의미 그래프'],['revision','개정·영향']].map(([k,n])=><button key={k} className={tab===k?'active':''} onClick={()=>setTab(k)}>{n}</button>)}</nav><div className="workflow-body"><div hidden={tab!=='topology'}><TopologyEditor {...props} onDirty={value=>{dirty.current=value}}/></div>{tab==='data'?<DataPanel {...props}/>:tab==='graph'?<GraphPanel {...props}/>:tab==='revision'?<RevisionPanel {...props}/>:null}</div></section></div>
+ return <div className="workflow-backdrop"><section ref={root} className="workflow" role="dialog" aria-modal="true" aria-label="도면 검토·평가·의미·개정"><header><div><small>DRAWING EVIDENCE</small><h2>{props.document.name} · {props.page.number}페이지</h2></div><button aria-label="검토 작업 닫기" onClick={close}><X size={20}/></button></header><nav>{[['topology','포트·접점·경로'],['data','정답·평가'],['graph','의미 그래프'],['revision','개정·영향'],['assist','범례·보정']].map(([k,n])=><button key={k} className={tab===k?'active':''} onClick={()=>setTab(k)}>{n}</button>)}</nav><div className="workflow-body"><div hidden={tab!=='topology'}><TopologyEditor {...props} onDirty={value=>{dirty.current=value}}/></div>{tab==='data'?<DataPanel {...props}/>:tab==='graph'?<GraphPanel {...props}/>:tab==='revision'?<RevisionPanel {...props}/>:tab==='assist'?<Assistance {...props}/>:null}</div></section></div>
 }
 
 function TopologyEditor({page,api,onRefresh,onDirty}:Props&{onDirty:(value:boolean)=>void}){

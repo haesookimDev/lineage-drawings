@@ -1,0 +1,185 @@
+{
+  "role": "Development comparison, word agreement with baseline is not OCR ground-truth accuracy. No new-project sources opened.",
+  "rows": [
+    {
+      "id": "white-rose-25",
+      "variants": {
+        "full": {
+          "words": 106,
+          "seconds": 0.8162135109887458,
+          "diagnostics": {
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 1.0
+        },
+        "auto": {
+          "words": 105,
+          "seconds": 0.7961136650410481,
+          "diagnostics": {
+            "ocr_region_count": 26,
+            "ocr_mode": "region_atlas",
+            "ocr_source_pixels": 4075200,
+            "ocr_processed_pixels": 2585412,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 0.7924528301886793
+        },
+        "mask": {
+          "words": 99,
+          "seconds": 0.9608736779773608,
+          "diagnostics": {
+            "ocr_mode": "region_mask",
+            "ocr_source_pixels": 4075200,
+            "ocr_processed_pixels": 4075200,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 0.5849056603773585
+        }
+      }
+    },
+    {
+      "id": "white-rose-22",
+      "variants": {
+        "full": {
+          "words": 229,
+          "seconds": 1.5638032410060987,
+          "diagnostics": {
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 1.0
+        },
+        "auto": {
+          "words": 206,
+          "seconds": 1.4709317790111527,
+          "diagnostics": {
+            "ocr_region_count": 7,
+            "ocr_mode": "region_atlas",
+            "ocr_source_pixels": 4075200,
+            "ocr_processed_pixels": 2894304,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 0.7205240174672489
+        },
+        "mask": {
+          "words": 233,
+          "seconds": 1.7985606550355442,
+          "diagnostics": {
+            "ocr_mode": "region_mask",
+            "ocr_source_pixels": 4075200,
+            "ocr_processed_pixels": 4075200,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 0.5458515283842795
+        }
+      }
+    },
+    {
+      "id": "winkler-p142",
+      "variants": {
+        "full": {
+          "words": 111,
+          "seconds": 0.8305323070380837,
+          "diagnostics": {
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 1.0
+        },
+        "auto": {
+          "words": 111,
+          "seconds": 0.8704564530053176,
+          "diagnostics": {
+            "ocr_region_count": 45,
+            "ocr_mode": "full_fallback",
+            "ocr_source_pixels": 3727200,
+            "ocr_processed_pixels": 3727200,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 1.0
+        },
+        "mask": {
+          "words": 132,
+          "seconds": 1.0311588370241225,
+          "diagnostics": {
+            "ocr_mode": "region_mask",
+            "ocr_source_pixels": 3727200,
+            "ocr_processed_pixels": 3727200,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 0.8378378378378378
+        }
+      }
+    },
+    {
+      "id": "winnipeg-p7",
+      "variants": {
+        "full": {
+          "words": 500,
+          "seconds": 5.383822462987155,
+          "diagnostics": {
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 1.0
+        },
+        "auto": {
+          "words": 500,
+          "seconds": 5.435783495020587,
+          "diagnostics": {
+            "ocr_region_count": 1,
+            "ocr_mode": "full_fallback",
+            "ocr_source_pixels": 4387200,
+            "ocr_processed_pixels": 4387200,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 1.0
+        },
+        "mask": {
+          "words": 500,
+          "seconds": 6.786435782967601,
+          "diagnostics": {
+            "ocr_mode": "region_mask",
+            "ocr_source_pixels": 4387200,
+            "ocr_processed_pixels": 4387200,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 0.53
+        }
+      }
+    },
+    {
+      "id": "open100-6",
+      "variants": {
+        "full": {
+          "words": 197,
+          "seconds": 1.5041995219653472,
+          "diagnostics": {
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 1.0
+        },
+        "auto": {
+          "words": 197,
+          "seconds": 1.5440836329944432,
+          "diagnostics": {
+            "ocr_region_count": 73,
+            "ocr_mode": "full_fallback",
+            "ocr_source_pixels": 3835200,
+            "ocr_processed_pixels": 3835200,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 1.0
+        },
+        "mask": {
+          "words": 252,
+          "seconds": 1.6069187009707093,
+          "diagnostics": {
+            "ocr_mode": "region_mask",
+            "ocr_source_pixels": 3835200,
+            "ocr_processed_pixels": 3835200,
+            "ocr_cache_hit": false
+          },
+          "baseline_token_agreement": 0.6395939086294417
+        }
+      }
+    }
+  ]
+}
